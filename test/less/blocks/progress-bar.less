@@ -1,0 +1,15 @@
+/* стилизация круга */
+.progress-bar {
+    transform: rotate(-90deg);
+    & circle {
+    stroke-width: 8;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1.5s ease-in-out;
+    stroke: @inner-stroke-color;
+    }
+    & .progress-bar__value {
+    transform-origin: center;
+    stroke: @outside-stroke-color;
+    stroke-dashoffset: 301.59;
+    }
+}
