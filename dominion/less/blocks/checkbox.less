@@ -1,0 +1,121 @@
+
+// -----------------------------------------------------------
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox {
+  width: 40px;
+  height: 40px;
+  margin: 0 3px 0 0;
+
+  vertical-align: top;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  .visually-hidden();
+}
+.checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+
+  display: flex;
+  // border:1px solid;
+  // padding: 50px 50px 50px 50px; /* оставляем от label место под псевдочекбокс */
+
+  width: 130px;
+  height: 130px;
+
+  justify-content: center;
+  align-items: flex-end;
+  @media @tablet-width {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 130px;
+  height: 130px;
+  @media @tablet-width {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 130px;
+  height: 130px;
+
+  transition: all 0.02s; /* анимация, чтобы чекбокс переключался плавно */
+  @media @tablet-width {
+    width: 100px;
+    height: 100px;
+  }
+}
+.checkbox--property:not(checked) + label::after {
+  opacity: 0.3;
+  background: transparent url("../img/icon-property.svg") no-repeat center;
+}
+.checkbox--internet:not(checked) + label::after {
+  opacity: 0.3;
+  background: transparent url("../img/icon-internet.svg") no-repeat center;
+}
+.checkbox--food:not(checked) + label::after {
+  opacity: 0.3;
+  background: transparent url("../img/icon-food.svg") no-repeat center;
+}
+.checkbox--car:not(checked) + label::after {
+  opacity: 0.3;
+  background: transparent url("../img/icon-car.svg") no-repeat center;
+}
+.checkbox--telecom:not(checked) + label::after {
+  opacity: 0.3;
+  background: transparent url("../img/icon-telecom.svg") no-repeat center;
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox--property:checked + label::before {
+  background: transparent url("../img/icon-property.svg") no-repeat center;
+}
+.checkbox--internet:checked + label::before {
+  background: transparent url("../img/icon-internet.svg") no-repeat center;
+}
+.checkbox--food:checked + label::before {
+  background: transparent url("../img/icon-food.svg") no-repeat center;
+}
+.checkbox--car:checked + label::before {
+  background: transparent url("../img/icon-car.svg") no-repeat center;
+}
+.checkbox--telecom:checked + label::before {
+  background: transparent url("../img/icon-telecom.svg") no-repeat center;
+}
+.checkbox:not(checked) + label {
+  opacity: 0.8;
+}
+.checkbox:checked + label {
+  text-decoration: underline;
+
+  opacity: 1;
+}
+/* Показываем получение фокуса. */
+// .checkbox:focus + label::before {
+//   box-shadow: 0 0 0 3px rgba(255,255,0,0.5);
+// }
