@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>всплывающее окно личного кабинета</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="user-block">
+        <a class="login" href="#">Вход</a>
+    </div>
+    <footer>
+    </footer>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <form class="login-form" action="url" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span> Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
+    <script>
+    /* Для того чтобы открыть модальное окно нужно для начала найти кнопку, которая будет его открывать */
+    var link = document.querySelector(".login");
+    /* Чтобы открыть модальное окно, нам необходимо в первую очередь найти её в документе */
+    var popup = document.querySelector(".modal-content");
+    /* Чтобы закрыть модальное окно, нам в первую очередь необходимо найти кнопку, которая будет его закрывать */
+    var close = popup.querySelector(".modal-content-close");
+    /* нужно найти форму, чтобы отловить событие её отправки */
+    var form = popup.querySelector("form");
+    /* чтобы при открытии формы фокус автоматически устанавливался в поле логина */
+    var login = popup.querySelector("[name=login]");
+    var password = popup.querySelector("[name=password]");
+    /* добавим работу с локальным хранилищем. Запишем значение логина в переменную. */
+    var storage = localStorage.getItem("login");
+    /* Поймаем событие нажатия на эту кнопку */
+    link.addEventListener("click", function(event) {
+        /* Отменим стандартное действие ссылки при нажатии на неё */
+        event.preventDefault();
+        /* с помощью метода classList.add добавляем класс к модальному окну, по клику на ссылку*/
+        popup.classList.add("modal-content-show");
+        /* Ставим фокус на поле логина */
+        login.focus();
+        /*Запишем значение логина в поле логина при открытии модального окна, если значение существует.И сместим фокус на поле пароля в этом случае */
+        if (storage) {
+            login.value = storage;
+            password.focus();
+        } else {
+            login.focus();
+        }
+
+    });
+    /* обработчик клика по кнопке */
+    close.addEventListener("click", function(event) {
+        /* Отменим стандартное действие ссылки при нажатии на неё. */
+        event.preventDefault();
+        /* с помощью метода classList.remove удаляем класс, отвечающий за показ модального окна */
+        popup.classList.remove("modal-content-show");
+        /* уберём этот класс при закрытии формы */
+        popup.classList.remove("modal-error");
+
+    });
+    /* Отловим событие отправки формы и отменим его стандартное действие */
+    form.addEventListener("submit", function(event) {
+        /* Добавим проверку на заполненность полей */
+        if (!login.value || !password.value) {
+            event.preventDefault();
+            /* небольшой хак, чтобы анимация ошибки отрабатывала несколько раз. */
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
+            /* класс ошибки на форму в случае ошибки. */
+            popup.classList.add("modal-error");
+
+        }
+        /* Добавим работу с локальным хранилищем, в случае правильно заполненной формы запишем логин в локальное хранилище*/
+        else {
+            localStorage.setItem("login", login.value);
+        }
+    });
+    /* Добавим обработчик события на весь экран, который будет отлавливать нажатие кнопки ESC и в случае открытого модального окна закрывать его */
+    window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+            if (popup.classList.contains("modal-content-show")) {
+                popup.classList.remove("modal-content-show");
+                popup.classList.remove("modal-error");
+            }
+        }
+    });
+    </script>
+</body>
+
+</html>
