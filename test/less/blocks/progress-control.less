@@ -1,0 +1,31 @@
+/* стилизация кнопок управления */
+.progress-control {
+    margin: 0.5em;
+    padding-left: 4.375em;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    &__item{
+      align-items: center;
+      min-width: 10.625em;
+      margin: 0.5em;
+    }
+    &__value {
+    border: 0.125em solid #CDD1DA;
+    width: 3.125em;
+    height: 1.625em;
+    border-radius: 0.8125em;
+    margin-right: 0.375em;
+    text-align: center;
+    font-size: 1em;
+    }
+
+    @media @user-width {
+      padding-left: 0;
+      grid-row-start: 2;
+      grid-column-start: 3;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+}
