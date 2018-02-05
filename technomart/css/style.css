@@ -1783,6 +1783,7 @@ input[type="radio"] {
   border-bottom: 1px dotted #ee3643;
 }
 .sorting__link {
+  color:#000;
   text-decoration: none;
   /* .sorting__link--active */
 }
