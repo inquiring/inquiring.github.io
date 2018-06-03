@@ -46,7 +46,7 @@ function initMap() {
     center: centerLatLng,
     scrollwheel: false, // false, скролл отключен.
     mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
+  };
 
   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
@@ -55,4 +55,4 @@ function initMap() {
     title: 'HTML Academy'
   });
   marker.setMap(map);
-};
+}
