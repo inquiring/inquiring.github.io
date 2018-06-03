@@ -1,0 +1,114 @@
+.btn {
+  display: inline-block;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  transition: all 0.3s;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+  &:hover {
+    background-color: #fff;
+    color: @c_pink;
+  }
+
+
+  &:active {
+    color: @c_pink-opacity;
+    outline: none;
+  }
+
+
+  &:focus {
+    outline: none;
+  }
+
+
+  &--download {
+    color: #fff;
+  }
+
+
+  &--submit {
+    background-color: #fff;
+    border-color: @bg_pink;
+    color: @c_pink;
+  }
+
+
+  &--submit:hover {
+    background-color: @bg_pink;
+    color: #fff;
+  }
+
+
+  &--submit:active {
+    background-color: @bg_pink;
+    color: @c_white-opacity;
+  }
+
+
+  &--reset {
+    background-color: #fff;
+    border-color: @bg_black-opacity-light;
+    color: @c_black-opacity-light;
+  }
+
+
+  &--reset:hover {
+    border-color: @bg_black-opacity;
+    color: @c_black-opacity;
+  }
+
+
+  &--reset:active {
+    background-color: @bg_black-opacity;
+    border-color: @bg_black-opacity;
+    color: @c_white-opacity;
+  }
+
+  &--form {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border: none;
+    border-radius: @bdrs_form;
+    background-color: @bg_green;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+
+  &--form:hover {
+    background-color: @bg_green-darker;
+    color: #fff;
+  }
+
+
+  &--form:active {
+    background-color: @bg_green-darker;
+    color: @c_white-opacity;
+  }
+}
+
+
+// @media @$mobile {}
+// @media @$tablet {}
+
+
+@media @desktop {
+  .btn {
+
+
+    &--download {
+      font-size: @fz_medium-btn;
+      line-height: 1;
+    }
+  }
+}

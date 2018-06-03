@@ -1,0 +1,22 @@
+//gutter between column
+@gutter: @offset-mobile;
+
+// grid container
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: (-1 * @gutter) / 2;
+  margin-right: (-1 * @gutter) / 2;
+}
+
+.col(@i: 12) {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: calc(@i / 12 * 100%);
+  padding-left: @gutter / 2;
+  padding-right: @gutter / 2;
+  display: flex;
+}
+
+

@@ -1,0 +1,133 @@
+.contacts {
+  padding-top: 42px;
+  padding-bottom: 36px;
+  text-align: center;
+
+
+  &__headling {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: @fz_xmedium;
+    line-height: (30 / 24);
+  }
+
+
+  &__title {
+    display: block;
+    font-size: @fz_base;
+    line-height: (30 / 18);
+    font-weight: 700;
+  }
+
+
+  &__description {
+    margin: 0;
+    text-decoration: none;
+    font-size: @fz_xmedium;
+    line-height: (30 / 24);
+    font-weight: 300;
+    color: @c_pink;
+  }
+
+
+  &__description--link {
+    .link;
+  }
+
+
+  &__item--phone {
+    margin-bottom: 14px;
+  }
+
+
+  &__item--email {
+    margin-bottom: 21px;
+  }
+}
+
+
+// @media @mobile {}
+
+
+@media @tablet {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 46px;
+    padding-bottom: 21px;
+
+
+    &__headling {
+      margin-bottom: 40px;
+      font-size: @fz_xlarge;
+      line-height: (48 / 40);
+    }
+
+
+    &__title {
+      margin-bottom: 2px;
+    }
+
+
+    &__item {
+      width: 50%;
+      margin-bottom: 43px;
+    }
+
+
+    &__item--phone {
+      padding-right: 10px;
+    }
+
+
+    &__item--email {
+      padding-left: 10px;
+    }
+
+
+    &__item--address {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@media @desktop {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 18px;
+
+
+    &__headling {
+      margin-bottom: 53px;
+      font-size: @fz_xxlarge;
+      line-height: (60 / 50);
+    }
+
+
+    &__title {
+      margin-bottom: 21px;
+    }
+
+
+    &__item {
+      width: 300px;
+      margin-bottom: 0;
+    }
+
+
+    &__item--address {
+      order: 3;
+    }
+
+
+    &__item--email {
+      order: 4;
+    }
+  }
+}

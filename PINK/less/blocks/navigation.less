@@ -1,0 +1,178 @@
+.navigation {
+  display: block;
+
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: @fz_base;
+    line-height: (32 / 18);
+  }
+
+
+  &__link {
+    color: #fff;
+  }
+}
+
+
+@media @mobile {
+  .navigation {
+    margin-left: -1 * @offset-mobile;
+    margin-right: -1 * @offset-mobile;
+    margin-top: 4px;
+  }
+}
+
+
+@media @mobile-tablet {
+  .navigation {
+    position: static;
+    width: auto;
+    background-color: @bg_blue;
+
+
+    &--closed {
+      display: none;
+    }
+
+
+    &--positioned {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
+
+
+    &__list {
+      position: relative;
+      width: 100%;
+    }
+
+
+    &__list::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+    }
+
+
+    &__link {
+      display: block;
+      min-height: 60px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+      border-top: 1px solid @bg_white-opacity;
+      border-bottom: 1px solid #000;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+
+    &__link:hover {
+      color: @c_pink;
+    }
+
+
+    &__link:active {
+      color: @c_pink-opacity;
+    }
+
+
+    &__link--active:active,
+    &__link--active:hover {
+      color: #fff;
+    }
+  }
+}
+
+
+@media @tablet {
+  .navigation {
+    margin-left: -1 * @offset-tablet;
+    margin-right: -1 * @offset-tablet;
+  }
+}
+
+
+@media @desktop {
+  .navigation {
+    max-width: 790px;
+    padding-top: 45px;
+
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: stretch;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+
+    &__item {
+      margin-left: @gutter_nav;
+      padding-bottom: 30px;
+    }
+
+
+    &__link {
+      position: relative;
+      padding: 0;
+      text-decoration: none;
+      line-height: 1;
+      transition: all 0.3s;
+    }
+
+
+    &__link:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+
+    &__link--active:active {
+      color: #fff;
+    }
+
+
+    &__link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      opacity: 0;
+      background-color: #fff;
+      transition: all 0.3s;
+    }
+
+
+    &__link:hover::after {
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      opacity: 1;
+    }
+
+
+    &__link:active::after {
+      display: none;
+    }
+
+
+    &__link--active::after {
+      display: none;
+    }
+  }
+}
