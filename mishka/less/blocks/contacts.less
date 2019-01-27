@@ -1,0 +1,121 @@
+.contacts__content {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.contacts__header,
+.contacts__info,
+.contacts__footer {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media @mobile {
+  .contacts__header,
+  .contacts__info,
+  .contacts__footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contacts__content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+@media @tablet {
+  .contacts__info {
+    width: 100%;
+  }
+
+  .contacts__info > tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__info > tbody > tr:nth-child(1) {
+    margin-top: var(--space-xs);
+  }
+
+  .contacts__footer {
+    justify-content: center;
+  }
+
+  .contacts__flag {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    width: 47px;
+    height: 80px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media @desktop {
+  .contacts {
+    padding-top: 80px;
+  }
+
+  .contacts__header,
+  .contacts__info,
+  .contacts__footer {
+    padding-left: 175px;
+    padding-right: 0;
+  }
+
+  .contacts__content {
+    padding-bottom: 195px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .contacts__flag {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    width: 47px;
+    height: 80px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+//map
+.contacts__map {
+  min-height: 457px;
+  background: transparent url("../img/map-mobile@1x.jpg") no-repeat 100% 100%;
+
+  @media @retina2x {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+@media @tablet {
+  .contacts__map {
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media @retina2x {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+}
+
+@media @desktop {
+  .contacts__map {
+    width: 524px;
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media @retina2x {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 525px auto;
+    }
+  }
+}

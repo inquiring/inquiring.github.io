@@ -1,0 +1,58 @@
+.week-item {
+  position: relative;
+
+  &__description {
+    max-width: 291px;
+    border-bottom: 1px solid var(--color-bg-border);
+  }
+
+  &__footer {
+    max-width: 291px;
+  }
+
+  @media @desktop {
+    margin-top: 60px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "ТОВАР НЕДЕЛИ";
+    color: var(--color-typo-brand);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: var(--size-typo-l);
+    line-height: var(--line-height-typo-l);
+
+    text-align: center;
+
+    @media @mobile {
+      top: 75px;
+      left: 0;
+    }
+
+    @media @tablet {
+      top: 40px;
+      right: 20px;
+      width: 80px;
+    }
+
+    @media @desktop {
+      top: 55px;
+      left: 35px;
+      width: 80px;
+    }
+  }
+}
+
+
+.week-item__header {
+  margin: 0 0 20px;
+}
+
+@media @desktop {
+  .week-item__image {
+    margin-top: -125px;
+    z-index: -1;
+  }
+}
+
