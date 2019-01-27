@@ -1,0 +1,49 @@
+.page-header {
+  position: relative;
+
+  display: flex;
+
+  .container();
+  justify-content: center;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -585%;
+
+    width: 80%;
+    height: 420%;
+
+    background: url("../img/icon-dollar.svg") no-repeat;
+    background-size: 100%;
+    background-size: contain;
+    @media @tablet-width {
+      top: 160%;
+    }
+    @media @desktop-width {
+      top: 20%;
+    }
+  }
+  @media @tablet-width {
+    justify-content: flex-start;
+  }
+}
+
+.page-header__logo {
+  margin-left: 3%;
+  padding: 15px;
+
+  text-decoration: none;
+
+  opacity: 0.8;
+  color: #fff;
+  @media @tablet-width {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-size: 1.2em;
+  }
+  @media @desktop-width {
+    font-size: 1.5em;
+  }
+}

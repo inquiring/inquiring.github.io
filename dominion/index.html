@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dominion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">dominion</a>
+    </header>
+    <main class="page-main">
+        <h1 class="page-main__title">100% ПРИБЫЛИ</h1>
+        <p class="page-main__subtitle">Зарабатывать на собственных знаниях очень просто! Чем больше вы вкладываете денег, тем больше зарабатываете:</p>
+        <form class="forms " action="https://echo.dominion.ru " method="post ">
+            <fieldset class="forms__container ">
+                <div class="forms__content forms__content--first">
+                    <div class="forms__contacts">
+                        <div class="forms__inner">
+                            <label class="forms__label" for="name-field">Имя:</label>
+                            <input class="forms__input forms__input--placeholder-name" type="text " name="name " id="name-field " placeholder="Имя " required>
+                        </div>
+                        <div class="forms__inner ">
+                            <label class="forms__label " for="tel-field ">телефон</label>
+                            <input class="forms__input forms__input--placeholder-tel" type="tel " name="tel " id="tel-field " placeholder="Телефон " required>
+                        </div>
+                        <footer class="forms__footer ">
+                            <button class="btn btn--form forms__btn " type="submit ">Получить доступ</button>
+                            <p class="forms__text ">1 240 человек уже оставило заявку сегодня</p>
+                        </footer>
+                    </div>
+                    <legend class="forms__legend forms__legend--first">1. Выберите сегмент в
+                        <br> котором вы разбираетесь:</legend>
+                    <!--  -->
+                    <div class="forms__item forms__item--property">
+                        <input type="checkbox" class="checkbox checkbox--property" id="checkbox-property" checked/>
+                        <label for="checkbox-property"> Недвижимость</label>
+                    </div>
+                    <!--  -->
+                    <div class="forms__item forms__item--internet">
+                        <input type="checkbox" class="checkbox checkbox--internet" id="checkbox-internet" />
+                        <label for="checkbox-internet"> Интернет</label>
+                    </div>
+                    <!--  -->
+                    <div class="forms__item forms__item--food">
+                        <input type="checkbox" class="checkbox checkbox--food" id="checkbox-food" />
+                        <label for="checkbox-food"> Продукты питания</label>
+                    </div>
+                    <!--  -->
+                    <div class="forms__item forms__item--car">
+                        <input type="checkbox" class="checkbox checkbox--car" id="checkbox-car" />
+                        <label for="checkbox-car"> Автомобили</label>
+                    </div>
+                    <!--  -->
+                    <div class="forms__item forms__item--telecom">
+                        <input type="checkbox" class="checkbox checkbox--telecom" id="checkbox-telecom" />
+                        <label for="checkbox-telecom"> Телекомунникации</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
