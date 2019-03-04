@@ -5540,22 +5540,6 @@ provide(bemDom.declBlock(Control, {
 });
 
 /* end: ../../desktop.blocks/control/control.js */
-/* begin: ../../desktop.blocks/new-menu/__nav/new-menu__nav.js */
-modules.define('new-menu__nav', ['i-bem-dom'], function(provide, bemDom) {
-
-provide(bemDom.declElem('new-menu', 'nav', {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
-
-/* end: ../../desktop.blocks/new-menu/__nav/new-menu__nav.js */
 /* begin: ../../node_modules/bem-components/common.blocks/dropdown/dropdown.js */
 /**
  * @module dropdown
@@ -6259,22 +6243,6 @@ provide(bemDom.declBlock(this.name));
 });
 
 /* end: ../../node_modules/bem-components/common.blocks/z-index-group/z-index-group.js */
-/* begin: ../../desktop.blocks/new-menu/__item/new-menu__item.js */
-modules.define('new-menu__item', ['i-bem-dom'], function(provide, bemDom) {
-
-provide(bemDom.declElem('new-menu', 'item', {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
-
-/* end: ../../desktop.blocks/new-menu/__item/new-menu__item.js */
 /* begin: ../../node_modules/bem-components/common.blocks/button/_type/button_type_link.js */
 /**
  * @module button
@@ -7316,22 +7284,6 @@ provide($);
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js */
-/* begin: ../../common.blocks/new-menu/__nav/_xs/new-menu__nav_xs_view.js */
-modules.define('new-menu__nav', function(provide, NewMenu__nav) {
-
-provide(NewMenu__nav.declMod({ modName: 'xs', modVal: 'view' }, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
-
-/* end: ../../common.blocks/new-menu/__nav/_xs/new-menu__nav_xs_view.js */
 /* begin: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target_anchor.js */
 /**
  * @module popup
@@ -7594,7 +7546,7 @@ provide(Popup.declMod({ modName : 'target', modVal : 'anchor' }, /** @lends popu
 });
 
 /* end: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target_anchor.js */
-/* begin: ../../desktop.blocks/new-menu/__item/_view/new-menu__item_view_link.js */
+/* begin: ../../common.blocks/new-menu/__item/_view/new-menu__item_view_link.js */
 modules.define('new-menu__item', function(provide, NewMenu__item) {
 
 provide(NewMenu__item.declMod({ modName: 'view', modVal: 'link' }, {
@@ -7609,23 +7561,7 @@ provide(NewMenu__item.declMod({ modName: 'view', modVal: 'link' }, {
 
 });
 
-/* end: ../../desktop.blocks/new-menu/__item/_view/new-menu__item_view_link.js */
-/* begin: ../../common.blocks/new-menu/__phone/_xs/new-menu__phone_xs_view.js */
-modules.define('new-menu__phone', function(provide, NewMenu__phone) {
-
-provide(NewMenu__phone.declMod({ modName: 'xs', modVal: 'view' }, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
-
-/* end: ../../common.blocks/new-menu/__phone/_xs/new-menu__phone_xs_view.js */
+/* end: ../../common.blocks/new-menu/__item/_view/new-menu__item_view_link.js */
 /* begin: ../../common.blocks/carousel/carousel.js */
 modules.define('carousel', ['jquery', 'i-bem-dom'], function(provide, $, bemDom) {
 

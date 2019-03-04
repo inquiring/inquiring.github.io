@@ -189,11 +189,6 @@ exports.deps = [
         "elem": "container"
     },
     {
-        "block": "new-menu",
-        "elem": "container",
-        "mod": "s"
-    },
-    {
         "block": "tpl-layout",
         "elem": "container"
     },
@@ -302,11 +297,6 @@ exports.deps = [
         "elem": "toogle"
     },
     {
-        "block": "new-menu",
-        "elem": "toogle",
-        "mod": "m"
-    },
-    {
         "block": "icon"
     },
     {
@@ -330,21 +320,6 @@ exports.deps = [
     {
         "block": "new-menu",
         "elem": "nav"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav",
-        "mod": "position-fixed"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav",
-        "mod": "xs"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav",
-        "mod": "s"
     },
     {
         "block": "dropdown"
@@ -410,21 +385,6 @@ exports.deps = [
     {
         "block": "new-menu",
         "elem": "phone"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone",
-        "mod": "position-fixed"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone",
-        "mod": "xs"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone",
-        "mod": "s"
     },
     {
         "block": "decorator"
@@ -1702,12 +1662,6 @@ exports.deps = [
         "val": true
     },
     {
-        "block": "new-menu",
-        "elem": "container",
-        "mod": "s",
-        "val": "view"
-    },
-    {
         "block": "tpl-layout",
         "elem": "container",
         "mod": "size",
@@ -1752,30 +1706,6 @@ exports.deps = [
         "val": "pointerpressrelease"
     },
     {
-        "block": "new-menu",
-        "elem": "toogle",
-        "mod": "m",
-        "val": "view"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav",
-        "mod": "position-fixed",
-        "val": "top"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav",
-        "mod": "xs",
-        "val": "view"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav",
-        "mod": "s",
-        "val": "view"
-    },
-    {
         "block": "popup",
         "mod": "autoclosable",
         "val": true
@@ -1795,24 +1725,6 @@ exports.deps = [
         "elem": "item",
         "mod": "view",
         "val": "link"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone",
-        "mod": "position-fixed",
-        "val": "top"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone",
-        "mod": "xs",
-        "val": "view"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone",
-        "mod": "s",
-        "val": "view"
     },
     {
         "block": "tpl-grid",

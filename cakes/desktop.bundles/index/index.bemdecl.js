@@ -169,24 +169,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "container",
-                "mods": [
-                    {
-                        "name": "s",
-                        "vals": [
-                            {
-                                "name": "view"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "tpl-layout",
         "elems": [
             {
@@ -305,24 +287,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "toogle",
-                "mods": [
-                    {
-                        "name": "m",
-                        "vals": [
-                            {
-                                "name": "view"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "icon"
     },
     {
@@ -356,60 +320,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "nav"
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "nav",
-                "mods": [
-                    {
-                        "name": "position-fixed",
-                        "vals": [
-                            {
-                                "name": "top"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "nav",
-                "mods": [
-                    {
-                        "name": "xs",
-                        "vals": [
-                            {
-                                "name": "view"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "nav",
-                "mods": [
-                    {
-                        "name": "s",
-                        "vals": [
-                            {
-                                "name": "view"
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     },
@@ -486,60 +396,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "phone"
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "phone",
-                "mods": [
-                    {
-                        "name": "position-fixed",
-                        "vals": [
-                            {
-                                "name": "top"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "phone",
-                "mods": [
-                    {
-                        "name": "xs",
-                        "vals": [
-                            {
-                                "name": "view"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "phone",
-                "mods": [
-                    {
-                        "name": "s",
-                        "vals": [
-                            {
-                                "name": "view"
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     },
