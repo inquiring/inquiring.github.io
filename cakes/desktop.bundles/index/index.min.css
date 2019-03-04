@@ -4244,7 +4244,6 @@ html {
 @media screen and (min-width: 720px) {
 
     .carousel__inner_width_size {
-        width: 586px;
         margin: auto;
     }
 }
@@ -4252,7 +4251,6 @@ html {
 @media screen and (min-width: 1024px) {
 
     .carousel__inner_width_size {
-        width: 839px;
         margin: auto;
     }
 }
