@@ -117,7 +117,7 @@ exports.deps = [
     {
         "block": "theme",
         "mod": "color",
-        "val": "whitepaper-default"
+        "val": "whitepaper-normal"
     },
     {
         "block": "theme",
@@ -177,11 +177,6 @@ exports.deps = [
         "block": "tpl-layout"
     },
     {
-        "block": "theme",
-        "mod": "color",
-        "val": "bg-pink"
-    },
-    {
         "block": "new-menu"
     },
     {
@@ -203,11 +198,16 @@ exports.deps = [
         "mod": "align"
     },
     {
-        "block": "new-menu",
-        "elem": "logo"
+        "block": "text"
     },
     {
-        "block": "text"
+        "block": "text",
+        "mod": "size"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-16-s-20-m-24"
     },
     {
         "block": "text",
@@ -216,7 +216,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "view",
-        "val": "link"
+        "val": "primary"
     },
     {
         "block": "text",
@@ -231,6 +231,15 @@ exports.deps = [
         "block": "theme",
         "mod": "font",
         "val": "playfairDisplay"
+    },
+    {
+        "block": "new-menu",
+        "elem": "logo"
+    },
+    {
+        "block": "new-menu",
+        "elem": "logo",
+        "mod": "view"
     },
     {
         "block": "button"
@@ -352,17 +361,8 @@ exports.deps = [
     },
     {
         "block": "text",
-        "mod": "size"
-    },
-    {
-        "block": "text",
         "mod": "size",
-        "val": "s"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "primary"
+        "val": "xs-12-s-12-m-13"
     },
     {
         "block": "text",
@@ -416,12 +416,27 @@ exports.deps = [
     },
     {
         "block": "text",
-        "mod": "type"
+        "mod": "size",
+        "val": "xs-40-s-60-m-78"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "xxs"
     },
     {
         "block": "text",
-        "mod": "type",
-        "val": "h1"
+        "mod": "size",
+        "val": "xs-22-s-36-m-41"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "promo"
     },
     {
         "block": "theme",
@@ -444,16 +459,7 @@ exports.deps = [
     {
         "block": "button",
         "mod": "size",
-        "val": "xl"
-    },
-    {
-        "block": "button",
-        "mod": "type"
-    },
-    {
-        "block": "button",
-        "mod": "type",
-        "val": "link"
+        "val": "m"
     },
     {
         "block": "hero",
@@ -489,6 +495,10 @@ exports.deps = [
         "elem": "icon"
     },
     {
+        "block": "hero",
+        "elem": "icon"
+    },
+    {
         "block": "decorator",
         "mod": "indent-r"
     },
@@ -498,12 +508,27 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "hero",
-        "elem": "icon"
+        "block": "icon",
+        "mod": "view"
+    },
+    {
+        "block": "icon",
+        "mod": "view",
+        "val": "brand"
     },
     {
         "block": "pt-icon-plus",
         "elem": "block"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "s"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "black"
     },
     {
         "block": "decorator",
@@ -518,16 +543,13 @@ exports.deps = [
         "block": "products"
     },
     {
-        "block": "decorator",
-        "mod": "indent-b"
-    },
-    {
         "block": "tpl-layout",
         "elem": "content"
     },
     {
-        "block": "tpl-layout",
-        "elem": "header"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-24-s-28-m-40"
     },
     {
         "block": "tpl-grid"
@@ -548,7 +570,7 @@ exports.deps = [
     {
         "block": "tpl-grid",
         "mod": "s-columns",
-        "val": "8"
+        "val": "12"
     },
     {
         "block": "tpl-grid",
@@ -623,24 +645,52 @@ exports.deps = [
     },
     {
         "block": "pt-card",
-        "mod": "view"
+        "mod": "border"
     },
     {
         "block": "pt-card",
-        "mod": "view",
-        "val": "product"
+        "mod": "border",
+        "val": "all"
     },
     {
-        "block": "product"
+        "block": "pt-card",
+        "mod": "xs-height"
+    },
+    {
+        "block": "pt-card",
+        "mod": "xs-height",
+        "val": "120"
+    },
+    {
+        "block": "pt-card",
+        "mod": "s-height"
+    },
+    {
+        "block": "pt-card",
+        "mod": "s-height",
+        "val": "388"
+    },
+    {
+        "block": "pt-card",
+        "mod": "m-height"
+    },
+    {
+        "block": "pt-card",
+        "mod": "m-height",
+        "val": "392"
+    },
+    {
+        "block": "pt-card",
+        "mod": "l-height"
+    },
+    {
+        "block": "pt-card",
+        "mod": "l-height",
+        "val": "653"
     },
     {
         "block": "pt-card",
         "elem": "image"
-    },
-    {
-        "block": "pt-card",
-        "elem": "image",
-        "mod": "view"
     },
     {
         "block": "image"
@@ -650,24 +700,37 @@ exports.deps = [
         "elem": "header"
     },
     {
-        "block": "product",
-        "elem": "header"
+        "block": "pt-card",
+        "elem": "header",
+        "mod": "space-a"
     },
     {
         "block": "pt-card",
         "elem": "info"
     },
     {
-        "block": "product",
-        "elem": "title"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-14-s-14-m-24"
     },
     {
-        "block": "product",
-        "elem": "text"
+        "block": "text",
+        "mod": "weight",
+        "val": "regular"
     },
     {
-        "block": "product",
-        "elem": "footer"
+        "block": "decorator",
+        "mod": "indent-v"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-v",
+        "val": "xxs"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-10-s-12-m-20"
     },
     {
         "block": "pt-card",
@@ -679,8 +742,19 @@ exports.deps = [
         "mod": "distribute"
     },
     {
-        "block": "icon",
-        "mod": "view"
+        "block": "pt-card",
+        "elem": "footer",
+        "mod": "vertical-align"
+    },
+    {
+        "block": "pt-card",
+        "elem": "footer",
+        "mod": "space-a"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-0-s-12-m-0"
     },
     {
         "block": "icon",
@@ -696,7 +770,7 @@ exports.deps = [
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "s-col",
-        "val": "3"
+        "val": "5"
     },
     {
         "block": "tpl-grid",
@@ -717,8 +791,14 @@ exports.deps = [
         "val": "1"
     },
     {
-        "block": "product",
-        "elem": "info"
+        "block": "pt-card",
+        "mod": "s-height",
+        "val": "184"
+    },
+    {
+        "block": "pt-card",
+        "mod": "l-height",
+        "val": "305"
     },
     {
         "block": "pt-card",
@@ -753,8 +833,12 @@ exports.deps = [
     },
     {
         "block": "theme",
-        "mod": "color",
-        "val": "bg-default"
+        "mod": "color-bg"
+    },
+    {
+        "block": "theme",
+        "mod": "color-bg",
+        "val": "default"
     },
     {
         "block": "filling"
@@ -762,7 +846,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "view",
-        "val": "alert"
+        "val": "brand"
     },
     {
         "block": "order",
@@ -824,6 +908,10 @@ exports.deps = [
     },
     {
         "block": "pt-card",
+        "mod": "view"
+    },
+    {
+        "block": "pt-card",
         "mod": "view",
         "val": "filling"
     },
@@ -845,11 +933,6 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "xs-16-s-18-m-20"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "xxs"
     },
     {
         "block": "text",
@@ -881,8 +964,12 @@ exports.deps = [
     },
     {
         "block": "button",
-        "mod": "size",
-        "val": "m"
+        "mod": "width"
+    },
+    {
+        "block": "button",
+        "mod": "width",
+        "val": "xs"
     },
     {
         "block": "button",
@@ -918,11 +1005,6 @@ exports.deps = [
         "val": "arrow-left"
     },
     {
-        "block": "icon",
-        "mod": "view",
-        "val": "alert"
-    },
-    {
         "block": "decorator",
         "mod": "indent-t",
         "val": "xs"
@@ -956,30 +1038,23 @@ exports.deps = [
     },
     {
         "block": "carousel",
-        "elem": "inner",
-        "mod": "width"
-    },
-    {
-        "block": "carousel",
         "elem": "item",
         "mod": "s-m-display"
     },
     {
         "block": "pt-card",
-        "mod": "view",
-        "val": "size"
-    },
-    {
-        "block": "pt-card",
-        "elem": "image",
-        "mod": "view",
-        "val": "size"
+        "elem": "content",
+        "mod": "distribute"
     },
     {
         "block": "pt-card",
         "elem": "content",
-        "mod": "view",
-        "val": "size"
+        "mod": "space-a"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-14-s-12-m-18"
     },
     {
         "block": "decorator",
@@ -1001,6 +1076,11 @@ exports.deps = [
         "val": "hide"
     },
     {
+        "block": "button",
+        "mod": "width",
+        "val": "small"
+    },
+    {
         "block": "size",
         "elem": "button"
     },
@@ -1014,8 +1094,7 @@ exports.deps = [
     {
         "block": "carousel",
         "elem": "inner",
-        "mod": "width",
-        "val": "decor"
+        "mod": "width"
     },
     {
         "block": "pt-card",
@@ -1034,8 +1113,7 @@ exports.deps = [
     {
         "block": "pt-card",
         "elem": "image",
-        "mod": "view",
-        "val": "decor"
+        "mod": "view"
     },
     {
         "block": "pt-card",
@@ -1096,10 +1174,6 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "xs-20-s-18-m-27"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-v"
     },
     {
         "block": "decorator",
@@ -1164,6 +1238,10 @@ exports.deps = [
     },
     {
         "block": "button",
+        "mod": "type"
+    },
+    {
+        "block": "button",
         "mod": "type",
         "val": "submit"
     },
@@ -1175,9 +1253,8 @@ exports.deps = [
         "elem": "content"
     },
     {
-        "block": "text",
-        "mod": "size",
-        "val": "xs-24-s-28-m-40"
+        "block": "tpl-layout",
+        "elem": "header"
     },
     {
         "block": "pt-icon-plus",
@@ -1202,20 +1279,37 @@ exports.deps = [
         "elem": "image"
     },
     {
-        "block": "reviews",
-        "elem": "title"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-14-s-16-m-27"
     },
     {
-        "block": "reviews",
-        "elem": "subtitle"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-12-s-14-m-20"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-12-s-14-m-18"
     },
     {
         "block": "reviews",
         "elem": "text"
     },
     {
-        "block": "reviews",
-        "elem": "link"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-12-s-14-m-16"
+    },
+    {
+        "block": "text",
+        "mod": "style"
+    },
+    {
+        "block": "text",
+        "mod": "style",
+        "val": "italic"
     },
     {
         "block": "reviews",
@@ -1253,6 +1347,12 @@ exports.deps = [
     {
         "block": "tpl-grid",
         "elem": "fraction",
+        "mod": "s-col",
+        "val": "3"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
         "mod": "s-order"
     },
     {
@@ -1266,9 +1366,14 @@ exports.deps = [
         "elem": "subtitle"
     },
     {
-        "block": "decorator",
-        "mod": "indent-v",
-        "val": "xxs"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-22-s-26-m-35"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "secondary"
     },
     {
         "block": "tpl-grid",
@@ -1295,8 +1400,16 @@ exports.deps = [
         "val": "3"
     },
     {
-        "block": "about",
-        "elem": "image"
+        "block": "avatar"
+    },
+    {
+        "block": "avatar",
+        "elem": "photo"
+    },
+    {
+        "block": "avatar",
+        "elem": "photo",
+        "mod": "size"
     },
     {
         "block": "about",
@@ -1328,12 +1441,12 @@ exports.deps = [
     },
     {
         "block": "social-icon",
-        "mod": "name"
+        "mod": "hover"
     },
     {
         "block": "social-icon",
-        "mod": "name",
-        "val": "instargam"
+        "mod": "hover",
+        "val": "default"
     },
     {
         "block": "social-icon",
@@ -1342,7 +1455,7 @@ exports.deps = [
     {
         "block": "social-icon",
         "mod": "size",
-        "val": "m"
+        "val": "s"
     },
     {
         "block": "social-icon",
@@ -1351,7 +1464,7 @@ exports.deps = [
     {
         "block": "social-icon",
         "mod": "view",
-        "val": "alert"
+        "val": "brand"
     },
     {
         "block": "social-icon",
@@ -1368,11 +1481,6 @@ exports.deps = [
         "val": "xs"
     },
     {
-        "block": "social-icon",
-        "mod": "size",
-        "val": "s"
-    },
-    {
         "block": "quote"
     },
     {
@@ -1385,24 +1493,14 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "quote",
-        "elem": "quotes"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-60-s-77-m-140"
     },
     {
         "block": "text",
-        "mod": "style"
-    },
-    {
-        "block": "text",
-        "mod": "style",
-        "val": "italic"
-    },
-    {
-        "block": "advantages"
-    },
-    {
-        "block": "advantages",
-        "elem": "item"
+        "mod": "view",
+        "val": "desable"
     },
     {
         "block": "theme",
@@ -1410,7 +1508,33 @@ exports.deps = [
         "val": "whitepaper-inverse"
     },
     {
+        "block": "advantages"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "xs"
+    },
+    {
+        "block": "advantages",
+        "elem": "item"
+    },
+    {
+        "block": "theme",
+        "mod": "xs-color-bg"
+    },
+    {
+        "block": "theme",
+        "mod": "xs-color-bg",
+        "val": "default"
+    },
+    {
         "block": "delivery"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "s-columns",
+        "val": "8"
     },
     {
         "block": "tpl-grid",
@@ -1543,6 +1667,11 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "view",
+        "val": "link"
+    },
+    {
+        "block": "text",
         "mod": "display"
     },
     {
@@ -1555,9 +1684,19 @@ exports.deps = [
         "elem": "social"
     },
     {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "xxxxl"
+    },
+    {
         "block": "icon-background",
         "mod": "size",
         "val": "63"
+    },
+    {
+        "block": "social-icon",
+        "mod": "size",
+        "val": "m"
     },
     {
         "block": "decorator",
@@ -1573,6 +1712,15 @@ exports.deps = [
         "block": "footer"
     },
     {
+        "block": "theme",
+        "mod": "s-max-color"
+    },
+    {
+        "block": "theme",
+        "mod": "s-max-color",
+        "val": "whitepaper-inverse"
+    },
+    {
         "block": "footer",
         "elem": "container"
     },
@@ -1585,32 +1733,9 @@ exports.deps = [
         "elem": "nav"
     },
     {
-        "block": "menu"
-    },
-    {
-        "block": "menu",
-        "mod": "focused"
-    },
-    {
-        "block": "menu",
-        "elem": "item"
-    },
-    {
-        "block": "menu",
-        "elem": "group"
-    },
-    {
-        "block": "menu",
-        "elem": "group-title"
-    },
-    {
-        "block": "menu",
-        "elem": "item",
-        "mod": "view"
-    },
-    {
-        "block": "footer",
-        "elem": "logo"
+        "block": "text",
+        "mod": "size",
+        "val": "xs-28-s-18-m-28"
     },
     {
         "block": "text",
@@ -1618,13 +1743,27 @@ exports.deps = [
         "val": "xs-14-s-12-m-16"
     },
     {
-        "block": "text",
-        "mod": "view",
-        "val": "white"
-    },
-    {
         "block": "footer",
         "elem": "social"
+    },
+    {
+        "block": "social-icon",
+        "mod": "size",
+        "val": "32"
+    },
+    {
+        "block": "social-icon",
+        "mod": "view",
+        "val": "primary"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-a"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-a",
+        "val": "xs"
     },
     {
         "block": "footer",
@@ -1637,7 +1776,7 @@ exports.deps = [
     {
         "block": "decorator",
         "mod": "space-v",
-        "val": "xs"
+        "val": "m"
     },
     {
         "block": "decorator",
@@ -1672,6 +1811,12 @@ exports.deps = [
         "elem": "container",
         "mod": "align",
         "val": "center"
+    },
+    {
+        "block": "new-menu",
+        "elem": "logo",
+        "mod": "view",
+        "val": "link"
     },
     {
         "block": "button",
@@ -1742,7 +1887,7 @@ exports.deps = [
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "s-col",
-        "val": "5"
+        "val": "7"
     },
     {
         "block": "tpl-grid",
@@ -1764,15 +1909,27 @@ exports.deps = [
     },
     {
         "block": "pt-card",
-        "elem": "image",
-        "mod": "view",
-        "val": "product"
+        "elem": "header",
+        "mod": "space-a",
+        "val": "gap"
     },
     {
         "block": "pt-card",
         "elem": "footer",
         "mod": "distribute",
         "val": "right"
+    },
+    {
+        "block": "pt-card",
+        "elem": "footer",
+        "mod": "vertical-align",
+        "val": "center"
+    },
+    {
+        "block": "pt-card",
+        "elem": "footer",
+        "mod": "space-a",
+        "val": "gap"
     },
     {
         "block": "pt-card",
@@ -1860,21 +2017,39 @@ exports.deps = [
     },
     {
         "block": "carousel",
-        "elem": "inner",
-        "mod": "width",
-        "val": "size"
-    },
-    {
-        "block": "carousel",
         "elem": "item",
         "mod": "s-m-display",
         "val": "block"
+    },
+    {
+        "block": "pt-card",
+        "elem": "content",
+        "mod": "distribute",
+        "val": "center"
+    },
+    {
+        "block": "pt-card",
+        "elem": "content",
+        "mod": "space-a",
+        "val": "m"
     },
     {
         "block": "carousel",
         "elem": "paginator",
         "mod": "top",
         "val": "160"
+    },
+    {
+        "block": "carousel",
+        "elem": "inner",
+        "mod": "width",
+        "val": "decor"
+    },
+    {
+        "block": "pt-card",
+        "elem": "image",
+        "mod": "view",
+        "val": "decor"
     },
     {
         "block": "carousel",
@@ -1905,6 +2080,12 @@ exports.deps = [
         "val": true
     },
     {
+        "block": "avatar",
+        "elem": "photo",
+        "mod": "size",
+        "val": "l"
+    },
+    {
         "block": "pt-form",
         "elem": "item",
         "mod": "space-v",
@@ -1931,17 +2112,6 @@ exports.deps = [
         "block": "textarea",
         "mod": "focused",
         "val": true
-    },
-    {
-        "block": "menu",
-        "mod": "focused",
-        "val": true
-    },
-    {
-        "block": "menu",
-        "elem": "item",
-        "mod": "view",
-        "val": "link"
     },
     {
         "block": "carousel",

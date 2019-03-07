@@ -49,7 +49,7 @@ exports.blocks = [
                 "name": "color",
                 "vals": [
                     {
-                        "name": "whitepaper-default"
+                        "name": "whitepaper-normal"
                     }
                 ]
             }
@@ -140,25 +140,12 @@ exports.blocks = [
         "name": "theme",
         "mods": [
             {
-                "name": "color",
-                "vals": [
-                    {
-                        "name": "bg-pink"
-                    }
-                ]
+                "name": "color"
             }
         ]
     },
     {
         "name": "new-menu"
-    },
-    {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "color"
-            }
-        ]
     },
     {
         "name": "new-menu",
@@ -213,15 +200,20 @@ exports.blocks = [
         ]
     },
     {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "logo"
-            }
-        ]
+        "name": "text"
     },
     {
-        "name": "text"
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-16-s-20-m-24"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "text",
@@ -230,7 +222,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "link"
+                        "name": "primary"
                     }
                 ]
             }
@@ -257,6 +249,32 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "playfairDisplay"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "logo"
+            }
+        ]
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "logo",
+                "mods": [
+                    {
+                        "name": "view",
+                        "vals": [
+                            {
+                                "name": "link"
+                            }
+                        ]
                     }
                 ]
             }
@@ -333,20 +351,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "primary"
+                        "name": "xs-12-s-12-m-13"
                     }
                 ]
             }
@@ -451,10 +456,23 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "type",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "h1"
+                        "name": "xs-40-s-60-m-78"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "xxs"
                     }
                 ]
             }
@@ -464,7 +482,12 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "size"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-22-s-36-m-41"
+                    }
+                ]
             }
         ]
     },
@@ -472,15 +495,12 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "view"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "weight"
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "promo"
+                    }
+                ]
             }
         ]
     },
@@ -517,20 +537,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "xl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "link"
+                        "name": "m"
                     }
                 ]
             }
@@ -590,6 +597,14 @@ exports.blocks = [
         ]
     },
     {
+        "name": "hero",
+        "elems": [
+            {
+                "name": "icon"
+            }
+        ]
+    },
+    {
         "name": "decorator",
         "mods": [
             {
@@ -603,10 +618,15 @@ exports.blocks = [
         ]
     },
     {
-        "name": "hero",
-        "elems": [
+        "name": "icon",
+        "mods": [
             {
-                "name": "icon"
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "brand"
+                    }
+                ]
             }
         ]
     },
@@ -615,6 +635,32 @@ exports.blocks = [
         "elems": [
             {
                 "name": "block"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "black"
+                    }
+                ]
             }
         ]
     },
@@ -659,10 +705,15 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-layout",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "header"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-24-s-28-m-40"
+                    }
+                ]
             }
         ]
     },
@@ -689,7 +740,7 @@ exports.blocks = [
                 "name": "s-columns",
                 "vals": [
                     {
-                        "name": "8"
+                        "name": "12"
                     }
                 ]
             }
@@ -788,7 +839,7 @@ exports.blocks = [
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "5"
+                                "name": "7"
                             }
                         ]
                     }
@@ -860,41 +911,72 @@ exports.blocks = [
         "name": "pt-card",
         "mods": [
             {
-                "name": "view",
+                "name": "border",
                 "vals": [
                     {
-                        "name": "product"
+                        "name": "all"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "product"
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "xs-height",
+                "vals": [
+                    {
+                        "name": "120"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "s-height",
+                "vals": [
+                    {
+                        "name": "388"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "m-height",
+                "vals": [
+                    {
+                        "name": "392"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "l-height",
+                "vals": [
+                    {
+                        "name": "653"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "pt-card",
         "elems": [
             {
                 "name": "image"
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "product"
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     },
@@ -910,10 +992,20 @@ exports.blocks = [
         ]
     },
     {
-        "name": "product",
+        "name": "pt-card",
         "elems": [
             {
-                "name": "header"
+                "name": "header",
+                "mods": [
+                    {
+                        "name": "space-a",
+                        "vals": [
+                            {
+                                "name": "gap"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -926,26 +1018,54 @@ exports.blocks = [
         ]
     },
     {
-        "name": "product",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "title"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-14-s-14-m-24"
+                    }
+                ]
             }
         ]
     },
     {
-        "name": "product",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "text"
+                "name": "weight",
+                "vals": [
+                    {
+                        "name": "regular"
+                    }
+                ]
             }
         ]
     },
     {
-        "name": "product",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "footer"
+                "name": "indent-v",
+                "vals": [
+                    {
+                        "name": "xxs"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-10-s-12-m-20"
+                    }
+                ]
             }
         ]
     },
@@ -970,6 +1090,55 @@ exports.blocks = [
                                 "name": "right"
                             }
                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "footer",
+                "mods": [
+                    {
+                        "name": "vertical-align",
+                        "vals": [
+                            {
+                                "name": "center"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "footer",
+                "mods": [
+                    {
+                        "name": "space-a",
+                        "vals": [
+                            {
+                                "name": "gap"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-0-s-12-m-0"
                     }
                 ]
             }
@@ -1011,7 +1180,7 @@ exports.blocks = [
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "3"
+                                "name": "5"
                             }
                         ]
                     }
@@ -1074,10 +1243,28 @@ exports.blocks = [
         ]
     },
     {
-        "name": "product",
-        "elems": [
+        "name": "pt-card",
+        "mods": [
             {
-                "name": "info"
+                "name": "s-height",
+                "vals": [
+                    {
+                        "name": "184"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "l-height",
+                "vals": [
+                    {
+                        "name": "305"
+                    }
+                ]
             }
         ]
     },
@@ -1153,10 +1340,10 @@ exports.blocks = [
         "name": "theme",
         "mods": [
             {
-                "name": "color",
+                "name": "color-bg",
                 "vals": [
                     {
-                        "name": "bg-default"
+                        "name": "default"
                     }
                 ]
             }
@@ -1172,7 +1359,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "alert"
+                        "name": "brand"
                     }
                 ]
             }
@@ -1375,19 +1562,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-b",
-                "vals": [
-                    {
-                        "name": "xxs"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -1443,10 +1617,10 @@ exports.blocks = [
         "name": "button",
         "mods": [
             {
-                "name": "size",
+                "name": "width",
                 "vals": [
                     {
-                        "name": "m"
+                        "name": "xs"
                     }
                 ]
             }
@@ -1535,19 +1709,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "arrow-left"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "alert"
                     }
                 ]
             }
@@ -1661,24 +1822,6 @@ exports.blocks = [
         "name": "carousel",
         "elems": [
             {
-                "name": "inner",
-                "mods": [
-                    {
-                        "name": "width",
-                        "vals": [
-                            {
-                                "name": "size"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "carousel",
-        "elems": [
-            {
                 "name": "item",
                 "mods": [
                     {
@@ -1695,28 +1838,15 @@ exports.blocks = [
     },
     {
         "name": "pt-card",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "size"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
         "elems": [
             {
-                "name": "image",
+                "name": "content",
                 "mods": [
                     {
-                        "name": "view",
+                        "name": "distribute",
                         "vals": [
                             {
-                                "name": "size"
+                                "name": "center"
                             }
                         ]
                     }
@@ -1731,12 +1861,25 @@ exports.blocks = [
                 "name": "content",
                 "mods": [
                     {
-                        "name": "view",
+                        "name": "space-a",
                         "vals": [
                             {
-                                "name": "size"
+                                "name": "m"
                             }
                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-14-s-12-m-18"
                     }
                 ]
             }
@@ -1776,6 +1919,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "hide"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "width",
+                "vals": [
+                    {
+                        "name": "small"
                     }
                 ]
             }
@@ -2124,15 +2280,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
+        "name": "tpl-layout",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xs-24-s-28-m-40"
-                    }
-                ]
+                "name": "header"
             }
         ]
     },
@@ -2171,18 +2322,41 @@ exports.blocks = [
         ]
     },
     {
-        "name": "reviews",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "title"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-14-s-16-m-27"
+                    }
+                ]
             }
         ]
     },
     {
-        "name": "reviews",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "subtitle"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-12-s-14-m-20"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-12-s-14-m-18"
+                    }
+                ]
             }
         ]
     },
@@ -2195,10 +2369,28 @@ exports.blocks = [
         ]
     },
     {
-        "name": "reviews",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "link"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-12-s-14-m-16"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "style",
+                "vals": [
+                    {
+                        "name": "italic"
+                    }
+                ]
             }
         ]
     },
@@ -2306,6 +2498,24 @@ exports.blocks = [
                 "name": "fraction",
                 "mods": [
                     {
+                        "name": "s-col",
+                        "vals": [
+                            {
+                                "name": "3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "elems": [
+            {
+                "name": "fraction",
+                "mods": [
+                    {
                         "name": "s-order"
                     }
                 ]
@@ -2339,13 +2549,26 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator",
+        "name": "text",
         "mods": [
             {
-                "name": "indent-v",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "xxs"
+                        "name": "xs-22-s-26-m-35"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "secondary"
                     }
                 ]
             }
@@ -2424,10 +2647,31 @@ exports.blocks = [
         ]
     },
     {
-        "name": "about",
+        "name": "avatar"
+    },
+    {
+        "name": "avatar",
         "elems": [
             {
-                "name": "image"
+                "name": "photo"
+            }
+        ]
+    },
+    {
+        "name": "avatar",
+        "elems": [
+            {
+                "name": "photo",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "l"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -2475,10 +2719,10 @@ exports.blocks = [
         "name": "social-icon",
         "mods": [
             {
-                "name": "name",
+                "name": "hover",
                 "vals": [
                     {
-                        "name": "instargam"
+                        "name": "default"
                     }
                 ]
             }
@@ -2491,7 +2735,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "m"
+                        "name": "s"
                     }
                 ]
             }
@@ -2504,7 +2748,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "alert"
+                        "name": "brand"
                     }
                 ]
             }
@@ -2537,19 +2781,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "social-icon",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "quote"
     },
     {
@@ -2574,10 +2805,15 @@ exports.blocks = [
         ]
     },
     {
-        "name": "quote",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "quotes"
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-60-s-77-m-140"
+                    }
+                ]
             }
         ]
     },
@@ -2585,23 +2821,12 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "style",
+                "name": "view",
                 "vals": [
                     {
-                        "name": "italic"
+                        "name": "desable"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "advantages"
-    },
-    {
-        "name": "advantages",
-        "elems": [
-            {
-                "name": "item"
             }
         ]
     },
@@ -2619,7 +2844,57 @@ exports.blocks = [
         ]
     },
     {
+        "name": "advantages"
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "xs"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "advantages",
+        "elems": [
+            {
+                "name": "item"
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "xs-color-bg",
+                "vals": [
+                    {
+                        "name": "default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "delivery"
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "s-columns",
+                "vals": [
+                    {
+                        "name": "8"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "tpl-grid",
@@ -2897,6 +3172,19 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "link"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
                 "name": "display",
                 "vals": [
                     {
@@ -2915,6 +3203,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "xxxxl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "icon-background",
         "mods": [
             {
@@ -2922,6 +3223,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "63"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "social-icon",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "m"
                     }
                 ]
             }
@@ -2957,6 +3271,19 @@ exports.blocks = [
         "name": "footer"
     },
     {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "s-max-color",
+                "vals": [
+                    {
+                        "name": "whitepaper-inverse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "footer",
         "elems": [
             {
@@ -2981,39 +3308,15 @@ exports.blocks = [
         ]
     },
     {
-        "name": "menu"
-    },
-    {
-        "name": "menu",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "item"
-            }
-        ]
-    },
-    {
-        "name": "menu",
-        "elems": [
-            {
-                "name": "item",
-                "mods": [
+                "name": "size",
+                "vals": [
                     {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "link"
-                            }
-                        ]
+                        "name": "xs-28-s-18-m-28"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "footer",
-        "elems": [
-            {
-                "name": "logo"
             }
         ]
     },
@@ -3031,23 +3334,49 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
+        "name": "footer",
+        "elems": [
+            {
+                "name": "social"
+            }
+        ]
+    },
+    {
+        "name": "social-icon",
         "mods": [
             {
-                "name": "view",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "white"
+                        "name": "32"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "footer",
-        "elems": [
+        "name": "social-icon",
+        "mods": [
             {
-                "name": "social"
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-a",
+                "vals": [
+                    {
+                        "name": "xs"
+                    }
+                ]
             }
         ]
     },
@@ -3066,7 +3395,7 @@ exports.blocks = [
                 "name": "space-v",
                 "vals": [
                     {
-                        "name": "xs"
+                        "name": "m"
                     }
                 ]
             }
