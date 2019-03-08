@@ -2314,10 +2314,31 @@ exports.blocks = [
         ]
     },
     {
-        "name": "reviews",
+        "name": "avatar"
+    },
+    {
+        "name": "avatar",
         "elems": [
             {
-                "name": "image"
+                "name": "photo"
+            }
+        ]
+    },
+    {
+        "name": "avatar",
+        "elems": [
+            {
+                "name": "photo",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "a"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -2647,17 +2668,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "avatar"
-    },
-    {
-        "name": "avatar",
-        "elems": [
-            {
-                "name": "photo"
-            }
-        ]
-    },
-    {
         "name": "avatar",
         "elems": [
             {
@@ -2784,10 +2794,15 @@ exports.blocks = [
         "name": "quote"
     },
     {
-        "name": "tpl-layout",
-        "elems": [
+        "name": "pt-icon-plus",
+        "mods": [
             {
-                "name": "block"
+                "name": "flex-direction",
+                "vals": [
+                    {
+                        "name": "column"
+                    }
+                ]
             }
         ]
     },
@@ -2831,6 +2846,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "text",
+        "mods": [
+            {
+                "name": "width",
+                "vals": [
+                    {
+                        "name": "blockquote"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "theme",
         "mods": [
             {
@@ -2838,6 +2866,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "whitepaper-inverse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xs-13-s-14-m-25"
                     }
                 ]
             }
@@ -2875,6 +2916,105 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "space-v",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-icon-plus",
+        "mods": [
+            {
+                "name": "distribute",
+                "vals": [
+                    {
+                        "name": "between"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-h",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "hover",
+                "vals": [
+                    {
+                        "name": "default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "size"
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-r",
+                "vals": [
+                    {
+                        "name": "xs"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "display",
+                "vals": [
+                    {
+                        "name": "block"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "distribute",
+                "vals": [
+                    {
+                        "name": "between"
                     }
                 ]
             }

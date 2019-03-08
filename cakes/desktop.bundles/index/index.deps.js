@@ -1275,8 +1275,16 @@ exports.deps = [
         "val": "l"
     },
     {
-        "block": "reviews",
-        "elem": "image"
+        "block": "avatar"
+    },
+    {
+        "block": "avatar",
+        "elem": "photo"
+    },
+    {
+        "block": "avatar",
+        "elem": "photo",
+        "mod": "size"
     },
     {
         "block": "text",
@@ -1400,16 +1408,10 @@ exports.deps = [
         "val": "3"
     },
     {
-        "block": "avatar"
-    },
-    {
-        "block": "avatar",
-        "elem": "photo"
-    },
-    {
         "block": "avatar",
         "elem": "photo",
-        "mod": "size"
+        "mod": "size",
+        "val": "l"
     },
     {
         "block": "about",
@@ -1484,8 +1486,13 @@ exports.deps = [
         "block": "quote"
     },
     {
-        "block": "tpl-layout",
-        "elem": "block"
+        "block": "pt-icon-plus",
+        "mod": "flex-direction"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "flex-direction",
+        "val": "column"
     },
     {
         "block": "decorator",
@@ -1503,9 +1510,23 @@ exports.deps = [
         "val": "desable"
     },
     {
+        "block": "text",
+        "mod": "width"
+    },
+    {
+        "block": "text",
+        "mod": "width",
+        "val": "blockquote"
+    },
+    {
         "block": "theme",
         "mod": "color",
         "val": "whitepaper-inverse"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-13-s-14-m-25"
     },
     {
         "block": "advantages"
@@ -1527,6 +1548,65 @@ exports.deps = [
         "block": "theme",
         "mod": "xs-color-bg",
         "val": "default"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v",
+        "val": "l"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "distribute"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "distribute",
+        "val": "between"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-h"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-h",
+        "val": "m"
+    },
+    {
+        "block": "icon",
+        "mod": "hover"
+    },
+    {
+        "block": "icon",
+        "mod": "hover",
+        "val": "default"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r",
+        "val": "xs"
+    },
+    {
+        "block": "icon",
+        "mod": "display"
+    },
+    {
+        "block": "icon",
+        "mod": "display",
+        "val": "block"
+    },
+    {
+        "block": "icon",
+        "mod": "distribute"
+    },
+    {
+        "block": "icon",
+        "mod": "distribute",
+        "val": "between"
     },
     {
         "block": "delivery"
@@ -1768,10 +1848,6 @@ exports.deps = [
     {
         "block": "footer",
         "elem": "copyright"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-v"
     },
     {
         "block": "decorator",
@@ -2083,7 +2159,7 @@ exports.deps = [
         "block": "avatar",
         "elem": "photo",
         "mod": "size",
-        "val": "l"
+        "val": "a"
     },
     {
         "block": "pt-form",
