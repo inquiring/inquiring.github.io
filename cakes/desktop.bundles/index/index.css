@@ -14,13 +14,13 @@ html {
 
 /* Базовые цвета от которых выстраивается вся политра */
 
-/* hsl(0, 0%, 0%) Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ...*/
+/* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ...*/
 
-/* hsl(0, 0%, 100%) Базовый цвет поверхностей */
+/* Базовый цвет поверхностей */
 
-/* hsl(211, 100%, 35%) Проектный цвет, от которого выстраивают акцентные состояния */
+/* Проектный цвет, от которого выстраивают акцентные состояния */
 
-/* hsl(40, 14%, 96%) Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+/* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
 
 /* hsl(220, 100%, 47%) Ссылочный цвет, от которого выстраиваются все их состояния */
 
@@ -98,33 +98,33 @@ html {
 
 /* Цвет ховера ссылки */
 
-.theme_color_whitepaper-normal {
+.theme_color_cakes-normal {
 
 	/* Цвета блоков */
-	--color-bg-brand: #0056b3; /* Цвет фона брендированый */
-	--color-bg-action: color(#0056b3 l(+15%)); /* Цвет фона действия */
-	--color-bg-selection: color(#0056b3 h(-1) l(+31%)); /* Цвет фона выделения */
-	--color-bg-hover: color(#000000 a(15%)); /* Цвет фона при наведении */
+	--color-bg-brand: #f50049; /* Цвет фона брендированый */
+	--color-bg-action: color(#f50049 l(+15%)); /* Цвет фона действия */
+	--color-bg-selection: color(#f50049 h(-1) l(+31%)); /* Цвет фона выделения */
+	--color-bg-hover: color(#2d2829 a(15%)); /* Цвет фона при наведении */
 	--color-bg-border: color(#000 a(5%)); /* Цвет границ */
 	--color-bg-stripe: color(#000 a(4%)); /* Цвет зебры */
 	--color-bg-ghost: color(#000 a(8%)); /* Цвет затенения */
-	--color-bg-default: #dde3e5; /* Цвет дефолта */
+	--color-bg-default: #fbebea; /* Цвет дефолта */
 	--color-bg-tone: color(#000 a(90%)); /* Цвет паранджи */
-	--color-bg-soft: color(#dde3e5 a(97%)); /* Цвет молока */
+	--color-bg-soft: color(#fbebea a(97%)); /* Цвет молока */
 	--color-bg-success: #00985f; /* Цвет успеха */
 	--color-bg-alert: #f33; /* Цвет ошибки */
 	--color-bg-warning: #f90; /* Цвет предупреждения */
-	--color-bg-normal: #dde3e5; /* Цвет нейтральный */
+	--color-bg-normal: #fff; /* Цвет нейтральный */
 	--color-bg-system: #778a9b; /* Цвет системнный */
 	--color-bg-link: color(#0070f0 h(-7%) s(-13) l(+14) a(40%)); /* Цвет фона ссылки */
 
 	/* Цвета текста */
-	--color-typo-brand: #0056b3; /* Цвет брендового текста */
-	--color-typo-primary: #000000; /* Цвет основного текста */
-	--color-typo-promo: color(#000000 a(80%)); /* Цвет промо текста */
-	--color-typo-secondary: color(#000000 a(60%)); /* Цвет второстепенного текста */
-	--color-typo-ghost: color(#000000 a(30%)); /* Цвет дополнительного текста */
-	--color-typo-disable: color(#000000 a(30%)); /* Цвет неактивного текста */
+	--color-typo-brand: #f50049; /* Цвет брендового текста */
+	--color-typo-primary: #2d2829; /* Цвет основного текста */
+	--color-typo-promo: color(#2d2829 a(80%)); /* Цвет промо текста */
+	--color-typo-secondary: color(#2d2829 a(60%)); /* Цвет второстепенного текста */
+	--color-typo-ghost: color(#2d2829 a(30%)); /* Цвет дополнительного текста */
+	--color-typo-disable: color(#2d2829 a(30%)); /* Цвет неактивного текста */
 	--color-typo-success: #00985f; /* Цвет текста успеха */
 	--color-typo-warning: #f90; /* Цвет текста предупреждения */
 	--color-typo-alert: #f33; /* Цвет текста ошибки */
@@ -311,6 +311,10 @@ html {
 
 .tpl-layout {
 	display: grid;
+}
+
+.theme_color-bg_default {
+    background-color: var(--color-bg-default);
 }
 
 .new-menu {
@@ -515,10 +519,6 @@ html {
 .button {
     -ms-touch-action: manipulation;
         touch-action: manipulation;
-}
-
-.control {
-    
 }
 
 @media screen and (min-width: 720px) {
@@ -743,15 +743,13 @@ html {
             justify-content: space-between;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--gap);
 }
 
 @media screen and (max-width: 719px) {
 
     .hero {
         background-image: url('../../img/hero/hero-mobile.png');
-        background-position: -18px -195px;
-        background-size: 391px;
+        background-position-y: top;
     }
 }
 
@@ -759,8 +757,8 @@ html {
 
     .hero {
         background-image: url('../../img/hero/hero-tablet.png');
-        background-position: 344px 0;
-        background-size: 572px;
+        background-position-x: right;
+        background-position-y: bottom;
     }
 }
 
@@ -770,8 +768,20 @@ html {
         background-image: url('../../img/hero/hero-desktop.png');
         background-position-x: right;
         background-position-y: 60px;
-        background-size: 919px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero {
+        background-image: url('../../img/hero/hero-desktop.png');
+        background-position-x: right;
+        background-position-y: 60px;
+    }
+}
+
+.tpl-layout__content {
+	padding: 0 var(--gap);
 }
 
 .hero__intro {
@@ -792,7 +802,7 @@ html {
 
 @media screen and (max-width: 719px) {
     .hero__intro {
-        margin-top: 140px;
+        margin-top: 85px;
         -ms-flex-item-align: center;
             align-self: center;
         height: 370px;
@@ -805,18 +815,14 @@ html {
 
 @media screen and (min-width: 720px) {
    .hero__intro {
-        margin-top: 40px;
-        height: 585px;
+        margin-top: 73px;
     }
-    .hero__intro .pt-icon-plus {
-        width: 215px;
-    }
+
 }
 
 @media screen and (min-width: 1024px) {
    .hero__intro {
         margin-top: 120px;
-        height: 755px;
     }
 }
 
@@ -825,22 +831,21 @@ html {
     .hero__description {
         margin: var(--space-xxxl) auto 0;
         text-align: center;
+        width: 181px;
     }
 }
 
-@media screen and (min-width: 719px) {
-
+@media screen and (min-width: 720px) {
     .hero__description {
+        margin-bottom: 17px;
         width: 270px;
-        height: 270px;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
 
     .hero__description {
-        width: 370px;
+        width: 355px;
     }
 }
 
@@ -1127,8 +1132,23 @@ html {
     width: 226px;
 }
 
+@media screen and (min-width: 720px) {
+    .hero__button {
+        margin-bottom: 147px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero__button {
+        margin-bottom: 128px;
+    }
+}
+
 @media screen and (max-width: 719px) {
 
+    .hero__footer {
+        width: 240px;
+    }
 }
 
 @media screen and (min-width: 720px) {
@@ -1137,12 +1157,18 @@ html {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 387px;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
 
+    .hero__footer {
+        padding-bottom: 292px;
+    }
 }
 
 .pt-icon-plus {
@@ -1153,40 +1179,14 @@ html {
 	    flex-wrap: nowrap;
 }
 
-.pt-icon-plus_vertical-align_center {
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-
-.pt-icon-plus_vertical-align_center .pt-icon-plus__icon {
-		margin-top: 0;
-	}
-
-.decorator_indent-t_m {
-	margin-top: var(--space-m);
+.decorator_indent-r_xxxxxl {
+	margin-right: var(--space-xxxxxl);
 }
 
 .pt-icon-plus__icon {
 	margin-top: 0.2em;
 	-ms-flex-negative: 0;
 	    flex-shrink: 0;
-}
-
-@media screen and (max-width: 719px) {
-
-    .hero__icon {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-@media screen and (min-width: 720px) {
-
-    .hero__icon {
-        width: 55px;
-        height: 55px;
-    }
 }
 
 .decorator_indent-r_m {
@@ -1207,21 +1207,26 @@ html {
 	line-height: var(--line-height-typo-s);
 }
 
-.decorator_indent-r_xxxl {
-	margin-right: var(--space-xxxl);
-}
-
 .tpl-layout__section {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
 
 .products {
+    margin-top: -140px;
     padding-top: 60px;
 }
 
-.tpl-layout__content {
-	padding: 0 var(--gap);
+@media screen and (min-width: 720px) {
+    .products {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .products {
+        margin-top: -140px;
+    }
 }
 
 @media screen and (min-width: 320px) {
@@ -1589,6 +1594,16 @@ html {
 	        box-sizing: border-box;
 }
 
+.pt-icon-plus_vertical-align_center {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.pt-icon-plus_vertical-align_center .pt-icon-plus__icon {
+		margin-top: 0;
+	}
+
 @media screen and (min-width: 320px) {
 
     .text_size_xs-0-s-12-m-0 {
@@ -1639,17 +1654,35 @@ html {
 	text-align: center;
 }
 
-.text_size_xxl {
-	font-size: var(--size-typo-xxl);
-	line-height: var(--line-height-typo-xxl);
+@media screen and (min-width: 320px) {
+
+    .text_size_xs-22-s-26-m-35 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .text_size_xs-22-s-26-m-35 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .text_size_xs-22-s-26-m-35 {
+        font-size: 35px;
+        line-height: 37px;
+    }
 }
 
 .decorator_indent-t_xxs {
 	margin-top: var(--space-xxs);
 }
 
-.theme_color-bg_default {
-    background-color: var(--color-bg-default);
+.theme_color-bg_normal {
+    background-color: var(--color-bg-normal);
 }
 
 @media screen and (min-width: 720px) {
@@ -2023,7 +2056,8 @@ html {
     .decor {
         background-image: url('../../img/decor/decor-tablet.png');
         background-repeat: no-repeat;
-        background-position: 35px 180px;
+        background-position-x: left;
+        background-position-y: 80px;
     }
 }
 
@@ -2049,6 +2083,7 @@ html {
     .decor__content {
         max-width: 450px;
         margin-left: auto;
+        margin-top: -50px;
     }
 }
 
@@ -2523,12 +2558,6 @@ html {
     padding-top: 60px;
 }
 
-@media screen and (max-width: 719px) {
-    .reviews {
-        /* padding-bottom: 25px; */
-    }
-}
-
 @media screen and (min-width: 720px) {
     .reviews {
         background-image: url('../../img/reviews/reviews-bg-left-tablet.png'),
@@ -2595,12 +2624,6 @@ html {
     font-weight: 700;
     letter-spacing: 0.04px;
     margin: 0;
-}
-
-@media screen and (max-width: 719px) {
-
-    .tpl-layout__header {
-    }
 }
 
 @media screen and (min-width: 720px) {
@@ -2717,34 +2740,13 @@ html {
     }
 }
 
-.reviews__text {
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-@media screen and (min-width: 320px) {
-
-    .reviews__text {
-        width: 230px;
-        display: inline;
-    }
+.text_display_inline {
+	display: inline;
 }
 
 @media screen and (min-width: 720px) {
-
     .reviews__text {
-        text-align: left;
-        width: 250px;
         display: block;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .reviews__text {
-        text-align: left;
-        width: 353px;
-        display: inline;
     }
 }
 
@@ -2789,29 +2791,6 @@ html {
 
 .decorator_indent-b_xxl {
 	margin-bottom: var(--space-xxl);
-}
-
-@media screen and (min-width: 320px) {
-
-    .text_size_xs-22-s-26-m-35 {
-        font-size: 22px;
-        line-height: 24px;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    .text_size_xs-22-s-26-m-35 {
-        font-size: 26px;
-        line-height: 28px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .text_size_xs-22-s-26-m-35 {
-        font-size: 35px;
-        line-height: 37px;
-    }
 }
 
 .text_view_secondary {
@@ -2902,8 +2881,8 @@ html {
     height: 36px;
 }
 
-.icon-background_view_default {
-    background-color: var(--color-bg-default);
+.icon-background_view_normal {
+    background-color: var(--color-bg-normal);
 }
 
 .social-icon {
@@ -3010,127 +2989,8 @@ html {
     }
 }
 
-/* Базовые цвета от которых выстраивается вся политра */
-
-/* hsl(0, 0%, 0%) Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
-
-/* hsl(0, 0%, 100%) Базовый цвет поверхностей */
-
-/* hsl(211, 100%, 35%) Проектный цвет, от которого выстраивают акцентные состояния */
-
-/* hsl(40, 14%, 96%) Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
-
-/* hsl(220, 100%, 47%) Ссылочный цвет, от которого выстраиваются все их состояния */
-
-/* Цвет успеха */
-
-/* Цвет ошибки */
-
-/* Цвет предупреждения */
-
-/* Цвет нейтральный */
-
-/* Цвет системнный */
-
-/* Цвета фона */
-
-/* Цвет фона брендированый */
-
-/* Цвет фона действия */
-
-/* Цвет фона выделения */
-
-/* Цвет фона при наведении */
-
-/* Цвет границ */
-
-/* Цвет зебры */
-
-/* Цвет затенения */
-
-/* Цвет дефолта */
-
-/* Цвет паранджи */
-
-/* Цвет молока */
-
-/* Цвет фона успеха */
-
-/* Цвет фона ошибки */
-
-/* Цвет фона предупреждения */
-
-/* Цвет фона нейтральный */
-
-/* Цвет фона системнный */
-
-/* Цвет фона ссылки */
-
-/* Цвета текста */
-
-/* Цвет брендового текста */
-
-/* Цвет основного текста */
-
-/* Цвет промо текста */
-
-/* Цвет второстепенного текста */
-
-/* Цвет дополнительного текста */
-
-/* Цвет неактивного текста */
-
-/* Цвет текста успеха */
-
-/* Цвет текста предупреждения */
-
-/* Цвет текста ошибки */
-
-/* Цвета ссылок */
-
-/* Цвет основной ссылки */
-
-/* Цвет дополнительной ссылки */
-
-/* Цвет второстепенной ссылки */
-
-/* Цвет ховера ссылки */
-
-.theme_color_whitepaper-inverse {
-	/* Цвета блоков */
-	--color-bg-brand: #fff; /* Цвет фона брендированый */
-	--color-bg-action: color(#fff l(+15%)); /* Цвет фона действия */
-	--color-bg-selection: color(#fff h(-1) l(+31%)); /* Цвет фона выделения */
-	--color-bg-hover: color(#fff a(15%)); /* Цвет фона при наведении */
-	--color-bg-border: color(#fff a(5%)); /* Цвет границ */
-	--color-bg-stripe: color(#fff a(4%)); /* Цвет зебры */
-	--color-bg-ghost: color(#fff a(8%)); /* Цвет затенения */
-	--color-bg-default: #000; /* Цвет дефолта */
-	--color-bg-tone: color(#fff a(90%)); /* Цвет паранджи */
-	--color-bg-soft: color(#000 a(97%)); /* Цвет молока */
-	--color-bg-success: #00985f; /* Цвет успеха */
-	--color-bg-alert: #f33; /* Цвет ошибки */
-	--color-bg-warning: #f90; /* Цвет предупреждения */
-	--color-bg-normal: #dde3e5; /* Цвет нейтральный */
-	--color-bg-system: #778a9b; /* Цвет системнный */
-	--color-bg-link: color(#fff h(-7%) s(-13) l(+14) a(40%)); /* Цвет фона ссылки */
-
-	/* Цвета текста */
-	--color-typo-brand: #fff; /* Цвет брендового текста */
-	--color-typo-primary: #fff; /* Цвет основного текста */
-	--color-typo-promo: color(#fff a(80%)); /* Цвет промо текста */
-	--color-typo-secondary: color(#fff a(60%)); /* Цвет второстепенного текста */
-	--color-typo-ghost: color(#fff a(30%)); /* Цвет дополнительного текста */
-	--color-typo-disable: color(#fff a(30%)); /* Цвет неактивного текста */
-	--color-typo-success: #00985f; /* Цвет текста успеха */
-	--color-typo-warning: #f90; /* Цвет текста предупреждения */
-	--color-typo-alert: #f33; /* Цвет текста ошибки */
-
-	/* Цвета ссылок */
-	--color-link: #fff; /* Цвет основной ссылки */
-	--color-link-external: #fff; /* Цвет дополнительной ссылки */
-	--color-link-minor: color(#fff h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
-	--color-link-hover: color(#fff l(-7%)); /* Цвет ховера ссылки */
+.theme_color_normal {
+    color: var(--color-bg-normal);
 }
 
 @media screen and (min-width: 320px) {
@@ -3278,6 +3138,133 @@ html {
 	margin-right: var(--space-xs);
 }
 
+.decorator_indent-t_l {
+	margin-top: var(--space-l);
+}
+
+/* Базовые цвета от которых выстраивается вся политра */
+
+/* hsl(0, 0%, 0%) Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
+
+/* hsl(0, 0%, 100%) Базовый цвет поверхностей */
+
+/* hsl(211, 100%, 35%) Проектный цвет, от которого выстраивают акцентные состояния */
+
+/* hsl(40, 14%, 96%) Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+
+/* hsl(220, 100%, 47%) Ссылочный цвет, от которого выстраиваются все их состояния */
+
+/* Цвет успеха */
+
+/* Цвет ошибки */
+
+/* Цвет предупреждения */
+
+/* Цвет нейтральный */
+
+/* Цвет системнный */
+
+/* Цвета фона */
+
+/* Цвет фона брендированый */
+
+/* Цвет фона действия */
+
+/* Цвет фона выделения */
+
+/* Цвет фона при наведении */
+
+/* Цвет границ */
+
+/* Цвет зебры */
+
+/* Цвет затенения */
+
+/* Цвет дефолта */
+
+/* Цвет паранджи */
+
+/* Цвет молока */
+
+/* Цвет фона успеха */
+
+/* Цвет фона ошибки */
+
+/* Цвет фона предупреждения */
+
+/* Цвет фона нейтральный */
+
+/* Цвет фона системнный */
+
+/* Цвет фона ссылки */
+
+/* Цвета текста */
+
+/* Цвет брендового текста */
+
+/* Цвет основного текста */
+
+/* Цвет промо текста */
+
+/* Цвет второстепенного текста */
+
+/* Цвет дополнительного текста */
+
+/* Цвет неактивного текста */
+
+/* Цвет текста успеха */
+
+/* Цвет текста предупреждения */
+
+/* Цвет текста ошибки */
+
+/* Цвета ссылок */
+
+/* Цвет основной ссылки */
+
+/* Цвет дополнительной ссылки */
+
+/* Цвет второстепенной ссылки */
+
+/* Цвет ховера ссылки */
+
+.theme_color_whitepaper-inverse {
+	/* Цвета блоков */
+	--color-bg-brand: #fff; /* Цвет фона брендированый */
+	--color-bg-action: color(#fff l(+15%)); /* Цвет фона действия */
+	--color-bg-selection: color(#fff h(-1) l(+31%)); /* Цвет фона выделения */
+	--color-bg-hover: color(#fff a(15%)); /* Цвет фона при наведении */
+	--color-bg-border: color(#fff a(5%)); /* Цвет границ */
+	--color-bg-stripe: color(#fff a(4%)); /* Цвет зебры */
+	--color-bg-ghost: color(#fff a(8%)); /* Цвет затенения */
+	--color-bg-default: #000; /* Цвет дефолта */
+	--color-bg-tone: color(#fff a(90%)); /* Цвет паранджи */
+	--color-bg-soft: color(#000 a(97%)); /* Цвет молока */
+	--color-bg-success: #00985f; /* Цвет успеха */
+	--color-bg-alert: #f33; /* Цвет ошибки */
+	--color-bg-warning: #f90; /* Цвет предупреждения */
+	--color-bg-normal: #dde3e5; /* Цвет нейтральный */
+	--color-bg-system: #778a9b; /* Цвет системнный */
+	--color-bg-link: color(#fff h(-7%) s(-13) l(+14) a(40%)); /* Цвет фона ссылки */
+
+	/* Цвета текста */
+	--color-typo-brand: #fff; /* Цвет брендового текста */
+	--color-typo-primary: #fff; /* Цвет основного текста */
+	--color-typo-promo: color(#fff a(80%)); /* Цвет промо текста */
+	--color-typo-secondary: color(#fff a(60%)); /* Цвет второстепенного текста */
+	--color-typo-ghost: color(#fff a(30%)); /* Цвет дополнительного текста */
+	--color-typo-disable: color(#fff a(30%)); /* Цвет неактивного текста */
+	--color-typo-success: #00985f; /* Цвет текста успеха */
+	--color-typo-warning: #f90; /* Цвет текста предупреждения */
+	--color-typo-alert: #f33; /* Цвет текста ошибки */
+
+	/* Цвета ссылок */
+	--color-link: #fff; /* Цвет основной ссылки */
+	--color-link-external: #fff; /* Цвет дополнительной ссылки */
+	--color-link-minor: color(#fff h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
+	--color-link-hover: color(#fff l(-7%)); /* Цвет ховера ссылки */
+}
+
 .delivery {
     background-color: #e3353d;
 }
@@ -3289,7 +3276,8 @@ html {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 100%;
-        padding-bottom: 125px;
+        padding-top: 20px;
+        padding-bottom: 134px;
     }
 }
 
@@ -3300,6 +3288,8 @@ html {
         background-color: #e3353d;
         background-repeat: no-repeat;
         background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 41px;
     }
 
 }
@@ -3310,16 +3300,26 @@ html {
         background-image: url('../../img/delivery/delivery-desktop.jpg');
         background-color: #e3353d;
         background-repeat: no-repeat;
+        padding-top: 95px;
+        padding-bottom: 160px;
+        padding-left: 125px;
     }
 
 }
 
-.tpl-grid_col-gap_third {
-	grid-column-gap: var(--col-gap-third);
+@media screen and (min-width: 720px) {
+
+    .delivery__content {
+        width: 340px;
+        margin-left: auto;
+    }
 }
 
-.tpl-grid_row-gap_half {
-	grid-row-gap: var(--col-gap-half);
+@media screen and (min-width: 1024px) {
+
+    .delivery__content {
+        width: 464px;
+    }
 }
 
 .delivery-list {
@@ -3336,33 +3336,67 @@ html {
 .delivery-list__item {
     counter-increment: item;
     position: relative;
-    margin-bottom: 25px;
     color: #fff;
+    margin-bottom: 25px;
     padding-left: 25px;
 }
 
 .delivery-list__item:before {
     content: counter(item);
     position: absolute;
-    left: 0px;
-    top: 0;
-    font-family: "Playfair Display",serif;
-    font-size: 64px;
-    line-height: 14px;
-}
 
-@media screen and (max-width: 719px) {
-    .delivery-list__item:before {
-        font-size: 35px;
-        /* padding-left: 35px; */
-    }
-
+    left: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
 }
 
 @media screen and (min-width: 720px) {
+
     .delivery-list__item {
-         padding-left: 45px;
+        padding-left: 45px;
     }
+}
+
+@media screen and (min-width: 320px) {
+
+    .delivery-list__item:before {
+        font-size: 35px;
+        top: -19px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .delivery-list__item {
+        padding-left: 30px;
+    }
+
+    .delivery-list__item:before {
+        font-size: 36px;
+        top: -14px;
+    }
+    .delivery-list__item:nth-child(1) > p.text {
+        margin-right: 50px;
+    }
+    .delivery-list__item:nth-child(2) > p.text {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .delivery-list__item {
+        padding-left: 46px;
+    }
+
+    .delivery-list__item:before {
+        font-size: 64px;
+        top: -30px;
+    }
+    .delivery-list__item:nth-child(2) > p.text {
+        margin-right: 0px;
+    }
+
 }
 
 @media screen and (min-width: 320px) {
@@ -3394,28 +3428,31 @@ html {
 
 @media screen and (min-width: 720px) {
     .contacts {
-        background-image: url(../../common.blocks/contacts/img/contacts-desktop.png);
+        background-image: url(../../img/contacts/contacts.jpg);
         background-repeat: no-repeat;
         background-size: 60%;
         background-position-x: 100%;
         background-position-y: 100%;
-        height: 590px;
+
     }
 }
 
 @media screen and (min-width: 1024px) {
     .contacts {
-        background-image: url(../../common.blocks/contacts/img/contacts-desktop.png);
+        background-image: url(../../img/contacts/contacts.jpg);
         background-repeat: no-repeat;
         background-size: auto;
         background-position-x: 100%;
         background-position-y: 100%;
-        height: 850px;
     }
 }
 
-.tpl-layout__container_size_m {
-	max-width: 1144px;
+.tpl-grid_col-gap_third {
+	grid-column-gap: var(--col-gap-third);
+}
+
+.tpl-grid_row-gap_half {
+	grid-row-gap: var(--col-gap-half);
 }
 
 @media screen and (min-width: 320px) {
@@ -3644,10 +3681,32 @@ html {
 }
 
 @media screen and (min-width: 720px) {
+    .contacts__button {
+        margin-top: 20px;
+        margin-bottom: 110px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contacts__button {
+        margin-top: 70px;
+        margin-bottom: 297px;
+    }
+}
+
+@media screen and (min-width: 720px) {
 
     .contacts__section-right {
         padding-left: 67px;
-        padding-top: 27px;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contacts__section-right {
+        padding-left: 82px;
+        padding-top: 40px;
     }
 }
 
@@ -3664,11 +3723,11 @@ html {
 	}
 
 .text_view_link {
-    
+    color: var(--color-typo-primary);
 }
 
-.text_display_inline {
-	display: inline;
+.text_view_link:hover {
+    color: var(--color-typo-brand);
 }
 
 .contacts__social {
@@ -3708,10 +3767,6 @@ html {
 
 .footer {
     background-color: #898989;
-}
-
-.theme_s-max-color_whitepaper-inverse {
-
 }
 
 /* Базовые цвета от которых выстраивается вся политра */
@@ -4067,8 +4122,8 @@ html {
 	margin-left: var(--space-s);
 }
 
-.tpl-layout__container_size_l {
-    max-width: 1264px;
+.tpl-layout__container_size_m {
+	max-width: 1144px;
 }
 
 .tpl-layout__container_align_center {
