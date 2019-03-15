@@ -705,6 +705,24 @@ exports.blocks = [
         ]
     },
     {
+        "name": "tpl-layout",
+        "elems": [
+            {
+                "name": "container",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "l"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "text",
         "mods": [
             {
@@ -719,45 +737,6 @@ exports.blocks = [
     },
     {
         "name": "tpl-grid"
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "xs-ratio",
-                "vals": [
-                    {
-                        "name": "1"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "s-columns",
-                "vals": [
-                    {
-                        "name": "12"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "m-columns",
-                "vals": [
-                    {
-                        "name": "12"
-                    }
-                ]
-            }
-        ]
     },
     {
         "name": "tpl-grid",
@@ -780,6 +759,58 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "full"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "xs-ratio",
+                "vals": [
+                    {
+                        "name": "1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "500-ratio",
+                "vals": [
+                    {
+                        "name": "1-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "s-columns",
+                "vals": [
+                    {
+                        "name": "8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "m-columns",
+                "vals": [
+                    {
+                        "name": "12"
                     }
                 ]
             }
@@ -839,7 +870,7 @@ exports.blocks = [
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "7"
+                                "name": "5"
                             }
                         ]
                     }
@@ -884,37 +915,19 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "m-row",
-                        "vals": [
-                            {
-                                "name": "2"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "link"
-    },
-    {
         "name": "pt-card"
     },
     {
-        "name": "pt-card",
+        "name": "product"
+    },
+    {
+        "name": "product",
         "mods": [
             {
-                "name": "border",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "all"
+                        "name": "large"
                     }
                 ]
             }
@@ -922,58 +935,22 @@ exports.blocks = [
     },
     {
         "name": "pt-card",
-        "mods": [
+        "elems": [
             {
-                "name": "xs-height",
-                "vals": [
-                    {
-                        "name": "120"
-                    }
-                ]
+                "name": "content"
             }
         ]
     },
     {
         "name": "pt-card",
-        "mods": [
+        "elems": [
             {
-                "name": "s-height",
-                "vals": [
-                    {
-                        "name": "388"
-                    }
-                ]
+                "name": "image"
             }
         ]
     },
     {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "m-height",
-                "vals": [
-                    {
-                        "name": "392"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "l-height",
-                "vals": [
-                    {
-                        "name": "653"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
+        "name": "product",
         "elems": [
             {
                 "name": "image"
@@ -992,20 +969,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-card",
+        "name": "product",
         "elems": [
             {
-                "name": "header",
-                "mods": [
-                    {
-                        "name": "space-a",
-                        "vals": [
-                            {
-                                "name": "gap"
-                            }
-                        ]
-                    }
-                ]
+                "name": "header"
             }
         ]
     },
@@ -1070,6 +1037,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "text",
+        "mods": [
+            {
+                "name": "align",
+                "vals": [
+                    {
+                        "name": "left"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "pt-card",
         "elems": [
             {
@@ -1114,20 +1094,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-card",
+        "name": "product",
         "elems": [
             {
-                "name": "footer",
-                "mods": [
-                    {
-                        "name": "space-a",
-                        "vals": [
-                            {
-                                "name": "gap"
-                            }
-                        ]
-                    }
-                ]
+                "name": "footer"
             }
         ]
     },
@@ -1193,7 +1163,7 @@ exports.blocks = [
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "5"
+                                "name": "3"
                             }
                         ]
                     }
@@ -1238,60 +1208,29 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "m-row",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
+        "name": "product",
         "mods": [
             {
-                "name": "s-height",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "184"
+                        "name": "small"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "l-height",
-                "vals": [
-                    {
-                        "name": "305"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
+        "name": "product",
         "elems": [
             {
                 "name": "image",
                 "mods": [
                     {
-                        "name": "bg",
+                        "name": "bg-color",
                         "vals": [
                             {
-                                "name": "gray"
+                                "name": "grey"
                             }
                         ]
                     }
@@ -1363,7 +1302,12 @@ exports.blocks = [
         ]
     },
     {
-        "name": "filling"
+        "name": "order",
+        "elems": [
+            {
+                "name": "card"
+            }
+        ]
     },
     {
         "name": "text",
@@ -1426,14 +1370,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "filling",
-        "elems": [
-            {
-                "name": "content"
-            }
-        ]
-    },
-    {
         "name": "carousel"
     },
     {
@@ -1474,6 +1410,24 @@ exports.blocks = [
         "name": "carousel",
         "elems": [
             {
+                "name": "inner",
+                "mods": [
+                    {
+                        "name": "s-m-direction",
+                        "vals": [
+                            {
+                                "name": "row"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "carousel",
+        "elems": [
+            {
                 "name": "item"
             }
         ]
@@ -1497,38 +1451,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "align",
-                "vals": [
-                    {
-                        "name": "center"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "filling"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "elems": [
-            {
-                "name": "content"
-            }
-        ]
+        "name": "filling"
     },
     {
         "name": "pt-card",
@@ -1537,10 +1460,10 @@ exports.blocks = [
                 "name": "content",
                 "mods": [
                     {
-                        "name": "view",
+                        "name": "distribute",
                         "vals": [
                             {
-                                "name": "filling"
+                                "name": "center"
                             }
                         ]
                     }
@@ -1549,15 +1472,18 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
+        "name": "filling",
+        "elems": [
             {
-                "name": "align",
-                "vals": [
-                    {
-                        "name": "left"
-                    }
-                ]
+                "name": "image"
+            }
+        ]
+    },
+    {
+        "name": "filling",
+        "elems": [
+            {
+                "name": "footer"
             }
         ]
     },
@@ -1588,15 +1514,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
+        "name": "filling",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xs-18-s-20-m-22"
-                    }
-                ]
+                "name": "block"
             }
         ]
     },
@@ -1604,10 +1525,10 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "xs-align",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "center"
+                        "name": "xs-18-s-20-m-22"
                     }
                 ]
             }
@@ -1647,6 +1568,63 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "check"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "align",
+                "vals": [
+                    {
+                        "name": "center"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "filling"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "content",
+                "mods": [
+                    {
+                        "name": "view",
+                        "vals": [
+                            {
+                                "name": "filling"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "xs-align",
+                "vals": [
+                    {
+                        "name": "center"
                     }
                 ]
             }
@@ -1773,10 +1751,10 @@ exports.blocks = [
                 "name": "paginator",
                 "mods": [
                     {
-                        "name": "top",
+                        "name": "position",
                         "vals": [
                             {
-                                "name": "120"
+                                "name": "order-1"
                             }
                         ]
                     }
@@ -1811,27 +1789,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "size"
-    },
-    {
-        "name": "carousel",
-        "elems": [
-            {
-                "name": "inner",
-                "mods": [
-                    {
-                        "name": "s-m-direction",
-                        "vals": [
-                            {
-                                "name": "row"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "carousel",
         "elems": [
             {
@@ -1850,22 +1807,20 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-card",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "content",
-                "mods": [
+                "name": "indent-a",
+                "vals": [
                     {
-                        "name": "distribute",
-                        "vals": [
-                            {
-                                "name": "center"
-                            }
-                        ]
+                        "name": "xxs"
                     }
                 ]
             }
         ]
+    },
+    {
+        "name": "size"
     },
     {
         "name": "pt-card",
@@ -1874,10 +1829,73 @@ exports.blocks = [
                 "name": "content",
                 "mods": [
                     {
-                        "name": "space-a",
+                        "name": "space-h"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "label"
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "input"
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image-wrapper"
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image-wrapper",
+                "mods": [
+                    {
+                        "name": "size",
                         "vals": [
                             {
-                                "name": "m"
+                                "name": "small"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image"
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "small"
                             }
                         ]
                     }
@@ -1895,6 +1913,14 @@ exports.blocks = [
                         "name": "xs-14-s-12-m-18"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image-text"
             }
         ]
     },
@@ -1959,16 +1985,227 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "content",
+                "mods": [
+                    {
+                        "name": "space-a"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image-wrapper",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "medium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "medium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image-wrapper",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "large"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "large-two"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "large"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image-wrapper",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "extralarge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "extralarge-third"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "extralarge-two"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "size",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "extralarge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "carousel",
         "elems": [
             {
                 "name": "paginator",
                 "mods": [
                     {
-                        "name": "top",
+                        "name": "position",
                         "vals": [
                             {
-                                "name": "160"
+                                "name": "order-2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "order",
+        "elems": [
+            {
+                "name": "card",
+                "mods": [
+                    {
+                        "name": "bg",
+                        "vals": [
+                            {
+                                "name": "image"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "carousel",
+        "elems": [
+            {
+                "name": "inner",
+                "mods": [
+                    {
+                        "name": "s-m-display",
+                        "vals": [
+                            {
+                                "name": "block"
                             }
                         ]
                     }
@@ -1983,87 +2220,31 @@ exports.blocks = [
         "name": "decor",
         "elems": [
             {
-                "name": "content"
+                "name": "label"
             }
         ]
     },
     {
-        "name": "carousel",
+        "name": "decor",
         "elems": [
             {
-                "name": "inner",
-                "mods": [
-                    {
-                        "name": "width",
-                        "vals": [
-                            {
-                                "name": "decor"
-                            }
-                        ]
-                    }
-                ]
+                "name": "input"
             }
         ]
     },
     {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "xs-align",
-                "vals": [
-                    {
-                        "name": "center"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "decor"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
+        "name": "decor",
         "elems": [
             {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "decor"
-                            }
-                        ]
-                    }
-                ]
+                "name": "image"
             }
         ]
     },
     {
-        "name": "pt-card",
+        "name": "decor",
         "elems": [
             {
-                "name": "footer",
-                "mods": [
-                    {
-                        "name": "distribute",
-                        "vals": [
-                            {
-                                "name": "center"
-                            }
-                        ]
-                    }
-                ]
+                "name": "footer"
             }
         ]
     },
@@ -2081,13 +2262,13 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-card",
+        "name": "decor",
         "mods": [
             {
-                "name": "xs-max",
+                "name": "xs-visibility",
                 "vals": [
                     {
-                        "name": "hide"
+                        "name": "hidden"
                     }
                 ]
             }
@@ -2100,10 +2281,10 @@ exports.blocks = [
                 "name": "paginator",
                 "mods": [
                     {
-                        "name": "top",
+                        "name": "position",
                         "vals": [
                             {
-                                "name": "215"
+                                "name": "order-3"
                             }
                         ]
                     }
@@ -2545,24 +2726,6 @@ exports.blocks = [
                 "name": "fraction",
                 "mods": [
                     {
-                        "name": "s-col",
-                        "vals": [
-                            {
-                                "name": "3"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
                         "name": "s-order"
                     }
                 ]
@@ -2580,6 +2743,24 @@ exports.blocks = [
                         "vals": [
                             {
                                 "name": "6"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "elems": [
+            {
+                "name": "fraction",
+                "mods": [
+                    {
+                        "name": "m-row",
+                        "vals": [
+                            {
+                                "name": "2"
                             }
                         ]
                     }
@@ -3107,19 +3288,6 @@ exports.blocks = [
     },
     {
         "name": "contacts"
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "s-columns",
-                "vals": [
-                    {
-                        "name": "8"
-                    }
-                ]
-            }
-        ]
     },
     {
         "name": "tpl-grid",
