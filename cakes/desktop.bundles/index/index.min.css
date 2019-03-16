@@ -359,31 +359,18 @@ html {
 
 .new-menu__container {
     height: 100%;
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
-
     -webkit-box-orient: horizontal;
-
     -webkit-box-direction: normal;
-
         -ms-flex-flow: row nowrap;
-
             flex-flow: row nowrap;
-
     -webkit-box-pack: justify;
-
         -ms-flex-pack: justify;
-
             justify-content: space-between;
-
     -webkit-box-align: center;
-
         -ms-flex-align: center;
-
             align-items: center;
 }
 
@@ -600,7 +587,7 @@ html {
 @media screen and (max-width: 1023px) {
 
     .new-menu__nav {
-        width: 320px;
+        min-width: 320px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -776,6 +763,10 @@ html {
         background-position-x: right;
         background-position-y: 60px;
     }
+}
+
+.tpl-layout__container_size_m {
+	max-width: 1144px;
 }
 
 .tpl-layout__content {
@@ -1238,10 +1229,6 @@ html {
     }
 }
 
-.tpl-layout__container_size_l {
-    max-width: 1264px;
-}
-
 @media screen and (min-width: 320px) {
 
     .text_size_xs-24-s-28-m-40 {
@@ -1528,10 +1515,6 @@ html {
     background-color: #fff;
 }
 
-.image {
-    border: 0;
-}
-
 .pt-card__header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1705,6 +1688,151 @@ html {
     }
 }
 
+.product__image_card_2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 719px) {
+
+    .product__image_card_2  {
+        background-image: url("../../common.blocks/product/__image/_card/mousCake-mobile.jpg");
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_2  {
+        background-image: url("../../common.blocks/product/__image/_card/mousCake-tablet.jpg");
+        height: 184px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .product__image_card_2  {
+        background-image: url("../../common.blocks/product/__image/_card/mousCake-desktop.jpg");
+        height: 305px;
+    }
+}
+
+.product__image_card_3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 719px) {
+
+    .product__image_card_3  {
+        background-image: url("../../common.blocks/product/__image/_card/weddingCake-mobile.jpg");
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_3  {
+        background-image: url("../../common.blocks/product/__image/_card/weddingCake-tablet.jpg");
+        height: 184px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .product__image_card_3  {
+        background-image: url("../../common.blocks/product/__image/_card/weddingCake-desktop.jpg");
+        height: 305px;
+    }
+}
+
+.product__image_card_4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 719px) {
+
+    .product__image_card_4  {
+        background-image: url("../../common.blocks/product/__image/_card/menCake-mobile.jpg");
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_4  {
+        background-image: url("../../common.blocks/product/__image/_card/menCake-tablet.jpg");
+        height: 184px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .product__image_card_4  {
+        background-image: url("../../common.blocks/product/__image/_card/menCake-desktop.jpg");
+        height: 305px;
+    }
+}
+
+.product__image_card_5  {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 719px) {
+
+    .product__image_card_5  {
+        background-image: url("../../common.blocks/product/__image/_card/kidsCake-mobile.jpg");
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_5  {
+        background-image: url("../../common.blocks/product/__image/_card/kidsCake-tablet.jpg");
+        height: 388px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .product__image_card_5  {
+        background-image: url("../../common.blocks/product/__image/_card/kidsCake-desktop.jpg");
+        height: 653px;
+    }
+}
+
+.product__image_card_6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 719px) {
+
+    .product__image_card_6  {
+        background-image: url("../../common.blocks/product/__image/_card/womenCake-mobile.jpg");
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_6  {
+        background-image: url("../../common.blocks/product/__image/_card/womenCake-tablet.jpg");
+        height: 184px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .product__image_card_6  {
+        background-image: url("../../common.blocks/product/__image/_card/womenCake-desktop.jpg");
+        height: 305px;
+    }
+}
+
 .order {
     padding-top: 60px;
 }
@@ -1871,6 +1999,35 @@ html {
     }
 }
 
+.filling__label {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.filling__input {
+    visibility: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+}
+
+.filling__input:checked~.filling__image {
+    -webkit-box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
+            box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
+}
+
 .filling__image {
     width: 241px;
     margin: 0 auto;
@@ -1898,6 +2055,10 @@ html {
         width: 343px;
         margin-right: 40px;
     }
+}
+
+.image {
+    border: 0;
 }
 
 .filling__footer {
@@ -2019,13 +2180,6 @@ html {
     }
 }
 
-@media screen and (max-width: 719px) {
-
-    .text_xs-align_center {
-        text-align: center;
-    }
-}
-
 .carousel__control {
     position: absolute;
     top: 50%;
@@ -2102,7 +2256,7 @@ html {
 
 .size__input:checked~.size__image-wrapper {
     -webkit-box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
-    box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
+            box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
 }
 
 .size__image-wrapper {
@@ -3110,7 +3264,7 @@ html {
 }
 
 .reviews__paginator {
-    bottom: 0;
+    bottom: -20px;
 }
 
 .about {
@@ -3123,6 +3277,13 @@ html {
 
 .decorator_indent-b_xxl {
 	margin-bottom: var(--space-xxl);
+}
+
+@media screen and (max-width: 719px) {
+
+    .text_xs-align_center {
+        text-align: center;
+    }
 }
 
 .text_view_secondary {
@@ -3156,6 +3317,14 @@ html {
         width: 510px;
         height: 510px;
     }
+}
+
+.about__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../common.blocks/about/__image/about.jpg");
 }
 
 .about__social {
@@ -3604,10 +3773,37 @@ html {
 @media screen and (max-width: 719px) {
 
     .delivery {
-        background-image: url("../../img/delivery/delivery-mobile.jpg");
+        background-image: url("../../common.blocks/delivery/delivery-mobile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 100%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .delivery {
+        background-image: url("../../common.blocks/delivery/delivery-tablet.jpg");
+        background-color: #e3353d;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .delivery {
+        background-image: url("../../common.blocks/delivery/delivery-desktop.jpg");
+        background-color: #e3353d;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (max-width: 719px) {
+
+    .delivery__content {
         padding-top: 20px;
         padding-bottom: 134px;
     }
@@ -3615,35 +3811,11 @@ html {
 
 @media screen and (min-width: 720px) {
 
-    .delivery {
-        background-image: url("../../img/delivery/delivery-tablet.jpg");
-        background-color: #e3353d;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 30px;
-        padding-bottom: 41px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .delivery {
-        background-image: url("../../img/delivery/delivery-desktop.jpg");
-        background-color: #e3353d;
-        background-repeat: no-repeat;
-        padding-top: 95px;
-        padding-bottom: 160px;
-        padding-left: 125px;
-    }
-
-}
-
-@media screen and (min-width: 720px) {
-
     .delivery__content {
         width: 340px;
         margin-left: auto;
+        padding-top: 30px;
+        padding-bottom: 41px;
     }
 }
 
@@ -3651,6 +3823,14 @@ html {
 
     .delivery__content {
         width: 464px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .delivery__content {
+        padding-top: 95px;
+        padding-bottom: 160px;
     }
 }
 
@@ -4454,8 +4634,8 @@ html {
 	margin-left: var(--space-s);
 }
 
-.tpl-layout__container_size_m {
-	max-width: 1144px;
+.tpl-layout__container_size_l {
+    max-width: 1264px;
 }
 
 .tpl-layout__container_align_center {
@@ -4484,6 +4664,35 @@ html {
     color: var(--color-typo-brand);
 }
 
+.product__image_card_1  {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 719px) {
+
+    .product__image_card_1  {
+        background-image: url("../../common.blocks/product/__image/_card/classicCake-mobile.jpg");
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_1  {
+        background-image: url("../../common.blocks/product/__image/_card/classicCake-tablet.jpg");
+        height: 388px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .product__image_card_1  {
+        background-image: url("../../common.blocks/product/__image/_card/classicCake-desktop.jpg");
+        height: 653px;
+    }
+}
+
 .pt-card__footer_distribute_right {
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
@@ -4494,10 +4703,6 @@ html {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-}
-
-.product__image_bg-color_grey {
-    background-color: #f3f3f5;
 }
 
 .carousel
@@ -4799,6 +5004,6 @@ html {
 }
 
 .carousel__paginator_position_order-1 {
-    top: 115px;
+    top: 130px;
     z-index: 10;
 }

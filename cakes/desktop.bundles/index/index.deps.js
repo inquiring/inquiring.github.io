@@ -417,6 +417,12 @@ exports.deps = [
     },
     {
         "block": "tpl-layout",
+        "elem": "container",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "tpl-layout",
         "elem": "content"
     },
     {
@@ -543,12 +549,6 @@ exports.deps = [
         "block": "products"
     },
     {
-        "block": "tpl-layout",
-        "elem": "container",
-        "mod": "size",
-        "val": "l"
-    },
-    {
         "block": "text",
         "mod": "size",
         "val": "xs-24-s-28-m-40"
@@ -667,7 +667,9 @@ exports.deps = [
         "elem": "image"
     },
     {
-        "block": "image"
+        "block": "product",
+        "elem": "image",
+        "mod": "card"
     },
     {
         "block": "pt-card",
@@ -782,7 +784,32 @@ exports.deps = [
     {
         "block": "product",
         "elem": "image",
-        "mod": "bg-color"
+        "mod": "card",
+        "val": "2"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "3"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "4"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "5"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "6"
     },
     {
         "block": "order"
@@ -884,7 +911,18 @@ exports.deps = [
     },
     {
         "block": "filling",
+        "elem": "label"
+    },
+    {
+        "block": "filling",
+        "elem": "input"
+    },
+    {
+        "block": "filling",
         "elem": "image"
+    },
+    {
+        "block": "image"
     },
     {
         "block": "filling",
@@ -935,38 +973,6 @@ exports.deps = [
         "block": "button",
         "mod": "togglable",
         "val": "check"
-    },
-    {
-        "block": "pt-card",
-        "mod": "align"
-    },
-    {
-        "block": "pt-card",
-        "mod": "align",
-        "val": "center"
-    },
-    {
-        "block": "pt-card",
-        "mod": "view"
-    },
-    {
-        "block": "pt-card",
-        "mod": "view",
-        "val": "filling"
-    },
-    {
-        "block": "pt-card",
-        "elem": "content",
-        "mod": "view"
-    },
-    {
-        "block": "text",
-        "mod": "xs-align"
-    },
-    {
-        "block": "text",
-        "mod": "xs-align",
-        "val": "center"
     },
     {
         "block": "carousel",
@@ -1451,6 +1457,15 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "xs-align"
+    },
+    {
+        "block": "text",
+        "mod": "xs-align",
+        "val": "center"
+    },
+    {
+        "block": "text",
         "mod": "view",
         "val": "secondary"
     },
@@ -1483,6 +1498,10 @@ exports.deps = [
         "elem": "photo",
         "mod": "size",
         "val": "l"
+    },
+    {
+        "block": "about",
+        "elem": "image"
     },
     {
         "block": "about",
@@ -1937,7 +1956,7 @@ exports.deps = [
         "block": "tpl-layout",
         "elem": "container",
         "mod": "size",
-        "val": "m"
+        "val": "l"
     },
     {
         "block": "tpl-layout",
@@ -2035,6 +2054,12 @@ exports.deps = [
         "val": "7"
     },
     {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "1"
+    },
+    {
         "block": "pt-card",
         "elem": "footer",
         "mod": "distribute",
@@ -2045,12 +2070,6 @@ exports.deps = [
         "elem": "footer",
         "mod": "vertical-align",
         "val": "center"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "bg-color",
-        "val": "grey"
     },
     {
         "block": "carousel"
@@ -2096,12 +2115,6 @@ exports.deps = [
         "elem": "content",
         "mod": "distribute",
         "val": "center"
-    },
-    {
-        "block": "pt-card",
-        "elem": "content",
-        "mod": "view",
-        "val": "filling"
     },
     {
         "block": "carousel",

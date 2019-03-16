@@ -186,7 +186,7 @@ exports.blocks = [
                         "name": "size",
                         "vals": [
                             {
-                                "name": "m"
+                                "name": "l"
                             }
                         ]
                     }
@@ -453,6 +453,24 @@ exports.blocks = [
         "name": "tpl-layout",
         "elems": [
             {
+                "name": "container",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "m"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-layout",
+        "elems": [
+            {
                 "name": "content"
             }
         ]
@@ -705,24 +723,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-layout",
-        "elems": [
-            {
-                "name": "container",
-                "mods": [
-                    {
-                        "name": "size",
-                        "vals": [
-                            {
-                                "name": "l"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -958,7 +958,22 @@ exports.blocks = [
         ]
     },
     {
-        "name": "image"
+        "name": "product",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "card",
+                        "vals": [
+                            {
+                                "name": "1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "pt-card",
@@ -1227,10 +1242,82 @@ exports.blocks = [
                 "name": "image",
                 "mods": [
                     {
-                        "name": "bg-color",
+                        "name": "card",
                         "vals": [
                             {
-                                "name": "grey"
+                                "name": "2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "card",
+                        "vals": [
+                            {
+                                "name": "3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "card",
+                        "vals": [
+                            {
+                                "name": "4"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "card",
+                        "vals": [
+                            {
+                                "name": "5"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "card",
+                        "vals": [
+                            {
+                                "name": "6"
                             }
                         ]
                     }
@@ -1475,9 +1562,28 @@ exports.blocks = [
         "name": "filling",
         "elems": [
             {
+                "name": "label"
+            }
+        ]
+    },
+    {
+        "name": "filling",
+        "elems": [
+            {
+                "name": "input"
+            }
+        ]
+    },
+    {
+        "name": "filling",
+        "elems": [
+            {
                 "name": "image"
             }
         ]
+    },
+    {
+        "name": "image"
     },
     {
         "name": "filling",
@@ -1568,63 +1674,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "check"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "align",
-                "vals": [
-                    {
-                        "name": "center"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "filling"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "elems": [
-            {
-                "name": "content",
-                "mods": [
-                    {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "filling"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "xs-align",
-                "vals": [
-                    {
-                        "name": "center"
                     }
                 ]
             }
@@ -2780,6 +2829,19 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
+                "name": "xs-align",
+                "vals": [
+                    {
+                        "name": "center"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
                 "name": "view",
                 "vals": [
                     {
@@ -2876,6 +2938,14 @@ exports.blocks = [
                         ]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "about",
+        "elems": [
+            {
+                "name": "image"
             }
         ]
     },

@@ -2604,6 +2604,12 @@ block('popup')(
 );
 
 /* end: /Users/AS/Desktop/Cakes-bem-project/node_modules/bem-components/common.blocks/popup/popup.bemhtml.js */
+/* begin: /Users/AS/Desktop/Cakes-bem-project/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
+block('icon').mod('name', 'arrow-right').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M15.174 12.007L6.5 20.588 7.925 22 18 11.99 7.924 2 6.501 3.414z"/></svg>' }});block('icon').mod('name', 'arrow-right').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M5.425 1L4 2.41 9.65 8 4 13.59 5.425 15 12.5 8z"/></svg>' }});
+/* end: /Users/AS/Desktop/Cakes-bem-project/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
+/* begin: /Users/AS/Desktop/Cakes-bem-project/common.blocks/icon/_name/icon_name_arrow-right.bemhtml.js */
+block('icon').mod('name', 'arrow-right').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M15.174 12.007L6.5 20.588 7.925 22 18 11.99 7.924 2 6.501 3.414z"/></svg>' }});block('icon').mod('name', 'arrow-right').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M5.425 1L4 2.41 9.65 8 4 13.59 5.425 15 12.5 8z"/></svg>' }});
+/* end: /Users/AS/Desktop/Cakes-bem-project/common.blocks/icon/_name/icon_name_arrow-right.bemhtml.js */
 /* begin: /Users/AS/Desktop/Cakes-bem-project/node_modules/bem-components/common.blocks/image/image.bemhtml.js */
 block('image')(
     addAttrs()({ role : 'img' }),
@@ -2628,12 +2634,6 @@ block('image')(
 );
 
 /* end: /Users/AS/Desktop/Cakes-bem-project/node_modules/bem-components/common.blocks/image/image.bemhtml.js */
-/* begin: /Users/AS/Desktop/Cakes-bem-project/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
-block('icon').mod('name', 'arrow-right').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M15.174 12.007L6.5 20.588 7.925 22 18 11.99 7.924 2 6.501 3.414z"/></svg>' }});block('icon').mod('name', 'arrow-right').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M5.425 1L4 2.41 9.65 8 4 13.59 5.425 15 12.5 8z"/></svg>' }});
-/* end: /Users/AS/Desktop/Cakes-bem-project/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
-/* begin: /Users/AS/Desktop/Cakes-bem-project/common.blocks/icon/_name/icon_name_arrow-right.bemhtml.js */
-block('icon').mod('name', 'arrow-right').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M15.174 12.007L6.5 20.588 7.925 22 18 11.99 7.924 2 6.501 3.414z"/></svg>' }});block('icon').mod('name', 'arrow-right').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M5.425 1L4 2.41 9.65 8 4 13.59 5.425 15 12.5 8z"/></svg>' }});
-/* end: /Users/AS/Desktop/Cakes-bem-project/common.blocks/icon/_name/icon_name_arrow-right.bemhtml.js */
 /* begin: /Users/AS/Desktop/Cakes-bem-project/node_modules/bem-components/common.blocks/button/_togglable/button_togglable_check.bemhtml.js */
 block('button').mod('togglable', 'check').addAttrs()(function() {
     return this.extend({ 'aria-pressed' : String(!!this.mods.checked) },
