@@ -1707,63 +1707,63 @@ html {
 @media screen and (max-width: 719px) {
 
     .product__image_card_2  {
-        background-image: url("../../common.blocks/product/__image/_card/mousCake-mobile.jpg");
+        background-image: url("../../common.blocks/product/__image/mousCake-mobile.jpg");
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_2  {
-        background-image: url("../../common.blocks/product/__image/_card/mousCake-tablet.jpg");
+        background-image: url("../../common.blocks/product/__image/mousCake-tablet.jpg");
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_2  {
-        background-image: url("../../common.blocks/product/__image/_card/mousCake-desktop.jpg");
+        background-image: url("../../common.blocks/product/__image/mousCake-desktop.jpg");
     }
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_3  {
-        background-image: url("../../common.blocks/product/__image/_card/weddingCake-mobile.jpg");
+        background-image: url("../../common.blocks/product/__image/weddingCake-mobile.jpg");
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_3  {
-        background-image: url("../../common.blocks/product/__image/_card/weddingCake-tablet.jpg");
+        background-image: url("../../common.blocks/product/__image/weddingCake-tablet.jpg");
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_3  {
-        background-image: url("../../common.blocks/product/__image/_card/weddingCake-desktop.jpg");
+        background-image: url("../../common.blocks/product/__image/weddingCake-desktop.jpg");
     }
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_4  {
-        background-image: url("../../common.blocks/product/__image/_card/menCake-mobile.jpg");
+        background-image: url("../../common.blocks/product/__image/menCake-mobile.jpg");
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_4  {
-        background-image: url("../../common.blocks/product/__image/_card/menCake-tablet.jpg");
+        background-image: url("../../common.blocks/product/__image/menCake-tablet.jpg");
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_4  {
-        background-image: url("../../common.blocks/product/__image/_card/menCake-desktop.jpg");
+        background-image: url("../../common.blocks/product/__image/menCake-desktop.jpg");
     }
 }
 
@@ -1774,42 +1774,42 @@ html {
 @media screen and (max-width: 719px) {
 
     .product__image_card_5  {
-        background-image: url("../../common.blocks/product/__image/_card/kidsCake-mobile.jpg");
+        background-image: url("../../common.blocks/product/__image/kidsCake-mobile.jpg");
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_5  {
-        background-image: url("../../common.blocks/product/__image/_card/kidsCake-tablet.jpg");
+        background-image: url("../../common.blocks/product/__image/kidsCake-tablet.jpg");
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_5  {
-        background-image: url("../../common.blocks/product/__image/_card/kidsCake-desktop.jpg");
+        background-image: url("../../common.blocks/product/__image/kidsCake-desktop.jpg");
     }
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_6  {
-        background-image: url("../../common.blocks/product/__image/_card/womenCake-mobile.jpg");
+        background-image: url("../../common.blocks/product/__image/womenCake-mobile.jpg");
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_6  {
-        background-image: url("../../common.blocks/product/__image/_card/womenCake-tablet.jpg");
+        background-image: url("../../common.blocks/product/__image/womenCake-tablet.jpg");
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_6  {
-        background-image: url("../../common.blocks/product/__image/_card/womenCake-desktop.jpg");
+        background-image: url("../../common.blocks/product/__image/womenCake-desktop.jpg");
     }
 }
 
@@ -4687,21 +4687,21 @@ html {
 @media screen and (max-width: 719px) {
 
     .product__image_card_1  {
-        background-image: url("../../common.blocks/product/__image/_card/classicCake-mobile.jpg");
+        background-image: url("../../common.blocks/product/__image/classicCake-mobile.jpg");
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_1  {
-        background-image: url("../../common.blocks/product/__image/_card/classicCake-tablet.jpg");
+        background-image: url("../../common.blocks/product/__image/classicCake-tablet.jpg");
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_1  {
-        background-image: url("../../common.blocks/product/__image/_card/classicCake-desktop.jpg");
+        background-image: url("../../common.blocks/product/__image/classicCake-desktop.jpg");
     }
 }
 
