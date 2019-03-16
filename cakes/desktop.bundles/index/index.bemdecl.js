@@ -663,7 +663,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "l"
+                        "name": "s-35-m-55"
                     }
                 ]
             }
@@ -930,22 +930,6 @@ exports.blocks = [
                         "name": "large"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "elems": [
-            {
-                "name": "content"
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "elems": [
-            {
-                "name": "image"
             }
         ]
     },
@@ -1515,6 +1499,24 @@ exports.blocks = [
         "name": "carousel",
         "elems": [
             {
+                "name": "inner",
+                "mods": [
+                    {
+                        "name": "content",
+                        "vals": [
+                            {
+                                "name": "center"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "carousel",
+        "elems": [
+            {
                 "name": "item"
             }
         ]
@@ -1539,6 +1541,14 @@ exports.blocks = [
     },
     {
         "name": "filling"
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "content"
+            }
+        ]
     },
     {
         "name": "pt-card",
@@ -1571,6 +1581,14 @@ exports.blocks = [
         "elems": [
             {
                 "name": "input"
+            }
+        ]
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "image"
             }
         ]
     },
@@ -2818,14 +2836,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "about",
-        "elems": [
-            {
-                "name": "subtitle"
-            }
-        ]
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -3147,6 +3157,9 @@ exports.blocks = [
                 ]
             }
         ]
+    },
+    {
+        "name": "signature"
     },
     {
         "name": "advantages"

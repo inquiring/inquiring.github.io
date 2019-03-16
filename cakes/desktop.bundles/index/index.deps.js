@@ -525,7 +525,7 @@ exports.deps = [
     {
         "block": "icon",
         "mod": "size",
-        "val": "l"
+        "val": "s-35-m-55"
     },
     {
         "block": "pt-icon-plus",
@@ -653,14 +653,6 @@ exports.deps = [
         "block": "product",
         "mod": "size",
         "val": "large"
-    },
-    {
-        "block": "pt-card",
-        "elem": "content"
-    },
-    {
-        "block": "pt-card",
-        "elem": "image"
     },
     {
         "block": "product",
@@ -894,6 +886,11 @@ exports.deps = [
     },
     {
         "block": "carousel",
+        "elem": "inner",
+        "mod": "content"
+    },
+    {
+        "block": "carousel",
         "elem": "item"
     },
     {
@@ -903,6 +900,10 @@ exports.deps = [
     },
     {
         "block": "filling"
+    },
+    {
+        "block": "pt-card",
+        "elem": "content"
     },
     {
         "block": "pt-card",
@@ -916,6 +917,10 @@ exports.deps = [
     {
         "block": "filling",
         "elem": "input"
+    },
+    {
+        "block": "pt-card",
+        "elem": "image"
     },
     {
         "block": "filling",
@@ -1452,10 +1457,6 @@ exports.deps = [
         "mod": "m-row"
     },
     {
-        "block": "about",
-        "elem": "subtitle"
-    },
-    {
         "block": "text",
         "mod": "xs-align"
     },
@@ -1617,6 +1618,9 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "xs-13-s-14-m-25"
+    },
+    {
+        "block": "signature"
     },
     {
         "block": "advantages"
@@ -2103,6 +2107,12 @@ exports.deps = [
         "elem": "inner",
         "mod": "s-m-direction",
         "val": "row"
+    },
+    {
+        "block": "carousel",
+        "elem": "inner",
+        "mod": "content",
+        "val": "center"
     },
     {
         "block": "carousel",

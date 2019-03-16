@@ -733,7 +733,7 @@ html {
 @media screen and (max-width: 719px) {
 
     .hero {
-        background-image: url('../../img/hero/hero-mobile.png');
+        background-image: url(../../common.blocks/hero/hero-mobile.png);
         background-position-y: top;
     }
 }
@@ -741,25 +741,15 @@ html {
 @media screen and (min-width: 720px)  {
 
     .hero {
-        background-image: url('../../img/hero/hero-tablet.png');
+        background-image: url(../../common.blocks/hero/hero-tablet.png);
         background-position-x: right;
-        background-position-y: bottom;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .hero {
-        background-image: url('../../img/hero/hero-desktop.png');
-        background-position-x: right;
-        background-position-y: 60px;
     }
 }
 
 @media screen and (min-width: 1280px) {
 
     .hero {
-        background-image: url('../../img/hero/hero-desktop.png');
+        background-image: url(../../common.blocks/hero/hero-desktop.png);
         background-position-x: right;
         background-position-y: 60px;
     }
@@ -1177,6 +1167,14 @@ html {
 @media screen and (min-width: 1024px) {
 
     .hero__footer {
+        padding-bottom: 100px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero__footer {
         padding-bottom: 292px;
         margin: 0;
     }
@@ -1206,6 +1204,30 @@ html {
 
 .icon_view_brand {
 	fill: var(--color-typo-brand);
+}
+
+@media screen and (max-width: 720px) {
+
+    .icon_size_s-35-m-55 {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .icon_size_s-35-m-55 {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .icon_size_s-35-m-55 {
+        width: 55px;
+        height: 55px;
+    }
 }
 
 .pt-icon-plus__block {
@@ -1490,29 +1512,22 @@ html {
 @media screen and (min-width: 720px) {
 
     .product_size_large {
-        // width: 419px;
         height: 388px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product_size_large {
-        // width: 696px;
         height: 653px;
     }
 }
 
-.pt-card__content {
-	position: relative;
-}
-
-.pt-card__image {
-	width: 100%;
-}
-
 .product__image {
     background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .pt-card__header {
@@ -1675,29 +1690,28 @@ html {
 @media screen and (min-width: 720px) {
 
     .product_size_small {
-        // width: 288px;
         height: 184px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .product_size_small {
+        height: 315px;
     }
 }
 
 @media screen and (min-width: 1280px) {
 
     .product_size_small {
-        // width: 484px;
-        height: 305px;
+        height: 310px;
     }
-}
-
-.product__image_card_2 {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_2  {
         background-image: url(../../common.blocks/product/__image/_card/mousCake-mobile.jpg);
-        height: 120px;
     }
 }
 
@@ -1705,28 +1719,20 @@ html {
 
     .product__image_card_2  {
         background-image: url(../../common.blocks/product/__image/_card/mousCake-tablet.jpg);
-        height: 184px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product__image_card_2  {
         background-image: url(../../common.blocks/product/__image/_card/mousCake-desktop.jpg);
-        height: 305px;
     }
-}
-
-.product__image_card_3 {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_3  {
         background-image: url(../../common.blocks/product/__image/_card/weddingCake-mobile.jpg);
-        height: 120px;
     }
 }
 
@@ -1734,28 +1740,20 @@ html {
 
     .product__image_card_3  {
         background-image: url(../../common.blocks/product/__image/_card/weddingCake-tablet.jpg);
-        height: 184px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product__image_card_3  {
         background-image: url(../../common.blocks/product/__image/_card/weddingCake-desktop.jpg);
-        height: 305px;
     }
-}
-
-.product__image_card_4 {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_4  {
         background-image: url(../../common.blocks/product/__image/_card/menCake-mobile.jpg);
-        height: 120px;
     }
 }
 
@@ -1763,28 +1761,24 @@ html {
 
     .product__image_card_4  {
         background-image: url(../../common.blocks/product/__image/_card/menCake-tablet.jpg);
-        height: 184px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product__image_card_4  {
         background-image: url(../../common.blocks/product/__image/_card/menCake-desktop.jpg);
-        height: 305px;
     }
 }
 
 .product__image_card_5  {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f3f3f5;
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_5  {
         background-image: url(../../common.blocks/product/__image/_card/kidsCake-mobile.jpg);
-        height: 120px;
     }
 }
 
@@ -1792,28 +1786,20 @@ html {
 
     .product__image_card_5  {
         background-image: url(../../common.blocks/product/__image/_card/kidsCake-tablet.jpg);
-        height: 388px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product__image_card_5  {
         background-image: url(../../common.blocks/product/__image/_card/kidsCake-desktop.jpg);
-        height: 653px;
     }
-}
-
-.product__image_card_6 {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media screen and (max-width: 719px) {
 
     .product__image_card_6  {
         background-image: url(../../common.blocks/product/__image/_card/womenCake-mobile.jpg);
-        height: 120px;
     }
 }
 
@@ -1821,15 +1807,13 @@ html {
 
     .product__image_card_6  {
         background-image: url(../../common.blocks/product/__image/_card/womenCake-tablet.jpg);
-        height: 184px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product__image_card_6  {
         background-image: url(../../common.blocks/product/__image/_card/womenCake-desktop.jpg);
-        height: 305px;
     }
 }
 
@@ -1999,6 +1983,10 @@ html {
     }
 }
 
+.pt-card__content {
+	position: relative;
+}
+
 .filling__label {
     position: absolute;
     right: 0;
@@ -2026,6 +2014,10 @@ html {
 .filling__input:checked~.filling__image {
     -webkit-box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
             box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
+}
+
+.pt-card__image {
+	width: 100%;
 }
 
 .filling__image {
@@ -3045,9 +3037,9 @@ html {
 }
 
 @media screen and (min-width: 720px) {
+
     .reviews {
-        background-image: url('../../img/reviews/reviews-bg-left-tablet.png'),
-                url('../../img/reviews/reviews-bg-right-tablet.png');
+        background-image: url(../../common.blocks/reviews/reviews-bg-left-tablet.png), url(../../common.blocks/reviews/reviews-bg-right-tablet.png);
         background-repeat: no-repeat, no-repeat;
         background-position: 0 0, 100% 0;
         background-size: 310px;
@@ -3061,9 +3053,9 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
+
     .reviews {
-        background-image: url('../../img/reviews/reviews-bg-left-desktop.png'),
-                url('../../img/reviews/reviews-bg-right-desktop.png');
+        background-image: url(../../common.blocks/reviews/reviews-bg-left-desktop.png), url(../../common.blocks/reviews/reviews-bg-right-desktop.png);
         background-repeat: no-repeat, no-repeat;
         background-position: 0 0, 100% 0;
         background-size: 310px;
@@ -3071,13 +3063,11 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
+
     .reviews {
-        background-image: url('../../img/reviews/reviews-bg-left-desktop.png'),
-                url('../../img/reviews/reviews-bg-right-desktop.png');
         background-repeat: no-repeat, no-repeat;
         background-position: 0 0, 100% 0;
         background-size: 510px;
-
     }
     .reviews .pt-icon-plus__block {
         text-align: left;
@@ -3320,10 +3310,6 @@ html {
 }
 
 .about__image {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
     background-image: url('../../common.blocks/about/__image/about.jpg');
 }
 
@@ -3514,6 +3500,38 @@ html {
     .text_size_xs-13-s-14-m-25 {
         font-size: 25px;
         line-height: 27px;
+    }
+}
+
+.signature {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 320px) {
+
+    .signature {
+        background-image: url(../../common.blocks/signature/signature-mobile.png);
+        width: 64px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .signature {
+        background-image: url(../../common.blocks/signature/signature-tablet.png);
+        width: 82px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .signature {
+        background-image: url(../../common.blocks/signature/signature-desktop.png);
+        width: 149px;
+        height: 73px;
     }
 }
 
@@ -3936,26 +3954,32 @@ html {
 
 .contacts {
     padding-top: 60px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 100%;
 }
 
 @media screen and (min-width: 720px) {
-    .contacts {
-        background-image: url(../../img/contacts/contacts.jpg);
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-position-x: 100%;
-        background-position-y: 100%;
 
+    .contacts {
+        background-image: url(../../common.blocks/contacts/contacts-desktop.jpg);
+        background-size: 60%;
     }
 }
 
 @media screen and (min-width: 1024px) {
+
     .contacts {
-        background-image: url(../../img/contacts/contacts.jpg);
-        background-repeat: no-repeat;
+        background-image: url(../../common.blocks/contacts/contacts-desktop.jpg);
+        background-size: 75%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .contacts {
+        background-image: url(../../common.blocks/contacts/contacts-desktop.jpg);
         background-size: auto;
-        background-position-x: 100%;
-        background-position-y: 100%;
     }
 }
 
@@ -4664,16 +4688,10 @@ html {
     color: var(--color-typo-brand);
 }
 
-.product__image_card_1  {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 @media screen and (max-width: 719px) {
 
     .product__image_card_1  {
         background-image: url(../../common.blocks/product/__image/_card/classicCake-mobile.jpg);
-        height: 120px;
     }
 }
 
@@ -4681,15 +4699,13 @@ html {
 
     .product__image_card_1  {
         background-image: url(../../common.blocks/product/__image/_card/classicCake-tablet.jpg);
-        height: 388px;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .product__image_card_1  {
         background-image: url(../../common.blocks/product/__image/_card/classicCake-desktop.jpg);
-        height: 653px;
     }
 }
 
@@ -4807,6 +4823,15 @@ html {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 720px)  {
+
+    .carousel__inner_content_center {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
