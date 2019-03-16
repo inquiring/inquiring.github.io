@@ -417,12 +417,6 @@ exports.deps = [
     },
     {
         "block": "tpl-layout",
-        "elem": "container",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "tpl-layout",
         "elem": "content"
     },
     {

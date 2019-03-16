@@ -453,24 +453,6 @@ exports.blocks = [
         "name": "tpl-layout",
         "elems": [
             {
-                "name": "container",
-                "mods": [
-                    {
-                        "name": "size",
-                        "vals": [
-                            {
-                                "name": "m"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-layout",
-        "elems": [
-            {
                 "name": "content"
             }
         ]

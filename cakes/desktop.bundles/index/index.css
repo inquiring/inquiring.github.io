@@ -746,17 +746,14 @@ html {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
 
     .hero {
         background-image: url(../../common.blocks/hero/hero-desktop.png);
         background-position-x: right;
-        background-position-y: 60px;
+        background-position-y: 80px;
+        height: 1000px;
     }
-}
-
-.tpl-layout__container_size_m {
-	max-width: 1144px;
 }
 
 .tpl-layout__content {
@@ -1167,7 +1164,6 @@ html {
 @media screen and (min-width: 1024px) {
 
     .hero__footer {
-        padding-bottom: 100px;
         margin: 0;
     }
 }
@@ -1175,7 +1171,6 @@ html {
 @media screen and (min-width: 1280px) {
 
     .hero__footer {
-        padding-bottom: 292px;
         margin: 0;
     }
 }
@@ -1247,7 +1242,8 @@ html {
 
 @media screen and (min-width: 1024px) {
     .products {
-        margin-top: -90px;
+        margin-top: -150px;
+        padding-top: 60px;
     }
 }
 
