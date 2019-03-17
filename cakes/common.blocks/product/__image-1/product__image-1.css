@@ -1,0 +1,25 @@
+.product__image-1 {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+@media screen and (max-width: $screen-xs-max) {
+
+    .product__image-1  {
+        background-image: url(classicCake-mobile.jpg);
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+
+    .product__image-1  {
+        background-image: url(classicCake-tablet.jpg);
+    }
+}
+@media screen and (min-width: $screen-m) {
+
+    .product__image-1  {
+        background-image: url(classicCake-desktop.jpg);
+    }
+}

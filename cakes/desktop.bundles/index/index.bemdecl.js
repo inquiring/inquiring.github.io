@@ -919,25 +919,7 @@ exports.blocks = [
         "name": "product",
         "elems": [
             {
-                "name": "image"
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "card",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
+                "name": "image-1"
             }
         ]
     },
@@ -1198,6 +1180,14 @@ exports.blocks = [
                         "name": "small"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "elems": [
+            {
+                "name": "image"
             }
         ]
     },

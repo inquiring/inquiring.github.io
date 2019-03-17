@@ -650,12 +650,7 @@ exports.deps = [
     },
     {
         "block": "product",
-        "elem": "image"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "card"
+        "elem": "image-1"
     },
     {
         "block": "pt-card",
@@ -769,9 +764,12 @@ exports.deps = [
     },
     {
         "block": "product",
+        "elem": "image"
+    },
+    {
+        "block": "product",
         "elem": "image",
-        "mod": "card",
-        "val": "2"
+        "mod": "card"
     },
     {
         "block": "product",
@@ -2052,12 +2050,6 @@ exports.deps = [
         "val": "7"
     },
     {
-        "block": "product",
-        "elem": "image",
-        "mod": "card",
-        "val": "1"
-    },
-    {
         "block": "pt-card",
         "elem": "footer",
         "mod": "distribute",
@@ -2068,6 +2060,12 @@ exports.deps = [
         "elem": "footer",
         "mod": "vertical-align",
         "val": "center"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "2"
     },
     {
         "block": "carousel"
