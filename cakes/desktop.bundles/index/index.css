@@ -1351,8 +1351,16 @@ html {
 	grid-column-gap: var(--col-gap-full);
 }
 
+.tpl-grid_col-gap_full {
+    margin-right: var(--col-gap-full);
+}
+
 .tpl-grid_row-gap_full {
 	grid-row-gap: var(--col-gap-full);
+}
+
+.tpl-grid_row-gap_full {
+    margin-bottom: var(--col-gap-full);
 }
 
 @media screen and (min-width: 500px) and (max-width: 719px) {
