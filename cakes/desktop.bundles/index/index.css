@@ -4689,21 +4689,21 @@ html {
 @media screen and (max-width: 719px) {
 
     .product__image_card_1  {
-        background-image: url(../../common.blocks/product/__image/classicCake-mobile.jpg);
+        background-image: url('../../common.blocks/product/__image/_card/classicCake-mobile.jpg');
     }
 }
 
 @media screen and (min-width: 720px) {
 
     .product__image_card_1  {
-        background-image: url(../../common.blocks/product/__image/classicCake-tablet.jpg);
+        background-image: url('../../common.blocks/product/__image/_card/classicCake-tablet.jpg');
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     .product__image_card_1  {
-        background-image: url(../../common.blocks/product/__image/classicCake-desktop.jpg);
+        background-image: url('../../common.blocks/product/__image/_card/classicCake-desktop.jpg');
     }
 }
 
