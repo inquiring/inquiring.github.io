@@ -1512,6 +1512,13 @@ html {
     }
 }
 
+/* @media screen and (min-width: $screen-m) {
+
+    .product_size_large {
+        height: 653px;
+    }
+} */
+
 @media screen and (min-width: 1280px) {
 
     .product_size_large {
@@ -1702,6 +1709,13 @@ html {
         height: 184px;
     }
 }
+
+/* @media screen and (min-width: $screen-m) {
+
+    .product_size_small {
+        height: 315px;
+    }
+} */
 
 @media screen and (min-width: 1280px) {
 
@@ -4826,16 +4840,17 @@ html {
 @media screen and (min-width: 720px) {
 
     .order__card_bg_image {
-        background-image: url('../../common.blocks/order/__card/_bg/decor-tablet.png');
+        background-image: url('../../img/decor/decor-tablet.png');
         background-repeat: no-repeat;
         background-position-x: 10%;
         background-position-y: 40%;
+
     }
 }
 
 @media screen and (min-width: 1024px) {
     .order__card_bg_image {
-        background-image: url('../../common.blocks/order/__card/_bg/decor-desktop.png');
+        background-image: url('../../img/decor/decor-desktop.png');
         background-repeat: no-repeat;
         background-position: 0% 42%;
         background-size: 20%;
@@ -4844,7 +4859,7 @@ html {
 
 @media screen and (min-width: 1280px) {
     .order__card_bg_image {
-        background-image: url('../../common.blocks/order/__card/_bg/decor-desktop.png');
+        background-image: url('../../img/decor/decor-desktop.png');
         background-repeat: no-repeat;
         background-position: 5% 40%;
     }
