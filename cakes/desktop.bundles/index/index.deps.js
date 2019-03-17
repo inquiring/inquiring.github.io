@@ -653,13 +653,16 @@ exports.deps = [
         "elem": "image"
     },
     {
+        "block": "pt-card",
+        "elem": "image",
+        "mod": "size"
+    },
+    {
         "block": "product",
         "elem": "image"
     },
     {
-        "block": "product",
-        "elem": "image",
-        "mod": "card"
+        "block": "image"
     },
     {
         "block": "pt-card",
@@ -774,32 +777,7 @@ exports.deps = [
     {
         "block": "product",
         "elem": "image",
-        "mod": "card",
-        "val": "2"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "card",
-        "val": "3"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "card",
-        "val": "4"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "card",
-        "val": "5"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "card",
-        "val": "6"
+        "mod": "bg-color"
     },
     {
         "block": "order"
@@ -919,9 +897,6 @@ exports.deps = [
     {
         "block": "filling",
         "elem": "image"
-    },
-    {
-        "block": "image"
     },
     {
         "block": "filling",
@@ -1416,7 +1391,7 @@ exports.deps = [
     {
         "block": "tpl-grid",
         "mod": "xs-ratio",
-        "val": "1-1-1"
+        "val": "1-1"
     },
     {
         "block": "tpl-grid",
@@ -1467,12 +1442,6 @@ exports.deps = [
     {
         "block": "tpl-grid",
         "elem": "fraction",
-        "mod": "xs-col",
-        "val": "2"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
         "mod": "xs-order",
         "val": "-1"
     },
@@ -1487,6 +1456,10 @@ exports.deps = [
         "elem": "fraction",
         "mod": "m-row",
         "val": "3"
+    },
+    {
+        "block": "about",
+        "elem": "avatar"
     },
     {
         "block": "avatar",
@@ -2052,10 +2025,10 @@ exports.deps = [
         "val": "7"
     },
     {
-        "block": "product",
+        "block": "pt-card",
         "elem": "image",
-        "mod": "card",
-        "val": "1"
+        "mod": "size",
+        "val": "cover"
     },
     {
         "block": "pt-card",
@@ -2068,6 +2041,12 @@ exports.deps = [
         "elem": "footer",
         "mod": "vertical-align",
         "val": "center"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "bg-color",
+        "val": "gray"
     },
     {
         "block": "carousel"

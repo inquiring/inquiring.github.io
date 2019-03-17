@@ -924,6 +924,24 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "cover"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "product",
         "elems": [
             {
@@ -932,22 +950,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "card",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+        "name": "image"
     },
     {
         "name": "pt-card",
@@ -1216,82 +1219,10 @@ exports.blocks = [
                 "name": "image",
                 "mods": [
                     {
-                        "name": "card",
+                        "name": "bg-color",
                         "vals": [
                             {
-                                "name": "2"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "card",
-                        "vals": [
-                            {
-                                "name": "3"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "card",
-                        "vals": [
-                            {
-                                "name": "4"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "card",
-                        "vals": [
-                            {
-                                "name": "5"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image",
-                "mods": [
-                    {
-                        "name": "card",
-                        "vals": [
-                            {
-                                "name": "6"
+                                "name": "gray"
                             }
                         ]
                     }
@@ -1581,9 +1512,6 @@ exports.blocks = [
                 "name": "image"
             }
         ]
-    },
-    {
-        "name": "image"
     },
     {
         "name": "filling",
@@ -2702,7 +2630,7 @@ exports.blocks = [
                 "name": "xs-ratio",
                 "vals": [
                     {
-                        "name": "1-1-1"
+                        "name": "1-1"
                     }
                 ]
             }
@@ -2850,24 +2778,6 @@ exports.blocks = [
                 "name": "fraction",
                 "mods": [
                     {
-                        "name": "xs-col",
-                        "vals": [
-                            {
-                                "name": "2"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
                         "name": "xs-order",
                         "vals": [
                             {
@@ -2912,6 +2822,14 @@ exports.blocks = [
                         ]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "about",
+        "elems": [
+            {
+                "name": "avatar"
             }
         ]
     },
