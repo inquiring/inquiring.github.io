@@ -916,10 +916,36 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "image"
+            }
+        ]
+    },
+    {
         "name": "product",
         "elems": [
             {
-                "name": "image-1"
+                "name": "image"
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "card",
+                        "vals": [
+                            {
+                                "name": "1"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -1180,14 +1206,6 @@ exports.blocks = [
                         "name": "small"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "elems": [
-            {
-                "name": "image"
             }
         ]
     },
@@ -1553,14 +1571,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "input"
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "elems": [
-            {
-                "name": "image"
             }
         ]
     },

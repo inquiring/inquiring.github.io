@@ -649,8 +649,17 @@ exports.deps = [
         "val": "large"
     },
     {
+        "block": "pt-card",
+        "elem": "image"
+    },
+    {
         "block": "product",
-        "elem": "image-1"
+        "elem": "image"
+    },
+    {
+        "block": "product",
+        "elem": "image",
+        "mod": "card"
     },
     {
         "block": "pt-card",
@@ -764,12 +773,9 @@ exports.deps = [
     },
     {
         "block": "product",
-        "elem": "image"
-    },
-    {
-        "block": "product",
         "elem": "image",
-        "mod": "card"
+        "mod": "card",
+        "val": "2"
     },
     {
         "block": "product",
@@ -909,10 +915,6 @@ exports.deps = [
     {
         "block": "filling",
         "elem": "input"
-    },
-    {
-        "block": "pt-card",
-        "elem": "image"
     },
     {
         "block": "filling",
@@ -2050,6 +2052,12 @@ exports.deps = [
         "val": "7"
     },
     {
+        "block": "product",
+        "elem": "image",
+        "mod": "card",
+        "val": "1"
+    },
+    {
         "block": "pt-card",
         "elem": "footer",
         "mod": "distribute",
@@ -2060,12 +2068,6 @@ exports.deps = [
         "elem": "footer",
         "mod": "vertical-align",
         "val": "center"
-    },
-    {
-        "block": "product",
-        "elem": "image",
-        "mod": "card",
-        "val": "2"
     },
     {
         "block": "carousel"

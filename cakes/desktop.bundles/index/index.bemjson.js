@@ -291,9 +291,12 @@ module.exports = {
                                                 attrs: { href: '#' },
                                                 mix: [
                                                     { block: 'product', mods: { size: 'large' }},
-                                                    { block: 'product', elem: 'image-1', },
                                                 ],
                                                 content: [
+                                                    {
+                                                        elem: 'image',
+                                                        mix: { block: 'product', elem: 'image', elemMods: { card: '1' } },
+                                                    },
                                                     // header
                                                     {
                                                         elem: 'header',

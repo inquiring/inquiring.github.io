@@ -1519,32 +1519,17 @@ html {
     }
 }
 
-.product__image-1 {
+.pt-card__image {
+	width: 100%;
+}
+
+.product__image {
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-}
-
-@media screen and (max-width: 719px) {
-
-    .product__image-1  {
-        background-image: url("../../common.blocks/product/__image-1/classicCake-mobile.jpg");
-    }
-}
-
-@media screen and (min-width: 720px) {
-
-    .product__image-1  {
-        background-image: url("../../common.blocks/product/__image-1/classicCake-tablet.jpg");
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .product__image-1  {
-        background-image: url("../../common.blocks/product/__image-1/classicCake-desktop.jpg");
-    }
+    width: 100%;
+    height: 100%;
 }
 
 .pt-card__header {
@@ -1725,11 +1710,25 @@ html {
     }
 }
 
-.product__image {
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+@media screen and (max-width: 719px) {
+
+    .product__image_card_2  {
+        background-image: url("../../common.blocks/product/__image/mousCake-mobile.jpg");
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_2  {
+        background-image: url("../../common.blocks/product/__image/mousCake-tablet.jpg");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .product__image_card_2  {
+        background-image: url("../../common.blocks/product/__image/mousCake-desktop.jpg");
+    }
 }
 
 @media screen and (max-width: 719px) {
@@ -2017,10 +2016,6 @@ html {
 .filling__input:checked~.filling__image {
     -webkit-box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
             box-shadow: 0 8px 15px 5px rgba(163,6,60,.12);
-}
-
-.pt-card__image {
-	width: 100%;
 }
 
 .filling__image {
@@ -4691,6 +4686,27 @@ html {
     color: var(--color-typo-brand);
 }
 
+@media screen and (max-width: 719px) {
+
+    .product__image_card_1  {
+        background-image: url("../../common.blocks/product/__image/classicCake-mobile.jpg");
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    .product__image_card_1  {
+        background-image: url("../../common.blocks/product/__image/classicCake-tablet.jpg");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .product__image_card_1  {
+        background-image: url("../../common.blocks/product/__image/classicCake-desktop.jpg");
+    }
+}
+
 .pt-card__footer_distribute_right {
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
@@ -4701,27 +4717,6 @@ html {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-}
-
-@media screen and (max-width: 719px) {
-
-    .product__image_card_2  {
-        background-image: url("../../common.blocks/product/__image/mousCake-mobile.jpg");
-    }
-}
-
-@media screen and (min-width: 720px) {
-
-    .product__image_card_2  {
-        background-image: url("../../common.blocks/product/__image/mousCake-tablet.jpg");
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .product__image_card_2  {
-        background-image: url("../../common.blocks/product/__image/mousCake-desktop.jpg");
-    }
 }
 
 .carousel
