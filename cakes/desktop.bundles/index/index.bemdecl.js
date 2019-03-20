@@ -235,7 +235,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "primary"
+                        "name": "link"
                     }
                 ]
             }
@@ -279,68 +279,89 @@ exports.blocks = [
         "name": "new-menu",
         "elems": [
             {
-                "name": "logo",
-                "mods": [
-                    {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "link"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button"
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "state",
-                "vals": [
-                    {
-                        "name": "active"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
                 "name": "toogle"
             }
         ]
     },
     {
-        "name": "icon"
+        "name": "dropdown"
     },
     {
-        "name": "icon",
+        "name": "dropdown",
         "mods": [
             {
-                "name": "name",
+                "name": "switcher",
                 "vals": [
                     {
-                        "name": "hamburger"
+                        "name": "button"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "icon",
+        "name": "dropdown",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "islands"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "dropdown",
         "mods": [
             {
                 "name": "size",
                 "vals": [
                     {
-                        "name": "m"
+                        "name": "l"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "popup"
+    },
+    {
+        "name": "popup",
+        "mods": [
+            {
+                "name": "autoclosable",
+                "vals": [
+                    {
+                        "name": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "popup",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "islands"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "popup",
+        "mods": [
+            {
+                "name": "target",
+                "vals": [
+                    {
+                        "name": "anchor"
                     }
                 ]
             }
@@ -355,9 +376,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "dropdown"
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -365,6 +383,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xs-12-s-12-m-13"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
                     }
                 ]
             }
@@ -539,6 +570,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "button"
+    },
+    {
         "name": "button",
         "mods": [
             {
@@ -624,6 +658,9 @@ exports.blocks = [
                 ]
             }
         ]
+    },
+    {
+        "name": "icon"
     },
     {
         "name": "icon",
@@ -1114,6 +1151,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xs-0-s-12-m-0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "m"
                     }
                 ]
             }
@@ -3477,19 +3527,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "section-right"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "link"
-                    }
-                ]
             }
         ]
     },

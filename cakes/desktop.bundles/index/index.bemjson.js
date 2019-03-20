@@ -46,86 +46,97 @@ module.exports = {
                                 tag: 'a',
                                 attrs: { href: 'index.html' },
                                 block: 'text',
-                                mods: { size: 'xs-16-s-20-m-24', view: 'primary', weight: 'bold', },
+                                mods: { size: 'xs-16-s-20-m-24', view: 'primary', weight: 'bold', view: 'link' },
                                 mix: [
                                     { block: 'theme', mods: { font: 'playfairDisplay' } },
-                                    { block: 'new-menu', elem: 'logo', elemMods: { view: 'link' } }
+                                    { block: 'new-menu', elem: 'logo' }
                                 ],
                                 content: 'Cakes'
                             },
-                            // new-menu__toogle
                             {
-                                block: 'button',
-                                mix: { block: 'new-menu', elem: 'toogle' },
-                                elemMods: { state: 'active' },
-                                content: [
-                                    {
-                                        block: 'icon',
-                                        mods: { name: 'hamburger', size: 'm' }
-                                    }
-                                ]
-                            },
-                            // new-menu__nav
-                            {
-                                elem: 'nav',
-                                mix: { block: 'dropdown' },
-                                tag: 'nav',
-                                content: [
-                                    {
-                                        tag: 'a',
-                                        attrs: { href: '#products-scroll' },
-                                        block: 'text',
-                                        mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
-                                        mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                        val: "1",
-                                        content: 'Наши торты'
+                                block: 'new-menu', elem: 'toogle',
+                                content:{
+                                    block: 'dropdown',
+                                    mods: {
+                                        switcher: 'button',
+                                        theme: 'islands',
+                                        size: 'l'
                                     },
-                                    {
-                                        tag: 'a',
-                                        attrs: { href: '#order-scroll' },
-                                        block: 'text',
-                                        mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
-                                        mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                        val: "2",
-                                        content: 'Индивидуальный заказ'
+                                    switcher: 'кнопка',
+                                    // [
+
+                                    //     { block: 'text' },
+                                    //     { block: 'icon', mods: { name: 'hamburger', size: 'm' } }
+                                    // ],
+
+                                    popup:  {
+                                        block : 'popup',
+                                        mods : { autoclosable : true, theme: 'islands', target : 'anchor' },
+                                        directions : ['bottom-left'],
+                                        content :
+                                        // new-menu__nav
+                                        {
+                                            block: 'new-menu', elem: 'nav',
+                                            content: [
+                                                {
+                                                    tag: 'a',
+                                                    attrs: { href: '#products-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
+                                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                                    val: "1",
+                                                    content: 'Наши торты'
+                                                },
+                                                {
+                                                    tag: 'a',
+                                                    attrs: { href: '#order-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
+                                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                                    val: "2",
+                                                    content: 'Индивидуальный заказ'
+                                                },
+                                                {
+                                                    tag: 'a',
+                                                    attrs: { href: '#reviews-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
+                                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                                    val: "3",
+                                                    content: 'Отзывы'
+                                                },
+                                                {
+                                                    tag: 'a',
+                                                    attrs: { href: '#about-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
+                                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                                    val: "4",
+                                                    content: 'О нас'
+                                                },
+                                                {
+                                                    tag: 'a',
+                                                    attrs: { href: '#delivery-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
+                                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                                    val: "5",
+                                                    content: 'Как заказать'
+                                                },
+                                                {
+                                                    tag: 'a',
+                                                    attrs: { href: '#contacts-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
+                                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                                    val: "6",
+                                                    content: 'Контакты'
+                                                }
+                                            ]
+                                        },
+                                        viewportOffset : 100
                                     },
-                                    {
-                                        tag: 'a',
-                                        attrs: { href: '#reviews-scroll' },
-                                        block: 'text',
-                                        mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
-                                        mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                        val: "3",
-                                        content: 'Отзывы'
-                                    },
-                                    {
-                                        tag: 'a',
-                                        attrs: { href: '#about-scroll' },
-                                        block: 'text',
-                                        mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
-                                        mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                        val: "4",
-                                        content: 'О нас'
-                                    },
-                                    {
-                                        tag: 'a',
-                                        attrs: { href: '#delivery-scroll' },
-                                        block: 'text',
-                                        mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
-                                        mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                        val: "5",
-                                        content: 'Как заказать'
-                                    },
-                                    {
-                                        tag: 'a',
-                                        attrs: { href: '#contacts-scroll' },
-                                        block: 'text',
-                                        mods: { size: 'xs-12-s-12-m-13', view: 'primary', transform: 'uppercase' },
-                                        mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                        val: "6",
-                                        content: 'Контакты'
-                                    }
-                                ]
+                                },
                             },
                             // new-menu__phone
                             {
@@ -137,8 +148,7 @@ module.exports = {
                                     tag: 'a',
                                     attrs: { href:'tel:89068999296' },
                                     block: 'text',
-                                    mods: { size: 'm', view: 'primary', weight: 'bold', },
-                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
+                                    mods: { size: 'm', view: 'primary', weight: 'bold', view: 'link' },
                                     content: '+7 906 899 92 96'
                                 },
                             }
@@ -252,7 +262,6 @@ module.exports = {
                 // наши торты
                 {
                     elem: 'section',
-                    tag: 'section',
                     mix: [
                         { block: 'products' },
                         { block: 'decorator', mods: { 'indent-b': '' } }
@@ -811,7 +820,6 @@ module.exports = {
                 // order индивидуальный заказ
                 {
                     elem: 'section',
-                    tag: 'section',
                     mix: [
                         { block: 'order' },
                     ],
@@ -2207,7 +2215,6 @@ module.exports = {
                 // reviews отзывы
                 {
                     elem: 'section',
-                    tag: 'section',
                     attrs: { id: 'reviews-scroll' },
                     mix: [
                         { block: 'decorator', mods: { 'indent-b': '' } },
@@ -2489,9 +2496,8 @@ module.exports = {
                 // about о нас
                 {
                     elem: 'section',
-                    tag: 'section',
                     attrs: { id: 'about-scroll' },
-                    mix: [{ block: 'about' }, , { block: 'decorator', mods: { 'indent-b': 'xxl' } }],
+                    mix: [{ block: 'about' }, { block: 'decorator', mods: { 'indent-b': 'xxl' } }],
                     content: {
                         elem: 'container',
                         elemMods: { size: 'l', align: 'center' },
@@ -2651,48 +2657,42 @@ module.exports = {
                 },
                 // quote цитата
                 {
-                    elem: 'section',
-                    mix: { block: 'quote' },
-                    content: {
-                        elem: 'container',
-                        elemMods: { size: 'l', align: 'center' },
-                        content: {
-                            block: 'pt-icon-plus',
-                            mods: { 'vertical-align': 'center', 'flex-direction': 'column' },
-                            content: [
-                                {
-                                    elem: 'block',
-                                    tag: 'blockquote',
-                                    mix: { block: 'decorator', mods: { 'indent-v': 'm' } },
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: { align: 'center', size: 'xs-60-s-77-m-140', view: 'desable', width: 'blockquote' },
-                                            mix: [
-                                                { block: 'theme', mods: { 'color': 'normal'} },
-                                                { block: 'theme', mods: { font: 'playfairDisplay' } }
-                                            ],
-                                            content: '’’'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { size: 'xs-13-s-14-m-25', style: 'italic', align: 'center', view: 'primary', weight: 'bold', style: 'italic', width: 'blockquote' },
-                                            mix: { block: 'theme', mods: { font: 'playfairDisplay' } },
-                                            content: "Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо."
-                                        },
-                                    ]
-                                },
-                                {
-                                    block: 'signature'
-                                },
-                            ]
-                        }
-                    }
+                   block: 'quote',
+                   content: {
+                       block: 'pt-icon-plus',
+                       mods: { 'vertical-align': 'center', 'flex-direction': 'column' },
+                       content: [
+                           {
+                               elem: 'block',
+                               tag: 'blockquote',
+                               mix: { block: 'decorator', mods: { 'indent-v': 'm' } },
+                               content: [
+                                   {
+                                       block: 'text',
+                                       mods: { align: 'center', size: 'xs-60-s-77-m-140', view: 'desable', width: 'blockquote' },
+                                       mix: [
+                                           { block: 'theme', mods: { 'color': 'normal'} },
+                                           { block: 'theme', mods: { font: 'playfairDisplay' } }
+                                       ],
+                                       content: '’’'
+                                   },
+                                   {
+                                       block: 'text',
+                                       mods: { size: 'xs-13-s-14-m-25', style: 'italic', align: 'center', view: 'primary', weight: 'bold', style: 'italic', width: 'blockquote' },
+                                       mix: { block: 'theme', mods: { font: 'playfairDisplay' } },
+                                       content: "Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо."
+                                   },
+                               ]
+                           },
+                           {
+                               block: 'signature'
+                           },
+                       ]
+                   }
                 },
                 // advantages наши преимущества
                 {
                     elem: 'section',
-                    tag: 'section',
                     mix: { block: 'advantages' },
                     content: {
                         elem: 'container',
@@ -2844,7 +2844,6 @@ module.exports = {
                 // delivery как заказать
                 {
                     elem: 'section',
-                    tag: 'section',
                     attrs: { id: 'delivery-scroll' },
                     mix: [
                         { block: 'theme', mods: { color: 'whitepaper-inverse' } },
@@ -2942,8 +2941,7 @@ module.exports = {
                 // contacts контакты
                 {
                     elem: 'section',
-                    tag: 'section',
-                    mix: [{ block: 'contacts' }, ],
+                    mix: { block: 'contacts' },
                     attrs: { id: 'contacts-scroll' },
                     content: {
                         elem: 'container',

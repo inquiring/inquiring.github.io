@@ -4150,33 +4150,28 @@ $(function() {
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.js */
-/* begin: ../../node_modules/bem-components/common.blocks/button/button.js */
+/* begin: ../../node_modules/bem-components/common.blocks/dropdown/dropdown.js */
 /**
- * @module button
+ * @module dropdown
  */
 
 modules.define(
-    'button',
-    ['i-bem-dom', 'control', 'jquery', 'dom', 'functions', 'keyboard__codes'],
-    function(provide, bemDom, Control, $, dom, functions, keyCodes) {
+    'dropdown',
+    ['i-bem-dom', 'popup', 'dropdown__switcher'],
+    function(provide, bemDom, Popup, Switcher) {
 
 /**
  * @exports
- * @class button
- * @augments control
+ * @class dropdown
  * @bem
+ *
+ * @bemmod opened Represents opened state
  */
-provide(bemDom.declBlock(this.name, Control, /** @lends button.prototype */{
+provide(bemDom.declBlock(this.name, /** @lends dropdown.prototype */{
     beforeSetMod : {
-        'pressed' : {
+        'opened' : {
             'true' : function() {
-                return !this.hasMod('disabled') || this.hasMod('togglable');
-            }
-        },
-
-        'focused' : {
-            '' : function() {
-                return !this._isPointerPressInProgress;
+                if(this.hasMod('disabled')) return false;
             }
         }
     },
@@ -4184,150 +4179,680 @@ provide(bemDom.declBlock(this.name, Control, /** @lends button.prototype */{
     onSetMod : {
         'js' : {
             'inited' : function() {
-                this.__base.apply(this, arguments);
-                this._isPointerPressInProgress = false;
-                this._focusedByPointer = false;
+                this._switcher = null;
+                this._popup = null;
             }
+        },
+
+        'opened' : function(_, modVal) {
+            this.getPopup().setMod('visible', modVal);
+            this._switcher.domElem.attr('aria-expanded', !!modVal);
         },
 
         'disabled' : {
-            'true' : function() {
-                this.__base.apply(this, arguments);
-                this.hasMod('togglable') || this.delMod('pressed');
-                this.domElem.attr('aria-disabled', true);
-            },
-            '' : function() {
-                this.__base.apply(this, arguments);
-                this.domElem.removeAttr('aria-disabled');
-            }
-        },
-
-        'focused' : {
-            'true' : function() {
-                this.__base.apply(this, arguments);
-                this._focusedByPointer || this.setMod('focused-hard');
+            '*' : function(modName, modVal) {
+                this.getSwitcher().setMod(modName, modVal);
             },
 
-            '' : function() {
-                this.__base.apply(this, arguments);
-                this.delMod('focused-hard');
+            'true' : function() {
+                this.getPopup().delMod('visible');
             }
         }
     },
 
     /**
-     * Returns text of the button
-     * @returns {String}
+     * Returns popup
+     * @returns {popup}
      */
-    getText : function() {
-        return this._elem('text').domElem.text();
+    getPopup : function() {
+        if(this._popup) return this._popup;
+
+        this._popup = this.findMixedBlock(Popup).setAnchor(this.getSwitcher());
+        this._popup._events().on({ modName : 'visible', modVal : '*' }, this._onPopupVisibilityChange, this);
+        return this._popup;
     },
 
     /**
-     * Sets text to the button
-     * @param {String} text
-     * @returns {button} this
+     * Returns switcher
+     * @returns {i-bem-dom}
      */
-    setText : function(text) {
-        this._elem('text').domElem.text(text || '');
-        return this;
+    getSwitcher : function() {
+        return this._switcher ||
+            (this._switcher = this.findMixedBlock(this._getSwitcherClass()));
     },
 
-    _onFocus : function() {
-        if(this._isPointerPressInProgress) return;
-
-        this.__base.apply(this, arguments);
-        this._domEvents('control').on('keydown', this._onKeyDown);
+    _getSwitcherClass : function() {
+        return bemDom.declBlock(this.getMod('switcher'));
     },
 
-    _onBlur : function() {
-        this._domEvents('control').un('keydown', this._onKeyDown);
-        this.__base.apply(this, arguments);
+    /**
+     * On BEM click event handler
+     * @param {events:Event} e
+     * @protected
+     */
+    _onSwitcherClick : function(e) {
+        this._switcher || (this._switcher = e.target);
+        this.toggleMod('opened');
     },
 
-    _onMouseDown : function(e) {
-        e.preventDefault(); // NOTE: prevents button from being blurred at least in FF and Safari
-        this._domEvents().un('mousedown', this._onMouseDown);
-    },
-
-    _onPointerPress : function() {
-        this._domEvents().on('mousedown', this._onMouseDown);
-        if(!this.hasMod('disabled')) {
-            this._isPointerPressInProgress = true;
-            this._domEvents(bemDom.doc).on('pointerrelease', this._onPointerRelease);
-            this.setMod('pressed');
-        }
-    },
-
-    _onPointerRelease : function(e) {
-        this._isPointerPressInProgress = false;
-        this._domEvents(bemDom.doc).un('pointerrelease', this._onPointerRelease);
-
-        if(e.originalEvent.type === 'pointerup' && dom.contains(this.findMixedElem('control').domElem, $(e.target))) {
-            this._focusedByPointer = true;
-            this._focus();
-            this._focusedByPointer = false;
-            this._domEvents().once('pointerclick', this._onPointerClick);
-        } else {
-            this._blur();
-        }
-
-        this.delMod('pressed');
-    },
-
-    _onPointerClick : function() {
-        this
-            ._updateChecked()
-            ._emit('click');
-    },
-
-    _onKeyDown : function(e) {
-        if(this.hasMod('disabled')) return;
-
-        var keyCode = e.keyCode;
-        if(keyCode === keyCodes.SPACE || keyCode === keyCodes.ENTER) {
-            this._domEvents('control')
-                .un('keydown', this._onKeyDown)
-                .on('keyup', this._onKeyUp);
-
-            this._updateChecked()
-                .setMod('pressed');
-        }
-    },
-
-    _onKeyUp : function(e) {
-        this._domEvents('control')
-            .un('keyup', this._onKeyUp)
-            .on('keydown', this._onKeyDown);
-
-        this.delMod('pressed');
-
-        e.keyCode === keyCodes.SPACE && this._doAction();
-
-        this._emit('click');
-    },
-
-    _updateChecked : function() {
-        this.hasMod('togglable') &&
-            (this.hasMod('togglable', 'check')?
-                this.toggleMod('checked') :
-                this.setMod('checked'));
-
-        return this;
-    },
-
-    _doAction : functions.noop
-}, /** @lends button */{
+    _onPopupVisibilityChange : function(_, data) {
+        this.setMod('opened', data.modVal);
+    }
+}, /** @lends dropdown */{
     lazyInit : true,
     onInit : function() {
-        this._domEvents('control').on('pointerpress', this.prototype._onPointerPress);
-        return this.__base.apply(this, arguments);
+        this._events(Switcher).on('click', this.prototype._onSwitcherClick);
     }
 }));
 
 });
 
-/* end: ../../node_modules/bem-components/common.blocks/button/button.js */
+/* end: ../../node_modules/bem-components/common.blocks/dropdown/dropdown.js */
+/* begin: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/dropdown__switcher.js */
+modules.define('dropdown__switcher', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declElem('dropdown', 'switcher', {
+    _onSwitcherClick : function() {
+        this._emit('click');
+    }
+}, {
+    lazyInit : true
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/dropdown__switcher.js */
+/* begin: ../../node_modules/bem-components/common.blocks/popup/popup.js */
+/**
+ * @module popup
+ */
+
+modules.define(
+    'popup',
+    ['i-bem-dom'],
+    function(provide, bemDom) {
+
+var ZINDEX_FACTOR = 1000,
+    visiblePopupsZIndexes = {},
+    undef;
+
+/**
+ * @exports
+ * @class popup
+ * @bem
+ *
+ * @param {Number} [zIndexGroupLevel=0] z-index group level
+ *
+ * @bemmod visible Represents visible state
+ */
+provide(bemDom.declBlock(this.name, /** @lends popup.prototype */{
+    onSetMod : {
+        'js' : {
+            'inited' : function() {
+                this._parentPopup = undef;
+                this._zIndex = null;
+                this._zIndexGroupLevel = null;
+                this._isAttachedToScope = false;
+            },
+
+            '' : function() {
+                this.delMod('visible');
+            }
+        },
+
+        'visible' : {
+            'true' : function() {
+                if(!this._isAttachedToScope) {
+                    bemDom.scope.append(this.domElem);
+                    this._isAttachedToScope = true;
+                }
+
+                this
+                    ._captureZIndex()
+                    ._bindToParentPopup()
+                    ._domEvents().on('pointerpress pointerclick', this._setPreventHideByClick);
+
+                this.domElem.removeAttr('aria-hidden');
+            },
+
+            '' : function() {
+                this
+                    ._releaseZIndex()
+                    ._unbindFromParentPopup()
+                    ._domEvents().un('pointerpress pointerclick', this._setPreventHideByClick);
+
+                this.domElem.attr('aria-hidden', true);
+            }
+        }
+    },
+
+    /**
+     * Sets content
+     * @param {String|jQuery} content
+     * @returns {popup} this
+     */
+    setContent : function(content) {
+        bemDom.update(this.domElem, content);
+        return this;
+    },
+
+    _calcZIndexGroupLevel : function() {
+        var res = this.params.zIndexGroupLevel,
+            parentPopup = this._getParentPopup();
+
+        parentPopup && (res += parentPopup._zIndexGroupLevel);
+
+        return res;
+    },
+
+    _setPreventHideByClick : function() {
+        var curPopup = this;
+        do {
+            curPopup._preventHideByClick = true;
+        } while(curPopup = curPopup._getParentPopup());
+    },
+
+    _bindToParentPopup : function() {
+        var parentPopup = this._getParentPopup();
+        parentPopup &&
+            this._events(parentPopup).on({ modName : 'visible', modVal : '' }, this._onParentPopupHide, this);
+
+        return this;
+    },
+
+    _unbindFromParentPopup : function() {
+        this._parentPopup && this._events(this._parentPopup)
+            .un({ modName : 'visible', modVal : '' }, this._onParentPopupHide, this);
+
+        this._parentPopup = undef;
+
+        return this;
+    },
+
+    _onParentPopupHide : function() {
+        this.delMod('visible');
+    },
+
+    _getParentPopup : function() {
+        return this._parentPopup;
+    },
+
+    _captureZIndex : function() {
+        var level = this._zIndexGroupLevel === null?
+                this._zIndexGroupLevel = this._calcZIndexGroupLevel() :
+                this._zIndexGroupLevel,
+            zIndexes = visiblePopupsZIndexes[level] || (visiblePopupsZIndexes[level] = [(level + 1) * ZINDEX_FACTOR]),
+            prevZIndex = this._zIndex;
+
+        this._zIndex = zIndexes[zIndexes.push(zIndexes[zIndexes.length - 1] + 1) - 1];
+        this._zIndex !== prevZIndex && this.domElem.css('z-index', this._zIndex);
+
+        return this;
+    },
+
+    _releaseZIndex : function() {
+        var zIndexes = visiblePopupsZIndexes[this._zIndexGroupLevel];
+        zIndexes.splice(zIndexes.indexOf(this._zIndex), 1);
+
+        return this;
+    },
+
+    _recaptureZIndex : function() {
+        this._releaseZIndex();
+        this._zIndexGroupLevel = null;
+
+        return this._captureZIndex();
+    },
+
+    _getDefaultParams : function() {
+        return {
+            zIndexGroupLevel : 0
+        };
+    }
+}, /** @lends popup */{
+    lazyInit : true
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/popup/popup.js */
+/* begin: ../../node_modules/bem-core/common.blocks/functions/__throttle/functions__throttle.vanilla.js */
+/**
+ * @module functions__throttle
+ */
+
+modules.define('functions__throttle', function(provide) {
+
+var global = this.global;
+
+provide(
+    /**
+     * Throttle given function
+     * @exports
+     * @param {Function} fn function to throttle
+     * @param {Number} timeout throttle interval
+     * @param {Boolean} [invokeAsap=true] invoke before first interval
+     * @param {Object} [ctx] context of function invocation
+     * @returns {Function} throttled function
+     */
+    function(fn, timeout, invokeAsap, ctx) {
+        var typeofInvokeAsap = typeof invokeAsap;
+        if(typeofInvokeAsap === 'undefined') {
+            invokeAsap = true;
+        } else if(arguments.length === 3 && typeofInvokeAsap !== 'boolean') {
+            ctx = invokeAsap;
+            invokeAsap = true;
+        }
+
+        var timer, args, needInvoke,
+            wrapper = function() {
+                if(needInvoke) {
+                    fn.apply(ctx, args);
+                    needInvoke = false;
+                    timer = global.setTimeout(wrapper, timeout);
+                } else {
+                    timer = null;
+                }
+            };
+
+        return function() {
+            args = arguments;
+            ctx || (ctx = this);
+            needInvoke = true;
+
+            if(!timer) {
+                invokeAsap?
+                    wrapper() :
+                    timer = global.setTimeout(wrapper, timeout);
+            }
+        };
+    });
+
+});
+
+/* end: ../../node_modules/bem-core/common.blocks/functions/__throttle/functions__throttle.vanilla.js */
+/* begin: ../../node_modules/bem-components/common.blocks/popup/_autoclosable/popup_autoclosable.js */
+/**
+ * @module popup
+ */
+
+modules.define(
+    'popup',
+    ['jquery', 'i-bem-dom', 'ua', 'dom', 'keyboard__codes'],
+    function(provide, $, bemDom, ua, dom, keyCodes, Popup) {
+
+var KEYDOWN_EVENT = ua.opera && ua.version < 12.10? 'keypress' : 'keydown',
+    visiblePopupsStack = [];
+
+/**
+ * @exports
+ * @class popup
+ * @bem
+ */
+provide(Popup.declMod({ modName : 'autoclosable', modVal : true }, /** @lends popup.prototype */{
+    onSetMod : {
+        'visible' : {
+            'true' : function() {
+                visiblePopupsStack.unshift(this);
+                // NOTE: nextTick because of event bubbling to document
+                this
+                    ._nextTick(function() {
+                        this._domEvents(bemDom.doc).on('pointerclick', this._onDocPointerClick);
+                    })
+                    .__base.apply(this, arguments);
+            },
+
+            '' : function() {
+                visiblePopupsStack.splice(visiblePopupsStack.indexOf(this), 1);
+                this._domEvents(bemDom.doc).un('pointerclick', this._onDocPointerClick);
+                this.__base.apply(this, arguments);
+            }
+        }
+    },
+
+    _onDocPointerClick : function(e) {
+        if(this.hasMod('target', 'anchor') && dom.contains(this._anchor, $(e.target)))
+            return;
+
+        this._preventHideByClick?
+           this._preventHideByClick = null :
+           this.delMod('visible');
+    }
+}, /** @lends popup */{
+    lazyInit : true,
+    onInit : function() {
+        // TODO: checkme!
+        // this._domEvents(bemDom.doc).on(KEYDOWN_EVENT, onDocKeyPress);
+        bemDom.doc.on(KEYDOWN_EVENT, onDocKeyPress);
+    }
+}));
+
+function onDocKeyPress(e) {
+    e.keyCode === keyCodes.ESC &&
+        // omit ESC in inputs, selects and etc.
+        visiblePopupsStack.length &&
+        !dom.isEditable($(e.target)) &&
+            visiblePopupsStack[0].delMod('visible');
+}
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/popup/_autoclosable/popup_autoclosable.js */
+/* begin: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target.js */
+/**
+ * @module popup
+ */
+
+modules.define(
+    'popup',
+    ['i-bem-dom', 'objects'],
+    function(provide, bemDom, objects, Popup) {
+
+var VIEWPORT_ACCURACY_FACTOR = 0.99,
+    DEFAULT_DIRECTIONS = [
+        'bottom-left', 'bottom-center', 'bottom-right',
+        'top-left', 'top-center', 'top-right',
+        'right-top', 'right-center', 'right-bottom',
+        'left-top', 'left-center', 'left-bottom'
+    ],
+
+    win = bemDom.win,
+    undef;
+
+/**
+ * @exports
+ * @class popup
+ * @bem
+ *
+ * @param {Number} [mainOffset=0] offset along the main direction
+ * @param {Number} [secondaryOffset=0] offset along the secondary direction
+ * @param {Number} [viewportOffset=0] offset from the viewport (window)
+ * @param {Array[String]} [directions] allowed directions
+ */
+provide(Popup.declMod({ modName : 'target', modVal : '*' }, /** @lends popup.prototype */{
+    onSetMod : {
+        'js' : {
+            'inited' : function() {
+                this.__base.apply(this, arguments);
+
+                this._lastDrawingCss = {
+                    left : undef,
+                    top : undef,
+                    zIndex : undef,
+                    display : undef
+                };
+            }
+        },
+
+        'visible' : {
+            'true' : function() {
+                this.__base.apply(this, arguments);
+                this._domEvents(win).on('scroll resize', this._onWinScrollAndResize);
+                this.redraw();
+            },
+
+            '' : function() {
+                this.__base.apply(this, arguments);
+                this._domEvents(win).un('scroll resize', this._onWinScrollAndResize);
+            }
+        }
+    },
+
+    /**
+     * @override
+     */
+    setContent : function() {
+        return this.__base.apply(this, arguments).redraw();
+    },
+
+    /**
+     * Redraws popup
+     * @returns {popup} this
+     */
+    redraw : function() {
+        if(!this.hasMod('visible')) return this;
+
+        var bestDrawingParams = this._calcBestDrawingParams();
+
+        this.setMod('direction', bestDrawingParams.direction);
+
+        var lastDrawingCss = this._lastDrawingCss,
+            needUpdateCss = false;
+
+        objects.each(
+            this._calcDrawingCss(bestDrawingParams),
+            function(val, name) {
+                if(lastDrawingCss[name] !== val) {
+                    lastDrawingCss[name] = val;
+                    needUpdateCss = true;
+                }
+            });
+
+        needUpdateCss && this.domElem.css(lastDrawingCss);
+
+        return this;
+    },
+
+    _calcDrawingCss : function(drawingParams) {
+        return {
+            left : drawingParams.left,
+            top : drawingParams.top
+        };
+    },
+
+    /**
+     * Returns possible directions to draw with max available width and height.
+     * @returns {Array}
+     */
+    calcPossibleDrawingParams : function() {
+        var target = this._calcTargetDimensions(),
+            viewport = this._calcViewportDimensions(),
+            params = this.params,
+            mainOffset = params.mainOffset,
+            secondaryOffset = params.secondaryOffset,
+            viewportOffset = params.viewportOffset;
+
+        return this.params.directions.map(function(direction) {
+            var subRes = {
+                    direction : direction,
+                    width : 0,
+                    height : 0,
+                    left : 0,
+                    top : 0
+                };
+
+            if(this._checkMainDirection(direction, 'bottom')) {
+                subRes.top = target.top + target.height + mainOffset;
+                subRes.height = viewport.bottom - subRes.top - viewportOffset;
+            } else if(this._checkMainDirection(direction, 'top')) {
+                subRes.height = target.top - viewport.top - mainOffset - viewportOffset;
+                subRes.top = target.top - subRes.height - mainOffset;
+            } else {
+                if(this._checkSecondaryDirection(direction, 'center')) {
+                    subRes.height = viewport.bottom - viewport.top - 2 * viewportOffset;
+                    subRes.top = target.top + target.height / 2 - subRes.height / 2;
+                } else if(this._checkSecondaryDirection(direction, 'bottom')) {
+                    subRes.height = target.top + target.height - viewport.top - secondaryOffset - viewportOffset;
+                    subRes.top = target.top + target.height - subRes.height - secondaryOffset;
+                } else if(this._checkSecondaryDirection(direction, 'top')) {
+                    subRes.top = target.top + secondaryOffset;
+                    subRes.height = viewport.bottom - subRes.top - viewportOffset;
+                }
+
+                if(this._checkMainDirection(direction, 'left')) {
+                    subRes.width = target.left - viewport.left - mainOffset - viewportOffset;
+                    subRes.left = target.left - subRes.width - mainOffset;
+                } else {
+                    subRes.left = target.left + target.width + mainOffset;
+                    subRes.width = viewport.right - subRes.left - viewportOffset;
+                }
+            }
+
+            if(this._checkSecondaryDirection(direction, 'right')) {
+                subRes.width = target.left + target.width - viewport.left - secondaryOffset - viewportOffset;
+                subRes.left = target.left + target.width - subRes.width - secondaryOffset;
+            } else if(this._checkSecondaryDirection(direction, 'left')) {
+                subRes.left = target.left + secondaryOffset;
+                subRes.width = viewport.right - subRes.left - viewportOffset;
+            } else if(this._checkSecondaryDirection(direction, 'center')) {
+                if(this._checkMainDirection(direction, 'top', 'bottom')) {
+                    subRes.width = viewport.right - viewport.left - 2 * viewportOffset;
+                    subRes.left = target.left + target.width / 2 - subRes.width / 2;
+                }
+            }
+
+            return subRes;
+        }, this);
+    },
+
+    _calcBestDrawingParams : function() {
+        var popup = this._calcPopupDimensions(),
+            target = this._calcTargetDimensions(),
+            viewport = this._calcViewportDimensions(),
+            directions = this.params.directions,
+            i = 0,
+            direction,
+            pos,
+            viewportFactor,
+            bestDirection,
+            bestPos,
+            bestViewportFactor;
+
+        while(direction = directions[i++]) {
+            pos = this._calcPos(direction, target, popup);
+            viewportFactor = this._calcViewportFactor(pos, viewport, popup);
+            if(i === 1 ||
+                    viewportFactor > bestViewportFactor ||
+                    (!bestViewportFactor && this.hasMod('direction', direction))) {
+                bestDirection = direction;
+                bestViewportFactor = viewportFactor;
+                bestPos = pos;
+            }
+            if(bestViewportFactor > VIEWPORT_ACCURACY_FACTOR) break;
+        }
+
+        return {
+            direction : bestDirection,
+            left : bestPos.left,
+            top : bestPos.top
+        };
+    },
+
+    _calcPopupDimensions : function() {
+        var popupWidth = this.domElem.outerWidth(),
+            popupHeight = this.domElem.outerHeight();
+
+        return {
+            width : popupWidth,
+            height : popupHeight,
+            area : popupWidth * popupHeight
+        };
+    },
+
+    /**
+     * @abstract
+     * @protected
+     * @returns {Object}
+     */
+    _calcTargetDimensions : function() {},
+
+    _calcViewportDimensions : function() {
+        var winTop = win.scrollTop(),
+            winLeft = win.scrollLeft(),
+            winWidth = win.width(),
+            winHeight = win.height();
+
+        return {
+            top : winTop,
+            left : winLeft,
+            bottom : winTop + winHeight,
+            right : winLeft + winWidth
+        };
+    },
+
+    _calcPos : function(direction, target, popup) {
+        var res = {},
+            mainOffset = this.params.mainOffset,
+            secondaryOffset = this.params.secondaryOffset;
+
+        if(this._checkMainDirection(direction, 'bottom')) {
+            res.top = target.top + target.height + mainOffset;
+        } else if(this._checkMainDirection(direction, 'top')) {
+            res.top = target.top - popup.height - mainOffset;
+        } else if(this._checkMainDirection(direction, 'left')) {
+            res.left = target.left - popup.width - mainOffset;
+        } else if(this._checkMainDirection(direction, 'right')) {
+            res.left = target.left + target.width + mainOffset;
+        }
+
+        if(this._checkSecondaryDirection(direction, 'right')) {
+            res.left = target.left + target.width - popup.width - secondaryOffset;
+        } else if(this._checkSecondaryDirection(direction, 'left')) {
+            res.left = target.left + secondaryOffset;
+        } else if(this._checkSecondaryDirection(direction, 'bottom')) {
+            res.top = target.top + target.height - popup.height - secondaryOffset;
+        } else if(this._checkSecondaryDirection(direction, 'top')) {
+            res.top = target.top + secondaryOffset;
+        } else if(this._checkSecondaryDirection(direction, 'center')) {
+            if(this._checkMainDirection(direction, 'top', 'bottom')) {
+                res.left = target.left + target.width / 2 - popup.width / 2;
+            } else if(this._checkMainDirection(direction, 'left', 'right')) {
+                res.top = target.top + target.height / 2 - popup.height / 2;
+            }
+        }
+
+        return res;
+    },
+
+    _calcViewportFactor : function(pos, viewport, popup) {
+        var viewportOffset = this.params.viewportOffset,
+            intersectionLeft = Math.max(pos.left, viewport.left + viewportOffset),
+            intersectionRight = Math.min(pos.left + popup.width, viewport.right - viewportOffset),
+            intersectionTop = Math.max(pos.top, viewport.top + viewportOffset),
+            intersectionBottom = Math.min(pos.top + popup.height, viewport.bottom - viewportOffset);
+
+        return intersectionLeft < intersectionRight && intersectionTop < intersectionBottom? // has intersection
+            (intersectionRight - intersectionLeft) *
+                (intersectionBottom - intersectionTop) /
+                popup.area :
+            0;
+    },
+
+    _checkMainDirection : function(direction, mainDirection1, mainDirection2) {
+        return !direction.indexOf(mainDirection1) || (mainDirection2 && !direction.indexOf(mainDirection2));
+    },
+
+    _checkSecondaryDirection : function(direction, secondaryDirection) {
+        return ~direction.indexOf('-' + secondaryDirection);
+    },
+
+    _onWinScrollAndResize : function() {
+        this.redraw();
+    },
+
+    _getDefaultParams : function() {
+        return objects.extend(
+            this.__base.apply(this, arguments),
+            {
+                mainOffset : 0,
+                secondaryOffset : 0,
+                viewportOffset : 0,
+                directions : DEFAULT_DIRECTIONS
+            });
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target.js */
+/* begin: ../../node_modules/bem-components/common.blocks/z-index-group/z-index-group.js */
+modules.define('z-index-group', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declBlock(this.name));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/z-index-group/z-index-group.js */
 /* begin: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js */
 modules.define('jquery', ['next-tick'], function(provide, nextTick, $) {
 
@@ -5286,6 +5811,213 @@ provide(/** @exports */{
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/keyboard/__codes/keyboard__codes.js */
+/* begin: ../../node_modules/bem-components/common.blocks/dropdown/_switcher/dropdown_switcher_button.js */
+/**
+ * @module dropdown
+ */
+
+modules.define('dropdown', ['button'], function(provide, Button, Dropdown) {
+
+/**
+ * @exports
+ * @class dropdown
+ * @bem
+ */
+provide(Dropdown.declMod({ modName : 'switcher', modVal : 'button' }, /** @lends dropdown.prototype */{
+    onSetMod : {
+        'opened' : function(_, modVal) {
+            this.__base.apply(this, arguments);
+            var switcher = this.getSwitcher();
+            switcher.hasMod('togglable', 'check') && switcher.setMod('checked', modVal);
+        }
+    },
+    getSwitcher : function() {
+        return this._switcher ||
+            (this._switcher = this.findMixedBlock(Button));
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/dropdown/_switcher/dropdown_switcher_button.js */
+/* begin: ../../node_modules/bem-components/common.blocks/button/button.js */
+/**
+ * @module button
+ */
+
+modules.define(
+    'button',
+    ['i-bem-dom', 'control', 'jquery', 'dom', 'functions', 'keyboard__codes'],
+    function(provide, bemDom, Control, $, dom, functions, keyCodes) {
+
+/**
+ * @exports
+ * @class button
+ * @augments control
+ * @bem
+ */
+provide(bemDom.declBlock(this.name, Control, /** @lends button.prototype */{
+    beforeSetMod : {
+        'pressed' : {
+            'true' : function() {
+                return !this.hasMod('disabled') || this.hasMod('togglable');
+            }
+        },
+
+        'focused' : {
+            '' : function() {
+                return !this._isPointerPressInProgress;
+            }
+        }
+    },
+
+    onSetMod : {
+        'js' : {
+            'inited' : function() {
+                this.__base.apply(this, arguments);
+                this._isPointerPressInProgress = false;
+                this._focusedByPointer = false;
+            }
+        },
+
+        'disabled' : {
+            'true' : function() {
+                this.__base.apply(this, arguments);
+                this.hasMod('togglable') || this.delMod('pressed');
+                this.domElem.attr('aria-disabled', true);
+            },
+            '' : function() {
+                this.__base.apply(this, arguments);
+                this.domElem.removeAttr('aria-disabled');
+            }
+        },
+
+        'focused' : {
+            'true' : function() {
+                this.__base.apply(this, arguments);
+                this._focusedByPointer || this.setMod('focused-hard');
+            },
+
+            '' : function() {
+                this.__base.apply(this, arguments);
+                this.delMod('focused-hard');
+            }
+        }
+    },
+
+    /**
+     * Returns text of the button
+     * @returns {String}
+     */
+    getText : function() {
+        return this._elem('text').domElem.text();
+    },
+
+    /**
+     * Sets text to the button
+     * @param {String} text
+     * @returns {button} this
+     */
+    setText : function(text) {
+        this._elem('text').domElem.text(text || '');
+        return this;
+    },
+
+    _onFocus : function() {
+        if(this._isPointerPressInProgress) return;
+
+        this.__base.apply(this, arguments);
+        this._domEvents('control').on('keydown', this._onKeyDown);
+    },
+
+    _onBlur : function() {
+        this._domEvents('control').un('keydown', this._onKeyDown);
+        this.__base.apply(this, arguments);
+    },
+
+    _onMouseDown : function(e) {
+        e.preventDefault(); // NOTE: prevents button from being blurred at least in FF and Safari
+        this._domEvents().un('mousedown', this._onMouseDown);
+    },
+
+    _onPointerPress : function() {
+        this._domEvents().on('mousedown', this._onMouseDown);
+        if(!this.hasMod('disabled')) {
+            this._isPointerPressInProgress = true;
+            this._domEvents(bemDom.doc).on('pointerrelease', this._onPointerRelease);
+            this.setMod('pressed');
+        }
+    },
+
+    _onPointerRelease : function(e) {
+        this._isPointerPressInProgress = false;
+        this._domEvents(bemDom.doc).un('pointerrelease', this._onPointerRelease);
+
+        if(e.originalEvent.type === 'pointerup' && dom.contains(this.findMixedElem('control').domElem, $(e.target))) {
+            this._focusedByPointer = true;
+            this._focus();
+            this._focusedByPointer = false;
+            this._domEvents().once('pointerclick', this._onPointerClick);
+        } else {
+            this._blur();
+        }
+
+        this.delMod('pressed');
+    },
+
+    _onPointerClick : function() {
+        this
+            ._updateChecked()
+            ._emit('click');
+    },
+
+    _onKeyDown : function(e) {
+        if(this.hasMod('disabled')) return;
+
+        var keyCode = e.keyCode;
+        if(keyCode === keyCodes.SPACE || keyCode === keyCodes.ENTER) {
+            this._domEvents('control')
+                .un('keydown', this._onKeyDown)
+                .on('keyup', this._onKeyUp);
+
+            this._updateChecked()
+                .setMod('pressed');
+        }
+    },
+
+    _onKeyUp : function(e) {
+        this._domEvents('control')
+            .un('keyup', this._onKeyUp)
+            .on('keydown', this._onKeyDown);
+
+        this.delMod('pressed');
+
+        e.keyCode === keyCodes.SPACE && this._doAction();
+
+        this._emit('click');
+    },
+
+    _updateChecked : function() {
+        this.hasMod('togglable') &&
+            (this.hasMod('togglable', 'check')?
+                this.toggleMod('checked') :
+                this.setMod('checked'));
+
+        return this;
+    },
+
+    _doAction : functions.noop
+}, /** @lends button */{
+    lazyInit : true,
+    onInit : function() {
+        this._domEvents('control').on('pointerpress', this.prototype._onPointerPress);
+        return this.__base.apply(this, arguments);
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/button/button.js */
 /* begin: ../../node_modules/bem-components/common.blocks/control/control.js */
 /**
  * @module control
@@ -5472,709 +6204,165 @@ provide(bemDom.declBlock(Control, {
 });
 
 /* end: ../../node_modules/bem-components/desktop.blocks/control/control.js */
-/* begin: ../../node_modules/bem-components/common.blocks/dropdown/dropdown.js */
+/* begin: ../../node_modules/bem-components/common.blocks/dropdown/_switcher/dropdown_switcher_link.js */
 /**
  * @module dropdown
  */
 
-modules.define(
-    'dropdown',
-    ['i-bem-dom', 'popup', 'dropdown__switcher'],
-    function(provide, bemDom, Popup, Switcher) {
+modules.define('dropdown', ['link'], function(provide, Link, Dropdown) {
 
 /**
  * @exports
  * @class dropdown
  * @bem
- *
- * @bemmod opened Represents opened state
  */
-provide(bemDom.declBlock(this.name, /** @lends dropdown.prototype */{
-    beforeSetMod : {
-        'opened' : {
-            'true' : function() {
-                if(this.hasMod('disabled')) return false;
-            }
-        }
-    },
+provide(Dropdown.declMod({ modName : 'switcher', modVal : 'link' }, { /** @lends dropdown */
+    getSwitcher : function() {
+        return this._switcher ||
+            (this._switcher = this.findMixedBlock(Link));
+    }
+}));
 
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/dropdown/_switcher/dropdown_switcher_link.js */
+/* begin: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/_switcher/dropdown__switcher_switcher_link.js */
+modules.define('dropdown__switcher', ['link'], function(provide, Link, Switcher) {
+
+provide(Switcher.declMod({ modName : 'switcher', modVal : 'link' }, {}, {
+    onInit : function() {
+        this._events(Link).on('click', this.prototype._onSwitcherClick);
+        this.__base.apply(this, arguments);
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/_switcher/dropdown__switcher_switcher_link.js */
+/* begin: ../../node_modules/bem-components/common.blocks/link/link.js */
+/**
+ * @module link
+ */
+
+modules.define(
+    'link',
+    ['i-bem-dom', 'control', 'events'],
+    function(provide, bemDom, Control, events) {
+
+/**
+ * @exports
+ * @class link
+ * @augments control
+ * @bem
+ */
+provide(bemDom.declBlock(this.name, Control, /** @lends link.prototype */{
     onSetMod : {
         'js' : {
             'inited' : function() {
-                this._switcher = null;
-                this._popup = null;
-            }
-        },
+                this._url = this.params.url || this.domElem.attr('href');
 
-        'opened' : function(_, modVal) {
-            this.getPopup().setMod('visible', modVal);
-            this._switcher.domElem.attr('aria-expanded', !!modVal);
+                this.hasMod('disabled') && this.domElem.removeAttr('href');
+            }
         },
 
         'disabled' : {
-            '*' : function(modName, modVal) {
-                this.getSwitcher().setMod(modName, modVal);
+            'true' : function() {
+                this.__base.apply(this, arguments);
+                this.domElem
+                    .removeAttr('href')
+                    .attr('aria-disabled', true);
             },
 
-            'true' : function() {
-                this.getPopup().delMod('visible');
+            '' : function() {
+                this.__base.apply(this, arguments);
+                this.domElem
+                    .attr('href', this._url)
+                    .removeAttr('aria-disabled');
             }
         }
     },
 
     /**
-     * Returns popup
-     * @returns {popup}
+     * Returns url
+     * @returns {String}
      */
-    getPopup : function() {
-        if(this._popup) return this._popup;
-
-        this._popup = this.findMixedBlock(Popup).setAnchor(this.getSwitcher());
-        this._popup._events().on({ modName : 'visible', modVal : '*' }, this._onPopupVisibilityChange, this);
-        return this._popup;
+    getUrl : function() {
+        return this._url;
     },
 
     /**
-     * Returns switcher
-     * @returns {i-bem-dom}
+     * Sets url
+     * @param {String} url
+     * @returns {link} this
      */
-    getSwitcher : function() {
-        return this._switcher ||
-            (this._switcher = this.findMixedBlock(this._getSwitcherClass()));
+    setUrl : function(url) {
+        this._url = url;
+        this.hasMod('disabled') || this.domElem.attr('href', url);
+        return this;
     },
 
-    _getSwitcherClass : function() {
-        return bemDom.declBlock(this.getMod('switcher'));
-    },
-
-    /**
-     * On BEM click event handler
-     * @param {events:Event} e
-     * @protected
-     */
-    _onSwitcherClick : function(e) {
-        this._switcher || (this._switcher = e.target);
-        this.toggleMod('opened');
-    },
-
-    _onPopupVisibilityChange : function(_, data) {
-        this.setMod('opened', data.modVal);
+    _onPointerClick : function(e) {
+        if(this.hasMod('disabled')) {
+            e.preventDefault();
+        } else {
+            var event = new events.Event('click');
+            this._emit(event);
+            event.isDefaultPrevented() && e.preventDefault();
+        }
     }
-}, /** @lends dropdown */{
+}, /** @lends link */{
     lazyInit : true,
     onInit : function() {
-        this._events(Switcher).on('click', this.prototype._onSwitcherClick);
+        this._domEvents('control').on('pointerclick', this.prototype._onPointerClick);
+        return this.__base.apply(this, arguments);
     }
 }));
 
 });
 
-/* end: ../../node_modules/bem-components/common.blocks/dropdown/dropdown.js */
-/* begin: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/dropdown__switcher.js */
-modules.define('dropdown__switcher', ['i-bem-dom'], function(provide, bemDom) {
-
-provide(bemDom.declElem('dropdown', 'switcher', {
-    _onSwitcherClick : function() {
-        this._emit('click');
-    }
-}, {
-    lazyInit : true
-}));
-
-});
-
-/* end: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/dropdown__switcher.js */
-/* begin: ../../node_modules/bem-components/common.blocks/popup/popup.js */
+/* end: ../../node_modules/bem-components/common.blocks/link/link.js */
+/* begin: ../../node_modules/bem-components/common.blocks/link/_pseudo/link_pseudo.js */
 /**
- * @module popup
+ * @module link
  */
 
-modules.define(
-    'popup',
-    ['i-bem-dom'],
-    function(provide, bemDom) {
-
-var ZINDEX_FACTOR = 1000,
-    visiblePopupsZIndexes = {},
-    undef;
+modules.define('link', ['keyboard__codes'], function(provide, keyCodes, Link) {
 
 /**
  * @exports
- * @class popup
- * @bem
- *
- * @param {Number} [zIndexGroupLevel=0] z-index group level
- *
- * @bemmod visible Represents visible state
- */
-provide(bemDom.declBlock(this.name, /** @lends popup.prototype */{
-    onSetMod : {
-        'js' : {
-            'inited' : function() {
-                this._parentPopup = undef;
-                this._zIndex = null;
-                this._zIndexGroupLevel = null;
-                this._isAttachedToScope = false;
-            },
-
-            '' : function() {
-                this.delMod('visible');
-            }
-        },
-
-        'visible' : {
-            'true' : function() {
-                if(!this._isAttachedToScope) {
-                    bemDom.scope.append(this.domElem);
-                    this._isAttachedToScope = true;
-                }
-
-                this
-                    ._captureZIndex()
-                    ._bindToParentPopup()
-                    ._domEvents().on('pointerpress pointerclick', this._setPreventHideByClick);
-
-                this.domElem.removeAttr('aria-hidden');
-            },
-
-            '' : function() {
-                this
-                    ._releaseZIndex()
-                    ._unbindFromParentPopup()
-                    ._domEvents().un('pointerpress pointerclick', this._setPreventHideByClick);
-
-                this.domElem.attr('aria-hidden', true);
-            }
-        }
-    },
-
-    /**
-     * Sets content
-     * @param {String|jQuery} content
-     * @returns {popup} this
-     */
-    setContent : function(content) {
-        bemDom.update(this.domElem, content);
-        return this;
-    },
-
-    _calcZIndexGroupLevel : function() {
-        var res = this.params.zIndexGroupLevel,
-            parentPopup = this._getParentPopup();
-
-        parentPopup && (res += parentPopup._zIndexGroupLevel);
-
-        return res;
-    },
-
-    _setPreventHideByClick : function() {
-        var curPopup = this;
-        do {
-            curPopup._preventHideByClick = true;
-        } while(curPopup = curPopup._getParentPopup());
-    },
-
-    _bindToParentPopup : function() {
-        var parentPopup = this._getParentPopup();
-        parentPopup &&
-            this._events(parentPopup).on({ modName : 'visible', modVal : '' }, this._onParentPopupHide, this);
-
-        return this;
-    },
-
-    _unbindFromParentPopup : function() {
-        this._parentPopup && this._events(this._parentPopup)
-            .un({ modName : 'visible', modVal : '' }, this._onParentPopupHide, this);
-
-        this._parentPopup = undef;
-
-        return this;
-    },
-
-    _onParentPopupHide : function() {
-        this.delMod('visible');
-    },
-
-    _getParentPopup : function() {
-        return this._parentPopup;
-    },
-
-    _captureZIndex : function() {
-        var level = this._zIndexGroupLevel === null?
-                this._zIndexGroupLevel = this._calcZIndexGroupLevel() :
-                this._zIndexGroupLevel,
-            zIndexes = visiblePopupsZIndexes[level] || (visiblePopupsZIndexes[level] = [(level + 1) * ZINDEX_FACTOR]),
-            prevZIndex = this._zIndex;
-
-        this._zIndex = zIndexes[zIndexes.push(zIndexes[zIndexes.length - 1] + 1) - 1];
-        this._zIndex !== prevZIndex && this.domElem.css('z-index', this._zIndex);
-
-        return this;
-    },
-
-    _releaseZIndex : function() {
-        var zIndexes = visiblePopupsZIndexes[this._zIndexGroupLevel];
-        zIndexes.splice(zIndexes.indexOf(this._zIndex), 1);
-
-        return this;
-    },
-
-    _recaptureZIndex : function() {
-        this._releaseZIndex();
-        this._zIndexGroupLevel = null;
-
-        return this._captureZIndex();
-    },
-
-    _getDefaultParams : function() {
-        return {
-            zIndexGroupLevel : 0
-        };
-    }
-}, /** @lends popup */{
-    lazyInit : true
-}));
-
-});
-
-/* end: ../../node_modules/bem-components/common.blocks/popup/popup.js */
-/* begin: ../../node_modules/bem-core/common.blocks/functions/__throttle/functions__throttle.vanilla.js */
-/**
- * @module functions__throttle
- */
-
-modules.define('functions__throttle', function(provide) {
-
-var global = this.global;
-
-provide(
-    /**
-     * Throttle given function
-     * @exports
-     * @param {Function} fn function to throttle
-     * @param {Number} timeout throttle interval
-     * @param {Boolean} [invokeAsap=true] invoke before first interval
-     * @param {Object} [ctx] context of function invocation
-     * @returns {Function} throttled function
-     */
-    function(fn, timeout, invokeAsap, ctx) {
-        var typeofInvokeAsap = typeof invokeAsap;
-        if(typeofInvokeAsap === 'undefined') {
-            invokeAsap = true;
-        } else if(arguments.length === 3 && typeofInvokeAsap !== 'boolean') {
-            ctx = invokeAsap;
-            invokeAsap = true;
-        }
-
-        var timer, args, needInvoke,
-            wrapper = function() {
-                if(needInvoke) {
-                    fn.apply(ctx, args);
-                    needInvoke = false;
-                    timer = global.setTimeout(wrapper, timeout);
-                } else {
-                    timer = null;
-                }
-            };
-
-        return function() {
-            args = arguments;
-            ctx || (ctx = this);
-            needInvoke = true;
-
-            if(!timer) {
-                invokeAsap?
-                    wrapper() :
-                    timer = global.setTimeout(wrapper, timeout);
-            }
-        };
-    });
-
-});
-
-/* end: ../../node_modules/bem-core/common.blocks/functions/__throttle/functions__throttle.vanilla.js */
-/* begin: ../../node_modules/bem-components/common.blocks/popup/_autoclosable/popup_autoclosable.js */
-/**
- * @module popup
- */
-
-modules.define(
-    'popup',
-    ['jquery', 'i-bem-dom', 'ua', 'dom', 'keyboard__codes'],
-    function(provide, $, bemDom, ua, dom, keyCodes, Popup) {
-
-var KEYDOWN_EVENT = ua.opera && ua.version < 12.10? 'keypress' : 'keydown',
-    visiblePopupsStack = [];
-
-/**
- * @exports
- * @class popup
+ * @class link
  * @bem
  */
-provide(Popup.declMod({ modName : 'autoclosable', modVal : true }, /** @lends popup.prototype */{
+provide(Link.declMod({ modName : 'pseudo', modVal : true }, /** @lends link.prototype */{
     onSetMod : {
-        'visible' : {
-            'true' : function() {
-                visiblePopupsStack.unshift(this);
-                // NOTE: nextTick because of event bubbling to document
-                this
-                    ._nextTick(function() {
-                        this._domEvents(bemDom.doc).on('pointerclick', this._onDocPointerClick);
-                    })
-                    .__base.apply(this, arguments);
-            },
-
-            '' : function() {
-                visiblePopupsStack.splice(visiblePopupsStack.indexOf(this), 1);
-                this._domEvents(bemDom.doc).un('pointerclick', this._onDocPointerClick);
-                this.__base.apply(this, arguments);
-            }
-        }
-    },
-
-    _onDocPointerClick : function(e) {
-        if(this.hasMod('target', 'anchor') && dom.contains(this._anchor, $(e.target)))
-            return;
-
-        this._preventHideByClick?
-           this._preventHideByClick = null :
-           this.delMod('visible');
-    }
-}, /** @lends popup */{
-    lazyInit : true,
-    onInit : function() {
-        // TODO: checkme!
-        // this._domEvents(bemDom.doc).on(KEYDOWN_EVENT, onDocKeyPress);
-        bemDom.doc.on(KEYDOWN_EVENT, onDocKeyPress);
-    }
-}));
-
-function onDocKeyPress(e) {
-    e.keyCode === keyCodes.ESC &&
-        // omit ESC in inputs, selects and etc.
-        visiblePopupsStack.length &&
-        !dom.isEditable($(e.target)) &&
-            visiblePopupsStack[0].delMod('visible');
-}
-
-});
-
-/* end: ../../node_modules/bem-components/common.blocks/popup/_autoclosable/popup_autoclosable.js */
-/* begin: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target.js */
-/**
- * @module popup
- */
-
-modules.define(
-    'popup',
-    ['i-bem-dom', 'objects'],
-    function(provide, bemDom, objects, Popup) {
-
-var VIEWPORT_ACCURACY_FACTOR = 0.99,
-    DEFAULT_DIRECTIONS = [
-        'bottom-left', 'bottom-center', 'bottom-right',
-        'top-left', 'top-center', 'top-right',
-        'right-top', 'right-center', 'right-bottom',
-        'left-top', 'left-center', 'left-bottom'
-    ],
-
-    win = bemDom.win,
-    undef;
-
-/**
- * @exports
- * @class popup
- * @bem
- *
- * @param {Number} [mainOffset=0] offset along the main direction
- * @param {Number} [secondaryOffset=0] offset along the secondary direction
- * @param {Number} [viewportOffset=0] offset from the viewport (window)
- * @param {Array[String]} [directions] allowed directions
- */
-provide(Popup.declMod({ modName : 'target', modVal : '*' }, /** @lends popup.prototype */{
-    onSetMod : {
-        'js' : {
-            'inited' : function() {
-                this.__base.apply(this, arguments);
-
-                this._lastDrawingCss = {
-                    left : undef,
-                    top : undef,
-                    zIndex : undef,
-                    display : undef
-                };
-            }
-        },
-
-        'visible' : {
+        'focused' : {
             'true' : function() {
                 this.__base.apply(this, arguments);
-                this._domEvents(win).on('scroll resize', this._onWinScrollAndResize);
-                this.redraw();
-            },
 
+                this._domEvents('control').on('keydown', this._onKeyDown);
+            },
             '' : function() {
                 this.__base.apply(this, arguments);
-                this._domEvents(win).un('scroll resize', this._onWinScrollAndResize);
+
+                this._domEvents('control').un('keydown', this._onKeyDown);
             }
         }
     },
 
-    /**
-     * @override
-     */
-    setContent : function() {
-        return this.__base.apply(this, arguments).redraw();
+    _onPointerClick : function(e) {
+        e.preventDefault();
+
+        this.__base.apply(this, arguments);
     },
 
-    /**
-     * Redraws popup
-     * @returns {popup} this
-     */
-    redraw : function() {
-        if(!this.hasMod('visible')) return this;
-
-        var bestDrawingParams = this._calcBestDrawingParams();
-
-        this.setMod('direction', bestDrawingParams.direction);
-
-        var lastDrawingCss = this._lastDrawingCss,
-            needUpdateCss = false;
-
-        objects.each(
-            this._calcDrawingCss(bestDrawingParams),
-            function(val, name) {
-                if(lastDrawingCss[name] !== val) {
-                    lastDrawingCss[name] = val;
-                    needUpdateCss = true;
-                }
-            });
-
-        needUpdateCss && this.domElem.css(lastDrawingCss);
-
-        return this;
-    },
-
-    _calcDrawingCss : function(drawingParams) {
-        return {
-            left : drawingParams.left,
-            top : drawingParams.top
-        };
-    },
-
-    /**
-     * Returns possible directions to draw with max available width and height.
-     * @returns {Array}
-     */
-    calcPossibleDrawingParams : function() {
-        var target = this._calcTargetDimensions(),
-            viewport = this._calcViewportDimensions(),
-            params = this.params,
-            mainOffset = params.mainOffset,
-            secondaryOffset = params.secondaryOffset,
-            viewportOffset = params.viewportOffset;
-
-        return this.params.directions.map(function(direction) {
-            var subRes = {
-                    direction : direction,
-                    width : 0,
-                    height : 0,
-                    left : 0,
-                    top : 0
-                };
-
-            if(this._checkMainDirection(direction, 'bottom')) {
-                subRes.top = target.top + target.height + mainOffset;
-                subRes.height = viewport.bottom - subRes.top - viewportOffset;
-            } else if(this._checkMainDirection(direction, 'top')) {
-                subRes.height = target.top - viewport.top - mainOffset - viewportOffset;
-                subRes.top = target.top - subRes.height - mainOffset;
-            } else {
-                if(this._checkSecondaryDirection(direction, 'center')) {
-                    subRes.height = viewport.bottom - viewport.top - 2 * viewportOffset;
-                    subRes.top = target.top + target.height / 2 - subRes.height / 2;
-                } else if(this._checkSecondaryDirection(direction, 'bottom')) {
-                    subRes.height = target.top + target.height - viewport.top - secondaryOffset - viewportOffset;
-                    subRes.top = target.top + target.height - subRes.height - secondaryOffset;
-                } else if(this._checkSecondaryDirection(direction, 'top')) {
-                    subRes.top = target.top + secondaryOffset;
-                    subRes.height = viewport.bottom - subRes.top - viewportOffset;
-                }
-
-                if(this._checkMainDirection(direction, 'left')) {
-                    subRes.width = target.left - viewport.left - mainOffset - viewportOffset;
-                    subRes.left = target.left - subRes.width - mainOffset;
-                } else {
-                    subRes.left = target.left + target.width + mainOffset;
-                    subRes.width = viewport.right - subRes.left - viewportOffset;
-                }
-            }
-
-            if(this._checkSecondaryDirection(direction, 'right')) {
-                subRes.width = target.left + target.width - viewport.left - secondaryOffset - viewportOffset;
-                subRes.left = target.left + target.width - subRes.width - secondaryOffset;
-            } else if(this._checkSecondaryDirection(direction, 'left')) {
-                subRes.left = target.left + secondaryOffset;
-                subRes.width = viewport.right - subRes.left - viewportOffset;
-            } else if(this._checkSecondaryDirection(direction, 'center')) {
-                if(this._checkMainDirection(direction, 'top', 'bottom')) {
-                    subRes.width = viewport.right - viewport.left - 2 * viewportOffset;
-                    subRes.left = target.left + target.width / 2 - subRes.width / 2;
-                }
-            }
-
-            return subRes;
-        }, this);
-    },
-
-    _calcBestDrawingParams : function() {
-        var popup = this._calcPopupDimensions(),
-            target = this._calcTargetDimensions(),
-            viewport = this._calcViewportDimensions(),
-            directions = this.params.directions,
-            i = 0,
-            direction,
-            pos,
-            viewportFactor,
-            bestDirection,
-            bestPos,
-            bestViewportFactor;
-
-        while(direction = directions[i++]) {
-            pos = this._calcPos(direction, target, popup);
-            viewportFactor = this._calcViewportFactor(pos, viewport, popup);
-            if(i === 1 ||
-                    viewportFactor > bestViewportFactor ||
-                    (!bestViewportFactor && this.hasMod('direction', direction))) {
-                bestDirection = direction;
-                bestViewportFactor = viewportFactor;
-                bestPos = pos;
-            }
-            if(bestViewportFactor > VIEWPORT_ACCURACY_FACTOR) break;
-        }
-
-        return {
-            direction : bestDirection,
-            left : bestPos.left,
-            top : bestPos.top
-        };
-    },
-
-    _calcPopupDimensions : function() {
-        var popupWidth = this.domElem.outerWidth(),
-            popupHeight = this.domElem.outerHeight();
-
-        return {
-            width : popupWidth,
-            height : popupHeight,
-            area : popupWidth * popupHeight
-        };
-    },
-
-    /**
-     * @abstract
-     * @protected
-     * @returns {Object}
-     */
-    _calcTargetDimensions : function() {},
-
-    _calcViewportDimensions : function() {
-        var winTop = win.scrollTop(),
-            winLeft = win.scrollLeft(),
-            winWidth = win.width(),
-            winHeight = win.height();
-
-        return {
-            top : winTop,
-            left : winLeft,
-            bottom : winTop + winHeight,
-            right : winLeft + winWidth
-        };
-    },
-
-    _calcPos : function(direction, target, popup) {
-        var res = {},
-            mainOffset = this.params.mainOffset,
-            secondaryOffset = this.params.secondaryOffset;
-
-        if(this._checkMainDirection(direction, 'bottom')) {
-            res.top = target.top + target.height + mainOffset;
-        } else if(this._checkMainDirection(direction, 'top')) {
-            res.top = target.top - popup.height - mainOffset;
-        } else if(this._checkMainDirection(direction, 'left')) {
-            res.left = target.left - popup.width - mainOffset;
-        } else if(this._checkMainDirection(direction, 'right')) {
-            res.left = target.left + target.width + mainOffset;
-        }
-
-        if(this._checkSecondaryDirection(direction, 'right')) {
-            res.left = target.left + target.width - popup.width - secondaryOffset;
-        } else if(this._checkSecondaryDirection(direction, 'left')) {
-            res.left = target.left + secondaryOffset;
-        } else if(this._checkSecondaryDirection(direction, 'bottom')) {
-            res.top = target.top + target.height - popup.height - secondaryOffset;
-        } else if(this._checkSecondaryDirection(direction, 'top')) {
-            res.top = target.top + secondaryOffset;
-        } else if(this._checkSecondaryDirection(direction, 'center')) {
-            if(this._checkMainDirection(direction, 'top', 'bottom')) {
-                res.left = target.left + target.width / 2 - popup.width / 2;
-            } else if(this._checkMainDirection(direction, 'left', 'right')) {
-                res.top = target.top + target.height / 2 - popup.height / 2;
-            }
-        }
-
-        return res;
-    },
-
-    _calcViewportFactor : function(pos, viewport, popup) {
-        var viewportOffset = this.params.viewportOffset,
-            intersectionLeft = Math.max(pos.left, viewport.left + viewportOffset),
-            intersectionRight = Math.min(pos.left + popup.width, viewport.right - viewportOffset),
-            intersectionTop = Math.max(pos.top, viewport.top + viewportOffset),
-            intersectionBottom = Math.min(pos.top + popup.height, viewport.bottom - viewportOffset);
-
-        return intersectionLeft < intersectionRight && intersectionTop < intersectionBottom? // has intersection
-            (intersectionRight - intersectionLeft) *
-                (intersectionBottom - intersectionTop) /
-                popup.area :
-            0;
-    },
-
-    _checkMainDirection : function(direction, mainDirection1, mainDirection2) {
-        return !direction.indexOf(mainDirection1) || (mainDirection2 && !direction.indexOf(mainDirection2));
-    },
-
-    _checkSecondaryDirection : function(direction, secondaryDirection) {
-        return ~direction.indexOf('-' + secondaryDirection);
-    },
-
-    _onWinScrollAndResize : function() {
-        this.redraw();
-    },
-
-    _getDefaultParams : function() {
-        return objects.extend(
-            this.__base.apply(this, arguments),
-            {
-                mainOffset : 0,
-                secondaryOffset : 0,
-                viewportOffset : 0,
-                directions : DEFAULT_DIRECTIONS
-            });
+    _onKeyDown : function(e) {
+        e.keyCode === keyCodes.ENTER && this._onPointerClick(e);
     }
 }));
 
 });
 
-/* end: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target.js */
-/* begin: ../../node_modules/bem-components/common.blocks/z-index-group/z-index-group.js */
-modules.define('z-index-group', ['i-bem-dom'], function(provide, bemDom) {
-
-provide(bemDom.declBlock(this.name));
-
-});
-
-/* end: ../../node_modules/bem-components/common.blocks/z-index-group/z-index-group.js */
+/* end: ../../node_modules/bem-components/common.blocks/link/_pseudo/link_pseudo.js */
 /* begin: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
 /**
  * @module button
@@ -6673,49 +6861,6 @@ provide({ EventManagerFactory : EventManagerFactory });
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/i-bem-dom/__events/_type/i-bem-dom__events_type_dom.js */
-/* begin: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js */
-modules.define('jquery', function(provide, $) {
-
-$.each({
-    pointerpress : 'pointerdown',
-    pointerrelease : 'pointerup pointercancel'
-}, function(fix, origEvent) {
-    function eventHandler(e) {
-        if(e.which === 1) {
-            var fixedEvent = cloneEvent(e);
-            fixedEvent.type = fix;
-            fixedEvent.originalEvent = e;
-            return $.event.dispatch.call(this, fixedEvent);
-        }
-    }
-
-    $.event.special[fix] = {
-        setup : function() {
-            $(this).on(origEvent, eventHandler);
-            return false;
-        },
-        teardown : function() {
-            $(this).off(origEvent, eventHandler);
-            return false;
-        }
-    };
-});
-
-function cloneEvent(event) {
-    var eventCopy = $.extend(new $.Event(), event);
-    if(event.preventDefault) {
-        eventCopy.preventDefault = function() {
-            event.preventDefault();
-        };
-    }
-    return eventCopy;
-}
-
-provide($);
-
-});
-
-/* end: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js */
 /* begin: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target_anchor.js */
 /**
  * @module popup
@@ -6978,6 +7123,79 @@ provide(Popup.declMod({ modName : 'target', modVal : 'anchor' }, /** @lends popu
 });
 
 /* end: ../../node_modules/bem-components/common.blocks/popup/_target/popup_target_anchor.js */
+/* begin: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js */
+modules.define('jquery', function(provide, $) {
+
+$.each({
+    pointerpress : 'pointerdown',
+    pointerrelease : 'pointerup pointercancel'
+}, function(fix, origEvent) {
+    function eventHandler(e) {
+        if(e.which === 1) {
+            var fixedEvent = cloneEvent(e);
+            fixedEvent.type = fix;
+            fixedEvent.originalEvent = e;
+            return $.event.dispatch.call(this, fixedEvent);
+        }
+    }
+
+    $.event.special[fix] = {
+        setup : function() {
+            $(this).on(origEvent, eventHandler);
+            return false;
+        },
+        teardown : function() {
+            $(this).off(origEvent, eventHandler);
+            return false;
+        }
+    };
+});
+
+function cloneEvent(event) {
+    var eventCopy = $.extend(new $.Event(), event);
+    if(event.preventDefault) {
+        eventCopy.preventDefault = function() {
+            event.preventDefault();
+        };
+    }
+    return eventCopy;
+}
+
+provide($);
+
+});
+
+/* end: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerpressrelease.js */
+/* begin: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/_switcher/dropdown__switcher_switcher_button.js */
+modules.define('dropdown__switcher', ['button'], function(provide, Button, Switcher) {
+
+provide(Switcher.declMod({ modName : 'switcher', modVal : 'button' }, {}, {
+    onInit : function() {
+        this._events(Button).on('click', this.prototype._onSwitcherClick);
+        this.__base.apply(this, arguments);
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/dropdown/__switcher/_switcher/dropdown__switcher_switcher_button.js */
+/* begin: ../../node_modules/bem-components/design/common.blocks/popup/_theme/popup_theme_islands.js */
+modules.define('popup', ['objects'], function(provide, objects, Popup) {
+
+provide(Popup.declMod({ modName : 'theme', modVal : 'islands' }, {
+    _getDefaultParams : function() {
+        return objects.extend(
+            this.__base(),
+            {
+                mainOffset : 5,
+                viewportOffset : 10
+            });
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/design/common.blocks/popup/_theme/popup_theme_islands.js */
 /* begin: ../../common.blocks/carousel/carousel.js */
 modules.define('carousel', ['jquery', 'i-bem-dom'], function(provide, $, bemDom) {
 

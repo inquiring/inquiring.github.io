@@ -225,7 +225,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "view",
-        "val": "primary"
+        "val": "link"
     },
     {
         "block": "text",
@@ -247,97 +247,7 @@ exports.deps = [
     },
     {
         "block": "new-menu",
-        "elem": "logo",
-        "mod": "view"
-    },
-    {
-        "block": "button"
-    },
-    {
-        "block": "button",
-        "mod": "focused"
-    },
-    {
-        "block": "button",
-        "mod": "hovered"
-    },
-    {
-        "block": "button",
-        "mod": "disabled"
-    },
-    {
-        "block": "button",
-        "mod": "pressed"
-    },
-    {
-        "block": "button",
-        "elem": "text"
-    },
-    {
-        "block": "jquery",
-        "elem": "event"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerclick"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointernative"
-    },
-    {
-        "block": "keyboard",
-        "elem": "codes"
-    },
-    {
-        "block": "control"
-    },
-    {
-        "block": "button",
-        "mod": "state"
-    },
-    {
-        "block": "button",
-        "mod": "state",
-        "val": "active"
-    },
-    {
-        "block": "new-menu",
         "elem": "toogle"
-    },
-    {
-        "block": "icon"
-    },
-    {
-        "block": "icon",
-        "mod": "name"
-    },
-    {
-        "block": "icon",
-        "mod": "name",
-        "val": "hamburger"
-    },
-    {
-        "block": "icon",
-        "mod": "size"
-    },
-    {
-        "block": "icon",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav"
     },
     {
         "block": "dropdown"
@@ -369,9 +279,127 @@ exports.deps = [
         "block": "z-index-group"
     },
     {
+        "block": "jquery",
+        "elem": "event"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerclick"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointernative"
+    },
+    {
+        "block": "keyboard",
+        "elem": "codes"
+    },
+    {
+        "block": "dropdown",
+        "mod": "switcher"
+    },
+    {
+        "block": "dropdown",
+        "mod": "switcher",
+        "val": "button"
+    },
+    {
+        "block": "dropdown",
+        "elem": "switcher",
+        "mod": "switcher"
+    },
+    {
+        "block": "button"
+    },
+    {
+        "block": "button",
+        "mod": "focused"
+    },
+    {
+        "block": "button",
+        "mod": "hovered"
+    },
+    {
+        "block": "button",
+        "mod": "disabled"
+    },
+    {
+        "block": "button",
+        "mod": "pressed"
+    },
+    {
+        "block": "button",
+        "elem": "text"
+    },
+    {
+        "block": "control"
+    },
+    {
+        "block": "dropdown",
+        "mod": "theme"
+    },
+    {
+        "block": "dropdown",
+        "mod": "theme",
+        "val": "islands"
+    },
+    {
+        "block": "popup",
+        "mod": "theme"
+    },
+    {
+        "block": "dropdown",
+        "mod": "switcher",
+        "val": "link"
+    },
+    {
+        "block": "dropdown",
+        "elem": "switcher",
+        "mod": "switcher",
+        "val": "link"
+    },
+    {
+        "block": "link"
+    },
+    {
+        "block": "link",
+        "mod": "disabled"
+    },
+    {
+        "block": "link",
+        "mod": "pseudo"
+    },
+    {
+        "block": "dropdown",
+        "mod": "size"
+    },
+    {
+        "block": "dropdown",
+        "mod": "size",
+        "val": "l"
+    },
+    {
+        "block": "new-menu",
+        "elem": "nav"
+    },
+    {
         "block": "text",
         "mod": "size",
         "val": "xs-12-s-12-m-13"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "primary"
     },
     {
         "block": "text",
@@ -508,6 +536,9 @@ exports.deps = [
         "val": "m"
     },
     {
+        "block": "icon"
+    },
+    {
         "block": "icon",
         "mod": "view"
     },
@@ -515,6 +546,10 @@ exports.deps = [
         "block": "icon",
         "mod": "view",
         "val": "brand"
+    },
+    {
+        "block": "icon",
+        "mod": "size"
     },
     {
         "block": "icon",
@@ -743,8 +778,17 @@ exports.deps = [
     },
     {
         "block": "icon",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "icon",
         "mod": "view",
         "val": "secondary"
+    },
+    {
+        "block": "icon",
+        "mod": "name"
     },
     {
         "block": "icon",
@@ -1806,11 +1850,6 @@ exports.deps = [
         "elem": "section-right"
     },
     {
-        "block": "text",
-        "mod": "view",
-        "val": "link"
-    },
-    {
         "block": "contacts",
         "elem": "social"
     },
@@ -1936,10 +1975,37 @@ exports.deps = [
         "val": "center"
     },
     {
-        "block": "new-menu",
-        "elem": "logo",
-        "mod": "view",
-        "val": "link"
+        "block": "popup",
+        "mod": "autoclosable",
+        "val": true
+    },
+    {
+        "block": "popup",
+        "mod": "visible",
+        "val": true
+    },
+    {
+        "block": "popup",
+        "mod": "target",
+        "val": "anchor"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerpressrelease"
+    },
+    {
+        "block": "dropdown",
+        "elem": "switcher",
+        "mod": "switcher",
+        "val": "button"
     },
     {
         "block": "button",
@@ -1962,31 +2028,14 @@ exports.deps = [
         "val": true
     },
     {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointer"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerpressrelease"
-    },
-    {
         "block": "popup",
-        "mod": "autoclosable",
+        "mod": "theme",
+        "val": "islands"
+    },
+    {
+        "block": "link",
+        "mod": "pseudo",
         "val": true
-    },
-    {
-        "block": "popup",
-        "mod": "visible",
-        "val": true
-    },
-    {
-        "block": "popup",
-        "mod": "target",
-        "val": "anchor"
     },
     {
         "block": "new-menu",
