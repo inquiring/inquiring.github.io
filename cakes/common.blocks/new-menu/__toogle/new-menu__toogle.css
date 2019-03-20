@@ -1,8 +1,10 @@
 @media screen and (min-width: $screen-xs) {
     .new-menu__toogle {
         position: absolute;
-        right: 0;
+        right: 0px;
         z-index: 100;
+        padding: 17px;
+        width: fit-content;
     }
 }
 @media screen and (min-width: $screen-s) {
@@ -13,10 +15,6 @@
 @media screen and (min-width: $screen-m) {
 
     .new-menu__toogle {
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        left: 0;
-        width: 70%;
+        display: none;
     }
 }

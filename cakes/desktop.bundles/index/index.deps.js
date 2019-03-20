@@ -207,6 +207,15 @@ exports.deps = [
         "mod": "align"
     },
     {
+        "block": "new-menu",
+        "elem": "logo"
+    },
+    {
+        "block": "theme",
+        "mod": "font",
+        "val": "playfairDisplay"
+    },
+    {
         "block": "text"
     },
     {
@@ -237,155 +246,29 @@ exports.deps = [
         "val": "bold"
     },
     {
-        "block": "theme",
-        "mod": "font",
-        "val": "playfairDisplay"
-    },
-    {
-        "block": "new-menu",
-        "elem": "logo"
-    },
-    {
         "block": "new-menu",
         "elem": "toogle"
     },
     {
-        "block": "dropdown"
+        "block": "icon"
     },
     {
-        "block": "dropdown",
-        "elem": "switcher"
+        "block": "icon",
+        "mod": "name"
     },
     {
-        "block": "popup"
+        "block": "icon",
+        "mod": "name",
+        "val": "hamburger"
     },
     {
-        "block": "functions",
-        "elem": "throttle"
-    },
-    {
-        "block": "popup",
-        "mod": "visible"
-    },
-    {
-        "block": "popup",
-        "mod": "autoclosable"
-    },
-    {
-        "block": "popup",
-        "mod": "target"
-    },
-    {
-        "block": "z-index-group"
-    },
-    {
-        "block": "jquery",
-        "elem": "event"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerclick"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointernative"
-    },
-    {
-        "block": "keyboard",
-        "elem": "codes"
-    },
-    {
-        "block": "dropdown",
-        "mod": "switcher"
-    },
-    {
-        "block": "dropdown",
-        "mod": "switcher",
-        "val": "button"
-    },
-    {
-        "block": "dropdown",
-        "elem": "switcher",
-        "mod": "switcher"
-    },
-    {
-        "block": "button"
-    },
-    {
-        "block": "button",
-        "mod": "focused"
-    },
-    {
-        "block": "button",
-        "mod": "hovered"
-    },
-    {
-        "block": "button",
-        "mod": "disabled"
-    },
-    {
-        "block": "button",
-        "mod": "pressed"
-    },
-    {
-        "block": "button",
-        "elem": "text"
-    },
-    {
-        "block": "control"
-    },
-    {
-        "block": "dropdown",
-        "mod": "theme"
-    },
-    {
-        "block": "dropdown",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "popup",
-        "mod": "theme"
-    },
-    {
-        "block": "dropdown",
-        "mod": "switcher",
-        "val": "link"
-    },
-    {
-        "block": "dropdown",
-        "elem": "switcher",
-        "mod": "switcher",
-        "val": "link"
-    },
-    {
-        "block": "link"
-    },
-    {
-        "block": "link",
-        "mod": "disabled"
-    },
-    {
-        "block": "link",
-        "mod": "pseudo"
-    },
-    {
-        "block": "dropdown",
+        "block": "icon",
         "mod": "size"
     },
     {
-        "block": "dropdown",
+        "block": "icon",
         "mod": "size",
-        "val": "l"
+        "val": "m"
     },
     {
         "block": "new-menu",
@@ -424,18 +307,6 @@ exports.deps = [
         "elem": "phone"
     },
     {
-        "block": "decorator"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-l"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-l",
-        "val": "l"
-    },
-    {
         "block": "text",
         "mod": "size",
         "val": "m"
@@ -461,6 +332,9 @@ exports.deps = [
         "val": "xs-40-s-60-m-78"
     },
     {
+        "block": "decorator"
+    },
+    {
         "block": "decorator",
         "mod": "indent-b"
     },
@@ -483,6 +357,57 @@ exports.deps = [
         "block": "theme",
         "mod": "font",
         "val": "introScriptR-H2Base"
+    },
+    {
+        "block": "button"
+    },
+    {
+        "block": "button",
+        "mod": "focused"
+    },
+    {
+        "block": "button",
+        "mod": "hovered"
+    },
+    {
+        "block": "button",
+        "mod": "disabled"
+    },
+    {
+        "block": "button",
+        "mod": "pressed"
+    },
+    {
+        "block": "button",
+        "elem": "text"
+    },
+    {
+        "block": "jquery",
+        "elem": "event"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerclick"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointernative"
+    },
+    {
+        "block": "keyboard",
+        "elem": "codes"
+    },
+    {
+        "block": "control"
     },
     {
         "block": "button",
@@ -536,9 +461,6 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "icon"
-    },
-    {
         "block": "icon",
         "mod": "view"
     },
@@ -546,10 +468,6 @@ exports.deps = [
         "block": "icon",
         "mod": "view",
         "val": "brand"
-    },
-    {
-        "block": "icon",
-        "mod": "size"
     },
     {
         "block": "icon",
@@ -778,17 +696,8 @@ exports.deps = [
     },
     {
         "block": "icon",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "icon",
         "mod": "view",
         "val": "secondary"
-    },
-    {
-        "block": "icon",
-        "mod": "name"
     },
     {
         "block": "icon",
@@ -1875,6 +1784,10 @@ exports.deps = [
     },
     {
         "block": "decorator",
+        "mod": "indent-l"
+    },
+    {
+        "block": "decorator",
         "mod": "indent-l",
         "val": "xxl"
     },
@@ -1975,37 +1888,10 @@ exports.deps = [
         "val": "center"
     },
     {
-        "block": "popup",
-        "mod": "autoclosable",
-        "val": true
-    },
-    {
-        "block": "popup",
-        "mod": "visible",
-        "val": true
-    },
-    {
-        "block": "popup",
-        "mod": "target",
-        "val": "anchor"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointer"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerpressrelease"
-    },
-    {
-        "block": "dropdown",
-        "elem": "switcher",
-        "mod": "switcher",
-        "val": "button"
+        "block": "new-menu",
+        "elem": "item",
+        "mod": "view",
+        "val": "link"
     },
     {
         "block": "button",
@@ -2028,20 +1914,16 @@ exports.deps = [
         "val": true
     },
     {
-        "block": "popup",
-        "mod": "theme",
-        "val": "islands"
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
     },
     {
-        "block": "link",
-        "mod": "pseudo",
-        "val": true
-    },
-    {
-        "block": "new-menu",
-        "elem": "item",
-        "mod": "view",
-        "val": "link"
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerpressrelease"
     },
     {
         "block": "tpl-grid",

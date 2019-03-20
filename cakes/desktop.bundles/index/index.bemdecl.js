@@ -213,6 +213,27 @@ exports.blocks = [
         ]
     },
     {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "logo"
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "font",
+                "vals": [
+                    {
+                        "name": "playfairDisplay"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "text"
     },
     {
@@ -255,27 +276,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "font",
-                "vals": [
-                    {
-                        "name": "playfairDisplay"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "logo"
-            }
-        ]
-    },
-    {
         "name": "new-menu",
         "elems": [
             {
@@ -284,84 +284,29 @@ exports.blocks = [
         ]
     },
     {
-        "name": "dropdown"
+        "name": "icon"
     },
     {
-        "name": "dropdown",
+        "name": "icon",
         "mods": [
             {
-                "name": "switcher",
+                "name": "name",
                 "vals": [
                     {
-                        "name": "button"
+                        "name": "hamburger"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "dropdown",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "dropdown",
+        "name": "icon",
         "mods": [
             {
                 "name": "size",
                 "vals": [
                     {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "popup"
-    },
-    {
-        "name": "popup",
-        "mods": [
-            {
-                "name": "autoclosable",
-                "vals": [
-                    {
-                        "name": true
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "popup",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    {
-                        "name": "islands"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "popup",
-        "mods": [
-            {
-                "name": "target",
-                "vals": [
-                    {
-                        "name": "anchor"
+                        "name": "m"
                     }
                 ]
             }
@@ -449,22 +394,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator"
-    },
-    {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-l",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -516,6 +445,9 @@ exports.blocks = [
                 ]
             }
         ]
+    },
+    {
+        "name": "decorator"
     },
     {
         "name": "decorator",
@@ -658,9 +590,6 @@ exports.blocks = [
                 ]
             }
         ]
-    },
-    {
-        "name": "icon"
     },
     {
         "name": "icon",
@@ -1151,19 +1080,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xs-0-s-12-m-0"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
                     }
                 ]
             }
