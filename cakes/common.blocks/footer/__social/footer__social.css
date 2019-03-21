@@ -1,0 +1,18 @@
+.footer__social {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: $screen-s) {
+    .footer__social {
+        flex-grow: 1;
+        justify-content: flex-start;
+        order: 3;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+    .footer__social {
+        justify-content: flex-end;
+    }
+}

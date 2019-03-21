@@ -1,0 +1,31 @@
+
+@media screen and (min-width: $screen-xs) {
+
+    .hero__footer {
+        width: 240px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+
+    .hero__footer {
+        display: flex;
+        justify-content: space-between;
+        width: 387px;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+
+    .hero__footer {
+        margin: 0;
+    }
+}
+@media screen and (min-width: $screen-l) {
+
+    .hero__footer {
+        margin: 0;
+    }
+}
+

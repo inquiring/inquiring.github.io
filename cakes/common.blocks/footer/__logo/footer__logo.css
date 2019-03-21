@@ -1,0 +1,13 @@
+.footer__logo {
+    margin-left: var(--gap);
+    padding: 19px 0 20px;
+}
+@media screen and (min-width: $screen-s) {
+    .footer__logo {
+    }
+}
+@media screen and (min-width: $screen-m) {
+    .footer__logo {
+        color: #2d2829;
+    }
+}

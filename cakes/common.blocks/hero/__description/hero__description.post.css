@@ -1,0 +1,23 @@
+
+@media screen and (max-width: $screen-xs-max) {
+
+    .hero__description {
+        margin: var(--space-xxxl) auto 0;
+        text-align: center;
+        width: 181px;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+    .hero__description {
+        margin-bottom: 17px;
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+
+    .hero__description {
+        width: 355px;
+    }
+}
