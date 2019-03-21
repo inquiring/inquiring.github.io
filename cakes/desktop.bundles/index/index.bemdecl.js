@@ -3560,6 +3560,24 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-list",
+        "elems": [
+            {
+                "name": "item",
+                "mods": [
+                    {
+                        "name": "space-a",
+                        "vals": [
+                            {
+                                "name": "m"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "text",
         "mods": [
             {
@@ -3567,6 +3585,24 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xs-28-s-18-m-28"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-list",
+        "elems": [
+            {
+                "name": "item",
+                "mods": [
+                    {
+                        "name": "vertical-align",
+                        "vals": [
+                            {
+                                "name": "baseline"
+                            }
+                        ]
                     }
                 ]
             }
@@ -3582,6 +3618,14 @@ exports.blocks = [
                         "name": "xs-14-s-12-m-16"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "footer-menu",
+        "elems": [
+            {
+                "name": "item"
             }
         ]
     },

@@ -1816,14 +1816,31 @@ exports.deps = [
         "elem": "nav"
     },
     {
+        "block": "pt-list",
+        "elem": "item",
+        "mod": "space-a"
+    },
+    {
         "block": "text",
         "mod": "size",
         "val": "xs-28-s-18-m-28"
     },
     {
+        "block": "pt-list",
+        "elem": "item",
+        "mod": "vertical-align"
+    },
+    {
         "block": "text",
         "mod": "size",
         "val": "xs-14-s-12-m-16"
+    },
+    {
+        "block": "footer-menu"
+    },
+    {
+        "block": "footer-menu",
+        "elem": "item"
     },
     {
         "block": "footer",
@@ -2166,6 +2183,18 @@ exports.deps = [
         "block": "textarea",
         "mod": "focused",
         "val": true
+    },
+    {
+        "block": "pt-list",
+        "elem": "item",
+        "mod": "space-a",
+        "val": "m"
+    },
+    {
+        "block": "pt-list",
+        "elem": "item",
+        "mod": "vertical-align",
+        "val": "baseline"
     },
     {
         "block": "carousel",

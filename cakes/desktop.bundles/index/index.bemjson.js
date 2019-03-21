@@ -3126,73 +3126,91 @@ module.exports = {
                                 content: [
                                     // footer__nav
                                     {
-                                        block: 'footer', elem: 'nav',
-                                        tag: 'nav',
-                                        mix: { block: 'new-menu' },
+                                        block: 'pt-list',
+                                        mix: { block: 'footer', elem: 'nav' },
                                         content: [
                                             {
-                                                block: 'text',
-                                                tag: 'a',
-                                                attrs: { href: 'index.html' },
-                                                mods: { size: 'xs-28-s-18-m-28', view: 'primary', weight: 'bold', },
-                                                mix: [
-                                                    { block: 'theme', mods: { font: 'playfairDisplay' } },
-                                                    { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                ],
-                                                content: 'Cakes'
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm' },
+                                                content: {
+                                                    block: 'text',
+                                                    mix: { block: 'theme', mods: { font: 'playfairDisplay' } },
+                                                    tag: 'a',
+                                                    attrs: { href: 'index.html' },
+                                                    mods: { size: 'xs-28-s-18-m-28', view: 'primary', weight: 'bold', view: 'link' },
+                                                    content: 'Cakes'
+                                                },
                                             },
                                             {
-                                                tag: 'a',
-                                                attrs: { href: '#products-scroll' },
-                                                block: 'text',
-                                                mods: { size: 'xs-14-s-12-m-16', view: 'primary', },
-                                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                val: '1',
-                                                content: 'Наши торты'
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm', 'vertical-align': 'baseline' },
+                                                content: {
+                                                    block: 'text',
+                                                    tag: 'a',
+                                                    attrs: { href: '#products-scroll' },
+                                                    mods: { size: 'xs-14-s-12-m-16', view: 'primary', view: 'link'  },
+                                                    val: '1',
+                                                    content: 'Наши торты'
+                                                },
                                             },
                                             {
-                                                tag: 'a',
-                                                attrs: { href: '#order-scroll' },
-                                                block: 'text',
-                                                mods: { size: 'xs-14-s-12-m-16', view: 'primary', },
-                                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                val: '2',
-                                                content: 'Индивидуальный заказ'
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm', 'vertical-align': 'baseline' },
+                                                content: {
+                                                    tag: 'a',
+                                                    attrs: { href: '#order-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-14-s-12-m-16', view: 'primary', view: 'link'  },
+                                                    mix: { block: 'footer-menu', elem: 'item' },
+                                                    val: '2',
+                                                    content: 'Индивидуальный заказ'
+                                                },
                                             },
                                             {
-                                                tag: 'a',
-                                                attrs: { href: '#reviews-scroll' },
-                                                block: 'text',
-                                                mods: { size: 'xs-14-s-12-m-16', view: 'primary', },
-                                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                val: '3',
-                                                content: 'Отзывы'
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm', 'vertical-align': 'baseline' },
+                                                content: {
+                                                    tag: 'a',
+                                                    attrs: { href: '#reviews-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-14-s-12-m-16', view: 'primary', view: 'link'  },
+                                                    mix: { block: 'footer-menu', elem: 'item' },
+                                                    val: '3',
+                                                    content: 'Отзывы'
+                                                },
                                             },
                                             {
-                                                tag: 'a',
-                                                attrs: { href: '#about-scroll' },
-                                                block: 'text',
-                                                mods: { size: 'xs-14-s-12-m-16', view: 'primary', },
-                                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                val: '4',
-                                                content: 'О нас'
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm', 'vertical-align': 'baseline' },
+                                                content: {
+                                                    tag: 'a',
+                                                    attrs: { href: '#about-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-14-s-12-m-16', view: 'primary', view: 'link'  },
+                                                    mix: { block: 'footer-menu', elem: 'item' },
+                                                    val: '4',
+                                                    content: 'О нас'
+                                                },
                                             },
-                                            {   tag: 'a',
-                                                attrs: { href: '#delivery-scroll' },
-                                                block: 'text',
-                                                mods: { size: 'xs-14-s-12-m-16', view: 'primary', },
-                                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                val: '5',
-                                                content: 'Как заказать'
+                                            {
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm', 'vertical-align': 'baseline' },
+                                                content: {
+                                                    tag: 'a',
+                                                    attrs: { href: '#delivery-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-14-s-12-m-16', view: 'primary', view: 'link'  },
+                                                    mix: { block: 'footer-menu', elem: 'item' },
+                                                    val: '5',
+                                                    content: 'Как заказать'
+                                                },
                                             },
-                                            {   tag: 'a',
-                                                attrs: { href: '#contacts-scroll' },
-                                                block: 'text',
-                                                mods: { size: 'xs-14-s-12-m-16', view: 'primary', },
-                                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'link' } },
-                                                val: '6',
-                                                content: 'Контакты'
-                                            }
+                                            {
+                                                block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm', 'vertical-align': 'baseline' },
+                                                content: {
+                                                    tag: 'a',
+                                                    attrs: { href: '#contacts-scroll' },
+                                                    block: 'text',
+                                                    mods: { size: 'xs-14-s-12-m-16', view: 'primary', view: 'link'  },
+                                                    mix: { block: 'footer-menu', elem: 'item' },
+                                                    val: '6',
+                                                    content: 'Контакты'
+                                                }
+                                            },
                                         ]
                                     },
                                     // footer__social
