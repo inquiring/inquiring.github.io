@@ -1672,12 +1672,6 @@ exports.deps = [
         "val": "half"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col",
-        "val": "4"
-    },
-    {
         "block": "text",
         "mod": "size",
         "val": "xs-22-s-22-m-35"
@@ -1755,8 +1749,16 @@ exports.deps = [
         "elem": "button"
     },
     {
-        "block": "contacts",
-        "elem": "section-right"
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col",
+        "val": "1"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "m-col",
+        "val": "1"
     },
     {
         "block": "contacts",

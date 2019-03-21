@@ -4121,22 +4121,6 @@ html {
     }
 }
 
-@media screen and (min-width: 720px) {
-
-    .contacts__section-right {
-        padding-left: 67px;
-        padding-top: 25px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .contacts__section-right {
-        padding-left: 82px;
-        padding-top: 40px;
-    }
-}
-
 .contacts__social {
     display: -webkit-box;
     display: -ms-flexbox;

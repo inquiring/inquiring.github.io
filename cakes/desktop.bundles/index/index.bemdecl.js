@@ -3265,24 +3265,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "s-col",
-                        "vals": [
-                            {
-                                "name": "4"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -3439,10 +3421,38 @@ exports.blocks = [
         ]
     },
     {
-        "name": "contacts",
+        "name": "tpl-grid",
         "elems": [
             {
-                "name": "section-right"
+                "name": "fraction",
+                "mods": [
+                    {
+                        "name": "s-col",
+                        "vals": [
+                            {
+                                "name": "1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "elems": [
+            {
+                "name": "fraction",
+                "mods": [
+                    {
+                        "name": "m-col",
+                        "vals": [
+                            {
+                                "name": "1"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
