@@ -1,8 +1,0 @@
-.product {
-    display: block;
-    overflow: hidden;
-    object-fit: fill;
-    transition: .3s ease;
-    box-shadow: 0 10px 13px 0.25px rgba(163,6,60,.05);
-    text-align: center;
-}

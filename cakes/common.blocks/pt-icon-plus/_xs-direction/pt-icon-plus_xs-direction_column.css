@@ -1,7 +1,0 @@
-
-
-@media screen and (max-width: $screen-xs-max) {
-    .pt-icon-plus_xs-direction_column {
-        flex-direction: column;
-    }
-}

@@ -1,6 +1,0 @@
-@media screen and (max-width: $screen-xs-max) {
-
-    .theme_xs-color-bg_default {
-        background-color: var(--color-bg-default);
-    }
-}
