@@ -208,7 +208,19 @@ exports.deps = [
     },
     {
         "block": "new-menu",
-        "elem": "logo"
+        "elem": "header"
+    },
+    {
+        "block": "pt-list"
+    },
+    {
+        "block": "pt-list",
+        "elem": "item"
+    },
+    {
+        "block": "pt-list",
+        "elem": "item",
+        "mod": "vertical-align"
     },
     {
         "block": "theme",
@@ -244,119 +256,6 @@ exports.deps = [
         "block": "text",
         "mod": "weight",
         "val": "bold"
-    },
-    {
-        "block": "new-menu",
-        "elem": "toogle"
-    },
-    {
-        "block": "icon"
-    },
-    {
-        "block": "icon",
-        "mod": "name"
-    },
-    {
-        "block": "icon",
-        "mod": "name",
-        "val": "hamburger"
-    },
-    {
-        "block": "icon",
-        "mod": "size"
-    },
-    {
-        "block": "icon",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "new-menu",
-        "elem": "nav"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "xs-12-s-12-m-13"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "primary"
-    },
-    {
-        "block": "text",
-        "mod": "transform"
-    },
-    {
-        "block": "text",
-        "mod": "transform",
-        "val": "uppercase"
-    },
-    {
-        "block": "new-menu",
-        "elem": "item"
-    },
-    {
-        "block": "new-menu",
-        "elem": "item",
-        "mod": "view"
-    },
-    {
-        "block": "new-menu",
-        "elem": "phone"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "hero"
-    },
-    {
-        "block": "tpl-layout",
-        "elem": "content"
-    },
-    {
-        "block": "hero",
-        "elem": "intro"
-    },
-    {
-        "block": "hero",
-        "elem": "description"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "xs-40-s-60-m-78"
-    },
-    {
-        "block": "decorator"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "xxs"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "xs-22-s-36-m-41"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "promo"
-    },
-    {
-        "block": "theme",
-        "mod": "font",
-        "val": "introScriptR-H2Base"
     },
     {
         "block": "button"
@@ -408,6 +307,124 @@ exports.deps = [
     },
     {
         "block": "control"
+    },
+    {
+        "block": "new-menu",
+        "elem": "toogle"
+    },
+    {
+        "block": "icon"
+    },
+    {
+        "block": "icon",
+        "mod": "size"
+    },
+    {
+        "block": "icon",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "icon",
+        "mod": "name"
+    },
+    {
+        "block": "icon",
+        "mod": "name",
+        "val": "close"
+    },
+    {
+        "block": "new-menu",
+        "elem": "nav"
+    },
+    {
+        "block": "new-menu",
+        "elem": "nav",
+        "mod": "state"
+    },
+    {
+        "block": "new-menu",
+        "elem": "item"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-12-s-12-m-13"
+    },
+    {
+        "block": "text",
+        "mod": "transform"
+    },
+    {
+        "block": "text",
+        "mod": "transform",
+        "val": "uppercase"
+    },
+    {
+        "block": "decorator"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v",
+        "val": "m"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "hero"
+    },
+    {
+        "block": "tpl-layout",
+        "elem": "content"
+    },
+    {
+        "block": "hero",
+        "elem": "intro"
+    },
+    {
+        "block": "hero",
+        "elem": "description"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-40-s-60-m-78"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "primary"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "xxs"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xs-22-s-36-m-41"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "promo"
+    },
+    {
+        "block": "theme",
+        "mod": "font",
+        "val": "introScriptR-H2Base"
     },
     {
         "block": "button",
@@ -838,6 +855,10 @@ exports.deps = [
         "block": "pt-card",
         "elem": "content",
         "mod": "distribute"
+    },
+    {
+        "block": "filling",
+        "elem": "content"
     },
     {
         "block": "filling",
@@ -1565,10 +1586,6 @@ exports.deps = [
     },
     {
         "block": "decorator",
-        "mod": "space-v"
-    },
-    {
-        "block": "decorator",
         "mod": "space-v",
         "val": "l"
     },
@@ -1640,14 +1657,7 @@ exports.deps = [
         "elem": "content"
     },
     {
-        "block": "pt-list"
-    },
-    {
         "block": "delivery-list"
-    },
-    {
-        "block": "pt-list",
-        "elem": "item"
     },
     {
         "block": "delivery-list",
@@ -1830,7 +1840,8 @@ exports.deps = [
     {
         "block": "pt-list",
         "elem": "item",
-        "mod": "vertical-align"
+        "mod": "vertical-align",
+        "val": "baseline"
     },
     {
         "block": "text",
@@ -1869,11 +1880,6 @@ exports.deps = [
     },
     {
         "block": "decorator",
-        "mod": "space-v",
-        "val": "m"
-    },
-    {
-        "block": "decorator",
         "mod": "indent-l",
         "val": "s"
     },
@@ -1907,10 +1913,10 @@ exports.deps = [
         "val": "center"
     },
     {
-        "block": "new-menu",
+        "block": "pt-list",
         "elem": "item",
-        "mod": "view",
-        "val": "link"
+        "mod": "vertical-align",
+        "val": "center"
     },
     {
         "block": "button",
@@ -1943,6 +1949,12 @@ exports.deps = [
         "elem": "event",
         "mod": "type",
         "val": "pointerpressrelease"
+    },
+    {
+        "block": "new-menu",
+        "elem": "nav",
+        "mod": "state",
+        "val": "active"
     },
     {
         "block": "tpl-grid",
@@ -2191,12 +2203,6 @@ exports.deps = [
         "elem": "item",
         "mod": "space-a",
         "val": "m"
-    },
-    {
-        "block": "pt-list",
-        "elem": "item",
-        "mod": "vertical-align",
-        "val": "baseline"
     },
     {
         "block": "carousel",

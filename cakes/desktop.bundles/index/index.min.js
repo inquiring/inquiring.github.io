@@ -4150,6 +4150,33 @@ $(function() {
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.js */
+/* begin: ../../common.blocks/new-menu/new-menu.js */
+modules.define('new-menu', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declBlock(this.name, {
+    beforeSetMod : {
+        'opened' : {
+            'true' : function() {
+                if(this.hasMod('disabled')) return false;
+            }
+        }
+    },
+    onSetMod: {
+        js: {
+            inited: function() {
+                console.log('ты сделаешь!');
+                document.querySelector('.new-menu__toogle').addEventListener('click',function() {
+                    document.querySelector('.new-menu__nav').classList.toggle('new-menu__nav_state_active');
+                    document.querySelector('.icon').classList.toggle('icon_name_close');
+                }, false);
+            },
+        },
+    }
+}));
+
+});
+
+/* end: ../../common.blocks/new-menu/new-menu.js */
 /* begin: ../../node_modules/bem-components/common.blocks/button/button.js */
 /**
  * @module button

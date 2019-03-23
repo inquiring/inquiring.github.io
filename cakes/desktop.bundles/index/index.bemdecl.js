@@ -153,14 +153,6 @@ exports.blocks = [
         "name": "new-menu"
     },
     {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "color"
-            }
-        ]
-    },
-    {
         "name": "new-menu",
         "elems": [
             {
@@ -216,7 +208,36 @@ exports.blocks = [
         "name": "new-menu",
         "elems": [
             {
-                "name": "logo"
+                "name": "header"
+            }
+        ]
+    },
+    {
+        "name": "pt-list"
+    },
+    {
+        "name": "pt-list",
+        "elems": [
+            {
+                "name": "item"
+            }
+        ]
+    },
+    {
+        "name": "pt-list",
+        "elems": [
+            {
+                "name": "item",
+                "mods": [
+                    {
+                        "name": "vertical-align",
+                        "vals": [
+                            {
+                                "name": "center"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -276,6 +297,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "button"
+    },
+    {
         "name": "new-menu",
         "elems": [
             {
@@ -285,19 +309,6 @@ exports.blocks = [
     },
     {
         "name": "icon"
-    },
-    {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "name",
-                "vals": [
-                    {
-                        "name": "hamburger"
-                    }
-                ]
-            }
-        ]
     },
     {
         "name": "icon",
@@ -313,10 +324,49 @@ exports.blocks = [
         ]
     },
     {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "name",
+                "vals": [
+                    {
+                        "name": "close"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "new-menu",
         "elems": [
             {
                 "name": "nav"
+            }
+        ]
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "nav",
+                "mods": [
+                    {
+                        "name": "state",
+                        "vals": [
+                            {
+                                "name": "active"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "item"
             }
         ]
     },
@@ -337,19 +387,6 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "primary"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
                 "name": "transform",
                 "vals": [
                     {
@@ -360,36 +397,18 @@ exports.blocks = [
         ]
     },
     {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "item"
-            }
-        ]
+        "name": "decorator"
     },
     {
-        "name": "new-menu",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "item",
-                "mods": [
+                "name": "space-v",
+                "vals": [
                     {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "link"
-                            }
-                        ]
+                        "name": "m"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "new-menu",
-        "elems": [
-            {
-                "name": "phone"
             }
         ]
     },
@@ -447,7 +466,17 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator"
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "decorator",
@@ -500,9 +529,6 @@ exports.blocks = [
                 ]
             }
         ]
-    },
-    {
-        "name": "button"
     },
     {
         "name": "button",
@@ -1452,6 +1478,14 @@ exports.blocks = [
                         ]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "filling",
+        "elems": [
+            {
+                "name": "content"
             }
         ]
     },
@@ -3201,18 +3235,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-list"
-    },
-    {
         "name": "delivery-list"
-    },
-    {
-        "name": "pt-list",
-        "elems": [
-            {
-                "name": "item"
-            }
-        ]
     },
     {
         "name": "delivery-list",
@@ -3691,19 +3714,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "copyright"
-            }
-        ]
-    },
-    {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "space-v",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
             }
         ]
     },
