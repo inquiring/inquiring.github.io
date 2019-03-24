@@ -3489,7 +3489,7 @@ html {
 
     .advantages {
         position: relative;
-        background-image: url(../../common.blocks/advantages/img/advantages-bottom-mobile.png);
+        background-image: url(../../common.blocks/advantages/img/advantages-bottom-mobile.webp), url(../../common.blocks/advantages/img/advantages-bottom-mobile.png);
         background-position: left 50% bottom -7px;
         background-repeat: no-repeat;
     }
