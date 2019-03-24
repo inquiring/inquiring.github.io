@@ -4154,20 +4154,14 @@ $(function() {
 modules.define('new-menu', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
-    beforeSetMod : {
-        'opened' : {
-            'true' : function() {
-                if(this.hasMod('disabled')) return false;
-            }
-        }
-    },
     onSetMod: {
         js: {
             inited: function() {
                 console.log('ты сделаешь!');
-                document.querySelector('.new-menu__toogle').addEventListener('click',function() {
-                    document.querySelector('.new-menu__nav').classList.toggle('new-menu__nav_state_active');
-                    document.querySelector('.icon').classList.toggle('icon_name_close');
+                document.querySelector('.new-menu__toogle').addEventListener('click', function() {
+                    document.querySelector('.new-menu__nav').classList.toggle('new-menu__nav_visibility_hidden');
+                    document.querySelector('.icon_name_hamburger').classList.toggle('icon_visibility_hidden');
+                    document.querySelector('.icon_name_close').classList.toggle('icon_visibility_hidden');
                 }, false);
             },
         },
@@ -5524,22 +5518,6 @@ provide(Button.declMod({ modName : 'togglable', modVal : '*' }, /** @lends butto
 });
 
 /* end: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
-/* begin: ../../common.blocks/icon/_name/icon_name_arrow-left.js */
-modules.define('icon', function(provide, Icon) {
-
-provide(Icon.declMod({ modName: 'name', modVal: 'arrow-left' }, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
-
-/* end: ../../common.blocks/icon/_name/icon_name_arrow-left.js */
 /* begin: ../../node_modules/bem-components/common.blocks/input/input.js */
 /**
  * @module input

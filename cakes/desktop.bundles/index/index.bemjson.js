@@ -62,16 +62,23 @@ module.exports = {
                                             mix : { block : 'new-menu', elem : 'toogle' },
                                             attrs : { title : 'Закрыть меню' },
                                             text : 'Закрыть',
-                                            content: {
-                                                block: 'icon',
-                                                mods: { size: 'm', name: 'close' }
-                                            }
+                                            content: [
+
+                                                {
+                                                    block: 'icon',
+                                                    mods: { size: 'm', name: 'hamburger',  }
+                                                },
+                                                {
+                                                    block: 'icon',
+                                                    mods: { size: 'm', name: 'close', visibility: 'hidden' }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
                             },
                             {
-                                block: 'new-menu', elem: 'nav', elemMods: { state: 'active' },
+                                block: 'new-menu', elem: 'nav', elemMods: { visibility: 'hidden' },
                                 content: {
                                     block: 'pt-list',
                                     content: [

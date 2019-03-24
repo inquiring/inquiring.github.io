@@ -331,7 +331,21 @@ exports.deps = [
     {
         "block": "icon",
         "mod": "name",
+        "val": "hamburger"
+    },
+    {
+        "block": "icon",
+        "mod": "name",
         "val": "close"
+    },
+    {
+        "block": "icon",
+        "mod": "visibility"
+    },
+    {
+        "block": "icon",
+        "mod": "visibility",
+        "val": "hidden"
     },
     {
         "block": "new-menu",
@@ -340,7 +354,7 @@ exports.deps = [
     {
         "block": "new-menu",
         "elem": "nav",
-        "mod": "state"
+        "mod": "visibility"
     },
     {
         "block": "new-menu",
@@ -1953,8 +1967,8 @@ exports.deps = [
     {
         "block": "new-menu",
         "elem": "nav",
-        "mod": "state",
-        "val": "active"
+        "mod": "visibility",
+        "val": "hidden"
     },
     {
         "block": "tpl-grid",

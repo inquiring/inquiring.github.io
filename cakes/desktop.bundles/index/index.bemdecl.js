@@ -330,7 +330,33 @@ exports.blocks = [
                 "name": "name",
                 "vals": [
                     {
+                        "name": "hamburger"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "name",
+                "vals": [
+                    {
                         "name": "close"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "visibility",
+                "vals": [
+                    {
+                        "name": "hidden"
                     }
                 ]
             }
@@ -351,10 +377,10 @@ exports.blocks = [
                 "name": "nav",
                 "mods": [
                     {
-                        "name": "state",
+                        "name": "visibility",
                         "vals": [
                             {
-                                "name": "active"
+                                "name": "hidden"
                             }
                         ]
                     }
