@@ -208,6 +208,7 @@ html {
 
 @font-face {
     font-family: 'Circe';
+    font-display: optional;
     src:
         local('Circe'),
         url("../../common.blocks/theme/_font/circe/fonts/Circe-Regular/Circe-Regular.woff2") format('woff2'),
@@ -220,6 +221,7 @@ html {
 
 @font-face {
 	font-family: 'Circe';
+    font-display: optional;
     src:
         local('Circe'),
         url("../../common.blocks/theme/_font/circe/fonts/Circe-ExtraLight/Circe-ExtraLight.woff") format('woff'),
@@ -231,6 +233,7 @@ html {
 
 @font-face {
 	font-family: 'Circe';
+    font-display: optional;
 	src:
         local('Circe'),
 		url("../../common.blocks/theme/_font/circe/fonts/Circe-Thin/Circe-Thin.woff") format('woff'),
@@ -242,6 +245,7 @@ html {
 
 @font-face {
 	font-family: 'Circe';
+    font-display: optional;
 	src:
         local('Circe'),
 		url("../../common.blocks/theme/_font/circe/fonts/Circe-Light/Circe-Light.woff") format('woff'),
@@ -253,6 +257,7 @@ html {
 
 @font-face {
     font-family: 'Circe';
+    font-display: optional;
     src:
         local('Circe'),
         url("../../common.blocks/theme/_font/circe/fonts/Circe-Bold/Circe-Bold.woff2") format('woff2'),
@@ -265,6 +270,7 @@ html {
 
 @font-face {
 	font-family: 'Circe';
+    font-display: optional;
 	src:
         local('Circe'),
         url("../../common.blocks/theme/_font/circe/fonts/Circe-ExtraBold/Circe-ExtraBold.woff") format('woff'),
@@ -406,6 +412,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 400;
   src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2) format('woff2');
@@ -416,6 +423,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 400;
   src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2) format('woff2');
@@ -426,6 +434,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 400;
   src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2) format('woff2');
@@ -436,6 +445,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 400;
   src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
@@ -446,6 +456,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 700;
   src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWoe5j5hNKe1_w.woff2) format('woff2');
@@ -456,6 +467,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 700;
   src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWEe5j5hNKe1_w.woff2) format('woff2');
@@ -466,6 +478,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 700;
   src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lWAe5j5hNKe1_w.woff2) format('woff2');
@@ -476,6 +489,7 @@ html {
 
 @font-face {
   font-family: 'Playfair Display';
+  font-display: optional;
   font-style: normal;
   font-weight: 700;
   src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), url(https://fonts.gstatic.com/s/playfairdisplay/v14/nuFlD-vYSZviVYUb_rj3ij__anPXBYf9lW4e5j5hNKc.woff2) format('woff2');
@@ -915,6 +929,7 @@ html {
 
 @font-face {
 	font-family: 'introScriptR-H2Base';
+    font-display: optional;
 	font-weight: normal;
 	font-style: normal;
 	src: local('IntroScriptR-H2Base'), url("../../common.blocks/theme/_font/introScriptR-H2Base/fonts/introScriptR-H2Base/IntroScriptR-H2Base.woff2") format('woff2');
