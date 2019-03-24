@@ -58,22 +58,22 @@ module.exports = {
                                             }
                                         },
                                         {
-                                            block: 'button',
-                                            mix : { block : 'new-menu', elem : 'toogle' },
-                                            attrs : { title : 'Закрыть меню' },
-                                            text : 'Закрыть',
-                                            content: [
-
-                                                {
-                                                    block: 'icon',
-                                                    mods: { size: 'm', name: 'hamburger',  }
-                                                },
-                                                {
-                                                    block: 'icon',
-                                                    mods: { size: 'm', name: 'close', visibility: 'hidden' }
-                                                }
-                                            ]
-                                        }
+                                            elem : 'item',
+                                            content: {
+                                                block: 'button',
+                                                mix: { block: 'new-menu', elem: 'toogle' },
+                                                content: [
+                                                    {
+                                                        block: 'icon',
+                                                        mods: { size: 'm', name: 'hamburger',  }
+                                                    },
+                                                    {
+                                                        block: 'icon',
+                                                        mods: { size: 'm', name: 'close', visibility: 'hidden' }
+                                                    }
+                                                ]
+                                            }
+                                        },
                                     ]
                                 }
                             },
