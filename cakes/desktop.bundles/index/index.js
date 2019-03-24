@@ -4157,7 +4157,6 @@ provide(bemDom.declBlock(this.name, {
     onSetMod: {
         js: {
             inited: function() {
-                console.log('ты сделаешь!');
                 document.querySelector('.new-menu__toogle').addEventListener('click', function() {
                     document.querySelector('.new-menu__nav').classList.toggle('new-menu__nav_visibility_hidden');
                     document.querySelector('.icon_name_hamburger').classList.toggle('icon_visibility_hidden');
@@ -5518,6 +5517,24 @@ provide(Button.declMod({ modName : 'togglable', modVal : '*' }, /** @lends butto
 });
 
 /* end: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
+/* begin: ../../common.blocks/decor/decor.js */
+modules.define('decor', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declBlock(this.name, {
+    onSetMod: {
+        js: {
+            inited: function() {
+                document.querySelector('.decor__label').addEventListener('click', function() {
+                    console.log('fff')
+                }, false);
+            }
+        }
+    }
+}));
+
+});
+
+/* end: ../../common.blocks/decor/decor.js */
 /* begin: ../../node_modules/bem-components/common.blocks/input/input.js */
 /**
  * @module input
