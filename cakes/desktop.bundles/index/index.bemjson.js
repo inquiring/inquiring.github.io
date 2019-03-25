@@ -1802,7 +1802,6 @@ module.exports = {
                                                                                                 },
                                                                                                 {
                                                                                                     block: 'image',
-                                                                                                    mix: { block: '', elem: '', elemMods: { size: '' } },
                                                                                                     url: '../../img/decor/decor_item2-mobile.jpg',
                                                                                                     alt: 'торт ягодное ассорти'
                                                                                                 },
@@ -1885,7 +1884,6 @@ module.exports = {
                                                                                                 },
                                                                                                 {
                                                                                                     block: 'image',
-                                                                                                    mix: { block: '', elem: '', elemMods: { size: '' } },
                                                                                                     url: '../../img/decor/decor_item1-mobile.jpg',
                                                                                                     alt: 'торт Маршмеллоу'
                                                                                                 },
@@ -1974,7 +1972,6 @@ module.exports = {
                                                                                                 },
                                                                                                 {
                                                                                                     block: 'image',
-                                                                                                    mix: { block: '', elem: '', elemMods: { size: '' } },
                                                                                                     url: '../../img/decor/decor_item1-mobile.jpg',
                                                                                                     alt: 'торт Маршмеллоу'
                                                                                                 },
@@ -2057,7 +2054,6 @@ module.exports = {
                                                                                                 },
                                                                                                 {
                                                                                                     block: 'image',
-                                                                                                    mix: { block: '', elem: '', elemMods: { size: '' } },
                                                                                                     url: '../../img/decor/decor_item2-mobile.jpg',
                                                                                                     alt: 'торт ягодное ассорти'
                                                                                                 },

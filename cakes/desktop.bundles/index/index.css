@@ -770,7 +770,7 @@ html {
 @media screen and (max-width: 719px) {
 
     .hero {
-        background-image: url(../../common.blocks/hero/hero-mobile.png);
+        background-image: url(../../common.blocks/hero/hero-mobile.webp), url(../../common.blocks/hero/hero-mobile.png);
         background-position-y: top;
     }
 }
@@ -778,7 +778,7 @@ html {
 @media screen and (min-width: 720px)  {
 
     .hero {
-        background-image: url(../../common.blocks/hero/hero-tablet.png);
+        background-image: url(../../common.blocks/hero/hero-tablet.webp), url(../../common.blocks/hero/hero-tablet.png);
         background-position-x: right;
     }
 }
@@ -786,7 +786,7 @@ html {
 @media screen and (min-width: 1024px) {
 
     .hero {
-        background-image: url(../../common.blocks/hero/hero-desktop.png);
+        background-image: url(../../common.blocks/hero/hero-desktop.webp), url(../../common.blocks/hero/hero-desktop.png);
         background-position-x: right;
         background-position-y: 80px;
         height: 1000px;
@@ -3513,7 +3513,7 @@ html {
 @media screen and (min-width: 720px) {
 
     .advantages {
-        background-image: url(../../common.blocks/advantages/img/advantages-top-tablet.png), url(../../common.blocks/advantages/img/advantages-bottom-tablet.png);
+        background-image: url(../../common.blocks/advantages/img/advantages-top-tablet.webp), url(../../common.blocks/advantages/img/advantages-bottom-tablet.webp), url(../../common.blocks/advantages/img/advantages-top-tablet.png), url(../../common.blocks/advantages/img/advantages-bottom-tablet.png);
         background-repeat: no-repeat, no-repeat;
         background-position: 0 60px, 100% 100%;
     }
@@ -3527,7 +3527,7 @@ html {
 @media screen and (min-width: 1024px) {
 
     .advantages {
-        background-image:  url(../../common.blocks/advantages/img/advantages-top-desktop.png), url(../../common.blocks/advantages/img/advantages-bottom-desktop.png);
+        background-image:  url(../../common.blocks/advantages/img/advantages-top-desktop.webp), url(../../common.blocks/advantages/img/advantages-bottom-desktop.webp), url(../../common.blocks/advantages/img/advantages-top-desktop.png), url(../../common.blocks/advantages/img/advantages-bottom-desktop.png);
         background-repeat: no-repeat, no-repeat;
         background-position: -11px 0, 100% 100%;
         height: 1350px;
