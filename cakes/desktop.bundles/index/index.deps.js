@@ -1139,6 +1139,9 @@ exports.deps = [
         "mod": "s-m-display"
     },
     {
+        "block": "decorForm"
+    },
+    {
         "block": "decor"
     },
     {

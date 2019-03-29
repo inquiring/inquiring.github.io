@@ -5492,6 +5492,52 @@ provide(bemDom.declBlock(Control, {
 });
 
 /* end: ../../node_modules/bem-components/desktop.blocks/control/control.js */
+/* begin: ../../common.blocks/order/order.js */
+modules.define('order', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declBlock(this.name, {
+    onSetMod: {
+        js: {
+            inited: function() {
+                function onclickFilingCard(e) {
+                    var fillingInput = document.getElementById("fillingInput");
+                    var fillingChoice = e.target.value;
+                    fillingInput.placeholder = fillingChoice;
+
+                }
+                function onclickSizeCard(e) {
+                    var sizeInput = document.getElementById("sizeInput");
+                    var sizeChoice = e.target.value;
+                    sizeInput.placeholder = sizeChoice;
+                }
+                function onclickDecorCard(e) {
+                    var decorInput = document.getElementById("decorInput");
+                    var decorChoice = e.target.value;
+                    decorInput.placeholder = decorChoice;
+                }
+
+                var fillingArray = document.querySelectorAll(".filling__input");
+                for (var i = 0; i < fillingArray.length; i++) {
+                    fillingArray[i].addEventListener("click", onclickFilingCard);
+                }
+                //
+                var sizeArray = document.querySelectorAll(".size__input");
+                for (var i = 0; i < sizeArray.length; i++) {
+                    sizeArray[i].addEventListener("click", onclickSizeCard);
+                }
+                //
+                var decorArray = document.querySelectorAll(".decor__input");
+                for (var i = 0; i < decorArray.length; i++) {
+                    decorArray[i].addEventListener("click", onclickDecorCard);
+                }
+            }
+        }
+    }
+}));
+
+});
+
+/* end: ../../common.blocks/order/order.js */
 /* begin: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
 /**
  * @module button
@@ -5517,16 +5563,14 @@ provide(Button.declMod({ modName : 'togglable', modVal : '*' }, /** @lends butto
 });
 
 /* end: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
-/* begin: ../../common.blocks/decor/decor.js */
-modules.define('decor', ['i-bem-dom'], function(provide, bemDom) {
+/* begin: ../../common.blocks/pt-form/__item/pt-form__item.js */
+modules.define('pt-form__item', ['i-bem-dom'], function(provide, bemDom) {
 
-provide(bemDom.declBlock(this.name, {
+provide(bemDom.declElem('pt-form', 'item', {
     onSetMod: {
         js: {
             inited: function() {
-                document.querySelector('.decor__label').addEventListener('click', function() {
-                    console.log('fff')
-                }, false);
+                
             }
         }
     }
@@ -5534,7 +5578,7 @@ provide(bemDom.declBlock(this.name, {
 
 });
 
-/* end: ../../common.blocks/decor/decor.js */
+/* end: ../../common.blocks/pt-form/__item/pt-form__item.js */
 /* begin: ../../node_modules/bem-components/common.blocks/input/input.js */
 /**
  * @module input

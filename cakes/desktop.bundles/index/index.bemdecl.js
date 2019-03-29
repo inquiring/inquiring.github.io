@@ -2217,6 +2217,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "decorForm"
+    },
+    {
         "name": "decor"
     },
     {
