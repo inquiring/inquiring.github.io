@@ -114,7 +114,7 @@ exports.blocks = [
                 "name": "font",
                 "vals": [
                     {
-                        "name": "circe"
+                        "name": "TrebuchetMS"
                     }
                 ]
             }
@@ -135,6 +135,19 @@ exports.blocks = [
     },
     {
         "name": "tpl-layout"
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "bg",
+                "vals": [
+                    {
+                        "name": "image"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "tpl-layout",
@@ -329,7 +342,7 @@ exports.blocks = [
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "4"
+                                "name": "8"
                             }
                         ]
                     }
@@ -360,7 +373,7 @@ exports.blocks = [
                         "name": "m-col",
                         "vals": [
                             {
-                                "name": "4"
+                                "name": "12"
                             }
                         ]
                     }
@@ -376,6 +389,149 @@ exports.blocks = [
                 "mods": [
                     {
                         "name": "m-row"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text"
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "36"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "weight",
+                "vals": [
+                    {
+                        "name": "regular"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "align",
+                "vals": [
+                    {
+                        "name": "center"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-v",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-r",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "color",
+                "vals": [
+                    {
+                        "name": "whitepaper-success"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "font",
+                "vals": [
+                    {
+                        "name": "exo2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "elems": [
+            {
+                "name": "fraction",
+                "mods": [
+                    {
+                        "name": "s-col",
+                        "vals": [
+                            {
+                                "name": "4"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "elems": [
+            {
+                "name": "fraction",
+                "mods": [
+                    {
+                        "name": "m-col",
+                        "vals": [
+                            {
+                                "name": "4"
+                            }
+                        ]
                     }
                 ]
             }
@@ -433,20 +589,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "05"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "font",
-                "vals": [
-                    {
-                        "name": "ibm"
+                        "name": "default"
                     }
                 ]
             }
@@ -493,9 +636,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text"
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -522,19 +662,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "weight",
-                "vals": [
-                    {
-                        "name": "regular"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "decorator",
         "mods": [
             {
@@ -555,19 +682,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xxxxl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "primary"
                     }
                 ]
             }
@@ -679,25 +793,7 @@ exports.blocks = [
         "name": "pt-informer",
         "mods": [
             {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "05"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "color",
-                "vals": [
-                    {
-                        "name": "whitepaper-success"
-                    }
-                ]
+                "name": "view"
             }
         ]
     },
@@ -791,10 +887,10 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "align",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "center"
+                        "name": "xl"
                     }
                 ]
             }
@@ -807,7 +903,75 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "xl"
+                        "name": "s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "blue"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "link"
+    },
+    {
+        "name": "link",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "project"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "decoration",
+                "vals": [
+                    {
+                        "name": "underline-project"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "display",
+                "vals": [
+                    {
+                        "name": "inline"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "yellow"
                     }
                 ]
             }
@@ -820,20 +984,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "2"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-informer",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "2"
+                        "name": "selected"
                     }
                 ]
             }
@@ -846,7 +997,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "5"
+                        "name": "disabled"
                     }
                 ]
             }
@@ -859,7 +1010,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "5"
+                        "name": "default"
                     }
                 ]
             }

@@ -1,0 +1,16 @@
+.product_view_disabled {
+    background: linear-gradient(135deg, transparent 42px, #b3b3b3 0) top left;
+    pointer-events: none;
+
+}
+
+.product_view_disabled .product__header,
+.product_view_disabled .product__footer,
+.product_view_disabled .product__image {
+    opacity: 0.5;
+
+}
+
+.product_view_disabled .pt-informer {
+    background-color: #b3b3b3;
+}

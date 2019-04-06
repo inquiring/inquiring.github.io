@@ -162,7 +162,7 @@ exports.deps = [
     {
         "block": "theme",
         "mod": "font",
-        "val": "circe"
+        "val": "TrebuchetMS"
     },
     {
         "block": "theme",
@@ -175,6 +175,15 @@ exports.deps = [
     },
     {
         "block": "tpl-layout"
+    },
+    {
+        "block": "theme",
+        "mod": "bg"
+    },
+    {
+        "block": "theme",
+        "mod": "bg",
+        "val": "image"
     },
     {
         "block": "tpl-layout",
@@ -293,6 +302,81 @@ exports.deps = [
         "mod": "m-row"
     },
     {
+        "block": "text"
+    },
+    {
+        "block": "text",
+        "mod": "size"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "36"
+    },
+    {
+        "block": "text",
+        "mod": "view"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "primary"
+    },
+    {
+        "block": "text",
+        "mod": "weight"
+    },
+    {
+        "block": "text",
+        "mod": "weight",
+        "val": "regular"
+    },
+    {
+        "block": "text",
+        "mod": "align"
+    },
+    {
+        "block": "text",
+        "mod": "align",
+        "val": "center"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-v",
+        "val": "m"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r",
+        "val": "m"
+    },
+    {
+        "block": "theme",
+        "mod": "color",
+        "val": "whitepaper-success"
+    },
+    {
+        "block": "theme",
+        "mod": "font",
+        "val": "exo2"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col",
+        "val": "4"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "m-col",
+        "val": "4"
+    },
+    {
         "block": "pt-card"
     },
     {
@@ -332,12 +416,7 @@ exports.deps = [
     {
         "block": "product",
         "mod": "view",
-        "val": "05"
-    },
-    {
-        "block": "theme",
-        "mod": "font",
-        "val": "ibm"
+        "val": "default"
     },
     {
         "block": "pt-card",
@@ -360,34 +439,14 @@ exports.deps = [
         "elem": "info"
     },
     {
-        "block": "text"
-    },
-    {
-        "block": "text",
-        "mod": "size"
-    },
-    {
         "block": "text",
         "mod": "size",
         "val": "m"
     },
     {
         "block": "text",
-        "mod": "view"
-    },
-    {
-        "block": "text",
         "mod": "view",
         "val": "secondary"
-    },
-    {
-        "block": "text",
-        "mod": "weight"
-    },
-    {
-        "block": "text",
-        "mod": "weight",
-        "val": "regular"
     },
     {
         "block": "decorator",
@@ -398,11 +457,6 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "xxxxl"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "primary"
     },
     {
         "block": "text",
@@ -430,10 +484,6 @@ exports.deps = [
     },
     {
         "block": "decorator",
-        "mod": "indent-r"
-    },
-    {
-        "block": "decorator",
         "mod": "indent-r",
         "val": "xxs"
     },
@@ -456,16 +506,6 @@ exports.deps = [
     {
         "block": "pt-informer",
         "mod": "view"
-    },
-    {
-        "block": "pt-informer",
-        "mod": "view",
-        "val": "05"
-    },
-    {
-        "block": "theme",
-        "mod": "color",
-        "val": "whitepaper-success"
     },
     {
         "block": "brand-logo"
@@ -509,37 +549,100 @@ exports.deps = [
     },
     {
         "block": "text",
-        "mod": "align"
-    },
-    {
-        "block": "text",
-        "mod": "align",
-        "val": "center"
-    },
-    {
-        "block": "text",
         "mod": "size",
         "val": "xl"
     },
     {
+        "block": "text",
+        "mod": "size",
+        "val": "s"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "blue"
+    },
+    {
+        "block": "link"
+    },
+    {
+        "block": "link",
+        "mod": "disabled"
+    },
+    {
+        "block": "jquery",
+        "elem": "event"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerclick"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointernative"
+    },
+    {
+        "block": "keyboard",
+        "elem": "codes"
+    },
+    {
+        "block": "control"
+    },
+    {
+        "block": "link",
+        "mod": "theme"
+    },
+    {
+        "block": "link",
+        "mod": "theme",
+        "val": "project"
+    },
+    {
+        "block": "text",
+        "mod": "decoration"
+    },
+    {
+        "block": "text",
+        "mod": "decoration",
+        "val": "underline-project"
+    },
+    {
+        "block": "text",
+        "mod": "display"
+    },
+    {
+        "block": "text",
+        "mod": "display",
+        "val": "inline"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "yellow"
+    },
+    {
         "block": "product",
         "mod": "view",
-        "val": "2"
+        "val": "selected"
+    },
+    {
+        "block": "product",
+        "mod": "view",
+        "val": "disabled"
     },
     {
         "block": "pt-informer",
         "mod": "view",
-        "val": "2"
-    },
-    {
-        "block": "product",
-        "mod": "view",
-        "val": "5"
-    },
-    {
-        "block": "pt-informer",
-        "mod": "view",
-        "val": "5"
+        "val": "default"
     },
     {
         "block": "loader",
@@ -580,13 +683,13 @@ exports.deps = [
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "s-col",
-        "val": "4"
+        "val": "8"
     },
     {
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "m-col",
-        "val": "4"
+        "val": "12"
     },
     {
         "block": "pt-card",
@@ -605,5 +708,17 @@ exports.deps = [
         "elem": "action",
         "mod": "space-a",
         "val": "s"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerpressrelease"
     }
 ];

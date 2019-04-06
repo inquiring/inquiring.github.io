@@ -7,6 +7,7 @@
     white-space: nowrap;
     -webkit-tap-highlight-color: transparent;
 }
+
 .product:before {
     position: absolute;
     top: 4px;
@@ -16,9 +17,4 @@
     content: '';
     border-radius: 11px;
     background: linear-gradient(135deg, transparent 40px, #f2f2f2 0) top left;
-}
-
-.product:hover {
-    cursor: pointer;
-    background: linear-gradient(135deg, transparent 42px, red 0) top left;
 }

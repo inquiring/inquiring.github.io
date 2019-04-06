@@ -1,0 +1,12 @@
+.product_view_selected {
+    background: linear-gradient(135deg, transparent 42px, #d91667 0) top left;
+}
+.product_view_selected:hover {
+    background: linear-gradient(135deg, transparent 42px, #e62e7a 0) top left;
+}
+.product_view_selected .pt-informer {
+    background-color: #d91667;
+}
+.product_view_selected:hover .pt-informer {
+    background-color: #e62e7a;
+}
