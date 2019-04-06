@@ -242,7 +242,7 @@ html {
 .theme_bg_image {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: url(../../common.blocks/theme/_bg/Pattern.png);
+    background-image: url(../../common.blocks/image/Pattern.png);
 }
 
 .tpl-layout__section {
@@ -679,7 +679,7 @@ html {
 .product__image {
     position: relative;
     height: 100%;
-    background-image: url(../../common.blocks/product/__image/cat.png);
+    background-image: url(../../common.blocks/image/product/cat.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: 4px;
