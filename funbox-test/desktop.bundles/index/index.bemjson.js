@@ -1,6 +1,6 @@
 module.exports = {
     block: 'page',
-    title: 'Title of the page',
+    title: 'Ты сегодня покормил кота?',
     lang: 'ru',
     favicon: '/favicon.ico',
     head: [
