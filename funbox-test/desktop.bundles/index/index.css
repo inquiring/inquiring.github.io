@@ -1,0 +1,1700 @@
+html {
+    min-height: 100%;
+}
+
+.page_theme_islands {
+    font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    min-height: 100%;
+    margin: 0;
+
+    color: #000;
+    background: #fff;
+}
+
+/* Базовые цвета от которых выстраивается вся политра */
+
+/* hsl(0, 0%, 0%) Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ...*/
+
+/* hsl(0, 0%, 100%) Базовый цвет поверхностей */
+
+/* hsl(211, 100%, 35%) Проектный цвет, от которого выстраивают акцентные состояния */
+
+/* hsl(40, 14%, 96%) Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+
+/* hsl(220, 100%, 47%) Ссылочный цвет, от которого выстраиваются все их состояния */
+
+/* Цвет успеха */
+
+/* Цвет ошибки */
+
+/* Цвет предупреждения */
+
+/* Цвет нейтральный */
+
+/* Цвет системнный */
+
+/* Цвета фона */
+
+/* Цвет фона брендированый */
+
+/* Цвет фона действия */
+
+/* Цвет фона выделения */
+
+/* Цвет фона при наведении */
+
+/* Цвет границ */
+
+/* Цвет зебры */
+
+/* Цвет затенения */
+
+/* Цвет дефолта */
+
+/* Цвет паранджи */
+
+/* Цвет молока */
+
+/* Цвет фона успеха */
+
+/* Цвет фона ошибки */
+
+/* Цвет фона предупреждения */
+
+/* Цвет фона нейтральный */
+
+/* Цвет фона системнный */
+
+/* Цвет фона ссылки */
+
+/* Цвета текста */
+
+/* Цвет брендового текста */
+
+/* Цвет основного текста */
+
+/* Цвет промо текста */
+
+/* Цвет второстепенного текста */
+
+/* Цвет дополнительного текста */
+
+/* Цвет неактивного текста */
+
+/* Цвет текста успеха */
+
+/* Цвет текста предупреждения */
+
+/* Цвет текста ошибки */
+
+/* Цвета ссылок */
+
+/* Цвет основной ссылки */
+
+/* Цвет дополнительной ссылки */
+
+/* Цвет второстепенной ссылки */
+
+/* Цвет ховера ссылки */
+
+.theme_color_whitepaper-normal {
+
+	/* Цвета блоков */
+	--color-bg-brand: #0056b3; /* Цвет фона брендированый */
+	--color-bg-action: color(#0056b3 l(+15%)); /* Цвет фона действия */
+	--color-bg-selection: color(#0056b3 h(-1) l(+31%)); /* Цвет фона выделения */
+	--color-bg-hover: color(#000000 a(15%)); /* Цвет фона при наведении */
+	--color-bg-border: color(#000 a(5%)); /* Цвет границ */
+	--color-bg-stripe: color(#000 a(4%)); /* Цвет зебры */
+	--color-bg-ghost: color(#000 a(8%)); /* Цвет затенения */
+	--color-bg-default: #dde3e5; /* Цвет дефолта */
+	--color-bg-tone: color(#000 a(90%)); /* Цвет паранджи */
+	--color-bg-soft: color(#dde3e5 a(97%)); /* Цвет молока */
+	--color-bg-success: #00985f; /* Цвет успеха */
+	--color-bg-alert: #f33; /* Цвет ошибки */
+	--color-bg-warning: #f90; /* Цвет предупреждения */
+	--color-bg-normal: #dde3e5; /* Цвет нейтральный */
+	--color-bg-system: #778a9b; /* Цвет системнный */
+	--color-bg-link: color(#0070f0 h(-7%) s(-13) l(+14) a(40%)); /* Цвет фона ссылки */
+
+	/* Цвета текста */
+	--color-typo-brand: #0056b3; /* Цвет брендового текста */
+	--color-typo-primary: #000000; /* Цвет основного текста */
+	--color-typo-promo: color(#000000 a(80%)); /* Цвет промо текста */
+	--color-typo-secondary: color(#000000 a(60%)); /* Цвет второстепенного текста */
+	--color-typo-ghost: color(#000000 a(30%)); /* Цвет дополнительного текста */
+	--color-typo-disable: color(#000000 a(30%)); /* Цвет неактивного текста */
+	--color-typo-success: #00985f; /* Цвет текста успеха */
+	--color-typo-warning: #f90; /* Цвет текста предупреждения */
+	--color-typo-alert: #f33; /* Цвет текста ошибки */
+
+	/* Цвета ссылок */
+	--color-link: #0070f0; /* Цвет основной ссылки */
+	--color-link-external: #0070f0; /* Цвет дополнительной ссылки */
+	--color-link-minor: color(#0070f0 h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
+	--color-link-hover: color(#0070f0 l(-7%)); /* Цвет ховера ссылки */
+
+}
+
+.theme_breakpoint_default {
+	--screen-xs: 320px;
+	--screen-s: 720px;
+	--screen-m: 1024px;
+	--screen-l: 1280px;
+	--screen-xl: 1440px;
+	--screen-xxl: 1600px;
+
+	--screen-xs-max: 719px;
+	--screen-s-max: 1023px;
+	--screen-m-max: 1279px;
+	--screen-l-max: 1439px;
+	--screen-xl-max: 1599px;
+	--screen-xxl-max: 1920px;
+}
+
+/* Отступы */
+
+.theme_space_default {
+	/* Отступы */
+	--space-xxxs: 2px;
+	--space-xxs: 4px;
+	--space-xs: 8px;
+	--space-s: 12px;
+	--space-m: 16px;
+	--space-l: 20px;
+	--space-xl: 24px;
+	--space-xxl: 32px;
+	--space-xxxl: 40px;
+	--space-xxxxl: 48px;
+	--space-xxxxxl: 72px;
+	--space-xxxxxxl: 96px;
+}
+
+.theme_menu_default {
+	--menu-unfold: 300px;
+	--menu-fold: 56px;
+}
+
+/* Размеры текста */
+
+/* Межстрочный интервал */
+
+.theme_size_default {
+	/* Размер текста */
+	--size-typo-xs: 11px;
+	--size-typo-s: 13px;
+	--size-typo-m: 15px;
+	--size-typo-l: 18px;
+	--size-typo-xl: 20px;
+	--size-typo-xxl: 24px;
+	--size-typo-xxxl: 32px;
+	--size-typo-xxxxl: 48px;
+	--size-typo-xxxxxl: 72px;
+	--size-typo-xxxxxxl: 96px;
+
+	/* Межстрочный интервал */
+	--line-height-typo-xs: 15px;
+	--line-height-typo-s: 18px;
+	--line-height-typo-m: 21px;
+	--line-height-typo-l: 25px;
+	--line-height-typo-xl: 28px;
+	--line-height-typo-xxl: 34px;
+	--line-height-typo-xxxl: 42px;
+	--line-height-typo-xxxxl: 62px;
+	--line-height-typo-xxxxxl: 82px;
+	--line-height-typo-xxxxxxl: 115px;
+}
+
+:root {
+ /* Размеры отступа у контента */
+ --gap: 12px;
+
+ /* Размеры отступов в колонках */
+ --col-gap-third: calc(var(--gap) * 0.33);
+ --col-gap-half: calc(var(--gap) * 0.5);
+ --col-gap-two-thirds: calc(var(--gap) * 0.66);
+ --col-gap-full: var(--gap);
+ --col-gap-2x: calc(var(--gap) * 2);
+ --col-gap-3x: calc(var(--gap) * 3);
+}
+
+@media screen and (min-width: 720px) {
+ :root { --gap: 20px; }
+}
+
+@media screen and (min-width: 1024px) {
+ :root { --gap: 24px; }
+}
+
+@media screen and (min-width: 1280px) {
+ :root { --gap: 32px; }
+}
+
+.tpl-layout {
+	display: grid;
+}
+
+.tpl-layout__section {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.decorator_indent-v_xxxxl {
+	margin-top: var(--space-xxxxl);
+	margin-bottom: var(--space-xxxxl);
+}
+
+.tpl-layout__container {
+	width: 100%;
+}
+
+.tpl-layout__content {
+	padding: 0 var(--gap);
+}
+
+.tpl-grid {
+	display: grid;
+	width: 100%;
+}
+
+.tpl-grid_xs-columns_2 { grid-template-columns: repeat(2, 1fr); }
+
+.tpl-grid_xs-columns_3 { grid-template-columns: repeat(3, 1fr); }
+
+@media screen and (max-width: 719px) {
+	.tpl-grid_xs-ratio_1-1-1 {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+		.tpl-grid_xs-ratio_1-1-1 .tpl-grid__fraction {
+			padding: var(--col-gap-half);
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+}
+
+@media screen and (max-width: 719px) {
+	.tpl-grid_xs-ratio_1-1 {
+		grid-template-columns: 1fr 1fr;
+	}
+
+		.tpl-grid_xs-ratio_1-1 .tpl-grid__fraction {
+			padding: var(--col-gap-half);
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+}
+
+@media screen and (min-width: 720px) {
+		.tpl-grid_s-ratio_1-1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+		.tpl-grid_s-ratio_1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+		.tpl-grid_s-ratio_1-1-1 { grid-template-columns: 1fr 1fr 1fr; }
+		.tpl-grid_s-ratio_1-1 { grid-template-columns: 1fr 1fr; }
+		.tpl-grid_s-columns_5 { grid-template-columns: repeat(5, 1fr); }
+		.tpl-grid_s-columns_6 { grid-template-columns: repeat(6, 1fr); }
+		.tpl-grid_s-columns_8 { grid-template-columns: repeat(8, 1fr); }
+}
+
+@media screen and (min-width: 1024px) {
+		.tpl-grid_m-ratio_1-1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+		.tpl-grid_m-ratio_1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+		.tpl-grid_m-ratio_1-1-1 { grid-template-columns: 1fr 1fr 1fr; }
+		.tpl-grid_m-ratio_1-1 { grid-template-columns: 1fr 1fr; }
+		.tpl-grid_m-columns_12 { grid-template-columns: repeat(12, 1fr); }
+		.tpl-grid_m-columns_10 { grid-template-columns: repeat(10, 1fr); }
+		.tpl-grid_m-columns_6 { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media screen and (min-width: 1280px) {
+		.tpl-grid_l-ratio_1-1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+		.tpl-grid_l-ratio_1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+		.tpl-grid_l-ratio_1-1-1 { grid-template-columns: 1fr 1fr 1fr; }
+		.tpl-grid_l-ratio_1-1 { grid-template-columns: 1fr 1fr; }
+		.tpl-grid_l-columns_12 { grid-template-columns: repeat(12, 1fr); }
+		.tpl-grid_l-columns_10 { grid-template-columns: repeat(10, 1fr); }
+		.tpl-grid_l-columns_6 { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media screen and (min-width: 1440px) {
+		.tpl-grid_xl-ratio_1-1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+		.tpl-grid_xl-ratio_1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+		.tpl-grid_xl-ratio_1-1-1 { grid-template-columns: 1fr 1fr 1fr; }
+		.tpl-grid_xl-ratio_1-1 { grid-template-columns: 1fr 1fr; }
+		.tpl-grid_xl-columns_12 { grid-template-columns: repeat(12, 1fr); }
+		.tpl-grid_xl-columns_10 { grid-template-columns: repeat(10, 1fr); }
+		.tpl-grid_xl-columns_6 { grid-template-columns: repeat(6, 1fr); }
+}
+
+.tpl-grid_col-gap_full {
+	grid-column-gap: var(--col-gap-full);
+}
+
+.tpl-grid_row-gap_full {
+	grid-row-gap: var(--col-gap-full);
+}
+
+.tpl-grid__fraction { min-width: 0; }
+
+.tpl-grid__fraction_xs-col_1 { grid-column: span 1; }
+
+.tpl-grid__fraction_xs-col_2 { grid-column: span 2; }
+
+.tpl-grid__fraction_xs-col_3 { grid-column: span 3; }
+
+@media screen and (max-width: 719px) {
+		.tpl-grid__fraction_xs-order_-1 { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; }
+		.tpl-grid__fraction_xs-order_0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
+		.tpl-grid__fraction_xs-order_1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+		.tpl-grid__fraction_xs-row_1 { grid-row: span 1; }
+		.tpl-grid__fraction_xs-row_2 { grid-row: span 2; }
+		.tpl-grid__fraction_xs-row_3 { grid-row: span 3; }
+}
+
+@media screen and (max-width: 720px) {
+	.tpl-grid__fraction_xs-col_hidden {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.tpl-grid__fraction_s-col_hidden {
+		display: none;
+	}
+		.tpl-grid__fraction_s-order_-1 { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; }
+		.tpl-grid__fraction_s-order_0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
+		.tpl-grid__fraction_s-order_1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+}
+
+@media screen and (min-width: 720px) {
+		.tpl-grid__fraction_s-col_1 { grid-column: span 1; }
+		.tpl-grid__fraction_s-col_2 { grid-column: span 2; }
+		.tpl-grid__fraction_s-col_3 { grid-column: span 3; }
+		.tpl-grid__fraction_s-col_4 { grid-column: span 4; }
+		.tpl-grid__fraction_s-col_5 { grid-column: span 5; }
+		.tpl-grid__fraction_s-col_6 { grid-column: span 6; }
+		.tpl-grid__fraction_s-col_7 { grid-column: span 7; }
+		.tpl-grid__fraction_s-col_8 { grid-column: span 8; }
+		.tpl-grid__fraction_s-col_9 { grid-column: span 9; }
+		.tpl-grid__fraction_s-col_10 { grid-column: span 10; }
+		.tpl-grid__fraction_s-col_11 { grid-column: span 11; }
+		.tpl-grid__fraction_s-col_12 { grid-column: span 12; }
+		.tpl-grid__fraction_s-row_1 { grid-row: span 1; }
+		.tpl-grid__fraction_s-row_2 { grid-row: span 2; }
+		.tpl-grid__fraction_s-row_3 { grid-row: span 3; }
+}
+
+@media screen and (min-width: 1024px) {
+		.tpl-grid__fraction_m-col_1 { grid-column: span 1; }
+		.tpl-grid__fraction_m-col_2 { grid-column: span 2; }
+		.tpl-grid__fraction_m-col_3 { grid-column: span 3; }
+		.tpl-grid__fraction_m-col_4 { grid-column: span 4; }
+		.tpl-grid__fraction_m-col_5 { grid-column: span 5; }
+		.tpl-grid__fraction_m-col_6 { grid-column: span 6; }
+		.tpl-grid__fraction_m-col_7 { grid-column: span 7; }
+		.tpl-grid__fraction_m-col_8 { grid-column: span 8; }
+		.tpl-grid__fraction_m-col_9 { grid-column: span 9; }
+		.tpl-grid__fraction_m-col_10 { grid-column: span 10; }
+		.tpl-grid__fraction_m-col_11 { grid-column: span 11; }
+		.tpl-grid__fraction_m-col_12 { grid-column: span 12; }
+		.tpl-grid__fraction_m-row_1 { grid-row: span 1; }
+		.tpl-grid__fraction_m-row_2 { grid-row: span 2; }
+		.tpl-grid__fraction_m-row_3 { grid-row: span 3; }
+		.tpl-grid__fraction_m-order_-1 { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; }
+		.tpl-grid__fraction_m-order_0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
+		.tpl-grid__fraction_m-order_1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+}
+
+@media screen and (min-width: 1280px) {
+		.tpl-grid__fraction_l-col_1 { grid-column: span 1; }
+		.tpl-grid__fraction_l-col_2 { grid-column: span 2; }
+		.tpl-grid__fraction_l-col_3 { grid-column: span 3; }
+		.tpl-grid__fraction_l-col_4 { grid-column: span 4; }
+		.tpl-grid__fraction_l-col_5 { grid-column: span 5; }
+		.tpl-grid__fraction_l-col_6 { grid-column: span 6; }
+		.tpl-grid__fraction_l-col_7 { grid-column: span 7; }
+		.tpl-grid__fraction_l-col_8 { grid-column: span 8; }
+		.tpl-grid__fraction_l-col_9 { grid-column: span 9; }
+		.tpl-grid__fraction_l-col_10 { grid-column: span 10; }
+		.tpl-grid__fraction_l-col_11 { grid-column: span 11; }
+		.tpl-grid__fraction_l-col_12 { grid-column: span 12; }
+		.tpl-grid__fraction_l-row_1 { grid-row: span 1; }
+		.tpl-grid__fraction_l-row_2 { grid-row: span 2; }
+		.tpl-grid__fraction_l-row_3 { grid-row: span 3; }
+		.tpl-grid__fraction_l-order_-1 { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; }
+		.tpl-grid__fraction_l-order_0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
+		.tpl-grid__fraction_l-order_1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+}
+
+@media screen and (min-width: 1440px) {
+		.tpl-grid__fraction_xl-col_1 { grid-column: span 1; }
+		.tpl-grid__fraction_xl-col_2 { grid-column: span 2; }
+		.tpl-grid__fraction_xl-col_3 { grid-column: span 3; }
+		.tpl-grid__fraction_xl-col_4 { grid-column: span 4; }
+		.tpl-grid__fraction_xl-col_5 { grid-column: span 5; }
+		.tpl-grid__fraction_xl-col_6 { grid-column: span 6; }
+		.tpl-grid__fraction_xl-col_7 { grid-column: span 7; }
+		.tpl-grid__fraction_xl-col_8 { grid-column: span 8; }
+		.tpl-grid__fraction_xl-col_9 { grid-column: span 9; }
+		.tpl-grid__fraction_xl-col_10 { grid-column: span 10; }
+		.tpl-grid__fraction_xl-col_11 { grid-column: span 11; }
+		.tpl-grid__fraction_xl-col_12 { grid-column: span 12; }
+		.tpl-grid__fraction_xl-row_1 { grid-row: span 1; }
+		.tpl-grid__fraction_xl-row_2 { grid-row: span 2; }
+		.tpl-grid__fraction_xl-row_3 { grid-row: span 3; }
+		.tpl-grid__fraction_xl-order_-1 { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; }
+		.tpl-grid__fraction_xl-order_0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
+		.tpl-grid__fraction_xl-order_1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+}
+
+.pt-card {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: relative;
+}
+
+.pt-card_border_all {
+	border: 1px solid var(--color-bg-border);
+}
+
+.pt-card_shadow_cloud {
+	-webkit-box-shadow: 0 20px 20px var(--color-bg-ghost);
+	        box-shadow: 0 20px 20px var(--color-bg-ghost);
+}
+
+.pt-card_view_default {
+	background-color: var(--color-bg-default);
+}
+
+.product {
+    height: 480px;
+    position: relative;
+    border: 0;
+    border-radius: 15px;
+    outline: 0;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.product:before {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    content: '';
+    border-radius: 11px;
+    background: linear-gradient(135deg, transparent 40px, #f2f2f2 0) top left;
+}
+
+.product:hover {
+    cursor: pointer;
+    background: linear-gradient(135deg, transparent 42px, red 0) top left;
+}
+
+.product_view_05 {
+     background: linear-gradient(135deg, transparent 42px, #1698d9 0) top left;
+}
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Italic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Italic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Regular-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Regular-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Italic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Italic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Light-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Light-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-LightItalic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-LightItalic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Regular-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Regular-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBold-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBold-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBoldItalic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBoldItalic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Italic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Italic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Light-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Light-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-LightItalic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-LightItalic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Regular-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Regular-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBold-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBold-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBoldItalic-Pi.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBoldItalic-Pi.woff") format("woff");
+  unicode-range: 'U+03C0, U+0E3F, U+2070, U+2074-2079, U+2080-2089, U+2113, U+2116, U+2126, U+212E, U+2150-2151, U+2153-215E, U+2190-2199, U+21A9-21AA, U+21B0-21B3, U+21B6-21B7, U+21BA-21BB, U+21C4, U+21C6, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA, U+2713, U+274C, U+2B0E-2B11, U+EBE1, U+EBE3-EBE4, U+EBE6-EBE7, U+ECE0, U+EFCC'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Italic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Italic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Regular-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Regular-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Italic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Italic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Light-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Light-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-LightItalic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-LightItalic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Regular-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Regular-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBold-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBold-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBoldItalic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBoldItalic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Italic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Italic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Light-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Light-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-LightItalic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-LightItalic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Regular-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Regular-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBold-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBold-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBoldItalic-Latin3.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBoldItalic-Latin3.woff") format("woff");
+  unicode-range: 'U+0102-0103, U+1EA0-1EF9, U+20AB'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Italic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Italic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Regular-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Regular-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Italic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Italic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Light-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Light-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-LightItalic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-LightItalic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Regular-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Regular-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBold-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBold-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBoldItalic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBoldItalic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Italic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Italic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Light-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Light-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-LightItalic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-LightItalic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Regular-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Regular-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBold-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBold-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBoldItalic-Latin2.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBoldItalic-Latin2.woff") format("woff");
+  unicode-range: 'U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Italic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Italic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff2/IBMPlexMono-Regular-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Mono/web/woff/IBMPlexMono-Regular-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Italic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Italic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Light-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Light-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-LightItalic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-LightItalic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-Regular-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-Regular-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBold-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBold-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff2/IBMPlexSans-SemiBoldItalic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Sans/web/woff/IBMPlexSans-SemiBoldItalic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Italic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Italic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Light-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Light-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-LightItalic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-LightItalic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-Regular-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-Regular-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBold-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBold-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+@font-face {
+  font-family: 'ibm-plex-serif';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff2/IBMPlexSerif-SemiBoldItalic-Latin1.woff2") format("woff2"), url("../../node_modules/whitepaper-bem/theme/_font/ibm-type/fonts/Serif/web/woff/IBMPlexSerif-SemiBoldItalic-Latin1.woff") format("woff");
+  unicode-range: 'U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FB01-FB02'; }
+
+body {
+  font-size: 16px; }
+
+body.ibm-type-serif,
+  body .ibm-type-serif {
+    font-size: 15px; }
+
+.ibm-type-a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  max-width: 26.5rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 1rem; }
+
+.ibm-type-a.ibm-type-serif {
+    font-size: 0.6875rem; }
+
+@media (min-width: 1056px) {
+    .ibm-type-a {
+      font-size: calc(4.89312px + 0.673vw);
+      line-height: calc(5.3344px + 1.01vw);
+      max-width: calc(182.21824px + 22.896vw);
+      letter-spacing: calc(0.89024px + -0.054vw);
+      margin-bottom: calc(1.77568px + 1.347vw); }
+      .ibm-type-a.ibm-type-serif {
+        font-size: calc(4.33664px + 0.631vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-a {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      max-width: 35rem;
+      letter-spacing: 0;
+      margin-bottom: 1.5rem; }
+      .ibm-type-a.ibm-type-serif {
+        font-size: calc(1rem - 1px); } }
+
+.ibm-type-b {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  max-width: 30rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 1.25rem; }
+
+.ibm-type-b.ibm-type-serif {
+    font-size: 0.8125rem; }
+
+@media (min-width: 1056px) {
+    .ibm-type-b {
+      font-size: calc(6.89312px + 0.673vw);
+      line-height: calc(12.89312px + 0.673vw);
+      max-width: calc(266.66688px + 20.202vw);
+      letter-spacing: calc(0.44512px + -0.027vw);
+      margin-bottom: calc(12.89312px + 0.673vw); }
+      .ibm-type-b.ibm-type-serif {
+        font-size: calc(6.33664px + 0.631vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-b {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      max-width: 37.5rem;
+      letter-spacing: 0;
+      margin-bottom: 1.5rem; }
+      .ibm-type-b.ibm-type-serif {
+        font-size: calc(1.125rem - 1px); } }
+
+.ibm-type-c {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  max-width: 35rem;
+  margin-bottom: 1.5rem; }
+
+.ibm-type-c.ibm-type-serif {
+    font-size: 0.9375rem; }
+
+@media (min-width: 1056px) {
+    .ibm-type-c {
+      font-size: calc(8.89312px + 0.673vw);
+      line-height: calc(14.89312px + 0.673vw);
+      max-width: calc(332.44256px + 21.549vw);
+      margin-bottom: calc(9.77568px + 1.347vw); }
+      .ibm-type-c.ibm-type-serif {
+        font-size: calc(8.33664px + 0.631vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-c {
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      max-width: 43rem;
+      margin-bottom: 2rem; }
+      .ibm-type-c.ibm-type-serif {
+        font-size: calc(1.25rem - 1px); } }
+
+.ibm-type-d {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  max-width: 35rem;
+  margin-bottom: 1rem; }
+
+.ibm-type-d.ibm-type-serif {
+    font-size: 0.9375rem; }
+
+@media (min-width: 1056px) {
+    .ibm-type-d {
+      font-size: calc(8.89312px + 0.673vw);
+      line-height: calc(14.89312px + 0.673vw);
+      max-width: calc(332.44256px + 21.549vw);
+      margin-bottom: calc(-12.44864px + 2.694vw); }
+      .ibm-type-d.ibm-type-serif {
+        font-size: calc(8.33664px + 0.631vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-d {
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      max-width: 43rem;
+      margin-bottom: 2rem; }
+      .ibm-type-d.ibm-type-serif {
+        font-size: calc(1.25rem - 1px); } }
+
+.ibm-type-e {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  max-width: 37.5rem;
+  margin-bottom: 1.5rem; }
+
+.ibm-type-e.ibm-type-serif {
+    font-size: 1.0625rem; }
+
+@media (min-width: 320px) {
+    .ibm-type-e {
+      font-size: calc(16px + 0.625vw);
+      line-height: calc(22px + 0.625vw);
+      max-width: calc(512px + 27.5vw);
+      margin-bottom: calc(16px + 2.5vw); }
+      .ibm-type-e.ibm-type-serif {
+        font-size: calc(15.1248px + 0.586vw); } }
+
+@media (min-width: 640px) {
+    .ibm-type-e {
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      max-width: 43rem;
+      margin-bottom: 2rem; }
+      .ibm-type-e.ibm-type-serif {
+        font-size: calc(1.25rem - 1px); } }
+
+@media (min-width: 640px) and (min-width: 1056px) {
+    .ibm-type-e {
+      font-size: calc(12.89312px + 0.673vw);
+      line-height: calc(18.89312px + 0.673vw);
+      max-width: calc(943.99552px + -24.242vw); }
+      .ibm-type-e.ibm-type-serif {
+        font-size: calc(12.33664px + 0.631vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-e {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      max-width: 34rem; }
+      .ibm-type-e.ibm-type-serif {
+        font-size: calc(1.5rem - 1px); } }
+
+.ibm-type-f {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  max-width: 43rem;
+  margin-bottom: 1.5rem; }
+
+.ibm-type-f.ibm-type-serif {
+    font-size: 1.1875rem; }
+
+@media (min-width: 320px) {
+    .ibm-type-f {
+      font-size: calc(16px + 1.25vw);
+      line-height: calc(22px + 1.25vw);
+      max-width: calc(832px + -45vw);
+      margin-bottom: calc(16px + 2.5vw); }
+      .ibm-type-f.ibm-type-serif {
+        font-size: calc(15.2496px + 1.172vw); } }
+
+@media (min-width: 640px) {
+    .ibm-type-f {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      max-width: 34rem;
+      margin-bottom: 2rem; }
+      .ibm-type-f.ibm-type-serif {
+        font-size: calc(1.5rem - 1px); } }
+
+@media (min-width: 640px) and (min-width: 1056px) {
+    .ibm-type-f {
+      font-size: calc(9.77568px + 1.347vw);
+      line-height: calc(12.21696px + 1.684vw);
+      max-width: calc(231.1072px + 29.63vw); }
+      .ibm-type-f.ibm-type-serif {
+        font-size: calc(9.66272px + 1.263vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-f {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      max-width: 45rem; }
+      .ibm-type-f.ibm-type-serif {
+        font-size: calc(2rem - 1px); } }
+
+.ibm-type-g {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  max-width: 34rem;
+  margin-bottom: 2rem; }
+
+.ibm-type-g.ibm-type-serif {
+    font-size: 1.4375rem; }
+
+@media (min-width: 640px) {
+    .ibm-type-g {
+      font-size: calc(17.8432px + 0.962vw);
+      line-height: calc(20.7712px + 1.442vw);
+      max-width: calc(408.6144px + 21.154vw); }
+      .ibm-type-g.ibm-type-serif {
+        font-size: calc(17.2336px + 0.901vw); } }
+
+@media (min-width: 1056px) {
+    .ibm-type-g {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      max-width: 39.5rem;
+      font-size: calc(20.89312px + 0.673vw);
+      line-height: calc(28.89312px + 0.673vw);
+      max-width: calc(475.5536px + 14.815vw); }
+      .ibm-type-g.ibm-type-serif {
+        font-size: calc(1.75rem - 1px); }
+      .ibm-type-g.ibm-type-serif {
+        font-size: calc(20.33664px + 0.631vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-g {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      max-width: 45rem; }
+      .ibm-type-g.ibm-type-serif {
+        font-size: calc(2rem - 1px); } }
+
+.ibm-type-h {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  max-width: 39.5rem;
+  margin-bottom: 2rem; }
+
+.ibm-type-h.ibm-type-serif {
+    font-size: 1.6875rem; }
+
+@media (min-width: 320px) {
+    .ibm-type-h {
+      font-size: calc(24px + 1.25vw);
+      line-height: calc(32px + 1.25vw);
+      max-width: calc(544px + 27.5vw); }
+      .ibm-type-h.ibm-type-serif {
+        font-size: calc(23.2496px + 1.172vw); } }
+
+@media (min-width: 640px) {
+    .ibm-type-h {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      max-width: 45rem;
+      font-size: calc(25.8432px + 0.962vw);
+      line-height: calc(33.8432px + 0.962vw);
+      max-width: calc(584.6144px + 21.154vw); }
+      .ibm-type-h.ibm-type-serif {
+        font-size: calc(2rem - 1px); }
+      .ibm-type-h.ibm-type-serif {
+        font-size: calc(25.2336px + 0.901vw); } }
+
+@media (min-width: 1056px) {
+    .ibm-type-h {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      max-width: 50.5rem;
+      font-size: calc(25.3344px + 1.01vw);
+      line-height: calc(33.3344px + 1.01vw);
+      max-width: calc(566.21824px + 22.896vw); }
+      .ibm-type-h.ibm-type-serif {
+        font-size: calc(2.25rem - 1px); }
+      .ibm-type-h.ibm-type-serif {
+        font-size: calc(24.99968px + 0.947vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-h {
+      font-size: 2.625rem;
+      line-height: 3.125rem;
+      max-width: 59rem; }
+      .ibm-type-h.ibm-type-serif {
+        font-size: calc(2.625rem - 1px); } }
+
+.ibm-type-i {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  max-width: 39.5rem;
+  margin-bottom: 2rem; }
+
+.ibm-type-i.ibm-type-serif {
+    font-size: 1.6875rem; }
+
+@media (min-width: 320px) {
+    .ibm-type-i {
+      font-size: calc(20px + 2.5vw);
+      line-height: calc(28px + 2.5vw);
+      max-width: calc(456px + 55vw); }
+      .ibm-type-i.ibm-type-serif {
+        font-size: calc(19.4992px + 2.344vw); } }
+
+@media (min-width: 640px) {
+    .ibm-type-i {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      max-width: 50.5rem;
+      font-size: calc(26.7712px + 1.442vw);
+      line-height: calc(34.7712px + 1.442vw);
+      max-width: calc(598.7712px + 32.692vw); }
+      .ibm-type-i.ibm-type-serif {
+        font-size: calc(2.25rem - 1px); }
+      .ibm-type-i.ibm-type-serif {
+        font-size: calc(26.3472px + 1.352vw); } }
+
+@media (min-width: 1056px) {
+    .ibm-type-i {
+      font-size: 2.625rem;
+      line-height: 3.125rem;
+      max-width: 59rem;
+      font-size: calc(10.0032px + 3.03vw);
+      line-height: calc(14.44448px + 3.367vw);
+      max-width: calc(232.8896px + 67.34vw); }
+      .ibm-type-i.ibm-type-serif {
+        font-size: calc(2.625rem - 1px); }
+      .ibm-type-i.ibm-type-serif {
+        font-size: calc(10.99904px + 2.841vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-i {
+      font-size: 3.75rem;
+      line-height: 4.375rem;
+      max-width: 84rem; }
+      .ibm-type-i.ibm-type-serif {
+        font-size: calc(3.75rem - 1px); } }
+
+.ibm-type-j {
+  font-size: 2.625rem;
+  font-weight: 300;
+  line-height: 3.125rem;
+  max-width: 59rem;
+  margin-bottom: 2rem; }
+
+.ibm-type-j.ibm-type-serif {
+    font-size: 2.5625rem; }
+
+@media (min-width: 320px) {
+    .ibm-type-j {
+      font-size: calc(16px + 8.125vw);
+      line-height: calc(22px + 8.75vw);
+      max-width: calc(360px + 182.5vw); }
+      .ibm-type-j.ibm-type-serif {
+        font-size: calc(16.6256px + 7.617vw); } }
+
+@media (min-width: 640px) {
+    .ibm-type-j {
+      font-size: 4.25rem;
+      line-height: 4.875rem;
+      max-width: 95.5rem;
+      font-size: calc(-67.3856px + 21.154vw);
+      line-height: calc(-54.3072px + 20.673vw);
+      max-width: calc(-1425.8432px + 461.538vw); }
+      .ibm-type-j.ibm-type-serif {
+        font-size: calc(4.25rem - 1px); }
+      .ibm-type-j.ibm-type-serif {
+        font-size: calc(-59.9248px + 19.832vw); } }
+
+@media (min-width: 1056px) {
+    .ibm-type-j {
+      font-size: 9.75rem;
+      line-height: 10.25rem;
+      max-width: 215.5rem;
+      letter-spacing: -0.06rem;
+      font-size: calc(134.6688px + 2.02vw);
+      line-height: calc(146.21696px + 1.684vw);
+      max-width: calc(2964.44704px + 45.791vw); }
+      .ibm-type-j.ibm-type-serif {
+        font-size: calc(9.75rem - 1px); }
+      .ibm-type-j.ibm-type-serif {
+        font-size: calc(134.99936px + 1.894vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-j {
+      font-size: 10.5rem;
+      line-height: 10.875rem;
+      max-width: 232.5rem; }
+      .ibm-type-j.ibm-type-serif {
+        font-size: calc(10.5rem - 1px); } }
+
+.ibm-type-k {
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 3.125rem;
+  max-width: 59rem;
+  margin-bottom: 2rem; }
+
+.ibm-type-k.ibm-type-serif {
+    font-size: 2.5625rem; }
+
+@media (min-width: 320px) {
+    .ibm-type-k {
+      font-size: calc(16px + 8.125vw);
+      line-height: calc(22px + 8.75vw);
+      max-width: calc(360px + 182.5vw); }
+      .ibm-type-k.ibm-type-serif {
+        font-size: calc(16.6256px + 7.617vw); } }
+
+@media (min-width: 640px) {
+    .ibm-type-k {
+      font-size: 4.25rem;
+      line-height: 4.875rem;
+      max-width: 95.5rem;
+      font-size: calc(-67.3856px + 21.154vw);
+      line-height: calc(-54.3072px + 20.673vw);
+      max-width: calc(-1425.8432px + 461.538vw); }
+      .ibm-type-k.ibm-type-serif {
+        font-size: calc(4.25rem - 1px); }
+      .ibm-type-k.ibm-type-serif {
+        font-size: calc(-59.9248px + 19.832vw); } }
+
+@media (min-width: 1056px) {
+    .ibm-type-k {
+      font-size: 9.75rem;
+      line-height: 10.25rem;
+      max-width: 215.5rem;
+      letter-spacing: -0.04rem;
+      font-size: calc(134.6688px + 2.02vw);
+      line-height: calc(146.21696px + 1.684vw);
+      max-width: calc(2964.44704px + 45.791vw); }
+      .ibm-type-k.ibm-type-serif {
+        font-size: calc(9.75rem - 1px); }
+      .ibm-type-k.ibm-type-serif {
+        font-size: calc(134.99936px + 1.894vw); } }
+
+@media (min-width: 1650px) {
+    .ibm-type-k {
+      font-size: 10.5rem;
+      line-height: 10.875rem;
+      max-width: 232.5rem; }
+      .ibm-type-k.ibm-type-serif {
+        font-size: calc(10.5rem - 1px); } }
+
+.ibm,
+[class*='ibm-type'] {
+  font-family: 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif; }
+
+[class*='ibm-type'] {
+  margin-top: 0; }
+
+.ibm-type-italic {
+  font-style: italic; }
+
+.ibm-type-light {
+  font-weight: 300; }
+
+code,
+.ibm-type-mono,
+.ibm-type-mono * {
+  font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace; }
+
+.ibm-type-regular {
+  font-weight: 400; }
+
+strong,
+.ibm-type-semibold {
+  font-weight: 600; }
+
+.ibm-type-serif,
+.ibm-type-serif * {
+  font-family: 'ibm-plex-serif', 'Georgia', Times, serif; }
+
+.theme_font_ibm {
+  --font-sans: "ibm-plex-sans", Helvetica, Arial, sans-serif;
+  --font-serif: "ibm-plex-serif", Georgia, serif;
+  --font-mono: "ibm-plex-mono", monospace;
+}
+
+.theme_font_ibm {
+  font-family: var(--font-sans);
+}
+
+.pt-card__image {
+	width: 100%;
+}
+
+.product__image {
+    position: relative;
+    height: 100%;
+    background-image: url(../../common.blocks/product/__image/cat.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 4px;
+    background-position-y: 203px;
+}
+
+.pt-card__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.product__header {
+    padding-top: 24px;
+    padding-right: var(--space-xxxxl);
+    padding-bottom: var(--space-l);
+    padding-left: 52px;
+}
+
+.text_size_m {
+	font-size: var(--size-typo-m);
+	line-height: var(--line-height-typo-m);
+}
+
+.text_view_secondary {
+	color: var(--color-typo-secondary);
+}
+
+.text_view_secondary {
+    color: #666666;
+}
+
+.text_weight_regular {
+	font-weight: 400;
+}
+
+.decorator_indent-v_xxs {
+	margin-top: var(--space-xxs);
+	margin-bottom: var(--space-xxs);
+}
+
+.text_size_xxxxl {
+	font-size: var(--size-typo-xxxxl);
+	line-height: var(--line-height-typo-xxxxl);
+}
+
+.text_view_primary {
+	color: var(--color-typo-primary);
+}
+
+.text_weight_bold {
+	font-weight: 600;
+}
+
+.text_size_xxl {
+	font-size: var(--size-typo-xxl);
+	line-height: var(--line-height-typo-xxl);
+}
+
+.decorator_indent-b_m {
+	margin-bottom: var(--space-m);
+}
+
+.text_size_14 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.decorator_indent-r_xxs {
+	margin-right: var(--space-xxs);
+}
+
+.pt-card__footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.product__footer {
+    padding: var(--space-m);
+}
+
+.pt-informer_view_05 {
+    background-color: #1698d9;
+}
+
+/* Базовые цвета от которых выстраивается вся политра */
+
+/* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ...*/
+
+/* Базовый цвет поверхностей */
+
+/* Проектный цвет, от которого выстраивают акцентные состояния */
+
+/* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+
+/* Ссылочный цвет, от которого выстраиваются все их состояния */
+
+/* Цвет успеха */
+
+/* Цвет ошибки */
+
+/* Цвет предупреждения */
+
+/* Цвет нейтральный */
+
+/* Цвет системнный */
+
+/* Цвета фона */
+
+/* Цвет фона брендированый */
+
+/* Цвет фона действия */
+
+/* Цвет фона выделения */
+
+/* Цвет фона при наведении */
+
+/* Цвет границ */
+
+/* Цвет зебры */
+
+/* Цвет затенения */
+
+/* Цвет дефолта */
+
+/* Цвет паранджи */
+
+/* Цвет молока */
+
+/* Цвет фона успеха */
+
+/* Цвет фона ошибки */
+
+/* Цвет фона предупреждения */
+
+/* Цвет фона нейтральный */
+
+/* Цвет фона системнный */
+
+/* Цвет фона ссылки */
+
+/* Цвета текста */
+
+/* Цвет брендового текста */
+
+/* Цвет основного текста */
+
+/* Цвет промо текста */
+
+/* Цвет второстепенного текста */
+
+/* Цвет дополнительного текста */
+
+/* Цвет неактивного текста */
+
+/* Цвет текста успеха */
+
+/* Цвет текста предупреждения */
+
+/* Цвет текста ошибки */
+
+/* Цвета ссылок */
+
+/* Цвет основной ссылки */
+
+/* Цвет дополнительной ссылки */
+
+/* Цвет второстепенной ссылки */
+
+/* Цвет ховера ссылки */
+
+.theme_color_whitepaper-success {
+
+	/* Цвета блоков */
+	--color-bg-brand: #fff; /* Цвет фона брендированый */
+	--color-bg-action: color(#fff l(+15%)); /* Цвет фона действия */
+	--color-bg-selection: color(#fff h(-1) l(+31%)); /* Цвет фона выделения */
+	--color-bg-hover: color(#fff a(15%)); /* Цвет фона при наведении */
+	--color-bg-border: color(#00985f a(5%)); /* Цвет границ */
+	--color-bg-stripe: color(#00985f a(4%)); /* Цвет зебры */
+	--color-bg-ghost: color(#00985f a(8%)); /* Цвет затенения */
+	--color-bg-default: #00985f; /* Цвет дефолта */
+	--color-bg-tone: color(#00985f a(90%)); /* Цвет паранджи */
+	--color-bg-soft: color(#00985f a(97%)); /* Цвет молока */
+	--color-bg-success: #00985f; /* Цвет успеха */
+	--color-bg-alert: #f33; /* Цвет ошибки */
+	--color-bg-warning: #f90; /* Цвет предупреждения */
+	--color-bg-normal: #dde3e5; /* Цвет нейтральный */
+	--color-bg-system: #778a9b; /* Цвет системнный */
+	--color-bg-link: color(#fff h(-7%) s(-13) l(+14) a(40%)); /* Цвет фона ссылки */
+
+	/* Цвета текста */
+	--color-typo-brand: #fff; /* Цвет брендового текста */
+	--color-typo-primary: #fff; /* Цвет основного текста */
+	--color-typo-promo: color(#fff a(80%)); /* Цвет промо текста */
+	--color-typo-secondary: color(#fff a(60%)); /* Цвет второстепенного текста */
+	--color-typo-ghost: color(#fff a(30%)); /* Цвет дополнительного текста */
+	--color-typo-disable: color(#fff a(30%)); /* Цвет неактивного текста */
+	--color-typo-success: #00985f; /* Цвет текста успеха */
+	--color-typo-warning: #f90; /* Цвет текста предупреждения */
+	--color-typo-alert: #f33; /* Цвет текста ошибки */
+
+	/* Цвета ссылок */
+	--color-link: #fff; /* Цвет основной ссылки */
+	--color-link-external: #fff; /* Цвет дополнительной ссылки */
+	--color-link-minor: color(#fff h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
+	--color-link-hover: color(#fff l(-7%)); /* Цвет ховера ссылки */
+	
+}
+
+.brand-logo {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	position: relative;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.brand-logo_form_round {
+	border-radius: 50%;
+}
+
+.brand-logo_size_l {
+	width: 80px;
+	height: 80px;
+}
+
+.text_size_42 {
+    font-size: 42px;
+    line-height: 44px;
+}
+
+.text_align_center {
+	text-align: center;
+}
+
+.text_size_xl {
+	font-size: var(--size-typo-xl);
+	line-height: var(--line-height-typo-xl);
+}
+
+.product_view_2 {
+    background: linear-gradient(135deg, transparent 42px, #d91667 0) top left;
+}
+
+.pt-informer_view_2 {
+    background-color: #d91667;
+}
+
+.product_view_5 {
+    background: linear-gradient(135deg, transparent 42px, aqua 0) top left;
+}
+
+.pt-informer_view_5 {
+    background-color: aqua;
+}
+
+.tpl-layout__container_size_m {
+	max-width: 1144px;
+}
+
+.tpl-layout__container_align_center {
+	margin: 0 auto;
+}
+
+.pt-card__footer_distribute_right {
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.pt-informer__action_space-a_s {
+	padding: var(--space-s);
+}
