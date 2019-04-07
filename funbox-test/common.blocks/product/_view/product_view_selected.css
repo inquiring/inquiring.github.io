@@ -10,3 +10,8 @@
 .product_view_selected:hover .pt-informer {
     background-color: #e62e7a;
 }
+
+body > div > div > div > div > div > div:nth-child(3) > .text_for_disabled,
+body > div > div > div > div > div > div:nth-child(3) > .text_for_default {
+    display: none;
+}

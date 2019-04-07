@@ -39,7 +39,7 @@ module.exports = {
                             elem: 'content',
                             content: {
                                 block: 'tpl-grid',
-                                mods: { 'xs-ratio': '1', 's-columns': '8', 'm-columns': '12', 'col-gap': 'full', 'row-gap': 'full'  },
+                                mods: { 'xs-ratio': '1', 'xss-ratio': '1-1', 's-columns': '8', 'm-columns': '12', 'col-gap': 'full', 'row-gap': 'full'  },
                                 content: [
                                     {
                                         elem: 'fraction',
@@ -153,9 +153,9 @@ module.exports = {
                                             // подпись под картой default
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -191,9 +191,9 @@ module.exports = {
                                             // подпись под картой selected
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -210,9 +210,9 @@ module.exports = {
                                             // подпись под картой disabled
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -341,9 +341,9 @@ module.exports = {
                                             // подпись под картой default
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -380,9 +380,9 @@ module.exports = {
                                             // подпись под картой selected
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -399,9 +399,9 @@ module.exports = {
                                             // подпись под картой disabled
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -539,9 +539,9 @@ module.exports = {
                                             // подпись под картой default
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -578,9 +578,9 @@ module.exports = {
                                             // подпись под картой selected
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [
@@ -597,9 +597,9 @@ module.exports = {
                                             // подпись под картой disabled
                                             {
                                                 block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', },
+                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
                                                 mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                     { block: 'theme', mods: { color: 'whitepaper-success' } },
                                                 ],
                                                 content: [

@@ -340,6 +340,13 @@ html {
 		.tpl-grid_xl-columns_6 { grid-template-columns: repeat(6, 1fr); }
 }
 
+@media screen and (max-width: 719px) and (min-width: 580px) {
+
+    .tpl-grid_xss-ratio_1-1 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .tpl-grid_col-gap_full {
 	grid-column-gap: var(--col-gap-full);
 }
@@ -672,6 +679,15 @@ html {
     background-color: #2ea8e6;
 }
 
+.product_view_default.text_for_disabled {
+    display: none;
+}
+
+body > div > div > div > div > div > div:nth-child(2) > .text_for_selected,
+body > div > div > div > div > div > div:nth-child(2) > .text_for_disabled {
+    display: none;
+}
+
 .pt-card__image {
 	width: 100%;
 }
@@ -867,6 +883,11 @@ html {
     background-color: #e62e7a;
 }
 
+body > div > div > div > div > div > div:nth-child(3) > .text_for_disabled,
+body > div > div > div > div > div > div:nth-child(3) > .text_for_default {
+    display: none;
+}
+
 .product_view_disabled {
     background: linear-gradient(135deg, transparent 42px, #b3b3b3 0) top left;
     pointer-events: none;
@@ -882,6 +903,11 @@ html {
 
 .product_view_disabled .pt-informer {
     background-color: #b3b3b3;
+}
+
+body > div > div > div > div > div > div:nth-child(4) > .text_for_selected,
+body > div > div > div > div > div > div:nth-child(4) > .text_for_default {
+    display: none;
 }
 
 .pt-informer_view_default {

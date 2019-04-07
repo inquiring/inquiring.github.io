@@ -245,6 +245,19 @@ exports.blocks = [
         "name": "tpl-grid",
         "mods": [
             {
+                "name": "xss-ratio",
+                "vals": [
+                    {
+                        "name": "1-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
                 "name": "s-columns",
                 "vals": [
                     {
@@ -913,6 +926,19 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
+                "name": "for",
+                "vals": [
+                    {
+                        "name": "default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
                 "name": "view",
                 "vals": [
                     {
@@ -959,6 +985,32 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "inline"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "for",
+                "vals": [
+                    {
+                        "name": "selected"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "for",
+                "vals": [
+                    {
+                        "name": "disabled"
                     }
                 ]
             }

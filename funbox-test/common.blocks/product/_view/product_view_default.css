@@ -12,3 +12,11 @@
 .product_view_default:hover .pt-informer {
     background-color: #2ea8e6;
 }
+
+.product_view_default.text_for_disabled {
+    display: none;
+}
+body > div > div > div > div > div > div:nth-child(2) > .text_for_selected,
+body > div > div > div > div > div > div:nth-child(2) > .text_for_disabled {
+    display: none;
+}

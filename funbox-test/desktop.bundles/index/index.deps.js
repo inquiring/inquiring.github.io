@@ -233,6 +233,15 @@ exports.deps = [
     },
     {
         "block": "tpl-grid",
+        "mod": "xss-ratio"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "xss-ratio",
+        "val": "1-1"
+    },
+    {
+        "block": "tpl-grid",
         "mod": "s-columns"
     },
     {
@@ -559,6 +568,15 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "for"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "default"
+    },
+    {
+        "block": "text",
         "mod": "view",
         "val": "blue"
     },
@@ -623,6 +641,16 @@ exports.deps = [
         "block": "text",
         "mod": "display",
         "val": "inline"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "selected"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "disabled"
     },
     {
         "block": "text",

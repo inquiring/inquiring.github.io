@@ -14,3 +14,8 @@
 .product_view_disabled .pt-informer {
     background-color: #b3b3b3;
 }
+
+body > div > div > div > div > div > div:nth-child(4) > .text_for_selected,
+body > div > div > div > div > div > div:nth-child(4) > .text_for_default {
+    display: none;
+}

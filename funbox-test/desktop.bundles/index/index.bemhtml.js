@@ -2300,10 +2300,10 @@ if (typeof Object.create === 'function') {
 });;
 return module.exports || exports.BEMHTML;
 }({}, {});
-var api = new BEMHTML({"elemJsInstances":true,"exportName":"BEMHTML","sourceMap":{"from":"index.bemhtml.js"},"to":"/Users/AS/Desktop/funbox"});
+var api = new BEMHTML({"elemJsInstances":true,"exportName":"BEMHTML","sourceMap":{"from":"index.bemhtml.js"},"to":"/Users/AS/Documents/inquiring.github.io/funbox"});
 api.compile(function(match, block, elem, mod, elemMod, oninit, xjstOptions, wrap, replace, extend, mode, def, content, appendContent, prependContent, attrs, addAttrs, js, addJs, mix, addMix, mods, addMods, addElemMods, elemMods, tag, cls, bem, local, applyCtx, applyNext, apply) {
 /* BEM-XJST User code here: */
-/* begin: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
 block('page')(
 
     mode('doctype')(function() {
@@ -2379,8 +2379,8 @@ block('page')(
 
 );
 
-/* end: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
-/* begin: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
 block('ua')(
     tag()('script'),
     bem()(false),
@@ -2391,8 +2391,8 @@ block('ua')(
     ])
 );
 
-/* end: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
-/* begin: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
 block('page').elem('css')(
     bem()(false),
     tag()('style'),
@@ -2404,8 +2404,8 @@ block('page').elem('css')(
     )
 );
 
-/* end: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
-/* begin: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
 block('page').elem('js')(
     bem()(false),
     tag()('script'),
@@ -2421,8 +2421,8 @@ block('page').elem('js')(
     })
 );
 
-/* end: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
-/* begin: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
 block('ua').content()(function() {
     return [
         applyNext(),
@@ -2437,8 +2437,8 @@ block('ua').content()(function() {
     ];
 });
 
-/* end: /Users/AS/Desktop/funbox/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
-/* begin: /Users/AS/Desktop/funbox/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
 block('link')(
     def()(function() {
         var ctx = this.ctx;
@@ -2484,7 +2484,7 @@ block('link')(
         })
 );
 
-/* end: /Users/AS/Desktop/funbox/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/funbox/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
 
 ;oninit(function(exports, context) {
 var BEMContext = exports.BEMContext || context.BEMContext;
