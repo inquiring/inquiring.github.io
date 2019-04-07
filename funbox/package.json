@@ -49,9 +49,7 @@
     "postcss-url": "^7.0.0",
     "rebem-css": "^0.2.0",
     "through2-filter": "^2.0.0",
-    "ym": "^0.1.2"
-  },
-  "devDependencies": {
+    "ym": "^0.1.2",
     "request": ">=2.68.0",
     "atob": ">=2.1.0",
     "cryptiles": ">=4.1.2",
