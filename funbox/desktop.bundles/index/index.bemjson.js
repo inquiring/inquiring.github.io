@@ -39,16 +39,18 @@ module.exports = {
                             elem: 'content',
                             content: {
                                 block: 'tpl-grid',
-                                mods: { 'xs-ratio': '1', 'xss-ratio': '1-1', 's-columns': '8', 'm-columns': '12', 'col-gap': 'full', 'row-gap': 'full'  },
+                                mods: { 'col-gap': 'full', 'row-gap': 'full', 's-columns': '6', },
+                                mix: { block: 'pt-form' },
                                 content: [
+                                    //оглавнение
                                     {
                                         elem: 'fraction',
-                                        elemMods: { 'xs-col':'1', 'xs-order': '', 's-col':'8', 's-order': '', 'm-col':'12', 'm-row':'' },
+                                        elemMods: { 's-col':'6', },
                                         content: {
                                             block: 'text',
                                             mods: { size: '36', view: 'primary', weight: 'regular', align: 'center', },
                                             mix: [
-                                                { block: 'decorator', mods: { 'indent-v': 'm', 'indent-r': 'm' }},
+                                                { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                 { block: 'theme', mods: { color: 'whitepaper-success', font: 'exo2' } },
                                             ],
                                             content: 'Ты сегодня покормил кота?'
@@ -56,565 +58,608 @@ module.exports = {
                                     },
                                     {
                                         elem: 'fraction',
-                                        elemMods: { 'xs-col':'1', 'xs-order': '', 's-col':'4', 's-order': '', 'm-col':'4', 'm-row':'' },
-                                        content: [
-                                            {
-                                                block: 'pt-card',
-                                                mods: { border: 'all', shadow: 'cloud', view: 'default' },
-                                                mix: [
-                                                    { block: 'product',  mods: { view: 'default' } },
-                                                ],
-                                                content: [
+                                        elemMods: { 's-col':'3', 'm-col':'2' },
+                                        mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        content: {
+                                           block: 'pt-form', elem: 'item',
+                                           content: [
+                                                // pt-card
                                                 {
-                                                    elem: 'image',
-                                                    mix: { block: 'product', elem: 'image' },
-                                                },
-                                                {
-                                                    elem: 'header',
-                                                    mix: { block: 'product', elem: 'header' },
-                                                    content: {
-                                                        elem: 'info',
-                                                        content: [
-                                                            {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                mods: { size: 'm', view: 'secondary', weight: 'regular' },
-                                                                mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                content: 'Сказочное заморское яство'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: 'xxxxl', view: 'primary', weight: 'bold' },
-                                                                mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                content: 'Нямушки'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-                                                                mix: { block: 'decorator', mods: {'indent-b': 'm' }},
-                                                                content: 'с фуа-гра'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
-                                                                content: [
-                                                                    {
-                                                                        block: 'text',
-                                                                        tag: 'span',
-                                                                        mods: { weight: 'bold' },
-                                                                        mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
-                                                                        content: '10'
-                                                                    },
-                                                                    {
-                                                                        block: 'text',
-                                                                        tag: 'span',
-                                                                        content: 'порций'
-                                                                    }
-                                                                ]
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
-                                                                content: 'мышь в подарок'
-                                                            },
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    elem: 'footer',
-                                                    elemMods: { distribute: 'right' },
-                                                    mix: { block: 'product', elem: 'footer' },
-                                                    content: {
-                                                        block: 'pt-informer',
-                                                        mods: { view: '' },
-                                                        mix: [
-                                                            { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                            { block: 'brand-logo', mods: { form: 'round', size: 'l' } },
-                                                        ],
+                                                    block: 'pt-card',
+                                                    mix: [
+                                                        { block: 'product',  mods: { view: 'default' } },
+                                                    ],
+                                                    content: [
+                                                    {
+                                                        elem: 'image',
+                                                        mix: { block: 'product', elem: 'image' },
+                                                    },
+                                                    {
+                                                        elem: 'header',
+                                                        mix: { block: 'product', elem: 'header' },
                                                         content: {
-                                                            elem: 'action',
-                                                            elemMods: { distribute: 'center', 'space-a': 's' },
+                                                            elem: 'info',
                                                             content: [
                                                                 {
                                                                     block: 'text',
-                                                                    mods: { size: '42', view: 'primary', weight: 'regular', align: 'center' },
-                                                                    content: '0,5'
+                                                                    tag: 'span',
+                                                                    mods: { size: 'm', view: 'secondary', weight: 'regular' },
+                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
+                                                                    content: 'Сказочное заморское яство'
                                                                 },
                                                                 {
                                                                     block: 'text',
-                                                                    mods: { size: 'xl', view: 'primary', weight: 'regular', align: 'center' },
-                                                                    content: 'кг'
+                                                                    mods: { size: 'xxxxl', view: 'primary', weight: 'bold' },
+                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
+                                                                    content: 'Нямушки'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: 'xxl', view: 'primary', weight: 'bold' },
+                                                                    mix: { block: 'decorator', mods: {'indent-b': 'm' }},
+                                                                    content: 'с фуа-гра'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            mods: { weight: 'bold' },
+                                                                            mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                            content: '10'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'порций'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: 'мышь в подарок'
                                                                 },
                                                             ]
                                                         }
-                                                    }
-                                                }]
-                                            },
-                                            // подпись под картой default
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Чего сидишь? Порадуй котэ,'
                                                     },
                                                     {
-                                                        block: 'text',
-                                                        mods: { view: 'blue' },
-                                                        tag: 'span',
-                                                        content: [
-                                                            {
-                                                                block: 'link',
-                                                                mods: { theme: 'project' },
-                                                                mix: { block: 'text',  mods: { decoration: 'underline-project', display: 'inline' }},
-                                                                url: '#' ,
-                                                                content: 'купи'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                content: '.'
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            // подпись под картой selected
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Печень утки разварная с артишоками.'
-                                                    },
-                                                ]
-                                            },
-                                            // подпись под картой disabled
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mods: { view: 'yellow' },
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Печалька, с фуа-гра закончился.'
-                                                    },
-                                                ]
-                                            },
-                                        ]
-                                    },
-                                    {
-                                        elem: 'fraction',
-                                        elemMods: { 'xs-col':'1', 'xs-order': '', 's-col':'4', 's-order': '', 'm-col':'4', 'm-row':'' },
-                                        content: [
-                                            {
-                                                block: 'pt-card',
-                                                mods: { border: 'all', shadow: 'cloud', view: 'default' },
-                                                mix: [
-                                                    { block: 'product',  mods: { view: 'selected' } },
-                                                ],
-                                                content: [
-                                                {
-                                                    elem: 'image',
-                                                    mix: { block: 'product', elem: 'image' },
-                                                },
-                                                {
-                                                    elem: 'header',
-                                                    mix: { block: 'product', elem: 'header' },
-                                                    content: {
-                                                        elem: 'info',
-                                                        content: [
-                                                            {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                mods: { size: 'm', view: 'secondary', weight: 'regular' },
-                                                                mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                content: 'Сказочное заморское яство'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: 'xxxxl', view: 'primary', weight: 'bold' },
-                                                                mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                content: 'Нямушки'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-                                                                mix: { block: 'decorator', mods: {'indent-b': 'm' }},
-                                                                content: 'с рыбой'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                        elem: 'footer',
+                                                        elemMods: { distribute: 'right' },
+                                                        mix: { block: 'product', elem: 'footer' },
+                                                        content: {
+                                                            block: 'pt-informer',
+                                                            mods: { view: '' },
+                                                            mix: [
+                                                                { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                                { block: 'brand-logo', mods: { form: 'round', size: 'l' } },
+                                                            ],
+                                                            content: {
+                                                                elem: 'action',
+                                                                elemMods: { distribute: 'center', 'space-a': 's' },
                                                                 content: [
                                                                     {
                                                                         block: 'text',
-                                                                        tag: 'span',
-                                                                        mods: { weight: 'bold' },
-                                                                        mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
-                                                                        content: '40'
+                                                                        mods: { size: '42', view: 'primary', weight: 'regular', align: 'center' },
+                                                                        content: '0,5'
                                                                     },
                                                                     {
                                                                         block: 'text',
-                                                                        tag: 'span',
-                                                                        content: 'порций'
-                                                                    }
+                                                                        mods: { size: 'xl', view: 'primary', weight: 'regular', align: 'center' },
+                                                                        content: 'кг'
+                                                                    },
                                                                 ]
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                            }
+                                                        }
+                                                    }]
+                                                },
+                                                // подпись под картой default
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'product', elem: 'buy', js: true },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Чего сидишь? Порадуй котэ,'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: { view: 'blue' },
+                                                            tag: 'span',
+                                                            content: [
+                                                                // {
+                                                                //     tag: 'label',
+                                                                //     attrs: { for: '1' },
+                                                                //     content: [
+                                                                //         {
+                                                                //             tag: 'span',
+                                                                //             content: 'купи'
+                                                                //         },
+                                                                //         {
+                                                                //             block: 'visually-hidden',
+                                                                //             tag: 'input',
+                                                                //             attrs: { type: 'checkbox', name: '1', value: '1', id: '1', },
+                                                                //         }
+                                                                //     ]
+                                                                // },
+                                                                {
+                                                                    block: 'checkbox',
+                                                                    mods: {
+                                                                        theme: 'islands',
+                                                                        size: 'm',
+                                                                    },
+                                                                    name: 'name1',
+                                                                    val: 'val_1',
+                                                                    text: 'купи'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    tag: 'span',
+                                                                    content: '.'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                // подпись под картой selected
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'visually-hidden' },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Печень утки разварная с артишоками.'
+                                                        },
+                                                    ]
+                                                },
+                                                // подпись под картой disabled
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'visually-hidden' },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: { view: 'yellow' },
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Печалька, с фуа-гра закончился.'
+                                                        },
+                                                    ]
+                                                },
+                                           ]
+                                        }
+                                    },
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 's-col':'3', 'm-col':'2' },
+                                        mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        content: {
+                                            block: 'pt-form', elem: 'item',
+                                            content: [
+                                                // pt-card
+                                                {
+                                                    block: 'pt-card',
+                                                    mix: [
+                                                        { block: 'product',  mods: { view: 'default' } },
+                                                    ],
+                                                    content: [
+                                                    {
+                                                        elem: 'image',
+                                                        mix: { block: 'product', elem: 'image' },
+                                                    },
+                                                    {
+                                                        elem: 'header',
+                                                        mix: { block: 'product', elem: 'header' },
+                                                        content: {
+                                                            elem: 'info',
+                                                            content: [
+                                                                {
+                                                                    block: 'text',
+                                                                    tag: 'span',
+                                                                    mods: { size: 'm', view: 'secondary', weight: 'regular' },
+                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
+                                                                    content: 'Сказочное заморское яство'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: 'xxxxl', view: 'primary', weight: 'bold' },
+                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
+                                                                    content: 'Нямушки'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: 'xxl', view: 'primary', weight: 'bold' },
+                                                                    mix: { block: 'decorator', mods: {'indent-b': 'm' }},
+                                                                    content: 'с рыбой'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            mods: { weight: 'bold' },
+                                                                            mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                            content: '40'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'порций'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            mods: { weight: 'bold' },
+                                                                            mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                            content: '2'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'мыши в подарок'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'footer',
+                                                        elemMods: { distribute: 'right' },
+                                                        mix: { block: 'product', elem: 'footer' },
+                                                        content: {
+                                                            block: 'pt-informer',
+                                                            mods: { view: '' },
+                                                            mix: [
+                                                                { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                                { block: 'brand-logo', mods: { form: 'round', size: 'l' } },
+                                                            ],
+                                                            content: {
+                                                                elem: 'action',
+                                                                elemMods: { distribute: 'center', 'space-a': 's' },
                                                                 content: [
                                                                     {
                                                                         block: 'text',
-                                                                        tag: 'span',
-                                                                        mods: { weight: 'bold' },
-                                                                        mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                        mods: { size: '42', view: 'primary', weight: 'regular', align: 'center' },
                                                                         content: '2'
                                                                     },
                                                                     {
                                                                         block: 'text',
-                                                                        tag: 'span',
-                                                                        content: 'мыши в подарок'
-                                                                    }
+                                                                        mods: { size: 'xl', view: 'primary', weight: 'regular', align: 'center' },
+                                                                        content: 'кг'
+                                                                    },
                                                                 ]
-                                                            },
-                                                        ]
-                                                    }
+                                                            }
+                                                        }
+                                                    }]
                                                 },
+                                                // подпись под картой default
                                                 {
-                                                    elem: 'footer',
-                                                    elemMods: { distribute: 'right' },
-                                                    mix: { block: 'product', elem: 'footer' },
-                                                    content: {
-                                                        block: 'pt-informer',
-                                                        mods: { view: '' },
-                                                        mix: [
-                                                            { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                            { block: 'brand-logo', mods: { form: 'round', size: 'l' } },
-                                                        ],
-                                                        content: {
-                                                            elem: 'action',
-                                                            elemMods: { distribute: 'center', 'space-a': 's' },
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'product', elem: 'buy', js: true },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Чего сидишь? Порадуй котэ,'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: { view: 'blue' },
+                                                            tag: 'span',
                                                             content: [
                                                                 {
-                                                                    block: 'text',
-                                                                    mods: { size: '42', view: 'primary', weight: 'regular', align: 'center' },
-                                                                    content: '2'
+                                                                    block: 'checkbox',
+                                                                    mods: {
+                                                                        theme: 'islands',
+                                                                        size: 'm',
+                                                                    },
+                                                                    name: 'name2',
+                                                                    val: 'val_2',
+                                                                    text: 'купи'
                                                                 },
                                                                 {
                                                                     block: 'text',
-                                                                    mods: { size: 'xl', view: 'primary', weight: 'regular', align: 'center' },
-                                                                    content: 'кг'
-                                                                },
+                                                                    tag: 'span',
+                                                                    content: '.'
+                                                                }
                                                             ]
                                                         }
-                                                    }
-                                                }]
-                                            },
-                                            // подпись под картой default
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Чего сидишь? Порадуй котэ,'
-                                                    },
-
-                                                    {
-                                                        block: 'text',
-                                                        mods: { view: 'blue' },
-                                                        tag: 'span',
-                                                        content: [
-                                                            {
-                                                                block: 'link',
-                                                                mods: { theme: 'project' },
-                                                                mix: { block: 'text',  mods: { decoration: 'underline-project', display: 'inline' }},
-                                                                url: '#' ,
-                                                                content: 'купи'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                content: '.'
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            // подпись под картой selected
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Головы щучьи с чесноком да свежайшая сёмгушка.'
-                                                    },
-                                                ]
-                                            },
-                                            // подпись под картой disabled
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mods: { view: 'yellow' },
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Печалька, с рыбой закончился.'
-                                                    },
-                                                ]
-                                            },
-                                        ]
+                                                    ]
+                                                },
+                                                // подпись под картой selected
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'visually-hidden' },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Головы щучьи с чесноком да свежайшая сёмгушка.'
+                                                        },
+                                                    ]
+                                                },
+                                                // подпись под картой disabled
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'visually-hidden' },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: { view: 'yellow' },
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Печалька, с рыбой закончился.'
+                                                        },
+                                                    ]
+                                                },
+                                            ]
+                                        }
                                     },
                                     {
                                         elem: 'fraction',
-                                        elemMods: { 'xs-col':'1', 'xs-order': '', 's-col':'4', 's-order': '', 'm-col':'4', 'm-row':'' },
-                                        content: [
-                                            {
-                                                block: 'pt-card',
-                                                mods: { border: 'all', shadow: 'cloud', view: 'default' },
-                                                mix: [
-                                                    { block: 'product',  mods: { view: 'disabled' } },
-                                                ],
-                                                content: [
+                                        elemMods: { 's-col':'3', 'm-col':'2' },
+                                        mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        content: {
+                                            block: 'pt-form', elem: 'item',
+                                            content: [
+                                                // pt-card
                                                 {
-                                                    elem: 'image',
-                                                    mix: { block: 'product', elem: 'image' },
-                                                },
-                                                {
-                                                    elem: 'header',
-                                                    mix: { block: 'product', elem: 'header' },
-                                                    content: {
-                                                        elem: 'info',
-                                                        content: [
-                                                            {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                mods: { size: 'm', view: 'secondary', weight: 'regular' },
-                                                                mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                content: 'Сказочное заморское яство'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: 'xxxxl', view: 'primary', weight: 'bold' },
-                                                                mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                content: 'Нямушки'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: 'xxl', view: 'primary', weight: 'bold' },
-                                                                mix: { block: 'decorator', mods: {'indent-b': 'm' }},
-                                                                content: 'с курой'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
-                                                                content: [
-                                                                    {
+                                                    block: 'pt-card',
+                                                    mix: [
+                                                        { block: 'product',  mods: { view: 'default' } },
+                                                    ],
+                                                    content: [
+                                                    {
+                                                        elem: 'image',
+                                                        mix: { block: 'product', elem: 'image' },
+                                                    },
+                                                    {
+                                                        elem: 'header',
+                                                        mix: { block: 'product', elem: 'header' },
+                                                        content: {
+                                                            elem: 'info',
+                                                            content: [
+                                                                {
+                                                                    block: 'text',
+                                                                    tag: 'span',
+                                                                    mods: { size: 'm', view: 'secondary', weight: 'regular' },
+                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
+                                                                    content: 'Сказочное заморское яство'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: 'xxxxl', view: 'primary', weight: 'bold' },
+                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
+                                                                    content: 'Нямушки'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: 'xxl', view: 'primary', weight: 'bold' },
+                                                                    mix: { block: 'decorator', mods: {'indent-b': 'm' }},
+                                                                    content: 'с курой'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            mods: { weight: 'bold' },
+                                                                            mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                            content: '100'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'порций'
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            mods: { weight: 'bold' },
+                                                                            mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                            content: '5'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            tag: 'span',
+                                                                            content: 'мышей в подарок'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                    content: {
                                                                         block: 'text',
                                                                         tag: 'span',
-                                                                        mods: { weight: 'bold' },
-                                                                        mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
-                                                                        content: '100'
-                                                                    },
-                                                                    {
-                                                                        block: 'text',
-                                                                        tag: 'span',
-                                                                        content: 'порций'
+                                                                        content: 'заказчик доволен'
                                                                     }
-                                                                ]
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'footer',
+                                                        elemMods: { distribute: 'right' },
+                                                        mix: { block: 'product', elem: 'footer' },
+                                                        content: {
+                                                            block: 'pt-informer',
+                                                            mods: { view: 'default' },
+                                                            mix: [
+                                                                { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                                { block: 'brand-logo', mods: { form: 'round', size: 'l' } },
+                                                            ],
+                                                            content: {
+                                                                elem: 'action',
+                                                                elemMods: { distribute: 'center', 'space-a': 's' },
                                                                 content: [
                                                                     {
                                                                         block: 'text',
-                                                                        tag: 'span',
-                                                                        mods: { weight: 'bold' },
-                                                                        mix: { block: 'decorator', mods: {'indent-r': 'xxs' }},
+                                                                        mods: { size: '42', view: 'primary', weight: 'regular', align: 'center' },
                                                                         content: '5'
                                                                     },
                                                                     {
                                                                         block: 'text',
-                                                                        tag: 'span',
-                                                                        content: 'мышей в подарок'
+                                                                        mods: { size: 'xl', view: 'primary', weight: 'regular', align: 'center' },
+                                                                        content: 'кг'
                                                                     },
                                                                 ]
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                mods: { size: '14', view: 'secondary', weight: 'regular' },
-                                                                content: {
-                                                                    block: 'text',
-                                                                    tag: 'span',
-                                                                    content: 'заказчик доволен'
-                                                                }
-                                                            },
-                                                        ]
-                                                    }
+                                                            }
+                                                        }
+                                                    }]
                                                 },
+                                                // подпись под картой default
                                                 {
-                                                    elem: 'footer',
-                                                    elemMods: { distribute: 'right' },
-                                                    mix: { block: 'product', elem: 'footer' },
-                                                    content: {
-                                                        block: 'pt-informer',
-                                                        mods: { view: 'default' },
-                                                        mix: [
-                                                            { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                            { block: 'brand-logo', mods: { form: 'round', size: 'l' } },
-                                                        ],
-                                                        content: {
-                                                            elem: 'action',
-                                                            elemMods: { distribute: 'center', 'space-a': 's' },
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'product', elem: 'buy', js: true },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Чего сидишь? Порадуй котэ,'
+                                                        },
+                                                        {
+                                                            block: 'text',
+                                                            mods: { view: 'blue' },
+                                                            tag: 'span',
                                                             content: [
                                                                 {
-                                                                    block: 'text',
-                                                                    mods: { size: '42', view: 'primary', weight: 'regular', align: 'center' },
-                                                                    content: '5'
+                                                                    block: 'checkbox',
+                                                                    mods: {
+                                                                        theme: 'hidden',
+                                                                        size: 'm',
+                                                                    },
+                                                                    name: 'name3',
+                                                                    val: 'val_3',
+                                                                    text: 'купи'
                                                                 },
                                                                 {
                                                                     block: 'text',
-                                                                    mods: { size: 'xl', view: 'primary', weight: 'regular', align: 'center' },
-                                                                    content: 'кг'
-                                                                },
+                                                                    tag: 'span',
+                                                                    content: '.'
+                                                                }
                                                             ]
                                                         }
-                                                    }
-                                                }]
-                                            },
-                                            // подпись под картой default
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'default' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Чего сидишь? Порадуй котэ,'
-                                                    },
-
-                                                    {
-                                                        block: 'text',
-                                                        mods: { view: 'blue' },
-                                                        tag: 'span',
-                                                        content: [
-                                                            {
-                                                                block: 'link',
-                                                                mods: { theme: 'project' },
-                                                                mix: { block: 'text',  mods: { decoration: 'underline-project', display: 'inline' }},
-                                                                url: '#' ,
-                                                                content: 'купи'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                content: '.'
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            // подпись под картой selected
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Филе из цыплят с трюфелями в бульоне.'
-                                                    },
-                                                ]
-                                            },
-                                            // подпись под картой disabled
-                                            {
-                                                block: 'text',
-                                                mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
-                                                mix: [
-                                                    { block: 'decorator', mods: { 'indent-v': 'm', }},
-                                                    { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                ],
-                                                content: [
-                                                    {
-                                                        block: 'text',
-                                                        mods: { view: 'yellow' },
-                                                        mix: [
-                                                            { block: 'decorator', mods: { 'indent-r': 'xxs' }},
-                                                        ],
-                                                        tag: 'span',
-                                                        content: 'Печалька, с курой закончился.'
-                                                    },
-                                                ]
-                                            },
-                                        ]
+                                                    ]
+                                                },
+                                                // подпись под картой selected
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'selected' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'visually-hidden' },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Филе из цыплят с трюфелями в бульоне.'
+                                                        },
+                                                    ]
+                                                },
+                                                // подпись под картой disabled
+                                                {
+                                                    block: 'text',
+                                                    mods: { size: 's', view: 'primary', weight: 'regular', align: 'center', for: 'disabled' },
+                                                    mix: [
+                                                        { block: 'decorator', mods: { 'indent-v': 'm', }},
+                                                        { block: 'theme', mods: { color: 'whitepaper-success' } },
+                                                        { block: 'visually-hidden' },
+                                                    ],
+                                                    content: [
+                                                        {
+                                                            block: 'text',
+                                                            mods: { view: 'yellow' },
+                                                            mix: [
+                                                                { block: 'decorator', mods: { 'indent-r': 'xxs' }},
+                                                            ],
+                                                            tag: 'span',
+                                                            content: 'Печалька, с курой закончился.'
+                                                        },
+                                                    ]
+                                                },
+                                            ]
+                                        }
                                     },
 
                                 ]

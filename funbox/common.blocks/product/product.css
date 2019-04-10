@@ -1,5 +1,8 @@
 .product {
+    min-width: 320px;
+    max-width: 350px;
     height: 480px;
+    overflow: hidden;
     position: relative;
     border: 0;
     border-radius: 15px;
@@ -17,4 +20,14 @@
     content: '';
     border-radius: 11px;
     background: linear-gradient(135deg, transparent 40px, #f2f2f2 0) top left;
+}
+@media screen and (min-width: $screen-xs) {
+    .product {
+        min-width: 280px;
+    }
+}
+@media screen and (min-width: 375px) {
+    .product {
+        min-width: 320px;
+    }
 }

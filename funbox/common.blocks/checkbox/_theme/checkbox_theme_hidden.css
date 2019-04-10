@@ -1,0 +1,3 @@
+.checkbox_theme_hidden > .checkbox__box {
+    display: none;
+}
