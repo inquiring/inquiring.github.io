@@ -4150,88 +4150,108 @@ $(function() {
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.js */
-/* begin: ../../node_modules/bem-components/common.blocks/link/link.js */
+/* begin: ../../common.blocks/product/__buy/product__buy.js */
+modules.define('product__buy', ['i-bem-dom'], function(provide, bemDom) {
+
+provide(bemDom.declElem('product', 'buy', {
+    onSetMod: {
+        js: {
+            inited: function() {
+                const products = Array.prototype.slice.call(document.querySelectorAll('.pt-form__item'));
+                console.log(products);
+
+                products.forEach((product) => {
+                    const checkbox = product.querySelector('input[type=checkbox]');
+                    console.log(checkbox);
+                    const buy =  product.querySelector('.product__buy');
+                    console.log(buy);
+                    const card = product.querySelector('.pt-card');
+                    console.log(card);
+                    const textSelected = product.querySelector('.text_for_selected');
+                    console.log(textSelected);
+
+                    const handlerStatusProduct = () => {
+                        if (!checkbox.hasAttribute('checked')) {
+                            checkbox.setAttribute('checked', 'checked');
+                            card.classList.add('product_view_selected');
+                            buy.classList.add('visually-hidden');
+                            textSelected.classList.remove('visually-hidden');
+                        } else {
+                            checkbox.removeAttribute('checked');
+                            card.classList.remove('product_view_selected');
+                            buy.classList.remove('visually-hidden');
+                            textSelected.classList.add('visually-hidden');
+                            card.classList.remove('product_view_selected');
+                        }
+                    }
+
+                    if (checkbox.hasAttribute('disabled')) {
+                        card.classList.add('product_view_disabled');
+                        buy.innerHTML = card.dataset.disabled;
+                    }
+
+                    checkbox.addEventListener('change', handlerStatusProduct);
+                    card.addEventListener('click', handlerStatusProduct);
+                    card.addEventListener('mouseLeave', () => {
+                        if (checkbox.hasAttribute('checked')) {
+                            card.classList.add('product_view_selected');
+                        } else {
+                            card.classList.remove('product_view_selected');
+                        }
+                    })
+
+                });
+            }
+        }
+    }
+}));
+
+});
+
+/* end: ../../common.blocks/product/__buy/product__buy.js */
+/* begin: ../../node_modules/bem-components/common.blocks/checkbox/checkbox.js */
 /**
- * @module link
+ * @module checkbox
  */
 
-modules.define(
-    'link',
-    ['i-bem-dom', 'control', 'events'],
-    function(provide, bemDom, Control, events) {
+modules.define('checkbox', ['i-bem-dom', 'control'], function(provide, bemDom, Control) {
 
 /**
  * @exports
- * @class link
+ * @class checkbox
  * @augments control
  * @bem
  */
-provide(bemDom.declBlock(this.name, Control, /** @lends link.prototype */{
+provide(bemDom.declBlock(this.name, Control, /** @lends checkbox.prototype */{
     onSetMod : {
-        'js' : {
-            'inited' : function() {
-                this._url = this.params.url || this.domElem.attr('href');
-
-                this.hasMod('disabled') && this.domElem.removeAttr('href');
-            }
-        },
-
-        'disabled' : {
+        'checked' : {
             'true' : function() {
-                this.__base.apply(this, arguments);
-                this.domElem
-                    .removeAttr('href')
-                    .attr('aria-disabled', true);
+                this._elem('control').domElem
+                    .attr('checked', true)
+                    .prop('checked', true);
             },
-
             '' : function() {
-                this.__base.apply(this, arguments);
-                this.domElem
-                    .attr('href', this._url)
-                    .removeAttr('aria-disabled');
+                this._elem('control').domElem
+                    .removeAttr('checked')
+                    .prop('checked', false);
             }
         }
     },
 
-    /**
-     * Returns url
-     * @returns {String}
-     */
-    getUrl : function() {
-        return this._url;
-    },
-
-    /**
-     * Sets url
-     * @param {String} url
-     * @returns {link} this
-     */
-    setUrl : function(url) {
-        this._url = url;
-        this.hasMod('disabled') || this.domElem.attr('href', url);
-        return this;
-    },
-
-    _onPointerClick : function(e) {
-        if(this.hasMod('disabled')) {
-            e.preventDefault();
-        } else {
-            var event = new events.Event('click');
-            this._emit(event);
-            event.isDefaultPrevented() && e.preventDefault();
-        }
+    _onChange : function() {
+        this.setMod('checked', this._elem('control').domElem.prop('checked'));
     }
-}, /** @lends link */{
+}, /** @lends checkbox */{
     lazyInit : true,
     onInit : function() {
-        this._domEvents('control').on('pointerclick', this.prototype._onPointerClick);
+        this._domEvents('control').on('change', this.prototype._onChange);
         return this.__base.apply(this, arguments);
     }
 }));
 
 });
 
-/* end: ../../node_modules/bem-components/common.blocks/link/link.js */
+/* end: ../../node_modules/bem-components/common.blocks/checkbox/checkbox.js */
 /* begin: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js */
 modules.define('jquery', ['next-tick'], function(provide, nextTick, $) {
 
@@ -5146,50 +5166,6 @@ dispatcher.register(doc);
 }));
 
 /* end: ../../node_modules/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointernative.js */
-/* begin: ../../node_modules/bem-core/common.blocks/keyboard/__codes/keyboard__codes.js */
-/**
- * @module keyboard__codes
- */
-modules.define('keyboard__codes', function(provide) {
-
-provide(/** @exports */{
-    /** @type {Number} */
-    BACKSPACE : 8,
-    /** @type {Number} */
-    TAB : 9,
-    /** @type {Number} */
-    ENTER : 13,
-    /** @type {Number} */
-    CAPS_LOCK : 20,
-    /** @type {Number} */
-    ESC : 27,
-    /** @type {Number} */
-    SPACE : 32,
-    /** @type {Number} */
-    PAGE_UP : 33,
-    /** @type {Number} */
-    PAGE_DOWN : 34,
-    /** @type {Number} */
-    END : 35,
-    /** @type {Number} */
-    HOME : 36,
-    /** @type {Number} */
-    LEFT : 37,
-    /** @type {Number} */
-    UP : 38,
-    /** @type {Number} */
-    RIGHT : 39,
-    /** @type {Number} */
-    DOWN : 40,
-    /** @type {Number} */
-    INSERT : 45,
-    /** @type {Number} */
-    DELETE : 46
-});
-
-});
-
-/* end: ../../node_modules/bem-core/common.blocks/keyboard/__codes/keyboard__codes.js */
 /* begin: ../../node_modules/bem-components/common.blocks/control/control.js */
 /**
  * @module control
@@ -5376,6 +5352,253 @@ provide(bemDom.declBlock(Control, {
 });
 
 /* end: ../../node_modules/bem-components/desktop.blocks/control/control.js */
+/* begin: ../../node_modules/bem-components/common.blocks/button/button.js */
+/**
+ * @module button
+ */
+
+modules.define(
+    'button',
+    ['i-bem-dom', 'control', 'jquery', 'dom', 'functions', 'keyboard__codes'],
+    function(provide, bemDom, Control, $, dom, functions, keyCodes) {
+
+/**
+ * @exports
+ * @class button
+ * @augments control
+ * @bem
+ */
+provide(bemDom.declBlock(this.name, Control, /** @lends button.prototype */{
+    beforeSetMod : {
+        'pressed' : {
+            'true' : function() {
+                return !this.hasMod('disabled') || this.hasMod('togglable');
+            }
+        },
+
+        'focused' : {
+            '' : function() {
+                return !this._isPointerPressInProgress;
+            }
+        }
+    },
+
+    onSetMod : {
+        'js' : {
+            'inited' : function() {
+                this.__base.apply(this, arguments);
+                this._isPointerPressInProgress = false;
+                this._focusedByPointer = false;
+            }
+        },
+
+        'disabled' : {
+            'true' : function() {
+                this.__base.apply(this, arguments);
+                this.hasMod('togglable') || this.delMod('pressed');
+                this.domElem.attr('aria-disabled', true);
+            },
+            '' : function() {
+                this.__base.apply(this, arguments);
+                this.domElem.removeAttr('aria-disabled');
+            }
+        },
+
+        'focused' : {
+            'true' : function() {
+                this.__base.apply(this, arguments);
+                this._focusedByPointer || this.setMod('focused-hard');
+            },
+
+            '' : function() {
+                this.__base.apply(this, arguments);
+                this.delMod('focused-hard');
+            }
+        }
+    },
+
+    /**
+     * Returns text of the button
+     * @returns {String}
+     */
+    getText : function() {
+        return this._elem('text').domElem.text();
+    },
+
+    /**
+     * Sets text to the button
+     * @param {String} text
+     * @returns {button} this
+     */
+    setText : function(text) {
+        this._elem('text').domElem.text(text || '');
+        return this;
+    },
+
+    _onFocus : function() {
+        if(this._isPointerPressInProgress) return;
+
+        this.__base.apply(this, arguments);
+        this._domEvents('control').on('keydown', this._onKeyDown);
+    },
+
+    _onBlur : function() {
+        this._domEvents('control').un('keydown', this._onKeyDown);
+        this.__base.apply(this, arguments);
+    },
+
+    _onMouseDown : function(e) {
+        e.preventDefault(); // NOTE: prevents button from being blurred at least in FF and Safari
+        this._domEvents().un('mousedown', this._onMouseDown);
+    },
+
+    _onPointerPress : function() {
+        this._domEvents().on('mousedown', this._onMouseDown);
+        if(!this.hasMod('disabled')) {
+            this._isPointerPressInProgress = true;
+            this._domEvents(bemDom.doc).on('pointerrelease', this._onPointerRelease);
+            this.setMod('pressed');
+        }
+    },
+
+    _onPointerRelease : function(e) {
+        this._isPointerPressInProgress = false;
+        this._domEvents(bemDom.doc).un('pointerrelease', this._onPointerRelease);
+
+        if(e.originalEvent.type === 'pointerup' && dom.contains(this.findMixedElem('control').domElem, $(e.target))) {
+            this._focusedByPointer = true;
+            this._focus();
+            this._focusedByPointer = false;
+            this._domEvents().once('pointerclick', this._onPointerClick);
+        } else {
+            this._blur();
+        }
+
+        this.delMod('pressed');
+    },
+
+    _onPointerClick : function() {
+        this
+            ._updateChecked()
+            ._emit('click');
+    },
+
+    _onKeyDown : function(e) {
+        if(this.hasMod('disabled')) return;
+
+        var keyCode = e.keyCode;
+        if(keyCode === keyCodes.SPACE || keyCode === keyCodes.ENTER) {
+            this._domEvents('control')
+                .un('keydown', this._onKeyDown)
+                .on('keyup', this._onKeyUp);
+
+            this._updateChecked()
+                .setMod('pressed');
+        }
+    },
+
+    _onKeyUp : function(e) {
+        this._domEvents('control')
+            .un('keyup', this._onKeyUp)
+            .on('keydown', this._onKeyDown);
+
+        this.delMod('pressed');
+
+        e.keyCode === keyCodes.SPACE && this._doAction();
+
+        this._emit('click');
+    },
+
+    _updateChecked : function() {
+        this.hasMod('togglable') &&
+            (this.hasMod('togglable', 'check')?
+                this.toggleMod('checked') :
+                this.setMod('checked'));
+
+        return this;
+    },
+
+    _doAction : functions.noop
+}, /** @lends button */{
+    lazyInit : true,
+    onInit : function() {
+        this._domEvents('control').on('pointerpress', this.prototype._onPointerPress);
+        return this.__base.apply(this, arguments);
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/button/button.js */
+/* begin: ../../node_modules/bem-core/common.blocks/keyboard/__codes/keyboard__codes.js */
+/**
+ * @module keyboard__codes
+ */
+modules.define('keyboard__codes', function(provide) {
+
+provide(/** @exports */{
+    /** @type {Number} */
+    BACKSPACE : 8,
+    /** @type {Number} */
+    TAB : 9,
+    /** @type {Number} */
+    ENTER : 13,
+    /** @type {Number} */
+    CAPS_LOCK : 20,
+    /** @type {Number} */
+    ESC : 27,
+    /** @type {Number} */
+    SPACE : 32,
+    /** @type {Number} */
+    PAGE_UP : 33,
+    /** @type {Number} */
+    PAGE_DOWN : 34,
+    /** @type {Number} */
+    END : 35,
+    /** @type {Number} */
+    HOME : 36,
+    /** @type {Number} */
+    LEFT : 37,
+    /** @type {Number} */
+    UP : 38,
+    /** @type {Number} */
+    RIGHT : 39,
+    /** @type {Number} */
+    DOWN : 40,
+    /** @type {Number} */
+    INSERT : 45,
+    /** @type {Number} */
+    DELETE : 46
+});
+
+});
+
+/* end: ../../node_modules/bem-core/common.blocks/keyboard/__codes/keyboard__codes.js */
+/* begin: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
+/**
+ * @module button
+ */
+
+modules.define('button', function(provide, Button) {
+
+/**
+ * @exports
+ * @class button
+ * @bem
+ */
+
+provide(Button.declMod({ modName : 'togglable', modVal : '*' }, /** @lends button.prototype */{
+    onSetMod : {
+        'checked' : function(_, modVal) {
+            this.__base.apply(this, arguments);
+            this.domElem.attr('aria-pressed', !!modVal);
+        }
+    }
+}));
+
+});
+
+/* end: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
 /* begin: ../../node_modules/bem-core/common.blocks/loader/_type/loader_type_js.js */
 /**
  * @module loader_type_js

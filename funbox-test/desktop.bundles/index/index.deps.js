@@ -224,42 +224,6 @@ exports.deps = [
     },
     {
         "block": "tpl-grid",
-        "mod": "xs-ratio"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xs-ratio",
-        "val": "1"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xss-ratio"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xss-ratio",
-        "val": "1-1"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "s-columns"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "s-columns",
-        "val": "8"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "m-columns"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "m-columns",
-        "val": "12"
-    },
-    {
-        "block": "tpl-grid",
         "mod": "col-gap"
     },
     {
@@ -278,37 +242,24 @@ exports.deps = [
     },
     {
         "block": "tpl-grid",
+        "mod": "s-columns"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "s-columns",
+        "val": "6"
+    },
+    {
+        "block": "pt-form"
+    },
+    {
+        "block": "tpl-grid",
         "elem": "fraction"
     },
     {
         "block": "tpl-grid",
         "elem": "fraction",
-        "mod": "xs-col"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "xs-order"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
         "mod": "s-col"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-order"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "m-col"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "m-row"
     },
     {
         "block": "text"
@@ -355,15 +306,6 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "decorator",
-        "mod": "indent-r"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-r",
-        "val": "m"
-    },
-    {
         "block": "theme",
         "mod": "color",
         "val": "whitepaper-success"
@@ -377,43 +319,28 @@ exports.deps = [
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "s-col",
-        "val": "4"
+        "val": "3"
     },
     {
         "block": "tpl-grid",
         "elem": "fraction",
-        "mod": "m-col",
-        "val": "4"
+        "mod": "m-col"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-h"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-h",
+        "val": "auto"
+    },
+    {
+        "block": "pt-form",
+        "elem": "item"
     },
     {
         "block": "pt-card"
-    },
-    {
-        "block": "pt-card",
-        "mod": "border"
-    },
-    {
-        "block": "pt-card",
-        "mod": "border",
-        "val": "all"
-    },
-    {
-        "block": "pt-card",
-        "mod": "shadow"
-    },
-    {
-        "block": "pt-card",
-        "mod": "shadow",
-        "val": "cloud"
-    },
-    {
-        "block": "pt-card",
-        "mod": "view"
-    },
-    {
-        "block": "pt-card",
-        "mod": "view",
-        "val": "default"
     },
     {
         "block": "product"
@@ -426,6 +353,16 @@ exports.deps = [
         "block": "product",
         "mod": "view",
         "val": "default"
+    },
+    {
+        "block": "product",
+        "mod": "view",
+        "val": "selected"
+    },
+    {
+        "block": "product",
+        "mod": "view",
+        "val": "disabled"
     },
     {
         "block": "pt-card",
@@ -490,6 +427,10 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "14"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r"
     },
     {
         "block": "decorator",
@@ -576,16 +517,40 @@ exports.deps = [
         "val": "default"
     },
     {
+        "block": "product",
+        "elem": "buy"
+    },
+    {
         "block": "text",
         "mod": "view",
         "val": "blue"
     },
     {
-        "block": "link"
+        "block": "checkbox"
     },
     {
-        "block": "link",
+        "block": "checkbox",
         "mod": "disabled"
+    },
+    {
+        "block": "checkbox",
+        "mod": "focused"
+    },
+    {
+        "block": "checkbox",
+        "mod": "checked"
+    },
+    {
+        "block": "checkbox",
+        "elem": "box"
+    },
+    {
+        "block": "checkbox",
+        "elem": "control"
+    },
+    {
+        "block": "checkbox",
+        "elem": "text"
     },
     {
         "block": "jquery",
@@ -609,43 +574,63 @@ exports.deps = [
         "val": "pointernative"
     },
     {
+        "block": "control"
+    },
+    {
+        "block": "checkbox",
+        "mod": "theme"
+    },
+    {
+        "block": "button"
+    },
+    {
+        "block": "button",
+        "mod": "focused"
+    },
+    {
+        "block": "button",
+        "mod": "hovered"
+    },
+    {
+        "block": "button",
+        "mod": "disabled"
+    },
+    {
+        "block": "button",
+        "mod": "pressed"
+    },
+    {
+        "block": "button",
+        "elem": "text"
+    },
+    {
         "block": "keyboard",
         "elem": "codes"
     },
     {
-        "block": "control"
-    },
-    {
-        "block": "link",
+        "block": "button",
         "mod": "theme"
     },
     {
-        "block": "link",
-        "mod": "theme",
-        "val": "project"
+        "block": "button",
+        "mod": "togglable"
     },
     {
-        "block": "text",
-        "mod": "decoration"
+        "block": "checkbox",
+        "mod": "size"
     },
     {
-        "block": "text",
-        "mod": "decoration",
-        "val": "underline-project"
-    },
-    {
-        "block": "text",
-        "mod": "display"
-    },
-    {
-        "block": "text",
-        "mod": "display",
-        "val": "inline"
+        "block": "checkbox",
+        "mod": "size",
+        "val": "m"
     },
     {
         "block": "text",
         "mod": "for",
         "val": "selected"
+    },
+    {
+        "block": "visually-hidden"
     },
     {
         "block": "text",
@@ -658,19 +643,14 @@ exports.deps = [
         "val": "yellow"
     },
     {
-        "block": "product",
-        "mod": "view",
-        "val": "selected"
-    },
-    {
-        "block": "product",
-        "mod": "view",
-        "val": "disabled"
-    },
-    {
         "block": "pt-informer",
         "mod": "view",
         "val": "default"
+    },
+    {
+        "block": "checkbox",
+        "mod": "theme",
+        "val": "hidden"
     },
     {
         "block": "loader",
@@ -704,20 +684,14 @@ exports.deps = [
     {
         "block": "tpl-grid",
         "elem": "fraction",
-        "mod": "xs-col",
-        "val": "1"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
         "mod": "s-col",
-        "val": "8"
+        "val": "6"
     },
     {
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "m-col",
-        "val": "12"
+        "val": "2"
     },
     {
         "block": "pt-card",
@@ -738,6 +712,21 @@ exports.deps = [
         "val": "s"
     },
     {
+        "block": "checkbox",
+        "mod": "disabled",
+        "val": true
+    },
+    {
+        "block": "checkbox",
+        "mod": "focused",
+        "val": true
+    },
+    {
+        "block": "checkbox",
+        "mod": "checked",
+        "val": true
+    },
+    {
         "block": "jquery",
         "elem": "event",
         "mod": "type",
@@ -748,5 +737,40 @@ exports.deps = [
         "elem": "event",
         "mod": "type",
         "val": "pointerpressrelease"
+    },
+    {
+        "block": "button",
+        "mod": "theme",
+        "val": "islands"
+    },
+    {
+        "block": "button",
+        "mod": "focused",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "hovered",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "disabled",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "pressed",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "togglable",
+        "val": "check"
+    },
+    {
+        "block": "checkbox",
+        "mod": "theme",
+        "val": "islands"
     }
 ];

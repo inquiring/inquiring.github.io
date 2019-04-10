@@ -232,58 +232,6 @@ exports.blocks = [
         "name": "tpl-grid",
         "mods": [
             {
-                "name": "xs-ratio",
-                "vals": [
-                    {
-                        "name": "1"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "xss-ratio",
-                "vals": [
-                    {
-                        "name": "1-1"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "s-columns",
-                "vals": [
-                    {
-                        "name": "8"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "m-columns",
-                "vals": [
-                    {
-                        "name": "12"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
                 "name": "col-gap",
                 "vals": [
                     {
@@ -308,6 +256,22 @@ exports.blocks = [
     },
     {
         "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "s-columns",
+                "vals": [
+                    {
+                        "name": "6"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-form"
+    },
+    {
+        "name": "tpl-grid",
         "elems": [
             {
                 "name": "fraction"
@@ -321,87 +285,12 @@ exports.blocks = [
                 "name": "fraction",
                 "mods": [
                     {
-                        "name": "xs-col",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "xs-order"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "8"
+                                "name": "6"
                             }
                         ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "s-order"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "m-col",
-                        "vals": [
-                            {
-                                "name": "12"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "m-row"
                     }
                 ]
             }
@@ -476,19 +365,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-r",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "theme",
         "mods": [
             {
@@ -524,7 +400,7 @@ exports.blocks = [
                         "name": "s-col",
                         "vals": [
                             {
-                                "name": "4"
+                                "name": "3"
                             }
                         ]
                     }
@@ -542,7 +418,7 @@ exports.blocks = [
                         "name": "m-col",
                         "vals": [
                             {
-                                "name": "4"
+                                "name": "2"
                             }
                         ]
                     }
@@ -551,46 +427,28 @@ exports.blocks = [
         ]
     },
     {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-h",
+                "vals": [
+                    {
+                        "name": "auto"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-form",
+        "elems": [
+            {
+                "name": "item"
+            }
+        ]
+    },
+    {
         "name": "pt-card"
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "border",
-                "vals": [
-                    {
-                        "name": "all"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "shadow",
-                "vals": [
-                    {
-                        "name": "cloud"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-card",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "default"
-                    }
-                ]
-            }
-        ]
     },
     {
         "name": "product"
@@ -936,6 +794,14 @@ exports.blocks = [
         ]
     },
     {
+        "name": "product",
+        "elems": [
+            {
+                "name": "buy"
+            }
+        ]
+    },
+    {
         "name": "text",
         "mods": [
             {
@@ -949,42 +815,29 @@ exports.blocks = [
         ]
     },
     {
-        "name": "link"
+        "name": "checkbox"
     },
     {
-        "name": "link",
+        "name": "checkbox",
         "mods": [
             {
                 "name": "theme",
                 "vals": [
                     {
-                        "name": "project"
+                        "name": "islands"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "text",
+        "name": "checkbox",
         "mods": [
             {
-                "name": "decoration",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "underline-project"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "display",
-                "vals": [
-                    {
-                        "name": "inline"
+                        "name": "m"
                     }
                 ]
             }
@@ -1002,6 +855,9 @@ exports.blocks = [
                 ]
             }
         ]
+    },
+    {
+        "name": "visually-hidden"
     },
     {
         "name": "text",
@@ -1030,32 +886,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "product",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "selected"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "product",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "disabled"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "pt-informer",
         "mods": [
             {
@@ -1063,6 +893,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "checkbox",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "hidden"
                     }
                 ]
             }
