@@ -9,25 +9,18 @@ provide(bemDom.declElem('product', 'buy', {
 
                 products.forEach((product) => {
                     const checkbox = product.querySelector('input[type=checkbox]');
-                    console.log(checkbox);
                     const buy =  product.querySelector('.product__buy');
-                    console.log(buy);
                     const card = product.querySelector('.pt-card');
-                    console.log(card);
-                    const textSelected = product.querySelector('.text_for_selected');
-                    console.log(textSelected);
 
                     const handlerStatusProduct = () => {
                         if (!checkbox.hasAttribute('checked')) {
                             checkbox.setAttribute('checked', 'checked');
+                            card.classList.remove('product_view_default');
                             card.classList.add('product_view_selected');
-                            buy.classList.add('visually-hidden');
-                            textSelected.classList.remove('visually-hidden');
                         } else {
                             checkbox.removeAttribute('checked');
                             card.classList.remove('product_view_selected');
-                            buy.classList.remove('visually-hidden');
-                            textSelected.classList.add('visually-hidden');
+                            card.classList.add('product_view_default');
                             card.classList.remove('product_view_selected');
                         }
                     }

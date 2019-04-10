@@ -1,9 +1,10 @@
 .product {
     min-width: 320px;
-    max-width: 350px;
+    max-width: 320px;
     height: 480px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
     border: 0;
     border-radius: 15px;
     outline: 0;
@@ -19,15 +20,14 @@
     left: 4px;
     content: '';
     border-radius: 11px;
-    background: linear-gradient(135deg, transparent 40px, #f2f2f2 0) top left;
+    background: linear-gradient(135deg, transparent 30px, #f2f2f2 0) top left;
 }
-@media screen and (min-width: $screen-xs) {
+@media screen and (max-width: 360px) {
     .product {
         min-width: 280px;
     }
 }
-@media screen and (min-width: 375px) {
-    .product {
-        min-width: 320px;
-    }
+.product:focus {
+    outline-offset: 2px;
+    outline: 2px solid var(--color-control-bg-border-focus);
 }

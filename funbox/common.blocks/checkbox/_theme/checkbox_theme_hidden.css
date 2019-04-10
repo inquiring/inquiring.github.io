@@ -1,3 +1,16 @@
 .checkbox_theme_hidden > .checkbox__box {
-    display: none;
+    position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.checkbox_theme_hidden > .checkbox__text {
+    cursor: pointer;
+}
+.checkbox__text {
+    border-bottom: 1px dashed #1698d9;
+    text-shadow: -1px 2px 0 rgba(0, 0, 0, 1);
 }

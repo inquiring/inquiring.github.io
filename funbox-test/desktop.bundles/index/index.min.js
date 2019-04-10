@@ -4162,25 +4162,18 @@ provide(bemDom.declElem('product', 'buy', {
 
                 products.forEach((product) => {
                     const checkbox = product.querySelector('input[type=checkbox]');
-                    console.log(checkbox);
                     const buy =  product.querySelector('.product__buy');
-                    console.log(buy);
                     const card = product.querySelector('.pt-card');
-                    console.log(card);
-                    const textSelected = product.querySelector('.text_for_selected');
-                    console.log(textSelected);
 
                     const handlerStatusProduct = () => {
                         if (!checkbox.hasAttribute('checked')) {
                             checkbox.setAttribute('checked', 'checked');
+                            card.classList.remove('product_view_default');
                             card.classList.add('product_view_selected');
-                            buy.classList.add('visually-hidden');
-                            textSelected.classList.remove('visually-hidden');
                         } else {
                             checkbox.removeAttribute('checked');
                             card.classList.remove('product_view_selected');
-                            buy.classList.remove('visually-hidden');
-                            textSelected.classList.add('visually-hidden');
+                            card.classList.add('product_view_default');
                             card.classList.remove('product_view_selected');
                         }
                     }
@@ -5574,31 +5567,6 @@ provide(/** @exports */{
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/keyboard/__codes/keyboard__codes.js */
-/* begin: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
-/**
- * @module button
- */
-
-modules.define('button', function(provide, Button) {
-
-/**
- * @exports
- * @class button
- * @bem
- */
-
-provide(Button.declMod({ modName : 'togglable', modVal : '*' }, /** @lends button.prototype */{
-    onSetMod : {
-        'checked' : function(_, modVal) {
-            this.__base.apply(this, arguments);
-            this.domElem.attr('aria-pressed', !!modVal);
-        }
-    }
-}));
-
-});
-
-/* end: ../../node_modules/bem-components/common.blocks/button/_togglable/button_togglable.js */
 /* begin: ../../node_modules/bem-core/common.blocks/loader/_type/loader_type_js.js */
 /**
  * @module loader_type_js

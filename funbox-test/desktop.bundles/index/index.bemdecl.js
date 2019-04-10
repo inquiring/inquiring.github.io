@@ -134,6 +134,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "control",
+                "vals": [
+                    {
+                        "name": "whitepaper-default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "tpl-layout"
     },
     {
@@ -297,6 +310,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-h",
+                "vals": [
+                    {
+                        "name": "auto"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "text"
     },
     {
@@ -427,19 +453,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-h",
-                "vals": [
-                    {
-                        "name": "auto"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "pt-form",
         "elems": [
             {
@@ -475,6 +488,24 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "image",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "cover"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "product",
         "elems": [
             {
@@ -486,15 +517,33 @@ exports.blocks = [
         "name": "pt-card",
         "elems": [
             {
-                "name": "header"
+                "name": "content"
             }
         ]
     },
     {
-        "name": "product",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "header"
+                "name": "space-h",
+                "vals": [
+                    {
+                        "name": "xxxxl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "space-v",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
             }
         ]
     },
@@ -533,13 +582,26 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator",
+        "name": "text",
         "mods": [
             {
-                "name": "indent-v",
+                "name": "for",
                 "vals": [
                     {
-                        "name": "xxs"
+                        "name": "default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "for",
+                "vals": [
+                    {
+                        "name": "select"
                     }
                 ]
             }
@@ -566,6 +628,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "bold"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-v",
+                "vals": [
+                    {
+                        "name": "xxs"
                     }
                 ]
             }
@@ -781,19 +856,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "for",
-                "vals": [
-                    {
-                        "name": "default"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "product",
         "elems": [
             {
@@ -824,7 +886,7 @@ exports.blocks = [
                 "name": "theme",
                 "vals": [
                     {
-                        "name": "islands"
+                        "name": "hidden"
                     }
                 ]
             }
@@ -857,9 +919,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "visually-hidden"
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -886,6 +945,32 @@ exports.blocks = [
         ]
     },
     {
+        "name": "product",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "selected"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "product",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "disabled"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "pt-informer",
         "mods": [
             {
@@ -899,13 +984,42 @@ exports.blocks = [
         ]
     },
     {
-        "name": "checkbox",
+        "name": "button"
+    },
+    {
+        "name": "button",
         "mods": [
             {
-                "name": "theme",
+                "name": "size",
                 "vals": [
                     {
-                        "name": "hidden"
+                        "name": "l"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "submit"
                     }
                 ]
             }

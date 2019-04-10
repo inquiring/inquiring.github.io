@@ -1,8 +1,8 @@
 .product_view_selected {
-    background: linear-gradient(135deg, transparent 42px, #d91667 0) top left;
+    background: linear-gradient(135deg, transparent 30px, #d91667 0) top left;
 }
 .product_view_selected:hover {
-    background: linear-gradient(135deg, transparent 42px, #e62e7a 0) top left;
+    background: linear-gradient(135deg, transparent 30px, #e62e7a 0) top left;
 }
 .product_view_selected .pt-informer {
     background-color: #d91667;
@@ -11,7 +11,13 @@
     background-color: #e62e7a;
 }
 
-body > div > div > div > div > div > div:nth-child(3) > .text_for_disabled,
-body > div > div > div > div > div > div:nth-child(3) > .text_for_default {
+.product_view_selected .text_for_select {
+    display: inline-block;
+    color: #e62e7a;
+}
+
+.product_view_selected .text_for_default,
+.product_view_selected ~ .text_for_disabled,
+.product_view_selected ~ .text_for_default {
     display: none;
 }

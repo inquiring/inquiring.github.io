@@ -20,7 +20,8 @@ module.exports = {
             menu: 'default',    // размер меню
             size: 'default',    // типографика
             font: 'TrebuchetMS',
-            gap: 'small' }     // отступы в сетках
+            gap: 'small', // отступы в сетках
+            control: 'whitepaper-default'  }
     },
     content: [
         {
@@ -46,6 +47,10 @@ module.exports = {
                                     {
                                         elem: 'fraction',
                                         elemMods: { 's-col':'6', },
+                                        mix: [
+                                            { block: 'decorator', mods: {'indent-h': 'auto' }},
+
+                                        ],
                                         content: {
                                             block: 'text',
                                             mods: { size: '36', view: 'primary', weight: 'regular', align: 'center', },
@@ -59,7 +64,10 @@ module.exports = {
                                     {
                                         elem: 'fraction',
                                         elemMods: { 's-col':'3', 'm-col':'2' },
-                                        mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        mix: [
+                                            { block: 'decorator', mods: {'indent-h': 'auto' }},
+
+                                        ],
                                         content: {
                                            block: 'pt-form', elem: 'item',
                                            content: [
@@ -71,21 +79,32 @@ module.exports = {
                                                     ],
                                                     content: [
                                                     {
-                                                        elem: 'image',
+                                                        elem: 'image', elemMods: { size: 'cover' },
                                                         mix: { block: 'product', elem: 'image' },
                                                     },
                                                     {
-                                                        elem: 'header',
-                                                        mix: { block: 'product', elem: 'header' },
+                                                        elem: 'content',
+                                                        mix: { block: 'decorator', mods: { 'space-h': 'xxxxl', 'space-v': 'l' }},
                                                         content: {
                                                             elem: 'info',
                                                             content: [
                                                                 {
                                                                     block: 'text',
-                                                                    tag: 'span',
-                                                                    mods: { size: 'm', view: 'secondary', weight: 'regular' },
-                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                    content: 'Сказочное заморское яство'
+                                                                    mods: { size: 'm', view: 'secondary', },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            mods: { for: 'default' },
+                                                                            tag: 'span',
+                                                                            content: 'Сказочное заморское яство'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            mods: { for: 'select' },
+                                                                            tag: 'span',
+                                                                            content: 'Котэ не одобряет?'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
                                                                     block: 'text',
@@ -178,29 +197,14 @@ module.exports = {
                                                             mods: { view: 'blue' },
                                                             tag: 'span',
                                                             content: [
-                                                                // {
-                                                                //     tag: 'label',
-                                                                //     attrs: { for: '1' },
-                                                                //     content: [
-                                                                //         {
-                                                                //             tag: 'span',
-                                                                //             content: 'купи'
-                                                                //         },
-                                                                //         {
-                                                                //             block: 'visually-hidden',
-                                                                //             tag: 'input',
-                                                                //             attrs: { type: 'checkbox', name: '1', value: '1', id: '1', },
-                                                                //         }
-                                                                //     ]
-                                                                // },
                                                                 {
                                                                     block: 'checkbox',
                                                                     mods: {
-                                                                        theme: 'islands',
+                                                                        theme: 'hidden',
                                                                         size: 'm',
                                                                     },
-                                                                    name: 'name1',
-                                                                    val: 'val_1',
+                                                                    name: 'foiegras',
+                                                                    val: 'foiegras',
                                                                     text: 'купи'
                                                                 },
                                                                 {
@@ -219,7 +223,6 @@ module.exports = {
                                                     mix: [
                                                         { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                         { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                        { block: 'visually-hidden' },
                                                     ],
                                                     content: [
                                                         {
@@ -239,7 +242,6 @@ module.exports = {
                                                     mix: [
                                                         { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                         { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                        { block: 'visually-hidden' },
                                                     ],
                                                     content: [
                                                         {
@@ -259,7 +261,9 @@ module.exports = {
                                     {
                                         elem: 'fraction',
                                         elemMods: { 's-col':'3', 'm-col':'2' },
-                                        mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        mix: [
+                                            { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        ],
                                         content: {
                                             block: 'pt-form', elem: 'item',
                                             content: [
@@ -267,25 +271,36 @@ module.exports = {
                                                 {
                                                     block: 'pt-card',
                                                     mix: [
-                                                        { block: 'product',  mods: { view: 'default' } },
+                                                        { block: 'product',  mods: { view: 'selected' } },
                                                     ],
                                                     content: [
                                                     {
-                                                        elem: 'image',
+                                                        elem: 'image', elemMods: { size: 'cover' },
                                                         mix: { block: 'product', elem: 'image' },
                                                     },
                                                     {
-                                                        elem: 'header',
-                                                        mix: { block: 'product', elem: 'header' },
+                                                        elem: 'content',
+                                                        mix: { block: 'decorator', mods: { 'space-h': 'xxxxl', 'space-v': 'l' }},
                                                         content: {
                                                             elem: 'info',
                                                             content: [
                                                                 {
                                                                     block: 'text',
-                                                                    tag: 'span',
-                                                                    mods: { size: 'm', view: 'secondary', weight: 'regular' },
-                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                    content: 'Сказочное заморское яство'
+                                                                    mods: { size: 'm', view: 'secondary', },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            mods: { for: 'default' },
+                                                                            tag: 'span',
+                                                                            content: 'Сказочное заморское яство'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            mods: { for: 'select' },
+                                                                            tag: 'span',
+                                                                            content: 'Котэ не одобряет?'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
                                                                     block: 'text',
@@ -394,11 +409,11 @@ module.exports = {
                                                                 {
                                                                     block: 'checkbox',
                                                                     mods: {
-                                                                        theme: 'islands',
+                                                                        theme: 'hidden',
                                                                         size: 'm',
                                                                     },
-                                                                    name: 'name2',
-                                                                    val: 'val_2',
+                                                                    name: 'fish',
+                                                                    val: 'fish',
                                                                     text: 'купи'
                                                                 },
                                                                 {
@@ -417,7 +432,6 @@ module.exports = {
                                                     mix: [
                                                         { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                         { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                        { block: 'visually-hidden' },
                                                     ],
                                                     content: [
                                                         {
@@ -437,7 +451,6 @@ module.exports = {
                                                     mix: [
                                                         { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                         { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                        { block: 'visually-hidden' },
                                                     ],
                                                     content: [
                                                         {
@@ -456,7 +469,7 @@ module.exports = {
                                     },
                                     {
                                         elem: 'fraction',
-                                        elemMods: { 's-col':'3', 'm-col':'2' },
+                                        elemMods: { 's-col':'6', 'm-col':'2' },
                                         mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
                                         content: {
                                             block: 'pt-form', elem: 'item',
@@ -465,25 +478,36 @@ module.exports = {
                                                 {
                                                     block: 'pt-card',
                                                     mix: [
-                                                        { block: 'product',  mods: { view: 'default' } },
+                                                        { block: 'product',  mods: { view: 'disabled' } },
                                                     ],
                                                     content: [
                                                     {
-                                                        elem: 'image',
+                                                        elem: 'image', elemMods: { size: 'cover' },
                                                         mix: { block: 'product', elem: 'image' },
                                                     },
                                                     {
-                                                        elem: 'header',
-                                                        mix: { block: 'product', elem: 'header' },
+                                                        elem: 'content',
+                                                        mix: { block: 'decorator', mods: { 'space-h': 'xxxxl', 'space-v': 'l' }},
                                                         content: {
                                                             elem: 'info',
                                                             content: [
                                                                 {
                                                                     block: 'text',
-                                                                    tag: 'span',
-                                                                    mods: { size: 'm', view: 'secondary', weight: 'regular' },
-                                                                    mix: { block: 'decorator', mods: {'indent-v': 'xxs' }},
-                                                                    content: 'Сказочное заморское яство'
+                                                                    mods: { size: 'm', view: 'secondary', },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'text',
+                                                                            mods: { for: 'default' },
+                                                                            tag: 'span',
+                                                                            content: 'Сказочное заморское яство'
+                                                                        },
+                                                                        {
+                                                                            block: 'text',
+                                                                            mods: { for: 'select' },
+                                                                            tag: 'span',
+                                                                            content: 'Котэ не одобряет?'
+                                                                        }
+                                                                    ]
                                                                 },
                                                                 {
                                                                     block: 'text',
@@ -604,8 +628,8 @@ module.exports = {
                                                                         theme: 'hidden',
                                                                         size: 'm',
                                                                     },
-                                                                    name: 'name3',
-                                                                    val: 'val_3',
+                                                                    name: 'chicken',
+                                                                    val: 'chicken',
                                                                     text: 'купи'
                                                                 },
                                                                 {
@@ -624,7 +648,6 @@ module.exports = {
                                                     mix: [
                                                         { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                         { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                        { block: 'visually-hidden' },
                                                     ],
                                                     content: [
                                                         {
@@ -644,7 +667,6 @@ module.exports = {
                                                     mix: [
                                                         { block: 'decorator', mods: { 'indent-v': 'm', }},
                                                         { block: 'theme', mods: { color: 'whitepaper-success' } },
-                                                        { block: 'visually-hidden' },
                                                     ],
                                                     content: [
                                                         {
@@ -659,6 +681,20 @@ module.exports = {
                                                     ]
                                                 },
                                             ]
+                                        }
+                                    },
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 's-col':'6', },
+                                        mix: { block: 'decorator', mods: {'indent-h': 'auto' }},
+                                        content: {
+                                            block: 'button',
+                                            mods: {
+                                                size: 'l',
+                                                view: 'primary',
+                                                type: 'submit'
+                                            },
+                                            content: 'оформить заказ'
                                         }
                                     },
 

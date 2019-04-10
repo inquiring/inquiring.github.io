@@ -174,6 +174,15 @@ exports.deps = [
         "val": "small"
     },
     {
+        "block": "theme",
+        "mod": "control"
+    },
+    {
+        "block": "theme",
+        "mod": "control",
+        "val": "whitepaper-default"
+    },
+    {
         "block": "tpl-layout"
     },
     {
@@ -262,6 +271,15 @@ exports.deps = [
         "mod": "s-col"
     },
     {
+        "block": "decorator",
+        "mod": "indent-h"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-h",
+        "val": "auto"
+    },
+    {
         "block": "text"
     },
     {
@@ -327,15 +345,6 @@ exports.deps = [
         "mod": "m-col"
     },
     {
-        "block": "decorator",
-        "mod": "indent-h"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-h",
-        "val": "auto"
-    },
-    {
         "block": "pt-form",
         "elem": "item"
     },
@@ -369,16 +378,35 @@ exports.deps = [
         "elem": "image"
     },
     {
+        "block": "pt-card",
+        "elem": "image",
+        "mod": "size"
+    },
+    {
         "block": "product",
         "elem": "image"
     },
     {
         "block": "pt-card",
-        "elem": "header"
+        "elem": "content"
     },
     {
-        "block": "product",
-        "elem": "header"
+        "block": "decorator",
+        "mod": "space-h"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-h",
+        "val": "xxxxl"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v",
+        "val": "l"
     },
     {
         "block": "pt-card",
@@ -395,9 +423,18 @@ exports.deps = [
         "val": "secondary"
     },
     {
-        "block": "decorator",
-        "mod": "indent-v",
-        "val": "xxs"
+        "block": "text",
+        "mod": "for"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "default"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "select"
     },
     {
         "block": "text",
@@ -408,6 +445,11 @@ exports.deps = [
         "block": "text",
         "mod": "weight",
         "val": "bold"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-v",
+        "val": "xxs"
     },
     {
         "block": "text",
@@ -508,15 +550,6 @@ exports.deps = [
         "val": "s"
     },
     {
-        "block": "text",
-        "mod": "for"
-    },
-    {
-        "block": "text",
-        "mod": "for",
-        "val": "default"
-    },
-    {
         "block": "product",
         "elem": "buy"
     },
@@ -581,6 +614,40 @@ exports.deps = [
         "mod": "theme"
     },
     {
+        "block": "checkbox",
+        "mod": "theme",
+        "val": "hidden"
+    },
+    {
+        "block": "checkbox",
+        "mod": "size"
+    },
+    {
+        "block": "checkbox",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "selected"
+    },
+    {
+        "block": "text",
+        "mod": "for",
+        "val": "disabled"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "yellow"
+    },
+    {
+        "block": "pt-informer",
+        "mod": "view",
+        "val": "default"
+    },
+    {
         "block": "button"
     },
     {
@@ -609,48 +676,30 @@ exports.deps = [
     },
     {
         "block": "button",
-        "mod": "theme"
-    },
-    {
-        "block": "button",
-        "mod": "togglable"
-    },
-    {
-        "block": "checkbox",
         "mod": "size"
     },
     {
-        "block": "checkbox",
+        "block": "button",
         "mod": "size",
-        "val": "m"
+        "val": "l"
     },
     {
-        "block": "text",
-        "mod": "for",
-        "val": "selected"
+        "block": "button",
+        "mod": "view"
     },
     {
-        "block": "visually-hidden"
-    },
-    {
-        "block": "text",
-        "mod": "for",
-        "val": "disabled"
-    },
-    {
-        "block": "text",
+        "block": "button",
         "mod": "view",
-        "val": "yellow"
+        "val": "primary"
     },
     {
-        "block": "pt-informer",
-        "mod": "view",
-        "val": "default"
+        "block": "button",
+        "mod": "type"
     },
     {
-        "block": "checkbox",
-        "mod": "theme",
-        "val": "hidden"
+        "block": "button",
+        "mod": "type",
+        "val": "submit"
     },
     {
         "block": "loader",
@@ -692,6 +741,12 @@ exports.deps = [
         "elem": "fraction",
         "mod": "m-col",
         "val": "2"
+    },
+    {
+        "block": "pt-card",
+        "elem": "image",
+        "mod": "size",
+        "val": "cover"
     },
     {
         "block": "pt-card",
@@ -740,11 +795,6 @@ exports.deps = [
     },
     {
         "block": "button",
-        "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "button",
         "mod": "focused",
         "val": true
     },
@@ -762,15 +812,5 @@ exports.deps = [
         "block": "button",
         "mod": "pressed",
         "val": true
-    },
-    {
-        "block": "button",
-        "mod": "togglable",
-        "val": "check"
-    },
-    {
-        "block": "checkbox",
-        "mod": "theme",
-        "val": "islands"
     }
 ];
