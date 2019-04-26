@@ -1,0 +1,12 @@
+@media screen and (max-width: $screen-s-max) {
+    .block-icon {
+        display: flex;
+        padding: 9px 15px;
+    }
+}
+@media screen and (min-width: $screen-s) {
+    .block-icon {
+        display: flex;
+        padding: 43px 60px 43px 24px;
+    }
+}

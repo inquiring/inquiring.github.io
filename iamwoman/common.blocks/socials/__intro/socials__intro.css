@@ -1,0 +1,14 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .socials__intro  > span:nth-child(2) {
+        font-size: 0;
+    }
+}
+.socials__intro {
+    width: 140px;
+}
+@media screen and (min-width: $screen-s) {
+    .socials__intro  {
+        width: 210px;
+    }
+}

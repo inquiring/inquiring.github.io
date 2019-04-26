@@ -1,0 +1,15 @@
+@media screen and (min-width: $screen-s) {
+
+    .slider {
+        width: 393px;
+        height: 647px;
+    }
+}
+
+@media screen and (min-width: $screen-l) {
+
+    .slider {
+        width: 605px;
+        height: 680px;
+    }
+}

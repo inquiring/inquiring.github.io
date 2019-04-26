@@ -1,0 +1,17 @@
+.footer__section-left {
+    display: none;
+}
+
+@media screen and (min-width: $screen-l) {
+
+    .footer__section-left {
+        display: flex;
+        background-color: #decec5;
+        padding: 20px 15px;
+        width: 773px;
+        justify-content: space-between;
+    }
+}
+.footer__section-left:nth-child(3) > div.section__title {
+    font-size: 0;
+}

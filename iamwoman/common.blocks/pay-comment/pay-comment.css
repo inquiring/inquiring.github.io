@@ -1,0 +1,6 @@
+@media screen and (max-width: $screen-xs-max) {
+    .pay-comment {
+        display: none;
+    }
+
+}

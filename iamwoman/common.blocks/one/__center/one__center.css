@@ -1,0 +1,17 @@
+ .one__center {
+    align-self: flex-start;
+}
+@media screen and (max-width: $screen-xs-max) {
+
+    .one__center {
+        margin-bottom: 180px;
+        width: 160px;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+
+    .one__center {
+        margin-bottom: 250px;
+    }
+}

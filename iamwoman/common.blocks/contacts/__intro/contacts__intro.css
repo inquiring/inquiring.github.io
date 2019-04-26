@@ -1,0 +1,8 @@
+.contacts__intro {
+    width: 140px;
+}
+@media screen and (min-width: $screen-s) {
+    .contacts__intro {
+        width: 210px;
+    }
+}

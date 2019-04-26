@@ -1,0 +1,5 @@
+.blog-card {
+    min-height: calc(371px + 167px);
+    width: 244px;
+    margin: auto;
+}

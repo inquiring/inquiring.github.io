@@ -1,0 +1,15 @@
+.footer__section-right {
+    background-color: #ece5e1;
+    padding: 20px 15px;
+}
+
+@media screen and (min-width: $screen-l) {
+    .footer__section-right {
+        padding: 35px 20px 30px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .footer__section-right {
+        width: 667px;
+    }
+}

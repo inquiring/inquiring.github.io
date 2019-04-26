@@ -1,0 +1,21 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .new-card {
+        width: 244px;
+        height: 423px;
+    }
+}
+@media screen and (min-width: $screen-s) {
+
+    .new-card {
+        width: 228px;
+        height: 400px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+
+    .new-card {
+        width: 349px;
+        height: 576px;
+    }
+}

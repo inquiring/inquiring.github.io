@@ -1,0 +1,14 @@
+.one__header {
+    padding: 9px 15px;
+}
+@media screen and (min-width: $screen-s) {
+    .one__header {
+        padding: 21px 60px 33px 16px;
+    }
+}
+
+@media screen and (min-width: $screen-l) {
+    .one__header {
+        padding: 21px 220px 33px 16px;
+    }
+}

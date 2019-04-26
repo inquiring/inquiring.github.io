@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+}
+@media screen and (min-width: $screen-s) {
+    .menu {
+        /* margin-bottom: 130px; */
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .menu {
+        /* justify-content: space-between; */
+    }
+}

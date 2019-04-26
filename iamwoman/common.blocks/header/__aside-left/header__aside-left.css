@@ -1,0 +1,44 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .header__aside-left {
+        display: none;
+    }
+}
+@media screen and (min-width: $screen-s) {
+
+    .header__aside-left {
+        width: 50px;
+        height: 823px;
+        border-radius: 2px;
+        background-color: #ece5e1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header__aside-left .text {
+        -ms-writing-mode: tb-rl;
+        -webkit-writing-mode:vertical-rl;
+        writing-mode: vertical-rl;
+        transform:rotate(180deg);
+        white-space: nowrap;
+        padding-top: 165px;
+        color: #342b2b;
+        /* Text style for "Распродажа" */
+        letter-spacing: 0.7px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+
+    .header__aside-left {
+        width: 75px;
+        height: 759px;
+    }
+    .header__aside-left .text {
+        padding-top: 157px;
+        color: #342b2b;
+        letter-spacing: 0.9px;
+    }
+}

@@ -1,0 +1,24 @@
+.pt-surface_view_project {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width: $screen-xs) {
+
+    .pt-surface_view_project {
+        background-image: url(../../image/menu-bg-mobile-2.jpg);
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+
+    .pt-surface_view_project {
+        background-image: url(../../image/menu-bg-tablet-2.jpg);
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+
+    .pt-surface_view_project {
+        background-image: url(../../image/menu-bg-desktop-2.jpg);
+    }
+}

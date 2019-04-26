@@ -1,0 +1,34 @@
+.header__slider-wrapper .carousel {
+    margin: 0;
+}
+.header__slider-wrapper .carousel .carousel__item {
+    margin: 0;
+    margin-left: auto;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    .header__slider-wrapper .carousel .carousel__item {
+        width: 100%;
+    }
+
+    .header__slider-wrapper .text,
+    .header__slider-wrapper .carousel__control {
+        display: none;
+    }
+}
+@media screen and (min-width: $screen-s) {
+    .header__slider-wrapper {
+        margin-right: 0;
+        width: 452px;
+        margin-left: auto;
+    }
+
+}
+@media screen and (min-width: $screen-l) {
+
+    .header__slider-wrapper {
+        margin-right: -60.5px;
+        width: 825px;
+        margin-left: auto;
+    }
+}
