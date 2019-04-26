@@ -1,0 +1,14 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: $screen-s) {
+    .pagination {
+        width: 80px
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .pagination {
+        width: 120px;
+    }
+}

@@ -1,0 +1,13 @@
+.pt-list__item {
+    margin: 3px 0;
+}
+@media screen and (min-width: $screen-s) {
+    .pt-list__item {
+        margin: 6px 0;
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .pt-list__item {
+        margin: 8px 0;
+    }
+}

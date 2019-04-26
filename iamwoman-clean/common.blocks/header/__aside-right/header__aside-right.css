@@ -1,0 +1,21 @@
+@media screen and (max-width: $screen-m-max) {
+
+    .header__aside-right {
+        display: none;
+    }
+}
+@media screen and (min-width: $screen-l) {
+
+    .header__aside-right {
+        width: 150px;
+        height: 840px;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

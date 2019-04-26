@@ -1,0 +1,19 @@
+@media screen and (min-width: $screen-s) {
+
+    .slider__image-1 {
+        background-image: url(slider-1-tablet.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+}
+
+@media screen and (min-width: $screen-l) {
+
+    .slider__image-1 {
+        background-image: url(slider-1-desktop.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+}

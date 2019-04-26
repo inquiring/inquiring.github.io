@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Light'), local('openSans/fonts/OpenSans-Light'), url('openSans/fonts/opensanslight.woff2') format('woff2'), url('openSans/fonts/opensanslight.woff') format('woff'), url('openSans/fonts/opensanslight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Light Italic'), local('openSans/fonts/OpenSansLight-Italic'), url('openSans/fonts/opensanslightitalic.woff2') format('woff2'), url('openSans/fonts/opensanslightitalic.woff') format('woff'), url('openSans/fonts/opensanslightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans'), local('openSans/fonts/OpenSans'), url('openSans/fonts/opensans.woff2') format('woff2'), url('openSans/fonts/opensans.woff') format('woff'), url('openSans/fonts/opensans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Italic'), local('openSans/fonts/OpenSans-Italic'), url('openSans/fonts/opensansitalic.woff2') format('woff2'), url('openSans/fonts/opensansitalic.woff') format('woff'), url('openSans/fonts/opensansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Semibold'), local('openSans/fonts/OpenSans-Semibold'), url('openSans/fonts/opensanssemibold.woff2') format('woff2'), url('openSans/fonts/opensanssemibold.woff') format('woff'), url('openSans/fonts/opensanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Semibold Italic'), local('openSans/fonts/OpenSans-SemiboldItalic'), url('openSans/fonts/opensanssemibolditalic.woff2') format('woff2'), url('openSans/fonts/opensanssemibolditalic.woff') format('woff'), url('openSans/fonts/opensanssemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Bold'), local('openSans/fonts/OpenSans-Bold'), url('openSans/fonts/opensansbold.woff2') format('woff2'), url('openSans/fonts/opensansbold.woff') format('woff'), url('openSans/fonts/opensansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Bold Italic'), local('openSans/fonts/OpenSans-BoldItalic'), url('openSans/fonts/opensansbolditalic.woff2') format('woff2'), url('openSans/fonts/opensansbolditalic.woff') format('woff'), url('openSans/fonts/opensansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Extrabold'), local('openSans/fonts/OpenSans-Extrabold'), url('openSans/fonts/opensansextrabold.woff2') format('woff2'), url('openSans/fonts/opensansextrabold.woff') format('woff'), url('openSans/fonts/opensansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('openSans/fonts/Open Sans Extrabold Italic'), local('openSans/fonts/OpenSans-ExtraboldItalic'), url('openSans/fonts/opensansextrabolditalic.woff2') format('woff2'), url('openSans/fonts/opensansextrabolditalic.woff') format('woff'), url('openSans/fonts/opensansextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+$font-sans: "Open Sans", Helvetica, Arial, sans-serif;
+$font-serif: Georgia, serif;
+$font-mono: monospace;
+
+.theme_font_openSans {
+	--font-sans: "Open Sans", Helvetica, Arial, sans-serif;
+	--font-serif: Georgia, serif;
+	--font-mono: monospace;
+}
+
+.theme_font_openSans {
+	font-family: var(--font-sans);
+}

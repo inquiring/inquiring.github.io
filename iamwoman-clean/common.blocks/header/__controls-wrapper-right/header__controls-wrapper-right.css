@@ -1,0 +1,22 @@
+
+.header__controls-wrapper-right{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: $screen-xs-max) {
+     .header__controls-wrapper-right{
+        min-width: 105px;
+    }
+}
+@media screen and (min-width: $screen-s) {
+
+    .header__controls-wrapper-right {
+        min-width: 220px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+
+    .header__controls-wrapper-right{
+        width: 290px;
+    }
+}

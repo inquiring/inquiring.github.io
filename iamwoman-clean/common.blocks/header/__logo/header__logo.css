@@ -1,0 +1,10 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .header__logo {
+        display: none;
+    }
+}
+
+    .header__logo {
+        margin-right: 200px;
+    }

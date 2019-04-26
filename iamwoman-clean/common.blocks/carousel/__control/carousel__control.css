@@ -1,0 +1,10 @@
+.carousel__control {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    cursor: pointer;
+    user-select: none;
+}

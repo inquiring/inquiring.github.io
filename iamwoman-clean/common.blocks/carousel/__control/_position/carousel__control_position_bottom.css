@@ -1,0 +1,24 @@
+
+@media screen and (min-width: $screen-s) {
+
+    .carousel__control_position_bottom {
+        top: 93%;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+    .carousel__control_type_left.carousel__control_position_bottom {
+        margin-left: 40%;
+    }
+    .carousel__control_type_right.carousel__control_position_bottom {
+        margin-right: 40%;
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .carousel__control_type_left.carousel__control_position_bottom {
+        margin-left: 25%;
+    }
+    .carousel__control_type_right.carousel__control_position_bottom {
+        margin-right: 60%;
+    }
+}

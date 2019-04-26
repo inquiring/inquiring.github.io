@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Light'), local('cormorant/fonts/Cormorant-Light'), url('cormorant/fonts/Cormorantlight.woff2') format('woff2'), url('cormorant/fonts/Cormorantlight.woff') format('woff'), url('cormorant/fonts/Cormorantlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Light Italic'), local('cormorant/fonts/Cormorant-LightItalic'), url('cormorant/fonts/Cormorantlightitalic.woff2') format('woff2'), url('cormorant/fonts/Cormorantlightitalic.woff') format('woff'), url('cormorant/fonts/Cormorantlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant'), local('cormorant/fonts/Cormorant-Regular'), url('cormorant/fonts/Cormorant.woff2') format('woff2'), url('cormorant/fonts/Cormorant.woff') format('woff'), url('cormorant/fonts/Cormorant.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Italic'), local('cormorant/fonts/Cormorant-Italic'), url('cormorant/fonts/Cormorantitalic.woff2') format('woff2'), url('cormorant/fonts/Cormorantitalic.woff') format('woff'), url('cormorant/fonts/Cormorantitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Book'), local('cormorant/fonts/Cormorant-Book'), url('cormorant/fonts/Cormorantbook.woff2') format('woff2'), url('cormorant/fonts/Cormorantbook.woff') format('woff'), url('cormorant/fonts/Cormorantbook.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Book Italic'), local('cormorant/fonts/Cormorant-BookItalic'), url('cormorant/fonts/Cormorantbookitalic.woff2') format('woff2'), url('cormorant/fonts/Cormorantbookitalic.woff') format('woff'), url('cormorant/fonts/Cormorantbookitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Semibold'), local('cormorant/fonts/Cormorant-Semibold'), url('cormorant/fonts/Cormorantsemibold.woff2') format('woff2'), url('cormorant/fonts/Cormorantsemibold.woff') format('woff'), url('cormorant/fonts/Cormorantsemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Semibold Italic'), local('cormorant/fonts/Cormorant-SemiboldItalic'), url('cormorant/fonts/Cormorantsemibolditalic.woff2') format('woff2'), url('cormorant/fonts/Cormorantsemibolditalic.woff') format('woff'), url('cormorant/fonts/Cormorantsemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Bold'), local('cormorant/fonts/Cormorant-Bold'), url('cormorant/fonts/Cormorantbold.woff2') format('woff2'), url('cormorant/fonts/Cormorantbold.woff') format('woff'), url('cormorant/fonts/Cormorantbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: local('cormorant/fonts/Cormorant Bold Italic'), local('cormorant/fonts/Cormorant-BoldItalic'), url('cormorant/fonts/Cormorantbolditalic.woff2') format('woff2'), url('cormorant/fonts/Cormorantbolditalic.woff') format('woff'), url('cormorant/fonts/Cormorantbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+$font-sans: "Cormorant", Helvetica, Arial, sans-serif;
+$font-serif: Georgia, serif;
+$font-mono: monospace;
+
+.theme_font_cormorant {
+	--font-sans: "Cormorant", Helvetica, Arial, sans-serif;
+	--font-serif: Georgia, serif;
+	--font-mono: monospace;
+}
+
+.theme_font_cormorant {
+	font-family: var(--font-sans);
+}
