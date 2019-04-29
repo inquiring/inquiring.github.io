@@ -747,10 +747,6 @@ exports.deps = [
         "block": "blog-card"
     },
     {
-        "block": "blog-card",
-        "elem": "footer"
-    },
-    {
         "block": "decorator",
         "mod": "indent-b",
         "val": "s"

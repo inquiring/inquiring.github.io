@@ -1251,14 +1251,6 @@ exports.blocks = [
         "name": "blog-card"
     },
     {
-        "name": "blog-card",
-        "elems": [
-            {
-                "name": "footer"
-            }
-        ]
-    },
-    {
         "name": "decorator",
         "mods": [
             {

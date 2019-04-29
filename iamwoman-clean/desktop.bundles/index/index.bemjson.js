@@ -1172,7 +1172,7 @@ module.exports = {
                                             {
                                                 elem: 'inner', elemMods: { 'direction': 'row', content: 'center' },
                                                 content: [
-                                                    // элемент карусели
+                                                    // элемент карусели 1
                                                     {
                                                         elem: 'item',
                                                         elemMods: { 'l-state': 'active' },
@@ -1181,36 +1181,29 @@ module.exports = {
                                                             mix: { block: 'blog-card' },
                                                             content: [
                                                             {
-                                                                tag: 'picture',
-                                                                content: [
-                                                                    {
-                                                                        tag: 'source',
-                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-1-desktop.jpg' },
-                                                                    },
-                                                                    {
-                                                                        tag: 'source',
-                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-1-tablet.jpg' },
-                                                                    },
-                                                                    {
-                                                                        block: 'image',
-                                                                        mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                        url: '/common.blocks/image/blog-image-1-mobile.jpg',
-                                                                        alt: ''
-                                                                    },
-                                                                ]
+                                                                elem: 'content',
+                                                                content: {
+                                                                    tag: 'picture',
+                                                                    content: [
+                                                                        {
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-1-desktop.jpg' },
+                                                                        },
+                                                                        {
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-1-tablet.jpg' },
+                                                                        },
+                                                                        {
+                                                                            block: 'image',
+
+                                                                            url: '/common.blocks/blog-card/__image/blog-image-1-mobile.jpg',
+                                                                            alt: ''
+                                                                        },
+                                                                    ]
+                                                                }
                                                             },
                                                             {
-                                                                elem: 'footer',
-                                                                mix: [
-                                                                    { block: 'blog-card',  elem: 'footer' },
-                                                                    {
-                                                                        block: 'decorator',
-                                                                        mods: {
-                                                                            // 'space-h': 's',
-                                                                            // 'space-v': 'l'
-                                                                        }
-                                                                    },
-                                                                ],
+                                                                elem: 'content',
                                                                 content: {
                                                                     block: 'info',
                                                                     attrs: { style: 'width: 100%'},
@@ -1238,7 +1231,6 @@ module.exports = {
                                                                                 weight: 'light',
                                                                                 spacing: '08'
                                                                             },
-                                                                            // block: 'decorator', mods: { 'indent-b': 'm' },
                                                                             content: 'Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни'
                                                                         },
                                                                     ]
@@ -1246,7 +1238,7 @@ module.exports = {
                                                             }]
                                                         }
                                                     },
-                                                    // элемент карусели
+                                                    // элемент карусели 2
                                                     {
                                                         elem: 'item',
                                                         elemMods: { state: 'active', 's-state': 'active' },
@@ -1255,74 +1247,67 @@ module.exports = {
                                                                 block: 'pt-card',
                                                                 mix: { block: 'blog-card' },
                                                                 content: [
-                                                                {
-                                                                    block: 'pt-card', elem: 'image', elemMods: { size: 'cover'},
-                                                                    tag: 'picture',
-                                                                    content: [
-                                                                        {
-                                                                            tag: 'source',
-                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-2-desktop.jpg' },
-                                                                        },
-                                                                        {
-                                                                            tag: 'source',
-                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-2-tablet.jpg' },
-                                                                        },
-                                                                        {
-                                                                            block: 'image',
-                                                                            url: '/common.blocks/image/blog-image-2-mobile.jpg',
-                                                                            alt: ''
-                                                                        },
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    elem: 'footer',
-                                                                    mix: [
-                                                                        { block: 'blog-card',  elem: 'footer' },
-                                                                        {
-                                                                            block: 'decorator',
-                                                                            mods: {
-                                                                                // 'space-h': 's',
-                                                                                // 'space-v': 'l'
-                                                                            }
-                                                                        },
-                                                                    ],
-                                                                    content: {
-                                                                        block: 'info',
-                                                                        attrs: { style: 'width: 100%'},
-                                                                        mix: {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                view: 'primary',
-                                                                                align: 'center',
-                                                                            },
-                                                                        },
-                                                                        content: [
-                                                                            {
+                                                                    {
+                                                                        elem: 'content',
+                                                                        content: {
+                                                                            tag: 'picture',
+                                                                            content: [
+                                                                                {
+                                                                                    tag: 'source',
+                                                                                    attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-2-desktop.jpg' },
+                                                                                },
+                                                                                {
+                                                                                    tag: 'source',
+                                                                                    attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-2-tablet.jpg' },
+                                                                                },
+                                                                                {
+                                                                                    block: 'image',
+                                                                                    url: '/common.blocks/blog-card/__image/blog-image-2-mobile.jpg',
+                                                                                    alt: ''
+                                                                                },
+                                                                            ]
+                                                                        }
+                                                                    },
+                                                                    {
+                                                                        elem: 'content',
+                                                                        content: {
+                                                                            block: 'info',
+                                                                            attrs: { style: 'width: 100%'},
+                                                                            mix: {
                                                                                 block: 'text',
                                                                                 mods: {
-                                                                                    size: '18-24-30',
-                                                                                    weight: 'semibold',
+                                                                                    view: 'primary',
+                                                                                    align: 'center',
                                                                                 },
-                                                                                mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                                                content: 'Аксессуары осень — зима ‘18'
                                                                             },
-                                                                            {
-                                                                                block: 'text',
-                                                                                mods: {
-                                                                                    size: '16',
-                                                                                    weight: 'light',
-                                                                                    spacing: '08'
+                                                                            content: [
+                                                                                {
+                                                                                    block: 'text',
+                                                                                    mods: {
+                                                                                        size: '18-24-30',
+                                                                                        weight: 'semibold',
+                                                                                    },
+                                                                                    mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                                    content: 'Аксессуары осень — зима ‘18'
                                                                                 },
-                                                                                // block: 'decorator', mods: { 'indent-b': 'm' },
-                                                                                content: 'Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук'
-                                                                            },
-                                                                        ]
+                                                                                {
+                                                                                    block: 'text',
+                                                                                    mods: {
+                                                                                        size: '16',
+                                                                                        weight: 'light',
+                                                                                        spacing: '08'
+                                                                                    },
+                                                                                    // block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                                    content: 'Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук'
+                                                                                },
+                                                                            ]
+                                                                        }
                                                                     }
-                                                                }]
+                                                                ]
                                                             },
                                                         ]
                                                     },
-                                                    // элемент карусели
+                                                    // элемент карусели 3
                                                     {
                                                         elem: 'item',
                                                         elemMods: { 's-state': 'active' },
@@ -1332,36 +1317,28 @@ module.exports = {
                                                                 mix: { block: 'blog-card' },
                                                                 content: [
                                                                 {
-                                                                    tag: 'picture',
-                                                                    content: [
-                                                                        {
-                                                                            tag: 'source',
-                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-3-desktop.jpg' },
-                                                                        },
-                                                                        {
-                                                                            tag: 'source',
-                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-3-tablet.jpg' },
-                                                                        },
-                                                                        {
-                                                                            block: 'image',
-                                                                            mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                            url: '/common.blocks/image/blog-image-3-mobile.jpg',
-                                                                            alt: ''
-                                                                        },
-                                                                    ]
+                                                                    elem: 'content',
+                                                                    content: {
+                                                                        tag: 'picture',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'source',
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-3-desktop.jpg' },
+                                                                            },
+                                                                            {
+                                                                                tag: 'source',
+                                                                                attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-3-tablet.jpg' },
+                                                                            },
+                                                                            {
+                                                                                block: 'image',
+                                                                                url: '/common.blocks/blog-card/__image/blog-image-3-mobile.jpg',
+                                                                                alt: ''
+                                                                            },
+                                                                        ]
+                                                                    }
                                                                 },
                                                                 {
-                                                                    elem: 'footer',
-                                                                    mix: [
-                                                                        { block: 'blog-card',  elem: 'footer' },
-                                                                        {
-                                                                            block: 'decorator',
-                                                                            mods: {
-                                                                                // 'space-h': 's',
-                                                                                // 'space-v': 'l'
-                                                                            }
-                                                                        },
-                                                                    ],
+                                                                    elem: 'content',
                                                                     content: {
                                                                         block: 'info',
                                                                         attrs: { style: 'width: 100%'},
@@ -1389,7 +1366,6 @@ module.exports = {
                                                                                     weight: 'light',
                                                                                     spacing: '08'
                                                                                 },
-                                                                                // block: 'decorator', mods: { 'indent-b': 'm' },
                                                                                 content: 'Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный'
                                                                             },
                                                                         ]
@@ -1398,7 +1374,7 @@ module.exports = {
                                                             }
                                                         ]
                                                     },
-                                                    // элемент карусели
+                                                    // элемент карусели 4
                                                     {
                                                         elem: 'item',
                                                         elemMods: { 'l-state': 'active' },
@@ -1407,36 +1383,28 @@ module.exports = {
                                                             mix: { block: 'blog-card' },
                                                             content: [
                                                             {
-                                                                tag: 'picture',
-                                                                content: [
-                                                                    {
-                                                                        tag: 'source',
-                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-4-desktop.jpg' },
-                                                                    },
-                                                                    {
-                                                                        tag: 'source',
-                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-4-tablet.jpg' },
-                                                                    },
-                                                                    {
-                                                                        block: 'image',
-                                                                        mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                        url: '/common.blocks/image/blog-image-4-mobile.jpg',
-                                                                        alt: ''
-                                                                    },
-                                                                ]
+                                                                elem: 'content',
+                                                                content: {
+                                                                    tag: 'picture',
+                                                                    content: [
+                                                                        {
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-4-desktop.jpg' },
+                                                                        },
+                                                                        {
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-4-tablet.jpg' },
+                                                                        },
+                                                                        {
+                                                                            block: 'image',
+                                                                            url: '/common.blocks/blog-card/__image/blog-image-4-mobile.jpg',
+                                                                            alt: ''
+                                                                        },
+                                                                    ]
+                                                                }
                                                             },
                                                             {
-                                                                elem: 'footer',
-                                                                mix: [
-                                                                    { block: 'blog-card',  elem: 'footer' },
-                                                                    {
-                                                                        block: 'decorator',
-                                                                        mods: {
-                                                                            // 'space-h': 's',
-                                                                            // 'space-v': 'l'
-                                                                        }
-                                                                    },
-                                                                ],
+                                                                elem: 'content',
                                                                 content: {
                                                                     block: 'info',
                                                                     attrs: { style: 'width: 100%'},
