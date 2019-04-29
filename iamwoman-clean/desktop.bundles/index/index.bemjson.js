@@ -1195,7 +1195,8 @@ module.exports = {
                                                                         },
                                                                         {
                                                                             block: 'image',
-
+                                                                            width: '100%',
+                                                                            height: '100%',
                                                                             url: '/common.blocks/blog-card/__image/blog-image-1-mobile.jpg',
                                                                             alt: ''
                                                                         },
@@ -1262,6 +1263,8 @@ module.exports = {
                                                                                 },
                                                                                 {
                                                                                     block: 'image',
+                                                                                    width: '100%',
+                                                                                    height: '100%',
                                                                                     url: '/common.blocks/blog-card/__image/blog-image-2-mobile.jpg',
                                                                                     alt: ''
                                                                                 },
@@ -1331,6 +1334,8 @@ module.exports = {
                                                                             },
                                                                             {
                                                                                 block: 'image',
+                                                                                width: '100%',
+                                                                                height: '100%',
                                                                                 url: '/common.blocks/blog-card/__image/blog-image-3-mobile.jpg',
                                                                                 alt: ''
                                                                             },
@@ -1397,6 +1402,8 @@ module.exports = {
                                                                         },
                                                                         {
                                                                             block: 'image',
+                                                                            width: '100%',
+                                                                            height: '100%',
                                                                             url: '/common.blocks/blog-card/__image/blog-image-4-mobile.jpg',
                                                                             alt: ''
                                                                         },
