@@ -1,5 +1,20 @@
 .blog-card {
-    min-height: calc(371px + 167px);
     width: 244px;
+    min-height: calc(371px + 167px);
     margin: auto;
+}
+@media screen and (min-width: $screen-s) {
+    .blog-card {
+        width: 345px;
+        min-height: calc(541px + 147px);
+    }
+    .blog-card .pt-card__footer {
+        padding: 9px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .blog-card {
+        width: 401px;
+        min-height: calc(618px + 167px);
+    }
 }

@@ -1,0 +1,10 @@
+/* Подпишись на новости I AM WOMEN  */
+.form-card__content .info .text:nth-child(1) {
+    margin-left: 34px;
+    margin-right: 34px;
+    margin-bottom: 30px;
+}
+/* Ваш E-mail */
+.form-card__content .info .input {
+    margin-bottom: 45px;
+}

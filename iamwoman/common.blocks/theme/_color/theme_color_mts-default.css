@@ -1,0 +1,35 @@
+.theme_color_mts-default {
+    --color-bg-brand: #e30613;
+    --color-bg-action: rgb(250, 61, 74);
+    --color-bg-selection: rgb(252, 141, 150);
+    --color-bg-hover: rgba(0, 0, 0, 0.15);
+    --color-bg-default: #fff;
+    --color-bg-soft: rgba(255, 255, 255, 0.97);
+    --color-bg-success: #00985f;
+    --color-bg-alert: #f33;
+    --color-bg-warning: #f90;
+    --color-bg-normal: #dde3e5;
+    --color-bg-system: #778a9b;
+    --color-bg-link: rgba(69, 170, 242, 0.4);
+    --color-typo-brand: #e30613;
+    --color-typo-primary: #000;
+    --color-typo-promo: rgba(0, 0, 0, 0.8);
+    --color-typo-secondary: rgba(0, 0, 0, 0.6);
+    --color-typo-ghost: rgba(0, 0, 0, 0.3);
+    --color-typo-disable: rgba(0, 0, 0, 0.3);
+    --color-typo-success: #00985f;
+    --color-typo-warning: #f90;
+    --color-typo-alert: #f33;
+    --color-link: #0070f0;
+    --color-link-external: #0070f0;
+    --color-link-minor: rgb(133, 137, 173);
+    --color-link-hover: rgb(0, 95, 204);
+}
+
+.theme_color_mts-brand,
+.theme_color_mts-default {
+    --color-bg-border: rgba(0, 0, 0, 0.05);
+    --color-bg-stripe: rgba(0, 0, 0, 0.04);
+    --color-bg-ghost: rgba(0, 0, 0, 0.08);
+    --color-bg-tone: rgba(0, 0, 0, 0.9);
+}

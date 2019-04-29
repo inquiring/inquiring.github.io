@@ -5,7 +5,6 @@ provide(bemDom.declElem('product', 'buy', {
         js: {
             inited: function() {
                 const products = Array.prototype.slice.call(document.querySelectorAll('.pt-form__item'));
-                console.log(products);
 
                 products.forEach((product) => {
                     const checkbox = product.querySelector('input[type=checkbox]');

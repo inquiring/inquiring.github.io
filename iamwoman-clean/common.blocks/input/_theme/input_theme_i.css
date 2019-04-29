@@ -1,6 +1,6 @@
 .input_theme_i {
+    position: relative;
     background: none;
-    width: 283px;
     font-family: inherit;
 }
 .input_theme_i::before {
@@ -15,7 +15,7 @@
     box-sizing: border-box;
     padding: 0;
     padding-left: 33px;
-    width: 100%;
+    width: fit-content;
     border: 0;
     border-bottom: 1px solid #342b2b;
     outline: none;
@@ -44,4 +44,10 @@
 .input_theme_i .input__control:focus {
     background: white;
 
+}
+@media screen and (min-width: $screen-s) {
+
+    .input_theme_i .input__control {
+        width: 283px;
+    }
 }

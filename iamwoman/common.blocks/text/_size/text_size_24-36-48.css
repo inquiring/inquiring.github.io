@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (min-width: $screen-m) {
+@media screen and (min-width: $screen-l) {
 
     .text_size_24-36-48 {
         font-size: 48px;

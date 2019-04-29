@@ -12,7 +12,7 @@ module.exports = {
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
     mods: {
-        theme: 'islands'
+        theme: 'i'
     },
     mix: {
         block: 'theme',
@@ -39,233 +39,233 @@ module.exports = {
                         {
                             elem: 'container', elemMods: { align: 'center', size: 'm' },
                             content: [
-                                {
-                                    block: 'pt-surface',
-                                    attrs: { id: 'demoModal' }, // у кнопки для вызова такой модалки должен быть атрибут data-name: 'demoModal'
-                                    mods: { position: 'absolute', view: 'project' },
-                                    content: [
-                                    {
-                                        elem: 'window',
-                                        content: [
-                                        {
-                                            elem: 'content',
-                                            elemMods: { size: 'full', view: 'inverse', },
-                                            content: [
-                                                {
-                                                    elem: 'close',
-                                                    elemMods: { position: 'absolute', view: 'desktop' },
-                                                    mix: { block: 'icon', mods: { 'close': 'm-primary' } },
-                                                    content: {
-                                                        block: 'icon', mods: { 'name': 'close', size: 'm' },
-                                                    }
-                                                },
-                                                {
-                                                    block: 'text',
-                                                    mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                                    mods: {
-                                                        size: 'xxl',
-                                                        view: 'primary',
-                                                    },
-                                                    content: 'Каталог'
-                                                },
-                                                {
-                                                    block: 'pt-list',
-                                                    mix: {
-                                                            block: 'text',
-                                                            mods: {
-                                                                size: '16-18-18',
-                                                                view: 'primary',
-                                                            },
-                                                        },
-                                                    content: [
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 1,
-                                                                content: 'Пальто',
-                                                            },
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 2,
-                                                                content: 'Жилеты и жакеты',
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 3,
-                                                                content: 'Костюмы',
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 4,
-                                                                content: 'Трикотаж'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 5,
-                                                                content: 'Платья'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 6,
-                                                                content: 'Блузы и топы'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 7,
-                                                                content: 'Футболки'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 8,
-                                                                content: 'Юбки и брюки'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 9,
-                                                                content: 'Аксессуары'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 10,
-                                                                content: 'О бренде'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 11,
-                                                                content: 'Оферта'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 12,
-                                                                content: 'Оплата и доставка'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 13,
-                                                                content: 'Возврат'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 14,
-                                                                content: 'Контакты'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 15,
-                                                                content: 'Sale'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 16,
-                                                                content: 'New'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 17,
-                                                                content: 'Отзывы'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 18,
-                                                                content: 'Looks'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 19,
-                                                                content: 'Блог'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 20,
-                                                                content: 'Streetstyle'
-                                                            }
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'input',
-                                                                mods: {
-                                                                    theme: 'i',
-                                                                    size: 'l',
-                                                                    type: 'search'
-                                                                },
-                                                                tabIndex: 21,
-                                                                placeholder: 'Найти на сайте',
-                                                            },
-                                                        },
-                                                        {
-                                                            elem: 'item',
-                                                            content: {
-                                                                block: 'link',
-                                                                tabIndex: 22,
-                                                                content: 'Войти в личный кабинет'
-                                                            }
-                                                        },
-                                                    ]
-                                                }
-                                            ]
-                                        }]
-                                    }],
-                                    attrs: { style: 'display: block;'}
-                                },
+                                // {
+                                //     block: 'pt-surface',
+                                //     attrs: { id: 'demoModal' }, // у кнопки для вызова такой модалки должен быть атрибут data-name: 'demoModal'
+                                //     mods: { position: 'absolute', view: 'project' },
+                                //     content: [
+                                //     {
+                                //         elem: 'window',
+                                //         content: [
+                                //         {
+                                //             elem: 'content',
+                                //             elemMods: { size: 'full', view: 'inverse', },
+                                //             content: [
+                                //                 {
+                                //                     elem: 'close',
+                                //                     elemMods: { position: 'absolute', view: 'desktop' },
+                                //                     mix: { block: 'icon', mods: { 'close': 'm-primary' } },
+                                //                     content: {
+                                //                         block: 'icon', mods: { 'name': 'close', size: 'm' },
+                                //                     }
+                                //                 },
+                                //                 {
+                                //                     block: 'text',
+                                //                     mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+                                //                     mods: {
+                                //                         size: 'xxl',
+                                //                         view: 'primary',
+                                //                     },
+                                //                     content: 'Каталог'
+                                //                 },
+                                //                 {
+                                //                     block: 'pt-list',
+                                //                     mix: {
+                                //                             block: 'text',
+                                //                             mods: {
+                                //                                 size: '16-18-18',
+                                //                                 view: 'primary',
+                                //                             },
+                                //                         },
+                                //                     content: [
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 1,
+                                //                                 content: 'Пальто',
+                                //                             },
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 2,
+                                //                                 content: 'Жилеты и жакеты',
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 3,
+                                //                                 content: 'Костюмы',
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 4,
+                                //                                 content: 'Трикотаж'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 5,
+                                //                                 content: 'Платья'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 6,
+                                //                                 content: 'Блузы и топы'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 7,
+                                //                                 content: 'Футболки'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 8,
+                                //                                 content: 'Юбки и брюки'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 9,
+                                //                                 content: 'Аксессуары'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 10,
+                                //                                 content: 'О бренде'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 11,
+                                //                                 content: 'Оферта'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 12,
+                                //                                 content: 'Оплата и доставка'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 13,
+                                //                                 content: 'Возврат'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 14,
+                                //                                 content: 'Контакты'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 15,
+                                //                                 content: 'Sale'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 16,
+                                //                                 content: 'New'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 0,
+                                //                                 content: 'Отзывы'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 18,
+                                //                                 content: 'Looks'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 19,
+                                //                                 content: 'Блог'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 20,
+                                //                                 content: 'Streetstyle'
+                                //                             }
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'input',
+                                //                                 mods: {
+                                //                                     theme: 'i',
+                                //                                     size: 'l',
+                                //                                     type: 'search'
+                                //                                 },
+                                //                                 tabIndex: 21,
+                                //                                 placeholder: 'Найти на сайте',
+                                //                             },
+                                //                         },
+                                //                         {
+                                //                             elem: 'item',
+                                //                             content: {
+                                //                                 block: 'link',
+                                //                                 tabIndex: 22,
+                                //                                 content: 'Войти в личный кабинет'
+                                //                             }
+                                //                         },
+                                //                     ]
+                                //                 }
+                                //             ]
+                                //         }]
+                                //     }],
+                                //     // attrs: { style: 'display: block;'}
+                                // },
                                 // elem: 'header',
                                 {
                                     block: 'header', elem: 'header',
@@ -754,7 +754,7 @@ module.exports = {
                                                         {
                                                             elem: 'item',
                                                             content: {
-                                                                elem: 'link',
+                                                                block: 'link',
                                                                 mix: {
                                                                     block: 'text',
                                                                     mods: {
@@ -769,7 +769,7 @@ module.exports = {
                                                         {
                                                             elem: 'item',
                                                             content: {
-                                                                elem: 'link',
+                                                                block: 'link',
                                                                 mix: {
                                                                     block: 'text',
                                                                     mods: {
@@ -784,7 +784,7 @@ module.exports = {
                                                         {
                                                             elem: 'item',
                                                             content: {
-                                                                elem: 'link',
+                                                                block: 'link',
                                                                 mix: {
                                                                     block: 'text',
                                                                     mods: {
@@ -823,20 +823,21 @@ module.exports = {
                         }
                     ]
                 },
+                // Новое  поступление
                 {
                     elem: 'content',
+                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
                         elem: 'container', elemMods: { align: 'center', size: 'm' },
                         content: [
                             {
                                 elem: 'section',
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                                 content: [
                                     {
                                         block: 'text',
                                         mods: {
                                             view: 'brand',
-                                            size: 'xxxl',
+                                            size: '24-36-48',
                                             align: 'center'
                                         },
                                         mix: { block: 'decorator', mods: {'indent-b': 'xl' } },
@@ -846,16 +847,23 @@ module.exports = {
                                         block: 'text',
                                         mods: {
                                             view: 'primary',
-                                            size: 'm',
+                                            size: '14-16-18',
                                             align: 'center'
                                         },
                                         content: [
                                             {
-                                                block: 'text', mods: { display: 'inline', decoration: 'underline' },
+                                                block: 'text',
+                                                mods: {
+                                                    display: 'inline',
+                                                    decoration: 'underline'
+                                                },
                                                 content: 'Платья'
                                             },
                                             {
-                                                block: 'text', mods: { display: 'inline' },
+                                                block: 'text',
+                                                mods: {
+                                                    display: 'inline'
+                                                },
                                                 mix: { block: 'decorator', mods: { 'indent-h': 'l'}},
                                                 content: 'Блузы и топы'
                                             },
@@ -865,6 +873,7 @@ module.exports = {
                                             }
                                         ]
                                     },
+                                    // carousel
                                     {
                                         block: 'carousel',
                                         mods: { orientation: 'horizontal', animate: true },
@@ -875,6 +884,7 @@ module.exports = {
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
+                                                        elemMods: { 's-state': 'active' },
                                                         content: {
                                                             block: 'pt-card',
                                                             mix: { block: 'new-card' },
@@ -888,17 +898,28 @@ module.exports = {
                                                             },
                                                             {
                                                                 elem: 'footer',
-                                                                mix: { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                mix: [
+                                                                    { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                    {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
+                                                                ],
                                                                 content: {
                                                                     block: 'info',
                                                                     attrs: { style: 'width: 100%'},
                                                                     content: [
                                                                         {
-                                                                            block: 'text', mods: { size: 'l', align: 'center' },
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                size: '18-24-30',
+                                                                                align: 'center'
+                                                                            },
                                                                             content: 'Шелковое платье'
                                                                         },
                                                                         {
-                                                                            block: 'text', mods: { size: 's', align: 'center' },
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                size: '14-16-20',
+                                                                                align: 'center'
+                                                                            },
                                                                             content: '4 800 рублей'
                                                                         }
                                                                     ]
@@ -909,7 +930,7 @@ module.exports = {
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { state: 'active' },
+                                                        elemMods: { state: 'active', 's-state': 'active' },
                                                         content: {
                                                             block: 'pt-card',
                                                             mix: { block: 'new-card' },
@@ -923,17 +944,28 @@ module.exports = {
                                                             },
                                                             {
                                                                 elem: 'footer',
-                                                                mix: { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                mix: [
+                                                                    { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                    {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
+                                                                ],
                                                                 content: {
                                                                     block: 'info',
                                                                     attrs: { style: 'width: 100%'},
                                                                     content: [
                                                                         {
-                                                                            block: 'text', mods: { size: 'l', align: 'center' },
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                size: '18-24-30',
+                                                                                align: 'center'
+                                                                            },
                                                                             content: 'Этническое платье'
                                                                         },
                                                                         {
-                                                                            block: 'text', mods: { size: 's', align: 'center' },
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                size: '14-16-20',
+                                                                                align: 'center'
+                                                                            },
                                                                             content: '7 800 рублей'
                                                                         }
                                                                     ]
@@ -944,6 +976,7 @@ module.exports = {
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
+                                                        elemMods: { 's-state': 'active' },
                                                         content: {
                                                             block: 'pt-card',
                                                             mix: { block: 'new-card' },
@@ -958,17 +991,28 @@ module.exports = {
 
                                                             {
                                                                 elem: 'footer',
-                                                                mix: { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                mix: [
+                                                                    { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                    {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
+                                                                ],
                                                                 content: {
                                                                     block: 'info',
                                                                     attrs: { style: 'width: 100%'},
                                                                     content: [
                                                                         {
-                                                                            block: 'text', mods: { size: 'l', align: 'center' },
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                size: '18-24-30',
+                                                                                align: 'center'
+                                                                            },
                                                                             content: 'Платье - боди'
                                                                         },
                                                                         {
-                                                                            block: 'text', mods: { size: 's', align: 'center' },
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                size: '14-16-20',
+                                                                                align: 'center'
+                                                                            },
                                                                             content: '11 700 рублей'
                                                                         }
                                                                     ]
@@ -999,33 +1043,43 @@ module.exports = {
                                         ]
                                     },
                                     {
-                                        block: 'link',
-                                        mix: [
-                                            { block: 'decorator', mods: {'indent-v': 'xl' } },
-                                            { block: 'text',
-                                                mods: {
-                                                    view: 'primary',
-                                                    size: 's',
-                                                    align: 'center',
-                                                    weight: 'light',
-                                                    decoration: 'underline'
-                                                }
-                                            }
-                                        ],
-                                        content: 'Смотреть все'
+                                        block: 'text',
+                                        mix: { block: 'decorator', mods: { 'indent-v': '' } },
+                                        mods: {
+                                            view: 'primary',
+                                            size: '14-14-18',
+                                            align: 'center',
+                                            weight: 'light',
+                                            decoration: 'underline'
+                                        },
+
+                                        content: {
+                                            block: 'link',
+                                            content: 'Смотреть все'
+                                        }
                                     },
-                                ]
+                                ],
                             },
+                        ]
+                    }
+                },
+                // О бренде
+                {
+                    elem: 'content',
+                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    content: {
+                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        content: [
                             {
                                 elem: 'section',
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                                 content: [
                                     {
                                         block: 'text',
                                         mods: {
                                             view: 'brand',
-                                            size: 'xxl',
+                                            size: '24-36-48',
                                             align: 'center',
+                                            weight: 'regular'
                                         },
                                         mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
                                         content: 'О бренде'
@@ -1061,7 +1115,7 @@ module.exports = {
                                                     block: 'text',
                                                     mods: {
                                                         view: 'primary',
-                                                        size: 'm',
+                                                        size: '16-16-20',
                                                         align: 'center',
                                                         weight: 'light',
                                                     }
@@ -1088,15 +1142,24 @@ module.exports = {
                                     }
                                 ]
                             },
+                        ]
+                    }
+                },
+                // Блог
+                {
+                    elem: 'content',
+                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    content: {
+                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        content: [
                             {
                                 elem: 'section',
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                                 content: [
                                     {
                                         block: 'text',
                                         mods: {
                                             view: 'brand',
-                                            size: 'xxl',
+                                            size: '24-48-48',
                                             align: 'center',
                                         },
                                         mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
@@ -1112,17 +1175,29 @@ module.exports = {
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
+                                                        elemMods: { 'l-state': 'active' },
                                                         content: {
                                                             block: 'pt-card',
                                                             mix: { block: 'blog-card' },
                                                             content: [
                                                             {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'} },
-                                                                    { block: 'blog-card', elem: 'image', elemMods: { item: '1'} },
-                                                                ],
-                                                                url: '/common.blocks/image/blog-image-1-mobile.jpg'
+                                                                tag: 'picture',
+                                                                content: [
+                                                                    {
+                                                                        tag: 'source',
+                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-1-desktop.jpg' },
+                                                                    },
+                                                                    {
+                                                                        tag: 'source',
+                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-1-tablet.jpg' },
+                                                                    },
+                                                                    {
+                                                                        block: 'image',
+                                                                        mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
+                                                                        url: '/common.blocks/image/blog-image-1-mobile.jpg',
+                                                                        alt: ''
+                                                                    },
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'footer',
@@ -1150,7 +1225,7 @@ module.exports = {
                                                                         {
                                                                             block: 'text',
                                                                             mods: {
-                                                                                size: 'l',
+                                                                                size: '18-24-30',
                                                                                 weight: 'semibold',
                                                                             },
                                                                             mix: { block: 'decorator', mods: { 'indent-b': 's' }},
@@ -1159,8 +1234,9 @@ module.exports = {
                                                                         {
                                                                             block: 'text',
                                                                             mods: {
-                                                                                size: 'm',
+                                                                                size: '16',
                                                                                 weight: 'light',
+                                                                                spacing: '08'
                                                                             },
                                                                             // block: 'decorator', mods: { 'indent-b': 'm' },
                                                                             content: 'Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни'
@@ -1173,140 +1249,181 @@ module.exports = {
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
-                                                        elemMods: { state: 'active' },
-                                                        content: {
-                                                            block: 'pt-card',
-                                                            mix: { block: 'blog-card' },
-                                                            content: [
+                                                        elemMods: { state: 'active', 's-state': 'active' },
+                                                        content: [
                                                             {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'} },
-                                                                    { block: 'blog-card', elem: 'image', elemMods: { item: '1'} },
-                                                                ],
-                                                                url: '/common.blocks/image/blog-image-2-mobile.jpg'
-                                                            },
-                                                            {
-                                                                elem: 'footer',
-                                                                mix: [
-                                                                    { block: 'blog-card',  elem: 'footer' },
-                                                                    {
-                                                                        block: 'decorator',
-                                                                        mods: {
-                                                                            // 'space-h': 's',
-                                                                            // 'space-v': 'l'
-                                                                        }
-                                                                    },
-                                                                ],
-                                                                content: {
-                                                                    block: 'info',
-                                                                    attrs: { style: 'width: 100%'},
-                                                                    mix: {
-                                                                        block: 'text',
-                                                                        mods: {
-                                                                            view: 'primary',
-                                                                            align: 'center',
-                                                                        },
-                                                                    },
+                                                                block: 'pt-card',
+                                                                mix: { block: 'blog-card' },
+                                                                content: [
+                                                                {
+                                                                    block: 'pt-card', elem: 'image', elemMods: { size: 'cover'},
+                                                                    tag: 'picture',
                                                                     content: [
                                                                         {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                size: 'l',
-                                                                                weight: 'semibold',
-                                                                            },
-                                                                            mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                                            content: 'Аксессуары осень — зима ‘18'
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-2-desktop.jpg' },
                                                                         },
                                                                         {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                size: 'm',
-                                                                                weight: 'light',
-                                                                            },
-                                                                            // block: 'decorator', mods: { 'indent-b': 'm' },
-                                                                            content: 'Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук'
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-2-tablet.jpg' },
+                                                                        },
+                                                                        {
+                                                                            block: 'image',
+                                                                            url: '/common.blocks/image/blog-image-2-mobile.jpg',
+                                                                            alt: ''
                                                                         },
                                                                     ]
-                                                                }
-                                                            }]
-                                                        }
+                                                                },
+                                                                {
+                                                                    elem: 'footer',
+                                                                    mix: [
+                                                                        { block: 'blog-card',  elem: 'footer' },
+                                                                        {
+                                                                            block: 'decorator',
+                                                                            mods: {
+                                                                                // 'space-h': 's',
+                                                                                // 'space-v': 'l'
+                                                                            }
+                                                                        },
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'info',
+                                                                        attrs: { style: 'width: 100%'},
+                                                                        mix: {
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                view: 'primary',
+                                                                                align: 'center',
+                                                                            },
+                                                                        },
+                                                                        content: [
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {
+                                                                                    size: '18-24-30',
+                                                                                    weight: 'semibold',
+                                                                                },
+                                                                                mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                                content: 'Аксессуары осень — зима ‘18'
+                                                                            },
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {
+                                                                                    size: '16',
+                                                                                    weight: 'light',
+                                                                                    spacing: '08'
+                                                                                },
+                                                                                // block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                                content: 'Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук'
+                                                                            },
+                                                                        ]
+                                                                    }
+                                                                }]
+                                                            },
+                                                        ]
                                                     },
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
-                                                        content: {
-                                                            block: 'pt-card',
-                                                            mix: { block: 'blog-card' },
-                                                            content: [
+                                                        elemMods: { 's-state': 'active' },
+                                                        content: [
                                                             {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'} },
-                                                                    { block: 'blog-card', elem: 'image', elemMods: { item: '3'} },
-                                                                ],
-                                                                url: '/common.blocks/image/blog-image-3-mobile.jpg'
-                                                            },
-                                                            {
-                                                                elem: 'footer',
-                                                                mix: [
-                                                                    { block: 'blog-card',  elem: 'footer' },
-                                                                    {
-                                                                        block: 'decorator',
-                                                                        mods: {
-                                                                            // 'space-h': 's',
-                                                                            // 'space-v': 'l'
-                                                                        }
-                                                                    },
-                                                                ],
-                                                                content: {
-                                                                    block: 'info',
-                                                                    attrs: { style: 'width: 100%'},
-                                                                    mix: {
-                                                                        block: 'text',
-                                                                        mods: {
-                                                                            view: 'primary',
-                                                                            align: 'center',
-                                                                        },
-                                                                    },
+                                                                block: 'pt-card',
+                                                                mix: { block: 'blog-card' },
+                                                                content: [
+                                                                {
+                                                                    tag: 'picture',
                                                                     content: [
                                                                         {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                size: 'l',
-                                                                                weight: 'semibold',
-                                                                            },
-                                                                            mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                                            content: '3 крутых образа для офиса'
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-3-desktop.jpg' },
                                                                         },
                                                                         {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                size: 'm',
-                                                                                weight: 'light',
-                                                                            },
-                                                                            // block: 'decorator', mods: { 'indent-b': 'm' },
-                                                                            content: 'Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный'
+                                                                            tag: 'source',
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-3-tablet.jpg' },
+                                                                        },
+                                                                        {
+                                                                            block: 'image',
+                                                                            mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
+                                                                            url: '/common.blocks/image/blog-image-3-mobile.jpg',
+                                                                            alt: ''
                                                                         },
                                                                     ]
-                                                                }
-                                                            }]
-                                                        }
+                                                                },
+                                                                {
+                                                                    elem: 'footer',
+                                                                    mix: [
+                                                                        { block: 'blog-card',  elem: 'footer' },
+                                                                        {
+                                                                            block: 'decorator',
+                                                                            mods: {
+                                                                                // 'space-h': 's',
+                                                                                // 'space-v': 'l'
+                                                                            }
+                                                                        },
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'info',
+                                                                        attrs: { style: 'width: 100%'},
+                                                                        mix: {
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                view: 'primary',
+                                                                                align: 'center',
+                                                                            },
+                                                                        },
+                                                                        content: [
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {
+                                                                                    size: '18-24-30',
+                                                                                    weight: 'semibold',
+                                                                                },
+                                                                                mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                                content: '3 крутых образа для офиса'
+                                                                            },
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {
+                                                                                    size: '16',
+                                                                                    weight: 'light',
+                                                                                    spacing: '08'
+                                                                                },
+                                                                                // block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                                content: 'Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный'
+                                                                            },
+                                                                        ]
+                                                                    }
+                                                                }]
+                                                            }
+                                                        ]
                                                     },
                                                     // элемент карусели
                                                     {
                                                         elem: 'item',
+                                                        elemMods: { 'l-state': 'active' },
                                                         content: {
                                                             block: 'pt-card',
                                                             mix: { block: 'blog-card' },
                                                             content: [
                                                             {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'} },
-                                                                    { block: 'blog-card', elem: 'image', elemMods: { item: '1'} },
-                                                                ],
-                                                                url: '/common.blocks/image/blog-image-4-mobile.jpg'
+                                                                tag: 'picture',
+                                                                content: [
+                                                                    {
+                                                                        tag: 'source',
+                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/blog-image-4-desktop.jpg' },
+                                                                    },
+                                                                    {
+                                                                        tag: 'source',
+                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/blog-image-4-tablet.jpg' },
+                                                                    },
+                                                                    {
+                                                                        block: 'image',
+                                                                        mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
+                                                                        url: '/common.blocks/image/blog-image-4-mobile.jpg',
+                                                                        alt: ''
+                                                                    },
+                                                                ]
                                                             },
                                                             {
                                                                 elem: 'footer',
@@ -1334,7 +1451,7 @@ module.exports = {
                                                                         {
                                                                             block: 'text',
                                                                             mods: {
-                                                                                size: 'l',
+                                                                                size: '18-24-30',
                                                                                 weight: 'semibold',
                                                                             },
                                                                             mix: { block: 'decorator', mods: { 'indent-b': 's' }},
@@ -1343,8 +1460,9 @@ module.exports = {
                                                                         {
                                                                             block: 'text',
                                                                             mods: {
-                                                                                size: 'm',
+                                                                                size: '16',
                                                                                 weight: 'light',
+                                                                                spacing: '08'
                                                                             },
                                                                             // block: 'decorator', mods: { 'indent-b': 'm' },
                                                                             content: 'Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга'
@@ -1377,26 +1495,39 @@ module.exports = {
                                         ]
                                     },
                                     {
-                                        block: 'link',
-                                        mix: [{ block: 'decorator', mods: {'indent-v': 'xl' } },
-                                        {
-                                            block: 'text',
-                                            mods: {
-                                                view: 'brand',
-                                                size: '14-16-18',
-                                                decoration: 'underline'
-                                            },
-                                        }],
-                                        content: 'Перейти в блог'
+                                        block: 'text',
+                                        mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
+                                        mods: {
+                                            view: 'success',
+                                            size: '14-14-18',
+                                            align: 'center',
+                                            decoration: 'underline'
+                                        },
+                                        content: {
+                                            block: 'link',
+                                            content: 'Перейти в блог'
+                                        }
                                     },
                                 ]
                             },
+                        ]
+                    }
+                },
+                // Подписаться
+                {
+                    elem: 'content',
+                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    content: {
+                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        content: [
                             {
                                 elem: 'section',
-                                mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                                 content: {
                                     block: 'pt-card',
-                                    mix: { block: 'form-card' },
+                                    mix: [
+                                        { block: 'form-card' },
+                                        { block: 'theme', mods: { color: 'mts-default', control: 'mts-default' }}
+                                    ],
                                     content: [
                                     {
                                         block: 'image',
@@ -1417,31 +1548,28 @@ module.exports = {
                                                     mods: {
                                                         view: 'brand',
                                                         align: 'center',
-                                                        size: 'l',
+                                                        size: '18-24-36',
                                                         weight: 'semibold',
                                                     },
                                                     mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                    content: 'Подпишись на новости I AM WOMEN и получите скидку 5% на следующую покупку'
+                                                    content: {
+                                                        html: 'Подпишись на новости I AM WOMEN <br> и получите скидку 5% на следующую покупку'
+                                                    }
                                                 },
                                                 {
                                                     block: 'pt-form',
                                                     content: [
                                                         {
                                                             elem: 'item', elemMods: { 'vertical-align': 'center' },
-                                                            mix: { block: 'decorator', mods: { 'indent-b': 's' }},
                                                             content: [
                                                                 {
-                                                                    elem: 'control',
-                                                                    content: {
-                                                                        block: 'input',
-                                                                        content: {
-                                                                            elem: 'box',
-                                                                            content: {
-                                                                                elem: 'control',
-                                                                                content: {}
-                                                                            }
-                                                                        }
-                                                                    }
+                                                                    block: 'input',
+                                                                    mods: {
+                                                                        theme: 'f',
+                                                                        size: 'l',
+                                                                        type: 'search'
+                                                                    },
+                                                                    placeholder: 'Ваш E-mail',
                                                                 }
                                                             ]
                                                         },
@@ -1449,13 +1577,8 @@ module.exports = {
                                                             elem: 'item',
                                                             mix: { block: 'decorator', mods: { 'indent-b': 's' }},
                                                             content: {
-                                                                block: 'button',
-                                                                mods: {
-                                                                    theme: 'islands',
-                                                                    size: 'm',
-                                                                    type: 'submit'
-                                                                },
-                                                                text: 'Подписаться'
+                                                                block: 'button', mods: { size: 'm', 'view': 'primary' },
+                                                                content: 'Подписаться'
                                                             }
                                                         }
                                                     ]
@@ -1465,14 +1588,15 @@ module.exports = {
                                                     mods: {
                                                         view: 'brand',
                                                         align: 'center',
-                                                        size: 'xs',
+                                                        size: '10-11-12',
                                                         weight: 'light',
                                                     },
                                                     mix: [
                                                         { block: 'theme', mods: { font: 'openSans' }},
-                                                        { block: 'decorator', mods: { 'indent-t': 's' }}
                                                     ],
-                                                    content: 'Подписываясь на новости, вы даёте согласие на обработку персональных данных'
+                                                    content: {
+                                                        html: 'Подписываясь на новости, вы даёте согласие <br> на обработку персональных данных'
+                                                    }
                                                 },
                                             ]
                                         }
@@ -1481,529 +1605,524 @@ module.exports = {
                             }
                         ]
                     }
-                }
-            ]
-        },
-        {
-            block: 'footer',
-            content: [
-                {
-                    elem: 'section-left',
-                    mix: {
-                        block: 'text',
-                        mods: {
-                            align: '',
-                            decoration: '',
-                            display: '',
-                            font: '',
-                            size: 'l',
-                            spacing: '',
-                            style: '',
-                            transform: '',
-                            type: '',
-                            view: '',
-                            weight: ''
-                        },
-                    },
-                    content: [
-                        {
-                            block: 'section',
-                            content: [
-                                {
-                                    elem: 'title',
-                                    mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                    content: {
-                                        block: 'text',
-                                        content: 'Каталог'
-                                    }
-                                },
-                                {
-                                    elem: 'body',
-                                    content:  {
-                                        block: 'pt-list',
-                                        mix: [
-                                            { block: 'list' },
-                                        ],
-                                        content: [
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Пальто'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Жилеты и жакеты'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Костюмы'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Трикотаж'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Платья'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Блузы и топы'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Футболки'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Юбки и брюки'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'text',
-                                                    content: 'Аксессуары'
-                                                }
-                                            }
-                                        ]
-                                    },
-                                }
-                            ]
-                        },
-                        {
-                            block: 'section',
-                            content: [
-                                {
-                                    elem: 'title',
-                                    mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                    content: {
-                                        block: 'text',
-                                        content: 'О бренде'
-                                    }
-                                },
-                                {
-                                    elem: 'body',
-                                    content:  {
-                                        block: 'pt-list',
-                                        content: [
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Оферта'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Оплата и доставка'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Возврат'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Контакты'
-                                                }
-                                            }
-                                        ]
-                                    },
-                                }
-                            ]
-                        },
-                        {
-                            block: 'section',
-                            content: [
-                                {
-                                    elem: 'title',
-                                    mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
-                                    attrs: {
-                                        style: 'visibility: hidden;'
-                                    },
-                                    content: {
-                                        block: 'text',
-                                        content: 'Дополнительное меню'
-                                    }
-                                },
-                                {
-                                    elem: 'body',
-                                    content: {
-                                        block: 'pt-list',
-                                        content: [
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Sale'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'New'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Looks'
-                                                }
-                                            },
-                                            {
-                                                elem: 'item',
-                                                content: {
-                                                    block: 'link',
-                                                    content: 'Блог'
-                                                }
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                    ]
                 },
                 {
-                    elem: 'section-right',
-                    content: [
-                        {
-                            block: 'pt-list',
-                            content: [
-                                {
-                                    elem: 'item', elemMods: { distribute: 'default' },
-                                    mix: [{ block: 'decorator', mods: { 'indent-b': 's' }}, { block: 'contacts' }],
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mix: { block: 'contacts', elem: 'intro' },
-                                            mods: {
-                                                align: '',
-                                                decoration: '',
-                                                display: '',
-                                                font: '',
-                                                size: 'm',
-                                                spacing: '',
-                                                style: '',
-                                                transform: '',
-                                                type: '',
-                                                view: 'primary',
-                                                weight: ''
-                                            },
-                                            content: 'Звонок с сайта:'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: {
-                                                align: '',
-                                                decoration: '',
-                                                display: '',
-                                                font: '',
-                                                size: 'm',
-                                                spacing: '',
-                                                style: '',
-                                                transform: '',
-                                                type: '',
-                                                view: 'primary',
-                                                weight: ''
-                                            },
-                                            mix: { block: 'contacts', elem: 'number' },
-                                            content: '+7 495 792 93 12'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'item', elemMods: { distribute: 'default' },
-                                    mix: { block: 'socials' },
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mods: {
-                                                align: '',
-                                                decoration: '',
-                                                display: '',
-                                                font: '',
-                                                size: 'm',
-                                                spacing: '',
-                                                style: '',
-                                                transform: '',
-                                                type: '',
-                                                view: 'primary',
-                                                weight: ''
-                                            },
-                                            mix: { block: 'socials', elem: 'intro' },
-                                            content: [
-                                                {
-                                                    tag: 'span',
-                                                    content: 'Присоединяйся'
-                                                },
-                                                {
-                                                    tag: 'span',
-                                                    content: ' к нам'
-                                                },
-                                                {
-                                                    tag: 'span',
-                                                    content: ':'
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            block: 'pt-list',
-                                            mix: { block: 'theme', mods: { font:'openSans' }},
-                                            content: [
-                                                {
-                                                    elem: 'item', elemMods: { 'indent-r': 'l' },
-                                                    mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                    content: [
-                                                        {
-                                                            block: 'link',
-                                                            content: {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                mods: {
-                                                                    size: 'm',
-                                                                    view: 'primary',
-                                                                },
-                                                                content: 'Facebook'
-                                                            }
+                    elem: 'content',
+                    mix: { block: 'footer' },
+                    content: {
+                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        content: [
+                            {
+                                block: 'tpl-grid',
+                                mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'm-columns': '6' },
+                                content: [
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 'xs-col': 'hidden','s-col': 'hidden', 'm-col': '1' },
+                                        content: [
+                                            {
+                                                block: 'section',
+                                                content: [
+                                                    {
+                                                        elem: 'title',
+                                                        mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+                                                        content: {
+                                                            block: 'text',
+                                                            content: 'Каталог'
                                                         }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'item', elemMods: {'indent-r': 'l'},
-                                                    mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                    content: [
-                                                        {
-                                                            block: 'link',
-                                                            content: {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                mods: {
-                                                                    size: 'm',
-                                                                    view: 'primary',
-                                                                },
-                                                                content: 'Youtube'
-                                                            }
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'item', elemMods: {'indent-r': ''},
-                                                    mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                    content: [
-                                                        {
-                                                            block: 'link',
-                                                            content: {
-                                                                block: 'text',
-                                                                tag: 'span',
-                                                                mods: {
-                                                                    size: 'm',
-                                                                    view: 'primary',
-                                                                },
-                                                                content: 'Vkontakte'
-                                                            }
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                    ]
-                                },
-                                {
-                                    elem: 'item', elemMods: { distribute: 'default' },
-                                    mix: [
-                                        { block: 'decorator', mods: { 'indent-b': 's' }},
-                                        { block: 'pay' }
-                                    ],
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mix: { block: 'pay', elem: 'intro' },
-                                            mods: {
-                                                size: 'm',
-                                                view: 'primary',
-                                                weight: ''
-                                            },
-                                            content: 'Принимаем к оплате:'
-                                        },
-                                        {
-                                            block: 'pt-list',
-                                            mix: { block: 'pay', elem: 'list' },
-                                            content: [
-                                                // visa
-                                                {
-                                                    elem: 'item',
-                                                    mix: { block: 'pt-icon-plus' } ,
-                                                    content: [
-                                                        {
-                                                            block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
-                                                            content: {
-                                                                block: 'image',
-                                                                url: '/common.blocks/image/visa.svg',
-                                                                width:'36'
-                                                            }
-                                                        },
-                                                        {
-                                                            block: 'pt-icon-plus', elem: 'block',
-                                                            attrs: { style: 'font-size: 0' },
-                                                            content: 'visa'
-                                                        }
-                                                    ]
-                                                },
-                                                // masterCard
-                                                {
-                                                    elem: 'item',
-                                                    mix: { block: 'pt-icon-plus' } ,
-                                                    content: [
-                                                        {
-                                                            block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
-                                                            content: {
-                                                                block: 'image',
-                                                                url: '/common.blocks/image/masterCard.svg',
-                                                                width:'57'
-                                                            }
-                                                        },
-                                                        {
-                                                            block: 'pt-icon-plus', elem: 'block',
-                                                            attrs: { style: 'font-size: 0' },
-                                                            content: 'masterCard'
-                                                        }
-                                                    ]
-                                                },
-                                                // PayPal
-                                                {
-                                                    elem: 'item',
-                                                    mix: { block: 'pt-icon-plus' } ,
-                                                    content: [
-                                                        {
-                                                            block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': ''},
-                                                            content: {
-                                                                block: 'image',
-                                                                url: '/common.blocks/image/PayPal.svg',
-                                                                width:'36'
-                                                            }
-                                                        },
-                                                        {
-                                                            block: 'pt-icon-plus', elem: 'block',
-                                                            attrs: { style: 'font-size: 0' },
-                                                            content: 'PayPal'
-                                                        }
-                                                    ]
-                                                },
-                                            ]
-                                        },
-
-                                    ]
-                                },
-                                {
-                                    elem: 'item', elemMods: { distribute: 'default' },
-                                    mix: [
-                                        { block: 'decorator', mods: { 'indent-b': 's' }},
-                                        { block: 'pay-comment', }
-                                    ],
-                                    content: [
-                                        {
-                                            block: 'text',
-                                            mix: { block: 'pay-comment', elem: 'intro' },
-                                            mods: {
-                                                size: 'm',
-                                                view: 'primary',
-                                            },
-                                            content: 'Примечание к оплате:'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: {
-                                                align: '',
-                                                decoration: '',
-                                                display: '',
-                                                font: '',
-                                                size: 's',
-                                                spacing: '',
-                                                style: '',
-                                                transform: '',
-                                                type: '',
-                                                view: 'primary',
-                                                weight: ''
-                                            },
-                                            mix: [
-                                                { block: 'pay-comment', elem : 'comment' }
-                                            ],
-                                            content: [
-                                                {
-                                                    tag: 'span',
-                                                    content: 'Вы можете оплатить наличными при '
-                                                },
-                                                {
-                                                    tag: 'span',
-                                                    content: 'получении либо выбрать другой'
-                                                },
-                                                {
-                                                    block: 'link',
-                                                    mix: {
-                                                        block: 'text',
-                                                        mods: {
-                                                            decoration: 'underline',
-                                                            size: 's',
-                                                            view: 'primary',
-                                                            weight: 'bold'
-                                                        },
                                                     },
-                                                    content: ' способ оплаты'
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            block: 'text',
-                            mix: { block: 'footer', elem: 'copyright' },
-                            mods: {
-                                view: 'brand',
-                                align: 'right',
-                                size: 'm',
-                                weight: 'regular',
-                                transform: 'uppercase'
-                            },
-                            content: ' 2008–2018 I AM WOMEN'
-                        },
-                    ]
-                }
+                                                    {
+                                                        elem: 'body',
+                                                        content:  {
+                                                            block: 'pt-list',
+                                                            content: [
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Пальто'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Жилеты и жакеты'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Костюмы'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Трикотаж'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Платья'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Блузы и топы'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Футболки'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Юбки и брюки'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'text',
+                                                                        content: 'Аксессуары'
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                    }
+                                                ]
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 'xs-col': 'hidden','s-col': 'hidden', 'm-col': '1' },
+                                        content: [
+                                            {
+                                                block: 'section',
+                                                content: [
+                                                    {
+                                                        elem: 'title',
+                                                        mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+                                                        content: {
+                                                            block: 'text',
+                                                            content: 'О бренде'
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'body',
+                                                        content:  {
+                                                            block: 'pt-list',
+                                                            content: [
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Оферта'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Оплата и доставка'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Возврат'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Контакты'
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                    }
+                                                ]
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 'xs-col': 'hidden','s-col': 'hidden', 'm-col': '1' },
+                                        content: [
+                                            {
+                                                block: 'section',
+                                                content: [
+                                                    {
+                                                        elem: 'title',
+                                                        mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+                                                        attrs: {
+                                                            style: 'visibility: hidden;'
+                                                        },
+                                                        content: {
+                                                            block: 'text',
+                                                            content: 'Дополнительное меню'
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'body',
+                                                        content: {
+                                                            block: 'pt-list',
+                                                            content: [
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Sale'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'New'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Looks'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    content: {
+                                                                        block: 'link',
+                                                                        content: 'Блог'
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 's-col': '2', 'm-col': '3' },
+                                        content: [
+                                            {
+                                                block: 'pt-list',
+                                                content: [
+                                                    {
+                                                        elem: 'item', elemMods: { distribute: 'default' },
+                                                        mix: [
+                                                            { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                            { block: 'contacts' },
+                                                            { block: 'text',
+                                                            mods: {
+                                                                size: '16-16-18',
+                                                                view: 'primary',
+                                                            },}
+                                                        ],
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                mix: { block: 'contacts', elem: 'intro' },
+                                                                content: 'Звонок с сайта:'
+                                                            },
+                                                            {
+                                                                block: 'link',
+                                                                mix: [
+                                                                    { block: 'contacts', elem: 'number' },
+                                                                    { block: 'text',
+                                                                        mods: {
+                                                                            view: 'primary',
+                                                                        }
+                                                                    }
+                                                                ],
+                                                                attrs: { href: 'tel:84957929312' },
+                                                                content: '+7 495 792 93 12'
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'item', elemMods: { distribute: 'default' },
+                                                        mix: { block: 'socials' },
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                mods: {
+                                                                    align: '',
+                                                                    decoration: '',
+                                                                    display: '',
+                                                                    font: '',
+                                                                    size: 'm',
+                                                                    spacing: '',
+                                                                    style: '',
+                                                                    transform: '',
+                                                                    type: '',
+                                                                    view: 'primary',
+                                                                    weight: ''
+                                                                },
+                                                                mix: { block: 'socials', elem: 'intro' },
+                                                                content: [
+                                                                    {
+                                                                        tag: 'span',
+                                                                        content: 'Присоединяйся'
+                                                                    },
+                                                                    {
+                                                                        tag: 'span',
+                                                                        content: ' к нам'
+                                                                    },
+                                                                    {
+                                                                        tag: 'span',
+                                                                        content: ':'
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                block: 'pt-list',
+                                                                mix: { block: 'theme', mods: { font:'openSans' }},
+                                                                content: [
+                                                                    {
+                                                                        elem: 'item', elemMods: { 'indent-r': 'l' },
+                                                                        mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                        content: [
+                                                                            {
+                                                                                block: 'link',
+                                                                                content: {
+                                                                                    block: 'text',
+                                                                                    tag: 'span',
+                                                                                    mods: {
+                                                                                        size: 'm',
+                                                                                        view: 'primary',
+                                                                                    },
+                                                                                    content: 'Facebook'
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem: 'item', elemMods: {'indent-r': 'l'},
+                                                                        mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                        content: [
+                                                                            {
+                                                                                block: 'link',
+                                                                                content: {
+                                                                                    block: 'text',
+                                                                                    tag: 'span',
+                                                                                    mods: {
+                                                                                        size: 'm',
+                                                                                        view: 'primary',
+                                                                                    },
+                                                                                    content: 'Youtube'
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        elem: 'item', elemMods: {'indent-r': ''},
+                                                                        mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                        content: [
+                                                                            {
+                                                                                block: 'link',
+                                                                                content: {
+                                                                                    block: 'text',
+                                                                                    tag: 'span',
+                                                                                    mods: {
+                                                                                        size: 'm',
+                                                                                        view: 'primary',
+                                                                                    },
+                                                                                    content: 'Vkontakte'
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            },
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'item', elemMods: { distribute: 'default' },
+                                                        mix: [
+                                                            { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                            { block: 'pay' }
+                                                        ],
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                mix: { block: 'pay', elem: 'intro' },
+                                                                mods: {
+                                                                    size: 'm',
+                                                                    view: 'primary',
+                                                                    weight: ''
+                                                                },
+                                                                content: 'Принимаем к оплате:'
+                                                            },
+                                                            {
+                                                                block: 'pt-list',
+                                                                mix: { block: 'pay', elem: 'list' },
+                                                                content: [
+                                                                    // visa
+                                                                    {
+                                                                        elem: 'item',
+                                                                        mix: { block: 'pt-icon-plus' } ,
+                                                                        content: [
+                                                                            {
+                                                                                block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
+                                                                                content: {
+                                                                                    block: 'image',
+                                                                                    url: '/common.blocks/image/visa.svg',
+                                                                                    width:'36'
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                block: 'pt-icon-plus', elem: 'block',
+                                                                                attrs: { style: 'font-size: 0' },
+                                                                                content: 'visa'
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    // masterCard
+                                                                    {
+                                                                        elem: 'item',
+                                                                        mix: { block: 'pt-icon-plus' } ,
+                                                                        content: [
+                                                                            {
+                                                                                block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
+                                                                                content: {
+                                                                                    block: 'image',
+                                                                                    url: '/common.blocks/image/masterCard.svg',
+                                                                                    width:'57'
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                block: 'pt-icon-plus', elem: 'block',
+                                                                                attrs: { style: 'font-size: 0' },
+                                                                                content: 'masterCard'
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    // PayPal
+                                                                    {
+                                                                        elem: 'item',
+                                                                        mix: { block: 'pt-icon-plus' } ,
+                                                                        content: [
+                                                                            {
+                                                                                block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': ''},
+                                                                                content: {
+                                                                                    block: 'image',
+                                                                                    url: '/common.blocks/image/PayPal.svg',
+                                                                                    width:'36'
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                block: 'pt-icon-plus', elem: 'block',
+                                                                                attrs: { style: 'font-size: 0' },
+                                                                                content: 'PayPal'
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                ]
+                                                            },
+
+                                                        ]
+                                                    },
+                                                    {
+                                                        elem: 'item', elemMods: { distribute: 'default' },
+                                                        mix: [
+                                                            { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                            { block: 'pay-comment', }
+                                                        ],
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                mix: { block: 'pay-comment', elem: 'intro' },
+                                                                mods: {
+                                                                    size: 'm',
+                                                                    view: 'primary',
+                                                                },
+                                                                content: 'Примечание к оплате:'
+                                                            },
+                                                            {
+                                                                block: 'text',
+                                                                mods: {
+                                                                    align: '',
+                                                                    decoration: '',
+                                                                    display: '',
+                                                                    font: '',
+                                                                    size: 's',
+                                                                    spacing: '',
+                                                                    style: '',
+                                                                    transform: '',
+                                                                    type: '',
+                                                                    view: 'primary',
+                                                                    weight: ''
+                                                                },
+                                                                mix: [
+                                                                    { block: 'pay-comment', elem : 'comment' }
+                                                                ],
+                                                                content: [
+                                                                    {
+                                                                        tag: 'span',
+                                                                        content: 'Вы можете оплатить наличными при '
+                                                                    },
+                                                                    {
+                                                                        tag: 'span',
+                                                                        content: 'получении либо выбрать другой'
+                                                                    },
+                                                                    {
+                                                                        block: 'link',
+                                                                        mix: {
+                                                                            block: 'text',
+                                                                            mods: {
+                                                                                decoration: 'underline',
+                                                                                size: 's',
+                                                                                view: 'primary',
+                                                                                weight: 'bold'
+                                                                            },
+                                                                        },
+                                                                        content: ' способ оплаты'
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                block: 'text',
+                                                mix: { block: 'footer', elem: 'copyright' },
+                                                mods: {
+                                                    view: 'brand',
+                                                    align: 'right',
+                                                    size: 'm',
+                                                    weight: 'regular',
+                                                    transform: 'uppercase'
+                                                },
+                                                content: ' 2008–2018 I AM WOMEN'
+                                            },
+                                        ]
+                                    },
+                                ]
+                            }
+                        ]
+                    }
+                },
             ]
-        }
+        },
     ]
 };

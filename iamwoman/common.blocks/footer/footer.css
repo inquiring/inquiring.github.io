@@ -1,5 +1,7 @@
+.footer {
+    background-color: #ece5e1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 @media screen and (min-width: $screen-l) {
-    .footer {
-        display: flex;
-    }
 }

@@ -1,5 +1,5 @@
 @media screen and (max-width: $screen-xs-max) {
-    .pay-comment {
+    .pt-list__item_distribute_default.pay-comment {
         display: none;
     }
 

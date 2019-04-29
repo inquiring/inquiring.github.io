@@ -97,11 +97,7 @@ exports.deps = [
     {
         "block": "page",
         "mod": "theme",
-        "val": "islands"
-    },
-    {
-        "block": "ua",
-        "elem": "svg"
+        "val": "i"
     },
     {
         "block": "page",
@@ -210,214 +206,6 @@ exports.deps = [
         "mod": "size"
     },
     {
-        "block": "pt-surface"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "position"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "position",
-        "val": "absolute"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "view"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "view",
-        "val": "project"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "window"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "size"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "view"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "position"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "view"
-    },
-    {
-        "block": "icon"
-    },
-    {
-        "block": "icon",
-        "mod": "close"
-    },
-    {
-        "block": "icon",
-        "mod": "close",
-        "val": "m-primary"
-    },
-    {
-        "block": "icon",
-        "mod": "name"
-    },
-    {
-        "block": "icon",
-        "mod": "name",
-        "val": "close"
-    },
-    {
-        "block": "icon",
-        "mod": "size"
-    },
-    {
-        "block": "icon",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "text"
-    },
-    {
-        "block": "text",
-        "mod": "size"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "xxl"
-    },
-    {
-        "block": "text",
-        "mod": "view"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "primary"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "m"
-    },
-    {
-        "block": "pt-list"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "16-18-18"
-    },
-    {
-        "block": "pt-list",
-        "elem": "item"
-    },
-    {
-        "block": "link"
-    },
-    {
-        "block": "link",
-        "mod": "disabled"
-    },
-    {
-        "block": "jquery",
-        "elem": "event"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerclick"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointernative"
-    },
-    {
-        "block": "keyboard",
-        "elem": "codes"
-    },
-    {
-        "block": "control"
-    },
-    {
-        "block": "input"
-    },
-    {
-        "block": "input",
-        "mod": "disabled"
-    },
-    {
-        "block": "input",
-        "mod": "focused"
-    },
-    {
-        "block": "input",
-        "elem": "box"
-    },
-    {
-        "block": "input",
-        "elem": "control"
-    },
-    {
-        "block": "tick"
-    },
-    {
-        "block": "idle"
-    },
-    {
-        "block": "input",
-        "mod": "theme"
-    },
-    {
-        "block": "input",
-        "mod": "theme",
-        "val": "i"
-    },
-    {
-        "block": "input",
-        "mod": "size"
-    },
-    {
-        "block": "input",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "input",
-        "mod": "type"
-    },
-    {
-        "block": "input",
-        "mod": "type",
-        "val": "search"
-    },
-    {
         "block": "header",
         "elem": "header"
     },
@@ -454,6 +242,34 @@ exports.deps = [
         "elem": "text"
     },
     {
+        "block": "jquery",
+        "elem": "event"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerclick"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointernative"
+    },
+    {
+        "block": "keyboard",
+        "elem": "codes"
+    },
+    {
+        "block": "control"
+    },
+    {
         "block": "button",
         "mod": "theme"
     },
@@ -481,9 +297,25 @@ exports.deps = [
         "val": "plain"
     },
     {
+        "block": "icon"
+    },
+    {
+        "block": "icon",
+        "mod": "name"
+    },
+    {
         "block": "icon",
         "mod": "name",
         "val": "hamburger"
+    },
+    {
+        "block": "icon",
+        "mod": "size"
+    },
+    {
+        "block": "icon",
+        "mod": "size",
+        "val": "m"
     },
     {
         "block": "header",
@@ -491,6 +323,27 @@ exports.deps = [
     },
     {
         "block": "logo"
+    },
+    {
+        "block": "text"
+    },
+    {
+        "block": "text",
+        "mod": "view"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "primary"
+    },
+    {
+        "block": "text",
+        "mod": "size"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xxl"
     },
     {
         "block": "text",
@@ -708,6 +561,11 @@ exports.deps = [
         "val": "xs"
     },
     {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "m"
+    },
+    {
         "block": "header",
         "elem": "footer"
     },
@@ -722,6 +580,13 @@ exports.deps = [
         "val": "xxxl"
     },
     {
+        "block": "link"
+    },
+    {
+        "block": "link",
+        "mod": "disabled"
+    },
+    {
         "block": "text",
         "mod": "decoration"
     },
@@ -731,13 +596,16 @@ exports.deps = [
         "val": "underline"
     },
     {
+        "block": "pt-list"
+    },
+    {
         "block": "theme",
         "mod": "font",
         "val": "openSans"
     },
     {
         "block": "pt-list",
-        "elem": "link"
+        "elem": "item"
     },
     {
         "block": "text",
@@ -772,11 +640,6 @@ exports.deps = [
         "elem": "content"
     },
     {
-        "block": "text",
-        "mod": "size",
-        "val": "xxxl"
-    },
-    {
         "block": "decorator",
         "mod": "indent-b",
         "val": "xl"
@@ -789,6 +652,11 @@ exports.deps = [
         "block": "decorator",
         "mod": "indent-h",
         "val": "l"
+    },
+    {
+        "block": "carousel",
+        "elem": "item",
+        "mod": "s-state"
     },
     {
         "block": "new-card"
@@ -804,8 +672,23 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "weight",
+        "val": "semibold"
+    },
+    {
+        "block": "text",
         "mod": "size",
-        "val": "l"
+        "val": "18-24-30"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "14-16-20"
+    },
+    {
+        "block": "text",
+        "mod": "weight",
+        "val": "regular"
     },
     {
         "block": "brand-card"
@@ -846,25 +729,26 @@ exports.deps = [
         "val": "l"
     },
     {
+        "block": "text",
+        "mod": "size",
+        "val": "16-16-20"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "24-48-48"
+    },
+    {
+        "block": "carousel",
+        "elem": "item",
+        "mod": "l-state"
+    },
+    {
         "block": "blog-card"
     },
     {
         "block": "blog-card",
-        "elem": "image"
-    },
-    {
-        "block": "blog-card",
-        "elem": "image",
-        "mod": "item"
-    },
-    {
-        "block": "blog-card",
         "elem": "footer"
-    },
-    {
-        "block": "text",
-        "mod": "weight",
-        "val": "semibold"
     },
     {
         "block": "decorator",
@@ -872,17 +756,49 @@ exports.deps = [
         "val": "s"
     },
     {
-        "block": "blog-card",
-        "elem": "image",
-        "mod": "item",
-        "val": "3"
+        "block": "text",
+        "mod": "size",
+        "val": "16"
+    },
+    {
+        "block": "text",
+        "mod": "spacing"
+    },
+    {
+        "block": "text",
+        "mod": "spacing",
+        "val": "08"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "success"
     },
     {
         "block": "form-card"
     },
     {
+        "block": "theme",
+        "mod": "color",
+        "val": "mts-default"
+    },
+    {
+        "block": "theme",
+        "mod": "control"
+    },
+    {
+        "block": "theme",
+        "mod": "control",
+        "val": "mts-default"
+    },
+    {
         "block": "form-card",
         "elem": "content"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "18-24-36"
     },
     {
         "block": "pt-form"
@@ -897,8 +813,56 @@ exports.deps = [
         "mod": "vertical-align"
     },
     {
-        "block": "pt-form",
+        "block": "input"
+    },
+    {
+        "block": "input",
+        "mod": "disabled"
+    },
+    {
+        "block": "input",
+        "mod": "focused"
+    },
+    {
+        "block": "input",
+        "elem": "box"
+    },
+    {
+        "block": "input",
         "elem": "control"
+    },
+    {
+        "block": "tick"
+    },
+    {
+        "block": "idle"
+    },
+    {
+        "block": "input",
+        "mod": "theme"
+    },
+    {
+        "block": "input",
+        "mod": "theme",
+        "val": "f"
+    },
+    {
+        "block": "input",
+        "mod": "size"
+    },
+    {
+        "block": "input",
+        "mod": "size",
+        "val": "l"
+    },
+    {
+        "block": "input",
+        "mod": "type"
+    },
+    {
+        "block": "input",
+        "mod": "type",
+        "val": "search"
     },
     {
         "block": "button",
@@ -907,45 +871,65 @@ exports.deps = [
     },
     {
         "block": "button",
-        "mod": "type"
-    },
-    {
-        "block": "button",
-        "mod": "type",
-        "val": "submit"
+        "mod": "view",
+        "val": "primary"
     },
     {
         "block": "text",
         "mod": "size",
-        "val": "xs"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-t",
-        "val": "s"
+        "val": "10-11-12"
     },
     {
         "block": "footer"
     },
     {
-        "block": "footer",
-        "elem": "section-left"
+        "block": "tpl-grid"
     },
     {
-        "block": "text",
-        "mod": "font"
+        "block": "tpl-grid",
+        "mod": "xs-ratio"
     },
     {
-        "block": "text",
-        "mod": "spacing"
+        "block": "tpl-grid",
+        "mod": "xs-ratio",
+        "val": "1"
     },
     {
-        "block": "text",
-        "mod": "style"
+        "block": "tpl-grid",
+        "mod": "s-ratio"
     },
     {
-        "block": "text",
-        "mod": "type"
+        "block": "tpl-grid",
+        "mod": "s-ratio",
+        "val": "1-1"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "m-columns"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "m-columns",
+        "val": "6"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "xs-col"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "m-col"
     },
     {
         "block": "section"
@@ -959,11 +943,16 @@ exports.deps = [
         "elem": "body"
     },
     {
-        "block": "list"
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col",
+        "val": "2"
     },
     {
-        "block": "footer",
-        "elem": "section-right"
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "m-col",
+        "val": "3"
     },
     {
         "block": "pt-list",
@@ -972,6 +961,11 @@ exports.deps = [
     },
     {
         "block": "contacts"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "16-16-18"
     },
     {
         "block": "contacts",
@@ -983,6 +977,18 @@ exports.deps = [
     },
     {
         "block": "socials"
+    },
+    {
+        "block": "text",
+        "mod": "font"
+    },
+    {
+        "block": "text",
+        "mod": "style"
+    },
+    {
+        "block": "text",
+        "mod": "type"
     },
     {
         "block": "socials",
@@ -1032,11 +1038,6 @@ exports.deps = [
         "elem": "comment"
     },
     {
-        "block": "text",
-        "mod": "weight",
-        "val": "regular"
-    },
-    {
         "block": "footer",
         "elem": "copyright"
     },
@@ -1070,52 +1071,6 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "size",
-        "val": "full"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "view",
-        "val": "inverse"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "position",
-        "val": "absolute"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "view",
-        "val": "desktop"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointer"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerpressrelease"
-    },
-    {
-        "block": "input",
-        "mod": "disabled",
-        "val": true
-    },
-    {
-        "block": "input",
-        "mod": "focused",
-        "val": true
-    },
-    {
         "block": "header",
         "elem": "header",
         "mod": "distribute",
@@ -1140,6 +1095,18 @@ exports.deps = [
         "block": "button",
         "mod": "pressed",
         "val": true
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerpressrelease"
     },
     {
         "block": "carousel"
@@ -1213,22 +1180,56 @@ exports.deps = [
         "val": "right"
     },
     {
+        "block": "carousel",
+        "elem": "item",
+        "mod": "s-state",
+        "val": "active"
+    },
+    {
         "block": "brand-card",
         "elem": "image",
         "mod": "item",
         "val": "1"
     },
     {
-        "block": "blog-card",
-        "elem": "image",
-        "mod": "item",
-        "val": "1"
+        "block": "carousel",
+        "elem": "item",
+        "mod": "l-state",
+        "val": "active"
     },
     {
         "block": "pt-form",
         "elem": "item",
         "mod": "vertical-align",
         "val": "center"
+    },
+    {
+        "block": "input",
+        "mod": "disabled",
+        "val": true
+    },
+    {
+        "block": "input",
+        "mod": "focused",
+        "val": true
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "xs-col",
+        "val": "hidden"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col",
+        "val": "hidden"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "m-col",
+        "val": "1"
     },
     {
         "block": "pt-list",

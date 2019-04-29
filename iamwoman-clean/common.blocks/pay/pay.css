@@ -1,5 +1,5 @@
 @media screen and (max-width: $screen-xs-max) {
-    .pay {
+    .pt-list__item_distribute_default.pay {
         display: none;
     }
 

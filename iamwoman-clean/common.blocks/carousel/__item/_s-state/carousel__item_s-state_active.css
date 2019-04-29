@@ -1,6 +1,7 @@
 @media screen and (min-width: $screen-s) {
 
-    .carousel__item_s-m-display_block {
+    .carousel__item_s-state_active {
         display: flex;
+
     }
 }

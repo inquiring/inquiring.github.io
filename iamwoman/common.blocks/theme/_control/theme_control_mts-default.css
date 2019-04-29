@@ -1,0 +1,57 @@
+.theme_control_mts-default {
+
+}
+.theme_control_mts-default {
+    --color-control-bg-default-hover: rgba(0, 0, 0, 0.15);
+    --color-control-bg-default-press: rgba(0, 0, 0, 0.2);
+    --color-control-typo-placeholder: rgb(153, 153, 153);
+    --color-control-bg-clear: rgba(0, 0, 0, 0);
+    --color-control-bg-clear-hover: rgba(0, 0, 0, 0.07);
+    --color-control-bg-clear-press: rgba(0, 0, 0, 0.12);
+    --color-control-bg-border-disable: rgb(153, 153, 153);
+    --color-control-typo-disable: rgb(153, 153, 153);
+    --color-control-typo-placeholder-disable: rgb(128, 128, 128);
+    --control-radius: 4px;
+    --control-border-width: 2px;
+    --control-button-size-l: var(--space-xxxxl);
+    --control-button-size-m: var(--space-xxxl);
+    --control-button-size-s: var(--space-xxl);
+    --control-space-xl: var(--space-xl);
+    --control-space-l: var(--space-l);
+    --control-space-m: var(--space-m);
+    --control-space-s: var(--space-s);
+    --control-space-xs: var(--space-s);
+    --control-size-l: var(--size-typo-l);
+    --control-size-m: var(--size-typo-m);
+    --control-size-s: var(--size-typo-s);
+}
+
+.theme_control_mts-default {
+    --color-control-bg-default: rgb(240, 240, 240);
+    --color-control-bg-default-affect: rgb(255, 255, 255);
+    --color-control-bg-border-default: rgb(240, 240, 240);
+    --color-control-bg-border-default-hover: rgba(0, 0, 0, 0.25);
+    --color-control-bg-border-default-press: rgba(0, 0, 0, 0.35);
+    --color-control-bg-border-focus: rgba(250, 61, 74, 0.5);
+    --color-control-typo-primary: #000;
+    --color-control-typo-secondary: rgba(0, 0, 0, 0.6);
+    --color-control-typo-ghost: rgba(0, 0, 0, 0.35);
+    --color-control-typo-affect: rgb(255, 255, 255);
+    --color-control-typo-action: #0070f0;
+    --color-control-bg-action: rgb(250, 61, 74);
+    --color-control-bg-action-hover: rgb(251, 86, 97);
+    --color-control-bg-action-press: rgb(249, 26, 41);
+    --color-control-bg-action-progress: rgba(227, 6, 19, 0.3);
+    --color-control-bg-action-progressing: rgba(227, 6, 19, 0.3);
+    --color-control-bg-check: rgb(250, 41, 55);
+    --color-control-bg-check-press: rgb(251, 111, 120);
+    --color-control-bg-check-hover: rgb(251, 111, 120);
+    --color-control-bg-border-check: rgb(250, 41, 55);
+    --color-control-bg-border-check-press: rgba(0, 0, 0, 0.35);
+    --color-control-bg-border-check-hover: rgb(219, 6, 20);
+    --color-control-link-default: #0070f0;
+    --color-control-bg-link-default: #0070f0;
+    --color-control-bg-border-link-default: #0070f0;
+    --color-control-bg-disable: rgb(230, 230, 230);
+    --color-control-bg-disable-check: rgb(224, 224, 224);
+}

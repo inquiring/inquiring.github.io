@@ -1,0 +1,12 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .tpl-layout__content {
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: $screen-s) {
+
+    .tpl-layout__content {
+        padding: 0 20px;
+    }
+}

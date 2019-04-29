@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (min-width: $screen-s) and (max-width: $screen-m-max) {
+@media screen and (min-width: $screen-s) {
 
     .pt-surface__content {
         padding: 220px 105px 54px 105px;
@@ -53,6 +53,7 @@
     }
     .pt-surface__content .pt-list .pt-list__item {
         width: 38%;
+        margin-right: 2%;
     }
     /* sale */
     .pt-surface__content .pt-list .pt-list__item:nth-child(15) {
@@ -93,37 +94,108 @@
     }
 }
 
-@media screen and (min-width: $screen-l) {
+@media screen and (min-width: $screen-m) {
 
     .pt-surface__content {
         padding: 215px 157px 0px 157px;
     }
     .pt-surface__content .pt-list {
-        height: 355px;
+        height: 399px;
     }
     .pt-surface__content .pt-list .pt-list__item {
-        width: 25%;
+        width: 20%;
+        margin-right: 3%;
     }
-    /* контакты */
+    /* Пальто */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(1) {
+       order: 1;
+    }
+    /* Жилеты и жакеты */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(2) {
+       order: 2;
+    }
+    /* Костюмы */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(3) {
+       order: 3;
+    }
+    /* Трикотаж */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(4) {
+       order: 4;
+    }
+    /* Платья */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(5) {
+       order: 5;
+    }
+    /* Блузы и топы */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(6) {
+       order: 6;
+    }
+    /* Футболки */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(7) {
+       order: 7;
+    }
+    /* Юбки и брюки */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(8) {
+       order: 8;
+    }
+    /* Аксессуары */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(9) {
+       order: 9;
+    }
+    /* О бренде */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(10) {
+       order: 10;
+    }
+    /* Оферта */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(11) {
+       order: 11;
+    }
+    /* Оплата и доставка */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(12) {
+       order: 12;
+    }
+    /* Возврат */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(13) {
+       order: 13;
+    }
+    /* Контакты */
     .pt-surface__content .pt-list .pt-list__item:nth-child(14) {
-       margin-bottom: 180px;
+        order: 14;
+        margin-bottom: 170px;
     }
-    /* streetStyle */
-    .pt-surface__content .pt-list .pt-list__item:nth-child(20) {
-        margin-bottom: 180px;
+    /* Sale */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(15) {
+        order: 15;
     }
-    /* отзывы */
+    /* New */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(16) {
+        order: 16;
+    }
+    /* Отзывы */
     .pt-surface__content .pt-list .pt-list__item:nth-child(17) {
-        order: 3;
+        order: 22;
         margin-bottom: 0px;
     }
-     /* Войти в личный кабинет */
-    .pt-surface__content .pt-list .pt-list__item:nth-child(22) {
-        order: 2;
+    /* Looks */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(18) {
+       order: 17;
+    }
+    /* Блог */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(19) {
+       order: 18;
+    }
+    /* Streetstyle */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(20) {
+        order: 19;
+        margin-bottom: 170px;
     }
     /* input */
     .pt-surface__content .pt-list .pt-list__item:nth-child(21) {
-        position: relative;
-        order: 1;
+        order: 20;
+        position: unset;
+    }
+     /* Войти в личный кабинет */
+    .pt-surface__content .pt-list .pt-list__item:nth-child(22) {
+        order: 21;
     }
 }
