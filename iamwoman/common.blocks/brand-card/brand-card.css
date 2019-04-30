@@ -1,7 +1,89 @@
-.brand-card {
-    width: 290px;
-    height: 458px;
-    background-color: #ece5e1;
-    opacity: 0.8;
-    margin: auto;
+@media screen and (max-width: $screen-xs-max) {
+
+    .brand-card {
+        width: 290px;
+        height: 458px;
+        margin: auto;
+    }
+    .brand-card .pt-card__content {
+        padding-top: 25px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        text-align: center;
+        z-index: 1;
+
+    }
+    .brand-card .pt-card__content:nth-child(3) {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+    .brand-card {
+        width: 352px;
+        height: 544px;
+        margin: auto;
+    }
+    .tpl-grid__fraction_xs-col_hidden > .brand-card {
+        margin-top: 358px;
+    }
+    .brand-card .pt-card__content:nth-child(2) {
+        position: absolute;
+        margin-left: 267px;
+        margin-top: 37px;
+        width: 457px;
+        height: fit-content;
+        box-sizing: border-box;
+        background-color: #ece5e1;
+        opacity: 0.8;
+        padding-top: 29px;
+        padding-right: 31px;
+        padding-bottom: 33px;
+        padding-left: 27px;
+        z-index: 1;
+    }
+    .brand-card .pt-card__content:nth-child(3) {
+        position: absolute;
+        margin-top: 630px;
+        width: 432px;
+        height: fit-content;
+        box-sizing: border-box;
+        background-color: #ece5e1;
+        opacity: 0.8;
+        padding-top: 47px;
+        padding-right: 23px;
+        padding-bottom: 47px;
+        padding-left: 15px;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: $screen-l) {
+    .brand-card {
+        width: 500px;
+        width: 100%;
+        height: 713px;
+    }
+    .tpl-grid__fraction_xs-col_hidden > .brand-card {
+        margin-top: 441px;
+    }
+    .brand-card .pt-card__content:nth-child(2) {
+        width: 613px;
+        margin-left: 420px;
+        height: 243px;
+        padding-top: 29px;
+        padding-right: 59px;
+        padding-bottom: 47px;
+        padding-left: 41px;
+    }
+    .brand-card .pt-card__content:nth-child(3) {
+        width: 611px;
+        height: 243px;
+        margin-top: 799px;
+        padding-top: 66px;
+        padding-right: 44px;
+        padding-bottom: 60px;
+        padding-left: 42px;
+    }
 }

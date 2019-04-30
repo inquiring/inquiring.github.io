@@ -889,42 +889,55 @@ module.exports = {
                                                             block: 'pt-card',
                                                             mix: { block: 'new-card' },
                                                             content: [
-                                                            {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                ],
-                                                                url: '/common.blocks/image/new-item-1-mobile.jpg'
-                                                            },
-                                                            {
-                                                                elem: 'footer',
-                                                                mix: [
-                                                                    { block: 'decorator', mods: { 'space-a': 's' } },
-                                                                    {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
-                                                                ],
-                                                                content: {
-                                                                    block: 'info',
-                                                                    attrs: { style: 'width: 100%'},
-                                                                    content: [
-                                                                        {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                size: '18-24-30',
-                                                                                align: 'center'
+                                                                {
+                                                                    elem: 'content',
+                                                                    content: {
+                                                                        tag: 'picture',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'source',
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/new-card/__image/new-card-1-desktop.jpg' },
                                                                             },
-                                                                            content: 'Шелковое платье'
-                                                                        },
-                                                                        {
-                                                                            block: 'text',
-                                                                            mods: {
-                                                                                size: '14-16-20',
-                                                                                align: 'center'
+                                                                            {
+                                                                                block: 'image',
+                                                                                width: '100%',
+                                                                                height: '100%',
+                                                                                url: '/common.blocks/new-card/__image/new-card-1-mobile.jpg',
+                                                                                alt: ''
                                                                             },
-                                                                            content: '4 800 рублей'
-                                                                        }
-                                                                    ]
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    elem: 'content',
+                                                                    mix: [
+                                                                        { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                        {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
+                                                                    ],
+                                                                    content: {
+                                                                        block: 'info',
+                                                                        attrs: { style: 'width: 100%'},
+                                                                        content: [
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {
+                                                                                    size: '18-24-30',
+                                                                                    align: 'center'
+                                                                                },
+                                                                                content: 'Шелковое платье'
+                                                                            },
+                                                                            {
+                                                                                block: 'text',
+                                                                                mods: {
+                                                                                    size: '14-16-20',
+                                                                                    align: 'center'
+                                                                                },
+                                                                                content: '4 800 рублей'
+                                                                            }
+                                                                        ]
+                                                                    }
                                                                 }
-                                                            }]
+                                                            ]
                                                         }
                                                     },
                                                     // элемент карусели
@@ -935,15 +948,27 @@ module.exports = {
                                                             block: 'pt-card',
                                                             mix: { block: 'new-card' },
                                                             content: [
+                                                                {
+                                                                    elem: 'content',
+                                                                    content: {
+                                                                        tag: 'picture',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'source',
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/new-card/__image/new-card-2-desktop.jpg' },
+                                                                            },
+                                                                            {
+                                                                                block: 'image',
+                                                                                width: '100%',
+                                                                                height: '100%',
+                                                                                url: '/common.blocks/new-card/__image/new-card-2-mobile.jpg',
+                                                                                alt: ''
+                                                                            },
+                                                                        ]
+                                                                    }
+                                                                },
                                                             {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                ],
-                                                                url: '/common.blocks/image/new-item-2-mobile.jpg'
-                                                            },
-                                                            {
-                                                                elem: 'footer',
+                                                                elem: 'content',
                                                                 mix: [
                                                                     { block: 'decorator', mods: { 'space-a': 's' } },
                                                                     {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
@@ -981,16 +1006,27 @@ module.exports = {
                                                             block: 'pt-card',
                                                             mix: { block: 'new-card' },
                                                             content: [
+                                                                {
+                                                                    elem: 'content',
+                                                                    content: {
+                                                                        tag: 'picture',
+                                                                        content: [
+                                                                            {
+                                                                                tag: 'source',
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/new-card/__image/new-card-3-desktop.jpg' },
+                                                                            },
+                                                                            {
+                                                                                block: 'image',
+                                                                                width: '100%',
+                                                                                height: '100%',
+                                                                                url: '/common.blocks/new-card/__image/new-card-3-mobile.jpg',
+                                                                                alt: ''
+                                                                            },
+                                                                        ]
+                                                                    }
+                                                                },
                                                             {
-                                                                block: 'image',
-                                                                mix: [
-                                                                    { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                ],
-                                                                url: '/common.blocks/image/new-item-3-mobile.jpg'
-                                                            },
-
-                                                            {
-                                                                elem: 'footer',
+                                                                elem: 'content',
                                                                 mix: [
                                                                     { block: 'decorator', mods: { 'space-a': 's' } },
                                                                     {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
@@ -1071,77 +1107,130 @@ module.exports = {
                         elem: 'container', elemMods: { align: 'center', size: 'm' },
                         content: [
                             {
-                                elem: 'section',
+                                block: 'tpl-grid',
+                                mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full' },
                                 content: [
                                     {
-                                        block: 'text',
-                                        mods: {
-                                            view: 'brand',
-                                            size: '24-36-48',
-                                            align: 'center',
-                                            weight: 'regular'
+                                        elem: 'fraction',
+                                        elemMods: { 'xs-col': '1','s-col': '2' },
+                                        content: {
+                                            block: 'text',
+                                            mods: {
+                                                view: 'brand',
+                                                size: '24-36-48',
+                                                align: 'center',
+                                                weight: 'regular'
+                                            },
+                                            mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
+                                            content: 'О бренде'
                                         },
-                                        mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
-                                        content: 'О бренде'
                                     },
                                     {
-                                        block: 'pt-card',
-                                        mix: { block: 'brand-card' },
-                                        content: [
-                                        {
-                                            block: 'image',
-                                            mix: [
-                                                { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'} },
-                                                { block: 'brand-card', elem: 'image', elemMods: { item: '1'} },
-                                            ],
-                                            url: '/common.blocks/image/brand-image-1-mobile.jpg'
-                                        },
-                                        {
-                                            elem: 'content',
-                                            mix: [
-                                                { block: 'brand-card',  elem: 'footer' },
+                                        elem: 'fraction',
+                                        elemMods: { 'xs-col': '1','s-col': '1', 's-row': '2' },
+                                        content: {
+                                            block: 'pt-card',
+                                            mix: { block: 'brand-card' },
+                                            content: [
                                                 {
-                                                    block: 'decorator',
-                                                    mods: {
-                                                        'space-h': 's',
-                                                        'space-v': 'l'
+                                                    tag: 'picture',
+                                                    content: [
+                                                        {
+                                                            tag: 'source',
+                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/brand-card/__image/brand-card-1-desktop.jpg' },
+                                                        },
+                                                        {
+                                                            tag: 'source',
+                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/brand-card/__image/brand-card-1-tablet.jpg' },
+                                                        },
+                                                        {
+                                                            block: 'image',
+                                                            mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+                                                            url: '/common.blocks/brand-card/__image/brand-card-1-mobile.jpg',
+                                                            alt: ''
+                                                        },
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'content',
+                                                    content: {
+                                                        block: 'info',
+                                                        attrs: { style: 'width: 100%'},
+                                                        mix: {
+                                                            block: 'text',
+                                                            mods: {
+                                                                view: 'primary',
+                                                                size: '16-16-20',
+                                                                weight: 'light',
+                                                            }
+                                                        },
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                content: 'Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.'
+                                                            },
+                                                            {
+                                                                block: 'text',
+                                                                block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                content: 'Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность'
+                                                            },
+                                                        ]
                                                     }
                                                 },
-                                            ],
+                                                {
+                                                    elem: 'content',
+                                                    content: {
+                                                        block: 'info',
+                                                        attrs: { style: 'width: 100%'},
+                                                        mix: {
+                                                            block: 'text',
+                                                            mods: {
+                                                                view: 'primary',
+                                                                size: '16-16-20',
+                                                                weight: 'light',
+                                                            }
+                                                        },
+                                                        content: [
+                                                            {
+                                                                block: 'text',
+                                                                block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                content: 'Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.'
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        elem: 'fraction',
+                                        elemMods: { 'xs-col': 'hidden','s-col': '1', 's-row': '1' },
+                                        content: {
+                                            block: 'pt-card',
+                                            mix: { block: 'brand-card' },
                                             content: {
-                                                block: 'info',
-                                                attrs: { style: 'width: 100%'},
-                                                mix: {
-                                                    block: 'text',
-                                                    mods: {
-                                                        view: 'primary',
-                                                        size: '16-16-20',
-                                                        align: 'center',
-                                                        weight: 'light',
-                                                    }
-                                                },
+                                                tag: 'picture',
                                                 content: [
                                                     {
-                                                        block: 'text',
-                                                        block: 'decorator', mods: { 'indent-b': 'm' },
-                                                        content: 'Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.'
+                                                        tag: 'source',
+                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/brand-card/__image/brand-card-2-desktop.jpg' },
                                                     },
                                                     {
-                                                        block: 'text',
-                                                        block: 'decorator', mods: { 'indent-b': 'm' },
-                                                        content: 'Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность'
+                                                        tag: 'source',
+                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/brand-card/__image/brand-card-2-tablet.jpg' },
                                                     },
                                                     {
-                                                        block: 'text',
-                                                        block: 'decorator', mods: { 'indent-b': 'm' },
-                                                        content: 'Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.'
-                                                    }
+                                                        block: 'image',
+                                                        mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+                                                        alt: ''
+                                                    },
                                                 ]
                                             }
-                                        }]
+                                        }
                                     }
                                 ]
-                            },
+                            }
                         ]
                     }
                 },

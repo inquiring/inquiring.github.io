@@ -662,6 +662,10 @@ exports.deps = [
         "block": "new-card"
     },
     {
+        "block": "pt-card",
+        "elem": "content"
+    },
+    {
         "block": "decorator",
         "mod": "space-a"
     },
@@ -686,52 +690,93 @@ exports.deps = [
         "val": "14-16-20"
     },
     {
+        "block": "tpl-grid"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "xs-ratio"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "xs-ratio",
+        "val": "1"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "s-ratio"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "s-ratio",
+        "val": "1-1"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "col-gap"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "col-gap",
+        "val": "full"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "row-gap"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "row-gap",
+        "val": "full"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "xs-col"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col"
+    },
+    {
         "block": "text",
         "mod": "weight",
         "val": "regular"
     },
     {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col",
+        "val": "1"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-row"
+    },
+    {
         "block": "brand-card"
-    },
-    {
-        "block": "brand-card",
-        "elem": "image"
-    },
-    {
-        "block": "brand-card",
-        "elem": "image",
-        "mod": "item"
-    },
-    {
-        "block": "pt-card",
-        "elem": "content"
-    },
-    {
-        "block": "brand-card",
-        "elem": "footer"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-h"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-h",
-        "val": "s"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-v"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-v",
-        "val": "l"
     },
     {
         "block": "text",
         "mod": "size",
         "val": "16-16-20"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "xs-col",
+        "val": "hidden"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-row",
+        "val": "1"
     },
     {
         "block": "text",
@@ -879,27 +924,6 @@ exports.deps = [
         "block": "footer"
     },
     {
-        "block": "tpl-grid"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xs-ratio"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xs-ratio",
-        "val": "1"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "s-ratio"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "s-ratio",
-        "val": "1-1"
-    },
-    {
         "block": "tpl-grid",
         "mod": "m-columns"
     },
@@ -910,17 +934,9 @@ exports.deps = [
     },
     {
         "block": "tpl-grid",
-        "elem": "fraction"
-    },
-    {
-        "block": "tpl-grid",
         "elem": "fraction",
-        "mod": "xs-col"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col"
+        "mod": "s-col",
+        "val": "hidden"
     },
     {
         "block": "tpl-grid",
@@ -937,12 +953,6 @@ exports.deps = [
     {
         "block": "section",
         "elem": "body"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col",
-        "val": "2"
     },
     {
         "block": "tpl-grid",
@@ -1182,10 +1192,22 @@ exports.deps = [
         "val": "active"
     },
     {
-        "block": "brand-card",
-        "elem": "image",
-        "mod": "item",
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "xs-col",
         "val": "1"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-col",
+        "val": "2"
+    },
+    {
+        "block": "tpl-grid",
+        "elem": "fraction",
+        "mod": "s-row",
+        "val": "2"
     },
     {
         "block": "carousel",
@@ -1208,18 +1230,6 @@ exports.deps = [
         "block": "input",
         "mod": "focused",
         "val": true
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "xs-col",
-        "val": "hidden"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col",
-        "val": "hidden"
     },
     {
         "block": "tpl-grid",
