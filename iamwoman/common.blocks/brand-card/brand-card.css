@@ -33,7 +33,6 @@
         margin-left: 267px;
         margin-top: 37px;
         width: 457px;
-        height: fit-content;
         box-sizing: border-box;
         background-color: #ece5e1;
         opacity: 0.8;
@@ -45,9 +44,9 @@
     }
     .brand-card .pt-card__content:nth-child(3) {
         position: absolute;
+        margin: 0;
         margin-top: 630px;
         width: 432px;
-        height: fit-content;
         box-sizing: border-box;
         background-color: #ece5e1;
         opacity: 0.8;
@@ -59,7 +58,7 @@
     }
 }
 
-@media screen and (min-width: $screen-l) {
+@media screen and (min-width: $screen-m) {
     .brand-card {
         width: 500px;
         width: 100%;
@@ -69,21 +68,33 @@
         margin-top: 441px;
     }
     .brand-card .pt-card__content:nth-child(2) {
-        width: 613px;
-        margin-left: 420px;
-        height: 243px;
-        padding-top: 29px;
-        padding-right: 59px;
-        padding-bottom: 47px;
-        padding-left: 41px;
+        margin-left: 380px;
     }
     .brand-card .pt-card__content:nth-child(3) {
         width: 611px;
-        height: 243px;
-        margin-top: 799px;
+        margin-top: 899px;
         padding-top: 66px;
         padding-right: 44px;
         padding-bottom: 60px;
         padding-left: 42px;
+
     }
+}
+
+@media screen and (min-width: $screen-l) {
+    .brand-card .pt-card__content:nth-child(2) {
+
+        width: 613px;
+        margin-left: 420px;
+        padding-top: 29px;
+        padding-right: 59px;
+        padding-bottom: 47px;
+        padding-left: 41px;
+
+    }
+    .brand-card .pt-card__content:nth-child(3) {
+        margin-top: 900px;
+        width: 700px;
+    }
+
 }

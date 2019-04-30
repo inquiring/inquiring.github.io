@@ -1,6 +1,6 @@
 module.exports = {
     block: 'page',
-    title: 'Title of the page',
+    title: 'I am woman',
     favicon: '/favicon.ico',
     lang: 'ru',
     head: [
@@ -1137,7 +1137,7 @@ module.exports = {
                                                     content: [
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/brand-card/__image/brand-card-1-desktop.jpg' },
+                                                            attrs: { media: '(min-width:  1024px)', srcset: '/common.blocks/brand-card/__image/brand-card-1-desktop.jpg' },
                                                         },
                                                         {
                                                             tag: 'source',
@@ -1194,7 +1194,6 @@ module.exports = {
                                                         content: [
                                                             {
                                                                 block: 'text',
-                                                                block: 'decorator', mods: { 'indent-b': 'm' },
                                                                 content: 'Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.'
                                                             }
                                                         ]
@@ -1214,7 +1213,7 @@ module.exports = {
                                                 content: [
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/brand-card/__image/brand-card-2-desktop.jpg' },
+                                                        attrs: { media: '(min-width:  1024px)', srcset: '/common.blocks/brand-card/__image/brand-card-2-desktop.jpg' },
                                                     },
                                                     {
                                                         tag: 'source',
