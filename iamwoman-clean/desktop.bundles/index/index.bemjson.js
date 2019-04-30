@@ -381,7 +381,6 @@ module.exports = {
                                                 },
                                             ]
                                         },
-
                                     ]
                                 },
                                 {
@@ -903,12 +902,12 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/new-card/__image/new-card-1-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/new-card-1-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
                                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                                url: '../../common.blocks/new-card/__image/new-card-1-mobile.jpg',
+                                                                                url: '../../common.blocks/image/new-card-1-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -961,12 +960,12 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/new-card/__image/new-card-2-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/new-card-2-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
                                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                                url: '/common.blocks/new-card/__image/new-card-2-mobile.jpg',
+                                                                                url: '../../common.blocks/image/new-card-2-mobile.jpg',
 
                                                                                 alt: ''
                                                                             },
@@ -1019,12 +1018,12 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/new-card/__image/new-card-3-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/new-card-3-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
                                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                                url: '../../common.blocks/new-card/__image/new-card-3-mobile.jpg',
+                                                                                url: '../../common.blocks/image/new-card-3-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -1143,16 +1142,16 @@ module.exports = {
                                                     content: [
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/brand-card/__image/brand-card-1-desktop.jpg' },
+                                                            attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/image/brand-card-1-desktop.jpg' },
                                                         },
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/brand-card/__image/brand-card-1-tablet.jpg' },
+                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/brand-card-1-tablet.jpg' },
                                                         },
                                                         {
                                                             block: 'image',
                                                             mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-                                                            url: '../../common.blocks/brand-card/__image/brand-card-1-mobile.jpg',
+                                                            url: '../../common.blocks/image/brand-card-1-mobile.jpg',
                                                             alt: ''
                                                         },
                                                     ]
@@ -1219,16 +1218,16 @@ module.exports = {
                                                 content: [
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/brand-card/__image/brand-card-2-desktop.jpg' },
+                                                        attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/image/brand-card-2-desktop.jpg' },
                                                     },
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/brand-card/__image/brand-card-2-tablet.jpg' },
+                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/brand-card-2-tablet.jpg' },
                                                     },
                                                     {
                                                         block: 'image',
                                                         mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-                                                        url: '../../common.blocks/brand-card/__image/brand-card-1-mobile.jpg',
+                                                        url: '../../common.blocks/image/brand-card-1-mobile.jpg',
                                                         alt: ''
                                                     },
                                                 ]
@@ -1283,16 +1282,16 @@ module.exports = {
                                                                     content: [
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-1-desktop.jpg' },
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/blog-image-1-desktop.jpg' },
                                                                         },
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-1-tablet.jpg' },
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/blog-image-1-tablet.jpg' },
                                                                         },
                                                                         {
                                                                             block: 'image',
                                                                             mix: { block: 'pt-card', elem: 'image' },
-                                                                            url: '../../common.blocks/blog-card/__image/blog-image-1-mobile.jpg',
+                                                                            url: '../../common.blocks/image/blog-image-1-mobile.jpg',
                                                                             alt: ''
                                                                         },
                                                                     ]
@@ -1350,16 +1349,16 @@ module.exports = {
                                                                             content: [
                                                                                 {
                                                                                     tag: 'source',
-                                                                                    attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-2-desktop.jpg' },
+                                                                                    attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/blog-image-2-desktop.jpg' },
                                                                                 },
                                                                                 {
                                                                                     tag: 'source',
-                                                                                    attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-2-tablet.jpg' },
+                                                                                    attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/blog-image-2-tablet.jpg' },
                                                                                 },
                                                                                 {
                                                                                     block: 'image',
                                                                                     mix: { block: 'pt-card', elem: 'image' },
-                                                                                    url: '../../common.blocks/blog-card/__image/blog-image-2-mobile.jpg',
+                                                                                    url: '../../common.blocks/image/blog-image-2-mobile.jpg',
                                                                                     alt: ''
                                                                                 },
                                                                             ]
@@ -1420,16 +1419,16 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-3-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/blog-image-3-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-3-tablet.jpg' },
+                                                                                attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/blog-image-3-tablet.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
                                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                                url: '../../common.blocks/blog-card/__image/blog-image-3-mobile.jpg',
+                                                                                url: '../../common.blocks/image/blog-image-3-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -1487,16 +1486,16 @@ module.exports = {
                                                                     content: [
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-4-desktop.jpg' },
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/blog-image-4-desktop.jpg' },
                                                                         },
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-4-tablet.jpg' },
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/blog-image-4-tablet.jpg' },
                                                                         },
                                                                         {
                                                                             block: 'image',
                                                                             mix: { block: 'pt-card', elem: 'image' },
-                                                                            url: '../../common.blocks/blog-card/__image/blog-image-4-mobile.jpg',
+                                                                            url: '../../common.blocks/image/blog-image-4-mobile.jpg',
                                                                             alt: ''
                                                                         },
                                                                     ]
@@ -1614,16 +1613,16 @@ module.exports = {
                                                 content: [
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/form-card/__image/form-card-desktop.jpg' },
+                                                        attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/form-card-desktop.jpg' },
                                                     },
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/form-card/__image/form-card-tablet.jpg' },
+                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/form-card-tablet.jpg' },
                                                     },
                                                     {
                                                         block: 'image',
                                                         mix: { block: 'pt-card', elem: 'image', elemMods:{ size:'cover' } },
-                                                        url: '../../common.blocks/form-card/__image/form-card-mobile.jpg',
+                                                        url: '../../common.blocks/image/form-card-mobile.jpg',
                                                         alt: ''
                                                     },
                                                 ]
