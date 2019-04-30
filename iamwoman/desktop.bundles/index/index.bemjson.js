@@ -966,7 +966,8 @@ module.exports = {
                                                                             {
                                                                                 block: 'image',
                                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                                url: '../../common.blocks/new-card/__image/new-card-2-mobile.jpg',
+                                                                                url: '/common.blocks/new-card/__image/new-card-2-mobile.jpg',
+
                                                                                 alt: ''
                                                                             },
                                                                         ]
