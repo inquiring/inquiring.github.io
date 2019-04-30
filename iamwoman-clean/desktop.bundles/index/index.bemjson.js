@@ -1,14 +1,14 @@
 module.exports = {
     block: 'page',
     title: 'I am woman',
-    favicon: '/favicon.ico',
     lang: 'ru',
+    favicon: '/favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
+        { elem: 'css', url: 'index.min.css' },
         { elem: 'css', url: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=cyrillic' },
         { elem: 'css', url: 'https://fonts.googleapis.com/css?family=Cormorant:300,400,500,600,700&amp;subset=cyrillic' },
-        { elem: 'css', url: 'index.min.css' },
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
     mods: {
@@ -302,16 +302,19 @@ module.exports = {
                                                     content: [
                                                         {
                                                             block: 'text',
+                                                            tag: 'h1',
                                                             mods: {
                                                                 view: 'primary',
                                                                 size: 'xxl',
                                                                 transform: 'uppercase',
                                                                 weight: 'black',
                                                                 },
-                                                            content: 'I am woman'
+                                                            content: 'I am woman',
+                                                            attrs: { style: 'margin: 0' }
                                                         },
                                                         {
                                                             block: 'text',
+                                                            tag: 'span',
                                                             mods: {
                                                                 view: 'primary',
                                                                 size: 'm',
@@ -422,15 +425,15 @@ module.exports = {
                                                                                 content: [
                                                                                     {
                                                                                         tag: 'source',
-                                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/header-card-bg-1-desktop.jpg' },
+                                                                                        attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/header-card-bg-1-desktop.jpg' },
                                                                                     },
                                                                                     {
                                                                                         tag: 'source',
-                                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/header-card-bg-1-tablet.jpg' },
+                                                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/header-card-bg-1-tablet.jpg' },
                                                                                     },
                                                                                     {
                                                                                         block: 'image',
-                                                                                        url: '/common.blocks/image/header-card-bg-1-mobile.jpg',
+                                                                                        url: '../../common.blocks/image/header-card-bg-1-mobile.jpg',
                                                                                         alt: ''
                                                                                     },
                                                                                 ]
@@ -444,16 +447,16 @@ module.exports = {
                                                                                     content: [
                                                                                         {
                                                                                             tag: 'source',
-                                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/header-card-1-desktop.jpg' },
+                                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/header-card-1-desktop.jpg' },
                                                                                         },
                                                                                         {
                                                                                             tag: 'source',
-                                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/header-card-1-tablet.jpg' },
+                                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/header-card-1-tablet.jpg' },
                                                                                         },
                                                                                         {
                                                                                             block: 'image',
                                                                                             mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'}},
-                                                                                            url: '/common.blocks/image/header-card-1-mobile.jpg',
+                                                                                            url: '../../common.blocks/image/header-card-1-mobile.jpg',
                                                                                             alt: ''
                                                                                         },
                                                                                     ]
@@ -501,15 +504,15 @@ module.exports = {
                                                                                 content: [
                                                                                     {
                                                                                         tag: 'source',
-                                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/header-card-bg-2-desktop.jpg' },
+                                                                                        attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/header-card-bg-2-desktop.jpg' },
                                                                                     },
                                                                                     {
                                                                                         tag: 'source',
-                                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/header-card-bg-2-tablet.jpg' },
+                                                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/header-card-bg-2-tablet.jpg' },
                                                                                     },
                                                                                     {
                                                                                         block: 'image',
-                                                                                        url: '/common.blocks/image/header-card-bg-2-mobile.jpg',
+                                                                                        url: '../../common.blocks/image/header-card-bg-2-mobile.jpg',
                                                                                         alt: ''
                                                                                     },
                                                                                 ]
@@ -523,15 +526,15 @@ module.exports = {
                                                                                     content: [
                                                                                         {
                                                                                             tag: 'source',
-                                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/header-card-2-desktop.jpg' },
+                                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/header-card-2-desktop.jpg' },
                                                                                         },
                                                                                         {
                                                                                             tag: 'source',
-                                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/header-card-2-tablet.jpg' },
+                                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/header-card-2-tablet.jpg' },
                                                                                         },
                                                                                         {
                                                                                             block: 'image',
-                                                                                            url: '/common.blocks/image/header-card-2-mobile.jpg',
+                                                                                            url: '../../common.blocks/image/header-card-2-mobile.jpg',
                                                                                             alt: ''
                                                                                         },
                                                                                     ]
@@ -579,15 +582,15 @@ module.exports = {
                                                                                 content: [
                                                                                     {
                                                                                         tag: 'source',
-                                                                                        attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/header-card-bg-3-desktop.jpg' },
+                                                                                        attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/header-card-bg-3-desktop.jpg' },
                                                                                     },
                                                                                     {
                                                                                         tag: 'source',
-                                                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/header-card-bg-3-tablet.jpg' },
+                                                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/header-card-bg-3-tablet.jpg' },
                                                                                     },
                                                                                     {
                                                                                         block: 'image',
-                                                                                        url: '/common.blocks/image/header-card-bg-3-mobile.jpg',
+                                                                                        url: '../../common.blocks/image/header-card-bg-3-mobile.jpg',
                                                                                         alt: ''
                                                                                     },
                                                                                 ]
@@ -601,15 +604,15 @@ module.exports = {
                                                                                     content: [
                                                                                         {
                                                                                             tag: 'source',
-                                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/image/header-card-3-desktop.jpg' },
+                                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/image/header-card-3-desktop.jpg' },
                                                                                         },
                                                                                         {
                                                                                             tag: 'source',
-                                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/image/header-card-3-tablet.jpg' },
+                                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/header-card-3-tablet.jpg' },
                                                                                         },
                                                                                         {
                                                                                             block: 'image',
-                                                                                            url: '/common.blocks/image/header-card-3-mobile.jpg',
+                                                                                            url: '../../common.blocks/image/header-card-3-mobile.jpg',
                                                                                             alt: ''
                                                                                         },
                                                                                     ]
@@ -835,6 +838,7 @@ module.exports = {
                                 content: [
                                     {
                                         block: 'text',
+                                        tag: 'h2',
                                         mods: {
                                             view: 'brand',
                                             size: '24-36-48',
@@ -887,7 +891,10 @@ module.exports = {
                                                         elemMods: { 's-state': 'active' },
                                                         content: {
                                                             block: 'pt-card',
-                                                            mix: { block: 'new-card' },
+                                                            mix: [
+                                                                { block: 'new-card' },
+                                                                { block: 'link' }
+                                                            ],
                                                             content: [
                                                                 {
                                                                     elem: 'content',
@@ -896,13 +903,12 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/new-card/__image/new-card-1-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/new-card/__image/new-card-1-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
-                                                                                width: '100%',
-                                                                                height: '100%',
-                                                                                url: '/common.blocks/new-card/__image/new-card-1-mobile.jpg',
+                                                                                mix: { block: 'pt-card', elem: 'image' },
+                                                                                url: '../../common.blocks/new-card/__image/new-card-1-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -955,13 +961,12 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/new-card/__image/new-card-2-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/new-card/__image/new-card-2-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
-                                                                                width: '100%',
-                                                                                height: '100%',
-                                                                                url: '/common.blocks/new-card/__image/new-card-2-mobile.jpg',
+                                                                                mix: { block: 'pt-card', elem: 'image' },
+                                                                                url: '../../common.blocks/new-card/__image/new-card-2-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -1013,13 +1018,12 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/new-card/__image/new-card-3-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/new-card/__image/new-card-3-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
-                                                                                width: '100%',
-                                                                                height: '100%',
-                                                                                url: '/common.blocks/new-card/__image/new-card-3-mobile.jpg',
+                                                                                mix: { block: 'pt-card', elem: 'image' },
+                                                                                url: '../../common.blocks/new-card/__image/new-card-3-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -1115,6 +1119,7 @@ module.exports = {
                                         elemMods: { 'xs-col': '1','s-col': '2' },
                                         content: {
                                             block: 'text',
+                                            tag: 'h2',
                                             mods: {
                                                 view: 'brand',
                                                 size: '24-36-48',
@@ -1137,16 +1142,16 @@ module.exports = {
                                                     content: [
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  1024px)', srcset: '/common.blocks/brand-card/__image/brand-card-1-desktop.jpg' },
+                                                            attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/brand-card/__image/brand-card-1-desktop.jpg' },
                                                         },
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/brand-card/__image/brand-card-1-tablet.jpg' },
+                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/brand-card/__image/brand-card-1-tablet.jpg' },
                                                         },
                                                         {
                                                             block: 'image',
                                                             mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-                                                            url: '/common.blocks/brand-card/__image/brand-card-1-mobile.jpg',
+                                                            url: '../../common.blocks/brand-card/__image/brand-card-1-mobile.jpg',
                                                             alt: ''
                                                         },
                                                     ]
@@ -1213,15 +1218,16 @@ module.exports = {
                                                 content: [
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  1024px)', srcset: '/common.blocks/brand-card/__image/brand-card-2-desktop.jpg' },
+                                                        attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/brand-card/__image/brand-card-2-desktop.jpg' },
                                                     },
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/brand-card/__image/brand-card-2-tablet.jpg' },
+                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/brand-card/__image/brand-card-2-tablet.jpg' },
                                                     },
                                                     {
                                                         block: 'image',
                                                         mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+                                                        url: '../../common.blocks/brand-card/__image/brand-card-1-mobile.jpg',
                                                         alt: ''
                                                     },
                                                 ]
@@ -1245,6 +1251,7 @@ module.exports = {
                                 content: [
                                     {
                                         block: 'text',
+                                        tag: 'h2',
                                         mods: {
                                             view: 'brand',
                                             size: '24-48-48',
@@ -1275,17 +1282,16 @@ module.exports = {
                                                                     content: [
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-1-desktop.jpg' },
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-1-desktop.jpg' },
                                                                         },
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-1-tablet.jpg' },
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-1-tablet.jpg' },
                                                                         },
                                                                         {
                                                                             block: 'image',
-                                                                            width: '100%',
-                                                                            height: '100%',
-                                                                            url: '/common.blocks/blog-card/__image/blog-image-1-mobile.jpg',
+                                                                            mix: { block: 'pt-card', elem: 'image' },
+                                                                            url: '../../common.blocks/blog-card/__image/blog-image-1-mobile.jpg',
                                                                             alt: ''
                                                                         },
                                                                     ]
@@ -1343,17 +1349,16 @@ module.exports = {
                                                                             content: [
                                                                                 {
                                                                                     tag: 'source',
-                                                                                    attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-2-desktop.jpg' },
+                                                                                    attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-2-desktop.jpg' },
                                                                                 },
                                                                                 {
                                                                                     tag: 'source',
-                                                                                    attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-2-tablet.jpg' },
+                                                                                    attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-2-tablet.jpg' },
                                                                                 },
                                                                                 {
                                                                                     block: 'image',
-                                                                                    width: '100%',
-                                                                                    height: '100%',
-                                                                                    url: '/common.blocks/blog-card/__image/blog-image-2-mobile.jpg',
+                                                                                    mix: { block: 'pt-card', elem: 'image' },
+                                                                                    url: '../../common.blocks/blog-card/__image/blog-image-2-mobile.jpg',
                                                                                     alt: ''
                                                                                 },
                                                                             ]
@@ -1414,17 +1419,16 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-3-desktop.jpg' },
+                                                                                attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-3-desktop.jpg' },
                                                                             },
                                                                             {
                                                                                 tag: 'source',
-                                                                                attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-3-tablet.jpg' },
+                                                                                attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-3-tablet.jpg' },
                                                                             },
                                                                             {
                                                                                 block: 'image',
-                                                                                width: '100%',
-                                                                                height: '100%',
-                                                                                url: '/common.blocks/blog-card/__image/blog-image-3-mobile.jpg',
+                                                                                mix: { block: 'pt-card', elem: 'image' },
+                                                                                url: '../../common.blocks/blog-card/__image/blog-image-3-mobile.jpg',
                                                                                 alt: ''
                                                                             },
                                                                         ]
@@ -1482,17 +1486,16 @@ module.exports = {
                                                                     content: [
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  1266px)', srcset: '/common.blocks/blog-card/__image/blog-image-4-desktop.jpg' },
+                                                                            attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/blog-card/__image/blog-image-4-desktop.jpg' },
                                                                         },
                                                                         {
                                                                             tag: 'source',
-                                                                            attrs: { media: '(min-width:  700px)', srcset: '/common.blocks/blog-card/__image/blog-image-4-tablet.jpg' },
+                                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/blog-card/__image/blog-image-4-tablet.jpg' },
                                                                         },
                                                                         {
                                                                             block: 'image',
-                                                                            width: '100%',
-                                                                            height: '100%',
-                                                                            url: '/common.blocks/blog-card/__image/blog-image-4-mobile.jpg',
+                                                                            mix: { block: 'pt-card', elem: 'image' },
+                                                                            url: '../../common.blocks/blog-card/__image/blog-image-4-mobile.jpg',
                                                                             alt: ''
                                                                         },
                                                                     ]
@@ -1585,90 +1588,120 @@ module.exports = {
                         content: [
                             {
                                 elem: 'section',
-                                content: {
-                                    block: 'pt-card',
-                                    mix: [
-                                        { block: 'form-card' },
-                                        { block: 'theme', mods: { color: 'mts-default', control: 'mts-default' }}
-                                    ],
-                                    content: [
+                                content: [
                                     {
-                                        block: 'image',
-                                        mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover'} },
-                                        url: '/common.blocks/image/background-form-mobile.jpg'
+                                        block: 'text',
+                                        tag: 'h2',
+                                        mods: {
+                                            view: 'brand',
+                                            size: '24-48-48',
+                                            align: 'center',
+                                        },
+                                        mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
+                                        content: 'Подпишись на новости',
+                                        attrs: { style: 'font-size: 0; margin: 0' }
                                     },
                                     {
-                                        elem: 'content',
+                                        block: 'pt-card',
                                         mix: [
-                                            { block: 'form-card',  elem: 'content' },
+                                            { block: 'form-card' },
+                                            { block: 'theme', mods: { color: 'mts-default', control: 'mts-default' }}
                                         ],
-                                        content: {
-                                            block: 'info',
-                                            attrs: { style: 'width: 100%'},
-                                            content: [
-                                                {
-                                                    block: 'text',
-                                                    mods: {
-                                                        view: 'brand',
-                                                        align: 'center',
-                                                        size: '18-24-36',
-                                                        weight: 'semibold',
+                                        content: [
+                                            {
+                                                tag: 'picture',
+                                                content: [
+                                                    {
+                                                        tag: 'source',
+                                                        attrs: { media: '(min-width:  1266px)', srcset: '../../common.blocks/form-card/__image/form-card-desktop.jpg' },
                                                     },
-                                                    mix: { block: 'decorator', mods: { 'indent-b': 's' }},
-                                                    content: {
-                                                        html: 'Подпишись на новости I AM WOMEN <br> и получите скидку 5% на следующую покупку'
-                                                    }
-                                                },
-                                                {
-                                                    block: 'pt-form',
+                                                    {
+                                                        tag: 'source',
+                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/form-card/__image/form-card-tablet.jpg' },
+                                                    },
+                                                    {
+                                                        block: 'image',
+                                                        mix: { block: 'pt-card', elem: 'image', elemMods:{ size:'cover' } },
+                                                        url: '../../common.blocks/form-card/__image/form-card-mobile.jpg',
+                                                        alt: ''
+                                                    },
+                                                ]
+                                            },
+                                            {
+                                                elem: 'content',
+                                                mix: [
+                                                    { block: 'form-card',  elem: 'content' },
+                                                ],
+                                                content: {
+                                                    block: 'info',
+                                                    attrs: { style: 'width: 100%'},
                                                     content: [
                                                         {
-                                                            elem: 'item', elemMods: { 'vertical-align': 'center' },
+                                                            block: 'text',
+                                                            mods: {
+                                                                view: 'brand',
+                                                                align: 'center',
+                                                                size: '18-24-36',
+                                                                weight: 'semibold',
+                                                            },
+                                                            mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                            content: {
+                                                                html: 'Подпишись на новости I AM WOMEN <br> и получите скидку 5% на следующую покупку'
+                                                            }
+                                                        },
+                                                        {
+                                                            block: 'pt-form',
                                                             content: [
                                                                 {
-                                                                    block: 'input',
-                                                                    mods: {
-                                                                        theme: 'f',
-                                                                        size: 'l',
-                                                                        type: 'search'
-                                                                    },
-                                                                    placeholder: 'Ваш E-mail',
+                                                                    elem: 'item', elemMods: { 'vertical-align': 'center' },
+                                                                    content: [
+                                                                        {
+                                                                            block: 'input',
+                                                                            mods: {
+                                                                                theme: 'f',
+                                                                                size: 'l',
+                                                                                type: 'search'
+                                                                            },
+                                                                            placeholder: 'Ваш E-mail',
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    elem: 'item',
+                                                                    mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                                    content: {
+                                                                        block: 'button', mods: { size: 'm', 'view': 'primary' },
+                                                                        content: 'Подписаться'
+                                                                    }
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            elem: 'item',
-                                                            mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+                                                            block: 'text',
+                                                            mods: {
+                                                                view: 'brand',
+                                                                align: 'center',
+                                                                size: '10-11-12',
+                                                                weight: 'light',
+                                                            },
+                                                            mix: [
+                                                                { block: 'theme', mods: { font: 'openSans' }},
+                                                            ],
                                                             content: {
-                                                                block: 'button', mods: { size: 'm', 'view': 'primary' },
-                                                                content: 'Подписаться'
+                                                                html: 'Подписываясь на новости, вы даёте согласие <br> на обработку персональных данных'
                                                             }
-                                                        }
+                                                        },
                                                     ]
-                                                },
-                                                {
-                                                    block: 'text',
-                                                    mods: {
-                                                        view: 'brand',
-                                                        align: 'center',
-                                                        size: '10-11-12',
-                                                        weight: 'light',
-                                                    },
-                                                    mix: [
-                                                        { block: 'theme', mods: { font: 'openSans' }},
-                                                    ],
-                                                    content: {
-                                                        html: 'Подписываясь на новости, вы даёте согласие <br> на обработку персональных данных'
-                                                    }
-                                                },
-                                            ]
-                                        }
-                                    }]
-                                }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
                 },
+                // footer
                 {
                     elem: 'content',
                     mix: { block: 'footer' },
@@ -1928,17 +1961,8 @@ module.exports = {
                                                             {
                                                                 block: 'text',
                                                                 mods: {
-                                                                    align: '',
-                                                                    decoration: '',
-                                                                    display: '',
-                                                                    font: '',
                                                                     size: 'm',
-                                                                    spacing: '',
-                                                                    style: '',
-                                                                    transform: '',
-                                                                    type: '',
                                                                     view: 'primary',
-                                                                    weight: ''
                                                                 },
                                                                 mix: { block: 'socials', elem: 'intro' },
                                                                 content: [
@@ -2048,8 +2072,9 @@ module.exports = {
                                                                                 block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
                                                                                 content: {
                                                                                     block: 'image',
-                                                                                    url: '/common.blocks/image/visa.svg',
-                                                                                    width:'36'
+                                                                                    url: '../../common.blocks/image/visa.svg',
+                                                                                    width:'36',
+                                                                                    alt: ''
                                                                                 }
                                                                             },
                                                                             {
@@ -2068,8 +2093,9 @@ module.exports = {
                                                                                 block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
                                                                                 content: {
                                                                                     block: 'image',
-                                                                                    url: '/common.blocks/image/masterCard.svg',
-                                                                                    width:'57'
+                                                                                    url: '../../common.blocks/image/masterCard.svg',
+                                                                                    width:'57',
+                                                                                    alt: ''
                                                                                 }
                                                                             },
                                                                             {
@@ -2088,8 +2114,9 @@ module.exports = {
                                                                                 block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': ''},
                                                                                 content: {
                                                                                     block: 'image',
-                                                                                    url: '/common.blocks/image/PayPal.svg',
-                                                                                    width:'36'
+                                                                                    url: '../../common.blocks/image/PayPal.svg',
+                                                                                    width:'36',
+                                                                                    alt: ''
                                                                                 }
                                                                             },
                                                                             {

@@ -985,18 +985,6 @@ exports.deps = [
         "block": "socials"
     },
     {
-        "block": "text",
-        "mod": "font"
-    },
-    {
-        "block": "text",
-        "mod": "style"
-    },
-    {
-        "block": "text",
-        "mod": "type"
-    },
-    {
         "block": "socials",
         "elem": "intro"
     },
@@ -1038,6 +1026,18 @@ exports.deps = [
     {
         "block": "pay-comment",
         "elem": "intro"
+    },
+    {
+        "block": "text",
+        "mod": "font"
+    },
+    {
+        "block": "text",
+        "mod": "style"
+    },
+    {
+        "block": "text",
+        "mod": "type"
     },
     {
         "block": "pay-comment",

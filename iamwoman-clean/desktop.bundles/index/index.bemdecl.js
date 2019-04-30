@@ -1716,78 +1716,6 @@ exports.blocks = [
         "name": "socials"
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "align"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "decoration"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "display"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "font"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "spacing"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "style"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "transform"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "type"
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "weight"
-            }
-        ]
-    },
-    {
         "name": "socials",
         "elems": [
             {
@@ -1828,6 +1756,14 @@ exports.blocks = [
     },
     {
         "name": "pay"
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "weight"
+            }
+        ]
     },
     {
         "name": "pay",
@@ -1903,6 +1839,70 @@ exports.blocks = [
         "elems": [
             {
                 "name": "intro"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "align"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "decoration"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "display"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "font"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "spacing"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "style"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "transform"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "type"
             }
         ]
     },
