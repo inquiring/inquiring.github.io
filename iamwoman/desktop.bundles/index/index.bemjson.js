@@ -2093,7 +2093,7 @@ module.exports = {
                                                                                 block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': 'l'},
                                                                                 content: {
                                                                                     block: 'image',
-                                                                                    url: '../../common.blocks/image/masterCard.svg',
+                                                                                    url: '../../common.blocks/image/mastercard.svg',
                                                                                     width:'57',
                                                                                     alt: ''
                                                                                 }
@@ -2114,7 +2114,7 @@ module.exports = {
                                                                                 block: 'pt-icon-plus', elem: 'icon', elemMods: {'indent-r': ''},
                                                                                 content: {
                                                                                     block: 'image',
-                                                                                    url: '../../common.blocks/image/PayPal.svg',
+                                                                                    url: '../../common.blocks/image/paypal.svg',
                                                                                     width:'36',
                                                                                     alt: ''
                                                                                 }
