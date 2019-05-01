@@ -82,6 +82,7 @@
 }
 
 @media screen and (min-width: $screen-l) {
+
     .brand-card .pt-card__content:nth-child(2) {
 
         width: 613px;

@@ -199,7 +199,7 @@ exports.blocks = [
                         "name": "size",
                         "vals": [
                             {
-                                "name": "m"
+                                "name": "l"
                             }
                         ]
                     }
@@ -1335,6 +1335,24 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "24-48-48"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "carousel",
+        "elems": [
+            {
+                "name": "inner",
+                "mods": [
+                    {
+                        "name": "overflow-x",
+                        "vals": [
+                            {
+                                "name": "inherit"
+                            }
+                        ]
                     }
                 ]
             }

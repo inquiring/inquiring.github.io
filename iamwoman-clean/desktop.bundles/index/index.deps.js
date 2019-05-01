@@ -785,6 +785,11 @@ exports.deps = [
     },
     {
         "block": "carousel",
+        "elem": "inner",
+        "mod": "overflow-x"
+    },
+    {
+        "block": "carousel",
         "elem": "item",
         "mod": "l-state"
     },
@@ -1074,7 +1079,7 @@ exports.deps = [
         "block": "tpl-layout",
         "elem": "container",
         "mod": "size",
-        "val": "m"
+        "val": "l"
     },
     {
         "block": "header",
@@ -1208,6 +1213,12 @@ exports.deps = [
         "elem": "fraction",
         "mod": "s-row",
         "val": "2"
+    },
+    {
+        "block": "carousel",
+        "elem": "inner",
+        "mod": "overflow-x",
+        "val": "inherit"
     },
     {
         "block": "carousel",

@@ -37,7 +37,7 @@ module.exports = {
                     ],
                     content: [
                         {
-                            elem: 'container', elemMods: { align: 'center', size: 'm' },
+                            elem: 'container', elemMods: { align: 'center', size: 'l' },
                             content: [
                                 // {
                                 //     block: 'pt-surface',
@@ -830,7 +830,7 @@ module.exports = {
                     elem: 'content',
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
-                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        elem: 'container', elemMods: { align: 'center', size: 'l' },
                         content: [
                             {
                                 elem: 'section',
@@ -1108,7 +1108,7 @@ module.exports = {
                     elem: 'content',
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
-                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        elem: 'container', elemMods: { align: 'center', size: 'l' },
                         content: [
                             {
                                 block: 'tpl-grid',
@@ -1243,8 +1243,9 @@ module.exports = {
                 {
                     elem: 'content',
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
+                    attrs: { style: 'overflow: hidden; padding: 0' },
                     content: {
-                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        elem: 'container', elemMods: { align: 'center', size: 'l' },
                         content: [
                             {
                                 elem: 'section',
@@ -1265,7 +1266,7 @@ module.exports = {
                                         mods: { orientation: 'horizontal', animate: true },
                                         content: [
                                             {
-                                                elem: 'inner', elemMods: { 'direction': 'row', content: 'center' },
+                                                elem: 'inner', elemMods: { 'direction': 'row', content: 'center', 'overflow-x': 'inherit' },
                                                 content: [
                                                     // элемент карусели 1
                                                     {
@@ -1571,6 +1572,7 @@ module.exports = {
                                         },
                                         content: {
                                             block: 'link',
+                                            attrs: { href: '#' },
                                             content: 'Перейти в блог'
                                         }
                                     },
@@ -1584,7 +1586,7 @@ module.exports = {
                     elem: 'content',
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
-                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        elem: 'container', elemMods: { align: 'center', size: 'l' },
                         content: [
                             {
                                 elem: 'section',
@@ -1706,7 +1708,7 @@ module.exports = {
                     elem: 'content',
                     mix: { block: 'footer' },
                     content: {
-                        elem: 'container', elemMods: { align: 'center', size: 'm' },
+                        elem: 'container', elemMods: { align: 'center', size: 'l' },
                         content: [
                             {
                                 block: 'tpl-grid',

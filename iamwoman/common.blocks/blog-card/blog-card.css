@@ -16,5 +16,9 @@
     .blog-card {
         width: 401px;
         min-height: calc(618px + 167px);
+
+        margin-left: 5px;
+        margin-right: 5px;
+
     }
 }

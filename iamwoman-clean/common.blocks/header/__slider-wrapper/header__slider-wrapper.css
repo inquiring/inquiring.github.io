@@ -27,7 +27,7 @@
 @media screen and (min-width: $screen-l) {
 
     .header__slider-wrapper {
-        margin-right: -60.5px;
+        margin-right: 0;
         width: 825px;
         margin-left: auto;
     }
