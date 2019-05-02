@@ -762,12 +762,13 @@ module.exports = {
                                         },
                                         {
                                             block: 'link',
+                                            attrs: { href: '#' },
                                             mix: {
                                                 block: 'text',
                                                 mods: {
                                                     view: 'brand',
                                                     size: '14-16-18',
-                                                    decoration: 'underline'
+                                                    decoration: 'i-underline'
                                                 },
                                             },
                                             content: 'Перейти в каталог'
@@ -1268,7 +1269,6 @@ module.exports = {
                 // Блог
                 {
                     elem: 'content',
-                    mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     attrs: { style: 'overflow: hidden; padding: 0' },
                     content: {
                         elem: 'container', elemMods: { align: 'center', size: 'l' },
@@ -1587,25 +1587,28 @@ module.exports = {
                                             },
                                         ]
                                     },
-                                    {
-                                        block: 'text',
-                                        mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
-                                        mods: {
-                                            view: 'success',
-                                            size: '14-14-18',
-                                            align: 'center',
-                                            decoration: 'underline'
-                                        },
-                                        content: {
-                                            block: 'link',
-                                            attrs: { href: '#' },
-                                            content: 'Перейти в блог'
-                                        }
-                                    },
                                 ]
                             },
                         ]
                     }
+                },
+                {
+                    elem: 'content',
+                    mix: { block: 'decorator', mods: { 'indent': 'auto', 'indent-v': 'xxl' } },
+                    content: {
+                        block: 'link',
+                        attrs: { href: '#' },
+                        mix: {
+                            block: 'text',
+                            mods: {
+                                view: 'brand',
+                                size: '14-14-18',
+                                align: 'center',
+                                decoration: 'i-underline'
+                            },
+                        },
+                        content: 'Перейти в блог'
+                    },
                 },
                 // Подписаться
                 {

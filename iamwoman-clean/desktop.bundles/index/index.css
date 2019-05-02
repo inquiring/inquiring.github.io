@@ -1107,8 +1107,13 @@
 .link_disabled {
         pointer-events: none;
     }
-.text_decoration_underline {
-	text-decoration: underline;
+.text_decoration_i-underline {
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-bg-brand);
+    padding-bottom: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 .pt-list {
     margin: 0;
@@ -1219,6 +1224,9 @@
 .decorator_indent-v_xl {
 	margin-top: var(--space-xl);
 	margin-bottom: var(--space-xl);
+}
+.text_decoration_underline {
+	text-decoration: underline;
 }
 .tpl-layout__content {
 	padding: 0 var(--gap);
@@ -1659,8 +1667,12 @@
 .text_spacing_08 {
     letter-spacing: 0.8px;
 }
-.text_view_success {
-	color: var(--color-typo-success);
+.decorator_indent_auto {
+    margin: auto;
+}
+.decorator_indent-v_xxl {
+	margin-top: var(--space-xxl);
+	margin-bottom: var(--space-xxl);
 }
 .form-card {
     padding: 24px 18px;

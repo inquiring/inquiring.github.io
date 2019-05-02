@@ -948,7 +948,7 @@ exports.blocks = [
                 "name": "decoration",
                 "vals": [
                     {
-                        "name": "underline"
+                        "name": "i-underline"
                     }
                 ]
             }
@@ -1025,6 +1025,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "decoration",
+                "vals": [
+                    {
+                        "name": "underline"
                     }
                 ]
             }
@@ -1445,13 +1458,26 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
+        "name": "decorator",
         "mods": [
             {
-                "name": "view",
+                "name": "indent",
                 "vals": [
                     {
-                        "name": "success"
+                        "name": "auto"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-v",
+                "vals": [
+                    {
+                        "name": "xxl"
                     }
                 ]
             }

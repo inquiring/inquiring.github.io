@@ -607,7 +607,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "decoration",
-        "val": "underline"
+        "val": "i-underline"
     },
     {
         "block": "pt-list"
@@ -648,6 +648,11 @@ exports.deps = [
         "block": "decorator",
         "mod": "indent-v",
         "val": "xl"
+    },
+    {
+        "block": "text",
+        "mod": "decoration",
+        "val": "underline"
     },
     {
         "block": "tpl-layout",
@@ -830,9 +835,18 @@ exports.deps = [
         "val": "08"
     },
     {
-        "block": "text",
-        "mod": "view",
-        "val": "success"
+        "block": "decorator",
+        "mod": "indent"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent",
+        "val": "auto"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-v",
+        "val": "xxl"
     },
     {
         "block": "form-card"
