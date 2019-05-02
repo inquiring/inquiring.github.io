@@ -1,0 +1,4 @@
+.text_decoration_i-underline {
+    border-bottom: 1px solid var(--color-bg-brand);
+    padding-bottom: 5px;
+}
