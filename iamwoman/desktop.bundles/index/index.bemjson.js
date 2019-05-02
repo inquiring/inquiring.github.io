@@ -19,6 +19,8 @@ module.exports = {
         mods: {
             breakpoint: 'whitepaper-default',
             color: 'whitepaper-default',    // цвета
+            color: 'mts-default',
+            control: 'mts-default',
             space: 'default',    // отступы
             menu: 'default',    // размер меню
             size: 'default',    // типографика
@@ -279,8 +281,14 @@ module.exports = {
                                                     block: 'button',
                                                     mods: {
                                                         theme: 'islands',
-                                                        size: 'l',
+                                                        size: 'm',
                                                         view: 'plain'
+                                                    },
+                                                    mix: {
+                                                        block: 'button',
+                                                        mods: {
+                                                            theme: 'islands-transparent'
+                                                        },
                                                     },
                                                     content: {
                                                         block: 'icon',
@@ -335,8 +343,14 @@ module.exports = {
                                                     block: 'button',
                                                     mods: {
                                                         theme: 'islands',
-                                                        size: 'l',
+                                                        size: 'm',
                                                         view: 'plain'
+                                                    },
+                                                    mix: {
+                                                        block: 'button',
+                                                        mods: {
+                                                            theme: 'islands-transparent'
+                                                        },
                                                     },
                                                     content: {
                                                         block: 'icon',
@@ -351,8 +365,14 @@ module.exports = {
                                                     block: 'button',
                                                     mods: {
                                                         theme: 'islands',
-                                                        size: 'l',
+                                                        size: 'm',
                                                         view: 'plain'
+                                                    },
+                                                    mix: {
+                                                        block: 'button',
+                                                        mods: {
+                                                            theme: 'islands-transparent'
+                                                        },
                                                     },
                                                     content: {
                                                         block: 'icon',
@@ -367,8 +387,14 @@ module.exports = {
                                                     block: 'button',
                                                     mods: {
                                                         theme: 'islands',
-                                                        size: 'l',
+                                                        size: 'm',
                                                         view: 'plain'
+                                                    },
+                                                    mix: {
+                                                        block: 'button',
+                                                        mods: {
+                                                            theme: 'islands-transparent'
+                                                        },
                                                     },
                                                     content: {
                                                         block: 'icon',
