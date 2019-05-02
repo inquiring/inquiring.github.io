@@ -4,8 +4,3 @@
     height: var(--control-button-size-m);
     padding: 0 var(--control-space-m);
 }
-
-.button_size_m {
-    width: 157px;
-    height: 36px;
-}

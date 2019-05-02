@@ -5,84 +5,95 @@
     color: var(--color-typo-primary);
     background: var(--color-bg-default);
 }
-/* Базовые цвета от которых выстраивается вся политра */
-/* hsl(0, 0%, 0%) Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
-/* hsl(0, 0%, 100%) Базовый цвет поверхностей */
-/* hsl(211, 100%, 35%) Проектный цвет, от которого выстраивают акцентные состояния */
-/* hsl(40, 14%, 96%) Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
-/* hsl(220, 100%, 47%) Ссылочный цвет, от которого выстраиваются все их состояния */
-/* Цвет успеха */
-/* Цвет ошибки */
-/* Цвет предупреждения */
-/* Цвет нейтральный */
-/* Цвет системнный */
-/* Цвета фона */
-/* Цвет фона брендированый */
-/* Цвет фона действия */
-/* Цвет фона выделения */
-/* Цвет фона при наведении */
-/* Цвет границ */
-/* Цвет зебры */
-/* Цвет затенения */
-/* Цвет дефолта */
-/* Цвет паранджи */
-/* Цвет молока */
-/* Цвет фона успеха */
-/* Цвет фона ошибки */
-/* Цвет фона предупреждения */
-/* Цвет фона нейтральный */
-/* Цвет фона системнный */
-/* Цвет фона ссылки */
-/* Цвета текста */
-/* Цвет брендового текста */
-/* Цвет основного текста */
-/* Цвет промо текста */
-/* Цвет второстепенного текста */
-/* Цвет дополнительного текста */
-/* Цвет неактивного текста */
-/* Цвет текста успеха */
-/* Цвет текста предупреждения */
-/* Цвет текста ошибки */
-/* Цвета ссылок */
-/* Цвет основной ссылки */
-/* Цвет дополнительной ссылки */
-/* Цвет второстепенной ссылки */
-/* Цвет ховера ссылки */
-.theme_color_whitepaper-default {
-	/* Цвета блоков */
-	--color-bg-brand: #0056b3; /* Цвет фона брендированый */
-	--color-bg-action: color(#0056b3 l(+15%)); /* Цвет фона действия */
-	--color-bg-selection: color(#0056b3 h(-1) l(+31%)); /* Цвет фона выделения */
-	--color-bg-hover: color(#000 a(15%)); /* Цвет фона при наведении */
-	--color-bg-border: color(#000 a(5%)); /* Цвет границ */
-	--color-bg-stripe: color(#000 a(4%)); /* Цвет зебры */
-	--color-bg-ghost: color(#000 a(8%)); /* Цвет затенения */
-	--color-bg-default: #fff; /* Цвет дефолта */
-	--color-bg-tone: color(#000 a(90%)); /* Цвет паранджи */
-	--color-bg-soft: color(#fff a(97%)); /* Цвет молока */
-	--color-bg-success: #00985f; /* Цвет успеха */
-	--color-bg-alert: #f33; /* Цвет ошибки */
-	--color-bg-warning: #f90; /* Цвет предупреждения */
-	--color-bg-normal: #dde3e5; /* Цвет нейтральный */
-	--color-bg-system: #778a9b; /* Цвет системнный */
-	--color-bg-link: color(#0070f0 h(-7%) s(-13) l(+14) a(40%)); /* Цвет фона ссылки */
+.theme_color_mts-default {
+    --color-bg-brand: #e30613;
+    --color-bg-action: rgb(250, 61, 74);
+    --color-bg-selection: rgb(252, 141, 150);
+    --color-bg-hover: rgba(0, 0, 0, 0.15);
+    --color-bg-default: #fff;
+    --color-bg-soft: rgba(255, 255, 255, 0.97);
+    --color-bg-success: #00985f;
+    --color-bg-alert: #f33;
+    --color-bg-warning: #f90;
+    --color-bg-normal: #dde3e5;
+    --color-bg-system: #778a9b;
+    --color-bg-link: rgba(69, 170, 242, 0.4);
+    --color-typo-brand: #e30613;
+    --color-typo-primary: #000;
+    --color-typo-promo: rgba(0, 0, 0, 0.8);
+    --color-typo-secondary: rgba(0, 0, 0, 0.6);
+    --color-typo-ghost: rgba(0, 0, 0, 0.3);
+    --color-typo-disable: rgba(0, 0, 0, 0.3);
+    --color-typo-success: #00985f;
+    --color-typo-warning: #f90;
+    --color-typo-alert: #f33;
+    --color-link: #0070f0;
+    --color-link-external: #0070f0;
+    --color-link-minor: rgb(133, 137, 173);
+    --color-link-hover: rgb(0, 95, 204);
+}
+.theme_color_mts-brand,
+.theme_color_mts-default {
+    --color-bg-border: rgba(0, 0, 0, 0.05);
+    --color-bg-stripe: rgba(0, 0, 0, 0.04);
+    --color-bg-ghost: rgba(0, 0, 0, 0.08);
+    --color-bg-tone: rgba(0, 0, 0, 0.9);
+}
+.theme_control_mts-default {
 
-	/* Цвета текста */
-	--color-typo-brand: #0056b3; /* Цвет брендового текста */
-	--color-typo-primary: #000; /* Цвет основного текста */
-	--color-typo-promo: color(#000 a(80%)); /* Цвет промо текста */
-	--color-typo-secondary: color(#000 a(60%)); /* Цвет второстепенного текста */
-	--color-typo-ghost: color(#000 a(30%)); /* Цвет дополнительного текста */
-	--color-typo-disable: color(#000 a(30%)); /* Цвет неактивного текста */
-	--color-typo-success: #00985f; /* Цвет текста успеха */
-	--color-typo-warning: #f90; /* Цвет текста предупреждения */
-	--color-typo-alert: #f33; /* Цвет текста ошибки */
-
-	/* Цвета ссылок */
-	--color-link: #0070f0; /* Цвет основной ссылки */
-	--color-link-external: #0070f0; /* Цвет дополнительной ссылки */
-	--color-link-minor: color(#0070f0 h(+22) s(-80%) l(+13%)); /* Цвет второстепенной ссылки */
-	--color-link-hover: color(#0070f0 l(-7%)); /* Цвет ховера ссылки */
+}
+.theme_control_mts-default {
+    --color-control-bg-default-hover: rgba(0, 0, 0, 0.15);
+    --color-control-bg-default-press: rgba(0, 0, 0, 0.2);
+    --color-control-typo-placeholder: rgb(153, 153, 153);
+    --color-control-bg-clear: rgba(0, 0, 0, 0);
+    --color-control-bg-clear-hover: rgba(0, 0, 0, 0.07);
+    --color-control-bg-clear-press: rgba(0, 0, 0, 0.12);
+    --color-control-bg-border-disable: rgb(153, 153, 153);
+    --color-control-typo-disable: rgb(153, 153, 153);
+    --color-control-typo-placeholder-disable: rgb(128, 128, 128);
+    --control-radius: 4px;
+    --control-border-width: 2px;
+    --control-button-size-l: var(--space-xxxxl);
+    --control-button-size-m: var(--space-xxxl);
+    --control-button-size-s: var(--space-xxl);
+    --control-space-xl: var(--space-xl);
+    --control-space-l: var(--space-l);
+    --control-space-m: var(--space-m);
+    --control-space-s: var(--space-s);
+    --control-space-xs: var(--space-s);
+    --control-size-l: var(--size-typo-l);
+    --control-size-m: var(--size-typo-m);
+    --control-size-s: var(--size-typo-s);
+}
+.theme_control_mts-default {
+    --color-control-bg-default: rgb(240, 240, 240);
+    --color-control-bg-default-affect: rgb(255, 255, 255);
+    --color-control-bg-border-default: rgb(240, 240, 240);
+    --color-control-bg-border-default-hover: rgba(0, 0, 0, 0.25);
+    --color-control-bg-border-default-press: rgba(0, 0, 0, 0.35);
+    --color-control-bg-border-focus: rgba(250, 61, 74, 0.5);
+    --color-control-typo-primary: #000;
+    --color-control-typo-secondary: rgba(0, 0, 0, 0.6);
+    --color-control-typo-ghost: rgba(0, 0, 0, 0.35);
+    --color-control-typo-affect: rgb(255, 255, 255);
+    --color-control-typo-action: #0070f0;
+    --color-control-bg-action: rgb(250, 61, 74);
+    --color-control-bg-action-hover: rgb(251, 86, 97);
+    --color-control-bg-action-press: rgb(249, 26, 41);
+    --color-control-bg-action-progress: rgba(227, 6, 19, 0.3);
+    --color-control-bg-action-progressing: rgba(227, 6, 19, 0.3);
+    --color-control-bg-check: rgb(250, 41, 55);
+    --color-control-bg-check-press: rgb(251, 111, 120);
+    --color-control-bg-check-hover: rgb(251, 111, 120);
+    --color-control-bg-border-check: rgb(250, 41, 55);
+    --color-control-bg-border-check-press: rgba(0, 0, 0, 0.35);
+    --color-control-bg-border-check-hover: rgb(219, 6, 20);
+    --color-control-link-default: #0070f0;
+    --color-control-bg-link-default: #0070f0;
+    --color-control-bg-border-link-default: #0070f0;
+    --color-control-bg-disable: rgb(230, 230, 230);
+    --color-control-bg-disable-check: rgb(224, 224, 224);
 }
 /* Отступы */
 .theme_space_default {
@@ -604,11 +615,14 @@
 .control-group > :only-child .button_theme_islands:before {
             border-radius: 2px;
         }
-.button_size_l {
-    font-size: var(--control-size-l);
-    line-height: var(--control-button-size-l);
-    height: var(--control-button-size-l);
-    padding: 0 var(--control-space-l);
+.button_size_m {
+    font-size: var(--control-size-m);
+    line-height: var(--control-button-size-m);
+    height: var(--control-button-size-m);
+    padding: 0 var(--control-space-m);
+}
+.button_theme_islands-transparent::before {
+    background: transparent;
 }
 .icon {
     display: inline-block;
@@ -1684,96 +1698,6 @@
        padding: 42px 142px 62px 162px;
     }
 }
-.theme_color_mts-default {
-    --color-bg-brand: #e30613;
-    --color-bg-action: rgb(250, 61, 74);
-    --color-bg-selection: rgb(252, 141, 150);
-    --color-bg-hover: rgba(0, 0, 0, 0.15);
-    --color-bg-default: #fff;
-    --color-bg-soft: rgba(255, 255, 255, 0.97);
-    --color-bg-success: #00985f;
-    --color-bg-alert: #f33;
-    --color-bg-warning: #f90;
-    --color-bg-normal: #dde3e5;
-    --color-bg-system: #778a9b;
-    --color-bg-link: rgba(69, 170, 242, 0.4);
-    --color-typo-brand: #e30613;
-    --color-typo-primary: #000;
-    --color-typo-promo: rgba(0, 0, 0, 0.8);
-    --color-typo-secondary: rgba(0, 0, 0, 0.6);
-    --color-typo-ghost: rgba(0, 0, 0, 0.3);
-    --color-typo-disable: rgba(0, 0, 0, 0.3);
-    --color-typo-success: #00985f;
-    --color-typo-warning: #f90;
-    --color-typo-alert: #f33;
-    --color-link: #0070f0;
-    --color-link-external: #0070f0;
-    --color-link-minor: rgb(133, 137, 173);
-    --color-link-hover: rgb(0, 95, 204);
-}
-.theme_color_mts-brand,
-.theme_color_mts-default {
-    --color-bg-border: rgba(0, 0, 0, 0.05);
-    --color-bg-stripe: rgba(0, 0, 0, 0.04);
-    --color-bg-ghost: rgba(0, 0, 0, 0.08);
-    --color-bg-tone: rgba(0, 0, 0, 0.9);
-}
-.theme_control_mts-default {
-
-}
-.theme_control_mts-default {
-    --color-control-bg-default-hover: rgba(0, 0, 0, 0.15);
-    --color-control-bg-default-press: rgba(0, 0, 0, 0.2);
-    --color-control-typo-placeholder: rgb(153, 153, 153);
-    --color-control-bg-clear: rgba(0, 0, 0, 0);
-    --color-control-bg-clear-hover: rgba(0, 0, 0, 0.07);
-    --color-control-bg-clear-press: rgba(0, 0, 0, 0.12);
-    --color-control-bg-border-disable: rgb(153, 153, 153);
-    --color-control-typo-disable: rgb(153, 153, 153);
-    --color-control-typo-placeholder-disable: rgb(128, 128, 128);
-    --control-radius: 4px;
-    --control-border-width: 2px;
-    --control-button-size-l: var(--space-xxxxl);
-    --control-button-size-m: var(--space-xxxl);
-    --control-button-size-s: var(--space-xxl);
-    --control-space-xl: var(--space-xl);
-    --control-space-l: var(--space-l);
-    --control-space-m: var(--space-m);
-    --control-space-s: var(--space-s);
-    --control-space-xs: var(--space-s);
-    --control-size-l: var(--size-typo-l);
-    --control-size-m: var(--size-typo-m);
-    --control-size-s: var(--size-typo-s);
-}
-.theme_control_mts-default {
-    --color-control-bg-default: rgb(240, 240, 240);
-    --color-control-bg-default-affect: rgb(255, 255, 255);
-    --color-control-bg-border-default: rgb(240, 240, 240);
-    --color-control-bg-border-default-hover: rgba(0, 0, 0, 0.25);
-    --color-control-bg-border-default-press: rgba(0, 0, 0, 0.35);
-    --color-control-bg-border-focus: rgba(250, 61, 74, 0.5);
-    --color-control-typo-primary: #000;
-    --color-control-typo-secondary: rgba(0, 0, 0, 0.6);
-    --color-control-typo-ghost: rgba(0, 0, 0, 0.35);
-    --color-control-typo-affect: rgb(255, 255, 255);
-    --color-control-typo-action: #0070f0;
-    --color-control-bg-action: rgb(250, 61, 74);
-    --color-control-bg-action-hover: rgb(251, 86, 97);
-    --color-control-bg-action-press: rgb(249, 26, 41);
-    --color-control-bg-action-progress: rgba(227, 6, 19, 0.3);
-    --color-control-bg-action-progressing: rgba(227, 6, 19, 0.3);
-    --color-control-bg-check: rgb(250, 41, 55);
-    --color-control-bg-check-press: rgb(251, 111, 120);
-    --color-control-bg-check-hover: rgb(251, 111, 120);
-    --color-control-bg-border-check: rgb(250, 41, 55);
-    --color-control-bg-border-check-press: rgba(0, 0, 0, 0.35);
-    --color-control-bg-border-check-hover: rgb(219, 6, 20);
-    --color-control-link-default: #0070f0;
-    --color-control-bg-link-default: #0070f0;
-    --color-control-bg-border-link-default: #0070f0;
-    --color-control-bg-disable: rgb(230, 230, 230);
-    --color-control-bg-disable-check: rgb(224, 224, 224);
-}
 /* Подпишись на новости I AM WOMEN  */
 .form-card__content .info .text:nth-child(1) {
     margin-left: 34px;
@@ -1853,16 +1777,6 @@
     .input_theme_f .input__control {
         width: 283px;
     }
-}
-.button_size_m {
-    font-size: var(--control-size-m);
-    line-height: var(--control-button-size-m);
-    height: var(--control-button-size-m);
-    padding: 0 var(--control-space-m);
-}
-.button_size_m {
-    width: 157px;
-    height: 36px;
 }
 .button_view_primary {
     background-color: var(--color-control-bg-action);

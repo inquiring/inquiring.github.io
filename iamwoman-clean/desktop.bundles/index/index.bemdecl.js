@@ -62,7 +62,20 @@ exports.blocks = [
                 "name": "color",
                 "vals": [
                     {
-                        "name": "whitepaper-default"
+                        "name": "mts-default"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "control",
+                "vals": [
+                    {
+                        "name": "mts-default"
                     }
                 ]
             }
@@ -264,7 +277,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "l"
+                        "name": "m"
                     }
                 ]
             }
@@ -278,6 +291,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "plain"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "islands-transparent"
                     }
                 ]
             }
@@ -1435,32 +1461,6 @@ exports.blocks = [
         "name": "form-card"
     },
     {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "color",
-                "vals": [
-                    {
-                        "name": "mts-default"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "theme",
-        "mods": [
-            {
-                "name": "control",
-                "vals": [
-                    {
-                        "name": "mts-default"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "form-card",
         "elems": [
             {
@@ -1547,19 +1547,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "search"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
                     }
                 ]
             }

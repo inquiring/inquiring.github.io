@@ -122,7 +122,16 @@ exports.deps = [
     {
         "block": "theme",
         "mod": "color",
-        "val": "whitepaper-default"
+        "val": "mts-default"
+    },
+    {
+        "block": "theme",
+        "mod": "control"
+    },
+    {
+        "block": "theme",
+        "mod": "control",
+        "val": "mts-default"
     },
     {
         "block": "theme",
@@ -285,7 +294,7 @@ exports.deps = [
     {
         "block": "button",
         "mod": "size",
-        "val": "l"
+        "val": "m"
     },
     {
         "block": "button",
@@ -295,6 +304,11 @@ exports.deps = [
         "block": "button",
         "mod": "view",
         "val": "plain"
+    },
+    {
+        "block": "button",
+        "mod": "theme",
+        "val": "islands-transparent"
     },
     {
         "block": "icon"
@@ -824,20 +838,6 @@ exports.deps = [
         "block": "form-card"
     },
     {
-        "block": "theme",
-        "mod": "color",
-        "val": "mts-default"
-    },
-    {
-        "block": "theme",
-        "mod": "control"
-    },
-    {
-        "block": "theme",
-        "mod": "control",
-        "val": "mts-default"
-    },
-    {
         "block": "form-card",
         "elem": "content"
     },
@@ -909,11 +909,6 @@ exports.deps = [
         "block": "input",
         "mod": "type",
         "val": "search"
-    },
-    {
-        "block": "button",
-        "mod": "size",
-        "val": "m"
     },
     {
         "block": "button",
