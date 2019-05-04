@@ -12,6 +12,14 @@
         height: 400px;
     }
 }
+
+@media screen and (min-width: $screen-m) {
+
+    .new-card {
+        width: 310px;
+        height: 576px;
+    }
+}
 @media screen and (min-width: $screen-l) {
 
     .new-card {

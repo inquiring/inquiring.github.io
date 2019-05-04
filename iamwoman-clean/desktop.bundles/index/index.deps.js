@@ -183,7 +183,7 @@ exports.deps = [
     },
     {
         "block": "tpl-layout",
-        "elem": "section"
+        "elem": "content"
     },
     {
         "block": "decorator"
@@ -215,40 +215,132 @@ exports.deps = [
         "mod": "size"
     },
     {
-        "block": "header",
-        "elem": "header"
+        "block": "pt-surface"
     },
     {
-        "block": "header",
-        "elem": "header",
-        "mod": "distribute"
+        "block": "pt-surface",
+        "mod": "position"
     },
     {
-        "block": "header",
-        "elem": "controls-wrapper-left"
+        "block": "pt-surface",
+        "mod": "position",
+        "val": "absolute"
     },
     {
-        "block": "button"
+        "block": "pt-surface",
+        "mod": "view"
     },
     {
-        "block": "button",
-        "mod": "focused"
+        "block": "pt-surface",
+        "mod": "view",
+        "val": "project"
     },
     {
-        "block": "button",
-        "mod": "hovered"
+        "block": "pt-surface",
+        "elem": "window"
     },
     {
-        "block": "button",
+        "block": "pt-surface",
+        "elem": "content"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "content",
+        "mod": "size"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "content",
+        "mod": "view"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "close"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "close",
+        "mod": "position"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "close",
+        "mod": "view"
+    },
+    {
+        "block": "icon"
+    },
+    {
+        "block": "icon",
+        "mod": "close"
+    },
+    {
+        "block": "icon",
+        "mod": "close",
+        "val": "m-primary"
+    },
+    {
+        "block": "icon",
+        "mod": "name"
+    },
+    {
+        "block": "icon",
+        "mod": "name",
+        "val": "close"
+    },
+    {
+        "block": "icon",
+        "mod": "size"
+    },
+    {
+        "block": "icon",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "text"
+    },
+    {
+        "block": "text",
+        "mod": "size"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "xxl"
+    },
+    {
+        "block": "text",
+        "mod": "view"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "primary"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "m"
+    },
+    {
+        "block": "pt-list"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "16-18-18"
+    },
+    {
+        "block": "pt-list",
+        "elem": "item"
+    },
+    {
+        "block": "link"
+    },
+    {
+        "block": "link",
         "mod": "disabled"
-    },
-    {
-        "block": "button",
-        "mod": "pressed"
-    },
-    {
-        "block": "button",
-        "elem": "text"
     },
     {
         "block": "jquery",
@@ -279,6 +371,98 @@ exports.deps = [
         "block": "control"
     },
     {
+        "block": "input"
+    },
+    {
+        "block": "input",
+        "mod": "disabled"
+    },
+    {
+        "block": "input",
+        "mod": "focused"
+    },
+    {
+        "block": "input",
+        "elem": "box"
+    },
+    {
+        "block": "input",
+        "elem": "control"
+    },
+    {
+        "block": "tick"
+    },
+    {
+        "block": "idle"
+    },
+    {
+        "block": "input",
+        "mod": "theme"
+    },
+    {
+        "block": "input",
+        "mod": "theme",
+        "val": "i"
+    },
+    {
+        "block": "input",
+        "mod": "size"
+    },
+    {
+        "block": "input",
+        "mod": "size",
+        "val": "l"
+    },
+    {
+        "block": "input",
+        "mod": "type"
+    },
+    {
+        "block": "input",
+        "mod": "type",
+        "val": "search"
+    },
+    {
+        "block": "header",
+        "elem": "content"
+    },
+    {
+        "block": "header",
+        "elem": "header"
+    },
+    {
+        "block": "header",
+        "elem": "header",
+        "mod": "distribute"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "action"
+    },
+    {
+        "block": "button"
+    },
+    {
+        "block": "button",
+        "mod": "focused"
+    },
+    {
+        "block": "button",
+        "mod": "hovered"
+    },
+    {
+        "block": "button",
+        "mod": "disabled"
+    },
+    {
+        "block": "button",
+        "mod": "pressed"
+    },
+    {
+        "block": "button",
+        "elem": "text"
+    },
+    {
         "block": "button",
         "mod": "theme"
     },
@@ -294,7 +478,7 @@ exports.deps = [
     {
         "block": "button",
         "mod": "size",
-        "val": "m"
+        "val": "s"
     },
     {
         "block": "button",
@@ -311,25 +495,16 @@ exports.deps = [
         "val": "islands-transparent"
     },
     {
-        "block": "icon"
+        "block": "decorator",
+        "mod": "indent-t"
     },
     {
-        "block": "icon",
-        "mod": "name"
+        "block": "decorator",
+        "mod": "indent-t",
+        "val": "s"
     },
     {
-        "block": "icon",
-        "mod": "name",
-        "val": "hamburger"
-    },
-    {
-        "block": "icon",
-        "mod": "size"
-    },
-    {
-        "block": "icon",
-        "mod": "size",
-        "val": "m"
+        "block": "image"
     },
     {
         "block": "header",
@@ -337,27 +512,6 @@ exports.deps = [
     },
     {
         "block": "logo"
-    },
-    {
-        "block": "text"
-    },
-    {
-        "block": "text",
-        "mod": "view"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "primary"
-    },
-    {
-        "block": "text",
-        "mod": "size"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "xxl"
     },
     {
         "block": "text",
@@ -392,6 +546,11 @@ exports.deps = [
         "elem": "controls-wrapper-right"
     },
     {
+        "block": "button",
+        "mod": "size",
+        "val": "m"
+    },
+    {
         "block": "icon",
         "mod": "view"
     },
@@ -419,10 +578,6 @@ exports.deps = [
         "block": "icon",
         "mod": "name",
         "val": "shoping-bag"
-    },
-    {
-        "block": "header",
-        "elem": "content"
     },
     {
         "block": "header",
@@ -493,9 +648,6 @@ exports.deps = [
         "block": "picture-bg"
     },
     {
-        "block": "image"
-    },
-    {
         "block": "header-card"
     },
     {
@@ -524,14 +676,46 @@ exports.deps = [
         "val": "center"
     },
     {
+        "block": "pt-icon-plus"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "vertical-align"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "vertical-align",
+        "val": "center"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "distribute"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "distribute",
+        "val": "end"
+    },
+    {
         "block": "text",
         "mod": "size",
         "val": "14-16-18"
     },
     {
-        "block": "text",
-        "mod": "align",
-        "val": "right"
+        "block": "pt-icon-plus",
+        "elem": "icon"
+    },
+    {
+        "block": "pt-icon-plus",
+        "elem": "icon",
+        "mod": "indent-r"
+    },
+    {
+        "block": "line-price"
+    },
+    {
+        "block": "pt-icon-plus",
+        "elem": "block"
     },
     {
         "block": "carousel",
@@ -553,12 +737,40 @@ exports.deps = [
     },
     {
         "block": "decorator",
-        "mod": "indent-t"
+        "mod": "indent-t",
+        "val": "xs"
+    },
+    {
+        "block": "carousel",
+        "elem": "number-group"
     },
     {
         "block": "decorator",
-        "mod": "indent-t",
-        "val": "xs"
+        "mod": "indent-l"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-l",
+        "val": "m"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "18-24-36"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "14-18-24"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-t"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-t",
+        "val": "l"
     },
     {
         "block": "icon",
@@ -575,11 +787,6 @@ exports.deps = [
         "val": "xs"
     },
     {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "m"
-    },
-    {
         "block": "header",
         "elem": "footer"
     },
@@ -594,11 +801,8 @@ exports.deps = [
         "val": "xxxl"
     },
     {
-        "block": "link"
-    },
-    {
-        "block": "link",
-        "mod": "disabled"
+        "block": "header",
+        "elem": "title"
     },
     {
         "block": "text",
@@ -610,16 +814,21 @@ exports.deps = [
         "val": "i-underline"
     },
     {
-        "block": "pt-list"
-    },
-    {
         "block": "theme",
         "mod": "font",
         "val": "openSans"
     },
     {
-        "block": "pt-list",
-        "elem": "item"
+        "block": "socials"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r",
+        "val": "s"
     },
     {
         "block": "text",
@@ -636,9 +845,12 @@ exports.deps = [
         "val": "s"
     },
     {
-        "block": "text",
-        "mod": "view",
-        "val": "link"
+        "block": "pt-icon-plus",
+        "mod": "vertical-align",
+        "val": "top"
+    },
+    {
+        "block": "line"
     },
     {
         "block": "decorator",
@@ -651,12 +863,17 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "align",
+        "val": "right"
+    },
+    {
+        "block": "text",
         "mod": "decoration",
         "val": "underline"
     },
     {
         "block": "tpl-layout",
-        "elem": "content"
+        "elem": "section"
     },
     {
         "block": "decorator",
@@ -671,6 +888,12 @@ exports.deps = [
         "block": "decorator",
         "mod": "indent-h",
         "val": "l"
+    },
+    {
+        "block": "carousel",
+        "elem": "inner",
+        "mod": "content",
+        "val": "between"
     },
     {
         "block": "carousel",
@@ -702,6 +925,11 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "18-24-30"
+    },
+    {
+        "block": "pt-icon-plus",
+        "mod": "distribute",
+        "val": "center"
     },
     {
         "block": "text",
@@ -803,16 +1031,6 @@ exports.deps = [
         "val": "24-48-48"
     },
     {
-        "block": "carousel",
-        "elem": "inner",
-        "mod": "overflow-x"
-    },
-    {
-        "block": "carousel",
-        "elem": "item",
-        "mod": "l-state"
-    },
-    {
         "block": "blog-card"
     },
     {
@@ -856,12 +1074,10 @@ exports.deps = [
         "elem": "content"
     },
     {
-        "block": "text",
-        "mod": "size",
-        "val": "18-24-36"
+        "block": "pt-form"
     },
     {
-        "block": "pt-form"
+        "block": "form"
     },
     {
         "block": "pt-form",
@@ -873,61 +1089,23 @@ exports.deps = [
         "mod": "vertical-align"
     },
     {
-        "block": "input"
-    },
-    {
-        "block": "input",
-        "mod": "disabled"
-    },
-    {
-        "block": "input",
-        "mod": "focused"
-    },
-    {
-        "block": "input",
-        "elem": "box"
-    },
-    {
-        "block": "input",
-        "elem": "control"
-    },
-    {
-        "block": "tick"
-    },
-    {
-        "block": "idle"
-    },
-    {
-        "block": "input",
-        "mod": "theme"
-    },
-    {
         "block": "input",
         "mod": "theme",
         "val": "f"
     },
     {
-        "block": "input",
-        "mod": "size"
-    },
-    {
-        "block": "input",
-        "mod": "size",
-        "val": "l"
-    },
-    {
-        "block": "input",
-        "mod": "type"
-    },
-    {
-        "block": "input",
-        "mod": "type",
-        "val": "search"
-    },
-    {
         "block": "button",
         "mod": "view",
         "val": "primary"
+    },
+    {
+        "block": "button",
+        "mod": "width"
+    },
+    {
+        "block": "button",
+        "mod": "width",
+        "val": "full"
     },
     {
         "block": "text",
@@ -996,9 +1174,6 @@ exports.deps = [
         "elem": "number"
     },
     {
-        "block": "socials"
-    },
-    {
         "block": "socials",
         "elem": "intro"
     },
@@ -1019,20 +1194,10 @@ exports.deps = [
         "elem": "list"
     },
     {
-        "block": "pt-icon-plus"
-    },
-    {
-        "block": "pt-icon-plus",
-        "elem": "icon"
-    },
-    {
         "block": "pt-icon-plus",
         "elem": "icon",
-        "mod": "indent-r"
-    },
-    {
-        "block": "pt-icon-plus",
-        "elem": "block"
+        "mod": "indent-r",
+        "val": "l"
     },
     {
         "block": "pay-comment"
@@ -1091,10 +1256,50 @@ exports.deps = [
         "val": "l"
     },
     {
-        "block": "header",
-        "elem": "header",
-        "mod": "distribute",
-        "val": "between"
+        "block": "pt-surface",
+        "elem": "content",
+        "mod": "size",
+        "val": "full"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "content",
+        "mod": "view",
+        "val": "inverse"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "close",
+        "mod": "position",
+        "val": "absolute"
+    },
+    {
+        "block": "pt-surface",
+        "elem": "close",
+        "mod": "view",
+        "val": "desktop"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerpressrelease"
+    },
+    {
+        "block": "input",
+        "mod": "disabled",
+        "val": true
+    },
+    {
+        "block": "input",
+        "mod": "focused",
+        "val": true
     },
     {
         "block": "button",
@@ -1115,18 +1320,6 @@ exports.deps = [
         "block": "button",
         "mod": "pressed",
         "val": true
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointer"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerpressrelease"
     },
     {
         "block": "carousel"
@@ -1180,6 +1373,12 @@ exports.deps = [
         "val": "cover"
     },
     {
+        "block": "pt-icon-plus",
+        "elem": "icon",
+        "mod": "indent-r",
+        "val": "s"
+    },
+    {
         "block": "carousel",
         "elem": "control"
     },
@@ -1224,32 +1423,10 @@ exports.deps = [
         "val": "2"
     },
     {
-        "block": "carousel",
-        "elem": "inner",
-        "mod": "overflow-x",
-        "val": "inherit"
-    },
-    {
-        "block": "carousel",
-        "elem": "item",
-        "mod": "l-state",
-        "val": "active"
-    },
-    {
         "block": "pt-form",
         "elem": "item",
         "mod": "vertical-align",
         "val": "center"
-    },
-    {
-        "block": "input",
-        "mod": "disabled",
-        "val": true
-    },
-    {
-        "block": "input",
-        "mod": "focused",
-        "val": true
     },
     {
         "block": "tpl-grid",
@@ -1266,12 +1443,6 @@ exports.deps = [
     {
         "block": "pt-list",
         "elem": "item",
-        "mod": "indent-r",
-        "val": "l"
-    },
-    {
-        "block": "pt-icon-plus",
-        "elem": "icon",
         "mod": "indent-r",
         "val": "l"
     },

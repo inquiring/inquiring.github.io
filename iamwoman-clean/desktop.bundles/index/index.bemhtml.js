@@ -2422,6 +2422,120 @@ block('page').elem('js')(
 );
 
 /* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/icon/icon.bemhtml.js */
+block('icon')(
+    tag()('span'),
+    addAttrs()(function() {
+        var attrs = {},
+            url = this.ctx.url;
+        if(url) attrs.style = 'background-image:url(' + url + ')';
+        return attrs;
+    })
+);
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/icon/icon.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_close.bemhtml.js */
+block('icon').mod('name', 'close').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.993 10.58l8.587-8.587 1.413 1.413-8.587 8.587 8.587 8.587-1.413 1.413-8.587-8.587-8.587 8.587-1.413-1.413 8.587-8.587-8.587-8.587 1.413-1.413 8.587 8.587z"/></svg>' }});block('icon').mod('name', 'close').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M15 2.41L13.59 1 8 6.59 2.41 1 1 2.41 6.59 8 1 13.59 2.41 15 8 9.41 13.59 15 15 13.59 9.41 8z"/></svg>' }});
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_close.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/pt-list.bemhtml.js */
+block('pt-list')(tag()('ul'));
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/pt-list.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
+block('pt-list').elem('item')(tag()('li'));
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
+block('link')(
+    def()(function() {
+        var ctx = this.ctx;
+        typeof ctx.url === 'object' && // url could contain bemjson
+            (ctx.url = this.reapply(ctx.url));
+        return applyNext();
+    }),
+
+    tag()('a'),
+
+    addJs()(true),
+
+    // NOTE: mix below is to satisfy interface of `control`
+    addMix()([{ elem : 'control' }]),
+
+    addAttrs()(function() {
+        var ctx = this.ctx,
+            attrs = { role : 'link' },
+            tabIndex;
+
+        if(!this.mods.disabled) {
+            if(ctx.url) {
+                attrs.href = ctx.url;
+                tabIndex = ctx.tabIndex;
+            } else {
+                tabIndex = ctx.tabIndex || 0;
+            }
+        } else {
+            attrs['aria-disabled'] = 'true';
+        }
+
+        typeof tabIndex === 'undefined' || (attrs.tabindex = tabIndex);
+
+        ctx.title && (attrs.title = ctx.title);
+        ctx.target && (attrs.target = ctx.target);
+
+        return attrs;
+    }),
+
+    mod('disabled', true)
+        .js()(function() {
+            return this.extend(applyNext(), { url : this.ctx.url });
+        })
+);
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/input.bemhtml.js */
+block('input')(
+    tag()('span'),
+    addJs()(true),
+    def()(function() {
+        return applyNext({ _input : this.ctx });
+    }),
+    content()({ elem : 'box', content : { elem : 'control' } })
+);
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/input.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__box/input__box.bemhtml.js */
+block('input').elem('box').tag()('span');
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__box/input__box.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__control/input__control.bemhtml.js */
+block('input').elem('control')(
+    tag()('input'),
+
+    addAttrs()(function() {
+        var input = this._input,
+            attrs = {
+                id : input.id,
+                name : input.name,
+                value : input.val,
+                maxlength : input.maxLength,
+                tabindex : input.tabIndex,
+                placeholder : input.placeholder
+            };
+
+        input.autocomplete === false && (attrs.autocomplete = 'off');
+        this.mods.disabled && (attrs.disabled = 'disabled');
+
+        return attrs;
+    })
+);
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__control/input__control.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/_type/input_type_search.bemhtml.js */
+block('input').mod('type', 'search').elem('control').attrs()(function() {
+    return this.extend(applyNext(), { type : 'search' });
+});
+
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/_type/input_type_search.bemhtml.js */
 /* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/button/button.bemhtml.js */
 block('button')(
     def()(function() {
@@ -2499,21 +2613,30 @@ block('button').mod('focused', true).js()(function() {
 block('button').elem('text').tag()('span');
 
 /* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/button/__text/button__text.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/icon/icon.bemhtml.js */
-block('icon')(
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/image/image.bemhtml.js */
+block('image')(
+    addAttrs()({ role : 'img' }),
+
     tag()('span'),
-    addAttrs()(function() {
-        var attrs = {},
-            url = this.ctx.url;
-        if(url) attrs.style = 'background-image:url(' + url + ')';
-        return attrs;
-    })
+
+    match(function() { return typeof this.ctx.content === 'undefined'; })(
+        tag()('img'),
+        addAttrs()(function() {
+            var ctx = this.ctx;
+            return this.extend(applyNext(),
+                {
+                    role : undefined,
+                    src : ctx.url,
+                    width : ctx.width,
+                    height : ctx.height,
+                    alt : ctx.alt,
+                    title : ctx.title
+                });
+        })
+    )
 );
 
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/icon/icon.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_hamburger.bemhtml.js */
-block('icon').mod('name', 'hamburger').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M2 4h20v2H2V4zm0 14h20v2H2v-2zm0-7h20v2H2v-2z"/></svg>' }});block('icon').mod('name', 'hamburger').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M1 2h14v2H1V2zm0 10h14v2H1v-2zm0-5h14v2H1V7z"/></svg>' }});
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_hamburger.bemhtml.js */
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/image/image.bemhtml.js */
 /* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/icon/_name/icon_name_magnifying-glass.bemhtml.js */
 block('icon').mod('name', 'magnifying-glass').mod('size', 'm')({
     content: {
@@ -2547,135 +2670,6 @@ block('icon').mod('name', 'shoping-bag').mod('size', 's')({
     }});
 
 /* end: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/icon/_name/icon_name_shoping-bag.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/image/image.bemhtml.js */
-block('image')(
-    addAttrs()({ role : 'img' }),
-
-    tag()('span'),
-
-    match(function() { return typeof this.ctx.content === 'undefined'; })(
-        tag()('img'),
-        addAttrs()(function() {
-            var ctx = this.ctx;
-            return this.extend(applyNext(),
-                {
-                    role : undefined,
-                    src : ctx.url,
-                    width : ctx.width,
-                    height : ctx.height,
-                    alt : ctx.alt,
-                    title : ctx.title
-                });
-        })
-    )
-);
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/image/image.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-left.bemhtml.js */
-block('icon').mod('name', 'arrow-left').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M8.826 12.007l8.674 8.581L16.075 22 6 11.99 16.076 2l1.423 1.414z"/></svg>' }});block('icon').mod('name', 'arrow-left').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M10.575 1L12 2.41 6.35 8 12 13.59 10.575 15 3.5 8z"/></svg>' }});
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-left.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
-block('icon').mod('name', 'arrow-right').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M15.174 12.007L6.5 20.588 7.925 22 18 11.99 7.924 2 6.501 3.414z"/></svg>' }});block('icon').mod('name', 'arrow-right').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M5.425 1L4 2.41 9.65 8 4 13.59 5.425 15 12.5 8z"/></svg>' }});
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
-block('link')(
-    def()(function() {
-        var ctx = this.ctx;
-        typeof ctx.url === 'object' && // url could contain bemjson
-            (ctx.url = this.reapply(ctx.url));
-        return applyNext();
-    }),
-
-    tag()('a'),
-
-    addJs()(true),
-
-    // NOTE: mix below is to satisfy interface of `control`
-    addMix()([{ elem : 'control' }]),
-
-    addAttrs()(function() {
-        var ctx = this.ctx,
-            attrs = { role : 'link' },
-            tabIndex;
-
-        if(!this.mods.disabled) {
-            if(ctx.url) {
-                attrs.href = ctx.url;
-                tabIndex = ctx.tabIndex;
-            } else {
-                tabIndex = ctx.tabIndex || 0;
-            }
-        } else {
-            attrs['aria-disabled'] = 'true';
-        }
-
-        typeof tabIndex === 'undefined' || (attrs.tabindex = tabIndex);
-
-        ctx.title && (attrs.title = ctx.title);
-        ctx.target && (attrs.target = ctx.target);
-
-        return attrs;
-    }),
-
-    mod('disabled', true)
-        .js()(function() {
-            return this.extend(applyNext(), { url : this.ctx.url });
-        })
-);
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/link/link.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/pt-list.bemhtml.js */
-block('pt-list')(tag()('ul'));
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/pt-list.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
-block('pt-list').elem('item')(tag()('li'));
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/input.bemhtml.js */
-block('input')(
-    tag()('span'),
-    addJs()(true),
-    def()(function() {
-        return applyNext({ _input : this.ctx });
-    }),
-    content()({ elem : 'box', content : { elem : 'control' } })
-);
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/input.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__box/input__box.bemhtml.js */
-block('input').elem('box').tag()('span');
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__box/input__box.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__control/input__control.bemhtml.js */
-block('input').elem('control')(
-    tag()('input'),
-
-    addAttrs()(function() {
-        var input = this._input,
-            attrs = {
-                id : input.id,
-                name : input.name,
-                value : input.val,
-                maxlength : input.maxLength,
-                tabindex : input.tabIndex,
-                placeholder : input.placeholder
-            };
-
-        input.autocomplete === false && (attrs.autocomplete = 'off');
-        this.mods.disabled && (attrs.disabled = 'disabled');
-
-        return attrs;
-    })
-);
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/__control/input__control.bemhtml.js */
-/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/_type/input_type_search.bemhtml.js */
-block('input').mod('type', 'search').elem('control').attrs()(function() {
-    return this.extend(applyNext(), { type : 'search' });
-});
-
-/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/bem-components/common.blocks/input/_type/input_type_search.bemhtml.js */
 /* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-icon-plus/__icon/pt-icon-plus__icon.bemhtml.js */
 block('pt-icon-plus').elem('icon')(tag()('span'));
 
@@ -2684,6 +2678,12 @@ block('pt-icon-plus').elem('icon')(tag()('span'));
 block('pt-icon-plus').elem('block')(tag()('span'));
 
 /* end: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/pt-icon-plus/__block/pt-icon-plus__block.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-left.bemhtml.js */
+block('icon').mod('name', 'arrow-left').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M8.826 12.007l8.674 8.581L16.075 22 6 11.99 16.076 2l1.423 1.414z"/></svg>' }});block('icon').mod('name', 'arrow-left').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M10.575 1L12 2.41 6.35 8 12 13.59 10.575 15 3.5 8z"/></svg>' }});
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-left.bemhtml.js */
+/* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
+block('icon').mod('name', 'arrow-right').mod('size', 'm')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill-rule="evenodd" d="M15.174 12.007L6.5 20.588 7.925 22 18 11.99 7.924 2 6.501 3.414z"/></svg>' }});block('icon').mod('name', 'arrow-right').mod('size', 's')({content: { html: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill-rule="evenodd" d="M5.425 1L4 2.41 9.65 8 4 13.59 5.425 15 12.5 8z"/></svg>' }});
+/* end: /Users/AS/Documents/inquiring.github.io/iamwoman/node_modules/whitepaper-bem/icon/_name/icon_name_arrow-right.bemhtml.js */
 /* begin: /Users/AS/Documents/inquiring.github.io/iamwoman/common.blocks/carousel/carousel.bemhtml */
 block('carousel')(
     js()(true)

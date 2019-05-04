@@ -153,7 +153,7 @@ exports.blocks = [
         "name": "tpl-layout",
         "elems": [
             {
-                "name": "section"
+                "name": "content"
             }
         ]
     },
@@ -221,6 +221,292 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-surface"
+    },
+    {
+        "name": "pt-surface",
+        "mods": [
+            {
+                "name": "position",
+                "vals": [
+                    {
+                        "name": "absolute"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "project"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "window"
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "content"
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "content",
+                "mods": [
+                    {
+                        "name": "size",
+                        "vals": [
+                            {
+                                "name": "full"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "content",
+                "mods": [
+                    {
+                        "name": "view",
+                        "vals": [
+                            {
+                                "name": "inverse"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "close"
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "close",
+                "mods": [
+                    {
+                        "name": "position",
+                        "vals": [
+                            {
+                                "name": "absolute"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-surface",
+        "elems": [
+            {
+                "name": "close",
+                "mods": [
+                    {
+                        "name": "view",
+                        "vals": [
+                            {
+                                "name": "desktop"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon"
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "close",
+                "vals": [
+                    {
+                        "name": "m-primary"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "name",
+                "vals": [
+                    {
+                        "name": "close"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text"
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "xxl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-list"
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "16-18-18"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-list",
+        "elems": [
+            {
+                "name": "item"
+            }
+        ]
+    },
+    {
+        "name": "link"
+    },
+    {
+        "name": "input"
+    },
+    {
+        "name": "input",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    {
+                        "name": "i"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "input",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "input",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "search"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "header",
+        "elems": [
+            {
+                "name": "content"
+            }
+        ]
+    },
+    {
         "name": "header",
         "elems": [
             {
@@ -235,22 +521,17 @@ exports.blocks = [
                 "name": "header",
                 "mods": [
                     {
-                        "name": "distribute",
-                        "vals": [
-                            {
-                                "name": "between"
-                            }
-                        ]
+                        "name": "distribute"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "header",
+        "name": "pt-surface",
         "elems": [
             {
-                "name": "controls-wrapper-left"
+                "name": "action"
             }
         ]
     },
@@ -277,7 +558,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "m"
+                        "name": "s"
                     }
                 ]
             }
@@ -310,33 +591,20 @@ exports.blocks = [
         ]
     },
     {
-        "name": "icon"
-    },
-    {
-        "name": "icon",
+        "name": "decorator",
         "mods": [
             {
-                "name": "name",
+                "name": "indent-t",
                 "vals": [
                     {
-                        "name": "hamburger"
+                        "name": "s"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
+        "name": "image"
     },
     {
         "name": "header",
@@ -348,35 +616,6 @@ exports.blocks = [
     },
     {
         "name": "logo"
-    },
-    {
-        "name": "text"
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "primary"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xxl"
-                    }
-                ]
-            }
-        ]
     },
     {
         "name": "text",
@@ -435,6 +674,19 @@ exports.blocks = [
         "elems": [
             {
                 "name": "controls-wrapper-right"
+            }
+        ]
+    },
+    {
+        "name": "button",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
             }
         ]
     },
@@ -500,14 +752,6 @@ exports.blocks = [
                         "name": "shoping-bag"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "header",
-        "elems": [
-            {
-                "name": "content"
             }
         ]
     },
@@ -675,9 +919,6 @@ exports.blocks = [
         "name": "picture-bg"
     },
     {
-        "name": "image"
-    },
-    {
         "name": "header-card"
     },
     {
@@ -731,6 +972,35 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-icon-plus"
+    },
+    {
+        "name": "pt-icon-plus",
+        "mods": [
+            {
+                "name": "vertical-align",
+                "vals": [
+                    {
+                        "name": "center"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-icon-plus",
+        "mods": [
+            {
+                "name": "distribute",
+                "vals": [
+                    {
+                        "name": "end"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "text",
         "mods": [
             {
@@ -744,15 +1014,39 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
+        "name": "pt-icon-plus",
+        "elems": [
             {
-                "name": "align",
-                "vals": [
+                "name": "icon"
+            }
+        ]
+    },
+    {
+        "name": "pt-icon-plus",
+        "elems": [
+            {
+                "name": "icon",
+                "mods": [
                     {
-                        "name": "right"
+                        "name": "indent-r",
+                        "vals": [
+                            {
+                                "name": "s"
+                            }
+                        ]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "line-price"
+    },
+    {
+        "name": "pt-icon-plus",
+        "elems": [
+            {
+                "name": "block"
             }
         ]
     },
@@ -843,6 +1137,66 @@ exports.blocks = [
         "name": "carousel",
         "elems": [
             {
+                "name": "number-group"
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-l",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "18-24-36"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "14-18-24"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "space-t",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "carousel",
+        "elems": [
+            {
                 "name": "control",
                 "mods": [
                     {
@@ -892,19 +1246,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-b",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "header",
         "elems": [
             {
@@ -939,7 +1280,12 @@ exports.blocks = [
         ]
     },
     {
-        "name": "link"
+        "name": "header",
+        "elems": [
+            {
+                "name": "title"
+            }
+        ]
     },
     {
         "name": "text",
@@ -955,9 +1301,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-list"
-    },
-    {
         "name": "theme",
         "mods": [
             {
@@ -971,10 +1314,18 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-list",
-        "elems": [
+        "name": "socials"
+    },
+    {
+        "name": "decorator",
+        "mods": [
             {
-                "name": "item"
+                "name": "indent-r",
+                "vals": [
+                    {
+                        "name": "s"
+                    }
+                ]
             }
         ]
     },
@@ -1005,17 +1356,20 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
+        "name": "pt-icon-plus",
         "mods": [
             {
-                "name": "view",
+                "name": "vertical-align",
                 "vals": [
                     {
-                        "name": "link"
+                        "name": "top"
                     }
                 ]
             }
         ]
+    },
+    {
+        "name": "line"
     },
     {
         "name": "decorator",
@@ -1025,6 +1379,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "xl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "align",
+                "vals": [
+                    {
+                        "name": "right"
                     }
                 ]
             }
@@ -1047,7 +1414,7 @@ exports.blocks = [
         "name": "tpl-layout",
         "elems": [
             {
-                "name": "content"
+                "name": "section"
             }
         ]
     },
@@ -1072,6 +1439,24 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "l"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "carousel",
+        "elems": [
+            {
+                "name": "inner",
+                "mods": [
+                    {
+                        "name": "content",
+                        "vals": [
+                            {
+                                "name": "between"
+                            }
+                        ]
                     }
                 ]
             }
@@ -1140,6 +1525,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "18-24-30"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "pt-icon-plus",
+        "mods": [
+            {
+                "name": "distribute",
+                "vals": [
+                    {
+                        "name": "center"
                     }
                 ]
             }
@@ -1380,42 +1778,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "carousel",
-        "elems": [
-            {
-                "name": "inner",
-                "mods": [
-                    {
-                        "name": "overflow-x",
-                        "vals": [
-                            {
-                                "name": "inherit"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "carousel",
-        "elems": [
-            {
-                "name": "item",
-                "mods": [
-                    {
-                        "name": "l-state",
-                        "vals": [
-                            {
-                                "name": "active"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "blog-card"
     },
     {
@@ -1495,20 +1857,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "18-24-36"
-                    }
-                ]
-            }
-        ]
+        "name": "pt-form"
     },
     {
-        "name": "pt-form"
+        "name": "form"
     },
     {
         "name": "pt-form",
@@ -1537,9 +1889,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "input"
-    },
-    {
         "name": "input",
         "mods": [
             {
@@ -1553,26 +1902,13 @@ exports.blocks = [
         ]
     },
     {
-        "name": "input",
+        "name": "button",
         "mods": [
             {
-                "name": "size",
+                "name": "view",
                 "vals": [
                     {
-                        "name": "l"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "input",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "search"
+                        "name": "primary"
                     }
                 ]
             }
@@ -1582,10 +1918,10 @@ exports.blocks = [
         "name": "button",
         "mods": [
             {
-                "name": "view",
+                "name": "width",
                 "vals": [
                     {
-                        "name": "primary"
+                        "name": "full"
                     }
                 ]
             }
@@ -1744,9 +2080,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "socials"
-    },
-    {
         "name": "socials",
         "elems": [
             {
@@ -1813,17 +2146,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "pt-icon-plus"
-    },
-    {
-        "name": "pt-icon-plus",
-        "elems": [
-            {
-                "name": "icon"
-            }
-        ]
-    },
-    {
         "name": "pt-icon-plus",
         "elems": [
             {
@@ -1838,14 +2160,6 @@ exports.blocks = [
                         ]
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "pt-icon-plus",
-        "elems": [
-            {
-                "name": "block"
             }
         ]
     },

@@ -1,21 +1,23 @@
 .header__header {
     display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
-    padding: 9px 15px;
+    padding: 0px 10px;
     box-sizing: border-box;
 }
 @media screen and (min-width: $screen-s) {
     .header__header {
-        padding: 21px 60px 33px 16px;
+        padding: 21px 60px 33px 10px;
     }
 }
 
 @media screen and (min-width: $screen-l) {
     .header__header {
-        padding: 21px 220px 33px 16px;
+        padding-right: 220px;
+        padding-left: 20px;
     }
 }

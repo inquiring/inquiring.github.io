@@ -13,9 +13,9 @@
     display: inline-block;
     box-sizing: border-box;
     padding: 0;
-    width: fit-content;
+    width: 100%;
     border: 0;
-    border-bottom: 1px solid #342b2b;
+    border-bottom: 1px solid var(--color-typo-primary);
     outline: none;
     background: none;
     text-align: center;
@@ -33,9 +33,4 @@
     background: white;
 
 }
-@media screen and (min-width: $screen-s) {
 
-    .input_theme_f .input__control {
-        width: 283px;
-    }
-}
