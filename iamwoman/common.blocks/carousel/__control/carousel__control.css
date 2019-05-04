@@ -8,3 +8,9 @@
     cursor: pointer;
     user-select: none;
 }
+
+@media screen and (min-width: $screen-s) {
+    .carousel__control {
+        display: none;
+    }
+}

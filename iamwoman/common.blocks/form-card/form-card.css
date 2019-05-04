@@ -8,7 +8,7 @@
     border-radius: 2px;
     background-color: #ece5e1;
     opacity: 0.8;
-    padding: 24px;
+    padding: 71px 24px 75px;
 }
 
 .form-card .pt-card__content .pt-form {
@@ -21,11 +21,17 @@
     .form-card {
         padding: 50px 84px;
     }
+    .form-card .pt-card__content {
+        padding: 68px 55px;
+    }
 }
 
 @media screen and (min-width: $screen-l) {
 
     .form-card {
        padding: 42px 142px 62px 162px;
+    }
+    .form-card .pt-card__content {
+        padding: 78px 104px 82px;
     }
 }

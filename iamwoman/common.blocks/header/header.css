@@ -1,20 +1,5 @@
 .header {
     position: relative;
-    margin-bottom: 70px;
-
+    padding: 0;
 }
 
-@media screen and (min-width: $screen-s) {
-
-    .header {
-        margin-bottom: 95px;
-        height: 823px;
-    }
-}
-@media screen and (min-width: $screen-l) {
-
-    .header {
-        margin-bottom: 155px;
-        height: 840px;
-    }
-}

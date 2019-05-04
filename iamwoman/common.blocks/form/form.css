@@ -1,0 +1,15 @@
+.form {
+    width: 181px;
+    margin: auto;
+}
+@media screen and (min-width: $screen-xs) {
+    .form > .pt-form__item:first-child {
+        margin-top: 25px;
+        margin-bottom: 45px;
+    }
+    .form > .pt-form__item:last-child {
+        width: 157px;
+    }
+}
+@media screen and (min-width: $screen-s) {}
+@media screen and (min-width: $screen-l) {}

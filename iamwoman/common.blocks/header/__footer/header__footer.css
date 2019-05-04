@@ -37,9 +37,9 @@
     .header__footer .pt-list {
         display: flex;
         justify-content: space-between;
-        width: 236px;
     }
 }
+
 @media screen and (min-width: $screen-l) {
     .header__footer {
         padding-left: 131px;

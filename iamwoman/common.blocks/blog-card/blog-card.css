@@ -7,6 +7,7 @@
     .blog-card {
         width: 345px;
         min-height: calc(541px + 147px);
+        margin: 0 10px;
     }
     .blog-card .pt-card__footer {
         padding: 9px;
@@ -17,8 +18,8 @@
         width: 401px;
         min-height: calc(618px + 167px);
 
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
 
     }
 }
