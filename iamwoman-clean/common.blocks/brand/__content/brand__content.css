@@ -1,0 +1,21 @@
+.brand__content {
+    position: relative;
+    min-height: 458px;
+
+}
+@media screen and (max-width: $screen-xs-max) {
+    .brand__content {
+        width: 290px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: $screen-s) {
+    .brand__content {
+        height: 902px;
+    }
+}
+@media screen and (min-width: $screen-m) {
+    .brand__content {
+        height: 1112px;
+    }
+}

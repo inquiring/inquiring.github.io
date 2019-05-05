@@ -1565,103 +1565,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid"
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "xs-ratio",
-                "vals": [
-                    {
-                        "name": "1"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "s-ratio",
-                "vals": [
-                    {
-                        "name": "1-1"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "col-gap",
-                "vals": [
-                    {
-                        "name": "full"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "mods": [
-            {
-                "name": "row-gap",
-                "vals": [
-                    {
-                        "name": "full"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction"
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "xs-col",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "s-col",
-                        "vals": [
-                            {
-                                "name": "2"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+        "name": "brand"
     },
     {
         "name": "text",
@@ -1677,34 +1581,32 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "brand",
         "elems": [
             {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "s-col",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
+                "name": "content"
             }
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "brand",
         "elems": [
             {
-                "name": "fraction",
+                "name": "wrapper-brand-card"
+            }
+        ]
+    },
+    {
+        "name": "brand",
+        "elems": [
+            {
+                "name": "wrapper-brand-card",
                 "mods": [
                     {
-                        "name": "s-row",
+                        "name": "type",
                         "vals": [
                             {
-                                "name": "2"
+                                "name": "left"
                             }
                         ]
                     }
@@ -1714,6 +1616,32 @@ exports.blocks = [
     },
     {
         "name": "brand-card"
+    },
+    {
+        "name": "brand-card",
+        "elems": [
+            {
+                "name": "content"
+            }
+        ]
+    },
+    {
+        "name": "brand-card",
+        "elems": [
+            {
+                "name": "content",
+                "mods": [
+                    {
+                        "name": "type",
+                        "vals": [
+                            {
+                                "name": "top"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "text",
@@ -1729,16 +1657,16 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "brand",
         "elems": [
             {
-                "name": "fraction",
+                "name": "wrapper-brand-card",
                 "mods": [
                     {
-                        "name": "xs-col",
+                        "name": "type",
                         "vals": [
                             {
-                                "name": "hidden"
+                                "name": "right"
                             }
                         ]
                     }
@@ -1747,16 +1675,29 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "brand-card",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "right"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "brand-card",
         "elems": [
             {
-                "name": "fraction",
+                "name": "content",
                 "mods": [
                     {
-                        "name": "s-row",
+                        "name": "type",
                         "vals": [
                             {
-                                "name": "1"
+                                "name": "bottom"
                             }
                         ]
                     }

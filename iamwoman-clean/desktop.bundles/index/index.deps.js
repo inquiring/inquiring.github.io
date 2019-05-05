@@ -937,57 +937,7 @@ exports.deps = [
         "val": "14-16-20"
     },
     {
-        "block": "tpl-grid"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xs-ratio"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "xs-ratio",
-        "val": "1"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "s-ratio"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "s-ratio",
-        "val": "1-1"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "col-gap"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "col-gap",
-        "val": "full"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "row-gap"
-    },
-    {
-        "block": "tpl-grid",
-        "mod": "row-gap",
-        "val": "full"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "xs-col"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col"
+        "block": "brand"
     },
     {
         "block": "text",
@@ -995,18 +945,29 @@ exports.deps = [
         "val": "regular"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col",
-        "val": "1"
+        "block": "brand",
+        "elem": "content"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-row"
+        "block": "brand",
+        "elem": "wrapper-brand-card"
+    },
+    {
+        "block": "brand",
+        "elem": "wrapper-brand-card",
+        "mod": "type"
     },
     {
         "block": "brand-card"
+    },
+    {
+        "block": "brand-card",
+        "elem": "content"
+    },
+    {
+        "block": "brand-card",
+        "elem": "content",
+        "mod": "type"
     },
     {
         "block": "text",
@@ -1014,16 +975,25 @@ exports.deps = [
         "val": "16-16-20"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "xs-col",
-        "val": "hidden"
+        "block": "brand",
+        "elem": "wrapper-brand-card",
+        "mod": "type",
+        "val": "right"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-row",
-        "val": "1"
+        "block": "brand-card",
+        "mod": "type"
+    },
+    {
+        "block": "brand-card",
+        "mod": "type",
+        "val": "right"
+    },
+    {
+        "block": "brand-card",
+        "elem": "content",
+        "mod": "type",
+        "val": "bottom"
     },
     {
         "block": "text",
@@ -1386,22 +1356,16 @@ exports.deps = [
         "val": "active"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "xs-col",
-        "val": "1"
+        "block": "brand",
+        "elem": "wrapper-brand-card",
+        "mod": "type",
+        "val": "left"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col",
-        "val": "2"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-row",
-        "val": "2"
+        "block": "brand-card",
+        "elem": "content",
+        "mod": "type",
+        "val": "top"
     },
     {
         "block": "pt-form",

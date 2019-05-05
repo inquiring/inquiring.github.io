@@ -1291,134 +1291,133 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
                         elem: 'container', elemMods: { align: 'center', size: 'l' },
-                        content: [
-                            {
-                                block: 'tpl-grid',
-                                mods: { 'xs-ratio': '1', 's-ratio': '1-1', 'col-gap': 'full', 'row-gap': 'full' },
-                                content: [
-                                    {
-                                        elem: 'fraction',
-                                        elemMods: { 'xs-col': '1','s-col': '2' },
-                                        content: {
-                                            block: 'text',
-                                            tag: 'h2',
-                                            mods: {
-                                                view: 'brand',
-                                                size: '24-36-48',
-                                                align: 'center',
-                                                weight: 'regular'
-                                            },
-                                            mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
-                                            content: 'О бренде'
-                                        },
+                        content: {
+                            block: 'brand',
+                            content: [
+                                {
+                                    block: 'text',
+                                    tag: 'h2',
+                                    mods: {
+                                        view: 'brand',
+                                        size: '24-36-48',
+                                        align: 'center',
+                                        weight: 'regular'
                                     },
-                                    {
-                                        elem: 'fraction',
-                                        elemMods: { 'xs-col': '1','s-col': '1', 's-row': '2' },
-                                        content: {
-                                            block: 'pt-card',
-                                            mix: { block: 'brand-card' },
-                                            content: [
-                                                {
-                                                    tag: 'picture',
-                                                    content: [
-                                                        {
-                                                            tag: 'source',
-                                                            attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/image/brand-card-1-desktop.jpg' },
-                                                        },
-                                                        {
-                                                            tag: 'source',
-                                                            attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/brand-card-1-tablet.jpg' },
-                                                        },
-                                                        {
-                                                            block: 'image',
-                                                            mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-                                                            url: '../../common.blocks/image/brand-card-1-mobile.jpg',
-                                                            alt: ''
-                                                        },
-                                                    ]
-                                                },
-                                                {
-                                                    elem: 'content',
-                                                    content: {
-                                                        block: 'info',
-                                                        attrs: { style: 'width: 100%'},
-                                                        mix: {
-                                                            block: 'text',
-                                                            mods: {
-                                                                view: 'primary',
-                                                                size: '16-16-20',
-                                                                weight: 'light',
-                                                            }
-                                                        },
-                                                        content: [
-                                                            {
-                                                                block: 'text',
-                                                                block: 'decorator', mods: { 'indent-b': 'm' },
-                                                                content: 'Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.'
-                                                            },
-                                                            {
-                                                                block: 'text',
-                                                                block: 'decorator', mods: { 'indent-b': 'm' },
-                                                                content: 'Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность'
-                                                            },
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    elem: 'content',
-                                                    content: {
-                                                        block: 'info',
-                                                        attrs: { style: 'width: 100%'},
-                                                        mix: {
-                                                            block: 'text',
-                                                            mods: {
-                                                                view: 'primary',
-                                                                size: '16-16-20',
-                                                                weight: 'light',
-                                                            }
-                                                        },
-                                                        content: [
-                                                            {
-                                                                block: 'text',
-                                                                content: 'Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.'
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        elem: 'fraction',
-                                        elemMods: { 'xs-col': 'hidden','s-col': '1', 's-row': '1' },
-                                        content: {
-                                            block: 'pt-card',
-                                            mix: { block: 'brand-card' },
+                                    mix: { block: 'decorator', mods: {'indent-v': 'xl' } },
+                                    content: 'О бренде'
+                                },
+                                {
+                                    elem: 'content',
+                                    content: [
+                                        {
+                                            elem: 'wrapper-brand-card', elemMods: { type: 'left' },
                                             content: {
-                                                tag: 'picture',
+                                                block: 'pt-card',
+                                                mix: { block: 'brand-card' },
                                                 content: [
                                                     {
-                                                        tag: 'source',
-                                                        attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/image/brand-card-2-desktop.jpg' },
+                                                        tag: 'picture',
+                                                        content: [
+                                                            {
+                                                                tag: 'source',
+                                                                attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/image/brand-card-1-desktop.jpg' },
+                                                            },
+                                                            {
+                                                                tag: 'source',
+                                                                attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/brand-card-1-tablet.jpg' },
+                                                            },
+                                                            {
+                                                                block: 'image',
+                                                                mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+                                                                url: '../../common.blocks/image/brand-card-1-mobile.jpg',
+                                                                alt: ''
+                                                            },
+                                                        ]
                                                     },
                                                     {
-                                                        tag: 'source',
-                                                        attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/brand-card-2-tablet.jpg' },
-                                                    },
-                                                    {
-                                                        block: 'image',
-                                                        mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
-                                                        url: '../../common.blocks/image/brand-card-1-mobile.jpg',
-                                                        alt: ''
+                                                        block: 'brand-card', elem: 'content', elemMods: { type: 'top' },
+                                                        content: {
+                                                            block: 'info',
+                                                            attrs: { style: 'width: 100%'},
+                                                            mix: {
+                                                                block: 'text',
+                                                                mods: {
+                                                                    view: 'primary',
+                                                                    size: '16-16-20',
+                                                                    weight: 'light',
+                                                                }
+                                                            },
+                                                            content: [
+                                                                {
+                                                                    block: 'text',
+                                                                    block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                    content: 'Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на нальном этапе воплощения ее в реальность.'
+                                                                },
+                                                                {
+                                                                    block: 'text',
+                                                                    block: 'decorator', mods: { 'indent-b': 'm' },
+                                                                    content: 'Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность'
+                                                                },
+                                                            ]
+                                                        }
                                                     },
                                                 ]
+                                            },
+                                        },
+                                        {
+                                            elem: 'wrapper-brand-card', elemMods: { type: 'right' },
+                                            content: {
+                                                block: 'pt-card',
+                                                mix: { block: 'brand-card', mods: { type: 'right' } },
+                                                content: [
+                                                    {
+                                                        tag: 'picture',
+                                                        content: [
+                                                            {
+                                                                tag: 'source',
+                                                                attrs: { media: '(min-width:  1024px)', srcset: '../../common.blocks/image/brand-card-2-desktop.jpg' },
+                                                            },
+                                                            {
+                                                                tag: 'source',
+                                                                attrs: { media: '(min-width:  700px)', srcset: '../../common.blocks/image/brand-card-2-tablet.jpg' },
+                                                            },
+                                                            {
+                                                                block: 'image',
+                                                                mix: { block: 'pt-card', elem: 'image', elemMods: { 'size': 'cover' } },
+                                                                url: '../../common.blocks/image/brand-card-1-mobile.jpg',
+                                                                alt: ''
+                                                            },
+                                                        ]
+                                                    },
+                                                    {
+                                                        block: 'brand-card', elem: 'content', elemMods: { type: 'bottom' },
+                                                        content: {
+                                                            block: 'info',
+                                                            attrs: { style: 'width: 100%'},
+                                                            mix: {
+                                                                block: 'text',
+                                                                mods: {
+                                                                    view: 'primary',
+                                                                    size: '16-16-20',
+                                                                    weight: 'light',
+                                                                }
+                                                            },
+                                                            content: [
+                                                                {
+                                                                    block: 'text',
+                                                                    content: 'Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женсвенные формы и жилеты, вписывающиеся в любой гардероб своременой женщины. Каждая модель сохраняет свою актуальность в течение нескольких сезонов.'
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
                                             }
-                                        }
-                                    }
-                                ]
-                            }
-                        ]
+                                        },
+
+                                    ]
+                                },
+                            ]
+                        }
                     }
                 },
                 // Блог
@@ -1726,6 +1725,7 @@ module.exports = {
                                             {
                                                 elem: 'control',
                                                 elemMods: { type: 'left' },
+                                                attrs: { style: 'left: 10px;'},
                                                 content: {
                                                     block: 'icon',
                                                     mods: { size: 'm', name: 'arrow-left', view: 'primary' },
@@ -1735,6 +1735,7 @@ module.exports = {
                                             {
                                                 elem: 'control',
                                                 elemMods: { type: 'right' },
+                                                attrs: { style: 'right: -5px;'},
                                                 content: {
                                                     block: 'icon',
                                                     mods: { size: 'm', name: 'arrow-right', view: 'primary' },
@@ -2358,7 +2359,7 @@ module.exports = {
                                        weight: 'regular',
                                        transform: 'uppercase'
                                    },
-                                   content: ' 2008–2018 I AM WOMEN'
+                                   content: ' © 2008–2018 I AM WOMEN'
                                },
                            ]
                        },

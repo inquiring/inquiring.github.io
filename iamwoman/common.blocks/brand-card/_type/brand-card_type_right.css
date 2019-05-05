@@ -1,0 +1,23 @@
+@media screen and (max-width: $screen-xs-max) {
+    .brand-card_type_right picture {
+        display: none;
+    }
+}
+@media screen and (min-width: $screen-s) {
+
+    .brand-card_type_right {
+        margin-left: auto;
+    }
+}
+@media screen and (min-width: $screen-m) {
+
+    .brand-card_type_right {
+       height: 637px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+
+    .brand-card_type_right {
+       height: 671px;
+    }
+}

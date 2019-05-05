@@ -1,0 +1,29 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .brand-card__content {
+        position: absolute;
+        padding-top: 25px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+    .brand-card__content {
+        position: absolute;
+        box-sizing: border-box;
+        background-color: #ece5e1;
+        opacity: 0.8;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+
+}
+
+@media screen and (min-width: $screen-l) {
+
+}

@@ -1,0 +1,37 @@
+@media screen and (min-width: $screen-s) {
+
+    .brand-card__content_type_top {
+        top: 37px;
+        left: 267px;
+        width: 457px;
+        padding-top: 29px;
+        padding-right: 31px;
+        padding-bottom: 33px;
+        padding-left: 27px;
+    }
+}
+@media screen and (min-width: $screen-m) {
+
+    .brand-card__content_type_top {
+        top: 39px;
+        left: 420px;
+        width: 500px;
+        padding-top: 29px;
+        padding-right: 31px;
+        padding-bottom: 33px;
+        padding-left: 27px;
+    }
+}
+
+@media screen and (min-width: $screen-l) {
+
+    .brand-card__content_type_top {
+        top: 39px;
+        left: 420px;
+        width: 613px;
+        padding-top: 29px;
+        padding-right: 31px;
+        padding-bottom: 33px;
+        padding-left: 27px;
+    }
+}

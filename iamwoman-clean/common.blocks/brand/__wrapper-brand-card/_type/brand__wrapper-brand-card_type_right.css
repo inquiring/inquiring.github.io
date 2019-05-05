@@ -1,0 +1,9 @@
+.brand__wrapper-brand-card_type_right {
+    bottom: 0;
+}
+@media screen and (min-width: $screen-s) {
+    .brand__wrapper-brand-card_type_right {
+        right: 0;
+    }
+}
+
