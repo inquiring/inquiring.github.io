@@ -1116,41 +1116,26 @@ exports.deps = [
         "block": "footer"
     },
     {
-        "block": "tpl-grid",
-        "mod": "m-columns"
+        "block": "footer",
+        "elem": "section-left"
     },
     {
-        "block": "tpl-grid",
-        "mod": "m-columns",
-        "val": "6"
+        "block": "footer",
+        "elem": "menu"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "s-col",
-        "val": "hidden"
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "l"
     },
     {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "m-col"
+        "block": "text",
+        "mod": "view",
+        "val": "link"
     },
     {
-        "block": "section"
-    },
-    {
-        "block": "section",
-        "elem": "title"
-    },
-    {
-        "block": "section",
-        "elem": "body"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "m-col",
-        "val": "3"
+        "block": "footer",
+        "elem": "section-right"
     },
     {
         "block": "pt-list",
@@ -1168,10 +1153,6 @@ exports.deps = [
     {
         "block": "contacts",
         "elem": "intro"
-    },
-    {
-        "block": "contacts",
-        "elem": "number"
     },
     {
         "block": "socials",
@@ -1427,12 +1408,6 @@ exports.deps = [
         "elem": "item",
         "mod": "vertical-align",
         "val": "center"
-    },
-    {
-        "block": "tpl-grid",
-        "elem": "fraction",
-        "mod": "m-col",
-        "val": "1"
     },
     {
         "block": "pt-list",

@@ -1944,88 +1944,52 @@ exports.blocks = [
         "name": "footer"
     },
     {
-        "name": "tpl-grid",
+        "name": "footer",
+        "elems": [
+            {
+                "name": "section-left"
+            }
+        ]
+    },
+    {
+        "name": "footer",
+        "elems": [
+            {
+                "name": "menu"
+            }
+        ]
+    },
+    {
+        "name": "decorator",
         "mods": [
             {
-                "name": "m-columns",
+                "name": "indent-b",
                 "vals": [
                     {
-                        "name": "6"
+                        "name": "l"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "tpl-grid",
-        "elems": [
+        "name": "text",
+        "mods": [
             {
-                "name": "fraction",
-                "mods": [
+                "name": "view",
+                "vals": [
                     {
-                        "name": "s-col",
-                        "vals": [
-                            {
-                                "name": "hidden"
-                            }
-                        ]
+                        "name": "link"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "footer",
         "elems": [
             {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "m-col",
-                        "vals": [
-                            {
-                                "name": "1"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "section"
-    },
-    {
-        "name": "section",
-        "elems": [
-            {
-                "name": "title"
-            }
-        ]
-    },
-    {
-        "name": "section",
-        "elems": [
-            {
-                "name": "body"
-            }
-        ]
-    },
-    {
-        "name": "tpl-grid",
-        "elems": [
-            {
-                "name": "fraction",
-                "mods": [
-                    {
-                        "name": "m-col",
-                        "vals": [
-                            {
-                                "name": "3"
-                            }
-                        ]
-                    }
-                ]
+                "name": "section-right"
             }
         ]
     },
@@ -2068,14 +2032,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "intro"
-            }
-        ]
-    },
-    {
-        "name": "contacts",
-        "elems": [
-            {
-                "name": "number"
             }
         ]
     },

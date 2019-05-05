@@ -2356,11 +2356,88 @@
     }
 }
 .footer {
-    background-color: #ece5e1;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 100%;
+    margin-top: 1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+}
+.footer__section-left {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+
+    .footer__section-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #decec5;
+        padding: 20px 15px;
+        width: 54%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+}
+.footer__section-left:nth-child(3) > div.section__title {
+    font-size: 0;
+}
+.footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    max-height: 400px;
+}
+.footer__menu .pt-list__item {
+    width: 32%;
+    margin-right: 2%;
+}
+/* Контакты */
+.footer__menu .pt-list__item:nth-child(15) {
+    margin-bottom: 200px;
+}
+/* Sale */
+.footer__menu .pt-list__item:nth-child(16) {
+    margin-top: 58px;
+}
+.decorator_indent-b_l {
+	margin-bottom: var(--space-l);
+}
+.text_view_link {
+	color: var(--color-link);
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.text_view_link:hover {
+		color: var(--color-link-hover);
+	}
+.footer__section-right {
+    background-color: #ece5e1;
+    padding: 20px 15px;
+}
+@media screen and (min-width: 1024px) {
+    .footer__section-right {
+        padding: 35px 20px 30px;
+        width: 46%;
+    }
 }
 .contacts__intro {
     width: 140px;
@@ -2369,9 +2446,6 @@
     .contacts__intro {
         width: 210px;
     }
-}
-.contacts__number {
-    text-decoration: none;
 }
 @media screen and (max-width: 719px) {
 

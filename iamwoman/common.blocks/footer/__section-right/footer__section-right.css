@@ -6,10 +6,6 @@
 @media screen and (min-width: $screen-m) {
     .footer__section-right {
         padding: 35px 20px 30px;
-    }
-}
-@media screen and (min-width: $screen-m) {
-    .footer__section-right {
         width: 46%;
     }
 }
