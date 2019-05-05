@@ -2,13 +2,13 @@
     display: none;
 }
 
-@media screen and (min-width: $screen-l) {
+@media screen and (min-width: $screen-m) {
 
     .footer__section-left {
         display: flex;
         background-color: #decec5;
         padding: 20px 15px;
-        width: 773px;
+        width: 54%;
         justify-content: space-between;
     }
 }
