@@ -255,7 +255,7 @@
 @media screen and (max-width: 719px) {
 
     .tpl-layout__content {
-        padding: 0 20px;
+        padding: 0;
     }
 }
 @media screen and (min-width: 720px) {
@@ -705,7 +705,7 @@
     -ms-touch-action: manipulation;
         touch-action: manipulation;
 }
-.input {
+.input__control {
     border-radius: 0;
     -webkit-appearance: none;
 }
@@ -2101,8 +2101,8 @@
 .form-card {
     padding: 24px 18px;
     overflow: hidden;
-    margin-left: -20px;
-    margin-right: -20px;
+    /* margin-left: -20px;
+    margin-right: -20px; */
 }
 .form-card .pt-card__content {
     border-radius: 2px;
@@ -2499,7 +2499,7 @@
 .carousel__control {
     position: absolute;
     top: 50%;
-    left: -5px;
+    left: 10px;
     width: 40px;
     height: 40px;
     margin-top: 0px;
@@ -2517,7 +2517,7 @@
 .carousel__control_type_right
 {
     left: auto;
-    right: -20px;
+    right: 0px;
 }
 @media screen and (min-width: 720px) {
 
