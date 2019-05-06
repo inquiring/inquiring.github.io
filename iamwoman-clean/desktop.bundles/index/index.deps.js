@@ -914,7 +914,7 @@ exports.deps = [
     {
         "block": "decorator",
         "mod": "space-a",
-        "val": "s"
+        "val": "xs"
     },
     {
         "block": "text",

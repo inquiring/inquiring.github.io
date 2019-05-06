@@ -1063,7 +1063,7 @@ module.exports = {
                                                                 {
                                                                     elem: 'content',
                                                                     mix: [
-                                                                        { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                        { block: 'decorator', mods: { 'space-a': 'xs' } },
                                                                         {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
                                                                     ],
                                                                     content: {
@@ -1072,6 +1072,8 @@ module.exports = {
                                                                         content: [
                                                                             {
                                                                                 block: 'text',
+                                                                                tag: 'h3',
+                                                                                attrs: { style: 'margin: 0;font-weight: 500;' },
                                                                                 mods: {
                                                                                     size: '18-24-30',
                                                                                     align: 'center'
@@ -1079,24 +1081,23 @@ module.exports = {
                                                                                 content: 'Шелковое платье'
                                                                             },
                                                                             {
-                                                                                content: {
-                                                                                    block: 'pt-icon-plus',
-                                                                                    mods: { 'vertical-align': 'center', distribute: 'center' },
-                                                                                    content: [
-                                                                                        {
-                                                                                            elem: 'icon',
-                                                                                            elemMods: { 'indent-r': 's' },
-                                                                                            content: {
-                                                                                                block: 'line-price'
-                                                                                            }
-                                                                                        },
-                                                                                        {
-                                                                                            elem: 'block',
-                                                                                            mix: { block: 'text', mods: { size: '14-16-20' }},
-                                                                                            content: '4 800 рублей'
+                                                                                block: 'pt-icon-plus',
+                                                                                mods: { 'vertical-align': 'top', distribute: 'center' },
+                                                                                attrs: { style: 'height: 30px;' },
+                                                                                content: [
+                                                                                    {
+                                                                                        elem: 'icon',
+                                                                                        elemMods: { 'indent-r': 's' },
+                                                                                        content: {
+                                                                                            block: 'line-price'
                                                                                         }
-                                                                                    ]
-                                                                                }
+                                                                                    },
+                                                                                    {
+                                                                                        elem: 'block',
+                                                                                        mix: { block: 'text', mods: { size: '14-16-20' }},
+                                                                                        content: '4 800 рублей'
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                         ]
                                                                     }
@@ -1134,7 +1135,7 @@ module.exports = {
                                                             {
                                                                 elem: 'content',
                                                                 mix: [
-                                                                    { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                    { block: 'decorator', mods: { 'space-a': 'xs' } },
                                                                     {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
                                                                 ],
                                                                 content: {
@@ -1143,6 +1144,8 @@ module.exports = {
                                                                     content: [
                                                                         {
                                                                             block: 'text',
+                                                                            tag: 'h3',
+                                                                            attrs: { style: 'margin: 0;font-weight: 500;' },
                                                                             mods: {
                                                                                 size: '18-24-30',
                                                                                 align: 'center'
@@ -1150,24 +1153,23 @@ module.exports = {
                                                                             content: 'Этническое платье'
                                                                         },
                                                                         {
-                                                                            content: {
-                                                                                block: 'pt-icon-plus',
-                                                                                mods: { 'vertical-align': 'center', distribute: 'center' },
-                                                                                content: [
-                                                                                    {
-                                                                                        elem: 'icon',
-                                                                                        elemMods: { 'indent-r': 's' },
-                                                                                        content: {
-                                                                                            block: 'line-price'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'block',
-                                                                                        mix: { block: 'text', mods: { size: '14-16-20' }},
-                                                                                        content: '7 800 рублей'
+                                                                            block: 'pt-icon-plus',
+                                                                            mods: { 'vertical-align': 'top', distribute: 'center' },
+                                                                            attrs: { style: 'height: 30px;' },
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'icon',
+                                                                                    elemMods: { 'indent-r': 's' },
+                                                                                    content: {
+                                                                                        block: 'line-price'
                                                                                     }
-                                                                                ]
-                                                                            }
+                                                                                },
+                                                                                {
+                                                                                    elem: 'block',
+                                                                                    mix: { block: 'text', mods: { size: '14-16-20' }},
+                                                                                    content: '7 800 рублей'
+                                                                                }
+                                                                            ]
                                                                         },
                                                                     ]
                                                                 }
@@ -1203,7 +1205,7 @@ module.exports = {
                                                             {
                                                                 elem: 'content',
                                                                 mix: [
-                                                                    { block: 'decorator', mods: { 'space-a': 's' } },
+                                                                    { block: 'decorator', mods: { 'space-a': 'xs' } },
                                                                     {  block: 'text', mods: { view: 'primary', weight: 'semibold'}}
                                                                 ],
                                                                 content: {
@@ -1212,6 +1214,8 @@ module.exports = {
                                                                     content: [
                                                                         {
                                                                             block: 'text',
+                                                                            tag: 'h3',
+                                                                            attrs: { style: 'margin: 0;font-weight: 500;' },
                                                                             mods: {
                                                                                 size: '18-24-30',
                                                                                 align: 'center'
@@ -1219,24 +1223,23 @@ module.exports = {
                                                                             content: 'Платье - боди'
                                                                         },
                                                                         {
-                                                                            content: {
-                                                                                block: 'pt-icon-plus',
-                                                                                mods: { 'vertical-align': 'center', distribute: 'center' },
-                                                                                content: [
-                                                                                    {
-                                                                                        elem: 'icon',
-                                                                                        elemMods: { 'indent-r': 's' },
-                                                                                        content: {
-                                                                                            block: 'line-price'
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        elem: 'block',
-                                                                                        mix: { block: 'text', mods: { size: '14-16-20' }},
-                                                                                        content: '11 700 рублей'
+                                                                            block: 'pt-icon-plus',
+                                                                            mods: { 'vertical-align': 'top', distribute: 'center' },
+                                                                            attrs: { style: 'height: 30px;' },
+                                                                            content: [
+                                                                                {
+                                                                                    elem: 'icon',
+                                                                                    elemMods: { 'indent-r': 's' },
+                                                                                    content: {
+                                                                                        block: 'line-price'
                                                                                     }
-                                                                                ]
-                                                                            }
+                                                                                },
+                                                                                {
+                                                                                    elem: 'block',
+                                                                                    mix: { block: 'text', mods: { size: '14-16-20' }},
+                                                                                    content: '11 700 рублей'
+                                                                                }
+                                                                            ]
                                                                         },
                                                                     ]
                                                                 }

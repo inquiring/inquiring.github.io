@@ -1498,7 +1498,7 @@ exports.blocks = [
                 "name": "space-a",
                 "vals": [
                     {
-                        "name": "s"
+                        "name": "xs"
                     }
                 ]
             }

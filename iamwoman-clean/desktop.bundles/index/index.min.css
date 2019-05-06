@@ -705,6 +705,10 @@
     -ms-touch-action: manipulation;
         touch-action: manipulation;
 }
+.input {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
 .input_theme_i {
     position: relative;
     background: none;
@@ -1794,14 +1798,14 @@
 
     .new-card {
         width: 349px;
-        height: 576px;
+        height: 600px;
     }
 }
 .pt-card__content {
 	position: relative;
 }
-.decorator_space-a_s {
-	padding: var(--space-s);
+.decorator_space-a_xs {
+	padding: var(--space-xs);
 }
 .text_weight_semibold {
 	font-weight: 500;
