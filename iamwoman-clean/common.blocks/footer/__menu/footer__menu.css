@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 487px;
+    margin: auto;
     max-height: 400px;
 }
 .footer__menu .pt-list__item {
-    width: 32%;
-    margin-right: 2%;
+    width: 140px;
+    margin-right: 10%;
 }
 /* Контакты */
 .footer__menu .pt-list__item:nth-child(15) {

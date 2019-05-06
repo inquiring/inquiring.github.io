@@ -2280,12 +2280,13 @@
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
+    width: 487px;
+    margin: auto;
     max-height: 400px;
 }
 .footer__menu .pt-list__item {
-    width: 32%;
-    margin-right: 2%;
+    width: 140px;
+    margin-right: 10%;
 }
 /* Контакты */
 .footer__menu .pt-list__item:nth-child(15) {
@@ -2298,16 +2299,16 @@
 .decorator_indent-b_l {
 	margin-bottom: var(--space-l);
 }
-.text_view_link {
-	color: var(--color-link);
-	text-decoration: none;
-	cursor: pointer;
-	-webkit-transition: 0.3s ease;
-	transition: 0.3s ease;
+.text_view_link-primary {
+    color: var(--color-typo-primary);
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
-.text_view_link:hover {
-		color: var(--color-link-hover);
-	}
+.text_view_link-primary:hover {
+    color: var(--color-typo-brand);
+}
 .footer__section-right {
     background-color: #ece5e1;
     padding: 20px 15px;

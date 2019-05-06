@@ -1920,7 +1920,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "link"
+                        "name": "link-primary"
                     }
                 ]
             }

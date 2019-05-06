@@ -977,6 +977,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
                         elem: 'container', elemMods: { align: 'center', size: 'l' },
+                        attrs: { style: 'max-width: 1107px;' },
                         content: [
                             {
                                 elem: 'section',
@@ -1774,6 +1775,7 @@ module.exports = {
                     mix: { block: 'decorator', mods: { 'indent-b': 'xxxxxxl' } },
                     content: {
                         elem: 'container', elemMods: { align: 'center', size: 'l' },
+                        attrs: { style: 'max-width: 1180px;' },
                         content: [
                             {
                                 elem: 'section',
@@ -1906,7 +1908,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Каталог'
                                         }
                                     },
@@ -1915,7 +1917,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Пальто'
                                         }
                                     },
@@ -1924,7 +1926,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Жилеты и жакеты'
                                         }
                                     },
@@ -1933,7 +1935,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Костюмы'
                                         }
                                     },
@@ -1942,7 +1944,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Трикотаж'
                                         }
                                     },
@@ -1951,7 +1953,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Платья'
                                         }
                                     },
@@ -1960,7 +1962,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Блузы и топы'
                                         }
                                     },
@@ -1969,7 +1971,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Футболки'
                                         }
                                     },
@@ -1978,7 +1980,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Юбки и брюки'
                                         }
                                     },
@@ -1987,7 +1989,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Аксессуары'
                                         }
                                     },
@@ -1997,7 +1999,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'О бренде'
                                         }
                                     },
@@ -2006,7 +2008,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Оферта'
                                         }
                                     },
@@ -2015,7 +2017,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Оплата и доставка'
                                         }
                                     },
@@ -2024,7 +2026,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Возврат'
                                         }
                                     },
@@ -2033,7 +2035,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Контакты'
                                         }
                                     },
@@ -2042,7 +2044,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Sale'
                                         }
                                     },
@@ -2051,7 +2053,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'New'
                                         }
                                     },
@@ -2060,7 +2062,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Looks'
                                         }
                                     },
@@ -2069,7 +2071,7 @@ module.exports = {
                                         content: {
                                             block: 'link',
                                             attrs: { href: '#' },
-                                            mix: { block: 'text', mods: { view: 'link' }},
+                                            mix: { block: 'text', mods: { view: 'link-primary' }},
                                             content: 'Блог'
                                         }
                                     }
@@ -2110,7 +2112,7 @@ module.exports = {
                                                         }
                                                     ],
                                                     attrs: { href: 'tel:84957929312' },
-                                                    mix: { block: 'text', mods: { view: 'link' }},
+                                                    mix: { block: 'text', mods: { view: 'link-primary' }},
                                                     content: '+7 495 792 93 12'
                                                 }
                                            ]
@@ -2152,7 +2154,7 @@ module.exports = {
                                                                 {
                                                                     block: 'link',
                                                                     attrs: { href: '#' },
-                                                                    mix: { block: 'text', mods: { size: 'm', view: 'link' }},
+                                                                    mix: { block: 'text', mods: { size: 'm', view: 'link-primary' }},
                                                                     content: {
                                                                         block: 'text',
                                                                         tag: 'span',
@@ -2168,7 +2170,7 @@ module.exports = {
                                                                 {
                                                                     block: 'link',
                                                                     attrs: { href: '#' },
-                                                                    mix: { block: 'text', mods: { size: 'm', view: 'link' }},
+                                                                    mix: { block: 'text', mods: { size: 'm', view: 'link-primary' }},
                                                                     content: {
                                                                         block: 'text',
                                                                         tag: 'span',
@@ -2184,7 +2186,7 @@ module.exports = {
                                                                 {
                                                                     block: 'link',
                                                                     attrs: { href: '#' },
-                                                                    mix: { block: 'text', mods: { size: 'm', view: 'link' }},
+                                                                    mix: { block: 'text', mods: { size: 'm', view: 'link-primary' }},
                                                                     content: {
                                                                         block: 'text',
                                                                         tag: 'span',
@@ -2336,7 +2338,7 @@ module.exports = {
                                                                 block: 'text',
                                                                 mods: {
                                                                     size: 's',
-                                                                    view: 'link',
+                                                                    view: 'link-primary',
                                                                     decoration: 'underline',
                                                                     weight: 'bold'
                                                                 },

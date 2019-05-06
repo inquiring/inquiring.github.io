@@ -1101,7 +1101,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "view",
-        "val": "link"
+        "val": "link-primary"
     },
     {
         "block": "footer",
