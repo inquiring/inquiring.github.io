@@ -707,6 +707,7 @@
 }
 .input__control {
     border-radius: 0;
+    -webkit-border-radius: 0;
     -webkit-appearance: none;
 }
 .input_theme_i {

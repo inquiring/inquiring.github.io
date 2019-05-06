@@ -1852,8 +1852,8 @@ module.exports = {
                                                                         mods: {
                                                                             theme: 'f',
                                                                             size: 'l',
-                                                                            type: 'search'
                                                                         },
+                                                                        attrs: { type: 'mail', required: 'true' },
                                                                         placeholder: 'Ваш E-mail',
                                                                     }
                                                                 ]
