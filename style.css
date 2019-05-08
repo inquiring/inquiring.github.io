@@ -13,7 +13,6 @@ body {
     margin: 0;
 }
 
-
 .portfolio {
     min-width: 350px;
     max-width: 350px;
@@ -41,4 +40,5 @@ body {
 .tpl-flex {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
