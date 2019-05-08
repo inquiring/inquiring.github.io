@@ -16,7 +16,7 @@ body {
 .portfolio {
     min-width: 350px;
     max-width: 350px;
-    min-height: 456px;
+    min-height: 170px;
     overflow: hidden;
     /*  */
     -moz-transition: all 0.2s ease-out;
@@ -30,9 +30,7 @@ body {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-.portfolio_background_funbox {
-  background: url(image/background-funbox.jpg);
-}
+
 @media screen and (min-width: 320px) {
   .portfolio {
     min-width: 280px;
