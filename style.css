@@ -38,3 +38,7 @@ body {
     min-width: 305px;
   }
 }
+.tpl-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
