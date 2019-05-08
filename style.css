@@ -20,6 +20,9 @@ body {
     min-height: 456px;
     overflow: hidden;
 }
+.portfolio_background_funbox {
+  background: url(image/background-funbox.jpg);
+}
 @media screen and (min-width: 320px) {
   .portfolio {
     min-width: 280px;
