@@ -1,3 +1,19 @@
+:root {
+    --gap: 16px;
+}
+:root {
+    --gap: 20px;
+}
+:root {
+    --gap: 12px;
+    --col-gap-third: calc(var(--gap) * 0.33);
+    --col-gap-half: calc(var(--gap) * 0.5);
+    --col-gap-two-thirds: calc(var(--gap) * 0.66);
+    --col-gap-full: var(--gap);
+    --col-gap-2x: calc(var(--gap) * 2);
+    --col-gap-3x: calc(var(--gap) * 3);
+}
+
 .theme_color_whitepaper-default, 
 .theme_color_whitepaper-inverse, 
 .theme_color_whitepaper-normal {
@@ -129,7 +145,7 @@ body {
 }
 
 .portfolio {
-  min-width: 350px;
+  width: 350px;
   max-width: 350px;
   height: 170px;
   overflow: hidden;
@@ -148,17 +164,17 @@ body {
 
 @media screen and (min-width: 320px) {
   .portfolio {
-    min-width: 280px;
+    width: 280px;
   }
 }
 @media screen and (min-width: 375px) {
   .portfolio {
-    min-width: 320px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 425px) {
   .portfolio {
-    min-width: 305px;
+    width: 305px;
   }
 }
 .tpl-flex {
@@ -167,31 +183,43 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-
+.tpl-layout {
+    display: grid;
+}
+.tpl-layout__content {
+    padding: 0 var(--gap);
+}
+.tpl-layout__container {
+    width: 100%;
+}
+.tpl-layout__container_size_m {
+    max-width: 1144px;
+}
+.tpl-layout__container_align_center {
+    margin: 0 auto;
+}
+.tpl-layout__section {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tpl-grid__fraction {
+    min-width: 0;
+}
+.decorator_indent-a_auto {
+    margin: auto;
+}
 .decorator_indent-b_xxxl {
-      margin-bottom: 40px;
+    margin-bottom: var(--space-xxxl);
+}
+.decorator_indent-b_xxxxxxl {
+    margin-bottom: var(--space-xxxxxxl);
 }
 
 .pt-card_border_all {
-    border: 1px solid #0000000d;
+    border: 1px solid var(--color-bg-border);
 }
 
 .pt-card_shadow_cloud {
-    -webkit-box-shadow: 0 20px 20px #00000014;
-    box-shadow: 0 20px 20px #00000014
-}
-:root {
-    --gap: 16px;
-}
-:root {
-    --gap: 20px;
-}
-:root {
-    --gap: 12px;
-    --col-gap-third: calc(var(--gap) * 0.33);
-    --col-gap-half: calc(var(--gap) * 0.5);
-    --col-gap-two-thirds: calc(var(--gap) * 0.66);
-    --col-gap-full: var(--gap);
-    --col-gap-2x: calc(var(--gap) * 2);
-    --col-gap-3x: calc(var(--gap) * 3);
+    -webkit-box-shadow: 0 20px 20px var(--color-bg-ghost);
+    box-shadow: 0 20px 20px var(--color-bg-ghost);
 }
