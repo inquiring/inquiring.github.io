@@ -4,11 +4,11 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: var(--color-typo-primary);
+  color: #000;
   font-family: var(--font-family-sans);
   letter-spacing: 0;
   overflow-x: hidden;
-  background-color: var(--color-bg-default);
+  background-color: #fff;
   padding: 0;
   margin: 0;
 }
@@ -65,4 +65,28 @@ body {
 
 .decorator_indent-b_xxxl {
       margin-bottom: 40px;
+}
+
+.pt-card_border_all {
+    border: 1px solid #0000000d;
+}
+
+.pt-card_shadow_cloud {
+    -webkit-box-shadow: 0 20px 20px #00000014;
+    box-shadow: 0 20px 20px #00000014
+}
+:root {
+    --gap: 16px;
+}
+:root {
+    --gap: 20px;
+}
+:root {
+    --gap: 12px;
+    --col-gap-third: calc(var(--gap) * 0.33);
+    --col-gap-half: calc(var(--gap) * 0.5);
+    --col-gap-two-thirds: calc(var(--gap) * 0.66);
+    --col-gap-full: var(--gap);
+    --col-gap-2x: calc(var(--gap) * 2);
+    --col-gap-3x: calc(var(--gap) * 3);
 }
