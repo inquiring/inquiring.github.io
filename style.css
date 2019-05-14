@@ -26,7 +26,7 @@ body {
 .portfolio {
   min-width: 350px;
   max-width: 350px;
-  min-height: 170px;
+  height: 170px;
   overflow: hidden;
   /*  */
   -moz-transition: all 0.2s ease-out;
