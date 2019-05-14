@@ -58,6 +58,11 @@ body {
 }
 .tpl-flex {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.decorator_indent-b_xxxl {
+      margin-bottom: 40px;
 }
