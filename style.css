@@ -89,6 +89,7 @@
     --space-xxxxxl: 72px;
     --space-xxxxxxl: 96px;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   color: var(--color-typo-primary);
@@ -117,6 +118,14 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0;
+}
+.pt-card__image {
+    width: 100%;
+}
+.pt-card__image_size_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .portfolio {
@@ -185,12 +194,4 @@ body {
     --col-gap-full: var(--gap);
     --col-gap-2x: calc(var(--gap) * 2);
     --col-gap-3x: calc(var(--gap) * 3);
-}
-.pt-card__image {
-    width: 100%;
-}
-.pt-card__image_size_cover {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
