@@ -12,7 +12,7 @@
         left: -41px;
         width: 359px;
         height: 79px;
-        background-image: url(../../common.blocks/image/foodPhotogrphy-tablet.png);
+        background-image: url(/common.blocks/image/foodPhotogrphy-tablet.png);
         background-repeat: no-repeat;
         z-index: -1;
     }
@@ -29,7 +29,7 @@
         left: -29px;
         width: 494px;
         height: 107px;
-        background-image: url(../../common.blocks/image/foodPhotogrphy-desktop.png);
+        background-image: url(/common.blocks/image/foodPhotogrphy-desktop.png);
         background-repeat: no-repeat;
         z-index: -1;
     }
