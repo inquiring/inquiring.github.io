@@ -627,7 +627,7 @@ html {
         left: -41px;
         width: 359px;
         height: 79px;
-        background-image: url(../../common.blocks/hero/__title/foodPhotogrphy-tablet.png);
+        background-image: url(../../common.blocks/common.blocks/image/foodPhotogrphy-tablet.png);
         background-repeat: no-repeat;
         z-index: -1;
     }
@@ -645,7 +645,7 @@ html {
         left: -29px;
         width: 494px;
         height: 107px;
-        background-image: url(../../common.blocks/hero/__title/foodPhotogrphy-desktop.png);
+        background-image: url(../../common.blocks/common.blocks/image/foodPhotogrphy-desktop.png);
         background-repeat: no-repeat;
         z-index: -1;
     }

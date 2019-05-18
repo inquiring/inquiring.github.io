@@ -7,6 +7,7 @@
         margin-top: 285px;
     }
 }
+
 @media screen and (min-width: $screen-l) {
     .hero {
         margin-top: 239px;
