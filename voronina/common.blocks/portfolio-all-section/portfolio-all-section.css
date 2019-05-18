@@ -1,6 +1,6 @@
  @media screen and (max-width: $screen-xs-max) {
     .portfolio-all-section {
-        background-image: url(/common.blocks/image/portfolio-image-5-mobile.png);
+        background-image: url(../../common.blocks/image/portfolio-image-5-mobile.png);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -23,7 +23,7 @@
         height: 343px;
         top: 28px;
         left: calc(-1 * var(--gap));
-        background-image: url(/common.blocks/image/portfolio-image-5-tablet.png);
+        background-image: url(../../common.blocks/image/portfolio-image-5-tablet.png);
         background-size: auto;
         background-repeat: no-repeat;
         z-index: 1;
@@ -55,7 +55,7 @@
         height: 468px;
         top: 38px;
         left: calc(-1 * var(--gap));
-        background-image: url(/common.blocks/image/portfolio-image-5-desktop.png);
+        background-image: url(../../common.blocks/image/portfolio-image-5-desktop.png);
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;

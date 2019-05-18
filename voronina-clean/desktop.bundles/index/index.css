@@ -241,7 +241,7 @@ html {
 
 @media screen and (max-width: 719px) {
     .header {
-        background-image: url(/common.blocks/image/hero-mobile.jpg);
+        background-image: url(../../common.blocks/image/hero-mobile.jpg);
     }
 }
 
@@ -256,7 +256,7 @@ html {
         top: 0;
         right: 0;
 
-        background-image: url(/common.blocks/image/hero-bg-tablet.jpg);
+        background-image: url(../../common.blocks/image/hero-bg-tablet.jpg);
         background-repeat: no-repeat;
         width: 308px;
         height: 823px;
@@ -269,7 +269,7 @@ html {
         right: 50px;
         width: 327px;
         height: 499px;
-        background-image: url(/common.blocks/image/hero-tablet.jpg);
+        background-image: url(../../common.blocks/image/hero-tablet.jpg);
         background-size: contain;
         background-position-y: 0;
         z-index: 100;
@@ -281,7 +281,7 @@ html {
         min-height: 782px;
     }
     .header::after {
-        background-image: url(/common.blocks/image/hero-bg-desktop.png);
+        background-image: url(../../common.blocks/image/hero-bg-desktop.png);
         width: 440px;
         height: 780px;
     }
@@ -296,7 +296,7 @@ html {
         min-height: 782px;
     }
     .header::after {
-        background-image: url(/common.blocks/image/hero-bg-desktop.png);
+        background-image: url(../../common.blocks/image/hero-bg-desktop.png);
         width: 685px;
         height: 780px;
     }
@@ -627,7 +627,7 @@ html {
         left: -41px;
         width: 359px;
         height: 79px;
-        background-image: url(/common.blocks/image/foodPhotogrphy-tablet.png);
+        background-image: url(../../common.blocks/hero/__title/foodPhotogrphy-tablet.png);
         background-repeat: no-repeat;
         z-index: -1;
     }
@@ -645,7 +645,7 @@ html {
         left: -29px;
         width: 494px;
         height: 107px;
-        background-image: url(/common.blocks/image/foodPhotogrphy-desktop.png);
+        background-image: url(../../common.blocks/hero/__title/foodPhotogrphy-desktop.png);
         background-repeat: no-repeat;
         z-index: -1;
     }
@@ -1277,7 +1277,7 @@ html {
 
 @media screen and (max-width: 719px) {
     .portfolio-all-section {
-        background-image: url(/common.blocks/image/portfolio-image-5-mobile.png);
+        background-image: url(../../common.blocks/image/portfolio-image-5-mobile.png);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -1301,7 +1301,7 @@ html {
         height: 343px;
         top: 28px;
         left: calc(-1*var(--gap));
-        background-image: url(/common.blocks/image/portfolio-image-5-tablet.png);
+        background-image: url(../../common.blocks/image/portfolio-image-5-tablet.png);
         background-size: auto;
         background-repeat: no-repeat;
         z-index: 1;
@@ -1334,7 +1334,7 @@ html {
         height: 468px;
         top: 38px;
         left: calc(-1*var(--gap));
-        background-image: url(/common.blocks/image/portfolio-image-5-desktop.png);
+        background-image: url(../../common.blocks/image/portfolio-image-5-desktop.png);
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;

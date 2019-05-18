@@ -5,7 +5,7 @@
 }
 @media screen and (max-width: $screen-xs-max) {
     .header {
-        background-image: url(/common.blocks/image/hero-mobile.jpg);
+        background-image: url(../../common.blocks/image/hero-mobile.jpg);
     }
 }
 @media screen and (min-width: $screen-s) {
@@ -19,7 +19,7 @@
         top: 0;
         right: 0;
 
-        background-image: url(/common.blocks/image/hero-bg-tablet.jpg);
+        background-image: url(../../common.blocks/image/hero-bg-tablet.jpg);
         background-repeat: no-repeat;
         width: 308px;
         height: 823px;
@@ -32,7 +32,7 @@
         right: 50px;
         width: 327px;
         height: 499px;
-        background-image: url(/common.blocks/image/hero-tablet.jpg);
+        background-image: url(../../common.blocks/image/hero-tablet.jpg);
         background-size: contain;
         background-position-y: 0;
         z-index: 100;
@@ -43,7 +43,7 @@
         min-height: 782px;
     }
     .header::after {
-        background-image: url(/common.blocks/image/hero-bg-desktop.png);
+        background-image: url(../../common.blocks/image/hero-bg-desktop.png);
         width: 440px;
         height: 780px;
     }
@@ -57,7 +57,7 @@
         min-height: 782px;
     }
     .header::after {
-        background-image: url(/common.blocks/image/hero-bg-desktop.png);
+        background-image: url(../../common.blocks/image/hero-bg-desktop.png);
         width: 685px;
         height: 780px;
     }

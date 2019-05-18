@@ -52,15 +52,15 @@ module.exports = {
                                                 content: [
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  1044px)', srcset: '/common.blocks/image/logo-desktop.png' },
+                                                        attrs: { media: '(min-width:  1044px)', srcset: '../../common.blocks/image/logo-desktop.png' },
                                                     },
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/logo-tablet.png' },
+                                                        attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/logo-tablet.png' },
                                                     },
                                                     {
                                                         block: 'image',
-                                                        url: '/common.blocks/image/logo-mobile.png'
+                                                        url: '../../common.blocks/image/logo-mobile.png'
                                                     }
                                                 ]
                                             }
@@ -84,7 +84,7 @@ module.exports = {
                                                     mix: { block: 'icon', mods: { 'close': 'm-primary', } },
                                                     content: {
                                                         block: 'image',
-                                                        url: '/common.blocks/image/icon-close.png'
+                                                        url: '../../common.blocks/image/icon-close.png'
                                                     }
                                                 },
                                                 {
@@ -344,16 +344,16 @@ module.exports = {
                                                         content: [
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/portfolio-image-1-desktop.jpg' },
+                                                                attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/portfolio-image-1-desktop.jpg' },
                                                             },
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/portfolio-image-1-tablet.jpg' },
+                                                                attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/portfolio-image-1-tablet.jpg' },
                                                             },
                                                             {
                                                                 block: 'image',
                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                url: '/common.blocks/image/portfolio-image-1-mobile.jpg',
+                                                                url: '../../common.blocks/image/portfolio-image-1-mobile.jpg',
                                                             }
                                                         ]
                                                     }
@@ -397,16 +397,16 @@ module.exports = {
                                                             content: [
                                                                 {
                                                                     tag: 'source',
-                                                                    attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/portfolio-image-2-desktop.jpg' },
+                                                                    attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/portfolio-image-2-desktop.jpg' },
                                                                 },
                                                                 {
                                                                     tag: 'source',
-                                                                    attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/portfolio-image-2-tablet.jpg' },
+                                                                    attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/portfolio-image-2-tablet.jpg' },
                                                                 },
                                                                 {
                                                                     block: 'image',
                                                                     mix: { block: 'pt-card', elem: 'image' },
-                                                                    url: '/common.blocks/image/portfolio-image-2-mobile.jpg',
+                                                                    url: '../../common.blocks/image/portfolio-image-2-mobile.jpg',
                                                                 }
                                                             ]
                                                         }
@@ -446,16 +446,16 @@ module.exports = {
                                                             content: [
                                                                 {
                                                                     tag: 'source',
-                                                                    attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/portfolio-image-3-desktop.jpg' },
+                                                                    attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/portfolio-image-3-desktop.jpg' },
                                                                 },
                                                                 {
                                                                     tag: 'source',
-                                                                    attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/portfolio-image-3-tablet.jpg' },
+                                                                    attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/portfolio-image-3-tablet.jpg' },
                                                                 },
                                                                 {
                                                                     block: 'image',
                                                                     mix: { block: 'pt-card', elem: 'image' },
-                                                                    url: '/common.blocks/image/portfolio-image-3-mobile.jpg',
+                                                                    url: '../../common.blocks/image/portfolio-image-3-mobile.jpg',
                                                                 }
                                                             ]
                                                         }
@@ -499,16 +499,16 @@ module.exports = {
                                                         content: [
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/portfolio-image-4-desktop.jpg' },
+                                                                attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/portfolio-image-4-desktop.jpg' },
                                                             },
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/portfolio-image-4-tablet.jpg' },
+                                                                attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/portfolio-image-4-tablet.jpg' },
                                                             },
                                                             {
                                                                 block: 'image',
                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                url: '/common.blocks/image/portfolio-image-4-mobile.jpg',
+                                                                url: '../../common.blocks/image/portfolio-image-4-mobile.jpg',
                                                             }
                                                         ]
                                                     }
@@ -582,16 +582,16 @@ module.exports = {
                                                 content: [
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/pdf-desktop.png' },
+                                                        attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/pdf-desktop.png' },
                                                     },
                                                     {
                                                         tag: 'source',
-                                                        attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/pdf-tablet.png' },
+                                                        attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/pdf-tablet.png' },
                                                     },
                                                     {
                                                         block: 'image',
                                                         mix: { block: 'pt-card', elem: 'image' },
-                                                        url: '/common.blocks/image/pdf-mobile.png',
+                                                        url: '../../common.blocks/image/pdf-mobile.png',
                                                     }
                                                 ]
                                             }
@@ -662,15 +662,15 @@ module.exports = {
                                                     content: [
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/aboutMe-image-1-desktop.jpg' },
+                                                            attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/aboutMe-image-1-desktop.jpg' },
                                                         },
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/aboutMe-image-1-tablet.jpg' },
+                                                            attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/aboutMe-image-1-tablet.jpg' },
                                                         },
                                                         {
                                                             block: 'image',
-                                                            url: '/common.blocks/image/aboutMe-image-1-mobile.jpg',
+                                                            url: '../../common.blocks/image/aboutMe-image-1-mobile.jpg',
                                                         }
                                                     ]
                                                 }
@@ -682,15 +682,15 @@ module.exports = {
                                                     content: [
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/aboutMe-image-2-desktop.jpg' },
+                                                            attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/aboutMe-image-2-desktop.jpg' },
                                                         },
                                                         {
                                                             tag: 'source',
-                                                            attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/aboutMe-image-2-tablet.jpg' },
+                                                            attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/aboutMe-image-2-tablet.jpg' },
                                                         },
                                                         {
                                                             block: 'image',
-                                                            url: '/common.blocks/image/aboutMe-image-2-mobile.jpg',
+                                                            url: '../../common.blocks/image/aboutMe-image-2-mobile.jpg',
                                                         }
                                                     ]
                                                 }
@@ -820,16 +820,16 @@ module.exports = {
                                                         content: [
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/price-image-1-desktop.jpg' },
+                                                                attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/price-image-1-desktop.jpg' },
                                                             },
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/price-image-1-tablet.jpg' },
+                                                                attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/price-image-1-tablet.jpg' },
                                                             },
                                                             {
                                                                 block: 'image',
                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                url: '/common.blocks/image/price-image-1-mobile.jpg',
+                                                                url: '../../common.blocks/image/price-image-1-mobile.jpg',
                                                             }
                                                         ]
                                                     }
@@ -956,16 +956,16 @@ module.exports = {
                                                         content: [
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/price-image-2-desktop.jpg' },
+                                                                attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/price-image-2-desktop.jpg' },
                                                             },
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/price-image-2-tablet.jpg' },
+                                                                attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/price-image-2-tablet.jpg' },
                                                             },
                                                             {
                                                                 block: 'image',
                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                url: '/common.blocks/image/price-image-2-mobile.jpg',
+                                                                url: '../../common.blocks/image/price-image-2-mobile.jpg',
                                                             }
                                                         ]
                                                     }
@@ -1087,16 +1087,16 @@ module.exports = {
                                                         content: [
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  1440px)', srcset: '/common.blocks/image/price-image-3-desktop.jpg' },
+                                                                attrs: { media: '(min-width:  1440px)', srcset: '../../common.blocks/image/price-image-3-desktop.jpg' },
                                                             },
                                                             {
                                                                 tag: 'source',
-                                                                attrs: { media: '(min-width:  720px)', srcset: '/common.blocks/image/price-image-3-tablet.jpg' },
+                                                                attrs: { media: '(min-width:  720px)', srcset: '../../common.blocks/image/price-image-3-tablet.jpg' },
                                                             },
                                                             {
                                                                 block: 'image',
                                                                 mix: { block: 'pt-card', elem: 'image' },
-                                                                url: '/common.blocks/image/price-image-3-mobile.jpg',
+                                                                url: '../../common.blocks/image/price-image-3-mobile.jpg',
                                                             }
                                                         ]
                                                     }
