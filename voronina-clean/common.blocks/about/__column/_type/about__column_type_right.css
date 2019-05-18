@@ -1,0 +1,12 @@
+.about__column_type_right {
+    width: calc(145/320*100%);
+    padding-top: 35px;
+}
+
+@media screen and (min-width: $screen-s) {
+    .about__column_type_right {
+        width: calc(306/640*100%);
+        padding-top: 48px;
+    }
+}
+@media screen and (min-width: $screen-xl) {}

@@ -1,0 +1,31 @@
+.portfolio-all-section__button {
+    font-weight: 400;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+}
+
+.portfolio-all-section__button > .text {
+    padding-bottom: 10px;
+}
+@media screen and (max-width: $screen-xs-max) {
+    .portfolio-all-section__button {
+        color: #fff;
+        font-size: 16px;
+    }
+    .portfolio-all-section__button > .text {
+        margin-right: 10px;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+    .portfolio-all-section__button {
+        font-size: 16px;
+    }
+    .portfolio-all-section__button > .text {
+        margin-right: 21px;
+        border-bottom: 1px solid #000;
+    }
+}

@@ -1,0 +1,14 @@
+.hero {
+    margin-top: 160px;
+}
+
+@media screen and (min-width: $screen-s) {
+    .hero {
+        margin-top: 285px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .hero {
+        margin-top: 239px;
+    }
+}

@@ -1,0 +1,6 @@
+@media screen and (min-width: $screen-m) {
+
+    .pt-surface__action_for_desktop {
+        display: none;
+    }
+}

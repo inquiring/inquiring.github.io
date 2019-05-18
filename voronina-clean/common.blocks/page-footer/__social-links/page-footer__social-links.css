@@ -1,0 +1,17 @@
+.page-footer__social-links {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto 35px;
+    padding: 0;
+}
+@media screen and (min-width: $screen-xs) {
+    .page-footer__social-links {
+        max-width: 183px;
+    }
+}
+@media screen and (min-width: $screen-s) {
+    .page-footer__social-links {
+        max-width: 196px;
+    }
+}

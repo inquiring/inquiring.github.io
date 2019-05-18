@@ -1,0 +1,10 @@
+@media screen and (min-width: $screen-m) {
+    .pt-surface_for_desktop {
+        display: block;
+        background-color: transparent;
+        position: inherit;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}

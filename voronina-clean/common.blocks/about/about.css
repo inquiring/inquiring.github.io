@@ -1,0 +1,11 @@
+@media screen and (max-width: $screen-xs-max) {
+    .about {
+        padding: 0;
+    }
+}
+@media screen and (min-width: $screen-xl) {
+    .about {
+        position: relative;
+        height: 710px;
+    }
+}

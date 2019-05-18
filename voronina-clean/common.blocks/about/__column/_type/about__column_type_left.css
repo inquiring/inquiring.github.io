@@ -1,0 +1,8 @@
+.about__column_type_left {
+    width: calc(165/320*100%);
+}
+@media screen and (min-width: $screen-s) {
+    .about__column_type_left {
+        width: calc(306/640*100%);
+    }
+}

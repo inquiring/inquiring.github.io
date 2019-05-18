@@ -1,0 +1,19 @@
+@media screen and (min-width: $screen-s) {
+    .price__section {
+        display: flex;
+        justify-content: space-between;
+        width: 641px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: $screen-m) {
+    .price__section {
+        width: 755px;
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .price__section {
+        width: 1106px;
+    }
+}

@@ -1,0 +1,10 @@
+.portfolio-card {
+    width: 100%;
+    max-width: 343px;
+    margin: auto;
+    margin-bottom: 69px;
+}
+.portfolio-card .pt-card__image {
+    width: 100%;
+
+}

@@ -1,0 +1,9 @@
+.text_view_link-primary {
+    color: var(--color-typo-primary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.text_view_link-primary:hover {
+    color: var(--color-typo-brand);
+}
