@@ -1,0 +1,19 @@
+.price-card {
+    width: 290px;
+}
+
+.price-card {
+    width: 100%;
+    max-width: 343px;
+    margin: auto;
+    margin-bottom: 69px;
+}
+.price-card .pt-card__image {
+    width: 100%;
+
+}
+@media screen and (min-width: $screen-s) {
+    .price-card.pt-card__content {
+
+    }
+}

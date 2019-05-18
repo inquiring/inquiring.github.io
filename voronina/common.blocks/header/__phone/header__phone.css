@@ -1,0 +1,30 @@
+@media screen and (max-width: $screen-xs-max) {
+
+    .header__phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $screen-s) {
+    .header__phone {
+        z-index: 101;
+        padding-right: 70px;
+        color: #3b3b3b;
+        font-family: "Source Serif Roman - Semibold";
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+    .header__phone {
+        z-index: 101;
+        padding-right: calc(100px - var(--gap));
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .header__phone {
+        z-index: 101;
+        padding-right: calc(397px - var(--gap));
+    }
+}

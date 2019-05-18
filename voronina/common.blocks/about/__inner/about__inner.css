@@ -1,0 +1,6 @@
+@media screen and (min-width: $screen-xl) {
+
+    .about__inner {
+        display: flex;
+    }
+}

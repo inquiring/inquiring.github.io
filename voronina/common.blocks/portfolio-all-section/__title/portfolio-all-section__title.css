@@ -1,0 +1,26 @@
+.portfolio-all-section__title {
+    font-family: "Source Serif Roman - Semibold";
+    font-weight: 400;
+    color: #212021;
+}
+@media screen and (max-width: $screen-xs-max) {
+
+    .portfolio-all-section__title {
+        font-size: 18px;
+        margin-bottom: 21px;
+        color: #fff;
+    }
+}
+@media screen and (min-width: $screen-s) {
+    .portfolio-all-section__title {
+        font-size: 24px;
+        margin-bottom: 21px;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+    .portfolio-all-section__title {
+        font-size: 24px;
+        margin-bottom: 21px;
+    }
+}

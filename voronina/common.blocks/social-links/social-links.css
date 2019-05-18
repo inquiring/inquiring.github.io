@@ -1,0 +1,8 @@
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 196px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

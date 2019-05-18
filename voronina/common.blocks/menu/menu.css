@@ -1,0 +1,10 @@
+.menu {
+    margin-top: 115px;
+}
+@media screen and (min-width: $screen-m) {
+
+    .menu {
+        display: flex;
+        margin-top: 0;
+    }
+}

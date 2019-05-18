@@ -1,0 +1,15 @@
+.menu__item > .link {
+    display: block;
+    padding: 13px 7px;
+}
+@media screen and (min-width: $screen-m) {
+    .menu__item:first-child {
+        display: none;
+    }
+    .menu__item:nth-child(2) {
+        padding-right: 88px;
+    }
+    .menu__item:nth-child(3) {
+        padding-right: 86px;
+    }
+}
