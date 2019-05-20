@@ -1,0 +1,17 @@
+.button_view_voronina {
+    background-color: transparent;
+    color: var(--color-control-typo-primary);
+    transition: background-color .15s;
+    border-bottom: 2px solid;
+    border-radius: unset;
+}
+.button_view_voronina.button_size_m {
+    padding-left: 0;
+    padding-right: 0;
+}
+.button_view_voronina.button_size_l {
+    padding-left: 0;
+}
+.button_view_voronina .button__text {
+    text-transform: uppercase;
+}

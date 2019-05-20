@@ -1,0 +1,9 @@
+.theme_control_whitepaper-brand {
+    --color-control-bg-action-press: #fff;
+    --color-control-bg-clear: rgba(255, 255, 255, 0);
+    --color-control-bg-clear-hover: rgba(255, 255, 255, 0.07);
+    --color-control-bg-clear-press: rgba(255, 255, 255, 0.12);
+    --color-control-bg-border-disable: rgb(255, 255, 255);
+    --color-control-typo-disable: rgb(255, 255, 255);
+    --color-control-typo-placeholder-disable: rgb(255, 255, 255);
+}

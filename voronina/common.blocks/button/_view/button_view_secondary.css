@@ -1,0 +1,12 @@
+.button_view_secondary {
+    background-color: var(--color-control-bg-default);
+    color: var(--color-control-typo-primary);
+    -webkit-transition: background-color .15s;
+    transition: background-color .15s;
+}
+.button_view_secondary:hover {
+    background-color: var(--color-control-bg-default-hover);
+}
+.button_view_secondary:active {
+    background-color: var(--color-control-bg-default-press);
+}

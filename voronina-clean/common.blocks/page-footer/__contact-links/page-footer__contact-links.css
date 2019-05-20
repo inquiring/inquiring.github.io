@@ -1,0 +1,23 @@
+@media screen and (min-width: $screen-xs) {
+    .page-footer__contact-links {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: $screen-s-max) {
+    .page-footer__contact-links {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: $screen-s) {
+    .page-footer__contact-links {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width: $screen-m) {
+    .page-footer__contact-links {
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+}

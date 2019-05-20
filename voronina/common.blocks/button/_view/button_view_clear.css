@@ -1,0 +1,6 @@
+.button_view_clear {
+    background-color: var(--color-control-bg-default);
+    color: var(--color-control-typo-primary);
+    -webkit-transition: background-color .15s;
+    transition: background-color .15s;
+}

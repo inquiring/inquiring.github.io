@@ -1,0 +1,58 @@
+@media screen and (max-width: $screen-xs-max) {
+    .theme_control_whitepaper-inverse {
+        --color-control-bg-action-press: #fff;
+        --color-control-bg-clear: rgba(255, 255, 255, 0);
+        --color-control-bg-clear-hover: rgba(255, 255, 255, 0.07);
+        --color-control-bg-clear-press: rgba(255, 255, 255, 0.12);
+        --color-control-bg-border-disable: rgb(255, 255, 255);
+        --color-control-typo-disable: rgb(255, 255, 255);
+        --color-control-typo-placeholder-disable: rgb(255, 255, 255);
+    }
+    .theme_control_whitepaper-inverse {
+        --color-control-bg-default: rgba(255, 255, 255, 0.2);
+        --color-control-bg-default-hover: rgba(255, 255, 255, 0.3);
+        --color-control-bg-default-press: rgba(255, 255, 255, 0.15);
+        --color-control-bg-default-affect: rgb(27, 27, 27);
+        --color-control-bg-border-default: rgb(51, 51, 51);
+        --color-control-bg-border-focus: rgba(77, 148, 255, 0.5);
+        --color-control-typo-placeholder: rgb(102, 102, 102);
+        --color-control-typo-affect: rgb(27, 27, 27);
+        --color-control-typo-action: #0067ff;
+        --color-control-bg-action: #fff;
+        --color-control-bg-action-hover: rgb(255, 255, 255);
+        --color-control-bg-check: rgb(56, 136, 255);
+        --color-control-bg-check-press: rgb(128, 179, 255);
+        --color-control-bg-check-hover: rgb(128, 179, 255);
+        --color-control-bg-border-check: rgb(56, 136, 255);
+        --color-control-bg-border-check-hover: rgb(0, 98, 245);
+        --color-control-link-default: #0067ff;
+        --color-control-bg-link-default: #0067ff;
+        --color-control-bg-border-link-default: #0067ff;
+        --color-control-bg-disable: rgb(36, 36, 36);
+        --color-control-bg-disable-check: rgb(102, 102, 102);
+    }
+
+    .theme_control_whitepaper-inverse {
+        --color-control-bg-border-default-hover: rgb(89, 89, 89);
+        --color-control-bg-border-default-press: rgb(102, 102, 102);
+        --color-control-typo-primary: #fff;
+        --color-control-typo-secondary: rgba(255, 255, 255, 0.6);
+        --color-control-typo-ghost: rgba(255, 255, 255, 0.3);
+        --color-control-bg-action-progress: rgba(255, 255, 255, 0.3);
+        --color-control-bg-action-progressing: rgba(255, 255, 255, 0.3);
+        --color-control-bg-border-check-press: rgba(255, 255, 255, 0.35);
+        --control-radius: 4px;
+        --control-border-width: 2px;
+        --control-button-size-l: var(--space-xxxxl);
+        --control-button-size-m: var(--space-xxxl);
+        --control-button-size-s: var(--space-xxl);
+        --control-space-xl: var(--space-xl);
+        --control-space-l: var(--space-l);
+        --control-space-m: var(--space-m);
+        --control-space-s: var(--space-s);
+        --control-space-xs: var(--space-s);
+        --control-size-l: var(--size-typo-l);
+        --control-size-m: var(--size-typo-m);
+        --control-size-s: var(--size-typo-s);
+    }
+}

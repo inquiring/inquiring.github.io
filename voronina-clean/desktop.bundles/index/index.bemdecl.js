@@ -111,7 +111,12 @@ exports.blocks = [
         "name": "theme",
         "mods": [
             {
-                "name": "font"
+                "name": "font",
+                "vals": [
+                    {
+                        "name": "SourceSerifRoman"
+                    }
+                ]
             }
         ]
     },
@@ -123,6 +128,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "medium"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "control",
+                "vals": [
+                    {
+                        "name": "whitepaper-default"
                     }
                 ]
             }
@@ -309,24 +327,6 @@ exports.blocks = [
         "name": "pt-surface",
         "elems": [
             {
-                "name": "content",
-                "mods": [
-                    {
-                        "name": "space-a",
-                        "vals": [
-                            {
-                                "name": "m"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "pt-surface",
-        "elems": [
-            {
                 "name": "close"
             }
         ]
@@ -496,6 +496,32 @@ exports.blocks = [
         "name": "hero"
     },
     {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "control",
+                "vals": [
+                    {
+                        "name": "whitepaper-inverse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "theme",
+        "mods": [
+            {
+                "name": "color",
+                "vals": [
+                    {
+                        "name": "whitepaper-portal-brand"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "hero",
         "elems": [
             {
@@ -508,6 +534,19 @@ exports.blocks = [
         "elems": [
             {
                 "name": "description"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "primary"
+                    }
+                ]
             }
         ]
     },
@@ -546,6 +585,14 @@ exports.blocks = [
         ]
     },
     {
+        "name": "hero",
+        "elems": [
+            {
+                "name": "subtitle"
+            }
+        ]
+    },
+    {
         "name": "text",
         "mods": [
             {
@@ -565,17 +612,9 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "14-16-18"
+                        "name": "s"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "name": "hero",
-        "elems": [
-            {
-                "name": "subtitle"
             }
         ]
     },
@@ -586,10 +625,10 @@ exports.blocks = [
         "name": "button",
         "mods": [
             {
-                "name": "theme",
+                "name": "view",
                 "vals": [
                     {
-                        "name": "islands"
+                        "name": "voronina"
                     }
                 ]
             }
@@ -609,23 +648,44 @@ exports.blocks = [
         ]
     },
     {
+        "name": "hero",
+        "elems": [
+            {
+                "name": "button"
+            }
+        ]
+    },
+    {
         "name": "button",
+        "elems": [
+            {
+                "name": "text"
+            }
+        ]
+    },
+    {
+        "name": "icon",
         "mods": [
             {
-                "name": "type",
+                "name": "view",
                 "vals": [
                     {
-                        "name": "link"
+                        "name": "primary"
                     }
                 ]
             }
         ]
     },
     {
-        "name": "hero",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "button"
+                "name": "indent-l",
+                "vals": [
+                    {
+                        "name": "s"
+                    }
+                ]
             }
         ]
     },
@@ -681,7 +741,7 @@ exports.blocks = [
                 "name": "size",
                 "vals": [
                     {
-                        "name": "12-12-14"
+                        "name": "xs"
                     }
                 ]
             }
@@ -714,32 +774,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "xxl"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "type",
-                "vals": [
-                    {
-                        "name": "h2"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "tpl-layout",
         "elems": [
             {
@@ -749,6 +783,19 @@ exports.blocks = [
     },
     {
         "name": "portfolio-section"
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-v",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "portfolio-section",
@@ -839,26 +886,28 @@ exports.blocks = [
         "name": "portfolio-all-section"
     },
     {
-        "name": "portfolio-all-section",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "title"
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
             }
         ]
     },
     {
-        "name": "portfolio-all-section",
-        "elems": [
+        "name": "decorator",
+        "mods": [
             {
-                "name": "subtitle"
-            }
-        ]
-    },
-    {
-        "name": "portfolio-all-section",
-        "elems": [
-            {
-                "name": "button"
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "s"
+                    }
+                ]
             }
         ]
     },
@@ -895,6 +944,24 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-icon-plus",
+        "elems": [
+            {
+                "name": "icon",
+                "mods": [
+                    {
+                        "name": "indent-l",
+                        "vals": [
+                            {
+                                "name": "s"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "portfolio-all-section",
         "elems": [
             {
@@ -904,19 +971,6 @@ exports.blocks = [
     },
     {
         "name": "about"
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "18-24-36"
-                    }
-                ]
-            }
-        ]
     },
     {
         "name": "about",
@@ -1000,28 +1054,13 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "display",
-                "vals": [
-                    {
-                        "name": "inline-block"
-                    }
-                ]
-            }
-        ]
+        "name": "contact-links"
     },
     {
-        "name": "button",
-        "mods": [
+        "name": "contact-links",
+        "elems": [
             {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
+                "name": "item"
             }
         ]
     },
@@ -1030,27 +1069,6 @@ exports.blocks = [
         "elems": [
             {
                 "name": "button"
-            }
-        ]
-    },
-    {
-        "name": "button",
-        "elems": [
-            {
-                "name": "text"
-            }
-        ]
-    },
-    {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-b",
-                "vals": [
-                    {
-                        "name": "l"
-                    }
-                ]
             }
         ]
     },
@@ -1210,6 +1228,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "text",
+        "mods": [
+            {
+                "name": "display",
+                "vals": [
+                    {
+                        "name": "inline-block"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "pt-icon-plus",
         "elems": [
             {
@@ -1228,19 +1259,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "s"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "decorator",
         "mods": [
             {
@@ -1252,13 +1270,36 @@ exports.blocks = [
         "name": "page-footer"
     },
     {
-        "name": "contact-links"
+        "name": "text",
+        "mods": [
+            {
+                "name": "type",
+                "vals": [
+                    {
+                        "name": "h2"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "page-footer",
         "elems": [
             {
-                "name": "contacts-links"
+                "name": "contact-links"
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-h",
+                "vals": [
+                    {
+                        "name": "xs"
+                    }
+                ]
             }
         ]
     },

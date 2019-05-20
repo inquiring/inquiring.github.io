@@ -161,12 +161,26 @@ exports.deps = [
     },
     {
         "block": "theme",
+        "mod": "font",
+        "val": "SourceSerifRoman"
+    },
+    {
+        "block": "theme",
         "mod": "gap"
     },
     {
         "block": "theme",
         "mod": "gap",
         "val": "medium"
+    },
+    {
+        "block": "theme",
+        "mod": "control"
+    },
+    {
+        "block": "theme",
+        "mod": "control",
+        "val": "whitepaper-default"
     },
     {
         "block": "tpl-layout"
@@ -256,11 +270,6 @@ exports.deps = [
         "block": "pt-surface",
         "elem": "content",
         "mod": "view"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "space-a"
     },
     {
         "block": "pt-surface",
@@ -400,12 +409,27 @@ exports.deps = [
         "block": "hero"
     },
     {
+        "block": "theme",
+        "mod": "control",
+        "val": "whitepaper-inverse"
+    },
+    {
+        "block": "theme",
+        "mod": "color",
+        "val": "whitepaper-portal-brand"
+    },
+    {
         "block": "hero",
         "elem": "intro"
     },
     {
         "block": "hero",
         "elem": "description"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "primary"
     },
     {
         "block": "text",
@@ -426,6 +450,10 @@ exports.deps = [
         "elem": "title"
     },
     {
+        "block": "hero",
+        "elem": "subtitle"
+    },
+    {
         "block": "text",
         "mod": "weight",
         "val": "light"
@@ -433,11 +461,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "size",
-        "val": "14-16-18"
-    },
-    {
-        "block": "hero",
-        "elem": "subtitle"
+        "val": "s"
     },
     {
         "block": "button"
@@ -464,12 +488,12 @@ exports.deps = [
     },
     {
         "block": "button",
-        "mod": "theme"
+        "mod": "view"
     },
     {
         "block": "button",
-        "mod": "theme",
-        "val": "islands"
+        "mod": "view",
+        "val": "voronina"
     },
     {
         "block": "button",
@@ -481,17 +505,26 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "button",
-        "mod": "type"
-    },
-    {
-        "block": "button",
-        "mod": "type",
-        "val": "link"
-    },
-    {
         "block": "hero",
         "elem": "button"
+    },
+    {
+        "block": "icon",
+        "mod": "view"
+    },
+    {
+        "block": "icon",
+        "mod": "view",
+        "val": "primary"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-l"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-l",
+        "val": "s"
     },
     {
         "block": "social-links"
@@ -521,7 +554,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "size",
-        "val": "12-12-14"
+        "val": "xs"
     },
     {
         "block": "tpl-layout",
@@ -534,25 +567,20 @@ exports.deps = [
         "elem": "heading"
     },
     {
-        "block": "text",
-        "mod": "size",
-        "val": "xxl"
-    },
-    {
-        "block": "text",
-        "mod": "type"
-    },
-    {
-        "block": "text",
-        "mod": "type",
-        "val": "h2"
-    },
-    {
         "block": "tpl-layout",
         "elem": "section"
     },
     {
         "block": "portfolio-section"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-v"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-v",
+        "val": "l"
     },
     {
         "block": "portfolio-section",
@@ -611,16 +639,14 @@ exports.deps = [
         "block": "portfolio-all-section"
     },
     {
-        "block": "portfolio-all-section",
-        "elem": "title"
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "l"
     },
     {
-        "block": "portfolio-all-section",
-        "elem": "subtitle"
-    },
-    {
-        "block": "portfolio-all-section",
-        "elem": "button"
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "s"
     },
     {
         "block": "pt-icon-plus"
@@ -643,16 +669,16 @@ exports.deps = [
         "elem": "icon"
     },
     {
+        "block": "pt-icon-plus",
+        "elem": "icon",
+        "mod": "indent-l"
+    },
+    {
         "block": "portfolio-all-section",
         "elem": "social-links"
     },
     {
         "block": "about"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "18-24-36"
     },
     {
         "block": "about",
@@ -691,27 +717,15 @@ exports.deps = [
         "val": "hidden"
     },
     {
-        "block": "text",
-        "mod": "display"
+        "block": "contact-links"
     },
     {
-        "block": "text",
-        "mod": "display",
-        "val": "inline-block"
-    },
-    {
-        "block": "button",
-        "mod": "size",
-        "val": "l"
+        "block": "contact-links",
+        "elem": "item"
     },
     {
         "block": "about",
         "elem": "button"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "l"
     },
     {
         "block": "price"
@@ -786,24 +800,39 @@ exports.deps = [
         "val": "right"
     },
     {
+        "block": "text",
+        "mod": "display"
+    },
+    {
+        "block": "text",
+        "mod": "display",
+        "val": "inline-block"
+    },
+    {
         "block": "pt-icon-plus",
         "elem": "icon",
         "mod": "indent-r"
     },
     {
-        "block": "text",
-        "mod": "size",
-        "val": "s"
-    },
-    {
         "block": "page-footer"
     },
     {
-        "block": "contact-links"
+        "block": "text",
+        "mod": "type"
+    },
+    {
+        "block": "text",
+        "mod": "type",
+        "val": "h2"
     },
     {
         "block": "page-footer",
-        "elem": "contacts-links"
+        "elem": "contact-links"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-h",
+        "val": "xs"
     },
     {
         "block": "page-footer",
@@ -877,12 +906,6 @@ exports.deps = [
     },
     {
         "block": "pt-surface",
-        "elem": "content",
-        "mod": "space-a",
-        "val": "m"
-    },
-    {
-        "block": "pt-surface",
         "elem": "close",
         "mod": "view",
         "val": "desktop"
@@ -935,6 +958,12 @@ exports.deps = [
         "block": "button",
         "mod": "pressed",
         "val": true
+    },
+    {
+        "block": "pt-icon-plus",
+        "elem": "icon",
+        "mod": "indent-l",
+        "val": "s"
     },
     {
         "block": "about",

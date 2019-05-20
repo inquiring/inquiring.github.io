@@ -1,0 +1,15 @@
+.tpl-layout__heading {
+    letter-spacing: 2.75px;
+}
+@media screen and (min-width: $screen-s) {
+    .tpl-layout__heading {
+        letter-spacing: 3.66px;
+        font-size: var(--size-typo-xxl);
+        line-height: var(--line-height-typo-xxl);
+    }
+}
+@media screen and (min-width: $screen-xl) {
+    .tpl-layout__heading {
+        letter-spacing: 3.6px;
+    }
+}

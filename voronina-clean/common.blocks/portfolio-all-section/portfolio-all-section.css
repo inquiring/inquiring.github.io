@@ -1,4 +1,7 @@
- @media screen and (max-width: $screen-xs-max) {
+.portfolio-all-section .tpl-layout__section {
+    width: fit-content;
+}
+@media screen and (max-width: $screen-xs-max) {
     .portfolio-all-section {
         background-image: url(../../common.blocks/image/portfolio-image-5-mobile.png);
         background-repeat: no-repeat;
@@ -9,6 +12,7 @@
         padding-left: calc(46px - var(--gap));
         padding-right: calc(77px - var(--gap));
         padding-bottom: 120px;
+        width: fit-content;
     }
 }
 @media screen and (min-width: $screen-s) {
@@ -26,21 +30,16 @@
         background-image: url(../../common.blocks/image/portfolio-image-5-tablet.png);
         background-size: auto;
         background-repeat: no-repeat;
-        z-index: 1;
-
     }
     .portfolio-all-section .tpl-layout__section {
         padding-top: 102px;
         padding-left: 283px;
-        padding-right: 57px;
+        padding-right: 120px;
         padding-bottom: 44px;
         margin-left: calc(-1 * var(--gap));
         margin-right: 130px;
         background-color: #f8f8f8;
         z-index: -1;
-    }
-    .portfolio-all-section .tpl-layout__section > * {
-        max-width: 262px;
     }
 }
 @media screen and (min-width: $screen-m) {
@@ -58,23 +57,15 @@
         background-image: url(../../common.blocks/image/portfolio-image-5-desktop.png);
         background-size: contain;
         background-repeat: no-repeat;
-        z-index: 1;
     }
 
     .portfolio-all-section .tpl-layout__section {
-        padding-top: 102px;
-        padding-left: 610px;
-        padding-right: 57px;
+        padding-top: 145px;
+        padding-left: 560px;
+        padding-right: 80px;
         padding-bottom: 44px;
         margin-left: calc(-1 * var(--gap));
-        margin-right: 130px;
-        padding-top: 145px;
-        max-width: 971px;
-        background-color: #f8f8f8;
         z-index: -1;
-    }
-    .portfolio-all-section .tpl-layout__section > * {
-        max-width: 262px;
     }
 }
 
@@ -82,9 +73,15 @@
     .portfolio-all-section {
         min-height: 506px;
     }
-}
-@media screen and (min-width: $screen-xl) {
     .portfolio-all-section .tpl-layout__section {
-        padding-left: 650px;
+        padding-left: 600px;
     }
 }
+@media screen and (min-width: $screen-xl) {
+
+    .portfolio-all-section .tpl-layout__section {
+        padding-left: 560px;
+    }
+}
+
+

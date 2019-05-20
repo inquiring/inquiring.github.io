@@ -1,18 +1,15 @@
 .hero__social-links {
     justify-content: space-between;
-    font-family: "Source Serif Roman";
     letter-spacing: 1.4px;
-}
-@media screen and (min-width: $screen-m) {
-    .hero__social-links {
-        max-width: 195px;
-    }
-}
-.hero__social-links>.text {
-    opacity: .6;
 }
 @media screen and (max-width: $screen-xs-max) {
     .hero__social-links {
         display: none;
     }
 }
+@media screen and (min-width: $screen-s) {
+    .hero__social-links {
+        max-width: 195px;
+    }
+}
+

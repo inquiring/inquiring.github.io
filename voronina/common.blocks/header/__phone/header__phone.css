@@ -6,25 +6,25 @@
 }
 
 @media screen and (min-width: $screen-s) {
-    .header__phone {
+    .header__phone .link {
         z-index: 101;
-        padding-right: 70px;
-        color: #3b3b3b;
-        font-family: "Source Serif Roman - Semibold";
-        font-size: 18px;
+        font-size: var(--size-typo-l);
+        color: var(--color-typo-primary);
+        padding: var(--space-m) 0px;
+        margin-right: 70px;
     }
 }
 
 @media screen and (min-width: $screen-m) {
     .header__phone {
         z-index: 101;
-        padding-right: calc(100px - var(--gap));
+        margin-right: calc(100px - var(--gap));
     }
 }
 
 @media screen and (min-width: $screen-xl) {
     .header__phone {
         z-index: 101;
-        padding-right: calc(397px - var(--gap));
+        margin-right: calc(397px - var(--gap));
     }
 }
