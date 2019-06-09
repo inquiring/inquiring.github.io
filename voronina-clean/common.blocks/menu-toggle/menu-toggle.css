@@ -1,0 +1,10 @@
+.menu-toggle {
+    transition: background-color 0.5s ease-out;
+    border-radius: 50%;
+}
+.menu-toggle:hover {
+    background-color: var(--color-control-bg-action-hover);
+}
+.menu-toggle:active {
+    opacity: 0.6;
+}

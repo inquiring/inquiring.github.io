@@ -1,0 +1,22 @@
+.menu__menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 1;
+}
+@media only screen and (min-width: $screen-xl) {
+
+    .menu__menu-toggle {
+        display: none;
+    }
+}
+@media only screen and (max-width:  $screen-xs-max) {
+    .menu__menu-toggle {
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 20px;
+        z-index: 1;
+    }
+}

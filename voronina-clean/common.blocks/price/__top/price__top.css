@@ -1,0 +1,13 @@
+.price__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+@media only screen and (max-width: $screen-xs-max) {
+    .price__top {
+        flex-wrap: wrap;
+    }
+}

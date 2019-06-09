@@ -1,0 +1,9 @@
+.about__social-links {
+    margin: -86px -146px 0 83px;
+    padding: 0;
+}
+@media only screen and (max-width: $screen-l-max) {
+    .about__social-links {
+        display: none;
+    }
+}

@@ -1,68 +1,30 @@
 .header {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f8f8;
 }
 @media screen and (max-width: $screen-xs-max) {
     .header {
-        background-image: url(../../common.blocks/image/hero-mobile.jpg);
-    }
-}
-@media screen and (min-width: $screen-s) {
-    .header {
-        min-height: 823px;
-        background-color: #f8f8f8;
-    }
-    .header::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-
-        background-image: url(../../common.blocks/image/hero-bg-tablet.jpg);
+        background-image: url(../../common.blocks/image/header-photo-mobile.jpg);
         background-repeat: no-repeat;
-        width: 308px;
-        height: 823px;
-        z-index: -1px;
-    }
-    .header::before {
-        position: absolute;
-        content: '';
-        top: 162px;
-        right: 50px;
-        width: 327px;
-        height: 499px;
-        background-image: url(../../common.blocks/image/hero-tablet.jpg);
-        background-size: contain;
-        background-position-y: 0;
-        z-index: 100;
+        background-size: cover;
     }
 }
-@media screen and (min-width: $screen-m) {
+@media only screen and (max-width:  $screen-l-max) and (min-width: $screen-s) {
+
     .header {
-        min-height: 782px;
+        background-image: url(../../common.blocks/image/header-bg-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        height: 822px;
     }
-    .header::after {
-        background-image: url(../../common.blocks/image/hero-bg-desktop.png);
-        width: 440px;
-        height: 780px;
-    }
-     .header::before {
-        top: 161px;
-        right: 235px;
-     }
 }
-@media screen and (min-width: $screen-xl) {
+@media only screen and (min-width: $screen-xl) {
     .header {
-        min-height: 782px;
-    }
-    .header::after {
-        background-image: url(../../common.blocks/image/hero-bg-desktop.png);
-        width: 685px;
+        background-image: url(../../common.blocks/image/header-bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top right;
         height: 780px;
     }
-     .header::before {
-        top: 161px;
-        right: 431px;
-     }
 }

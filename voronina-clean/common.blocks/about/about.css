@@ -1,11 +1,12 @@
-@media screen and (max-width: $screen-xs-max) {
-    .about {
-        padding: 0;
-    }
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-@media screen and (min-width: $screen-xl) {
+@media only screen and (min-width: $screen-xl) {
     .about {
-        position: relative;
-        height: 710px;
+        padding-bottom: 60px;
     }
 }

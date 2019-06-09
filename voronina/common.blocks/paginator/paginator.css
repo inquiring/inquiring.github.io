@@ -1,0 +1,4 @@
+.paginator {
+    counter-reset: paginatorCounter;
+    list-style: none;
+}

@@ -1,45 +1,27 @@
 
 @media screen and (max-width: $screen-xs-max) {
 
-    .menu__item .link.text {
-        display: block;
-        padding: var(--space-m) 7px;
-        padding-bottom: var(--space-xxs);
-        font-size: 22px;
+    .menu__item {
         letter-spacing: 3.66px;
-        color: var(--color-typo-primary);
+        margin-bottom: 15px;
         border-bottom: 4px solid var(--color-typo-brand);
-        width: fit-content;
-        margin: auto;
     }
 }
-@media screen and (min-width: $screen-s) {
-
-    .menu__item .link.text {
-        display: block;
-        padding: var(--space-m) 0;
-        padding-bottom: var(--space-s);
-        font-size: 37px;
+@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .menu__item {
         letter-spacing: 3.66px;
-        color: var(--color-typo-primary);
+        margin-bottom: 25px;
         border-bottom: 6px solid var(--color-typo-brand);
-        width: fit-content;
-        margin: auto;
     }
 }
-@media screen and (min-width: $screen-m) {
-    .menu__item .link.text {
-        padding: var(--space-m) 0px;
-        font-size: var(--size-typo-l);
-        letter-spacing: normal;
-        border: none;
 
+@media only screen and (min-width: $screen-xl) {
+    .menu__item {
+        display: inline-block;
+        margin-right: 84px;
+        opacity: 0.66;
     }
     .menu__item:first-child {
         display: none;
-    }
-    .menu__item:nth-child(2),
-    .menu__item:nth-child(3) {
-        margin-right: 88px;
     }
 }

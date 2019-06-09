@@ -1,0 +1,20 @@
+.portfolio__bottom-image {
+    display: block;
+    float: left;
+    width: 610px;
+    height: 373px;
+    background: transparent url(../../image/portfolio-image-5-desktop.png) no-repeat 0 0;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .portfolio__bottom-image {
+        width: 261px;
+        height: 274px;
+        background: transparent url(../../image/portfolio-image-5-tablet.png) no-repeat 0 0;
+        margin-top: -34px;
+    }
+}
+@media screen and (max-width: $screen-xs-max) {
+    .portfolio__bottom-image {
+        display: none;
+    }
+}

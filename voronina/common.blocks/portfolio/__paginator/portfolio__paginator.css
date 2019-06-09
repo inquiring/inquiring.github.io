@@ -1,0 +1,10 @@
+.portfolio__paginator {
+    padding: 0 17px 111px 41px;
+    margin: 0;
+}
+@media only screen and (max-width: $screen-l-max) {
+
+    .portfolio__paginator {
+        display: none;
+    }
+}

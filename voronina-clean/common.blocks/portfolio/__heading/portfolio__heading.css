@@ -1,0 +1,33 @@
+.portfolio__heading {
+    position: relative;
+    margin-top: 0;
+}
+.portfolio__heading::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: 'WORK';
+    opacity: 0.3;
+    color: #f8f8f8;
+    font-family: "Source Serif Roman - Semibold";
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 10.36px;
+}
+
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+
+    .portfolio__heading::before {
+        font-size: 71px;
+        letter-spacing: 12.22px;
+    }
+}
+@media screen and (min-width: $screen-xl) {
+
+    .portfolio__heading::before {
+        font-size: 108px;
+        letter-spacing: 12.22px;
+    }
+}

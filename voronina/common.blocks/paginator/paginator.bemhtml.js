@@ -1,0 +1,1 @@
+block('paginator')(tag()('ul'));

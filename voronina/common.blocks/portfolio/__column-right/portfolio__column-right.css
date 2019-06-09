@@ -1,0 +1,14 @@
+.portfolio__column-right {
+    padding-bottom: 82px;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .portfolio__column-right {
+        padding-bottom: 52px;
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width: $screen-xs-max) {
+    .portfolio__column-right {
+        padding-bottom: 0;
+    }
+}

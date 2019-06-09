@@ -1,0 +1,29 @@
+.price__column_type_left::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: #f8f8f8;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .price__column_type_left {
+        padding-left: 62px;
+    }
+    .price__column_type_left::before {
+        margin-top: 30px;
+        width: 270px;
+        height: 170px;
+    }
+}
+@media screen and (min-width: $screen-xl) {
+    .price__column_type_left {
+        align-self: flex-end;
+        width: 414px;
+    }
+    .price__column_type_left::before {
+        width: 512px;
+        height: 288px;
+        margin-top: 55px;
+    }
+}

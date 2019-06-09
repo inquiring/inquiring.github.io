@@ -1,0 +1,17 @@
+.price {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+
+
+}
+
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+
+
+}

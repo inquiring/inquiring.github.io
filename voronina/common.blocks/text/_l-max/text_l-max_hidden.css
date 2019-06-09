@@ -1,0 +1,12 @@
+
+@media only screen and (max-width: $screen-l-max) {
+    .text_l-max_hidden {
+        position: absolute;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+}

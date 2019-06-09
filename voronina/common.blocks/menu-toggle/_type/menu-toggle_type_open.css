@@ -1,0 +1,24 @@
+.menu-toggle_type_open {
+    width: 33px;
+    height: 33px;
+}
+.menu-toggle_type_open::before,
+.menu-toggle_type_open::after {
+    position: relative;
+    content: "";
+    display: block;
+}
+.menu-toggle_type_open::before {
+    left: 4px;
+    top: 9px;
+    border-top: 2px solid var(--color-typo-primary);
+    width: 25px;
+}
+.menu-toggle_type_open::after {
+    left: 4px;
+    bottom: -13px;
+    border-top: 2px solid var(--color-typo-primary);
+    border-bottom: 2px solid var(--color-typo-primary);
+    width: 15px;
+    height: 4px;
+}

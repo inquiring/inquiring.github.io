@@ -1,0 +1,20 @@
+.portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 113px;
+}
+@media only screen and (max-width: $screen-xs-max) {
+    .portfolio {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .portfolio {
+        padding-bottom: 196px;
+        padding-bottom: 0;
+    }
+}

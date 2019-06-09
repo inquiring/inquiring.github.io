@@ -1,7 +1,4 @@
-
-@media screen and (max-width: $screen-l-max) {
-
-    .header__logo {
-        margin-left: calc(-1 * var(--gap));
-    }
+.header__logo {
+    float: left;
 }
+

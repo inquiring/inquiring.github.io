@@ -1,0 +1,13 @@
+.social-links__item {
+    display: inline-block;
+    opacity: 0.4;
+    font-family: "Source Serif Roman", "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.social-links__item:not(:last-child)::after {
+    content: "—";
+    display: inline;
+    margin: 0 4px;
+}

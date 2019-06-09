@@ -1,0 +1,29 @@
+.separator {
+    width: 100%;
+    /**/
+    border: 1px dotted red;
+}
+
+.separator::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 2px;
+    height: 38px;
+    background-color: #cb98a8;
+}
+@media only screen and (max-width: $screen-xs-max) {
+    .separator {
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: $screen-l-max) and (min-width:  $screen-s) {
+    .separator {
+        margin-top: 155px;
+    }
+}
+@media only screen and (min-width:  $screen-xl) {
+    .separator {
+        margin-top: 140px;
+    }
+}

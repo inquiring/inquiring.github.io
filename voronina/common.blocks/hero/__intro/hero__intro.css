@@ -1,6 +1,0 @@
-@media screen and (min-width: $screen-s) {
-
-    .hero__intro {
-        padding-left: calc(62px - var(--gap));
-    }
-}

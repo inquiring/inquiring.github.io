@@ -1,0 +1,5 @@
+.paginator__item_type_current {
+    content: "0" counter(paginatorCounter);
+    border-bottom: 2px solid black;
+    padding: 5px 10px;
+}

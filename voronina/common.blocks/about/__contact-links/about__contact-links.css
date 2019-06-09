@@ -1,0 +1,12 @@
+@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .about__contact-links {
+        flex-basis: 50%;
+        margin-top: 27px;
+    }
+}
+@media only screen and (min-width: $screen-xl) {
+     .about__contact-links {
+        margin-bottom: 43px;
+    }
+}
+

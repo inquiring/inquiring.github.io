@@ -1,0 +1,22 @@
+.tpl-layout_bg_leaf {
+    position: relative;
+}
+
+/* .tpl-layout_bg_leaf::before {
+    content: "";
+    position: absolute;
+    top: 823px;
+    left: 61px;
+    width: 74px;
+    height: 85%;
+    background: url(/common.blocks/image/line-1.png) no-repeat;
+}
+.tpl-layout_bg_leaf::after {
+    content: "";
+    position: absolute;
+    top: 823px;
+    left: 255px;
+    width: 69px;
+    height: 85%;
+    background: url(/common.blocks/image/line-2.png) no-repeat;
+} */

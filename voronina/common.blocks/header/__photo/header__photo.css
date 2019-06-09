@@ -1,0 +1,23 @@
+@media only screen and (max-width:  $screen-xs-max) {
+
+    .header__photo {
+        display: none;
+    }
+}
+@media only screen and (max-width:  $screen-l-max) and (min-width: $screen-s) {
+    .header__photo {
+        margin-right: 51px;
+        margin-top: 55px;
+        width: 327px;
+        height: 499px;
+    }
+}
+@media only screen and (min-width: $screen-xl) {
+
+    .header__photo {
+        margin-right: 432px;
+        margin-top: 50px;
+        width: 348px;
+        height: 533px;
+    }
+}

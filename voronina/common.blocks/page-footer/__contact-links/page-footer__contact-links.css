@@ -3,6 +3,11 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    .page-footer__contact-links .contact-links__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: $screen-s-max) {
     .page-footer__contact-links {
@@ -14,10 +19,14 @@
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
 }
 @media screen and (min-width: $screen-m) {
     .page-footer__contact-links {
         margin-top: 65px;
         margin-bottom: 65px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
     }
 }

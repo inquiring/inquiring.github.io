@@ -1,10 +1,4 @@
 .menu {
-    margin-top: 115px;
+    background-color: #f8f8f8;
 }
-@media screen and (min-width: $screen-m) {
 
-    .menu {
-        display: flex;
-        margin-top: 0;
-    }
-}

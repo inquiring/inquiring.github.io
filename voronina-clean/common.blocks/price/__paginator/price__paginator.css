@@ -1,0 +1,10 @@
+.price__paginator {
+    padding: 0 17px 367px 41px;
+    margin: 0;
+}
+@media only screen and (max-width: $screen-l-max) {
+
+    .price__paginator {
+        display: none;
+    }
+}

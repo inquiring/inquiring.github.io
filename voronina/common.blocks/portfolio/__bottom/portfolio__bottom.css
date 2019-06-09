@@ -1,0 +1,56 @@
+.portfolio__bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 101px;
+}
+.portfolio__bottom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 67%;
+    height: 80%;
+    top: -38px;
+    left: 0;
+    z-index: -1;
+    background-color: #f8f8f8;
+}
+.portfolio__bottom::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 80%;
+    width: 49%;
+    box-sizing: border-box;
+    border: 7px solid #709c54;
+    left: 420px;
+    top: 41px;
+    z-index: -1;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .portfolio__bottom {
+        margin-top: 124px;
+    }
+    .portfolio__bottom::before {
+        width: 79%;
+        height: 76%;
+        top: 0;
+    }
+    .portfolio__bottom::after {
+        width: 76%;
+        left: 120px;
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .portfolio__bottom::after {
+        top: 50px;
+    }
+}
+@media screen and (max-width: $screen-xs-max) {
+    .portfolio__bottom::after,
+    .portfolio__bottom::before {
+        display: none;
+    }
+}

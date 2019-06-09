@@ -1,0 +1,10 @@
+.about__image_type_left {
+    align-self: flex-start;
+    background: #fff;
+}
+@media screen and (max-width: $screen-xs-max) {
+    .about__image_type_left {
+        width: calc(164/320*100%);
+        /* width: 155px; */
+    }
+}

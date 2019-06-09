@@ -186,23 +186,16 @@ exports.deps = [
         "block": "tpl-layout"
     },
     {
-        "block": "header"
+        "block": "tpl-layout",
+        "mod": "view"
     },
     {
         "block": "tpl-layout",
-        "elem": "content"
+        "mod": "view",
+        "val": "line"
     },
     {
-        "block": "decorator"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "xxxxxxl"
+        "block": "header"
     },
     {
         "block": "tpl-layout",
@@ -220,89 +213,14 @@ exports.deps = [
     },
     {
         "block": "header",
-        "elem": "inner"
-    },
-    {
-        "block": "header",
-        "elem": "logo"
+        "elem": "top"
     },
     {
         "block": "logo"
     },
     {
-        "block": "image"
-    },
-    {
-        "block": "pt-surface"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "view"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "view",
-        "val": "gray"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "for"
-    },
-    {
-        "block": "pt-surface",
-        "mod": "for",
-        "val": "desktop"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "window"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "size"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "view"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "view"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "for"
-    },
-    {
-        "block": "icon"
-    },
-    {
-        "block": "icon",
-        "mod": "close"
-    },
-    {
-        "block": "icon",
-        "mod": "close",
-        "val": "m-primary"
-    },
-    {
         "block": "header",
-        "elem": "nav"
-    },
-    {
-        "block": "pt-list"
+        "elem": "logo"
     },
     {
         "block": "menu"
@@ -352,8 +270,28 @@ exports.deps = [
         "elem": "group-title"
     },
     {
-        "block": "pt-list",
-        "elem": "item"
+        "block": "header",
+        "elem": "menu"
+    },
+    {
+        "block": "menu-toggle"
+    },
+    {
+        "block": "menu",
+        "elem": "menu-toggle"
+    },
+    {
+        "block": "menu-toggle",
+        "mod": "type"
+    },
+    {
+        "block": "menu-toggle",
+        "mod": "type",
+        "val": "close"
+    },
+    {
+        "block": "menu",
+        "elem": "list"
     },
     {
         "block": "link"
@@ -381,7 +319,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "size",
-        "val": "l"
+        "val": "22-37-18"
     },
     {
         "block": "text",
@@ -393,25 +331,13 @@ exports.deps = [
         "val": "link"
     },
     {
-        "block": "pt-surface",
-        "elem": "action"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "action",
-        "mod": "for"
-    },
-    {
         "block": "header",
-        "elem": "phone"
+        "elem": "menu-toggle"
     },
     {
-        "block": "hero"
-    },
-    {
-        "block": "theme",
-        "mod": "control",
-        "val": "whitepaper-inverse"
+        "block": "menu-toggle",
+        "mod": "type",
+        "val": "open"
     },
     {
         "block": "theme",
@@ -419,12 +345,51 @@ exports.deps = [
         "val": "whitepaper-portal-brand"
     },
     {
-        "block": "hero",
-        "elem": "intro"
+        "block": "header",
+        "elem": "phone"
     },
     {
-        "block": "hero",
-        "elem": "description"
+        "block": "text",
+        "mod": "size",
+        "val": "l"
+    },
+    {
+        "block": "header",
+        "elem": "middle"
+    },
+    {
+        "block": "theme",
+        "mod": "control",
+        "val": "whitepaper-inverse"
+    },
+    {
+        "block": "paginator"
+    },
+    {
+        "block": "paginator",
+        "mod": "align"
+    },
+    {
+        "block": "paginator",
+        "mod": "align",
+        "val": "right"
+    },
+    {
+        "block": "header",
+        "elem": "paginator"
+    },
+    {
+        "block": "paginator",
+        "elem": "item"
+    },
+    {
+        "block": "paginator",
+        "elem": "item",
+        "mod": "type"
+    },
+    {
+        "block": "header",
+        "elem": "center"
     },
     {
         "block": "text",
@@ -446,11 +411,11 @@ exports.deps = [
         "val": "30-36-48"
     },
     {
-        "block": "hero",
+        "block": "header",
         "elem": "title"
     },
     {
-        "block": "hero",
+        "block": "header",
         "elem": "subtitle"
     },
     {
@@ -461,7 +426,7 @@ exports.deps = [
     {
         "block": "text",
         "mod": "size",
-        "val": "s"
+        "val": "14-16-18"
     },
     {
         "block": "button"
@@ -505,8 +470,11 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "hero",
+        "block": "header",
         "elem": "button"
+    },
+    {
+        "block": "icon"
     },
     {
         "block": "icon",
@@ -518,6 +486,9 @@ exports.deps = [
         "val": "primary"
     },
     {
+        "block": "decorator"
+    },
+    {
         "block": "decorator",
         "mod": "indent-l"
     },
@@ -527,20 +498,36 @@ exports.deps = [
         "val": "s"
     },
     {
+        "block": "image"
+    },
+    {
+        "block": "header",
+        "elem": "photo"
+    },
+    {
         "block": "social-links"
     },
     {
-        "block": "hero",
+        "block": "header",
         "elem": "social-links"
     },
     {
         "block": "social-links",
-        "elem": "link"
+        "elem": "item"
     },
     {
-        "block": "text",
-        "mod": "view",
-        "val": "ghost"
+        "block": "separator"
+    },
+    {
+        "block": "portfolio"
+    },
+    {
+        "block": "tpl-layout",
+        "elem": "heading"
+    },
+    {
+        "block": "portfolio",
+        "elem": "heading"
     },
     {
         "block": "text",
@@ -552,42 +539,32 @@ exports.deps = [
         "val": "uppercase"
     },
     {
-        "block": "text",
-        "mod": "size",
-        "val": "xs"
-    },
-    {
-        "block": "tpl-layout",
-        "elem": "container",
-        "mod": "size",
-        "val": "m"
-    },
-    {
-        "block": "tpl-layout",
-        "elem": "heading"
-    },
-    {
         "block": "tpl-layout",
         "elem": "section"
     },
     {
-        "block": "portfolio-section"
+        "block": "portfolio",
+        "elem": "top"
     },
     {
-        "block": "decorator",
-        "mod": "indent-v"
+        "block": "portfolio",
+        "elem": "paginator"
     },
     {
-        "block": "decorator",
-        "mod": "indent-v",
-        "val": "l"
+        "block": "portfolio",
+        "elem": "column-left"
     },
     {
-        "block": "portfolio-section",
-        "elem": "column"
+        "block": "card"
     },
     {
-        "block": "portfolio-card"
+        "block": "card",
+        "mod": "size"
+    },
+    {
+        "block": "card",
+        "mod": "size",
+        "val": "s"
     },
     {
         "block": "pt-card"
@@ -632,16 +609,72 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "size",
+        "val": "s"
+    },
+    {
+        "block": "text",
         "mod": "weight",
         "val": "bold"
     },
     {
-        "block": "portfolio-all-section"
+        "block": "card",
+        "elem": "header"
+    },
+    {
+        "block": "portfolio",
+        "elem": "column-middle"
+    },
+    {
+        "block": "card",
+        "mod": "size",
+        "val": "xs"
+    },
+    {
+        "block": "portfolio",
+        "elem": "column-right"
+    },
+    {
+        "block": "social-links",
+        "mod": "orientation"
+    },
+    {
+        "block": "social-links",
+        "mod": "orientation",
+        "val": "vertical"
+    },
+    {
+        "block": "portfolio",
+        "elem": "social-links"
+    },
+    {
+        "block": "portfolio",
+        "elem": "bottom"
+    },
+    {
+        "block": "portfolio",
+        "elem": "bottom-image"
+    },
+    {
+        "block": "portfolio",
+        "elem": "details"
+    },
+    {
+        "block": "portfolio",
+        "elem": "details-header"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b"
     },
     {
         "block": "decorator",
         "mod": "indent-b",
         "val": "l"
+    },
+    {
+        "block": "portfolio",
+        "elem": "details-desc"
     },
     {
         "block": "decorator",
@@ -674,69 +707,112 @@ exports.deps = [
         "mod": "indent-l"
     },
     {
-        "block": "portfolio-all-section",
-        "elem": "social-links"
-    },
-    {
         "block": "about"
     },
     {
         "block": "about",
-        "elem": "inner"
+        "elem": "heading"
     },
     {
         "block": "about",
-        "elem": "photos"
+        "elem": "top"
     },
     {
         "block": "about",
-        "elem": "column"
+        "elem": "paginator"
     },
     {
         "block": "about",
-        "elem": "column",
+        "elem": "left"
+    },
+    {
+        "block": "about",
+        "elem": "image"
+    },
+    {
+        "block": "about",
+        "elem": "image",
         "mod": "type"
     },
     {
         "block": "about",
-        "elem": "column",
+        "elem": "image",
         "mod": "type",
         "val": "right"
     },
     {
         "block": "about",
-        "elem": "content"
+        "elem": "right"
+    },
+    {
+        "block": "about",
+        "elem": "desc"
     },
     {
         "block": "text",
-        "mod": "xs-visibility"
+        "mod": "l-max"
     },
     {
         "block": "text",
-        "mod": "xs-visibility",
+        "mod": "l-max",
         "val": "hidden"
     },
     {
         "block": "contact-links"
     },
     {
+        "block": "about",
+        "elem": "contact-links"
+    },
+    {
         "block": "contact-links",
         "elem": "item"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-r",
+        "val": "s"
     },
     {
         "block": "about",
         "elem": "button"
     },
     {
+        "block": "about",
+        "elem": "social-links"
+    },
+    {
         "block": "price"
     },
     {
         "block": "price",
-        "elem": "section"
+        "elem": "heading"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "18-24-36"
+    },
+    {
+        "block": "price",
+        "elem": "top"
+    },
+    {
+        "block": "price",
+        "elem": "paginator"
     },
     {
         "block": "price",
         "elem": "column"
+    },
+    {
+        "block": "price",
+        "elem": "column",
+        "mod": "type"
     },
     {
         "block": "price-card"
@@ -814,16 +890,39 @@ exports.deps = [
         "mod": "indent-r"
     },
     {
+        "block": "pt-list"
+    },
+    {
+        "block": "pt-list",
+        "elem": "item"
+    },
+    {
+        "block": "price",
+        "elem": "column",
+        "mod": "type",
+        "val": "middle"
+    },
+    {
+        "block": "price",
+        "elem": "column",
+        "mod": "type",
+        "val": "right"
+    },
+    {
+        "block": "price",
+        "elem": "social-links"
+    },
+    {
         "block": "page-footer"
     },
     {
-        "block": "text",
-        "mod": "type"
+        "block": "page-footer",
+        "elem": "heading"
     },
     {
-        "block": "text",
-        "mod": "type",
-        "val": "h2"
+        "block": "tpl-layout",
+        "elem": "section",
+        "mod": "border-h"
     },
     {
         "block": "page-footer",
@@ -837,6 +936,10 @@ exports.deps = [
     {
         "block": "page-footer",
         "elem": "social-links"
+    },
+    {
+        "block": "social-links",
+        "elem": "link"
     },
     {
         "block": "social-icon"
@@ -893,30 +996,6 @@ exports.deps = [
         "val": "l"
     },
     {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "size",
-        "val": "full"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "content",
-        "mod": "view",
-        "val": "inverse"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "view",
-        "val": "desktop"
-    },
-    {
-        "block": "pt-surface",
-        "elem": "close",
-        "mod": "for",
-        "val": "desktop"
-    },
-    {
         "block": "jquery",
         "elem": "event",
         "mod": "type",
@@ -934,10 +1013,10 @@ exports.deps = [
         "val": true
     },
     {
-        "block": "pt-surface",
-        "elem": "action",
-        "mod": "for",
-        "val": "desktop"
+        "block": "paginator",
+        "elem": "item",
+        "mod": "type",
+        "val": "current"
     },
     {
         "block": "button",
@@ -967,6 +1046,12 @@ exports.deps = [
     },
     {
         "block": "about",
+        "elem": "image",
+        "mod": "type",
+        "val": "left"
+    },
+    {
+        "block": "price",
         "elem": "column",
         "mod": "type",
         "val": "left"
@@ -994,5 +1079,11 @@ exports.deps = [
         "elem": "icon",
         "mod": "indent-r",
         "val": "xs"
+    },
+    {
+        "block": "tpl-layout",
+        "elem": "section",
+        "mod": "border-h",
+        "val": "ghost"
     }
 ];

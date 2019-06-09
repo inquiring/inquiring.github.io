@@ -1,0 +1,8 @@
+.portfolio__column-left {
+    padding-top: 4px;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .portfolio__column-left {
+        padding-left: 62px;
+    }
+}

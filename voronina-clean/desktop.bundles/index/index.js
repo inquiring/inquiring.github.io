@@ -4150,38 +4150,6 @@ $(function() {
 });
 
 /* end: ../../node_modules/bem-core/common.blocks/i-bem-dom/__init/_auto/i-bem-dom__init_auto.js */
-/* begin: ../../node_modules/whitepaper-bem/pt-surface/pt-surface.js */
-$('.pt-surface__action').on('click', function(){
-	var __this = $(this);
-
-	showPopup(__this);
-
-	return false;
-});
-
-$('.pt-surface__close').on('click', function(){
-	hidePopup();
-});
-
-function showPopup(__this) {
-	var attribute = __this.attr('data-name');
-
-	$("#"+attribute).fadeIn(220);
-	$('body').attr('style', 'min-height: 100vh; overflow: hidden;');
-}
-
-function hidePopup() {
-	$('.pt-surface').fadeOut(220);
-	$('body').attr('style', '');
-}
-
-document.onkeydown = function(evt) {
-	evt = evt || window.event;
-	if (evt.keyCode == 27) {
-		hidePopup();
-	}
-};
-/* end: ../../node_modules/whitepaper-bem/pt-surface/pt-surface.js */
 /* begin: ../../node_modules/bem-components/common.blocks/menu/menu.js */
 /**
  * @module menu

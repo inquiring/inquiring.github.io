@@ -1,0 +1,9 @@
+.about__paginator {
+    padding: 0 0 68px 42px;
+}
+
+@media screen and (max-width: $screen-l-max) {
+  .about__paginator {
+    display: none;
+  }
+}

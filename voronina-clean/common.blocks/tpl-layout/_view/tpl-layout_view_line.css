@@ -1,0 +1,78 @@
+
+.tpl-layout_view_line {
+    position: relative;
+}
+
+.tpl-layout_view_line::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 710px;
+    height: 100%;
+    background:
+        left 823px / 75px 100% no-repeat url(/common.blocks/image/line-1.png),
+        right 823px / 75px 100% no-repeat url(/common.blocks/image/line-4.png);
+    z-index: -1;
+}
+.tpl-layout_view_line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(255 / 764 * 100% );
+    height: 100%;
+    background:
+        left 823px / 2px 100% no-repeat url(/common.blocks/image/line-2.png),
+        right 823px / 74px 100% no-repeat url(/common.blocks/image/line-3.png);
+    z-index: -2;
+}
+@media screen and (max-width: $screen-xs-max) {
+    .tpl-layout_view_line::after {
+        display: none;
+    }
+    .tpl-layout_view_line::before {
+        display: none;
+    }
+}
+@media screen and (min-width: $screen-m) {
+
+    .tpl-layout_view_line::before {
+        width: 830px;
+        background:
+        left 782px / 75px 100% no-repeat url(/common.blocks/image/line-1.png),
+        right 782px / 75px 100% no-repeat url(/common.blocks/image/line-4.png);
+
+    }
+    .tpl-layout_view_line::after {
+        width: 22%;
+        background:
+        left 782px / 2px 100% no-repeat url(/common.blocks/image/line-2.png),
+        right 782px / 74px 100% no-repeat url(/common.blocks/image/line-3.png);
+
+    }
+}
+@media screen and (min-width: $screen-l) {
+    .tpl-layout_view_line::before {}
+     .tpl-layout_view_line::after {
+         width: 27%;
+     }
+}
+@media screen and (min-width: $screen-xl) {
+
+    .tpl-layout_view_line::before {
+        width: 1150px;
+        background:
+        left 823px / 105px 100% no-repeat url(/common.blocks/image/line-1.png),
+        right 823px / 105px 100% no-repeat url(/common.blocks/image/line-4.png);
+
+    }
+    .tpl-layout_view_line::after {
+        left: 48%;
+        width: 27%;
+
+    }
+}

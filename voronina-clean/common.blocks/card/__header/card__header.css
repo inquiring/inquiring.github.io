@@ -1,0 +1,13 @@
+.card__header {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 90px;
+    line-height: 1.2em;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .card__header {
+        font-size: 15px;
+        line-height: 1.3em;
+        margin: 2px 0 32px;
+    }
+}

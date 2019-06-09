@@ -1,3 +1,18 @@
 .about__button {
-    margin-top: 25px;
+    align-self: flex-start;
+    letter-spacing: 0.07em;
+}
+@media only screen and (max-width: $screen-xs-max) {
+    .about__button {
+        align-self: center;
+    }
+}
+@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .about__button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: 14px;
+        display: inline-block;
+    }
 }

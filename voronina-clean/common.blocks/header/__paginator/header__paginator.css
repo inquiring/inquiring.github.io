@@ -1,0 +1,11 @@
+.header__paginator {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 27px;
+}
+@media only screen and (max-width: $screen-l-max) {
+
+    .header__paginator {
+        display: none;
+    }
+}

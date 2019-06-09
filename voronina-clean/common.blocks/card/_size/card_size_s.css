@@ -1,0 +1,11 @@
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .card_size_s {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .card_size_s {
+        width: 414px;
+    }
+}

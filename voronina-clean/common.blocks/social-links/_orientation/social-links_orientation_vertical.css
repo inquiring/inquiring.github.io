@@ -1,0 +1,5 @@
+.social-links_orientation_vertical {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    min-width: 200px;
+}

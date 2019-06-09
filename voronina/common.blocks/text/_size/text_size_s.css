@@ -1,0 +1,28 @@
+@media screen and (min-width: $screen-s) {
+    .text_size_s {
+        font-size: $size-typo-m;
+        line-height: $line-height-typo-m;
+    }
+}
+
+@media screen and (min-width: $screen-m) {
+    .text_size_s {
+        font-size: $size-typo-l;
+        line-height: $line-height-typo-l;
+    }
+}
+
+@media screen and (min-width: $screen-l) {
+    .text_size_s {
+        font-size: $size-typo-xl;
+        line-height: $line-height-typo-xl;
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .text_size_s {
+        font-size: $size-typo-xl;
+        line-height: $line-height-typo-xl;
+    }
+
+}

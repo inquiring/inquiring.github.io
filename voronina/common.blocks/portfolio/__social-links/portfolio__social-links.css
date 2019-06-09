@@ -1,0 +1,9 @@
+.portfolio__social-links {
+    margin: -258px -146px 0 83px;
+    padding: 0;
+}
+@media screen and (max-width: $screen-l-max) {
+    .portfolio__social-links {
+        display: none;
+    }
+}

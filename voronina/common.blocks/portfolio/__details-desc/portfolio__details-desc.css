@@ -1,0 +1,20 @@
+.portfolio__details-desc {
+    font-family: "Source Serif Roman", "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: normal;
+    width: 50%;
+    line-height: 1.2em;
+    margin: 15px 0;
+}
+@media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+    .portfolio__details-desc {
+        font-size: 16px;
+        line-height: 1.12em;
+    }
+}
+@media screen and (max-width: 425px) {
+    .portfolio__details-desc {
+        font-size: 14px;
+        width: 200px;
+    }
+}

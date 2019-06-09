@@ -1,20 +1,6 @@
-@media screen and (min-width: $screen-s) {
+@media only screen and (max-width: $screen-xs-max) {
 
-    .price__column:nth-child(1) {
-        width: calc(239/640*100%);
-        padding-top: 102px;
-    }
-    .price__column:nth-child(2) {
-        width: calc(186/640*100%);
-    }
-    .price__column:nth-child(2) > .price-card .pt-card__image {
-        height: 234px;
-    }
-    .price__column:nth-child(3) {
-        width: calc(181/640*100%);
-        padding-top: 118px;
-    }
-    .price__column:nth-child(3) > .price-card .pt-card__image {
-        height: 291px;
+    .price__column {
+        margin: auto;
     }
 }

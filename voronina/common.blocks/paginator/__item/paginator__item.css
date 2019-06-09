@@ -1,0 +1,17 @@
+.paginator__item {
+    counter-increment: paginatorCounter;
+    margin: 0 21px;
+    height: 40px;
+    line-height: 40px;
+}
+.paginator__item::after {
+  content: "";
+  display: inline;
+  border-bottom: 2px solid silver;
+  padding: 5px 5px;
+  font-style: italic;
+  font-size: 14px;
+  font-family: Lato, Verdana, Arial, sans-serif;
+  color: #212021;
+}
+

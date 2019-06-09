@@ -1,0 +1,48 @@
+.logo {
+    position: relative;
+    background-color: var(--color-bg-brand);
+}
+.logo::after {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    content: 'voronina.';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--size-typo-s);
+    line-height: var(--line-height-typo-s);
+    letter-spacing: 2px;
+}
+@media only screen and (max-width: $screen-xs-max) {
+    .logo {
+        width: 112px;
+        height: 33px;
+    }
+}
+@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+
+    .logo {
+        width: 201px;
+        height: 60px;
+        /* background-image: url(../images/tablet/logo.png); */
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: relative;
+    }
+    .logo::after {
+        font-size: var(--size-typo-l);
+        line-height: var(--line-height-typo-l);
+    }
+}
+@media only screen and (min-width: $screen-xl) {
+
+    .logo {
+        width: 254px;
+        height: 76px;
+    }
+    .logo::after {
+        font-size: var(--size-typo-l);
+        line-height: var(--line-height-typo-l);
+    }
+}
