@@ -1280,8 +1280,6 @@ html {
 
 .separator {
     width: 100%;
-    /**/
-    border: 1px dotted red;
 }
 
 .separator::before {
@@ -1296,18 +1294,21 @@ html {
 @media only screen and (max-width: 719px) {
     .separator {
         margin-top: 80px;
+        margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 1439px) and (min-width:  720px) {
     .separator {
         margin-top: 155px;
+        margin-bottom: 60px;
     }
 }
 
 @media only screen and (min-width:  1440px) {
     .separator {
         margin-top: 140px;
+        margin-bottom: 105px;
     }
 }
 
@@ -2651,7 +2652,6 @@ html {
 
 .tpl-layout__container_size_l {
     max-width: 1440px;
-    border: 1px dotted;
 }
 
 .paginator__item_type_current {
