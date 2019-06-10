@@ -59,8 +59,8 @@
     "request": ">=2.68.0",
     "static-eval": ">=2.0.0",
     "through2-filter": "^2.0.0",
-    "ym": "^0.1.2",
-    "tunnel-agent": ">=0.6.0"
+    "tunnel-agent": "^0.6.0",
+    "ym": "^0.1.2"
   },
   "scripts": {
     "test": "enb make && enb make clean && gulp",
