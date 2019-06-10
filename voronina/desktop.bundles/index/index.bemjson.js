@@ -67,7 +67,7 @@ module.exports = {
                                                     elem: 'item',
                                                     content: {
                                                         block: 'link',
-                                                        attrs: { href: '#' },
+                                                        attrs: { href: '#portfolio' },
                                                         mix: {
                                                             block: 'text',
                                                             mods: {
@@ -83,7 +83,7 @@ module.exports = {
                                                     elem: 'item',
                                                     content: {
                                                         block: 'link',
-                                                        attrs: { href: '#' },
+                                                        attrs: { href: '#about' },
                                                         mix: {
                                                             block: 'text',
                                                             mods: {
@@ -99,7 +99,7 @@ module.exports = {
                                                     elem: 'item',
                                                     content: {
                                                         block: 'link',
-                                                        attrs: { href: '#' },
+                                                        attrs: { href: '#price' },
                                                         mix: {
                                                             block: 'text',
                                                             mods: {
@@ -115,7 +115,7 @@ module.exports = {
                                                     elem: 'item',
                                                     content: {
                                                         block: 'link',
-                                                        attrs: { href: '#' },
+                                                        attrs: { href: '#contacts' },
                                                         mix: {
                                                             block: 'text',
                                                             mods: {
@@ -287,6 +287,10 @@ module.exports = {
                 },
                 {
                     block: 'separator'
+                },
+                {
+                    tag: 'a',
+                    attrs: { name:'portfolio' }
                 },
                 // portfolio
                 {
@@ -738,6 +742,10 @@ module.exports = {
                 {
                     block: 'separator'
                 },
+                {
+                    tag: 'a',
+                    attrs: { name:'about' }
+                },
                 // about
                 {
                     block: 'about',
@@ -954,6 +962,10 @@ module.exports = {
                 },
                 {
                     block: 'separator'
+                },
+                {
+                    tag: 'a',
+                    attrs: { name:'price' }
                 },
                 // price
                 {
@@ -1432,6 +1444,10 @@ module.exports = {
                 },
                 {
                     block: 'separator'
+                },
+                {
+                    tag: 'a',
+                    attrs: { name:'contacts' }
                 },
                 // page-footer
                 {
