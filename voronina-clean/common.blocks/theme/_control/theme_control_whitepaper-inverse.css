@@ -1,4 +1,4 @@
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: 425px) {
     .theme_control_whitepaper-inverse {
         --color-control-bg-action-press: #fff;
         --color-control-bg-clear: rgba(255, 255, 255, 0);

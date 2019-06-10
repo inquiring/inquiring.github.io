@@ -1,12 +1,11 @@
 .portfolio__details-header {
     font-family: "Source Serif Roman - Semibold", "Source Serif Roman", "Times New Roman", serif;
-    font-size: 24px;
-    font-weight: normal;
     letter-spacing: 0.01em;
     margin: 0;
 }
 @media screen and (max-width: $screen-xs-max) {
     .portfolio__details-header {
-        font-size: 18px;
+
+        color: #fff;
     }
 }

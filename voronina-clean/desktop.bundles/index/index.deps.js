@@ -698,6 +698,10 @@ exports.deps = [
         "elem": "block"
     },
     {
+        "block": "portfolio",
+        "elem": "button"
+    },
+    {
         "block": "pt-icon-plus",
         "elem": "icon"
     },

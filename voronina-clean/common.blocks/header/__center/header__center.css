@@ -5,7 +5,7 @@
     align-items: flex-start;
 
 }
-@media only screen and (max-width: $screen-xs-max) {
+@media only screen and (max-width: 425px) {
     .header__center {
         margin-top: 160px;
         margin-left: 15px;
@@ -13,7 +13,7 @@
     }
 }
 
-@media only screen and (max-width: $screen-l-max) and (min-width:  $screen-s) {
+@media only screen and (max-width: $screen-l-max) and (min-width:  426px) {
 
     .header__center {
         margin-left: 62px;

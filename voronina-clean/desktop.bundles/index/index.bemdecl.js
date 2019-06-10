@@ -965,6 +965,14 @@ exports.blocks = [
         ]
     },
     {
+        "name": "portfolio",
+        "elems": [
+            {
+                "name": "button"
+            }
+        ]
+    },
+    {
         "name": "pt-icon-plus",
         "elems": [
             {

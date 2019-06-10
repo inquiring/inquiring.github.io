@@ -6,6 +6,11 @@
     width: 100%;
     padding-top: 50px;
 }
+@media screen and (max-width: $screen-xs-max) {
+    .portfolio__top {
+        flex-wrap: wrap;
+    }
+}
 @media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
     .portfolio__top {
         padding-top: 16px;

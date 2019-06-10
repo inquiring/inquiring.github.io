@@ -1,13 +1,13 @@
 .header__menu-toggle {
     display: block;
 }
-@media only screen and (max-width: $screen-xs-max) {
+@media only screen and (max-width: 425px) {
     .header__menu-toggle {
         float: right;
         margin-right: 15px;
     }
 }
-@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+@media only screen and (max-width: $screen-l-max) and (min-width: 426px) {
     .header__menu-toggle {
         float: left;
         margin: 14px 0 13px 111px;

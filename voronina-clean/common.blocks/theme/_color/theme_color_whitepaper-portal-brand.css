@@ -1,4 +1,4 @@
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: 425px) {
 .theme_color_whitepaper-portal-brand {
     --color-bg-brand: #fff;
     --color-bg-action: rgb(255, 255, 255);

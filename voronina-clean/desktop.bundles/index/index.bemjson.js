@@ -637,7 +637,8 @@ module.exports = {
                                                 ],
                                                 mods: {
                                                     size: 'l',
-                                                    view: 'primary'
+                                                    view: 'primary',
+                                                    weight: 'regular'
                                                 },
                                                 content: 'Подробное портфолио'
                                             },
@@ -649,7 +650,7 @@ module.exports = {
                                                     { block: 'decorator', mods: { 'indent-b': 's' } },
                                                 ],
                                                 mods: {
-                                                    size: 's',
+                                                    size: '14-16-18',
                                                     view: 'primary'
                                                 },
                                                 content: {
@@ -661,7 +662,10 @@ module.exports = {
                                                 content: [
                                                     {
                                                         block: 'button',
-                                                        mix: { block: 'pt-icon-plus', elem: 'block' },
+                                                        mix: [
+                                                            { block: 'pt-icon-plus', elem: 'block' },
+                                                            { block: 'portfolio', elem: 'button' }
+                                                        ],
                                                         mods: {
                                                             view: 'voronina',
                                                             size: 'm'

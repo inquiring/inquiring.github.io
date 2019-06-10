@@ -1,5 +1,6 @@
 .portfolio__column-right {
     padding-bottom: 82px;
+    margin: auto;
 }
 @media screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
     .portfolio__column-right {

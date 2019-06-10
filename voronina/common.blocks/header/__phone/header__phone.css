@@ -1,12 +1,12 @@
 .header__phone {
     float: right;
 }
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: 653px) {
     .header__phone {
         display: none;
     }
 }
-@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+@media only screen and (max-width: $screen-l-max) and (min-width: 426px) {
     .header__phone {
         margin-top: 16px;
         margin-right: 126px;

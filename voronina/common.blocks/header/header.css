@@ -4,14 +4,19 @@
     justify-content: space-between;
     background-color: #f8f8f8;
 }
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: 425px) {
     .header {
         background-image: url(../../common.blocks/image/header-photo-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
-@media only screen and (max-width:  $screen-l-max) and (min-width: $screen-s) {
+@media only screen and (max-width:  $screen-s) and (min-width: 426px) {
+    .header {
+        justify-content: start;
+    }
+}
+@media only screen and (max-width:  $screen-l-max) and (min-width: 426px) {
 
     .header {
         background-image: url(../../common.blocks/image/header-bg-tablet.jpg);

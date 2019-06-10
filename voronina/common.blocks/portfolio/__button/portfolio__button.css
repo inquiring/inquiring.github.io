@@ -1,0 +1,5 @@
+@media screen and (max-width: $screen-xs-max) {
+    .portfolio__button {
+        color: #fff;
+    }
+}

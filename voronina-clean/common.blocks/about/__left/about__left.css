@@ -19,10 +19,10 @@
 }
 @media only screen and (min-width: 320px) {
     .about__left {
-        height: 342px;
+        height: 100%;
     }
 }
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) {
     .about__left {
         height: calc(342 + (375-320))px;
     }
@@ -32,6 +32,11 @@
         height: calc(342 + (425-320))px;
     }
 }
+@media only screen and (min-width: 425px) {
+    .about__left {
+        height: 100%;
+    }
+} */
 @media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
     .about__left {
         min-width: 642px;

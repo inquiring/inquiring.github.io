@@ -14,13 +14,13 @@
     line-height: var(--line-height-typo-s);
     letter-spacing: 2px;
 }
-@media only screen and (max-width: $screen-xs-max) {
+@media only screen and (max-width: 425px) {
     .logo {
         width: 112px;
         height: 33px;
     }
 }
-@media only screen and (max-width: $screen-l-max) and (min-width: $screen-s) {
+@media only screen and (max-width: $screen-l-max) and (min-width:426px) {
 
     .logo {
         width: 201px;
