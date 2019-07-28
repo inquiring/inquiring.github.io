@@ -1,6 +1,0 @@
-.subscription__info > .text {
-    margin-bottom: var(--space-s);
-}
-.subscription__info > .text:first-child {
-    margin-bottom: var(--space-xl);
-}

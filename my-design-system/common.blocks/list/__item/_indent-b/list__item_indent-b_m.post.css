@@ -1,7 +1,0 @@
-.list__item_indent-b_m {
-	margin-bottom: var(--space-m);
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-}

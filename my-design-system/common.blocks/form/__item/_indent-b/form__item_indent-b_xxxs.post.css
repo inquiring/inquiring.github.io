@@ -1,7 +1,0 @@
-.form__item_indent-b_xxxs {
-	margin-bottom: var(--space-xxxs);
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-}

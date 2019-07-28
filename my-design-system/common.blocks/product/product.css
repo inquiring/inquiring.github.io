@@ -1,6 +1,0 @@
-.product {
-    min-height: 280px;
-}
-.product.pt-card_border_all {
-    border: 3px solid var(--color-bg-border);
-}

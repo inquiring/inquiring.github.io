@@ -1,6 +1,0 @@
-.event__footer {
-    flex-direction: column;
-}
-.event__footer > .text:first-child {
-    margin-bottom: var(--space-s);
-}
