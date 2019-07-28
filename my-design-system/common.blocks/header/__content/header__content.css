@@ -1,0 +1,4 @@
+.header__content {
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}

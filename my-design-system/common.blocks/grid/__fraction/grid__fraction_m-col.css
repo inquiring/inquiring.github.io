@@ -1,0 +1,9 @@
+@media screen and (min-width: $screen-m) {
+	.grid__fraction_m-col {
+		&_2 { grid-column: span 2; }
+		&_3 { grid-column: span 3; }
+		&_4 { grid-column: span 4; }
+		&_5 { grid-column: span 5; }
+		&_8 { grid-column: span 8; }
+	}
+}

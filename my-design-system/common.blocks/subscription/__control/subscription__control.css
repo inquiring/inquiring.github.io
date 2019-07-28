@@ -1,0 +1,7 @@
+.subscription__control {
+    width: 100%;
+}
+.subscription__control > .input {
+    margin-bottom: var(--space-s);
+}
+

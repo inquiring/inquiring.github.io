@@ -1,0 +1,8 @@
+.warning__content {
+    flex-direction: column;
+    align-items: center;
+}
+.warning__content > .placeholder {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}

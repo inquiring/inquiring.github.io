@@ -1,0 +1,3 @@
+.articles__content > .text:last-child {
+    margin-top: var(--space-xs);
+}

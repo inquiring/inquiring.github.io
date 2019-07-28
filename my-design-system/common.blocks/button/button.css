@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    background-color: var(--color-bg-brand);
+    color: var(--color-control-typo-primary);
+    display: inline-block;
+    width: auto;
+    border: 0;
+    margin: initial;
+    font-weight: 400;
+    text-align: center;
+    width: 200px;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background .15s ease,box-shadow .15s ease,color .15s ease,fill .15s ease;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

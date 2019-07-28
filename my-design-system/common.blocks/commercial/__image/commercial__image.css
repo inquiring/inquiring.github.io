@@ -1,0 +1,6 @@
+.commercial__image {
+    height: 180px;
+}
+.commercial__image {
+	border: 3px solid var(--color-bg-border);
+}

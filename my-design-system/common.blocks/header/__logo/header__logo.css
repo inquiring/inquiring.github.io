@@ -1,0 +1,6 @@
+.header__logo {
+    min-width: 179px;
+    max-width: 179px;
+    height: 34px;
+    background-color: var(--color-typo-primary);
+}

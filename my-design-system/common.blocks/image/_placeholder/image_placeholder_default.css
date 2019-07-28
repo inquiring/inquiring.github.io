@@ -1,0 +1,5 @@
+.image_placeholder_default {
+	background-image: url('../image-placeholder.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}

@@ -1,0 +1,48 @@
+/* цветовая схема с ярким фоном и светлыми акцентными контролами. */
+
+$color-base-base: #FFFFFF; /* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
+$color-base-essential: #1FA55D; /* Базовый цвет поверхностей */
+$color-base-project: #FFFFFF; /* Проектный цвет, от которого выстраивают акцентные состояния */
+$color-base-phantom: #FFFFFF; /* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+$color-base-path: #FFF; /* Ссылочный цвет, от которого выстраиваются все их состояния */
+
+/* Цвета фона */
+$color-bg-default: $color-base-essential; /* Цвет дефолта */
+$color-bg-brand: $color-base-project; /* Цвет фона брендированый */
+$color-bg-border: $color-base-phantom; /* Цвет границ */
+
+/* Цвета текста */
+$color-typo-primary: $color-base-base; /* Цвет основного текста */
+$color-typo-secondary: color($color-base-base a(60%)); /* Цвет второстепенного текста */
+$color-typo-ghost: color($color-base-base a(30%)); /* Цвет дополнительного текста */
+
+/* Цвета ссылок */
+$color-link: $color-base-path; /* Цвет основной ссылки */
+
+.theme_color_megafon-brand {
+    /* Цвета блоков */
+    --color-bg-default: $color-bg-default; /* Цвет дефолта */
+    --color-bg-brand: $color-bg-brand; /* Цвет фона брендированый */
+    --color-bg-border: $color-bg-border; /* Цвет границ */
+
+    /* Цвета текста */
+	--color-typo-primary: $color-typo-primary; /* Цвет основного текста */
+	--color-typo-secondary: $color-typo-secondary; /* Цвет второстепенного текста */
+	--color-typo-ghost: $color-typo-ghost; /* Цвет дополнительного текста */
+
+    /* Цвета ссылок */
+	--color-link: $color-link; /* Цвет основной ссылки */
+}
+/*
+Значения фонов блоков:
+Значения фонов блоков:
+- дефолтный: #1FA55D;
+- акцентный: #FFFFFF;
+- бордерный: #FFFFFF.
+
+Значения состояний текста:
+- основной: #FFFFFF;
+- второстепенный: rgba(255, 255, 255, 0.6);
+- дополнительный: rgba(255, 255, 255, 0.3),
+- ссылочный: #FFF.
+*/

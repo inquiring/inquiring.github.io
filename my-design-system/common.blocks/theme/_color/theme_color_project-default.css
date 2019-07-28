@@ -1,0 +1,36 @@
+/* цветовая схема со светлым фоном и яркими акцентными контролами. */
+
+/* Базовые цвета от которых выстраивается вся политра */
+$color-base-base: #000000; /* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
+$color-base-essential: #FFFFFF; /* Базовый цвет поверхностей */
+$color-base-project: #0056B3; /* Проектный цвет, от которого выстраивают акцентные состояния */
+$color-base-phantom: #000000; /* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+$color-base-path: #0070f0; /* Ссылочный цвет, от которого выстраиваются все их состояния */
+
+/* Цвета фона */
+$color-bg-default: $color-base-essential; /* Цвет дефолта */
+$color-bg-brand: $color-base-project; /* Цвет фона брендированый */
+$color-bg-border: $color-base-phantom; /* Цвет границ */
+
+/* Цвета текста */
+$color-typo-primary: $color-base-base; /* Цвет основного текста */
+$color-typo-secondary: color($color-base-base a(60%)); /* Цвет второстепенного текста */
+$color-typo-ghost: color($color-base-base a(30%)); /* Цвет дополнительного текста */
+
+/* Цвета ссылок */
+$color-link: $color-base-path; /* Цвет основной ссылки */
+
+.theme_color_project-default {
+    /* Цвета блоков */
+    --color-bg-default: $color-bg-default; /* Цвет дефолта */
+    --color-bg-brand: $color-bg-brand; /* Цвет фона брендированый */
+    --color-bg-border: $color-bg-border; /* Цвет границ */
+
+    /* Цвета текста */
+	--color-typo-primary: $color-typo-primary; /* Цвет основного текста */
+	--color-typo-secondary: $color-typo-secondary; /* Цвет второстепенного текста */
+	--color-typo-ghost: $color-typo-ghost; /* Цвет дополнительного текста */
+
+    /* Цвета ссылок */
+	--color-link: $color-link; /* Цвет основной ссылки */
+}

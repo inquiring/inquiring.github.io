@@ -1,0 +1,6 @@
+.collect__title {
+    margin-bottom: var(--space-s);
+}
+.card__footer .collect__title {
+    align-items: flex-start;
+}

@@ -1,0 +1,555 @@
+.page {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-bg-default);
+}
+/* Отступы */
+.theme_space_default {
+	/* Отступы */
+	--space-xxxs: 2px;
+	--space-xxs: 4px;
+	--space-xs: 8px;
+	--space-s: 12px;
+	--space-m: 16px;
+	--space-l: 20px;
+	--space-xl: 24px;
+	--space-xxl: 32px;
+	--space-xxxl: 40px;
+	--space-xxxxl: 48px;
+	--space-xxxxxl: 72px;
+	--space-xxxxxxl: 96px;
+}
+/* Модификации отступов */
+/* дефолтная размерная линейка */
+/* Отступы */
+.theme_space_default {
+	/* Отступы */
+	--space-xxxs: 2px;
+	--space-xxs: 4px;
+	--space-xs: 8px;
+	--space-s: 12px;
+	--space-m: 16px;
+	--space-l: 20px;
+	--space-xl: 24px;
+	--space-xxl: 32px;
+	--space-xxxl: 40px;
+	--space-xxxxl: 48px;
+}
+/* Размеры текста */
+/* Межстрочный интервал */
+.theme_size_default {
+	/* Размер текста */
+	--size-typo-xs: 11px;
+	--size-typo-s: 13px;
+	--size-typo-m: 15px;
+	--size-typo-l: 18px;
+	--size-typo-xl: 20px;
+	--size-typo-xxl: 24px;
+	--size-typo-xxxl: 32px;
+	--size-typo-xxxxl: 48px;
+	--size-typo-xxxxxl: 72px;
+	--size-typo-xxxxxxl: 96px;
+
+	/* Межстрочный интервал */
+	--line-height-typo-xs: 15px;
+	--line-height-typo-s: 18px;
+	--line-height-typo-m: 21px;
+	--line-height-typo-l: 25px;
+	--line-height-typo-xl: 28px;
+	--line-height-typo-xxl: 34px;
+	--line-height-typo-xxxl: 42px;
+	--line-height-typo-xxxxl: 62px;
+	--line-height-typo-xxxxxl: 82px;
+	--line-height-typo-xxxxxxl: 115px;
+}
+/* Модификации размеров */
+/* дефолтная линейка отступов */
+/* Размеры текста */
+/* Межстрочный интервал */
+.theme_size_default {
+	/* Размер текста */
+
+	--size-typo-s: 7px;
+	--size-typo-m: 8px;
+	--size-typo-l: 10px;
+	--size-typo-xl: 11px;
+	--size-typo-xxl: 13px;
+
+	/* Межстрочный интервал */
+
+	--line-height-typo-s: 18px;
+	--line-height-typo-m: 21px;
+	--line-height-typo-l: 25px;
+	--line-height-typo-xl: 28px;
+	--line-height-typo-xxl: 34px;
+}
+/* цветовая схема со светлым фоном и яркими акцентными контролами. */
+/* Базовые цвета от которых выстраивается вся политра */
+/* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
+/* Базовый цвет поверхностей */
+/* Проектный цвет, от которого выстраивают акцентные состояния */
+/* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+/* Ссылочный цвет, от которого выстраиваются все их состояния */
+/* Цвета фона */
+/* Цвет дефолта */
+/* Цвет фона брендированый */
+/* Цвет границ */
+/* Цвета текста */
+/* Цвет основного текста */
+/* Цвет второстепенного текста */
+/* Цвет дополнительного текста */
+/* Цвета ссылок */
+/* Цвет основной ссылки */
+.theme_color_project-default {
+    /* Цвета блоков */
+    --color-bg-default: #FFFFFF; /* Цвет дефолта */
+    --color-bg-brand: #0056B3; /* Цвет фона брендированый */
+    --color-bg-border: #000000; /* Цвет границ */
+
+    /* Цвета текста */
+	--color-typo-primary: #000000; /* Цвет основного текста */
+	--color-typo-secondary: rgba(0, 0, 0, 0.6); /* Цвет второстепенного текста */
+	--color-typo-ghost: rgba(0, 0, 0, 0.3); /* Цвет дополнительного текста */
+
+    /* Цвета ссылок */
+	--color-link: #0070f0; /* Цвет основной ссылки */
+}
+.theme_breakpoint_default {
+	--screen-xs: 320px;
+	--screen-s: 720px;
+	--screen-m: 1024px;
+	--screen-l: 1280px;
+	--screen-xl: 1440px;
+	--screen-xxl: 1600px;
+
+	--screen-xs-max: 719px;
+	--screen-s-max: 1023px;
+	--screen-m-max: 1279px;
+	--screen-l-max: 1439px;
+	--screen-xl-max: 1599px;
+	--screen-xxl-max: 1920px;
+}
+:root {
+ /* Размеры отступа у контента */
+ --gap: 12px;
+
+ /* Размеры отступов в колонках */
+ --col-gap-third: calc(var(--gap) * 0.33);
+ --col-gap-half: calc(var(--gap) * 0.5);
+ --col-gap-two-thirds: calc(var(--gap) * 0.66);
+ --col-gap-full: var(--gap);
+ --col-gap-2x: calc(var(--gap) * 2);
+ --col-gap-3x: calc(var(--gap) * 3);
+}
+@media screen and (min-width: 720px) {
+ :root { --gap: 20px; }
+}
+@media screen and (min-width: 1024px) {
+ :root { --gap: 24px; }
+}
+@media screen and (min-width: 1280px) {
+ :root { --gap: 32px; }
+}
+:root {
+/* Размеры отступа у контента */
+--gap: 16px;
+
+/* Размеры отступов в колонках */
+--col-gap-half: calc(var(--gap) * 0.5);
+--col-gap-two-thirds: calc(var(--gap) * 0.66);
+--col-gap-full: var(--gap);
+}
+@media screen and (min-width: 1440px) {
+    :root { --gap: 40px; }
+}
+.header {
+    padding-top: var(--space-xxxl);
+    padding-bottom: var(--space-xxxl);
+}
+.layout {
+    display: grid;
+}
+.header__content {
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}
+.layout__container {
+    width: 100%;
+}
+.header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.header__logo {
+    min-width: 179px;
+    max-width: 179px;
+    height: 34px;
+    background-color: var(--color-typo-primary);
+}
+.layout__container_size_s {
+    max-width: 880px;
+}
+.text_view_primary {
+	color: var(--color-typo-primary);
+}
+.text_size_xxl {
+	font-size: var(--size-typo-xxl);
+	line-height: var(--line-height-typo-xxl);
+}
+.text_type_h1 {
+	margin: 15px 0 21px;
+}
+.text__word {
+    display: inline-block;
+}
+.text_size_s .text__word {
+    height: 7px;
+}
+.text_size_m .text__word {
+    height: 8px;
+}
+.text_size_l .text__word {
+    height: 10px;
+}
+.text_size_xl .text__word {
+    height: 11px;
+}
+.text_size_xxl .text__word {
+    height: 13px;
+}
+.text_view_primary > .text__word {
+	background: var(--color-typo-primary);
+}
+.text_view_secondary > .text__word {
+	background: var(--color-typo-secondary);
+}
+.text_view_ghost > .text__word {
+	background: var(--color-typo-ghost);
+}
+.text_view_link > .text__word {
+	background: var(--color-link);
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.text_view_link > .text__word:hover {
+		background: var(--color-link-hover);
+	}
+.text_size_l {
+	font-size: var(--size-typo-l);
+	line-height: var(--line-height-typo-l);
+}
+.text_size_l {
+	font-size: var(--size-typo-l);
+	line-height: var(--line-height-typo-l);
+}
+.text_size_l .text__word_width_s {
+    width: 28px;
+}
+.text_size_l .text__word_width_m {
+    width: 68px;
+}
+.text_size_l .text__word_width_l {
+    width: 138px;
+}
+.text_type_p {
+	margin: 15px 0 21px;
+	line-height: 25px;
+}
+.text_type_p {
+	margin: 15px 0 21px;
+}
+.text_size_s .text__word_width_s {
+    width: 20px;
+}
+.text_size_m .text__word_width_s {
+    width: 24px;
+}
+.text_size_l .text__word_width_s {
+    width: 28px;
+}
+.text_size_xl .text__word_width_s {
+    width: 32px;
+}
+.text_size_xxl .text__word_width_s {
+    width: 36px;
+}
+.text_size_s .text__word_width_m {
+    width: 48px;
+}
+.text_size_m .text__word_width_m {
+    width: 56px;
+}
+.text_size_l .text__word_width_m {
+    width: 68px;
+}
+.text_size_xl .text__word_width_m {
+    width: 74px;
+}
+.text_size_xxl .text__word_width_m {
+    width: 88px;
+}
+.layout__container_indent-b_xxl {
+    margin-bottom: var(--space-xxl);
+}
+.grid {
+    display: grid;
+	/* width: 100%; */
+}
+@media screen and (max-width: 719px) {
+        .grid_xs-columns_3 { grid-template-columns: repeat(3, 1fr); }
+}
+@media screen and (min-width: 720px) {
+		.grid_s-columns_3 { grid-template-columns: repeat(3, 1fr); }
+		.grid_s-columns_6 { grid-template-columns: repeat(6, 1fr); }
+}
+@media screen and (min-width: 1024px) {
+		.grid_m-columns_12 { grid-template-columns: repeat(12, 1fr); }
+		.grid_m-columns_10 { grid-template-columns: repeat(10, 1fr); }
+}
+.grid_col-gap_full {
+	grid-column-gap: var(--col-gap-full);
+}
+.grid_row-gap_full {
+    grid-row-gap: var(--col-gap-full);
+}
+.grid__fraction { min-width: 0; }
+@media screen and (max-width: 719px) {
+        .grid__fraction_xs-col_3 { grid-column: span 3; }
+}
+@media screen and (min-width: 1024px) {
+		.grid__fraction_m-col_2 { grid-column: span 2; }
+		.grid__fraction_m-col_3 { grid-column: span 3; }
+		.grid__fraction_m-col_4 { grid-column: span 4; }
+		.grid__fraction_m-col_5 { grid-column: span 5; }
+		.grid__fraction_m-col_8 { grid-column: span 8; }
+}
+.event {
+    min-height: 333px;
+}
+.card {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: relative;
+}
+.card_view_default {
+	background-color: var(--color-bg-default);
+}
+/* цветовая схема с тёмным фоном и акцентными контролами. */
+/* Базовые цвета от которых выстраивается вся политра */
+/* Базовый цвет содержимого, от которого выстраиваются цвета текста, иконок, ... */
+/* Базовый цвет поверхностей */
+/* Проектный цвет, от которого выстраивают акцентные состояния */
+/* Тонирующий цвет, от которого выстраиватся бордеры, паранджа, ... */
+/* Ссылочный цвет, от которого выстраиваются все их состояния */
+/* Цвета фона */
+/* Цвет дефолта */
+/* Цвет фона брендированый */
+/* Цвет границ */
+/* Цвета текста */
+/* Цвет основного текста */
+/* Цвет второстепенного текста */
+/* Цвет дополнительного текста */
+/* Цвета ссылок */
+/* Цвет основной ссылки */
+.theme_color_project-inverse {
+    /* Цвета блоков */
+    --color-bg-default: #000000; /* Цвет дефолта */
+    --color-bg-brand: #FFFFFF; /* Цвет фона брендированый */
+    --color-bg-border: #FFFFFF; /* Цвет границ */
+
+    /* Цвета текста */
+	--color-typo-primary: #FFFFFF; /* Цвет основного текста */
+	--color-typo-secondary: rgba(255, 255, 255, 0.6); /* Цвет второстепенного текста */
+	--color-typo-ghost: rgba(255, 255, 255, 0.3); /* Цвет дополнительного текста */
+
+    /* Цвета ссылок */
+	--color-link: #0070f0; /* Цвет основной ссылки */
+}
+.event__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.card__content {
+	position: relative;
+}
+.event__preview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: var(--space-xl);
+}
+.event__speaker {
+    margin-right: var(--space-xs);
+}
+.avatar {
+	display: inline-block;
+	position: relative;
+}
+.avatar {
+	display: inline-block;
+	position: relative;
+    background: var(--color-typo-primary);
+}
+.avatar_size_m {
+	width: 60px;
+	height: 60px;
+}
+.brand-logo {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	position: relative;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.brand-logo {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	position: relative;
+}
+.brand-logo_size_m {
+	width: 60px;
+	height: 60px;
+}
+.brand-logo_name_mts {
+	background-image: url("data:image/svg+xml,%3Csvg width%3D%2260%22 height%3D%2260%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg fill%3D%22none%22 fill-rule%3D%22evenodd%22%3E%3Cpath d%3D%22M30 0c16.569 0 30 13.432 30 29.995v.01C60 46.571 46.572 60 30 60 13.431 60 0 46.572 0 30 0 13.431 13.428 0 30 0z%22 fill%3D%22%23E30511%22%2F%3E%3Cpath d%3D%22M40.534 33.139c-.056 2.227-.465 4.363-1.479 6.353-1.32 2.59-3.344 4.35-6.16 5.132-1.613.448-3.253.514-4.91.287-1.817-.248-3.465-.905-4.896-2.067-1.355-1.1-2.326-2.487-3.006-4.09a13.664 13.664 0 0 1-.984-3.794 16.967 16.967 0 0 1-.02-3.46c.24-2.68.935-5.24 2-7.702.876-2.027 1.974-3.92 3.405-5.605.846-.995 1.795-1.876 2.938-2.53 1.527-.872 3.049-.887 4.584-.026 1.036.58 1.917 1.35 2.703 2.232 1.948 2.189 3.303 4.726 4.306 7.465a23.564 23.564 0 0 1 1.242 4.898c.133.964.187 1.938.277 2.907%22 fill%3D%22%23FFF%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.brand-logo_name_mts {
+    background-color: #f70000;
+}
+.event__title {
+    margin-bottom: var(--space-s);
+}
+.text_align_center {
+	text-align: center;
+}
+.event__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.event__footer > .text:first-child {
+    margin-bottom: var(--space-s);
+}
+.card__footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.text_view_link {
+	color: var(--color-link);
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.text_view_link:hover {
+		color: var(--color-link-hover);
+	}
+.text_size_xl {
+	font-size: var(--size-typo-xl);
+	line-height: var(--line-height-typo-xl);
+}
+.brand-logo_name_yota {
+	background-image: url("data:image/svg+xml,%3Csvg width%3D%2260%22 height%3D%2260%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg fill%3D%22none%22 fill-rule%3D%22evenodd%22%3E%3Cpath d%3D%22M30 0c16.569 0 30 13.432 30 29.995v.01C60 46.571 46.572 60 30 60 13.431 60 0 46.572 0 30 0 13.431 13.428 0 30 0z%22 fill%3D%22%2300BDF2%22%2F%3E%3Cg fill%3D%22%23FFF%22%3E%3Cpath d%3D%22M40.007 16.269v-2.112c0-1.326-1.049-2.4-2.342-2.4-1.297 0-2.344 1.074-2.344 2.4v2.112c0 1.708-.66 3.228-1.72 4.338-1.064 1.107-2.497 1.775-4.098 1.775-1.602 0-3.033-.668-4.099-1.775a6.244 6.244 0 0 1-1.718-4.338v-2.112c0-1.326-1.049-2.4-2.342-2.4-1.294 0-2.344 1.074-2.344 2.4v2.112c0 2.993 1.168 5.731 3.062 7.705a10.388 10.388 0 0 0 5.098 2.938v5.055a10.379 10.379 0 0 0-5.098 2.94c-1.894 1.973-3.063 4.71-3.062 7.704v2.112c0 1.325 1.05 2.4 2.344 2.4 1.293 0 2.342-1.075 2.342-2.4v-2.112c0-1.708.659-3.23 1.718-4.338 1.066-1.108 2.497-1.775 4.1-1.777 1.6.002 3.033.67 4.097 1.777a6.243 6.243 0 0 1 1.72 4.338v2.112c0 1.325 1.047 2.4 2.344 2.4 1.293 0 2.342-1.075 2.342-2.4v-2.112c.001-2.994-1.168-5.73-3.062-7.704a10.379 10.379 0 0 0-5.098-2.94v-5.055a10.388 10.388 0 0 0 5.098-2.938c1.894-1.974 3.063-4.712 3.062-7.705z%22%2F%3E%3Cpath d%3D%22M29.503 46.617c2.241 0 4.058-1.86 4.058-4.157 0-2.298-1.817-4.16-4.058-4.16-2.24 0-4.056 1.862-4.056 4.16 0 2.297 1.816 4.157 4.056 4.157%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.brand-logo_name_yota {
+    background-color:  #00c0f8;
+}
+.text_type_h2 {
+	margin: 48px 0 20px;
+}
+.text_type_h3 {
+	margin: 43px 0 0;
+}
+.footer {
+    padding-top: var(--space-xxxl);
+    padding-bottom: var(--space-xxxl);
+}
+.footer__content {
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}
+.text_align_right {
+	text-align: right;
+}
+.layout__container_align_center {
+    margin: 0 auto;
+}
+.layout__container_size_m {
+    max-width: 1144px;
+}
+.text_size_s .text__word_width_l {
+    width: 100px;
+}
+.text_size_m .text__word_width_l {
+    width: 114px;
+}
+.text_size_l .text__word_width_l {
+    width: 138px;
+}
+.text_size_xl .text__word_width_l {
+    width: 154px;
+}
+.text_size_xxl .text__word_width_l {
+    width: 184px;
+}
+.card__content_vertical-align_center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/* flex-direction: column; */
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.card__content_distribute_center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/* flex-direction: column; */
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.card__content_space-a_xxl {
+	padding: var(--space-xxl);
+}
+.card__footer_vertical-align_center {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.card__footer_distribute_center {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.card__footer_space-a_xxl {
+	padding: var(--space-xxl);
+}
