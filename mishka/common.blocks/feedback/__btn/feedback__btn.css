@@ -1,0 +1,18 @@
+.feedback__btn {
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 42px;
+}
+@media (min-width: 768px) {
+    .feedback__btn {
+        position: absolute;
+        top: 37px;
+        right: 0;
+        width: 174px;
+    }
+}
+@media (min-width: 1150px){
+    .feedback__btn {
+        margin-right: 0;
+    }
+}

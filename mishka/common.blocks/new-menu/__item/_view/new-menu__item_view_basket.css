@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+
+    .new-menu__item_view_basket:last-child {
+        border-bottom: 1px solid #ececec;
+    }
+}
+@media (min-width: 768px) {
+    .new-menu__item_view_basket {
+        width: 264px;
+        box-sizing: border-box;
+        border-bottom: none;
+        border-left: 1px solid #ececec;
+    }
+    .new-menu__item_view_basket >.pt-icon-plus {
+        justify-content: flex-end;
+    }
+    .new-menu__item_view_basket >.pt-icon-plus>.pt-icon-plus__icon {
+        margin-right: 30px;
+    }
+}
+

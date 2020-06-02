@@ -1,0 +1,21 @@
+.week__description {
+    margin: 24px 0 29px;
+}
+
+@media (min-width: 768px) {
+    .week__description {
+        width: 296px;
+        margin: 0;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #444;
+    }
+}
+
+@media (min-width: 1150px) {
+    .week__description {
+        margin-left: 176px;
+        align-self: center;
+    }
+}

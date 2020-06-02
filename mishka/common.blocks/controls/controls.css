@@ -1,0 +1,10 @@
+.controls {
+    display: flex;
+    width: 258px;
+    min-height: 50px;
+}
+@media (min-width: 768px) {
+    .controls {
+        width: 138px;
+    }
+}

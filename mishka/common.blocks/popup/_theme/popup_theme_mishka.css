@@ -1,0 +1,23 @@
+.popup_theme_mishka {
+    width: 320px;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding: 35px 30px 46px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.25);
+    background-color: #fff;
+    z-index: 101;
+}
+
+@media (min-width: 768px) {
+
+    .popup {
+        width: 566px;
+        padding: 52px 103px 46px;
+    }
+}

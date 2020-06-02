@@ -1,0 +1,19 @@
+.week__inner {
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+
+    .week__inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1050px) {
+
+    .week__inner {
+    }
+}

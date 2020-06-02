@@ -1,0 +1,24 @@
+.week__name {
+    margin-top: 27px;
+}
+
+@media (min-width: 768px) {
+
+    .week__name {
+        width: 100%;
+        margin: 49px 0 54px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .week__name {
+        position: absolute;
+        justify-content: flex-start;
+        z-index: 2;
+        display: flex;
+    }
+}

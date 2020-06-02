@@ -1,0 +1,16 @@
+.week__price {
+    margin: 19px 0;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .week__price {
+        margin: 6px 0 31px;
+        font-size: 20px;
+    }
+}

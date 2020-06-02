@@ -1,0 +1,50 @@
+.about__item {
+    margin-bottom: 33px;
+}
+@media (max-width: 767px) {
+
+    .about__item:nth-child(1) {
+        width: 250px;
+        padding-top: 0;
+    }
+    .about__item:last-child {
+        margin-bottom: 0px;
+    }
+}
+.about__item .pt-icon-plus .pt-icon-plus__block .text {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+
+    .about__item {
+        width: 45%;
+        margin-bottom: 51px;
+    }
+    .about__item .pt-icon-plus .pt-icon-plus__block .text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .about__item:nth-child(3n+1) {
+        order: 1;
+    }
+    .about__item:nth-child(3n+2) {
+        order: 2;
+    }
+    .about__item:nth-child(3n+3) {
+        order: 3;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 1150px) {
+
+    .about__item {
+        margin-right: 0;
+    }
+}

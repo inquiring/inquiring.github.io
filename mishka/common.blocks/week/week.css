@@ -1,0 +1,16 @@
+.week {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444;
+}
+
+@media (min-width: 1150px) {
+
+    .week {
+        padding-top: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

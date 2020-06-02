@@ -1,0 +1,58 @@
+.map {
+    width: 100%;
+    height: 458px;
+    box-sizing: border-box;
+    background: #f3f1ea url(../../common.blocks/map/map-mobile@1x.jpg) no-repeat 100% 100%;
+    background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+
+    .map {
+        background-image: url(../../common.blocks/map/map-mobile@2x.jpg);
+        background-size: 320px auto;
+        background-size: cover;
+    }
+}
+@media (min-width: 768px) {
+
+    .map {
+        background-image: url(../../common.blocks/map/map-tablet@1x.jpg);
+        background-size: cover;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
+(min-resolution: 144dpi) and (min-width: 768px),
+(min-resolution: 1.5dppx) and (min-width: 768px) {
+
+    .map {
+        background-image: url(../../common.blocks/map/map-tablet@2x.jpg);
+        background-size: 768px auto;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .map {
+        display: inline-block;
+        margin: 0;
+        width: 524px;
+        height: 457px;
+        background-image: url(../../common.blocks/map/map-desktop@1x.jpg);
+        background-size: cover;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1150px),
+(min-resolution: 144dpi) and (min-width: 1150px),
+(min-resolution: 1.5dppx) and (min-width: 1150px) {
+
+    .map {
+        background-image: url(../../common.blocks/map/map-desktop@2x.jpg);
+        background-size: 525px auto;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,18 @@
+.feedback__source {
+    margin: 1em 0;
+}
+@media (min-width: 768px) {
+
+    .feedback__source {
+        width: 238px;
+        margin-top: 48px;
+        margin: 1em 0;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .feedback__source {
+        margin-top: 30px;
+    }
+}

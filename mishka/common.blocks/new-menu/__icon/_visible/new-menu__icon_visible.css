@@ -1,0 +1,9 @@
+.new-menu__icon_visible >.icon {
+    display: block;
+}
+@media (min-width: 768px) {
+
+    .new-menu__icon_visible >.icon {
+        display: none;
+    }
+}

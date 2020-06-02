@@ -1,0 +1,33 @@
+.card {
+    min-height: 374px;
+    width: 100%;
+}
+.card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+}
+.card:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+}
+@media (max-width: 767px) {
+    .card {
+        max-width: 365px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card {
+        width: 100%;
+        display: flex;
+        min-height: 334px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .card {
+        width: 316px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

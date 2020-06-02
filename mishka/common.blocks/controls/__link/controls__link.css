@@ -1,0 +1,19 @@
+.controls__link {
+    display: flex;
+    width: 129px;
+    border: 1px solid #ececec;
+    cursor: pointer;
+}
+.controls__link:last-child {
+    border-left: none;
+}
+
+@media (min-width: 768px) {
+
+    .controls__link {
+        border: none;
+    }
+    .controls__link:last-child {
+        padding-left: 30px;
+    }
+}

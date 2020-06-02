@@ -1,0 +1,25 @@
+.card__description {
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+.card__description .text:first-child {
+    padding: 20px;
+    padding-bottom: 0;
+}
+.card__description .pt-icon-plus:first-child {
+    padding: 20px;
+    padding-bottom: 0;
+}
+.card__description .text {
+    padding: 5px 20px;
+}
+
+
+@media (min-width: 1150px) {
+
+    .card__description {
+        min-height: 80px;
+    }
+}
+

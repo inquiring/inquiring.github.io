@@ -1,0 +1,17 @@
+.btn_view_popup {
+    background-color: #63d1bb;
+    border: none;
+}
+.btn_view_popup:hover {
+    background-color: #46c1ae;
+}
+.btn_view_popup:active {
+    background-color: #59d5bc;
+}
+
+@media (min-width: 768px) {
+
+    .btn_view_popup {
+        width: 350px;
+    }
+}

@@ -1,0 +1,13 @@
+.page-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+
+    .page-footer__inner {
+        justify-content: space-between;
+        padding: 35px 0;
+    }
+}

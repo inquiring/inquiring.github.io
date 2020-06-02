@@ -1,0 +1,16 @@
+
+@media (min-width: 768px) {
+
+    .card__image_view_video {
+        width: 100%;
+        min-height: 455px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .card__image_view_video {
+        min-width: 682px;
+    }
+}

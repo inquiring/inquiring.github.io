@@ -1,0 +1,10 @@
+@media (min-width: 668px) {
+
+    .form__control {
+        display: flex;
+        flex-direction: row;
+    }
+    .form__control .text {
+        margin-right: 25px;
+    }
+}

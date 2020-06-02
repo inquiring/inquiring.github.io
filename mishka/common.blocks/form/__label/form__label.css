@@ -1,0 +1,21 @@
+.form__label {
+    padding: 20px 0;
+}
+
+.form__label .text {
+    color: #63d1bb;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width: 668px) {
+    .form__label {
+        padding: 0;
+    }
+    .form__label .text {
+        text-align: right;
+        padding-top: 10px;
+        padding-right: 50px;
+    }
+}

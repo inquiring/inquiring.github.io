@@ -1,0 +1,44 @@
+.slogan {
+    display: flex;
+    min-height: 281px;
+    background: #f9f9f9 url(hero-mobile@1x.jpg) no-repeat 50% 20%;
+    border-top: 1px solid #ececec;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+
+    .slogan {
+        background-image: url(hero-mobile@2x.jpg);
+        background-size: 575px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .slogan {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 743px;
+        margin-top: -80px;
+        z-index: 1;
+        background: #f9f9f9 url(hero-desktop@1x.jpg) no-repeat 50% 100%;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 768px),
+(min-resolution: 144dpi) and (min-width: 768px),
+(min-resolution: 1.5dppx) and (min-width: 768px) {
+
+    .slogan {
+        background-image: url(hero-desktop@2x.jpg);
+        background-size: 1150px auto;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .slogan {
+        position: relative;
+        height: 743px;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,19 @@
+.contacts__title .pt-icon-plus__icon {
+    display: none;
+}
+@media (min-width: 768px) {
+    .contacts__title .pt-icon-plus__icon {
+        display: block;
+        margin-right: 50px;
+    }
+
+}
+@media (min-width: 1150px) {
+    .contacts__title .pt-icon-plus__icon {
+        margin-right: 0;
+        order: 1;
+    }
+    .contacts__title .pt-icon-plus__block {
+        order: 2;
+    }
+}

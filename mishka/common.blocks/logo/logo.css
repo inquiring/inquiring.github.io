@@ -1,0 +1,7 @@
+.logo svg:hover {
+    fill: #63d1bb;
+}
+
+.logo svg:active {
+    fill: #63d;
+}

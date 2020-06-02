@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+
+    .page-footer__item:nth-child(1) {
+        display: none;
+    }
+    .page-footer__item {
+        width: 100%;
+        padding: 25px 0;
+    }
+    .page-footer__item:nth-child(3) {
+        border-top: 1px solid var(--color-bg-border);
+    }
+}
+@media (min-width: 768px) {
+
+    .page-footer__item {
+        width: 33.33%;
+    }
+}

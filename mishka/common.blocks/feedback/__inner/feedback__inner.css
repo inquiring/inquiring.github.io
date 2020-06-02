@@ -1,0 +1,22 @@
+.feedback__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+    .feedback__inner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 668px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .feedback__inner {
+        width: 1050px;
+        margin-left: -50px;
+    }
+}

@@ -1,0 +1,19 @@
+.about__title {
+    margin: 29px 0 33px;
+
+}
+
+@media (min-width: 768px) {
+
+    .about__title {
+        margin: 53px 0;
+        align-self: flex-start;
+
+    }
+}
+
+@media (min-width: 1150px) {
+    .about__title {
+        margin: 60px 0 48px 169px;
+    }
+}

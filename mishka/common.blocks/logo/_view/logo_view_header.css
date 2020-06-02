@@ -1,0 +1,29 @@
+.logo_view_header {
+    position: relative;
+    display: block;
+    text-align: center;
+    min-height: 70px;
+}
+@media (min-width: 768px) {
+
+    .logo_view_header {
+        display: flex;
+        width: 321px;
+        height: 80px;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: center;
+        border-right: 1px solid #ececec;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .logo_view_header {
+        width: 306px;
+        min-height: 85px;
+        order: 2;
+        justify-content: center;
+        border: none;
+    }
+}

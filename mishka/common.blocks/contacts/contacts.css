@@ -1,0 +1,12 @@
+@media (min-width: 668px) {
+
+    .contacts {
+        padding-top: 40px;
+    }
+}
+@media (min-width: 1050px) {
+
+    .contacts {
+        padding-top: 90px;
+    }
+}

@@ -1,0 +1,10 @@
+.typography {
+    font-size: var(--size-text-m, var(--size-typo-m));
+    line-height: var(--line-height-text-m, var(--line-height-typo-m));
+}
+@media (min-width: 668px) {
+    .typography {
+        font-size: var(--size-text-l, var(--size-typo-l));
+        line-height: var(--line-height-text-m, var(--line-height-typo-l));
+    }
+}

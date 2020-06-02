@@ -1,0 +1,11 @@
+.contacts__col .text {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444;
+    min-width: 77px;
+}
+
+.contacts__col:nth-child(1) {
+    width: 20%;
+}

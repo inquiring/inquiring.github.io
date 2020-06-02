@@ -1,0 +1,30 @@
+.card__info {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ececec;
+    height: 197px;
+}
+@media (max-width: 767px) {
+    .card__info {
+        border-top: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card__info {
+        width: 50%;
+        min-height: 334px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .card__info {
+        width: 100%;
+        min-height: 197px;
+    }
+    .card_view_video .card__info {
+        border-top: 1px solid #ececec;
+    }
+}

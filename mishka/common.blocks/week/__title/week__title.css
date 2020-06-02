@@ -1,0 +1,19 @@
+.week__title {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+
+    .week__title {
+        margin: 0;
+
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .week__title {
+        order: 2;
+        margin-left: 28px;
+    }
+}

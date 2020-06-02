@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+
+    .btn_view_contacts {
+        width: 260px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .btn_view_contacts {
+        width: 230px;
+    }
+}

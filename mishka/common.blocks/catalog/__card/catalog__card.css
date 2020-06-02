@@ -1,0 +1,12 @@
+.catalog__card {
+    margin-bottom: 30px;
+}
+.catalog__card:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 1150px) {
+    .catalog__card:last-child {
+        margin-bottom: 30px;
+    }
+}

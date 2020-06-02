@@ -1,0 +1,27 @@
+.week__subtitle {
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #63d1bb;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+
+    .week__subtitle {
+        width: 101px;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .week__subtitle {
+        width: 125px;
+        margin-left: 20px;
+        order: 1
+    }
+}

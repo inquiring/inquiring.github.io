@@ -1,0 +1,12 @@
+.category {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .category {
+        position: relative;
+        z-index: 3;
+        margin-top: -118px;
+    }
+}

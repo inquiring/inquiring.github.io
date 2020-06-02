@@ -1,0 +1,20 @@
+@media (max-width: 1149px) {
+
+    .contacts__inner {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .contacts__inner {
+        position: relative;
+        content: '';
+        width: 1050px;
+        min-height: 457px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

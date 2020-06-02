@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+
+    .bg-zigzag-fill > svg #bg-zigzag-fill {
+        display: none;
+    }
+}

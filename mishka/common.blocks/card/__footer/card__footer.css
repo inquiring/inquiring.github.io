@@ -1,0 +1,16 @@
+.card__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.card__info_view_video .card__footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card__footer .pt-icon-plus {
+    padding: 20px 0;
+    margin: 0 20px;
+    border-top: 1px solid #ececec;
+}

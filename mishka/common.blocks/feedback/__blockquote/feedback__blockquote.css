@@ -1,0 +1,24 @@
+.feedback__blockquote {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444;
+    margin: 0 0 35px;
+}
+
+@media (min-width: 768px) {
+
+    .feedback__blockquote {
+        width: 668px;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .feedback__blockquote {
+        margin-left: 163px;
+        width: 1050px;
+    }
+}

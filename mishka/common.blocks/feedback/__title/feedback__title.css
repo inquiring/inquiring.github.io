@@ -1,0 +1,18 @@
+.feedback__title {
+    margin: 20px 0;
+}
+@media (min-width: 768px) {
+
+    .feedback__title {
+        margin-top: 79px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .feedback__title {
+        margin-left: 175px;
+        margin-bottom: 44px;
+    }
+}

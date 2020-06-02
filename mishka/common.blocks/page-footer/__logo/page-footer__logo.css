@@ -1,0 +1,19 @@
+.page-footer__logo {
+    display: none;
+}
+@media (min-width: 768px) {
+
+    .page-footer__logo {
+        display: block;
+        width: 220px;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .page-footer__logo {
+        width: 350px;
+        padding: 51px 0;
+    }
+}

@@ -1,0 +1,19 @@
+.contacts__map {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .contacts__map {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .contacts__map {
+        margin: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.catalog {
+    padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+    .catalog {
+        padding-top: 60px;
+    }
+}

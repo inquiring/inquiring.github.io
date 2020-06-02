@@ -1,0 +1,21 @@
+.modal_theme_my {
+    display: none;
+    visibility: hidden;
+    margin: -9999px 0 0 -9999px;
+    background: rgba(50,50,50,.2);
+}
+
+.modal_theme_my,
+.modal_theme_my .modal__content {
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.modal_theme_my.modal_js_inited {
+    display: block;
+}
+.modal_theme_my.modal_visible {
+    visibility: visible;
+    margin: 0;
+}

@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+
+    .about__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .about__list {
+        width: 642px;
+        margin-left: 175px;
+    }
+}

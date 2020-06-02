@@ -1,0 +1,9 @@
+.btn_view_feedback {
+    width: 260px;
+}
+@media (min-width: 768px) {
+
+    .btn_view_feedback {
+        width: 174px;
+    }
+}

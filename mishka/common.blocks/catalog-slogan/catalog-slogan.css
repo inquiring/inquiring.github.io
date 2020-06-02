@@ -1,0 +1,23 @@
+.catalog-slogan {
+    background-color: #f1f1f1;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.catalog-slogan .text {
+    font-size: 27px;
+    line-height: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .catalog-slogan {
+        padding-top: 95px;
+        padding-bottom: 95px;
+        margin-top: -80px;
+        z-index: 1;
+    }
+    .catalog-slogan .text {
+        font-size: 43px;
+        line-height: 50px;
+    }
+}

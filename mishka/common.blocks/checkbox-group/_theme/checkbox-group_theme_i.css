@@ -1,0 +1,30 @@
+.checkbox-group_theme_i {
+    display: inline-block;
+}
+.checkbox-group_theme_i.checkbox-group_size_m {
+    line-height: 24px;
+}
+.checkbox-group_theme_i.checkbox-group_size_l {
+    line-height: 30px;
+}
+.checkbox-group_theme_i.checkbox-group_type_button {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@media (min-width: 668px) {
+    .checkbox-group_theme_i {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .checkbox-group_theme_i .checkbox_theme_i.checkbox_size_xl {
+        width: 50%;
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 1050px) {
+    .checkbox-group_theme_i .checkbox_theme_i.checkbox_size_xl {
+        width: 33.33%;
+    }
+}

@@ -1,0 +1,16 @@
+.btn_view_video {
+    width: 190px;
+}
+
+@media (min-width: 668px) {
+
+    .btn_view_video {
+        width: 585px;
+    }
+}
+@media (min-width: 1050px) {
+
+    .btn_view_video {
+        width: 220px;
+    }
+}

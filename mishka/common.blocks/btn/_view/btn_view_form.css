@@ -1,0 +1,16 @@
+.btn_view_form {
+    width: 260px;
+}
+
+@media (min-width: 668px) {
+
+    .btn_view_form {
+        width: 228px;
+    }
+}
+@media (min-width: 1050px) {
+
+    .btn_view_form {
+        width: 228px;
+    }
+}

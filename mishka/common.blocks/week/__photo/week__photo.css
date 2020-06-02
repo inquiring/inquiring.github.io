@@ -1,0 +1,20 @@
+.week__photo img {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .week__photo {
+        width: 333px;
+        height: 404px;
+        top: 227px;
+        right: 0;
+    }
+}
+
+@media (min-width: 1150px) {
+    .week__photo {
+        width: 527px;
+        height: 636px;
+        z-index: 1;
+        top: 33px;
+    }
+}

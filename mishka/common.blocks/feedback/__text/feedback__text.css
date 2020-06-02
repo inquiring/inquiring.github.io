@@ -1,0 +1,10 @@
+.feedback__text {
+    margin: 1em 0;
+}
+@media (min-width: 1150px) {
+
+    .feedback__text {
+        width: 770px;
+        margin: 0;
+    }
+}

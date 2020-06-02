@@ -1,0 +1,11 @@
+.week__feature {
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+
+    .week__feature {
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,28 @@
+.slogan__text {
+    width: 180px;
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+    margin: 72px auto;
+}
+
+@media (min-width: 768px) {
+
+    .slogan__text {
+        width: 460px;
+        margin: 152px auto;
+        font-size: 43px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .slogan__text {
+        font-size: 53px;
+        line-height: 57px;
+        width: 600px;
+    }
+}

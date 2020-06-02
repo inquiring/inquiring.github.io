@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+
+    .week__order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+
+   .week__order {
+        width: 296px;
+        margin-top: -115px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .week__order {
+        margin-left: 176px;
+    }
+}
