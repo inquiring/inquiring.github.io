@@ -273,7 +273,7 @@ module.exports = {
                                                         attrs: {
                                                             type: 'image/jpeg',
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x'
+                                                            srcset: '/../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x'
 
                                                         }
                                                     },
@@ -282,7 +282,7 @@ module.exports = {
                                                         attrs: {
                                                             type: 'image/jpeg',
                                                             media:'(min-width: 768px)',
-                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg 1x'
+                                                            srcset: '/../../common.blocks/card/__image/photo-1-tablet@1x.jpg 1x'
                                                         }
                                                     },
                                                     {
@@ -291,7 +291,7 @@ module.exports = {
                                                         attrs: {
                                                             width: '260',
                                                             height: '195',
-                                                            src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
+                                                            src: '/../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
                                                             alt: 'Зайчик-попрыгайчик',
                                                         }
                                                     }
