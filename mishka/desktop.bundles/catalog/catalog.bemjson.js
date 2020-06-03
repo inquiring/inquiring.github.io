@@ -272,14 +272,14 @@ module.exports = {
                                                         tag: 'source',
                                                         attrs: {
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg'
+                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg 2x'
                                                         }
                                                     },
                                                     {
                                                         tag: 'source',
                                                         attrs: {
                                                             media:"(min-width: 768px)",
-                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg, ../../common.blocks/card/__image/photo-1-tablet@2x.jpg'
+                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg, ../../common.blocks/card/__image/photo-1-tablet@2x.jpg 2x'
                                                         }
                                                     },
                                                     {
@@ -289,7 +289,7 @@ module.exports = {
                                                             width: '',
                                                             height: '',
                                                             src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
-                                                            srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg',
+                                                            srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg 2x',
                                                             alt: 'Зайчик-попрыгайчик',
                                                         }
                                                     },
