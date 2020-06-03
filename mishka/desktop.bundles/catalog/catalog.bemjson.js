@@ -259,8 +259,8 @@ module.exports = {
                             content: [
                                 {
                                     block: 'card',
-                                    // tag: 'a',
-                                    // attrs: { href: '#' },
+                                    tag: 'a',
+                                    attrs: { href: '#' },
                                     mix: { block: 'catalog', elem: 'card' },
                                     content: [
                                         {
@@ -272,7 +272,7 @@ module.exports = {
                                                         tag: 'source',
                                                         attrs: {
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/week/triple-set-desktop@1x.jpg 1x,../../common.blocks/week/triple-set-desktop@2x.jpg 2x'
+                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x,../../common.blocks/card/__image@2x.jpg 2x'
                                                         }
                                                     },
                                                     {
@@ -280,7 +280,7 @@ module.exports = {
                                                         attrs: {
                                                             type: 'image/jpeg',
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/card/photo-1-desktop@1x.jpg 1x, ../../common.blocks/card/photo-1-desktop@2x.jpg 2x'
+                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg 2x'
 
                                                         }
                                                     },
@@ -289,7 +289,7 @@ module.exports = {
                                                         attrs: {
                                                             type: 'image/jpeg',
                                                             media:'(min-width: 768px)',
-                                                            srcset: '../../common.blocks/card/photo-1-tablet@1x.jpg',
+                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg',
 
                                                         }
                                                     },
@@ -299,8 +299,8 @@ module.exports = {
                                                         attrs: {
                                                             width: '',
                                                             height: '',
-                                                            src: '../../common.blocks/card/photo-1-mobile@1x.jpg',
-                                                            srcset: '../../common.blocks/card/photo-1-tablet@2x.jpg 2x',
+                                                            src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
+                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@2x.jpg 2x',
                                                             alt: 'Зайчик-попрыгайчик',
                                                         }
                                                     }
