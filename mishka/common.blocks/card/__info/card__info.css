@@ -1,13 +1,7 @@
 .card__info {
     position: relative;
     box-sizing: border-box;
-    border: 1px solid #ececec;
     height: 197px;
-}
-@media (max-width: 767px) {
-    .card__info {
-        border-top: none;
-    }
 }
 
 @media (min-width: 768px) {

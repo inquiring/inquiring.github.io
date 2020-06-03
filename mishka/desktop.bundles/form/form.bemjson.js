@@ -2,6 +2,7 @@ module.exports = {
     block: 'page',
     title: 'form',
     favicon: '/favicon.ico',
+    lang: 'ru',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
@@ -396,7 +397,9 @@ module.exports = {
                                         mix: { block: 'form', elem: 'control' },
                                         content: [
                                             {
+                                                tag: 'label',
                                                 block: 'text',
+                                                attrs: { for: 'firstName' },
                                                 mods: {
                                                     weight: 'bold'
                                                 },
@@ -404,6 +407,7 @@ module.exports = {
                                             },
                                             {
                                                 block : 'input',
+                                                id: 'firstName',
                                                 mods : { theme : 'i', size : 'xl', type : 'search', width: 'available' },
                                                 placeholder : 'Введите ваше имя*'
                                             },
@@ -430,6 +434,8 @@ module.exports = {
                                         mix: { block: 'form', elem: 'control' },
                                         content: [
                                             {
+                                                tag: 'label',
+                                                attrs: { for: 'lastName' },
                                                 block: 'text',
                                                 mods: {
                                                     weight: 'bold'
@@ -438,6 +444,7 @@ module.exports = {
                                             },
                                             {
                                                 block : 'input',
+                                                id: 'lastName',
                                                 mods: {
                                                     weight: 'bold'
                                                 },
@@ -467,6 +474,8 @@ module.exports = {
                                         mix: { block: 'form', elem: 'control' },
                                         content: [
                                             {
+                                                tag: 'label',
+                                                attrs: { for: 'secondName' },
                                                 block: 'text',
                                                 mods: {
                                                     weight: 'bold'
@@ -475,6 +484,7 @@ module.exports = {
                                             },
                                             {
                                                 block : 'input',
+                                                id: 'secondName',
                                                 mods: {
                                                     weight: 'bold'
                                                 },
@@ -494,6 +504,8 @@ module.exports = {
                                     content: [
                                         {
                                             block: 'pt-form', elem: 'label',
+                                            tag: 'label',
+                                            attrs: { for: 'phone'},
                                             mix: { block: 'form', elem: 'label' },
                                             content: {
                                                 block: 'text',
@@ -508,6 +520,7 @@ module.exports = {
                                                     {
                                                         block : 'input',
                                                         mods : { theme : 'i', size : 'xl', type : 'search', width: 'available' },
+                                                        id: 'phone',
                                                         placeholder : '+7 ХХХ ХХ ХХ*'
                                                     },
                                                 ]
@@ -525,6 +538,8 @@ module.exports = {
                                     content: [
                                         {
                                             block: 'pt-form', elem: 'label',
+                                            tag: 'label',
+                                            attrs: { for: 'email'},
                                             mix: { block: 'form', elem: 'label' },
                                             content: {
                                                 block: 'text',
@@ -539,6 +554,7 @@ module.exports = {
                                                     {
                                                         block : 'input',
                                                         mods : { theme : 'i', size : 'xl', type : 'search', width: 'available' },
+                                                        id: 'email',
                                                         placeholder : 'Ваш Email'
                                                     },
                                                 ]
@@ -554,6 +570,8 @@ module.exports = {
                                     {
                                         elem: 'label',
                                         mix: { block: 'form', elem: 'label' },
+                                        tag: 'label',
+                                        attrs: { for: 'additional' },
                                         content: {
                                             block: 'text',
                                             content: 'Доп'
@@ -564,7 +582,8 @@ module.exports = {
                                         content: {
                                             block : 'textarea',
                                             mods : { theme : 'i', size : 'l', width: 'available' },
-                                            attrs: { rows: 8 },
+                                            attrs:{ rows: 8, },
+                                            id: 'additional',
                                             placeholder : 'Ваш текст должен быть здесь'
                                         }
                                     },

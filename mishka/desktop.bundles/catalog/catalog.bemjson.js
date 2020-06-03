@@ -2,6 +2,7 @@ module.exports = {
     block: 'page',
     title: 'catalog',
     favicon: '/favicon.ico',
+    lang: 'ru',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
@@ -285,7 +286,7 @@ module.exports = {
                                                         tag: 'img',
                                                         elem: 'image',
                                                         attrs: {
-                                                            width: '290',
+                                                            width: '260',
                                                             height: '195',
                                                             src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
                                                             srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg 2x',
@@ -383,7 +384,7 @@ module.exports = {
                                                         tag: 'img',
                                                         elem: 'image',
                                                         attrs: {
-                                                            width: '290',
+                                                            width: '260',
                                                             height: '195',
                                                             src: '../../common.blocks/card/__image/photo-2-mobile@1x.jpg',
                                                             srcset: '../../common.blocks/card/__image/photo-2-mobile@2x.jpg 2x',
@@ -481,7 +482,7 @@ module.exports = {
                                                         tag: 'img',
                                                         elem: 'image',
                                                         attrs: {
-                                                            width: '290',
+                                                            width: '260',
                                                             height: '195',
                                                             src: '../../common.blocks/card/__image/photo-3-mobile@1x.jpg',
                                                             srcset: '../../common.blocks/card/__image/photo-3-mobile@2x.jpg 2x',
@@ -556,11 +557,11 @@ module.exports = {
                 },
                 {
                     block: 'section',
-                    mix: { block: 'video' },
+                    mix: [{ block: 'video' }, { block: 'catalog' }],
                     content: {
                         block: 'container',
                         content: {
-                            block: 'video', elem: 'inner',
+                            block: 'catalog', elem: 'inner',
                             content: {
                                 block: 'card', mods: { view: 'video' },
                                 content: [
@@ -588,7 +589,7 @@ module.exports = {
                                                     tag: 'img',
                                                     elem: 'image',
                                                     attrs: {
-                                                        width: '290',
+                                                        width: '260',
                                                         height: '150',
                                                         src: '../../common.blocks/card/__image/_view/video-mobile@1x.jpg',
                                                         srcset: '../../common.blocks/card/__image/_view/video-mobile@2x.jpg 2x',

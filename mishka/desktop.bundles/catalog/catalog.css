@@ -981,7 +981,7 @@ html {
 
 .card {
     min-height: 374px;
-    width: 100%;
+    border: 1px solid #ececec;
 }
 
 .card:hover {
@@ -996,7 +996,7 @@ html {
 
 @media (max-width: 767px) {
     .card {
-        max-width: 365px;
+        /* max-width: 365px; */
     }
 }
 
@@ -1039,7 +1039,8 @@ html {
 }
 
 .card__image {
-    height: 200px;
+    width: 260px;
+    height: 195px;
 }
 
 .card__image img,
@@ -1069,14 +1070,7 @@ html {
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border: 1px solid #ececec;
     height: 197px;
-}
-
-@media (max-width: 767px) {
-    .card__info {
-        border-top: none;
-    }
 }
 
 @media (min-width: 768px) {
@@ -1745,6 +1739,11 @@ html {
 
 .pt-icon-plus__icon_indent-r_m {
     margin-right: var(--space-m); /*DEPRECATED*/
+}
+
+.card__image_view_video {
+    width: 260px;
+    height: 150px;
 }
 
 @media (min-width: 768px) {

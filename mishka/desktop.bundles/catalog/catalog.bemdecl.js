@@ -625,14 +625,6 @@ exports.blocks = [
         "name": "video"
     },
     {
-        "name": "video",
-        "elems": [
-            {
-                "name": "inner"
-            }
-        ]
-    },
-    {
         "name": "card",
         "mods": [
             {

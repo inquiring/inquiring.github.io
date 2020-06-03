@@ -1,6 +1,6 @@
 .card {
     min-height: 374px;
-    width: 100%;
+    border: 1px solid #ececec;
 }
 .card:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
@@ -10,7 +10,7 @@
 }
 @media (max-width: 767px) {
     .card {
-        max-width: 365px;
+        /* max-width: 365px; */
     }
 }
 

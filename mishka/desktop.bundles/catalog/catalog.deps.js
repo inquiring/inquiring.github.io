@@ -489,10 +489,6 @@ exports.deps = [
         "block": "video"
     },
     {
-        "block": "video",
-        "elem": "inner"
-    },
-    {
         "block": "card",
         "mod": "view"
     },
