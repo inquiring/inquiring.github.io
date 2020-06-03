@@ -532,6 +532,28 @@ exports.blocks = [
         ]
     },
     {
+        "name": "pt-card"
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "content"
+            }
+        ]
+    },
+    {
+        "name": "image"
+    },
+    {
+        "name": "pt-card",
+        "elems": [
+            {
+                "name": "image"
+            }
+        ]
+    },
+    {
         "name": "card"
     },
     {

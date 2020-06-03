@@ -258,6 +258,25 @@ module.exports = {
                             block: 'catalog', elem: 'inner',
                             content: [
                                 {
+                                    block: 'pt-card',
+                                    content: [
+                                        {
+                                            elem: 'content',
+                                            content: {
+                                                block: 'image',
+                                                url: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
+                                                mix: {
+                                                    block: 'pt-card', elem: 'image',
+                                                },
+                                            }
+                                        },
+                                        {
+                                            elem: 'content',
+                                            content: {}
+                                        },
+                                    ]
+                                },
+                                {
                                     block: 'card',
                                     tag: 'a',
                                     attrs: { href: '#' },
@@ -283,11 +302,12 @@ module.exports = {
                                                     //     }
                                                     // },
                                                     {
-                                                        tag: 'img',
+                                                        block: 'image',
+                                                        url: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
                                                         attrs: {
                                                             width: '',
                                                             height: '',
-                                                            src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
+                                                            // src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
                                                             // srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg 2x',
                                                             alt: 'Зайчик-попрыгайчик',
                                                         }
