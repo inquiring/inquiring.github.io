@@ -979,26 +979,6 @@ html {
     }
 }
 
-.pt-card {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-}
-
-.pt-card__content {
-    position: relative;
-}
-
-.image {
-    border: 0;
-}
-
-.pt-card__image {
-    width: 100%;
-    position: relative;
-}
-
 .card {
     min-height: 374px;
     border: 1px solid #ececec;
@@ -1084,6 +1064,10 @@ html {
         width: 316px;
         height: 462px;
     }
+}
+
+.image {
+    border: 0;
 }
 
 .card__info {

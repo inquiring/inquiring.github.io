@@ -448,20 +448,6 @@ exports.deps = [
         "elem": "inner"
     },
     {
-        "block": "pt-card"
-    },
-    {
-        "block": "pt-card",
-        "elem": "content"
-    },
-    {
-        "block": "image"
-    },
-    {
-        "block": "pt-card",
-        "elem": "image"
-    },
-    {
         "block": "card"
     },
     {
@@ -471,6 +457,9 @@ exports.deps = [
     {
         "block": "card",
         "elem": "image"
+    },
+    {
+        "block": "image"
     },
     {
         "block": "card",
