@@ -259,8 +259,8 @@ module.exports = {
                             content: [
                                 {
                                     block: 'card',
-                                    tag: 'a',
-                                    attrs: { href: '#' },
+                                    // tag: 'a',
+                                    // attrs: { href: '#' },
                                     mix: { block: 'catalog', elem: 'card' },
                                     content: [
                                         {
