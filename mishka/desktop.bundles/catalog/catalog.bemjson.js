@@ -284,7 +284,6 @@ module.exports = {
                                                     // },
                                                     {
                                                         tag: 'img',
-                                                        elem: 'image',
                                                         attrs: {
                                                             width: '',
                                                             height: '',
