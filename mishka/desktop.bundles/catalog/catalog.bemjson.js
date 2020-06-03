@@ -272,25 +272,14 @@ module.exports = {
                                                         tag: 'source',
                                                         attrs: {
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x,../../common.blocks/card/__image@2x.jpg 2x'
-                                                        }
-                                                    },
-                                                    {
-                                                        tag: 'source',
-                                                        attrs: {
-                                                            type: 'image/jpeg',
-                                                            media:"(min-width: 1150px)",
                                                             srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg 2x'
-
                                                         }
                                                     },
                                                     {
                                                         tag: 'source',
                                                         attrs: {
-                                                            type: 'image/jpeg',
                                                             media:'(min-width: 768px)',
-                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg',
-
+                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-tablet@2x.jpg 2x'
                                                         }
                                                     },
                                                     {
@@ -300,10 +289,10 @@ module.exports = {
                                                             width: '',
                                                             height: '',
                                                             src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
-                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@2x.jpg 2x',
+                                                            srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg 2x',
                                                             alt: 'Зайчик-попрыгайчик',
                                                         }
-                                                    }
+                                                    },
                                                 ]
                                             },
                                         },
@@ -380,7 +369,6 @@ module.exports = {
                                                     {
                                                         tag: 'source',
                                                         attrs: {
-                                                            type: 'image/jpeg',
                                                             media:"(min-width: 1150px)",
                                                             srcset: '../../common.blocks/card/__image/photo-2-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-2-desktop@2x.jpg 2x'
                                                         }
@@ -388,7 +376,6 @@ module.exports = {
                                                     {
                                                         tag: 'source',
                                                         attrs: {
-                                                            type: 'image/jpeg',
                                                             media:'(min-width: 768px)',
                                                             srcset: '../../common.blocks/card/__image/photo-2-tablet@1x.jpg 1x, ../../common.blocks/card/__image/photo-2-tablet@2x.jpg 2x'
                                                         }
@@ -397,13 +384,13 @@ module.exports = {
                                                         tag: 'img',
                                                         elem: 'image',
                                                         attrs: {
-                                                            width: '260',
-                                                            height: '195',
+                                                            width: '',
+                                                            height: '',
                                                             src: '../../common.blocks/card/__image/photo-2-mobile@1x.jpg',
                                                             srcset: '../../common.blocks/card/__image/photo-2-mobile@2x.jpg 2x',
                                                             alt: 'Корзинка для белья',
                                                         }
-                                                    }
+                                                    },
                                                 ]
                                             },
                                         },
@@ -480,7 +467,6 @@ module.exports = {
                                                     {
                                                         tag: 'source',
                                                         attrs: {
-                                                            type: 'image/jpeg',
                                                             media:"(min-width: 1150px)",
                                                             srcset: '../../common.blocks/card/__image/photo-3-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-3-desktop@2x.jpg 2x'
                                                         }
@@ -488,7 +474,6 @@ module.exports = {
                                                     {
                                                         tag: 'source',
                                                         attrs: {
-                                                            type: 'image/jpeg',
                                                             media:'(min-width: 768px)',
                                                             srcset: '../../common.blocks/card/__image/photo-3-tablet@1x.jpg 1x, ../../common.blocks/card/__image/photo-3-tablet@2x.jpg 2x'
                                                         }
@@ -497,13 +482,13 @@ module.exports = {
                                                         tag: 'img',
                                                         elem: 'image',
                                                         attrs: {
-                                                            width: '260',
-                                                            height: '195',
+                                                            width: '',
+                                                            height: '',
                                                             src: '../../common.blocks/card/__image/photo-3-mobile@1x.jpg',
                                                             srcset: '../../common.blocks/card/__image/photo-3-mobile@2x.jpg 2x',
                                                             alt: 'Большая корзинка для игрушек',
                                                         }
-                                                    }
+                                                    },
                                                 ]
                                             },
                                         },
@@ -589,7 +574,6 @@ module.exports = {
                                                 {
                                                     tag: 'source',
                                                     attrs: {
-                                                        type: 'image/jpeg',
                                                         media:"(min-width: 1150px)",
                                                         srcset: '../../common.blocks/card/__image/_view/video-desktop@1x.jpg 1x, ../../common.blocks/card/__image/_view/video-desktop@2x.jpg 2x'
                                                     }
@@ -597,7 +581,6 @@ module.exports = {
                                                 {
                                                     tag: 'source',
                                                     attrs: {
-                                                        type: 'image/jpeg',
                                                         media:'(min-width: 768px)',
                                                         srcset: '../../common.blocks/card/__image/_view/video-tablet@1x.jpg 1x, ../../common.blocks/card/__image/_view/video-tablet@2x.jpg 2x'
                                                     }
@@ -606,13 +589,13 @@ module.exports = {
                                                     tag: 'img',
                                                     elem: 'image',
                                                     attrs: {
-                                                        width: '260',
-                                                        height: '150',
+                                                        width: '',
+                                                        height: '',
                                                         src: '../../common.blocks/card/__image/_view/video-mobile@1x.jpg',
                                                         srcset: '../../common.blocks/card/__image/_view/video-mobile@2x.jpg 2x',
                                                         alt: 'видео',
                                                     }
-                                                }
+                                                },
                                             ]
                                         },
                                     },
