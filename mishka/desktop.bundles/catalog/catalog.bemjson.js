@@ -272,9 +272,16 @@ module.exports = {
                                                         tag: 'source',
                                                         attrs: {
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg 2x'
+                                                            srcset: '../../common.blocks/week/triple-set-desktop@1x.jpg 1x, ../../common.blocks/week/triple-set-desktop@2x.jpg 2x'
                                                         }
                                                     },
+                                                    // {
+                                                    //     tag: 'source',
+                                                    //     attrs: {
+                                                    //         media:"(min-width: 1150px)",
+                                                    //         srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg 2x'
+                                                    //     }
+                                                    // },
                                                     {
                                                         tag: 'source',
                                                         attrs: {
