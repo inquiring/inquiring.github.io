@@ -272,21 +272,14 @@ module.exports = {
                                                         tag: 'source',
                                                         attrs: {
                                                             media:"(min-width: 1150px)",
-                                                            srcset: '../../common.blocks/week/triple-set-desktop@1x.jpg 1x, ../../common.blocks/week/triple-set-desktop@2x.jpg 2x'
+                                                            srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg'
                                                         }
                                                     },
-                                                    // {
-                                                    //     tag: 'source',
-                                                    //     attrs: {
-                                                    //         media:"(min-width: 1150px)",
-                                                    //         srcset: '../../common.blocks/card/__image/photo-1-desktop@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-desktop@2x.jpg 2x'
-                                                    //     }
-                                                    // },
                                                     {
                                                         tag: 'source',
                                                         attrs: {
-                                                            media:'(min-width: 768px)',
-                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg 1x, ../../common.blocks/card/__image/photo-1-tablet@2x.jpg 2x'
+                                                            media:"(min-width: 768px)",
+                                                            srcset: '../../common.blocks/card/__image/photo-1-tablet@1x.jpg, ../../common.blocks/card/__image/photo-1-tablet@2x.jpg'
                                                         }
                                                     },
                                                     {
@@ -296,7 +289,7 @@ module.exports = {
                                                             width: '',
                                                             height: '',
                                                             src: '../../common.blocks/card/__image/photo-1-mobile@1x.jpg',
-                                                            srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg 2x',
+                                                            srcset: '../../common.blocks/card/__image/photo-1-mobile@2x.jpg',
                                                             alt: 'Зайчик-попрыгайчик',
                                                         }
                                                     },
