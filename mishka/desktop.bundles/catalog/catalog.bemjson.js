@@ -8,7 +8,7 @@ module.exports = {
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
         { elem: 'css', url: 'catalog.min.css' }
     ],
-    scripts: [{ elem: 'js', url: 'catalog.min.js' }, { elem: 'js', url: '/common.blocks/my-menu/my-menu.js' }],
+    scripts: [{ elem: 'js', url: 'catalog.min.js' }, { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' }],
     mods: { theme: 'islands' },
     mix: {
 		block: 'theme',

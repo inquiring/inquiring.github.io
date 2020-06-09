@@ -11,8 +11,8 @@ module.exports = {
 
 
 	],
-	scripts: [{ elem: 'js', url: 'index.min.js' }, { elem: 'js', url: '/common.blocks/my-menu/my-menu.js' }],
-	mods: { theme: 'islands' },
+	scripts: [{ elem: 'js', url: 'index.min.js' }, { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' }],
+    mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
 		mods: { color: 'whitepaper-default', space: 'default', size: 'default', gap: 'small', menu: 'default', breakpoint: 'default', font: 'ibm' }
