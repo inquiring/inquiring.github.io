@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    .new-menu__icon_view_open,
+    .new-menu__button_view_open .new-menu__icon_view_close {
+        display: none;
+    }
+}

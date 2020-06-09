@@ -137,29 +137,24 @@ exports.blocks = [
         "name": "svg"
     },
     {
-        "name": "page",
-        "elems": [
-            {
-                "name": "header"
-            }
-        ]
-    },
-    {
-        "name": "new-menu"
+        "name": "header"
     },
     {
         "name": "logo"
     },
     {
-        "name": "logo",
-        "mods": [
+        "name": "header",
+        "elems": [
             {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "header"
-                    }
-                ]
+                "name": "logo"
+            }
+        ]
+    },
+    {
+        "name": "logo",
+        "elems": [
+            {
+                "name": "image"
             }
         ]
     },
@@ -170,10 +165,71 @@ exports.blocks = [
         "name": "icon",
         "mods": [
             {
-                "name": "view",
+                "name": "name",
                 "vals": [
                     {
-                        "name": "desktop"
+                        "name": "logo-desktop"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "name",
+                "vals": [
+                    {
+                        "name": "logo-tablet"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "icon",
+        "mods": [
+            {
+                "name": "name",
+                "vals": [
+                    {
+                        "name": "logo-mobile"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "new-menu"
+    },
+    {
+        "name": "header",
+        "elems": [
+            {
+                "name": "new-menu"
+            }
+        ]
+    },
+    {
+        "name": "button"
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "button"
+            }
+        ]
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "button",
+                "mods": [
+                    {
+                        "name": "view"
                     }
                 ]
             }
@@ -186,20 +242,7 @@ exports.blocks = [
                 "name": "view",
                 "vals": [
                     {
-                        "name": "tablet"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "icon",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "mobile"
+                        "name": "brand"
                     }
                 ]
             }
@@ -220,10 +263,10 @@ exports.blocks = [
                 "name": "icon",
                 "mods": [
                     {
-                        "name": "visible",
+                        "name": "view",
                         "vals": [
                             {
-                                "name": true
+                                "name": "open"
                             }
                         ]
                     }
@@ -232,13 +275,20 @@ exports.blocks = [
         ]
     },
     {
-        "name": "link"
-    },
-    {
         "name": "new-menu",
         "elems": [
             {
-                "name": "toggle"
+                "name": "icon",
+                "mods": [
+                    {
+                        "name": "view",
+                        "vals": [
+                            {
+                                "name": "close"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -250,6 +300,19 @@ exports.blocks = [
         "elems": [
             {
                 "name": "list"
+            }
+        ]
+    },
+    {
+        "name": "new-menu",
+        "elems": [
+            {
+                "name": "list",
+                "mods": [
+                    {
+                        "name": "view"
+                    }
+                ]
             }
         ]
     },
@@ -270,62 +333,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "text"
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "primary"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "weight",
-                "vals": [
-                    {
-                        "name": "bold"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    {
-                        "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "new-menu",
         "elems": [
             {
-                "name": "list",
-                "mods": [
-                    {
-                        "name": "view",
-                        "vals": [
-                            {
-                                "name": "users"
-                            }
-                        ]
-                    }
-                ]
+                "name": "link"
             }
         ]
     },
@@ -432,7 +443,7 @@ exports.blocks = [
         "name": "new-menu",
         "elems": [
             {
-                "name": "list",
+                "name": "item",
                 "mods": [
                     {
                         "name": "view",
@@ -450,28 +461,15 @@ exports.blocks = [
         "name": "new-menu",
         "elems": [
             {
-                "name": "item",
+                "name": "link",
                 "mods": [
                     {
                         "name": "view",
                         "vals": [
                             {
-                                "name": "new"
+                                "name": "inactive"
                             }
                         ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "secondary"
                     }
                 ]
             }
@@ -527,6 +525,9 @@ exports.blocks = [
                 ]
             }
         ]
+    },
+    {
+        "name": "text"
     },
     {
         "name": "section"
@@ -664,9 +665,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "button"
-    },
-    {
         "name": "button",
         "mods": [
             {
@@ -722,12 +720,28 @@ exports.blocks = [
         ]
     },
     {
+        "name": "btn",
+        "mods": [
+            {
+                "name": "text",
+                "vals": [
+                    {
+                        "name": "uppercase"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "week",
         "elems": [
             {
                 "name": "btn"
             }
         ]
+    },
+    {
+        "name": "link"
     },
     {
         "name": "modal"
@@ -874,14 +888,6 @@ exports.blocks = [
         "name": "feedback",
         "elems": [
             {
-                "name": "inner"
-            }
-        ]
-    },
-    {
-        "name": "feedback",
-        "elems": [
-            {
                 "name": "title"
             }
         ]
@@ -922,18 +928,44 @@ exports.blocks = [
         ]
     },
     {
-        "name": "controls",
-        "elems": [
+        "name": "btn",
+        "mods": [
             {
-                "name": "link"
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "controls"
+                    }
+                ]
             }
         ]
     },
     {
-        "name": "controls",
-        "elems": [
+        "name": "decorator"
+    },
+    {
+        "name": "decorator",
+        "mods": [
             {
-                "name": "icon"
+                "name": "space-v",
+                "vals": [
+                    {
+                        "name": "s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "space-h",
+                "vals": [
+                    {
+                        "name": "l"
+                    }
+                ]
             }
         ]
     },
@@ -1105,6 +1137,32 @@ exports.blocks = [
         "elems": [
             {
                 "name": "item"
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "size",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "weight",
+                "vals": [
+                    {
+                        "name": "bold"
+                    }
+                ]
             }
         ]
     },

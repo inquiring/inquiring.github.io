@@ -1,0 +1,19 @@
+.header__logo {
+
+    }
+@media (max-width: 767px) {
+    .header__logo {
+
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) {
+    .header__logo {
+        height: 82px;
+    }
+}
+@media (min-width: 1150px) {
+    .header__logo {
+        justify-content: center;
+    }
+}

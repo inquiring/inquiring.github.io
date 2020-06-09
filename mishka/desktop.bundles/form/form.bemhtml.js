@@ -2300,10 +2300,10 @@ if (typeof Object.create === 'function') {
 });;
 return module.exports || exports.BEMHTML;
 }({}, {});
-var api = new BEMHTML({"elemJsInstances":true,"exportName":"BEMHTML","sourceMap":{"from":"form.bemhtml.js"},"to":"/Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper"});
+var api = new BEMHTML({"elemJsInstances":true,"exportName":"BEMHTML","sourceMap":{"from":"form.bemhtml.js"},"to":"/Users/AS/Documents/mishka-whitepaper"});
 api.compile(function(match, block, elem, mod, elemMod, oninit, xjstOptions, wrap, replace, extend, mode, def, content, appendContent, prependContent, attrs, addAttrs, js, addJs, mix, addMix, mods, addMods, addElemMods, elemMods, tag, cls, bem, local, applyCtx, applyNext, apply) {
 /* BEM-XJST User code here: */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
 block('page')(
 
     mode('doctype')(function() {
@@ -2379,8 +2379,8 @@ block('page')(
 
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
 block('ua')(
     tag()('script'),
     bem()(false),
@@ -2391,8 +2391,8 @@ block('ua')(
     ])
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/ua.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
 block('page').elem('css')(
     bem()(false),
     tag()('style'),
@@ -2404,8 +2404,8 @@ block('page').elem('css')(
     )
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__css/page__css.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
 block('page').elem('js')(
     bem()(false),
     tag()('script'),
@@ -2421,8 +2421,8 @@ block('page').elem('js')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/page/__js/page__js.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
 block('ua').content()(function() {
     return [
         applyNext(),
@@ -2437,22 +2437,15 @@ block('ua').content()(function() {
     ];
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page/__header/page__header.bemhtml.js */
-block('page').elem('header')(
-
-    tag()('header')
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page/__header/page__header.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/logo/logo.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-core/common.blocks/ua/__svg/ua__svg.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/logo/logo.bemhtml.js */
 block('logo')({
     tag: 'a',
     attrs: { href: '../index/index.html' }
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/logo/logo.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/icon/icon.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/logo/logo.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/icon/icon.bemhtml.js */
 block('icon')(
     tag()('span'),
     addAttrs()(function() {
@@ -2463,181 +2456,8 @@ block('icon')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/icon/icon.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/link/link.bemhtml.js */
-block('link')(
-    def()(function() {
-        var ctx = this.ctx;
-        typeof ctx.url === 'object' && // url could contain bemjson
-            (ctx.url = this.reapply(ctx.url));
-        return applyNext();
-    }),
-
-    tag()('a'),
-
-    addJs()(true),
-
-    // NOTE: mix below is to satisfy interface of `control`
-    addMix()([{ elem : 'control' }]),
-
-    addAttrs()(function() {
-        var ctx = this.ctx,
-            attrs = { role : 'link' },
-            tabIndex;
-
-        if(!this.mods.disabled) {
-            if(ctx.url) {
-                attrs.href = ctx.url;
-                tabIndex = ctx.tabIndex;
-            } else {
-                tabIndex = ctx.tabIndex || 0;
-            }
-        } else {
-            attrs['aria-disabled'] = 'true';
-        }
-
-        typeof tabIndex === 'undefined' || (attrs.tabindex = tabIndex);
-
-        ctx.title && (attrs.title = ctx.title);
-        ctx.target && (attrs.target = ctx.target);
-
-        return attrs;
-    }),
-
-    mod('disabled', true)
-        .js()(function() {
-            return this.extend(applyNext(), { url : this.ctx.url });
-        })
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/link/link.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/pt-list/pt-list.bemhtml.js */
-block('pt-list')({
-    tag: 'ul'
-});
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/pt-list/pt-list.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
-block('pt-list').elem('item')({
-    tag: 'li'
-});
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page/__main/page__main.bemhtml.js */
-block('page').elem('main')(
-
-    tag()('main')
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page/__main/page__main.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/section/section.bemhtml.js */
-block('section')(
-    tag()('section')
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/section/section.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio-group/radio-group.bemhtml.js */
-block('radio-group')(
-    tag()('span'),
-
-    addAttrs()({ role : 'radiogroup' }),
-
-    addJs()(true),
-
-    addMix()([{ block : 'control-group' }]),
-
-    content()(function() {
-        var mods = this.mods,
-            ctx = this.ctx,
-            isValDef = typeof ctx.val !== 'undefined';
-
-        return (ctx.options || []).map(function(option, i) {
-            return [
-                !!i && !mods.type && { tag : 'br' },
-                {
-                    block : 'radio',
-                    mods : {
-                        type : mods.type,
-                        mode : mods.mode,
-                        theme : mods.theme,
-                        size : mods.size,
-                        checked : isValDef && ctx.val === option.val,
-                        disabled : option.disabled || mods.disabled
-                    },
-                    name : ctx.name,
-                    val : option.val,
-                    text : option.text,
-                    title : option.title,
-                    icon : option.icon
-                }
-            ];
-        });
-    })
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio-group/radio-group.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/radio.bemhtml.js */
-block('radio')(
-    tag()('label'),
-    addJs()(true),
-    content()(function() {
-        var ctx = this.ctx;
-        return [
-            {
-                elem : 'box',
-                content : {
-                    elem : 'control',
-                    checked : this.mods.checked,
-                    disabled : this.mods.disabled,
-                    name : ctx.name,
-                    val : ctx.val
-                }
-            },
-            ctx.text && {
-                elem : 'text',
-                content : ctx.text
-            }
-        ];
-    })
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/radio.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__box/radio__box.bemhtml.js */
-block('radio').elem('box').tag()('span');
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__box/radio__box.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__control/radio__control.bemhtml.js */
-block('radio').elem('control')(
-    tag()('input'),
-
-    addAttrs()(function() {
-        // NOTE: don't remove autocomplete attribute, otherwise js and DOM may be desynced
-        var ctx = this.ctx,
-            attrs = {
-                type : 'radio',
-                autocomplete : 'off',
-                name : ctx.name,
-                value : ctx.val
-            };
-
-        ctx.checked && (attrs.checked = 'checked');
-        ctx.disabled && (attrs.disabled = 'disabled');
-
-        return attrs;
-    })
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__control/radio__control.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__text/radio__text.bemhtml.js */
-block('radio').elem('text')(
-    tag()('span'),
-    addAttrs()(function() {
-        return { role : 'presentation' };
-    })
-);
-
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__text/radio__text.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/button.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/icon/icon.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/button.bemhtml.js */
 block('button')(
     def()(function() {
         var tag = apply('tag'),
@@ -2703,18 +2523,150 @@ block('button')(
     )
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/button.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_focused/button_focused.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/button.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_focused/button_focused.bemhtml.js */
 block('button').mod('focused', true).js()(function() {
     return this.extend(applyNext(), { lazyInit : false });
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_focused/button_focused.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/__text/button__text.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_focused/button_focused.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/__text/button__text.bemhtml.js */
 block('button').elem('text').tag()('span');
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/__text/button__text.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox-group/checkbox-group.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/__text/button__text.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/pt-list/pt-list.bemhtml.js */
+block('pt-list')({
+    tag: 'ul'
+});
+
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/pt-list/pt-list.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
+block('pt-list').elem('item')({
+    tag: 'li'
+});
+
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/pt-list/__item/pt-list__item.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/new-menu/__link/new-menu__link.bemhtml.js */
+block('new-menu').elem('link')(
+    tag()('a')
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/new-menu/__link/new-menu__link.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/page/__main/page__main.bemhtml.js */
+block('page').elem('main')(
+
+    tag()('main')
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/page/__main/page__main.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/section/section.bemhtml.js */
+block('section')(
+    tag()('section')
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/section/section.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio-group/radio-group.bemhtml.js */
+block('radio-group')(
+    tag()('span'),
+
+    addAttrs()({ role : 'radiogroup' }),
+
+    addJs()(true),
+
+    addMix()([{ block : 'control-group' }]),
+
+    content()(function() {
+        var mods = this.mods,
+            ctx = this.ctx,
+            isValDef = typeof ctx.val !== 'undefined';
+
+        return (ctx.options || []).map(function(option, i) {
+            return [
+                !!i && !mods.type && { tag : 'br' },
+                {
+                    block : 'radio',
+                    mods : {
+                        type : mods.type,
+                        mode : mods.mode,
+                        theme : mods.theme,
+                        size : mods.size,
+                        checked : isValDef && ctx.val === option.val,
+                        disabled : option.disabled || mods.disabled
+                    },
+                    name : ctx.name,
+                    val : option.val,
+                    text : option.text,
+                    title : option.title,
+                    icon : option.icon
+                }
+            ];
+        });
+    })
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio-group/radio-group.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/radio.bemhtml.js */
+block('radio')(
+    tag()('label'),
+    addJs()(true),
+    content()(function() {
+        var ctx = this.ctx;
+        return [
+            {
+                elem : 'box',
+                content : {
+                    elem : 'control',
+                    checked : this.mods.checked,
+                    disabled : this.mods.disabled,
+                    name : ctx.name,
+                    val : ctx.val
+                }
+            },
+            ctx.text && {
+                elem : 'text',
+                content : ctx.text
+            }
+        ];
+    })
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/radio.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__box/radio__box.bemhtml.js */
+block('radio').elem('box').tag()('span');
+
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__box/radio__box.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__control/radio__control.bemhtml.js */
+block('radio').elem('control')(
+    tag()('input'),
+
+    addAttrs()(function() {
+        // NOTE: don't remove autocomplete attribute, otherwise js and DOM may be desynced
+        var ctx = this.ctx,
+            attrs = {
+                type : 'radio',
+                autocomplete : 'off',
+                name : ctx.name,
+                value : ctx.val
+            };
+
+        ctx.checked && (attrs.checked = 'checked');
+        ctx.disabled && (attrs.disabled = 'disabled');
+
+        return attrs;
+    })
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__control/radio__control.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__text/radio__text.bemhtml.js */
+block('radio').elem('text')(
+    tag()('span'),
+    addAttrs()(function() {
+        return { role : 'presentation' };
+    })
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/radio/__text/radio__text.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox-group/checkbox-group.bemhtml.js */
 block('checkbox-group')(
     tag()('span'),
 
@@ -2755,8 +2707,8 @@ block('checkbox-group')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox-group/checkbox-group.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/checkbox.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox-group/checkbox-group.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/checkbox.bemhtml.js */
 block('checkbox')(
     tag()('label'),
 
@@ -2785,12 +2737,12 @@ block('checkbox')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/checkbox.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__box/checkbox__box.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/checkbox.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__box/checkbox__box.bemhtml.js */
 block('checkbox').elem('box').tag()('span');
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__box/checkbox__box.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__control/checkbox__control.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__box/checkbox__box.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__control/checkbox__control.bemhtml.js */
 block('checkbox').elem('control')(
     tag()('input'),
 
@@ -2811,22 +2763,22 @@ block('checkbox').elem('control')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__control/checkbox__control.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__text/checkbox__text.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__control/checkbox__control.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__text/checkbox__text.bemhtml.js */
 block('checkbox').elem('text')(
     tag()('span'),
     addAttrs()({ role : 'presentation' })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__text/checkbox__text.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_check.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/checkbox/__text/checkbox__text.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_check.bemhtml.js */
 block('button').mod('togglable', 'check').addAttrs()(function() {
     return this.extend({ 'aria-pressed' : String(!!this.mods.checked) },
         applyNext());
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_check.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/input.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_check.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/input.bemhtml.js */
 block('input')(
     tag()('span'),
     addJs()(true),
@@ -2836,12 +2788,12 @@ block('input')(
     content()({ elem : 'box', content : { elem : 'control' } })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/input.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__box/input__box.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/input.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__box/input__box.bemhtml.js */
 block('input').elem('box').tag()('span');
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__box/input__box.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__control/input__control.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__box/input__box.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__control/input__control.bemhtml.js */
 block('input').elem('control')(
     tag()('input'),
 
@@ -2863,18 +2815,18 @@ block('input').elem('control')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__control/input__control.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/_type/input_type_search.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/__control/input__control.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/_type/input_type_search.bemhtml.js */
 block('input').mod('type', 'search').elem('control').attrs()(function() {
     return this.extend(applyNext(), { type : 'search' });
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/_type/input_type_search.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/control-group/control-group.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/input/_type/input_type_search.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/control-group/control-group.bemhtml.js */
 block('control-group').addAttrs()({ role : 'group' });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/control-group/control-group.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/textarea/textarea.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/control-group/control-group.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/textarea/textarea.bemhtml.js */
 block('textarea')(
     addJs()(true),
     tag()('textarea'),
@@ -2901,25 +2853,72 @@ block('textarea')(
     })
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/textarea/textarea.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page/__footer/page__footer.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/textarea/textarea.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/page/__footer/page__footer.bemhtml.js */
 block('page').elem('footer')(
     tag()('footer')
 );
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page/__footer/page__footer.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page-footer/page-footer.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/page/__footer/page__footer.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/common.blocks/page-footer/page-footer.bemhtml.js */
 block('page-footer').content()(function() {
     return;
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/common.blocks/page-footer/page-footer.bemhtml.js */
-/* begin: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_radio.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/common.blocks/page-footer/page-footer.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/link/link.bemhtml.js */
+block('link')(
+    def()(function() {
+        var ctx = this.ctx;
+        typeof ctx.url === 'object' && // url could contain bemjson
+            (ctx.url = this.reapply(ctx.url));
+        return applyNext();
+    }),
+
+    tag()('a'),
+
+    addJs()(true),
+
+    // NOTE: mix below is to satisfy interface of `control`
+    addMix()([{ elem : 'control' }]),
+
+    addAttrs()(function() {
+        var ctx = this.ctx,
+            attrs = { role : 'link' },
+            tabIndex;
+
+        if(!this.mods.disabled) {
+            if(ctx.url) {
+                attrs.href = ctx.url;
+                tabIndex = ctx.tabIndex;
+            } else {
+                tabIndex = ctx.tabIndex || 0;
+            }
+        } else {
+            attrs['aria-disabled'] = 'true';
+        }
+
+        typeof tabIndex === 'undefined' || (attrs.tabindex = tabIndex);
+
+        ctx.title && (attrs.title = ctx.title);
+        ctx.target && (attrs.target = ctx.target);
+
+        return attrs;
+    }),
+
+    mod('disabled', true)
+        .js()(function() {
+            return this.extend(applyNext(), { url : this.ctx.url });
+        })
+);
+
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/link/link.bemhtml.js */
+/* begin: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_radio.bemhtml.js */
 block('button').mod('togglable', 'radio').addAttrs()(function() {
     return { 'aria-pressed' : String(!!this.mods.checked) };
 });
 
-/* end: /Users/AS/Desktop/mishka-whitepaper/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_radio.bemhtml.js */
+/* end: /Users/AS/Documents/mishka-whitepaper/node_modules/bem-components-custom/common.blocks/button/_togglable/button_togglable_radio.bemhtml.js */
 
 ;oninit(function(exports, context) {
 var BEMContext = exports.BEMContext || context.BEMContext;
@@ -2954,4 +2953,4 @@ exp["BEMHTML"] = BEMHTML;exp["BEMHTML"].libs = glob;
 }
 }
 })(typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : this);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvcm0uYmVtaHRtbC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6ImZvcm0uYmVtaHRtbC5qcyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvcm0uYmVtaHRtbC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiJmb3JtLmJlbWh0bWwuanMifQ==

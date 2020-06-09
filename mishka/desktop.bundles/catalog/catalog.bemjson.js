@@ -8,7 +8,7 @@ module.exports = {
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
         { elem: 'css', url: 'catalog.min.css' }
     ],
-    scripts: [{ elem: 'js', url: 'catalog.min.js' }],
+    scripts: [{ elem: 'js', url: 'catalog.min.js' }, { elem: 'js', url: '/common.blocks/my-menu/my-menu.js' }],
     mods: { theme: 'islands' },
     mix: {
 		block: 'theme',
@@ -22,211 +22,167 @@ module.exports = {
            }
         },
 		{
-            elem: 'header',
-            content: {
-                block: 'new-menu',
-                js: true,
-                content: [
-                    {
-                        block: 'logo', mods: { view: 'header' },
-                        content: [
-                            {
-                                block: 'icon', mods: { view: 'desktop' },
-                                content: {
-                                    html: '<svg class="" width="150" height="100"><use xlink:href="#logo-desktop"></use></svg>'
+            block: 'header',
+            content: [
+                {
+                    block: 'logo',
+                    mix: { block: 'header', elem: 'logo' },
+                    content: [
+                        {
+                            elem: 'image',
+                            content: [
+                                {
+                                    block: 'icon', mods: { name: 'logo-desktop' },
+                                    content: {
+                                        html: '<svg width="150" height="100"><use xlink:href="#logo-desktop"></use></svg>'
+                                    }
                                 },
-                            },
-                            {
-                                block: 'icon', mods: { view: 'tablet' },
-                                content: {
-                                    html: '<svg class="" width="114" height="74"><use xlink:href="#logo-tablet"></use></svg>'
+                                {
+                                    block: 'icon', mods: { name: 'logo-tablet' },
+                                    content: {
+                                        html: '<svg width="114" height="50"><use xlink:href="#logo-tablet"></use></svg>'
+                                    }
                                 },
-                            },
-                            {
-                                block: 'icon', mods: { view: 'mobile' },
-                                content: {
-                                    html: '<svg class="" width="86" height="35"><use xlink:href="#logo-mobile"></use></svg>'
-                                }
-                            },
-                            {
-                                block: 'new-menu',
-                                elem: 'icon',
-                                elemMods: { 'visible': true },
-                                js: true,
-                                content: {
-                                    html: '<svg class="icon" width="24" height="24"><use xlink:href="#icon-menu-close"></use></svg>'
+                                {
+                                    block: 'icon', mods: { name: 'logo-mobile' },
+                                    content: {
+                                        html: '<svg width="86" height="35"><use xlink:href="#logo-mobile"></use></svg>'
+                                    }
                                 },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block: 'new-menu',
+                    mix: [{ block: 'header', elem: 'new-menu' }],
+                    js: true,
+                    content: [
+                        {
+                            block: 'button',
+                            mix: { block: 'new-menu', elem: 'button', elemMods: { view: ''} },
+                            attrs: {
+                                'aria-expanded': 'true',
+                                'aria-controls': 'new-menu__list'
                             },
-                            {
-                                block: 'new-menu',
-                                elem: 'icon',
-                                js: true,
-                                content: {
-                                    html: '<svg class="icon" width="24" height="24"><use xlink:href="#icon-menu-open"></use></svg>'
-                                },
-                            },
-                            {
-                                block: 'link', js: true,
-                                mix: { block: 'new-menu', elem: 'toggle'},
-                            },
-                        ]
-                    },
-                    {
-                        block: 'pt-list',
-                        mix: { block: 'new-menu', elem: 'list' },
-                        content: [
-                            {
-                                elem: 'item',
-                                mix: { block: 'new-menu', elem: 'item' },
-                                content: {
-                                    tag: 'a',
-                                    attrs: { href: '../catalog/catalog.html' },
-                                    block: 'text',
-                                    mods: {
-                                        view: 'primary',
-                                        weight: 'bold',
-                                        size: 'm'
+                            content: [
+                                {
+                                    block: 'icon', mods: { view: 'brand'},
+                                    mix: {block: 'new-menu', elem: 'icon', elemMods: { view: 'open'},},
+                                    attrs: {'aria-hidden': 'true',},
+                                    content: {
+                                        html: '<svg  width="24" height="24"><use xlink:href="#icon-menu-open"></use></svg>'
                                     },
-                                    content: 'Каталог товаров'
-                                }
-                            },
-                            {
-                                elem: 'item',
-                                mix: { block: 'new-menu', elem: 'item' },
-                                content: {
-                                    tag: 'a',
-                                    attrs: { href: '../form/form.html' },
-                                    block: 'text',
-                                    mods: {
-                                        view: 'primary',
-                                        weight: 'bold',
-                                        size: 'm'
+                                },
+                                {
+                                    block: 'icon', mods: { view: 'brand'},
+                                    mix: {block: 'new-menu', elem: 'icon', elemMods: { view: 'close'},},
+                                    attrs: {'aria-hidden': 'true'},
+                                    content: {
+                                        html: '<svg  width="24" height="24"><use class="new-menu__icon_view_close" xlink:href="#icon-menu-close"></use></svg>'
                                     },
-                                    content: 'Вязание на заказ'
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        block: 'pt-list',
-                        mix: { block: 'new-menu', elem: 'list', elemMods: { view: 'users'} },
-                        content: [
-                            {
-                                elem: 'item',
-                                mix: [
-                                    { block: 'new-menu', elem: 'item', elemMods: { view: 'search' }},
-                                ],
-                                content: {
-                                    tag: 'a',
-                                    attrs: { href: '#' },
-                                    block: 'pt-icon-plus', mods: { distribute: 'center', 'vertical-align': 'center' },
-                                    content: [
-                                        {
-                                            block: 'pt-icon-plus', elem: 'icon',
-                                            elemMods: { 'indent-r': 'm' },
-                                            content: {
-                                                html: '<svg class="" width="20" height="17"><use xlink:href="#icon-search"></use></svg>'
-                                            }
-                                        },
-                                        {
-                                            block: 'pt-icon-plus', elem: 'block',
-                                            content: {
-                                                block: 'text',
-                                                mods: {
-                                                    view: 'primary',
-                                                    weight: 'bold',
-                                                    size: 'm'
-                                                },
+                                },
+
+                            ]
+                        },
+                        {
+                            block: 'pt-list',
+                            mix: { block: 'new-menu', elem: 'list', elemMods: { view: '' }},
+                            attrs: { id: 'new-menu__list'},
+                            content: [
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item' },
+                                    content: {
+                                        block: 'new-menu', elem: 'link',
+                                        attrs: { href: '#' },
+                                        content: 'Каталог товаров'
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item' },
+                                    content: {
+                                        block: 'new-menu', elem: 'link',
+                                        attrs: { href: '../form/form.html' },
+                                        content: 'Вязание на заказ'
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'search' }},
+                                    content: {
+                                        block: 'pt-icon-plus', mods: { distribute: 'center', 'vertical-align': 'center' },
+                                        mix: { block: 'new-menu', elem: 'link' },
+                                        content: [
+                                            {
+                                                block: 'pt-icon-plus', elem: 'icon',
+                                                elemMods: { 'indent-r': 'm' },
+                                                mix: {block: 'icon', mods: { view: 'brand'}},
+                                                content: {
+                                                    html: '<svg class="" width="20" height="17"><use xlink:href="#icon-search"></use></svg>'
+                                                }
+                                            },
+                                            {
+                                                block: 'pt-icon-plus', elem: 'block',
                                                 content: 'Поиск по сайту'
                                             }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                elem: 'item',
-                                mix: [
-                                    { block: 'new-menu', elem: 'item', elemMods: { view: 'basket' }},
-                                ],
-                                content: {
-                                    tag: 'a',
-                                    attrs: { href: '#' },
-                                    block: 'pt-icon-plus', mods: { distribute: 'center', 'vertical-align': 'center' },
-                                    content: [
-                                        {
-                                            block: 'pt-icon-plus', elem: 'icon',
-                                            elemMods: { 'indent-r': 'm' },
-                                            content: {
-                                                html: '<svg class="" width="20" height="17"><use xlink:href="#icon-cart"></use></svg>'
-                                            }
-                                        },
-                                        {
-                                            block: 'pt-icon-plus', elem: 'block',
-                                            content: {
-                                                block: 'text',
-                                                mods: {
-                                                    view: 'primary',
-                                                    weight: 'bold',
-                                                    size: 'm'
-                                                },
+                                        ]
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'basket' }},
+                                    content: {
+                                        block: 'pt-icon-plus', mods: { distribute: 'center', 'vertical-align': 'center' },
+                                        mix: { block: 'new-menu', elem: 'link' },
+                                        content: [
+                                            {
+                                                block: 'pt-icon-plus', elem: 'icon',
+                                                elemMods: { 'indent-r': 'm' },
+                                                mix: {block: 'icon', mods: { view: 'brand'}},
+                                                content: {
+                                                    html: '<svg class="" width="20" height="17"><use xlink:href="#icon-cart"></use></svg>'
+                                                }
+                                            },
+                                            {
+                                                block: 'pt-icon-plus', elem: 'block',
                                                 content: 'Корзина: пока пуста'
                                             }
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        block: 'pt-list',
-                        mix: { block: 'new-menu', elem: 'list', elemMods: { view: 'new'} },
-                        content: [
-                            {
-                                elem: 'item',
-                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'new'} },
-                                content: [
-                                    {
-                                        block: 'text',
-                                        mods: {
-                                            view: 'primary',
-                                            size: 'm'
-                                        },
+                                        ]
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'new'} },
+                                    content: {
+                                        block: 'new-menu', elem: 'link',
+                                        attrs: { href: '#'},
                                         content: 'Новые поступления'
                                     }
-                                ]
-                            },
-                            {
-                                elem: 'item',
-                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'new'} },
-                                content: [
-                                    {
-                                        block: 'text',
-                                        mods: {
-                                            view: 'primary',
-                                            size: 'm'
-                                        },
+                                },
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'new'} },
+                                    content: {
+                                        block: 'new-menu', elem: 'link',
+                                        attrs: { href: '#'},
                                         content: 'Распродажа'
                                     }
-                                ]
-                            },
-                            {
-                                elem: 'item',
-                                mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'new'} },
-                                content: [
-                                    {
-                                        block: 'text',
-                                        mods: {
-                                            view: 'secondary',
-                                            size: 'm'
-                                        },
+                                },
+                                {
+                                    elem: 'item',
+                                    mix: { block: 'new-menu', elem: 'item', elemMods: { view: 'new'} },
+                                    content: {
+                                        block: 'new-menu', elem: 'link', elemMods: { view: 'inactive'},
                                         content: 'Бесплатная доставка по России'
                                     }
-                                ]
-                            },
-                        ]
-                    },
-                ]
-            }
+                                },
+                            ]
+                        },
+                    ]
+                }
+            ]
         },
         {
             elem: 'main',

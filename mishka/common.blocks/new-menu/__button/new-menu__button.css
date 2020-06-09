@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+
+    .new-menu__button {
+        display: block;
+        margin: 21px 26px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        justify-self: end;
+        z-index: 1;
+    }
+}
+@media (min-width: 768px) {
+    .new-menu__button {
+        display: none;
+    }
+}

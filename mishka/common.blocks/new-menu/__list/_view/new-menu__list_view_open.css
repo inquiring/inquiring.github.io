@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+    .new-menu__list_view_open {
+        display: grid;
+    }
+}

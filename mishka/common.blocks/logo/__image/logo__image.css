@@ -1,17 +1,5 @@
 .logo__image {
-    width: 86px;
-    height: auto;
-    padding: 13px 0;
-}
-@media (min-width: 768px) {
-    .logo__image {
-        width: 114px;
-    }
-}
-
-@media (min-width: 1150px) {
-    .logo__image {
-        width: 150px;
-        vertical-align: middle;
-    }
+    display: inline-block;
+    align-self: center;
+    z-index: 1000;
 }

@@ -177,48 +177,70 @@ exports.deps = [
         "block": "svg"
     },
     {
-        "block": "page",
-        "elem": "header"
+        "block": "header"
+    },
+    {
+        "block": "logo"
+    },
+    {
+        "block": "header",
+        "elem": "logo"
+    },
+    {
+        "block": "logo",
+        "elem": "image"
+    },
+    {
+        "block": "icon"
+    },
+    {
+        "block": "icon",
+        "mod": "name"
+    },
+    {
+        "block": "icon",
+        "mod": "name",
+        "val": "logo-desktop"
+    },
+    {
+        "block": "icon",
+        "mod": "name",
+        "val": "logo-tablet"
+    },
+    {
+        "block": "icon",
+        "mod": "name",
+        "val": "logo-mobile"
     },
     {
         "block": "new-menu"
     },
     {
-        "block": "new-menu",
-        "mod": "0"
+        "block": "header",
+        "elem": "new-menu"
     },
     {
-        "block": "new-menu",
-        "mod": "1"
+        "block": "button"
     },
     {
-        "block": "new-menu",
-        "mod": "2"
+        "block": "button",
+        "mod": "focused"
     },
     {
-        "block": "new-menu",
-        "mod": "3"
+        "block": "button",
+        "mod": "hovered"
     },
     {
-        "block": "new-menu",
-        "mod": "4"
-    },
-    {
-        "block": "new-menu",
-        "mod": "5"
-    },
-    {
-        "block": "new-menu",
-        "mod": "6"
-    },
-    {
-        "block": "new-menu",
-        "elem": "icon"
-    },
-    {
-        "block": "new-menu",
-        "elem": "icon",
+        "block": "button",
         "mod": "disabled"
+    },
+    {
+        "block": "button",
+        "mod": "pressed"
+    },
+    {
+        "block": "button",
+        "elem": "text"
     },
     {
         "block": "jquery",
@@ -249,22 +271,13 @@ exports.deps = [
         "block": "control"
     },
     {
-        "block": "hidden"
+        "block": "new-menu",
+        "elem": "button"
     },
     {
-        "block": "logo"
-    },
-    {
-        "block": "logo",
+        "block": "new-menu",
+        "elem": "button",
         "mod": "view"
-    },
-    {
-        "block": "logo",
-        "mod": "view",
-        "val": "header"
-    },
-    {
-        "block": "icon"
     },
     {
         "block": "icon",
@@ -273,33 +286,22 @@ exports.deps = [
     {
         "block": "icon",
         "mod": "view",
-        "val": "desktop"
+        "val": "brand"
     },
     {
-        "block": "icon",
-        "mod": "view",
-        "val": "tablet"
-    },
-    {
-        "block": "icon",
-        "mod": "view",
-        "val": "mobile"
+        "block": "new-menu",
+        "elem": "icon"
     },
     {
         "block": "new-menu",
         "elem": "icon",
-        "mod": "visible"
-    },
-    {
-        "block": "link"
-    },
-    {
-        "block": "link",
-        "mod": "disabled"
+        "mod": "view"
     },
     {
         "block": "new-menu",
-        "elem": "toggle"
+        "elem": "icon",
+        "mod": "view",
+        "val": "close"
     },
     {
         "block": "pt-list"
@@ -307,6 +309,11 @@ exports.deps = [
     {
         "block": "new-menu",
         "elem": "list"
+    },
+    {
+        "block": "new-menu",
+        "elem": "list",
+        "mod": "view"
     },
     {
         "block": "pt-list",
@@ -317,39 +324,8 @@ exports.deps = [
         "elem": "item"
     },
     {
-        "block": "text"
-    },
-    {
-        "block": "text",
-        "mod": "view"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "primary"
-    },
-    {
-        "block": "text",
-        "mod": "weight"
-    },
-    {
-        "block": "text",
-        "mod": "weight",
-        "val": "bold"
-    },
-    {
-        "block": "text",
-        "mod": "size"
-    },
-    {
-        "block": "text",
-        "mod": "size",
-        "val": "m"
-    },
-    {
         "block": "new-menu",
-        "elem": "list",
-        "mod": "view"
+        "elem": "link"
     },
     {
         "block": "new-menu",
@@ -398,20 +374,14 @@ exports.deps = [
     },
     {
         "block": "new-menu",
-        "elem": "list",
-        "mod": "view",
-        "val": "new"
-    },
-    {
-        "block": "new-menu",
         "elem": "item",
         "mod": "view",
         "val": "new"
     },
     {
-        "block": "text",
-        "mod": "view",
-        "val": "secondary"
+        "block": "new-menu",
+        "elem": "link",
+        "mod": "view"
     },
     {
         "block": "page",
@@ -439,6 +409,9 @@ exports.deps = [
         "block": "pt-icon-plus",
         "mod": "distribute",
         "val": "between"
+    },
+    {
+        "block": "text"
     },
     {
         "block": "section"
@@ -520,29 +493,6 @@ exports.deps = [
         "elem": "price"
     },
     {
-        "block": "button"
-    },
-    {
-        "block": "button",
-        "mod": "focused"
-    },
-    {
-        "block": "button",
-        "mod": "hovered"
-    },
-    {
-        "block": "button",
-        "mod": "disabled"
-    },
-    {
-        "block": "button",
-        "mod": "pressed"
-    },
-    {
-        "block": "button",
-        "elem": "text"
-    },
-    {
         "block": "button",
         "mod": "theme"
     },
@@ -582,8 +532,24 @@ exports.deps = [
         "val": "week"
     },
     {
+        "block": "btn",
+        "mod": "text"
+    },
+    {
+        "block": "btn",
+        "mod": "text",
+        "val": "uppercase"
+    },
+    {
         "block": "week",
         "elem": "btn"
+    },
+    {
+        "block": "link"
+    },
+    {
+        "block": "link",
+        "mod": "disabled"
     },
     {
         "block": "popup"
@@ -670,10 +636,6 @@ exports.deps = [
     },
     {
         "block": "feedback",
-        "elem": "inner"
-    },
-    {
-        "block": "feedback",
         "elem": "title"
     },
     {
@@ -696,12 +658,30 @@ exports.deps = [
         "elem": "controls"
     },
     {
-        "block": "controls",
-        "elem": "link"
+        "block": "btn",
+        "mod": "view",
+        "val": "controls"
     },
     {
-        "block": "controls",
-        "elem": "icon"
+        "block": "decorator"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-v",
+        "val": "s"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-h"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-h",
+        "val": "l"
     },
     {
         "block": "btn",
@@ -780,6 +760,9 @@ exports.deps = [
         "elem": "item"
     },
     {
+        "block": "hidden"
+    },
+    {
         "block": "social"
     },
     {
@@ -794,6 +777,24 @@ exports.deps = [
     {
         "block": "social",
         "elem": "item"
+    },
+    {
+        "block": "text",
+        "mod": "size"
+    },
+    {
+        "block": "text",
+        "mod": "size",
+        "val": "m"
+    },
+    {
+        "block": "text",
+        "mod": "weight"
+    },
+    {
+        "block": "text",
+        "mod": "weight",
+        "val": "bold"
     },
     {
         "block": "pt-icon-plus",
@@ -818,77 +819,6 @@ exports.deps = [
         "val": true
     },
     {
-        "block": "new-menu",
-        "mod": "0",
-        "val": "v"
-    },
-    {
-        "block": "new-menu",
-        "mod": "1",
-        "val": "i"
-    },
-    {
-        "block": "new-menu",
-        "mod": "2",
-        "val": "s"
-    },
-    {
-        "block": "new-menu",
-        "mod": "3",
-        "val": "i"
-    },
-    {
-        "block": "new-menu",
-        "mod": "4",
-        "val": "b"
-    },
-    {
-        "block": "new-menu",
-        "mod": "5",
-        "val": "l"
-    },
-    {
-        "block": "new-menu",
-        "mod": "6",
-        "val": "e"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointer"
-    },
-    {
-        "block": "jquery",
-        "elem": "event",
-        "mod": "type",
-        "val": "pointerpressrelease"
-    },
-    {
-        "block": "new-menu",
-        "elem": "icon",
-        "mod": "visible",
-        "val": true
-    },
-    {
-        "block": "new-menu",
-        "elem": "list",
-        "mod": "view",
-        "val": "users"
-    },
-    {
-        "block": "new-menu",
-        "elem": "item",
-        "mod": "view",
-        "val": "search"
-    },
-    {
-        "block": "pt-icon-plus",
-        "elem": "icon",
-        "mod": "indent-r",
-        "val": "m"
-    },
-    {
         "block": "button",
         "mod": "focused",
         "val": true
@@ -907,6 +837,48 @@ exports.deps = [
         "block": "button",
         "mod": "pressed",
         "val": true
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerpressrelease"
+    },
+    {
+        "block": "new-menu",
+        "elem": "icon",
+        "mod": "view",
+        "val": "open"
+    },
+    {
+        "block": "new-menu",
+        "elem": "list",
+        "mod": "view",
+        "val": "open"
+    },
+    {
+        "block": "new-menu",
+        "elem": "item",
+        "mod": "view",
+        "val": "search"
+    },
+    {
+        "block": "pt-icon-plus",
+        "elem": "icon",
+        "mod": "indent-r",
+        "val": "m"
+    },
+    {
+        "block": "new-menu",
+        "elem": "link",
+        "mod": "view",
+        "val": "inactive"
     },
     {
         "block": "modal"

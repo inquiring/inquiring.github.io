@@ -1,9 +1,10 @@
-.new-menu__icon_visible >.icon {
+.icon_name_logo-mobile {
     display: block;
 }
+
 @media (min-width: 768px) {
 
-    .new-menu__icon_visible >.icon {
+    .icon_name_logo-mobile {
         display: none;
     }
 }

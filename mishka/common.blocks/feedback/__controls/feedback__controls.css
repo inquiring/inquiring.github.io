@@ -1,18 +1,6 @@
-
-.feedback__controls {
-    margin: auto;
-}
-@media (min-width: 768px) {
+@media (max-width: 767px) {
     .feedback__controls {
-        position: absolute;
-        bottom: 20px;
-        right: 23px;
+        margin: auto;
     }
 }
 
-@media (min-width: 1150px) {
-    .feedback__controls {
-        right: 20px;
-        bottom: 23px;
-    }
-}

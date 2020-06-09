@@ -1,30 +1,10 @@
 .new-menu {
-    display: block;
-    min-height: 70px;
-    margin: 0 auto;
+    z-index: 100;
 }
 @media (max-width: 767px) {
 
-    .new-menu.new-menu_visible .new-menu__list {
-        display: block;
-    }
-}
-@media (min-width: 768px) {
     .new-menu {
-        position: relative;
-        display: flex;
-        width: 668px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        z-index: 2;
+        display: grid;
     }
 }
 
-@media (min-width: 1150px) {
-    .new-menu {
-        position: relative;
-        min-height: 135px;
-        width: 1050px;
-    }
-}

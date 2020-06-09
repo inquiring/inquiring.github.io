@@ -1,18 +1,6 @@
-
-.new-menu__icon >.icon {
-    display: none;
-}
 @media (max-width: 767px) {
 
     .new-menu__icon {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-}
-@media (min-width: 768px) {
-
-    .new-menu__icon >.icon {
-        display: none;
+        /* display: none */
     }
 }

@@ -1,0 +1,24 @@
+.header {
+    display: grid;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+}
+@media (min-width: 768px) {
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 0;
+        /* grid-template-columns: max-content max-content; */
+        /* justify-content: space-between; */
+    }
+}

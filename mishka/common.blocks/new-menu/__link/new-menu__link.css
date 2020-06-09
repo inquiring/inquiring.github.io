@@ -1,0 +1,20 @@
+.new-menu__link {
+    color: var(--color-typo-primary);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 2em 0;
+}
+.new-menu__link:hover {
+        color: #63d1bb;
+    }
+.new-menu__link:active {
+    color: #63d;
+}
+@media (min-width: 768px) {
+    .new-menu__link {
+        padding: 1.8em 0;
+        text-align: left;
+    }
+}

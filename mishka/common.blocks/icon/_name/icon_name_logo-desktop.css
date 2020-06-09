@@ -1,0 +1,10 @@
+.icon_name_logo-desktop {
+    display: none;
+}
+
+@media (min-width: 1150px) {
+
+    .icon_name_logo-desktop {
+        display: block;
+    }
+}

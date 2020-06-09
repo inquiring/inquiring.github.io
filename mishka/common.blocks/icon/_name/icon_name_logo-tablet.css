@@ -1,17 +1,17 @@
-.icon_view_tablet {
+.icon_name_logo-tablet {
     display: none;
 }
 
 @media (min-width: 768px) {
 
-    .icon_view_tablet {
+    .icon_name_logo-tablet {
         display: block;
     }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1150px) {
 
-    .icon_view_tablet {
+    .icon_name_logo-tablet {
         display: none;
     }
 }

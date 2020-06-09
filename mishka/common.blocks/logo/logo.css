@@ -1,7 +1,6 @@
-.logo svg:hover {
-    fill: #63d1bb;
-}
-
-.logo svg:active {
-    fill: #63d;
+.logo {
+    display: grid;
+    grid-auto-columns: min-content 1fr;
+    column-gap: 13px;
+    line-height: 1;
 }
