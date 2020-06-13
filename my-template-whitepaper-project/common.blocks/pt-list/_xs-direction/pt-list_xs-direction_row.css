@@ -1,0 +1,6 @@
+.pt-list_xs-direction_row {
+    @media screen and (min-width: $screen-xs) {
+        display: flex;
+        justify-content: space-around;
+    }
+}

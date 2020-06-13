@@ -1,0 +1,6 @@
+.link >.icon {
+    opacity: 0.6;
+}
+.link >.icon:hover {
+    opacity: 1;
+}

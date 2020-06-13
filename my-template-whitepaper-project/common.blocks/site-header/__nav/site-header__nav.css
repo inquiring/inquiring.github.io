@@ -1,0 +1,5 @@
+.site-header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}

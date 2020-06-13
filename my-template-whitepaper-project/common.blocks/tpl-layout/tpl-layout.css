@@ -1,0 +1,19 @@
+.tpl-layout {
+    /* border: 2px solid deeppink; */
+
+    @media screen and (min-width: $screen-s) {
+        font-size: var(--size-typo-l);
+        line-height: var(--line-height-typo-l);
+    }
+
+    @media screen and (min-width: $screen-m) {
+        font-size: var(--size-typo-xl);
+        line-height: var(--line-height-typo-xl);
+    }
+
+    @media screen and (min-width: $screen-l) {
+        font-size: var(--size-typo-xl);
+        line-height: var(--line-height-typo-xl);
+    }
+}
+
