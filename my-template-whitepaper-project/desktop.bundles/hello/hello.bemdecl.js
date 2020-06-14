@@ -287,6 +287,35 @@ exports.blocks = [
         ]
     },
     {
+        "name": "decorator"
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "xs"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "space-h",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "text",
         "mods": [
             {
@@ -339,22 +368,6 @@ exports.blocks = [
         ]
     },
     {
-        "name": "decorator"
-    },
-    {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-b",
-                "vals": [
-                    {
-                        "name": "xs"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "text",
         "mods": [
             {
@@ -396,19 +409,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "brand"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "space-h",
-                "vals": [
-                    {
-                        "name": "s"
                     }
                 ]
             }
@@ -486,7 +486,10 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "tpl-flex"
+    },
+    {
+        "name": "tpl-flex",
         "mods": [
             {
                 "name": "xs-ratio",
@@ -499,7 +502,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "tpl-flex",
         "mods": [
             {
                 "name": "s-ratio",
@@ -508,6 +511,40 @@ exports.blocks = [
                         "name": "1-1"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-flex",
+        "mods": [
+            {
+                "name": "col-gap",
+                "vals": [
+                    {
+                        "name": "full"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-flex",
+        "mods": [
+            {
+                "name": "row-gap",
+                "vals": [
+                    {
+                        "name": "full"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-flex",
+        "elems": [
+            {
+                "name": "item"
             }
         ]
     },
@@ -530,7 +567,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "tpl-flex",
         "mods": [
             {
                 "name": "s-ratio",
@@ -553,6 +590,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "full"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "xs-ratio",
+                "vals": [
+                    {
+                        "name": "1"
                     }
                 ]
             }
@@ -787,6 +837,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "submit"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-grid",
+        "mods": [
+            {
+                "name": "s-ratio",
+                "vals": [
+                    {
+                        "name": "1-1"
                     }
                 ]
             }

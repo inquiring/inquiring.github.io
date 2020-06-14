@@ -1,0 +1,35 @@
+
+.tpl-flex_s-ratio_1-1.tpl-flex_col-gap_full .tpl-flex__item:nth-child(2n+1) {
+
+    @media screen and (min-width: $screen-s) {
+        margin-right: var(--col-gap-full);
+    }
+}
+
+.tpl-flex_s-ratio_1-1-1.tpl-flex_col-gap_full .tpl-flex__item {
+
+    @media screen and (min-width: $screen-s) {
+        margin-right: var(--col-gap-full);
+    }
+}
+
+.tpl-flex_s-ratio_1-1-1.tpl-flex_col-gap_full .tpl-flex__item:nth-child(3n) {
+
+    @media screen and (min-width: $screen-s) {
+        margin-right: 0;
+    }
+}
+
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_col-gap_full .tpl-flex__item {
+
+    @media screen and (min-width: $screen-s) {
+        margin-right: var(--col-gap-full);
+    }
+}
+
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_col-gap_full .tpl-flex__item:nth-child(4n) {
+
+    @media screen and (min-width: $screen-s) {
+        margin-right: 0;
+    }
+}

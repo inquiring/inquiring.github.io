@@ -56,7 +56,7 @@ module.exports = {
                                             view: 'link',
                                         },
                                         attrs: { style: 'color: #fff'},
-                                        content: '+7 (000) 000-0-00'
+                                        content: '+7 (000) 000-00-00'
                                     },
                                 ]
                             }
@@ -72,29 +72,30 @@ module.exports = {
                     content: [
                         {
                             elem: 'heading',
-                            content: {
-                                block: 'text',
-                                mods: {
-                                    type: 'h1',
-                                    align: 'center',
-                                    size: '2xl',
-                                    view: 'primary',
+                            mix: { block: 'decorator', mods: {'indent-b': 'xs', 'space-h': 'm'} },
+                            content: [
+                                {
+                                    block: 'text',
+                                    mods: {
+                                        type: 'h1',
+                                        align: 'center',
+                                        size: '2xl',
+                                        view: 'primary',
+                                    },
+                                    content: 'Автономная газификация домов и предприятий'
                                 },
-                                mix: {block: 'decorator', mods: {'indent-b': 'xs'}},
-                                content: 'Автономная газификация домов и предприятий'
-                            }
-                        },
-                        {
-                            block: 'text',
-                            mods: {
-                                type: 'p',
-                                align: 'center',
-                                size: 'm',
-                                style: '',
-                                view: 'brand',
-                            },
-                            mix: {block: 'decorator', mods: {'space-h': 's'}},
-                            content: 'Работаем по Нижегородской, Владимирской и Ивановской областям'
+                                {
+                                    block: 'text',
+                                    mods: {
+                                        type: 'p',
+                                        align: 'center',
+                                        size: 'm',
+                                        style: '',
+                                        view: 'brand',
+                                    },
+                                    content: 'Работаем по Нижегородской, Владимирской и Ивановской областям'
+                                },
+                            ]
                         },
                     ]
                 },
@@ -159,6 +160,7 @@ module.exports = {
                     content: [
                         {
                             elem: 'heading',
+                            attrs: { style: 'margin: 2em 0 1em;' },
                             content: {
                                 block: 'text',
                                 mods: {
@@ -177,7 +179,7 @@ module.exports = {
                                 elem: 'container',
                                 elemMods: {size: 's', distribute: 'center'},
                                 content: {
-                                    block: 'tpl-grid',
+                                    block: 'tpl-flex',
                                     mods: {
                                         'xs-ratio': '1',
                                         's-ratio': '1-1',
@@ -187,64 +189,82 @@ module.exports = {
                                     },
                                     content: [
                                         {
-                                            block: 'text',
-                                            mods: {
-                                                type: 'p',
-                                                align: '',
-                                                size: 'm',
-                                                view: 'primary',
+                                            elem: 'item',
+                                            content: {
+                                                block: 'text',
+                                                mods: {
+                                                    type: 'p',
+                                                    align: '',
+                                                    size: 'm',
+                                                    view: 'primary',
+                                                },
+                                                content: '- Экономия, т.к. себестоимость вырабатываемой теплоэнергии с помощью газовой топливной смеси в разы дешевле других аналогов'
                                             },
-                                            content: '- Экономия, т.к. себестоимость вырабатываемой теплоэнергии с помощью газовой топливной смеси в разы дешевле других аналогов'
                                         },
                                         {
-                                            block: 'text',
-                                            mods: {
-                                                type: 'p',
-                                                align: '',
-                                                size: 'm',
-                                                view: 'primary',
+                                            elem: 'item',
+                                            content: {
+                                                block: 'text',
+                                                mods: {
+                                                    type: 'p',
+                                                    align: '',
+                                                    size: 'm',
+                                                    view: 'primary',
+                                                },
+                                                content: '- Экологичность, ведь от сжигания газа ущерб окружающей среды минимален'
                                             },
-                                            content: '- Экологичность, ведь от сжигания газа ущерб окружающей среды минимален'
                                         },
                                         {
-                                            block: 'text',
-                                            mods: {
-                                                type: 'p',
-                                                align: '',
-                                                size: 'm',
-                                                view: 'primary',
+                                            elem: 'item',
+                                            content: {
+                                                block: 'text',
+                                                mods: {
+                                                    type: 'p',
+                                                    align: '',
+                                                    size: 'm',
+                                                    view: 'primary',
+                                                },
+                                                content: '- Отсутствие неприятных запахов от выхлопов'
                                             },
-                                            content: '- Отсутствие неприятных запахов от выхлопов'
                                         },
                                         {
-                                            block: 'text',
-                                            mods: {
-                                                type: 'p',
-                                                align: '',
-                                                size: 'm',
-                                                view: 'primary',
+                                            elem: 'item',
+                                            content: {
+                                                block: 'text',
+                                                mods: {
+                                                    type: 'p',
+                                                    align: '',
+                                                    size: 'm',
+                                                    view: 'primary',
+                                                },
+                                                content: '- Долговечность оборудования примерно на четверть выше, чем у жидкостных отопительных агрегатов.'
                                             },
-                                            content: '- Долговечность оборудования примерно на четверть выше, чем у жидкостных отопительных агрегатов.'
                                         },
                                         {
-                                            block: 'text',
-                                            mods: {
-                                                type: 'p',
-                                                align: '',
-                                                size: 'm',
-                                                view: 'primary',
+                                            elem: 'item',
+                                            content: {
+                                                block: 'text',
+                                                mods: {
+                                                    type: 'p',
+                                                    align: '',
+                                                    size: 'm',
+                                                    view: 'primary',
+                                                },
+                                                content: '- Широкие возможности, потому что сжиженный газ из газгольдера может использоваться не только для обогрева здания, но и для приготовления пищи.'
                                             },
-                                            content: '- Широкие возможности, потому что сжиженный газ из газгольдера может использоваться не только для обогрева здания, но и для приготовления пищи.'
                                         },
                                         {
-                                            block: 'text',
-                                            mods: {
-                                                type: 'p',
-                                                align: '',
-                                                size: 'm',
-                                                view: 'primary',
+                                            elem: 'item',
+                                            content: {
+                                                block: 'text',
+                                                mods: {
+                                                    type: 'p',
+                                                    align: '',
+                                                    size: 'm',
+                                                    view: 'primary',
+                                                },
+                                                content: '- Абсолютная простота эксплуатации'
                                             },
-                                            content: '- Абсолютная простота эксплуатации'
                                         },
                                     ]
                                 }
@@ -275,7 +295,7 @@ module.exports = {
                                 elem: 'container',
                                 elemMods: {size: 'm', distribute: 'center'},
                                 content: {
-                                    block: 'tpl-grid',
+                                    block: 'tpl-flex',
                                     mods: {
                                         'xs-ratio': '1',
                                         's-ratio': '1-1-1-1',
@@ -284,73 +304,73 @@ module.exports = {
                                     },
                                     content: [
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image01 — копия.jpg',
+                                                url: '../../common.blocks/image/image01.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 1'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image02.jpeg',
+                                                url: '../../common.blocks/image/image02.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 2'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image03 — копия.jpg',
+                                                url: '../../common.blocks/image/image03.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 3'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image04.jpeg',
+                                                url: '../../common.blocks/image/image04.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 4'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image05.jpeg',
+                                                url: '../../common.blocks/image/image05.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 5'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image06.jpeg',
+                                                url: '../../common.blocks/image/image06.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 6'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image07.jpeg',
+                                                url: '../../common.blocks/image/image07.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 7'
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             content: {
                                                 block: 'image',
-                                                url: '../../common.blocks/image/image08 — копия.jpg',
+                                                url: '../../common.blocks/image/image08.jpg',
                                                 mods: { width: 'full'},
                                                 alt: 'картинка 8'
                                             }
@@ -533,12 +553,13 @@ module.exports = {
                                                             elem: 'item',
                                                             content: {
                                                                 block: 'button',
+                                                                 attrs: { style: 'background: #ffcc00;'},
                                                                 mods: {
                                                                     theme: 'simple',
                                                                     size: 'm',
                                                                     type: 'submit'
                                                                 },
-                                                                text: 'Я отправляю данные'
+                                                                text: 'отправить'
                                                             }
                                                         },
                                                     ]

@@ -128,14 +128,19 @@ BEMHTML.prototype.runMany = function(arr) {
 
 BEMHTML.prototype.render = function(context, entity, tag, js, bem, cls, mix,
                                            attrs, content, mods, elemMods) {
-  var ctx = context.ctx;
-
   if (tag === undefined)
     tag = 'div';
   else if (!tag)
     return (content || content === 0) ? this._run(content) : '';
 
+  var ctx = context.ctx;
   var out = '<' + tag;
+
+  var isBEM = !!(typeof bem !== 'undefined' ?
+    bem : entity.block || entity.elem);
+
+  if (!isBEM && !cls)
+    return this.renderClose(out, context, tag, attrs, isBEM, ctx, content);
 
   if (js === true)
     js = {};
@@ -146,17 +151,11 @@ BEMHTML.prototype.render = function(context, entity, tag, js, bem, cls, mix,
     jsParams[entity.jsClass] = js;
   }
 
-  var isBEM = typeof bem !== 'undefined' ? bem : entity.block || entity.elem;
-  isBEM = !!isBEM;
-
   var addJSInitClass = isBEM && jsParams && (
     this._elemJsInstances ?
       entity.block :
       (entity.block && !entity.elem)
   );
-
-  if (!isBEM && !cls)
-    return this.renderClose(out, context, tag, attrs, isBEM, ctx, content);
 
   out += ' class=';
   var classValue = '';
@@ -248,8 +247,8 @@ BEMHTML.prototype.renderAttrs = function(attrs) {
         var attrVal = utils.isSimple(attr) ? attr : this.run(attr);
         out += ' ' + name + '=';
         out += (this._singleQuotesForDataAttrs && name.indexOf('data-') === 0) ?
-          '\'' + utils.jsAttrEscape(attrVal) + '\'' :
-          this.getAttrValue(attrVal);
+          this.getAttrValue(attrVal, utils.jsAttrEscape(attrVal), '\'') :
+          this.getAttrValue(attrVal, utils.attrEscape(attrVal), '"');
       }
     }
   }
@@ -257,10 +256,10 @@ BEMHTML.prototype.renderAttrs = function(attrs) {
   return out;
 };
 
-BEMHTML.prototype.getAttrValue = function(attrVal) {
+BEMHTML.prototype.getAttrValue = function(attrVal, escapedAttrVal, quote) {
   return this._unquotedAttrs && utils.isUnquotedAttr(attrVal) ?
     attrVal :
-    ('"' + utils.attrEscape(attrVal) + '"');
+    (quote + escapedAttrVal + quote);
 };
 
 BEMHTML.prototype.renderMix = function(entity, mix, jsParams, addJSInitClass) {
@@ -321,7 +320,7 @@ BEMHTML.prototype.renderMix = function(entity, mix, jsParams, addJSInitClass) {
           (block && !item.elem);
     }
 
-    // Process nexted mixes from BEMJON
+    // Process nested mixes from BEMJSON
     if (item.mix) {
       var nested = this.renderMix(entity, item.mix, js, addInit);
       js = utils.extend(js, nested.jsParams);
@@ -358,6 +357,7 @@ BEMHTML.prototype.renderMix = function(entity, mix, jsParams, addJSInitClass) {
 
         nestedItem._block = block;
         nestedItem._elem = elem;
+        // make a copy, do not modify original array
         mix = mix.slice(0, i + 1).concat(
           nestedItem,
           mix.slice(i + 1)
@@ -1056,10 +1056,7 @@ BEMXJST.prototype.runOne = function(json) {
   }
 
   context.elem = json.elem;
-  if (json.elemMods)
-    context.elemMods = json.elemMods;
-  else
-    context.elemMods = {};
+  context.elemMods = json.elemMods || {};
 
   var block = context.block || '';
   var elem = context.elem;
@@ -1172,14 +1169,13 @@ BEMXJST.prototype.applyNext = function() {
 };
 
 BEMXJST.prototype.applyMode = function(mode, changes) {
-  var key;
   var match = this.match;
 
   if (!match) {
     var key = this.classBuilder.build(this.context.block, this.context.elem);
     match = this.entities[key].rest[mode];
   } else {
-    match = this.match.entity.rest[mode];
+    match = match.entity.rest[mode];
   }
 
   if (!match) {
@@ -1240,14 +1236,15 @@ function MatchNested(template, pred) {
 
 MatchNested.prototype.exec = function(context) {
   var val = context;
+  var keys = this.keys;
 
-  for (var i = 0; i < this.keys.length - 1; i++) {
-    val = val[this.keys[i]];
+  for (var i = 0; i < keys.length - 1; i++) {
+    val = val[keys[i]];
     if (!val)
       return false;
   }
 
-  val = val[this.keys[i]];
+  val = val[keys[i]];
 
   if (this.value === true)
     return val !== undefined && val !== '' && val !== false && val !== null;
@@ -2083,7 +2080,7 @@ exports.xmlEscape = function(string) {
     html;
 };
 
-var matchAttrRegExp = /["&]/;
+var matchAttrRegExp = /["&<>]/;
 
 exports.attrEscape = function(string) {
   if (isEmpty(string))
@@ -2107,6 +2104,12 @@ exports.attrEscape = function(string) {
         break;
       case 38: // &
         escape = amp;
+        break;
+      case 60: // <
+        escape = lt;
+        break;
+      case 62: // >
+        escape = gt;
         break;
       default:
         continue;
@@ -2193,7 +2196,12 @@ exports.isShortTag = function(t) {
 };
 
 exports.isSimple = function isSimple(obj) {
-  if (!obj || obj === true) return true;
+  if (!obj ||
+      obj === true ||
+      typeof obj === 'string' ||
+      typeof obj === 'number')
+    return true;
+
   if (!obj.block &&
       !obj.elem &&
       !obj.tag &&
@@ -2202,7 +2210,8 @@ exports.isSimple = function isSimple(obj) {
       obj.hasOwnProperty('html') &&
       isSimple(obj.html))
     return true;
-  return typeof obj === 'string' || typeof obj === 'number';
+
+  return false;
 };
 
 exports.isObj = function(val) {
@@ -2300,7 +2309,7 @@ if (typeof Object.create === 'function') {
 });;
 return module.exports || exports.BEMHTML;
 }({}, {});
-var api = new BEMHTML({"elemJsInstances":true,"exportName":"BEMHTML","sourceMap":{"from":"hello.bemhtml.js"},"to":"/Users/AS/Documents/inquiring.github.io/my-template-whitepaper-project"});
+var api = new BEMHTML({"elemJsInstances":true,"exportName":"BEMHTML","to":"/Users/AS/Documents/inquiring.github.io/my-template-whitepaper-project"});
 api.compile(function(match, block, elem, mod, elemMod, oninit, xjstOptions, wrap, replace, extend, mode, def, content, appendContent, prependContent, attrs, addAttrs, js, addJs, mix, addMix, mods, addMods, addElemMods, elemMods, tag, cls, bem, local, applyCtx, applyNext, apply) {
 /* BEM-XJST User code here: */
 /* begin: /Users/AS/Documents/inquiring.github.io/my-template-whitepaper-project/node_modules/bem-core/common.blocks/page/page.bemhtml.js */
@@ -2693,7 +2702,7 @@ block('link')(
 );
 
 /* end: /Users/AS/Documents/inquiring.github.io/my-template-whitepaper-project/node_modules/bem-components-custom/common.blocks/link/link.bemhtml.js */
-
+;
 ;oninit(function(exports, context) {
 var BEMContext = exports.BEMContext || context.BEMContext;
 BEMContext.prototype.require = function(lib) {
@@ -2727,4 +2736,3 @@ exp["BEMHTML"] = BEMHTML;exp["BEMHTML"].libs = glob;
 }
 }
 })(typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : this);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlbGxvLmJlbWh0bWwuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6ImhlbGxvLmJlbWh0bWwuanMifQ==

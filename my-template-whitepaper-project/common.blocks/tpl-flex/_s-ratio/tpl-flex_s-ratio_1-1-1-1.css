@@ -1,0 +1,7 @@
+.tpl-flex_s-ratio_1-1-1-1 .tpl-flex__item {
+
+    @media screen and (min-width: $screen-s) {
+        width: 21%;
+    }
+}
+

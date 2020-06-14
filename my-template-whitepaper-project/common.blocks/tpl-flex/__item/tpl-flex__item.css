@@ -1,0 +1,13 @@
+.tpl-flex__item {
+    @media screen and (min-width: $screen-xs) {
+       /* margin-bottom: var(--col-gap-full); */
+    }
+
+    @media screen and (min-width: $screen-s) {
+
+    }
+
+    @media screen and (min-width: $screen-l) {
+
+    }
+}

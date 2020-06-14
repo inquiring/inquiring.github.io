@@ -1,0 +1,13 @@
+.tpl-flex {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $screen-xs) {
+       flex-direction: column;
+    }
+
+    @media screen and (min-width: $screen-s) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

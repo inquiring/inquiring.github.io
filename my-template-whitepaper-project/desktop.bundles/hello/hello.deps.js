@@ -261,6 +261,27 @@ exports.deps = [
         "elem": "heading"
     },
     {
+        "block": "decorator"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "xs"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-h"
+    },
+    {
+        "block": "decorator",
+        "mod": "space-h",
+        "val": "m"
+    },
+    {
         "block": "text",
         "mod": "type",
         "val": "h1"
@@ -281,18 +302,6 @@ exports.deps = [
         "val": "primary"
     },
     {
-        "block": "decorator"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-b",
-        "val": "xs"
-    },
-    {
         "block": "text",
         "mod": "type",
         "val": "p"
@@ -310,15 +319,6 @@ exports.deps = [
         "block": "text",
         "mod": "view",
         "val": "brand"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-h"
-    },
-    {
-        "block": "decorator",
-        "mod": "space-h",
-        "val": "s"
     },
     {
         "block": "tpl-grid"
@@ -356,22 +356,47 @@ exports.deps = [
         "val": "xl"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-flex"
+    },
+    {
+        "block": "tpl-flex",
         "mod": "xs-ratio"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-flex",
         "mod": "xs-ratio",
         "val": "1"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-flex",
         "mod": "s-ratio"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-flex",
         "mod": "s-ratio",
         "val": "1-1"
+    },
+    {
+        "block": "tpl-flex",
+        "mod": "col-gap"
+    },
+    {
+        "block": "tpl-flex",
+        "mod": "col-gap",
+        "val": "full"
+    },
+    {
+        "block": "tpl-flex",
+        "mod": "row-gap"
+    },
+    {
+        "block": "tpl-flex",
+        "mod": "row-gap",
+        "val": "full"
+    },
+    {
+        "block": "tpl-flex",
+        "elem": "item"
     },
     {
         "block": "tpl-layout",
@@ -380,7 +405,7 @@ exports.deps = [
         "val": "m"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-flex",
         "mod": "s-ratio",
         "val": "1-1-1-1"
     },
@@ -395,6 +420,15 @@ exports.deps = [
         "block": "image",
         "mod": "width",
         "val": "full"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "xs-ratio"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "xs-ratio",
+        "val": "1"
     },
     {
         "block": "pt-form"
@@ -627,6 +661,15 @@ exports.deps = [
         "block": "button",
         "mod": "type",
         "val": "submit"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "s-ratio"
+    },
+    {
+        "block": "tpl-grid",
+        "mod": "s-ratio",
+        "val": "1-1"
     },
     {
         "block": "decorator",

@@ -171,9 +171,9 @@ html {
     --gap: var(--space-m);
 
     /* Размеры отступов в колонках */
-    --col-gap-third: calc(var(--gap) * 0.33);
-    --col-gap-half: calc(var(--gap) * 0.5);
-    --col-gap-two-thirds: calc(var(--gap) * 0.66);
+    --col-gap-third: calc(var(--gap)*0.33);
+    --col-gap-half: calc(var(--gap)*0.5);
+    --col-gap-two-thirds: calc(var(--gap)*0.66);
     --col-gap-full: var(--gap);
 }
 @media screen and (min-width: 720px) {
@@ -302,6 +302,13 @@ html {
     /* outline: 2px dotted dodgerblue;
     outline-offset: -4px; */
 }
+.decorator_indent-b_xs {
+    margin-bottom: var(--space-xs);
+}
+.decorator_space-h_m {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+}
 .text_type_h1 {
   margin: 2em 0 1em;
 }
@@ -315,9 +322,6 @@ html {
 .text_view_primary {
     color: var(--color-typo-primary);
 }
-.decorator_indent-b_xs {
-    margin-bottom: var(--space-xs);
-}
 .text_type_p {
   margin: 0 0 0.9em;
 }
@@ -330,10 +334,6 @@ html {
 }
 .text_view_brand {
     color: var(--color-typo-brand);
-}
-.decorator_space-h_s {
-    padding-left: var(--space-s);
-    padding-right: var(--space-s);
 }
 .tpl-grid {
     display: grid;
@@ -532,9 +532,104 @@ html {
     font-size: var(--size-text-xl, var(--size-typo-xl)); /* Fallback to deprecated variable */
     line-height: var(--line-height-text-m, var(--line-height-typo-xl)); /* Fallback to deprecated variable */
 }
+.tpl-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+@media screen and (min-width: 320px) {
+.tpl-flex {
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column
+
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap
+
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1
+    .tpl-flex__item {
+        width: 47%
+
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1.tpl-flex_col-gap_full .tpl-flex__item:nth-child(2n+1) {
+        margin-right: var(--col-gap-full)
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1-1.tpl-flex_col-gap_full .tpl-flex__item {
+        margin-right: var(--col-gap-full)
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1-1.tpl-flex_col-gap_full .tpl-flex__item:nth-child(3n) {
+        margin-right: 0
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_col-gap_full .tpl-flex__item {
+        margin-right: var(--col-gap-full)
+}
+    }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_col-gap_full .tpl-flex__item:nth-child(4n) {
+        margin-right: 0
+}
+    }
+.tpl-flex_row-gap_full .tpl-flex__item {
+    margin-bottom: var(--col-gap-full);
+}
+.tpl-flex.tpl-flex_row-gap_full .tpl-flex__item:last-child {
+    margin-bottom: 0;
+}
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1.tpl-flex_row-gap_full .tpl-flex__item:nth-last-child(2),
+
+.tpl-flex_s-ratio_1-1-1.tpl-flex_row-gap_full .tpl-flex__item:nth-last-child(3),
+.tpl-flex_s-ratio_1-1-1.tpl-flex_row-gap_full .tpl-flex__item:nth-last-child(2),
+
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_row-gap_full .tpl-flex__item:nth-last-child(4),
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_row-gap_full .tpl-flex__item:nth-last-child(3),
+.tpl-flex_s-ratio_1-1-1-1.tpl-flex_row-gap_full .tpl-flex__item:nth-last-child(2) {
+        margin-bottom: 0
+}
+    }
+@media screen and (min-width: 320px) {
+.tpl-flex__item {
+       /* margin-bottom: var(--col-gap-full); */
+}
+    }
+@media screen and (min-width: 720px) {
+
+    }
+@media screen and (min-width: 1280px) {
+
+    }
 .tpl-layout__container_size_m {
     max-width: 1144px;
 }
+@media screen and (min-width: 720px) {
+.tpl-flex_s-ratio_1-1-1-1 .tpl-flex__item {
+        width: 21%
+}
+    }
 .image {
     border: 0;
 }
