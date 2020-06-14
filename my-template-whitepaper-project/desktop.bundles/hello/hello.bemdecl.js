@@ -596,13 +596,76 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "tpl-block"
+    },
+    {
+        "name": "tpl-block",
         "mods": [
             {
                 "name": "xs-ratio",
                 "vals": [
                     {
                         "name": "1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-block",
+        "mods": [
+            {
+                "name": "col-gap",
+                "vals": [
+                    {
+                        "name": "full"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-block",
+        "mods": [
+            {
+                "name": "row-gap",
+                "vals": [
+                    {
+                        "name": "full"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "tpl-block",
+        "elems": [
+            {
+                "name": "item"
+            }
+        ]
+    },
+    {
+        "name": "decorator",
+        "mods": [
+            {
+                "name": "indent-b",
+                "vals": [
+                    {
+                        "name": "m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "secondary"
                     }
                 ]
             }
@@ -696,6 +759,9 @@ exports.blocks = [
                 ]
             }
         ]
+    },
+    {
+        "name": "form"
     },
     {
         "name": "pt-form",
@@ -843,7 +909,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "tpl-grid",
+        "name": "tpl-block",
         "mods": [
             {
                 "name": "s-ratio",
@@ -953,19 +1019,6 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "m"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "view",
-                "vals": [
-                    {
-                        "name": "secondary"
                     }
                 ]
             }

@@ -1,5 +1,5 @@
 .tpl-flex_row-gap_full .tpl-flex__item {
-    margin-bottom: var(--col-gap-full);
+    margin: 0 auto var(--col-gap-full);
 }
 .tpl-flex.tpl-flex_row-gap_full .tpl-flex__item:last-child {
     margin-bottom: 0;

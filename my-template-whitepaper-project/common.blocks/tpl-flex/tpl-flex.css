@@ -1,8 +1,10 @@
 .tpl-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     @media screen and (min-width: $screen-xs) {
-       flex-direction: column;
+       /* flex-direction: column;
+       justify-content: center; */
     }
 
     @media screen and (min-width: $screen-s) {

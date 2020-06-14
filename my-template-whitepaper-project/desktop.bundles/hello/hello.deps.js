@@ -422,13 +422,48 @@ exports.deps = [
         "val": "full"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-block"
+    },
+    {
+        "block": "tpl-block",
         "mod": "xs-ratio"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-block",
         "mod": "xs-ratio",
         "val": "1"
+    },
+    {
+        "block": "tpl-block",
+        "mod": "col-gap"
+    },
+    {
+        "block": "tpl-block",
+        "mod": "col-gap",
+        "val": "full"
+    },
+    {
+        "block": "tpl-block",
+        "mod": "row-gap"
+    },
+    {
+        "block": "tpl-block",
+        "mod": "row-gap",
+        "val": "full"
+    },
+    {
+        "block": "tpl-block",
+        "elem": "item"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "m"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "secondary"
     },
     {
         "block": "pt-form"
@@ -490,6 +525,9 @@ exports.deps = [
         "block": "decorator",
         "mod": "space-v",
         "val": "m"
+    },
+    {
+        "block": "form"
     },
     {
         "block": "pt-form",
@@ -663,11 +701,11 @@ exports.deps = [
         "val": "submit"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-block",
         "mod": "s-ratio"
     },
     {
-        "block": "tpl-grid",
+        "block": "tpl-block",
         "mod": "s-ratio",
         "val": "1-1"
     },
@@ -737,11 +775,6 @@ exports.deps = [
         "block": "decorator",
         "mod": "indent-r",
         "val": "m"
-    },
-    {
-        "block": "text",
-        "mod": "view",
-        "val": "secondary"
     },
     {
         "block": "pt-icon-plus",

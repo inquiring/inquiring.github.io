@@ -1,13 +1,6 @@
 .form {
-    @media screen and (min-width: $screen-s) {
-
-    }
-
-    @media screen and (min-width: $screen-m) {
-
-    }
-
-    @media screen and (min-width: $screen-l) {
-        margin-left: 150px;
-    }
+    background: #18318d;
+    color: #fff;
+    max-width: 500px;
+    margin: auto;
 }

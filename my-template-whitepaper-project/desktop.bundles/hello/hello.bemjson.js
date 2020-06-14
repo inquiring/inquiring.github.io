@@ -49,13 +49,13 @@ module.exports = {
                                     },
                                     {
                                         block: 'text',
+                                        attrs: { href: 'tel:80000000000' },
                                         mods: {
                                             type: '',
                                             align: 'right',
                                             size: 'l',
                                             view: 'link',
                                         },
-                                        attrs: { style: 'color: #fff'},
                                         content: '+7 (000) 000-00-00'
                                     },
                                 ]
@@ -203,6 +203,7 @@ module.exports = {
                                         },
                                         {
                                             elem: 'item',
+                                            attrs: { style: 'margin-left: 0;' },
                                             content: {
                                                 block: 'text',
                                                 mods: {
@@ -216,6 +217,7 @@ module.exports = {
                                         },
                                         {
                                             elem: 'item',
+                                            attrs: { style: 'margin-left: 0;' },
                                             content: {
                                                 block: 'text',
                                                 mods: {
@@ -255,6 +257,7 @@ module.exports = {
                                         },
                                         {
                                             elem: 'item',
+                                            attrs: { style: 'margin-left: 0;' },
                                             content: {
                                                 block: 'text',
                                                 mods: {
@@ -402,9 +405,9 @@ module.exports = {
                             elem: 'content',
                             content: {
                                 elem: 'container',
-                                elemMods: {size: 's', distribute: 'center'},
+                                elemMods: { size: 's', distribute: 'center' },
                                 content: {
-                                    block: 'tpl-grid',
+                                    block: 'tpl-block',
                                     mods: {
                                         'xs-ratio': '1',
                                         // 's-ratio': '1-1',
@@ -413,19 +416,22 @@ module.exports = {
                                     },
                                     content: [
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
+                                            mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
                                             content: [
                                                 {
                                                     block: 'text',
                                                     mods: {
-                                                        align: 'center'
+                                                        align: 'center',
+                                                        view: 'secondary'
                                                     },
                                                     content: 'Наши специалисты с удовольствием на них ответят!'
                                                 },
                                                 {
                                                     block: 'text',
                                                     mods: {
-                                                        align: 'center'
+                                                        align: 'center',
+                                                        view: 'secondary'
                                                     },
                                                     content: 'Свяжитесь с нами любым удобным способом, например, заполнив форму!'
                                                 }
@@ -433,7 +439,7 @@ module.exports = {
                                             ]
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             // attrs: { style: 'margin: auto;'},
                                             content: {
                                                 block: 'pt-form',
@@ -445,9 +451,8 @@ module.exports = {
                                                     'space-v': 'xs',
                                                     'structure': '20-80',
                                                 },
-                                                attrs: {  style: 'background: var(--color-bg-border);', action: 'mail.php', method: 'POST' },
-                                                mix: { block: 'decorator', mods: { 'space-v': 'm' }},
-                                                attrs: { style: 'background-color: #18318d; color: #fff' },
+                                                attrs: { action: 'mail.php', method: 'POST' },
+                                                mix: [{ block: 'decorator', mods: { 'space-v': 'm' }}, { block: 'form' },],
                                                 content: {
                                                     elem: 'section',
                                                     content: [
@@ -470,10 +475,8 @@ module.exports = {
                                                             content: [
                                                                 {
                                                                     elem: 'label',
-                                                                    content: {
-                                                                        block: 'text',
-                                                                        content: 'Имя'
-                                                                    },
+                                                                    mix: { block: 'text'},
+                                                                    content: 'Имя',
                                                                     attrs: { for: 'fname' },
                                                                 },
                                                                 {
@@ -499,10 +502,8 @@ module.exports = {
                                                             content: [
                                                                 {
                                                                     elem: 'label',
-                                                                    content: {
-                                                                        block: 'text',
-                                                                        content: 'Номер телефона'
-                                                                    },
+                                                                    mix: { block: 'text'},
+                                                                    content: 'Телефон',
                                                                     attrs: { for: 'phone' },
                                                                 },
                                                                 {
@@ -526,10 +527,8 @@ module.exports = {
                                                             content: [
                                                                 {
                                                                     elem: 'label',
-                                                                    content: {
-                                                                        block: 'text',
-                                                                        content: 'E-mail'
-                                                                    },
+                                                                    mix: { block: 'text'},
+                                                                    content: 'E-mail',
                                                                     attrs: { for: 'email' },
                                                                 },
                                                                 {
@@ -583,7 +582,7 @@ module.exports = {
                                 elem: 'container',
                                 elemMods: {size: 's', distribute: 'center'},
                                 content: {
-                                    block: 'tpl-grid',
+                                    block: 'tpl-block',
                                     mods: {
                                         'xs-ratio': '1',
                                         's-ratio': '1-1',
@@ -594,7 +593,7 @@ module.exports = {
                                     },
                                     content: [
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             mix: {block: 'decorator', mods: {'space-a': 'm'}},
                                             content: {
                                                 block: 'pt-list',
@@ -691,7 +690,7 @@ module.exports = {
                                             }
                                         },
                                         {
-                                            elem: 'fraction',
+                                            elem: 'item',
                                             mix: {block: 'decorator', mods: {'space-a': 'm'}},
                                             content: {
                                                 block: 'pt-icon-plus',
@@ -705,7 +704,7 @@ module.exports = {
                                                             mods: {
                                                                 type: '',
                                                                 align: '',
-                                                                size: 'm',
+                                                                size: 'xs',
                                                                 view: 'secondary',
                                                             },
                                                             content: 'Сделано c помощью'
