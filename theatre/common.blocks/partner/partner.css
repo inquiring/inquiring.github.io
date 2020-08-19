@@ -1,0 +1,6 @@
+.partner {
+    opacity: .7;
+}
+.partner:hover {
+    opacity: 1;
+}

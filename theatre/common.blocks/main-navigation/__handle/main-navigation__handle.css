@@ -1,0 +1,16 @@
+.main-navigation__handle {
+    position: relative;
+    width: var(--space-xl);
+    height: var(--space-xl);
+    background: transparent;
+    color: var(--color-typo-primary);
+}
+.main-navigation_opened .main-navigation__handle {
+    left: 240px;
+}
+
+@media screen and (min-width: $screen-m) {
+    .main-navigation__handle {
+        display: none;
+    }
+}

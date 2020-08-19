@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+@media screen and (min-width: $screen-s) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: $screen-m) {
+    .header {
+        flex-direction: row;
+    }
+}

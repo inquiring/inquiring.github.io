@@ -1,0 +1,12 @@
+.info__text {
+    display: none;
+
+}
+@media screen and (min-width: $screen-m) {
+    .info__text {
+        display: block;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+    }
+}
+

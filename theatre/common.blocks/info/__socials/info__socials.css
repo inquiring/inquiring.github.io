@@ -1,0 +1,5 @@
+@media screen and (min-width: $screen-m) {
+    .info__socials {
+        padding-bottom: 86px;
+    }
+}

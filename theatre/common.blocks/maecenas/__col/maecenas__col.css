@@ -1,0 +1,9 @@
+@media screen and (min-width: 1024px) {
+
+    .maecenas__col {
+        width: auto;
+    }
+    .maecenas__col:last-child {
+        order: -1
+    }
+}

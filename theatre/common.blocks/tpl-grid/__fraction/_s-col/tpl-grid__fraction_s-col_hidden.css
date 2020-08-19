@@ -1,0 +1,5 @@
+@media screen and (max-width: $screen-s) {
+    .tpl-grid__fraction_s-col_hidden {
+        display: none;
+    }
+}

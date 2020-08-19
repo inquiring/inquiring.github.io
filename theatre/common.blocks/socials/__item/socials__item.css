@@ -1,0 +1,9 @@
+.socials__item {
+    width: 50%;
+    height: fit-content;
+}
+@media screen and (min-width: $screen-m) {
+    .socials__item {
+        width: fit-content;
+    }
+}

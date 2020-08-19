@@ -1,0 +1,20 @@
+.new-menu__link {
+    padding: var(--space-xl) 0;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: $screen-s) {
+
+    .new-menu__link:hover {
+       text-decoration: var(--color-bg-brand);
+    }
+
+}
+
+@media screen and (max-width: $screen-m) {
+
+    .new-menu__link:first-child {
+
+    }
+}

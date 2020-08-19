@@ -1,0 +1,10 @@
+.icon_size_gazprom svg {
+    width: 140px;
+    height: 97px;
+}
+@media screen and (min-width: $screen-s) {
+    .icon_size_gazprom svg {
+        width: 200px;
+        height: 97px;
+    }
+}

@@ -1,0 +1,9 @@
+.socials_view_info {
+    height: 100%;
+}
+@media screen and (min-width: $screen-m) {
+
+    .socials_view_info {
+        height: 180px;
+    }
+}

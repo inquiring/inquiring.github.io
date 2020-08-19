@@ -1,0 +1,15 @@
+.afisha {
+    padding-top: 70px;
+    padding-bottom: 107px;
+}
+/* @media screen and (min-width: $screen-s) {
+    .afisha {
+        padding: 0;
+    }
+} */
+
+@media screen and (min-width: $screen-m) {
+    .afisha {
+        padding-top: 100px;
+    }
+}

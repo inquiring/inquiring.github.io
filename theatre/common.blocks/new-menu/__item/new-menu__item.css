@@ -1,0 +1,28 @@
+.new-menu__item {
+
+}
+.new-menu__item {
+    padding-top: calc(var(--space-xl)/2);
+    padding-bottom: calc(var(--space-xl)/2);
+}
+.new-menu__item:first-child {
+
+}
+
+@media screen and (min-width: $screen-m) {
+
+    .new-menu__item {
+        position: relative;
+        margin-right: var(--space-xl);
+        text-decoration: none;
+    }
+    .new-menu__item>.text:hover {
+        color: var(--color-bg-brand);
+    }
+    .new-menu__item:first-child {
+        padding-top: calc(var(--space-xl)/2);
+    }
+    .new-menu__item:last-child {
+        margin-right: 0
+    }
+}

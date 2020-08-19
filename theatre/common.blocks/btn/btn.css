@@ -1,0 +1,11 @@
+.btn {
+    display: inline-block;
+    outline: 0;
+    overflow: visible;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
+    user-select: none;
+}

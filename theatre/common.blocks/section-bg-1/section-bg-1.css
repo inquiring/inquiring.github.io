@@ -1,0 +1,16 @@
+.section-bg-1 {
+    background-image: url(section-bg-1.png);
+    background-position: center;
+    height: 600px;
+    background-size: cover;
+    margin-top: -80px;
+}
+
+@media screen and (min-width: $screen-m) {
+
+    .section-bg-1 {
+        height: 800px;
+        margin-top: -164px;
+        padding-top: 164px;
+    }
+}

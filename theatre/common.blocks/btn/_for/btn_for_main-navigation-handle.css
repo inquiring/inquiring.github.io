@@ -1,0 +1,15 @@
+.btn_for_main-navigation-handle {
+    padding: 0;
+    vertical-align: top;
+    border: 0;
+    border-radius: 0;
+    z-index: 3;
+}
+.btn_for_main-navigation-handle .btn__text {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

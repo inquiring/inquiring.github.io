@@ -1,0 +1,9 @@
+.header__button {
+    position: absolute;
+    top: 60px;
+}
+@media screen and (min-width: $screen-s) {
+    .header__button {
+        display: none;
+    }
+}

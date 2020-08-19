@@ -1,0 +1,6 @@
+@media screen and (max-width: $screen-m) {
+
+    .main-title {
+        text-align: center;
+    }
+}

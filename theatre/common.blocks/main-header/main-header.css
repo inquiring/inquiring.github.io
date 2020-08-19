@@ -1,0 +1,10 @@
+.main-header {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (min-width: $screen-l) {
+    .main-header {
+        padding-left: 120px;
+    }
+}
