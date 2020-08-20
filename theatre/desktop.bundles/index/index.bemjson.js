@@ -422,7 +422,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 1',
-                                                                url: "carousel/__item/carousel__item2.jpg"
+                                                                url: "theatre/common.blocks/carousel/image2.jpg"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -434,7 +434,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 2',
-                                                                url: "carousel__item1.png"
+                                                                url: "theatre/common.blocks/carousel/image1.png"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -445,7 +445,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 3',
-                                                                url: "carousel__item3.jpg"
+                                                                url: "theatre/common.blocks/carousel/image3.jpg"
                                                             }
                                                         }
                                                     ]
