@@ -10,7 +10,7 @@ module.exports = {
         { elem: 'css', url: 'index.min.css' },
     ],
     scripts: [
-        { elem: 'js', url: '/common.blocks/my-menu/my-menu.js' },
+        { elem: 'js', url: '/my-menu/my-menu.js' },
         { elem: 'js', url: 'index.min.js' },
     ],
     mods: { theme: '' },
