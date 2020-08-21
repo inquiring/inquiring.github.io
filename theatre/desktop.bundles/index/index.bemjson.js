@@ -422,7 +422,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 1',
-                                                                url: "theatre/common.blocks/carousel/image2.jpg"
+                                                                url: "image/image2.jpg"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -434,7 +434,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 2',
-                                                                url: "theatre/common.blocks/carousel/image1.png"
+                                                                url: "image/image1.png"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -445,7 +445,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 3',
-                                                                url: "theatre/common.blocks/carousel/image3.jpg"
+                                                                url: "image/image3.jpg"
                                                             }
                                                         }
                                                     ]
@@ -702,7 +702,7 @@ module.exports = {
                                                 width: '350',
                                                 height: '292',
                                                 alt: 'большой театр',
-                                                url: "/common.blocks/image/theatre.jpg"
+                                                url: "image/theatre.jpg"
                                             }
                                         },
                                     ]
