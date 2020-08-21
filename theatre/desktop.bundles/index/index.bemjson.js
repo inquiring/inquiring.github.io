@@ -8,7 +8,7 @@ module.exports = {
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
         { elem: 'css', url: 'https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap' },
         { elem: 'css', url: 'index.min.css' },
-        { elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
+        { elem: 'css', url: 'css/index.min.css' },
     ],
     scripts: [
         { elem: 'js', url: 'index.min.js' },
