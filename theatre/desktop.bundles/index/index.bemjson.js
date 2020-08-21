@@ -11,8 +11,6 @@ module.exports = {
         { elem: 'css', url: 'css/index.min.css' },
     ],
     scripts: [
-        { elem: 'js', url: 'index.min.js' },
-        { elem: 'js', url: 'js/index.min.js' },
         { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' },
         { elem: 'js', url: 'js/my-menu.js' }
     ],
