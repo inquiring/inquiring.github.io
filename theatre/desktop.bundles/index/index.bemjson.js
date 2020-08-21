@@ -422,7 +422,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 1',
-                                                                url: "image/image2.jpg"
+                                                                url: "image/carousel/image2.jpg"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -434,7 +434,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 2',
-                                                                url: "image/image1.png"
+                                                                url: "image/carousel/image1.png"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -445,7 +445,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 3',
-                                                                url: "image/image3.jpg"
+                                                                url: "image/carousel/image3.jpg"
                                                             }
                                                         }
                                                     ]
