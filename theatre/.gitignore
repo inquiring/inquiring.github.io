@@ -9,15 +9,15 @@ npm-debug.log
 # bem
 .bem/cache/
 .enb/tmp/
-*bundles*/*/*.*
-#
-!*bundles*/*/*.min.js
-!*bundles*/*/*.js
-!*bundles*/*/*.min.css
-!*bundles*/*/*.html
-#
-!*bundles*/*/*.bemjson.js
-!*bundles*/.bem/*
-*pages*/*/*.*
-!*pages*/*/*.bemjson.js
-!*pages*/.bem/*
+# *bundles*/*/*.*
+# #
+# !*bundles*/*/*.min.js
+# !*bundles*/*/*.js
+# !*bundles*/*/*.min.css
+# !*bundles*/*/*.html
+# #
+# !*bundles*/*/*.bemjson.js
+# !*bundles*/.bem/*
+# *pages*/*/*.*
+# !*pages*/*/*.bemjson.js
+# !*pages*/.bem/*
