@@ -1476,9 +1476,19 @@ module.exports = {
                                                         view: 'primary'
                                                     },
                                                     content: [{
+                                                            block: 'text',
+                                                            mods: {
+                                                                size: 'm',
+                                                                view: 'primary'
+                                                            },
                                                             content: '+7 (812) 123-45-55'
                                                         },
                                                         {
+                                                            block: 'text',
+                                                            mods: {
+                                                                size: 'm',
+                                                                view: 'primary'
+                                                            },
                                                             content: '+7 (812) 123-45-66'
                                                         }
                                                     ]
