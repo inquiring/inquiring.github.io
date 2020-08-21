@@ -8,13 +8,10 @@ module.exports = {
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
         { elem: 'css', url: 'https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap' },
         { elem: 'css', url: 'index.min.css' },
-        { elem: 'css', url: 'css/index.min.css' },
     ],
     scripts: [
+        { elem: 'js', url: '/common.blocks/my-menu/my-menu.js' },
         { elem: 'js', url: 'index.min.js' },
-        { elem: 'js', url: 'js/index.min.js' },
-        { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' },
-        { elem: 'js', url: 'js/my-menu.js' }
     ],
     mods: { theme: '' },
     mix: {
@@ -424,7 +421,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 1',
-                                                                url: "image/carousel/image2.jpg"
+                                                                url: "../../common.blocks/image/carousel/image2.jpg"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -436,7 +433,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 2',
-                                                                url: "image/carousel/image1.png"
+                                                                url: "../../common.blocks/image/carousel/image1.png"
                                                             }
                                                         },
                                                         // элемент карусели
@@ -447,7 +444,7 @@ module.exports = {
                                                                 width: '280',
                                                                 height: '400',
                                                                 alt: 'репертуар 3',
-                                                                url: "image/carousel/image3.jpg"
+                                                                url: "../../common.blocks/image/carousel/image3.jpg"
                                                             }
                                                         }
                                                     ]
@@ -704,7 +701,7 @@ module.exports = {
                                                 width: '350',
                                                 height: '292',
                                                 alt: 'большой театр',
-                                                url: "image/theatre.jpg"
+                                                url: "../../common.blocks/image/theatre.jpg"
                                             }
                                         },
                                     ]

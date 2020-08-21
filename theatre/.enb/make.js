@@ -70,7 +70,7 @@ module.exports = function(config) {
             [techs.bemhtml, {
                 sourceSuffixes: ['bemhtml', 'bemhtml.js'],
                 forceBaseTemplates: true,
-                engineOptions : { elemJsInstances : true }
+                engineOptions: { elemJsInstances: true }
             }],
 
             // html
@@ -95,7 +95,7 @@ module.exports = function(config) {
                 target: '?.browser.bemhtml.js',
                 filesTarget: '?.bemhtml.files',
                 sourceSuffixes: ['bemhtml', 'bemhtml.js'],
-                engineOptions : { elemJsInstances : true }
+                engineOptions: { elemJsInstances: true }
             }],
 
             // js
@@ -116,7 +116,7 @@ module.exports = function(config) {
             // [techs.fileCopy, { source: '?.html', target: '../../?.html' }]
         ]);
 
-        nodeConfig.addTargets([/* '?.bemtree.js', */ '?.html', '?.min.css', '?.min.js']);
+        nodeConfig.addTargets([ /* '?.bemtree.js', */ '?.html', '?.min.css', '?.min.js']);
 
         // nodeConfig.addTargets([/* '?.bemtree.js', */ '../../?.html', '../../?.min.css', '../../?.min.js']);
     });
