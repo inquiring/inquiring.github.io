@@ -12,7 +12,9 @@ module.exports = {
     ],
     scripts: [
         { elem: 'js', url: 'index.min.js' },
-        { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' }
+        { elem: 'js', url: 'js/index.min.js' },
+        { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' },
+        { elem: 'js', url: 'js/my-menu.js' }
     ],
     mods: { theme: '' },
     mix: {
