@@ -319,7 +319,7 @@ module.exports = {
                                                 transform: 'uppercase'
                                             },
                                             tag: 'a',
-                                            attrs: { href: 'tel:+7 495 123-45-67', style: 'z-index: 1;' },
+                                            attrs: { href: 'tel:84951234567', style: 'z-index: 1;' },
                                             content: '+7 495 123-45-67'
                                         },
                                     ]
@@ -1478,7 +1478,7 @@ module.exports = {
                                                             view: 'primary'
                                                         },
                                                         tag: 'a',
-                                                        attrs: { href: 'tel:+7 (812) 123-45-55', style: 'text-decoration: none;' },
+                                                        attrs: { href: 'tel:88121234555', style: 'text-decoration: none;' },
                                                         content: '+7 (812) 123-45-55'
                                                     },
                                                     {
@@ -1491,7 +1491,7 @@ module.exports = {
                                                             view: 'primary'
                                                         },
                                                         tag: 'a',
-                                                        attrs: { href: 'tel:+7 (812) 123-45-66', style: 'text-decoration: none;' },
+                                                        attrs: { href: 'tel:88121234566', style: 'text-decoration: none;' },
                                                         content: '+7 (812) 123-45-66'
                                                     }
                                                 ]
