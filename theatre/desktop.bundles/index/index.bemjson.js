@@ -318,6 +318,8 @@ module.exports = {
                                                 weight: 'bold',
                                                 transform: 'uppercase'
                                             },
+                                            tag: 'a',
+                                            attrs: { href: 'tel:+7 495 123-45-67', style: 'z-index: 1;' },
                                             content: '+7 495 123-45-67'
                                         },
                                     ]
@@ -1475,7 +1477,12 @@ module.exports = {
                                                             size: 'm',
                                                             view: 'primary'
                                                         },
-                                                        content: '+7 812 123-45-55'
+                                                        tag: 'a',
+                                                        attrs: { href: 'tel:+7 (812) 123-45-55', style: 'text-decoration: none;' },
+                                                        content: '+7 (812) 123-45-55'
+                                                    },
+                                                    {
+                                                        tag: 'br'
                                                     },
                                                     {
                                                         block: 'text',
@@ -1483,7 +1490,9 @@ module.exports = {
                                                             size: 'm',
                                                             view: 'primary'
                                                         },
-                                                        content: '+7 812 123-45-66'
+                                                        tag: 'a',
+                                                        attrs: { href: 'tel:+7 (812) 123-45-66', style: 'text-decoration: none;' },
+                                                        content: '+7 (812) 123-45-66'
                                                     }
                                                 ]
                                             },
@@ -1501,7 +1510,17 @@ module.exports = {
                                                         view: 'primary'
                                                     },
                                                     content: [{
+                                                            block: 'text',
+                                                            mods: {
+                                                                size: 'm',
+                                                                view: 'primary'
+                                                            },
+                                                            tag: 'a',
+                                                            attrs: { href: 'mailto:info@theater.ru', style: 'text-decoration: none;' },
                                                             content: 'info@theater.ru'
+                                                        },
+                                                        {
+                                                            tag: 'br'
                                                         },
                                                         {
                                                             content: 'г. санкт-петербург, невский 140'
