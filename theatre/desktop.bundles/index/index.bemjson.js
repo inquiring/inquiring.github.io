@@ -10,7 +10,7 @@ module.exports = {
         { elem: 'css', url: 'index.min.css' },
     ],
     scripts: [
-        { elem: 'js', url: '/common.blocks/my-menu/my-menu.js' },
+        { elem: 'js', url: '../../common.blocks/my-menu/my-menu.js' },
         { elem: 'js', url: 'index.min.js' },
     ],
     mods: { theme: '' },
@@ -1469,30 +1469,23 @@ module.exports = {
                                                     's-col': 3,
                                                     'm-col': 12,
                                                 },
-                                                content: {
-                                                    block: 'text',
-                                                    mods: {
-                                                        size: 'm',
-                                                        view: 'primary'
-                                                    },
-                                                    content: [{
-                                                            block: 'text',
-                                                            mods: {
-                                                                size: 'm',
-                                                                view: 'primary'
-                                                            },
-                                                            content: '+7 (812) 123-45-55'
+                                                content: [{
+                                                        block: 'text',
+                                                        mods: {
+                                                            size: 'm',
+                                                            view: 'primary'
                                                         },
-                                                        {
-                                                            block: 'text',
-                                                            mods: {
-                                                                size: 'm',
-                                                                view: 'primary'
-                                                            },
-                                                            content: '+7 (812) 123-45-66'
-                                                        }
-                                                    ]
-                                                }
+                                                        content: '+7 (812) 123-45-55'
+                                                    },
+                                                    {
+                                                        block: 'text',
+                                                        mods: {
+                                                            size: 'm',
+                                                            view: 'primary'
+                                                        },
+                                                        content: '+7 (812) 123-45-66'
+                                                    }
+                                                ]
                                             },
                                             {
                                                 elem: 'fraction',
