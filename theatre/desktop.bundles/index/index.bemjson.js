@@ -1475,7 +1475,7 @@ module.exports = {
                                                             size: 'm',
                                                             view: 'primary'
                                                         },
-                                                        content: '+7 (812) 123-45-55'
+                                                        content: '+7 812 123-45-55'
                                                     },
                                                     {
                                                         block: 'text',
@@ -1483,7 +1483,7 @@ module.exports = {
                                                             size: 'm',
                                                             view: 'primary'
                                                         },
-                                                        content: '+7 (812) 123-45-66'
+                                                        content: '+7 812 123-45-66'
                                                     }
                                                 ]
                                             },
