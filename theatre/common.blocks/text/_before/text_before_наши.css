@@ -1,0 +1,6 @@
+.text_before_наши::before {
+    position: absolute;
+    content: 'наши';
+    margin-right: var(--space-xs);
+    color: var(--color-typo-brand);
+}

@@ -645,26 +645,12 @@ exports.deps = [
     },
     {
         "block": "text",
-        "mod": "view",
-        "val": "brand"
+        "mod": "before"
     },
     {
         "block": "text",
-        "mod": "display"
-    },
-    {
-        "block": "text",
-        "mod": "display",
-        "val": "inline"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-r"
-    },
-    {
-        "block": "decorator",
-        "mod": "indent-r",
-        "val": "xs"
+        "mod": "before",
+        "val": "О"
     },
     {
         "block": "tpl-grid",
@@ -717,6 +703,11 @@ exports.deps = [
         "block": "tpl-grid",
         "elem": "fraction",
         "mod": "xs-col"
+    },
+    {
+        "block": "text",
+        "mod": "before",
+        "val": "наши"
     },
     {
         "block": "tpl-grid",
@@ -833,6 +824,11 @@ exports.deps = [
     },
     {
         "block": "text",
+        "mod": "view",
+        "val": "brand"
+    },
+    {
+        "block": "text",
         "mod": "align",
         "val": "right"
     },
@@ -862,6 +858,10 @@ exports.deps = [
     },
     {
         "block": "decorator",
+        "mod": "indent-r"
+    },
+    {
+        "block": "decorator",
         "mod": "indent-r",
         "val": "s"
     },
@@ -869,6 +869,11 @@ exports.deps = [
         "block": "icon",
         "mod": "view",
         "val": "brand "
+    },
+    {
+        "block": "text",
+        "mod": "before",
+        "val": "партнеры"
     },
     {
         "block": "tpl-grid",
@@ -916,6 +921,11 @@ exports.deps = [
         "block": "decorator",
         "mod": "space-b",
         "val": "2xl"
+    },
+    {
+        "block": "text",
+        "mod": "before",
+        "val": "стать"
     },
     {
         "block": "maecenas"
@@ -1062,6 +1072,10 @@ exports.deps = [
     },
     {
         "block": "page-footer"
+    },
+    {
+        "block": "text",
+        "mod": "display"
     },
     {
         "block": "loader",

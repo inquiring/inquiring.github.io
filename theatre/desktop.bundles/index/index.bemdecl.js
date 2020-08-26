@@ -993,36 +993,10 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
-                "name": "view",
+                "name": "before",
                 "vals": [
                     {
-                        "name": "brand"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "text",
-        "mods": [
-            {
-                "name": "display",
-                "vals": [
-                    {
-                        "name": "inline"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "decorator",
-        "mods": [
-            {
-                "name": "indent-r",
-                "vals": [
-                    {
-                        "name": "xs"
+                        "name": "О"
                     }
                 ]
             }
@@ -1152,6 +1126,19 @@ exports.blocks = [
                                 "name": "hidden"
                             }
                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "before",
+                "vals": [
+                    {
+                        "name": "наши"
                     }
                 ]
             }
@@ -1445,6 +1432,19 @@ exports.blocks = [
         "name": "text",
         "mods": [
             {
+                "name": "view",
+                "vals": [
+                    {
+                        "name": "brand"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
                 "name": "align",
                 "vals": [
                     {
@@ -1538,6 +1538,19 @@ exports.blocks = [
         ]
     },
     {
+        "name": "text",
+        "mods": [
+            {
+                "name": "before",
+                "vals": [
+                    {
+                        "name": "партнеры"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "tpl-grid",
         "mods": [
             {
@@ -1603,6 +1616,19 @@ exports.blocks = [
                 "vals": [
                     {
                         "name": "2xl"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "text",
+        "mods": [
+            {
+                "name": "before",
+                "vals": [
+                    {
+                        "name": "стать"
                     }
                 ]
             }

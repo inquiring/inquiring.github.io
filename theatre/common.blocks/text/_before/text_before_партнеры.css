@@ -1,0 +1,6 @@
+.text_before_партнеры::before {
+    position: absolute;
+    content: 'партнеры';
+    margin-right: var(--space-xs);
+    color: var(--color-typo-brand);
+}

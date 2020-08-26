@@ -540,28 +540,10 @@ module.exports = {
                                     view: 'primary',
                                     weight: 'bold',
                                     align: 'center',
-                                    transform: 'uppercase'
+                                    transform: 'uppercase',
+                                    before: 'О'
                                 },
-                                content: [{
-                                        tag: 'span',
-                                        block: 'text',
-                                        mods: {
-                                            view: 'brand',
-                                            display: 'inline'
-                                        },
-                                        mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
-                                        content: 'о'
-                                    },
-                                    {
-                                        tag: 'span',
-                                        block: 'text',
-                                        mods: {
-                                            view: 'primary',
-                                            display: 'inline'
-                                        },
-                                        content: 'театре'
-                                    }
-                                ]
+                                content: 'о театре'
                             }
                         },
                         {
@@ -729,28 +711,10 @@ module.exports = {
                                         view: 'primary',
                                         weight: 'bold',
                                         align: 'center',
-                                        transform: 'uppercase'
+                                        transform: 'uppercase',
+                                        before: 'наши'
                                     },
-                                    content: [{
-                                            tag: 'span',
-                                            block: 'text',
-                                            mods: {
-                                                view: 'brand',
-                                                display: 'inline'
-                                            },
-                                            mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
-                                            content: 'наши'
-                                        },
-                                        {
-                                            tag: 'span',
-                                            block: 'text',
-                                            mods: {
-                                                view: 'primary',
-                                                display: 'inline'
-                                            },
-                                            content: 'постановки'
-                                        }
-                                    ]
+                                    content: 'наши постановки'
                                 }
                             },
                         },
@@ -955,7 +919,8 @@ module.exports = {
                                     align: 'center',
                                     transform: 'uppercase'
                                 },
-                                content: ''
+                                attrs: { style: 'visibility: hidden;' },
+                                content: 'наши награды'
                             }
                         },
                         {
@@ -1111,28 +1076,10 @@ module.exports = {
                                         view: 'primary',
                                         weight: 'bold',
                                         align: 'center',
-                                        transform: 'uppercase'
+                                        transform: 'uppercase',
+                                        before: 'партнеры'
                                     },
-                                    content: [{
-                                            tag: 'span',
-                                            block: 'text',
-                                            mods: {
-                                                view: 'brand',
-                                                display: 'inline'
-                                            },
-                                            mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
-                                            content: 'партнеры'
-                                        },
-                                        {
-                                            tag: 'span',
-                                            block: 'text',
-                                            mods: {
-                                                view: 'primary',
-                                                display: 'inline'
-                                            },
-                                            content: 'театра'
-                                        }
-                                    ]
+                                    content: 'партнеры театра'
                                 }
                             },
                         },
@@ -1286,28 +1233,10 @@ module.exports = {
                                         view: 'primary',
                                         weight: 'bold',
                                         align: 'center',
-                                        transform: 'uppercase'
+                                        transform: 'uppercase',
+                                        before: 'стать'
                                     },
-                                    content: [{
-                                            tag: 'span',
-                                            block: 'text',
-                                            mods: {
-                                                view: 'brand',
-                                                display: 'inline'
-                                            },
-                                            mix: { block: 'decorator', mods: { 'indent-r': 'xs' } },
-                                            content: 'стать'
-                                        },
-                                        {
-                                            tag: 'span',
-                                            block: 'text',
-                                            mods: {
-                                                view: 'primary',
-                                                display: 'inline'
-                                            },
-                                            content: 'меценатом'
-                                        }
-                                    ]
+                                    content: 'стать меценатом'
                                 }
                             },
                         },
@@ -1327,6 +1256,7 @@ module.exports = {
                                             's-columns': 6,
                                             'm-columns': 12,
                                         },
+                                        tag: 'form',
                                         content: [{
                                                 elem: 'fraction',
                                                 elemMods: {
