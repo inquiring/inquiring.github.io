@@ -72,6 +72,6 @@
     "static-eval": ">=2.0.5",
     "whitepaper-bem": "^2.3.10",
     "npmconf": ">=2.1.3",
-    "minimist": ">=1.2.5"
+    "minimist": ">=1.2.6"
   }
 }
